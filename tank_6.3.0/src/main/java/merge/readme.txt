@@ -1,0 +1,2 @@
+2016/10/28 淬炼进阶功能完成 
+清除小号的sql程序合服时自动运行，请看SmallIdDao.insertAllNewSmallId

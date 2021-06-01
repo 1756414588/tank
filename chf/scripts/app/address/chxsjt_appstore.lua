@@ -1,0 +1,29 @@
+--
+-- Author: gf
+-- Date: 2016-02-29 14:12:57
+-- 草花IOS 血色军团
+
+
+LOGIN_PLATFORM_PARAM = "chxsjt_appstore"
+
+
+GameConfig.accountURL = "http://chxsjt_appstore.tank.hundredcent.com:9200/tank_account/account/account.do"
+GameConfig.areaURL = "https://chxsjt_appstore.tank.hundredcent.com/serverlist_tank.json"
+GameConfig.verifyURL = "https://chxsjt_appstore.tank.hundredcent.com/version/tank_ios_test.json"
+GameConfig.downRootURL = "https://cdn.tank.hundredcent.com/tank_2.0.1/"
+
+GameConfig.idfaURL = "http://chxsjt_appstore1.tank.hundredcent.com:9108/tank_advertise/account/idfaActivate.do?plat=chxsjt_appstore"
+
+
+
+-- GameConfig.accountURL = "http://119.29.180.212:9200/tank_account/account/account.do"
+-- GameConfig.areaURL = "http://119.29.180.212/serverlist_tank.json"
+
+--IPV6审核地址
+-- GameConfig.accountURL_ipv6 = "http://ipv4.hundredcent.com:9200/tank_account/account/account.do"
+-- GameConfig.areaURL_ipv6 = "http://ipv4.hundredcent.com/serverlist_tank.json"
+-- GameConfig.verifyURL_ipv6 = "http://ipv4.hundredcent.com/version/tank_ios_test.json"
+
+function getPayCallBackUrl()
+    return "http://chxsjt_appstore.tank.hundredcent.com:9200/tank_account/account/payCallback.do?plat=chxsjt_appstore"
+end

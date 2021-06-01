@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="AccountDao">
+    <select id="selectByAccount" parameterType="String" resultType="com.account.domain.Account">
+		select * from `u_account` where platNo=#{platNo} and
+		account=#{account}
+	</select>
+
+    <select id="selectByPlatId" parameterType="Map" resultType="com.account.domain.Account">
+		select * from `u_account` where platNo=#{platNo} and
+		platId=#{platId}
+	</select>
+
+    <select id="selectByKey" parameterType="Integer" resultType="com.account.domain.Account">
+		select * from `u_account` where keyId=#{keyId};
+	</select>
+
+    <select id="selectByDeviceNo" parameterType="String" resultType="com.account.domain.Account">
+		select * from `u_account` where platNo=#{platNo} and
+		deviceNo=#{deviceNo}
+	</select>
+
+
+    <update id="updateRecentServer" parameterType="com.account.domain.Account">
+		update u_account
+		set firstSvr=#{firstSvr},secondSvr=#{secondSvr},thirdSvr=#{thirdSvr}
+		where keyId=#{keyId}
+	</update>
+
+    <update id="updateForbid" parameterType="com.account.domain.Account">
+		update u_account
+		set
+		forbid=#{forbid} where keyId=#{keyId}
+	</update>
+
+    <update id="updateActive" parameterType="com.account.domain.Account">
+		update u_account
+		set
+		active=#{active} where keyId=#{keyId}
+	</update>
+
+    <update id="updatePwd" parameterType="com.account.domain.Account">
+		update u_account
+		set
+		passwd=#{passwd} where keyId=#{keyId}
+	</update>
+
+    <update id="updateVersionNo" parameterType="com.account.domain.Account">
+		update u_account
+		set
+		versionNo=#{versionNo} where keyId=#{keyId}
+	</update>
+
+    <update id="updateTokenAndVersion" parameterType="com.account.domain.Account">
+		update
+		u_account
+		set
+		token=#{token},baseVersion=#{baseVersion},versionNo=#{versionNo},childNo=#{childNo},deviceNo=#{deviceNo},loginDate=#{loginDate}
+		where
+		keyId=#{keyId}
+	</update>
+
+    <update id="updateChildNo" parameterType="com.account.domain.Account">
+		update u_account
+		set
+		childNo=#{childNo} where keyId=#{keyId}
+	</update>
+
+    <insert id="insertWithPlat" parameterType="com.account.domain.Account" useGeneratedKeys="true" keyProperty="keyId">
+		insert into
+		u_account(platNo,platId,childNo,baseVersion,versionNo,token,deviceNo,loginDate,createDate)
+		values(#{platNo},#{platId},#{childNo},#{baseVersion},#{versionNo},#{token},#{deviceNo},#{loginDate},#{createDate})
+	</insert>
+
+    <insert id="insertWithAccount" parameterType="com.account.domain.Account" useGeneratedKeys="true" keyProperty="keyId">
+		insert into
+		u_account(platNo,platId,childNo,baseVersion,versionNo,account,passwd,token,deviceNo,loginDate,createDate)
+		values(#{platNo},#{platId},#{childNo},#{baseVersion},#{versionNo},#{account},#{passwd},#{token},#{deviceNo},#{loginDate},#{createDate})
+	</insert>
+
+    <select id="selectByPlatIdUserId" parameterType="Map" resultType="com.account.domain.Account">
+        SELECT * from u_account WHERE platNo IN
+        <foreach collection="platNoList" item="platNo" index="index" open="(" close=")" separator=",">
+            #{platNo}
+        </foreach>
+        AND platId=#{platId}
+    </select>
+
+
+</mapper>

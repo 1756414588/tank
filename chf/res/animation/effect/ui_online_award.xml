@@ -1,0 +1,30 @@
+<skeleton name="gangkou_baoxiang" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="ui_online_award">
+   <b name="1" x="0" y="44.35" kX="0" kY="0" cX="1" cY="1" pX="0" pY="44" z="0">
+    <d name="part-gangkou_qipao"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="ui_online_award">
+   <mov name="start" dr="79" to="6" drTW="79" lp="1" twE="NaN">
+    <b name="1" sc="1" dl="0">
+     <f x="0" y="44.35" cocos2d_x="0" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="44" z="0" dI="0" twE="0" dr="5"/>
+     <f x="-0.05" y="44.35" cocos2d_x="-1.9" cocos2d_y="0" kX="-2.45" kY="-2.45" cX="1" cY="1" pX="0" pY="44" z="0" dI="0" twE="0" dr="5"/>
+     <f x="0" y="44.35" cocos2d_x="1.6" cocos2d_y="0.05" kX="2.02" kY="2.02" cX="1" cY="1" pX="0" pY="44" z="0" dI="0" twE="0" dr="5"/>
+     <f x="-0.05" y="44.35" cocos2d_x="-1.9" cocos2d_y="0" kX="-2.45" kY="-2.45" cX="1" cY="1" pX="0" pY="44" z="0" dI="0" twE="0" dr="5"/>
+     <f x="0" y="44.35" cocos2d_x="1.25" cocos2d_y="0" kX="1.56" kY="1.56" cX="1" cY="1" pX="0" pY="44" z="0" dI="0" twE="0" dr="4"/>
+     <f x="-0.05" y="44.35" cocos2d_x="-0.6" cocos2d_y="-0.05" kX="-0.78" kY="-0.78" cX="1" cY="1" pX="0" pY="44" z="0" dI="0" twE="0" dr="4"/>
+     <f x="0" y="44.35" cocos2d_x="0.85" cocos2d_y="0" kX="1.07" kY="1.07" cX="1" cY="1" pX="0" pY="44" z="0" dI="0" twE="0" dr="4"/>
+     <f x="-0.05" y="44.35" cocos2d_x="-0.6" cocos2d_y="-0.05" kX="-0.78" kY="-0.78" cX="1" cY="1" pX="0" pY="44" z="0" dI="0" twE="0" dr="3"/>
+     <f x="0" y="44.35" cocos2d_x="0.85" cocos2d_y="0" kX="1.07" kY="1.07" cX="1" cY="1" pX="0" pY="44" z="0" dI="0" twE="0" dr="3"/>
+     <f x="0" y="44.35" cocos2d_x="0" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="44" z="0" dI="0" dr="41"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="gangkou_baoxiang" width="128" height="128">
+  <SubTexture name="part-gangkou_qipao" width="73" height="86" cocos2d_pX="37.1" cocos2d_pY="48.4" x="0" y="0"/>
+ </TextureAtlas>
+</skeleton>

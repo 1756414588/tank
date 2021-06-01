@@ -1,0 +1,2791 @@
+option java_package = "com.game.pb";
+option java_outer_classname = "CommonPb";
+
+//K-V值
+message Kv{
+    optional int32 key      = 1;//主键
+    optional int32 value    = 2;//V值
+}
+
+//K-V值
+message KvLong{
+    optional int32 key      = 1;//主键
+    optional int64 value    = 2;//V值
+}
+
+//K-V值
+message KvString{
+    optional int32      key     = 1;//主键
+    optional string     value   = 2;//V值
+}
+
+//
+message TwoInt {
+    required int32 v1 = 1;
+    required int32 v2 = 2;
+}
+
+message TwoLong {
+    required int64 v1 = 1;
+    required int64 v2 = 2;
+}
+
+message ThreeInt {
+    required int32 v1 = 1;
+    required int32 v2 = 2;
+    required int32 v3 = 3;
+}
+
+//
+message Tank {
+    required int32 tankId = 1;
+    required int32 count = 2;   //当前可用数量
+    required int32 rest = 3;    //可维修数量
+}
+
+message Grab {
+    optional int64 stone = 1;                   //宝石
+    optional int64 iron = 2;                    //铁
+    optional int64 silicon = 3;                 //硅矿
+    optional int64 copper = 4;                  //铜矿
+    optional int64 oil = 5;                     //石油
+	optional int32 honourScore = 6;				//荣耀积分
+}
+
+message Collect {
+    optional int64 load = 1;                    //部队载重
+    optional int32 speed = 2;                   //采集加速
+    optional bool over = 3;                     //采集完成
+}
+
+//
+message Form {
+    optional int32 commander = 1;   //指挥官id
+    optional TwoInt p1 = 2;         //1号位坦克(id,数量)
+    optional TwoInt p2 = 3;
+    optional TwoInt p3 = 4;
+    optional TwoInt p4 = 5;
+    optional TwoInt p5 = 6;
+    optional TwoInt p6 = 7;
+    optional int32 type = 8;        //阵型类型（获取阵型列表的时候，会存在这个字段）
+                                    //1.模板阵型 2.基地防守 3.竞技场防守 7.世界boss 8 要塞战防守
+    optional AwakenHero awakenHero = 9; //使用觉醒将领
+    optional string formName = 10;       //阵形名字
+	repeated int32 tacticsKeyId =11;//战术的keyid
+	repeated TwoInt tactics =12;//战术的 tacticsId,level ,用于播放战报
+}
+
+//阵形的扩展信息,用来描述阵形中一些额外信息
+message FormExt{
+    repeated int32 weaponId =1;     //秘密武器ID
+    repeated int32 eid      =2;     //6个位置的攻击特效
+}
+
+//
+message Army {//这里army的概念就是执行任务的部队
+    required int32 keyId = 1;
+    required int32 target = 2;  //目标坐标
+    required int32 state = 3;   //任务状态  1.行军 2.返回 3.采集 4.驻军
+    required int32 period = 4;
+    required int32 endTime = 5;
+    required Form form = 6;
+    optional Grab grab = 7;
+    optional Collect collect = 8;       // 采集属性
+    optional int32 staffingTime = 9;    // 编制结算时间
+    optional bool senior = 10;          //军事矿区
+    optional bool occupy = 11;          //占领true 掠夺false (服务器专用)
+    optional bool isRuins = 12;         //派出时是否是废墟状态
+    optional int32 tar_qua = 13;        //目标品质
+    optional int32 type = 14;           //目标类型
+    optional int64 lordId = 15;         //角色ID
+    optional int64 fight = 16;          //阵形战斗力
+	optional int64 freeWarTime = 17;          //采集后有一定时间的免战
+    optional int64 startFreeWarTime = 18;          //采集后有一定时间的免战
+	optional int32 honourScore = 19; 	//荣耀玩法期间获得的积分
+	optional int32 honourGold = 20;		//荣耀玩法期间获得的金币
+	optional int32 collectBeginTime = 21; //采集开始时间
+	//22 23 这个两个跳过 里面原本存储的有东西
+	optional int32 newHeroAddGold = 24;//新英雄 掠夺的金币数量
+	optional int64 caiJiStartTime = 25;//采集开始时间 只是采集 不带行军的
+	optional int64 caiJiEndTime = 26;//采集结束时间  只是采集 不带行军的
+	optional int32 newHeroSubGold = 27;//新英雄采集增加金币 被掠夺数量
+	optional int32 staffingExp = 28;    // 编制经验
+	optional int32 isZhuJun = 29;	// 是否是驻军的Army
+	optional bool crossMine = 30;	// 是否是跨服军矿army
+	optional int64 load=31;			//跨服军矿 部队载重
+}
+
+message FailNum{// 失败的次数
+    required int32 operType = 1; // 操作类型  1.统率升级  2.其他(若抽奖等)
+    required int32 num = 2; // 失败次数
+}
+
+//
+message BuildQue {
+    required int32 keyId = 1;
+    required int32 buildingId = 2;
+    optional int32 pos = 3;
+    required int32 period = 4;
+    optional int32 endTime = 5;
+	optional int64 siliconCost = 6;
+	optional int64 ironCost = 7;
+	optional int64 oilCost = 8;
+	optional int32 goldCost = 9;
+	optional int64 copperCost = 10;
+}
+
+message TankQue {
+    required int32 keyId = 1;
+    required int32 tankId = 2;
+    required int32 count = 3;
+    required int32 state = 4;
+    required int32 period = 5;
+    optional int32 endTime = 6;
+}
+
+message RefitQue {
+    required int32 keyId = 1;
+    required int32 tankId = 2;
+    required int32 refitId = 3;
+    required int32 count = 4;
+    required int32 state = 5;
+    required int32 period = 6;
+    optional int32 endTime = 7;
+}
+
+message Prop {
+    required int32 propId = 1;
+    required int32 count = 2;
+}
+
+message PropQue {
+    required int32 keyId = 1;
+    required int32 propId = 2;
+    required int32 count = 3;
+    required int32 state = 4;
+    required int32 period = 5;
+    optional int32 endTime = 6;
+}
+
+message Equip {
+    required int32 keyId = 1;
+    required int32 equipId = 2;
+    required int32 lv = 3;
+    required int32 exp = 4;
+    required int32 pos = 5;         //装备位置 0.未装备 1.阵型第一格 2.阵型第二格 。。。
+	optional int32 starLv = 6; //装备星级
+}
+
+message Part {
+    required int32 keyId = 1;
+    required int32 partId = 2;
+    required int32 upLv = 3;
+    required int32 refitLv = 4;
+    required int32 pos = 5;         //配件位置 0.未装备 1.坦克 2.战车 3.火炮 4.火箭
+    optional bool locked = 6;       //是否已锁
+    optional int32 smeltLv = 7;     //淬炼等级
+    optional int32 smeltExp = 8;     //淬炼经验
+    repeated PartSmeltAttr attr = 9; //淬炼属性
+    optional bool saved = 10[default = true];       //是否保存萃取
+}
+
+message Chip {
+    required int32 chipId = 1;
+    required int32 count = 2;
+}
+
+message ScienceQue {
+    required int32 keyId = 1;
+    required int32 scienceId = 2;
+    required int32 period = 3;
+    required int32 state = 4;
+    optional int32 endTime = 5;
+	optional int32 stoneCost = 6;
+	optional int32 ironCost = 7;
+	optional int32 oilCost = 8;
+	optional int32 silionCost = 9;
+	optional int32 copperCost = 10;
+
+}
+
+message Science {
+    required int32 scienceId = 1; //科技ID
+    required int32 scienceLv = 2; //科技等级
+    optional int32 schedule = 3; //研究进度(帮派科技用到)
+}
+
+message Combat {
+    required int32 combatId = 1;
+    required int32 star = 2;
+}
+
+message Action {
+    required int32 target = 1;      //目标key
+    repeated int64 hurt = 2;        //伤害
+    optional bool crit = 3;
+    optional bool impale = 4;
+    optional bool dodge = 5;
+    optional int32 count = 6;
+    optional bool frighten = 7;    //震慑
+	optional int32 forceCount = 8;    //蓄力回合数
+	optional bool force = 9;    //蓄力回合数满
+}
+
+message PassiveSkillEffect{
+	required int32 round = 1;           // 操作回合
+    required int32 key = 2;             // 部队位置1-12
+    required int32 id = 3;              // 技能id 1=分裂
+	required int32 enemyId = 4;    	//对应s_bounty_enemy的id
+}
+
+message Round {
+    required int32 key = 1;         //编号 1-12,按攻击顺序编号
+    repeated Action action = 2;
+
+}
+
+message Record {
+    optional int32 keyId = 1;
+    repeated int64 hp = 2;
+    repeated Round round = 3;
+    required bool first = 4;                        //进攻方是否先手
+    optional Form formA = 5;                        //进攻方阵型
+    optional Form formB = 6;                        //防守方阵型
+    repeated Reborn reborn = 7;                     //复活信息
+    repeated SkillEffect addSkillEffect = 8;        //增加技能特效-包含进攻方和防守方
+    optional FormExt formExtA = 9;                  //先手方阵形扩展信息
+    optional FormExt formExtB = 10;                 //后手方阵形扩展信息
+	repeated PassiveSkillEffect passiveSkillEffect = 11;//敌方死亡开始分裂
+
+}
+
+message Award {
+    required int32 type = 1;
+    required int32 id = 2;
+    required int64 count = 3;
+    optional int32 keyId = 4;
+    repeated int32 param = 5;        //参数暂时：配件[强化等级,改造等级] 装备[等级]
+}
+
+message Hero {
+    required int32 keyId = 1;
+    required int32 heroId = 2;
+    required int32 count = 3;
+	optional int64 endTime = 4;//英雄过期时间戳
+	optional int64 cd = 5;//英雄技能cd过期时间戳
+
+}
+
+message Man {
+    required int64 lordId = 1;
+    optional int32 icon = 2;
+    optional int32 sex = 3;     //性别
+    optional string nick = 4;
+    optional int32 level = 5;
+    optional int64 fight = 6;
+    optional int32 ranks = 7;   //军衔
+    optional int32 exp = 8;
+    optional int32 pos = 9;
+    optional int32 vip = 10;
+    optional int32 honour = 11; //荣誉
+    optional int32 pros = 12;   //当前繁荣度
+    optional int32 prosMax = 13;    //最大繁荣度
+    optional string partyName = 14; //军团名
+    optional int32 jobId = 15;// 要塞战jobId
+}
+
+message Mine {
+    required int32 mineId = 1;
+    required int32 mineLv = 2;
+    optional int32 pos = 3;
+    optional int32 qua = 4; //矿点品质
+    optional int32 quaExp = 5; //品质经验
+    optional int32 scoutTime = 6;//侦查时间
+}
+
+message Bless {
+    required Man man = 1;
+    optional int32 state = 2;
+    optional int32 blessTime = 3;
+}
+
+message DbBless {
+    required int64 lordId = 1;
+    optional int32 state = 2;
+    optional int32 blessTime = 3;
+}
+
+message Friend {
+    required Man man = 1;
+    required int32 bless = 2;       //0未祝福，1已祝福
+    required int32 blessTime = 3;   //0祝福时间
+    required int32 state = 4;       //0非互为好友，1互为好友
+    optional int32 friendliness = 5;    //友好度
+    optional int32 giveCount = 6;     //玩家当月已赠送该好友道具次数
+}
+
+message DbFriend {
+    required int64 lordId = 1;
+    required int32 bless = 2;       //0未祝福，1已祝福
+    required int32 blessTime = 3;   //0祝福时间
+    optional int32 friendliness = 4;    //友好度
+}
+
+
+message Store {                     //收藏
+    required int32 pos = 1;         //坐标
+    required int32 enemy = 2;       //0未标记 1标记为敌人
+    required int32 friend = 3;      //0未标记 1标记为好友
+    required int32 isMine = 4;      //0未标记 1标记为资源
+    optional Man man = 5;           //玩家信息
+    optional Mine mine = 6;         //资源点信息
+    optional string mark = 7;       //备注信息
+    required int32 type = 8;        //1 玩家 2 资源点
+}
+
+
+
+message Weal {
+    required int64 stone = 1;                   //宝石
+    required int64 iron = 2;                    //铁
+    required int64 silicon = 3;                 //硅矿
+    required int64 copper = 4;                  //铜矿
+    required int64 oil = 5;                     //石油
+    optional int32 gold = 6;                    //金币
+}
+
+// message ReportLose{
+//  required int32 fristHand = 1;               //1攻击方先手，2守方先手
+//  repeated ReportTank attackLost = 2;         //攻方坦克损失
+//  optional int32 attackHeroId = 3;
+//  optional int32 defineHeroId = 4;
+//  repeated ReportTank defineLost = 5;
+// }
+
+// message ReportInfo{
+//     required ReportMan reportMan = 1;        //攻守双方信息
+//     required ReportMine reportMine = 2;      //抢劫获得/损失资源信息
+//     required ReportLose reportLose = 3;      //双方损失信息
+//     repeated Award award = 4;               //战利品
+// }
+
+message RptScoutMine {                          //侦查矿
+    required int32 pos = 1;
+    required int32 lv = 2;
+    required int32 mine = 3;                    //矿类型
+    required int32 product = 4;                 //产量
+    required Form form = 5;
+    optional int64 harvest = 6;                 //已开采
+    optional string party = 7;                  //军团名字
+    optional string friend = 8;                 //驻军名字
+	optional int32 honourGold = 9;				//荣耀金币
+	optional int32 honourScore = 10;			//荣耀积分
+	optional int32 newHeroGold = 11;			//新英雄采集金币
+}
+
+message RptScoutHome {                          //侦查玩家
+    required int32 pos = 1;
+    required int32 lv = 2;
+    required string name = 3;
+    required int32 pros = 4;
+    required int32 prosMax = 5;
+    required Grab grab = 6;
+    optional Form form = 7;
+    optional string party = 8;                 //军团名字
+    optional string friend = 9;                //驻军名字
+}
+
+message RptScoutRebel {                        //侦查叛军
+    required int32 pos = 1;
+    required int32 lv = 2;
+    required int32 rebelId = 3;
+    required int32 heroPick = 4;
+    optional Form form = 5;
+}
+
+message RptTank {
+    required int32 tankId = 1;                  //坦克ID
+    required int32 count = 2;                   //损失数量
+}
+
+
+message RptMan {
+    optional int32 pos = 1;
+    optional string name = 2;
+    optional int32 vip = 3;
+    optional int32 pros = 4;
+    optional int32 prosMax = 5;
+    optional string party = 6;
+    optional int32 hero = 7;
+    optional int32 prosAdd = 9;
+    repeated RptTank tank = 8;
+    optional int32 lv = 10;
+    optional int32 mplt = 11;                   //获得军功
+    optional int32 firstValue =12;                  //先手值
+	optional string serverName=13;				//服务器名称
+}
+
+message CrossRptMan{
+    optional string name = 1;
+    optional string serverName = 2;
+    optional int32 firstValue = 3;           //先手值
+}
+
+// message RptMine {
+//     optional int32 pos = 1;
+//     optional int32 mine = 2;
+//     optional int32 lv = 3;
+//     repeated RptTank tank = 4;
+// }
+
+// message RptMineMan {
+//     optional int32 pos = 1;
+//     optional int32 mine = 2;
+//     optional int32 lv = 3;
+//     optional string name = 4;
+//     optional int32 vip = 5;
+//     optional string party = 6;
+//     optional int32 hero = 7;
+//     repeated RptTank tank = 8;
+// }
+
+message RptMine {
+    optional int32 pos = 1;
+    optional int32 mine = 2;            // 矿类型，如果为-1，表示叛军
+    optional int32 lv = 3;
+    optional string name = 4;
+    optional int32 vip = 5;
+    optional string party = 6;
+    optional int32 hero = 7;            // 如果是叛军，表示叛军的heroPick
+    repeated RptTank tank = 8;
+    optional int32 mplt = 9;            // 获得军功
+    optional int32 firstValue = 10;          //先手值
+	optional string serverName=11;				//服务器名称
+}
+
+message RptAtkHome {
+    required bool result = 1;
+    required bool first = 2;
+    required int32 honour = 3;
+    required RptMan attacker = 4;
+    optional RptMan defencer = 5;
+    optional string friend = 6;
+    optional Grab grab = 7;
+    optional Record record = 8;
+    repeated Award award = 9;
+	  optional int32 demageScore = 10; 	//战损获得的荣耀积分（仅胜利方获得）
+    optional int32 friendliness = 11;//友好度
+}
+
+message RptAtkMine {
+    required bool result = 1;
+    required bool first = 2;
+    required int32 honour = 3;
+    required RptMan attacker = 4;
+    optional RptMine defencer = 5;
+    optional Grab grab = 7;
+    repeated Award award = 8;
+    optional Record record = 9;
+    optional int32 winStaffingExp = 10;     // 胜利方获得的编制经验
+    optional int32 failStaffingExp = 11;    // 失败方扣除的编制经验
+    optional int32 staffingExpAdd = 12;     // 胜利方编制经验的加成百分比
+	optional int32 honourGoldWin = 13;		// 胜利方掠夺的金币
+	optional int32 honourGoldFail = 14;		// 失败方损失的金币
+	optional int32 grabScore = 15;			// 掠夺产生的荣耀积分交互
+	optional int32 demageScore = 16;		// 战损获得的荣耀积分（仅胜利方获得）
+	optional int32 plunderGold = 17;		// 掠夺金币 进攻方
+	optional int32 defPlunderGold = 18;		// 掠夺金币 防守方
+
+}
+
+message RptAtkArena {
+    required bool result = 1;
+    required bool first = 2;
+    required RptMan attacker = 3;
+    optional RptMan defencer = 4;
+    repeated Award award = 5;
+    optional Record record = 6;
+}
+
+message RptAtkWar {
+    required bool result = 1;
+    required bool first = 2;
+    required RptMan attacker = 3;
+    optional RptMan defencer = 4;
+    optional Record record = 5;
+}
+
+
+// message RptDefMine {
+//     required bool result = 1;
+//     required bool first = 2;
+//     required int32 honour = 3;
+//     required RptMan attacker = 4;
+//     optional RptMine defencer = 5;
+//     optional Grab grab = 6;
+// }
+
+// message RptDefHome {
+//     required bool result = 1;
+//     required bool first = 2;
+//     required int32 honour = 3;
+//     required RptMan attacker = 4;
+//     optional RptMan defencer = 5;
+//     optional Grab grab = 6;
+// }
+
+message Report {
+    optional RptScoutHome scoutHome = 1;
+    optional RptScoutMine scoutMine = 2;
+    optional RptAtkHome atkHome = 3;
+    optional RptAtkMine atkMine = 4;
+    optional RptAtkHome defHome = 5;
+    optional RptAtkMine defMine = 6;
+    required int32 time = 7;
+    optional RptAtkArena atkArena = 8;
+    optional RptAtkArena defArena = 9;
+    optional RptAtkArena globalArena = 10;
+    optional RptScoutRebel scoutRebel = 11;
+    optional RptAtkAirship atkAirship = 12;//进攻方战报记录
+    optional RptAtkAirship defAirship = 13;//防守方战报记录
+}
+
+message MailShow {
+    required int32 keyId = 1;
+    required int32 type = 2;        //1.玩家邮件 2.发送 3.报告 4.系统
+    optional int32 moldId = 3;      //模板ID（0表示没有,报告和系统）
+    optional string title = 4;      //邮件标题名称
+    optional string sendName = 5;
+    optional int32 state = 6;       // 1未读 2已读 3未读含附件 4已读含附件 5已读已领附件
+    optional int32 time = 7;        //发送时间
+    repeated string param = 8;
+	optional int32 isCollections = 9;  //是否是收藏的邮件
+}
+
+message Mail {
+    required int32 keyId = 1;
+    required int32 type = 2;        //1.玩家邮件 2.发送 3.报告 4.系统
+    optional string title = 3;      //邮件标题名称
+    optional string sendName = 4;
+    repeated string toName = 5;       //收件人
+    required int32 state = 6;       // 1未读 2已读 3未读含附件 4已读含附件 5已读已领附件
+    optional string contont = 7;
+    required int32 time = 8;                //发送时间
+    repeated Award award = 9;
+    optional Report report = 10;
+    optional int32 moldId = 11;             //moldId
+    repeated string param = 12;             //参数
+    optional int32 lv = 13;                 //等级
+    optional int32 vipLv = 14;              //vip等级
+	optional int32 isCollections = 15;  //是否是收藏的邮件
+}
+
+message Section {
+    required int32 sectionId = 1;
+    required int32 box = 2;         //宝箱领取状态 ,三个宝箱对应2进制的1位，三个都领了是7，只领第二个是2
+}
+
+message Skill {
+    required int32 id = 1;
+    required int32 lv = 2;
+}
+
+message Mill {              //城外工厂建筑
+    required int32 pos = 1;
+    required int32 id = 2;
+    required int32 lv = 3;
+}
+
+message Effect {              //特殊加成
+    required int32 id = 1;
+    required int32 endTime = 2;
+}
+
+message RankPlayer {
+    required int32 rank = 1;
+    required string name = 2;
+    required int32 lv = 3;
+    required int64 fight = 4;
+}
+
+message LotteryEquip {
+    required int32 lotteryId = 1;           //1绿色 2蓝色 3紫色
+    required int32 freetimes = 2;           //剩余免费次数
+    required int32 cd = 3;                  //剩余CD时间（秒)
+    optional int32 lotteryTime = 4;         //(废弃)
+    optional int32 purple = 5;              //多少次后出紫装
+    optional int32 time = 6;                //抽取时间
+    optional int32 isFirst = 7;         //是否首抽(只有在lotteryId为3的时候才发)
+}
+
+message PartyRank {
+    required int32 rank = 1;                //排名
+    required int32 partyId = 2;             //军团ID
+    required string partyName = 3;          //军团名称
+    required int32 partyLv = 4;             //军团大厅等级
+    required int32 member = 5;              //军团人数
+    required int64 fight = 6;               //军团总战斗力
+    required int32 applyLv = 7;         //申请最低等级
+    required int64 applyFight = 8;          //申请最低战斗力
+}
+
+message Party {
+    required int32  partyId = 1;                //军团ID
+    optional int32  rank = 2;                   //排名
+    optional string partyName = 3;              //军团名称
+    optional string legatusName = 4;            //军团长名称
+    optional int32  partyLv = 5;                //军团大厅等级
+    optional int32  member = 6;                 //军团人数
+    optional int64  fight = 7;                  //军团总战斗力
+    optional string slogan = 8;                 //军团宣传语(对外)
+    optional string innerSlogan = 9;            //军团宣传语(对内)
+    optional int32  applyType = 10;             //加入方式(1.申请即可加入 2.申请后需要审批)
+    optional int32  applyLv = 11;               //申请最低等级
+    optional int64  applyFight = 12;            //申请最低战斗力
+    optional string jobName1 = 13;              //职务1
+    optional string jobName2 = 14;              //职务2
+    optional string jobName3 = 15;              //职务3
+    optional string jobName4 = 16;              //职务4
+    optional int32  build = 17;                 //建设度
+    optional int32  scienceLv = 18;
+    optional int32  wealLv = 19;
+    optional int32  altarLv = 20;               //军团祭坛等级
+	optional int32  altarexp = 21;				//祭坛Boss经验
+	optional int32 altarBossLv = 22;			//祭坛Boss等级
+}
+
+message PartyDonate {
+    required int32 stone = 1;                   //捐献宝石次数
+    required int32 iron = 2;                    //..铁矿..
+    required int32 silicon = 3;                 //..硅矿..
+    required int32 copper = 4;                  //..铜矿..
+    required int32 oil = 5;                     //..石油..
+    required int32 gold = 6;                    //..金币..
+}
+
+// message PartyBuilding {
+//  required int32 buildId = 1;             //建筑ID (1军团大厅 2科技大厅 3福利院)
+//  required int32 buildLv = 2;             //建筑等级
+// }
+
+message PartyMember {
+    required int64 lordId = 1;              //角色ID
+    required int32 icon = 2;                //头像
+    required int32 sex = 3;                 //性别
+    required string nick = 4;               //昵称
+    required int32 job = 5;                 //职务（0为申请者）
+    required int32 level = 6;               //等级
+    required int64 fight = 7;               //战斗力
+    required int32 donate = 8;              //个人贡献
+    required int32 weekAllDonate = 9;       //周贡献
+    required int32 weekDonate = 10;         //捐献周贡献
+    required int32 isOnline = 11;           //0在线 大于0表示离线时间
+    required int32 militaryRank = 12;       //军衔等级
+}
+
+message LiveTask {
+    required int32 taskId = 1;              //活跃任务ID
+    required int32 count = 2;               //完成次数
+}
+
+message PartyProp {
+    required int32 keyId = 1;               //唯一键
+    required int32 count = 2;               //已兑换次数
+}
+
+message PartyApply {
+    required int64 lordId = 1;              //角色ID
+    required int32 icon = 2;                //头像
+    required string nick = 3;               //昵称
+    required int32 level = 4;               //等级
+    required int64 fight = 5;               //战斗力
+    required int32 applyDate = 6;               //申请时间
+}
+
+message DbPartyApply {
+    required int64 lordId = 1;              //角色ID
+    required int32 applyDate = 2;           //申请时间
+}
+
+/** 因为客户端目前使用seachplayer获取一些地图上的玩家数据，所以去掉一些冗余字段 20151109
+message MapData {
+    required int32 pos = 1;
+    required string name = 2;
+    required int32 pros = 3;
+    required int32 prosMax = 4;
+    required int32 ranks = 5;
+    required int64 fight = 6;
+    required int32 portrait = 7;
+    required int32 sex = 8;
+    required int32 lv = 9;
+    optional string party = 10;
+    optional bool free = 11;            //是否有罩子
+    optional int32 surface = 12;        //基地外观 1-7，表示默认外观以外的外观
+}*/
+
+message Ruins {
+    required bool isRuins = 1;          // 是否废墟
+    optional int64 lordId = 2;          // 若是废墟,攻击者lordId
+    optional string attackerName = 3;   // 若是废墟,攻击者名字
+}
+
+
+message MapData {
+    optional int32 pos = 1;
+    optional string name = 2;
+    optional int32 pros = 3;
+    optional int32 prosMax = 4;
+    optional int32 lv = 5;
+    optional string party = 6;
+    optional bool free = 7;             // 是否有罩子
+    optional int32 surface = 8;         // 基地外观 1-7，表示默认外观以外的外观
+    optional Ruins ruins = 9;           // 是否废墟信息
+    optional int32 heroPick = 10;       // 如果是叛军，叛军的heroPick
+    optional int32 nameplate = 11;      // 当前铭牌
+	optional int32 rebelGift = 12;      // 叛军礼盒可领取个数， <=0 表示不是礼盒
+}
+
+//世界地图矿点品质
+message WorldMineInfo{
+    repeated Mine mine = 1;
+}
+
+message PartyMine {
+    optional string name = 1;
+    optional int32 pos = 2;
+}
+//资源免战时间
+message WorldFreeTimeInfo {
+    optional int32 time = 1;
+    optional int32 pos = 2;
+	optional bool my = 3;
+}
+
+message TaskDayiy {
+    required int32 dayiy = 1;                   //日常任务第几环
+    required int32 dayiyCount = 2;              //已购买几次日常任务
+}
+
+message TaskLive {
+    required int32 live = 1;                    //日常总活跃
+    required int32 liveAward = 2;
+    repeated TwoInt liveAwardMap = 3;               //活跃已领奖
+
+}
+
+message Task {
+    required int32 taskId = 1;              //任务编号
+    required int64 schedule = 2;                //进度值
+    optional int32 status = 3;              //0不可领 1可领奖 -1已领
+    optional int32 accept = 4;              //仅在每日活跃任务时有 0未 1已接受
+}
+
+message Trend {
+    required int32 trendId = 1;                 //军情/民情ID
+    repeated TrendParam trendParam = 2;                     //军情参数
+    required int32 trendTime = 3;                   //军情发生时间
+}
+
+message TrendParam {
+    optional string content = 1;                //内容(道具名称或者其他名称)
+    optional Man man = 2;                       //玩家信息（点击玩家可查看玩家详细信息）
+}
+
+message DbTrend {
+    required int32 trendId = 1;                 //军情/民情ID
+    repeated string param = 2;                  //军情参数
+    optional int32 trendTime = 3;               //军情发生时间
+}
+
+message PartyCombat {
+    required int32 combatId = 1;                //副本ID
+    optional int32 schedule = 2;                //百分比
+    optional Form form = 3;                     //关卡坦克阵型
+}
+
+message PartySection {
+    required int32 sectionId = 1;           //关卡
+    required int32 combatLive = 2;          //已击杀据点
+    optional int32 status = 3;              //可领奖励数
+}
+
+message Invasion {
+    required int64 lordId = 1;
+    required int32 keyId = 2;
+    required int32 portrait = 3;
+    required int32 state = 4;
+    required string name = 5;
+    required int32 lv = 6;
+    required int32 endTime = 7;
+    // required int32 target = 8;
+}
+
+message Aid {
+    required int64 lordId = 1;
+    required int32 keyId = 2;
+    required int32 portrait = 3;
+    required string name = 4;
+    required int32 lv = 5;
+    required int32 state = 6;
+    optional Form form = 7;
+    required int64 fight = 8;
+    required int64 load = 9;
+}
+
+message ArmyStatu {
+    required int64 lordId = 1;
+    required int32 keyId = 2;
+    required int32 state = 3;           //1.到达 2.离开 3.消失 4.变化
+}
+
+message Chat {
+    required int32 time = 1;
+    required int32 channel = 2;
+    optional string name = 3;
+    optional int32 portrait = 4;
+    optional int32 vip = 5;
+    optional string msg = 6;
+    optional int32 id = 7;                  //分享报告时的moldId
+    repeated string param = 8;
+    optional int32 report = 9;
+    optional int32 style = 10;              //使用喇叭，滚屏显示
+    optional TankData tankData = 11;
+    optional int32 sysId = 12;              //消息模板ID
+    optional int32 heroId = 13;             //分享武将的id
+    optional bool isGm = 14;                //是否gm
+    optional bool isGuider = 15;            //是否引导员
+    optional int32 staffing = 16;
+    optional int32 fortressJobId = 17;      //要塞战jobId
+    optional MedalData medalData = 18;      //勋章
+    optional AwakenHero awakenHero = 19;    //觉醒将领
+    optional int32 militaryRank = 20;       //军衔等级
+    optional int32 bubble = 21;             //当前聊天气泡
+	optional int32 teamId = 22;				//队伍ID
+	optional int32 uid = 23;				//叛军红包ID
+	optional crossChatPlayerInfo crossPlayInfo=24;  // 跨服聊天
+	optional int64 roleId=25;	//玩家id
+}
+
+//跨服聊天基础信息
+message crossChatPlayerInfo{
+	optional string serverName=1; //玩家服务器 名称
+    optional int64 fight=2;  //玩家战力
+    optional string partyName=3;  //玩家军团名称
+	optional int32 level=4; //玩家等级
+}
+
+message Extreme {
+    optional string name = 1;
+    optional int32 lv = 2;
+    optional int32 time = 3;
+}
+
+message AtkExtreme {
+    optional Extreme attacker = 2;
+    optional Record record = 3;
+}
+
+message PartyLive {
+    required int64 lordId = 1;              //角色ID
+    required int32 icon = 2;                //头像
+    required int32 sex = 3;                 //性别
+    required string nick = 4;               //昵称
+    required int32 job = 5;                 //职务
+    required int32 level = 6;               //等级
+    required int64 live = 7;                //日活跃
+}
+
+message RankData {
+    optional string name = 1;
+    optional int32 lv = 2;
+    optional int64 value = 3;
+	optional int64 value2 = 4;
+}
+
+message TankData {
+    optional int32 tankId = 1;
+    optional int32 attack = 2;
+    optional int32 hp = 3;
+    optional int32 payload = 4;             //载重
+
+    optional int32 hit = 5;                 //命中
+    optional int32 dodge = 6;               //闪避
+    optional int32 crit = 7;                //暴击
+    optional int32 critDef = 8;             //抗暴
+    optional int32 impale = 9;              //穿刺
+    optional int32 defend = 10;             //防护
+    optional int32 tenacity = 11;           //坚韧
+    optional int32 burst = 12;              //爆裂
+    optional int32 frighten = 13;           //震慑
+    optional int32 fortitude = 14;          //刚毅
+}
+
+message Activity {
+    required int32 activityId = 1;          //活动ID
+    required string name = 2;               //活动名称
+    required int32 beginTime = 3;           //活动开启时间
+    required int32 endTime = 4;             //活动结束时间
+    optional int32 displayTime =5;          //显示关闭时间
+    optional bool open = 6;                 //值为true可领奖 false不可领奖
+    optional int32 tips = 7;                //可领取奖励个数
+    optional int32 type = 8;                //活动类型
+    optional int32 awardId = 9;             //奖励id
+    optional int32 minLv = 10;              //参与活动最小等级限制
+}
+
+message ActivityCond {
+    required int32 keyId = 1;               //奖励索引（值可相同）
+    optional int32 cond = 2;                //活动领奖条件
+    optional int32 status = 3;              //0未领 1已领
+    repeated Award award = 4;               //奖励
+    optional string param = 5;              //附加参数
+}
+
+message CondState {
+    optional int32 state =1;                //玩家的状态
+    repeated ActivityCond activityCond = 2; //奖励条件
+}
+
+message DbActivity {
+    required int32 activityId = 1;                      //活动ID
+    repeated int64 status = 2;                      //玩家记录状况
+    repeated TwoInt towInt = 3;         //领取状态
+    optional int32 beginTime = 4;                       //开启时间
+    optional int32 open = 5;                            //可领取状态
+    optional int32 endTime = 6;                         //结束时间
+    repeated TwoInt prop = 7;           //活动道具
+    repeated TwoInt save = 8;           //日重置 不重置集合
+
+}
+
+message Mecha {
+    required int32 mechaId = 1;                     //机甲ID
+    required int32 tankId=2;                        //可合成坦克
+    required int32 cost = 3;                        //消耗钻石
+    required int32 count = 4;                       //抽取次数
+    required int32 crit = 5;                        //下一次的暴击倍数
+    required int32 part = 6;                        //碎片数量
+    optional int32 free = 7;                    //免费次数
+}
+
+message Quota {
+    required int32 quotaId = 1;                     //限价ID
+    required int32 display=2;                       //展示原价
+    required int32 price = 3;                       //购买价格
+    required int32 count = 4;                       //限制次数
+    repeated Award award = 5;                       //购买内容
+    required int32 buy = 6;                         //已购买次数
+}
+
+message ActPlayerRank {
+    required int64 lordId = 1;                      //玩家ID
+    optional int32 rank = 2;                        //排名
+    optional int32 rankType = 3;                    //排行榜类型
+    optional int64 rankValue = 4;                   //排行榜所得值
+    optional string param = 5;                      //补充参数
+    optional string nick = 6;                       //昵称
+    optional int64 rankTime = 7;                    //上榜时间
+}
+
+message ActPartyRank {
+    optional int32 partyId = 1;                     //军团ID
+    optional int32 rankType = 2;                    //排行榜类型
+    optional int64 rankValue = 3;                   //排行榜所得值
+    optional string param = 4;                      //补充参数
+    repeated int64 lordId = 5;                      //玩家iD
+    optional string partyName = 6;                  //玩家昵称
+    optional int64 fight = 7;                       //战斗力
+    optional int32 rank = 8;                        //排名
+    optional int64 rankTime = 9;                    //上榜时间
+}
+
+message PartyLvRank {
+    required int32 rank = 1;                //排名
+    required int32 partyId = 2;             //军团ID
+    optional string partyName = 3;          //军团名称
+    optional int32 partyLv = 4;             //军团大厅等级
+    optional int32 scienceLv = 5;           //军团科技等级
+    optional int32 wealLv = 6;              //军团福利院等级
+    optional int32 build = 7;               //建设度
+}
+
+message AmyRebate {
+    required int32 rebateId = 1;            //返利ID
+    required int32 status = 2;              //可领奖次数 （0不可领奖）
+}
+
+message Fortune {
+    required int32 fortuneId = 1;           //转盘ID
+    required int32 cost = 2;                //消费金币
+    required int32 count = 3;               //抽奖次数
+    required int32 score = 4;               //获得积分
+}
+
+message RankAward {
+    required int32 rank = 1;                //排名起点(大于等于)
+    required int32 rankEd = 2;              //排名结束点(小于等于)
+    optional int32 rankType = 3;                    //排行榜类型
+    repeated Award award = 4;               //奖励
+}
+
+
+message BeeRank {
+    optional int32 status = 1;          //领取状态 0未领 1已领
+    required int32 resourceId = 2;          //资源ID： 1.铁 2.石油 3.铜 4.硅 5.宝石
+    required int64 state = 3;               //我的采集量
+    repeated ActPlayerRank actPlayerRank = 4;   //排行榜
+}
+
+message MemberReg {                        //军团成员报名数据
+    optional int32 time = 1;
+    optional string name = 2;
+    optional int32 lv = 3;
+    optional int64 fight = 4;
+}
+
+message PartyReg {                        //军团报名数据
+    optional int32 lv = 1;
+    optional string name = 2;
+    optional int32 count = 3;
+    optional int64 fight = 4;
+}
+
+message WarRecord {                     //百团混战战况
+    optional string partyName1 = 1;     //进攻方军团名字
+    optional string name1 = 2;          //进攻方玩家名字
+    optional int32 hp1 = 3;
+    optional string partyName2 = 4;     //防守方军团名字
+    optional string name2 = 5;          //防守方玩家名字
+    optional int32 hp2 = 6;
+    optional int32 result = 7;          //胜负 0.失败 1.胜利 2.2连胜 3.3连胜。。。
+    optional int32 rank = 8;            //最终名次
+    optional int32 time = 9;
+    optional int32 lv1 = 10;             //进攻方等级1
+    optional int32 lv2 = 11;             //防守方等级2
+}
+
+message WarRecordPerson {               //百团混战战况
+    optional WarRecord record = 1;
+    optional RptAtkWar rpt = 2;
+}
+
+
+message Profoto {
+    required int32 propId = 1;          //宝图,信物，碎片ID（s_propId）
+    required int32 count = 2;           //数量
+}
+
+
+message WarRank {                        //百团混战军团排名
+    optional int32 rank = 1;
+    optional string partyName = 2;
+    optional int32 count = 3;
+    optional int64 fight = 4;
+}
+
+message WarWinRank {                        //百团混战连胜排名
+    optional int32 rank = 1;
+    optional string name = 2;
+    optional int32 winCount = 3;
+    optional int64 fight = 4;
+}
+
+message Tech {
+    required int32 techId = 1;                  //技术ID
+    required int32 type = 2;                    //1兑换 2研究
+    optional int32 usePropId = 3;               //消耗道具ID
+    optional int32 usePropcount = 4;            //消耗数量
+    optional int32 propId = 5;                  //道具ID(0表示随机道具)
+    optional int32 count = 6;                   //数量
+}
+
+message General {
+    required int32 generanlId = 1;              //招募ID
+    required int32 heroId = 2;                  //热门武将ID
+    optional int32 count = 3;                   //招募次数
+    optional int32 price = 4;                   //价格
+    optional int32 point = 5;                   //积分
+}
+
+message QuotaVip {
+    required int32 vip = 1;                     //需要vip等级
+    optional Quota quota = 2;                   //出售物品
+}
+
+message HurtRank {                              //世界boss、祭坛BOSS伤害排名
+    optional int32 rank = 1;
+    optional string name = 2;
+    optional int64 hurt = 4;
+}
+
+message Village {
+    optional int32 villageId = 1;               //度假村ID
+    optional int32 topup = 2;                   //需要充值金币
+    optional int32 price = 3;                   //金币价格
+}
+
+message VillageAward {
+    optional int32 landId = 1;                  //唯一键
+    optional int32 villageId = 2;               //度假村ID
+    optional int32 onday = 3;                   //需要登录天数才可领取
+    optional int32 state = 4;                   //玩家状态 0未登陆 1已登陆
+    optional int32 status = 5;                  //0未领 1已领
+    repeated Award award = 6;
+
+}
+
+message Atom {
+    optional int32 grid = 1;                //格子
+    optional int32 type = 2;                //类型
+    optional int32 id = 3;                  //ID
+    optional int32 count = 4;               //数量
+}
+
+
+message Cash{
+    optional int32 cashId = 1;              //兑换唯一标识
+    optional int32 formulaId = 2;           //配方ID
+    optional int32 state = 3;               //可兑换总次数
+    optional int32 free = 4;                //剩余免费次数
+    optional int32 price = 5;               //刷新价格
+    repeated Atom atom = 6;                 //兑换公式所需材料/金币
+    optional Award award = 7;               //兑换公式得到奖励物品
+    optional int32 refreshDate = 8;         //刷新日期
+}
+
+message PartResolve{
+    optional int32 resolveId = 1;           //唯一标识
+    optional int32 propId = 2;          //道具:芯片ID
+    optional int32 count = 3;           //道具:芯片数量
+    optional Award award = 4;           //奖励
+}
+message TopupGamble{
+    optional int32 gambleId = 1;        //唯一标识
+    optional int32 topup = 2;           //充值多少可下注
+    optional int32 price = 3;           //下注金币
+    repeated Award award  = 4;          //档位奖励
+}
+
+message SeniorMapData {
+    optional int32 pos = 1;
+    optional string name = 2;
+    optional bool party = 3;
+    optional int32 freeTime = 4;        //若存在该字段，表示保护结束时间
+    optional bool my = 5;
+}
+
+message SeniorScore {
+    optional int64 lordId = 1;
+    optional int64 fight = 2;
+    optional int32 score = 3;
+    optional bool get = 4;      //是否领取了个人积分排名奖励
+}
+
+message SeniorPartyScore {
+    optional int32 partyId = 1;
+    optional int64 fight = 2;
+    optional int32 score = 3;
+}
+
+message ScoreRank {
+    optional string name = 1;
+    optional int64 fight = 2;
+    optional int32 score = 3;
+}
+
+message Pray {
+    optional int32 prayId = 1;          //唯一ID 1-6号位置
+    optional int32 card = 2;            //使用的祈福卡（0未祈福）
+    optional int64 prayTime = 3;        //剩余时间
+}
+
+message PrayCard {
+    optional int32 prayCardId = 1;      //唯一ID
+    optional int32 propId = 2;          //道具ID
+    optional int32 count = 3;           //数量
+}
+
+message TwoValue {
+    required int32 v1 = 1;
+    required int64 v2 = 2;
+}
+
+message MilitaryScience{
+    optional int32 militaryScienceId = 1;
+    optional int32 level = 2;
+    optional int32 fitTankId = 3;
+    optional int32 fitPos = 4;
+}
+
+message TankFormula {
+    optional int32 tankFormulaId = 1;   //公式ID
+    optional int32 tankId = 2;          //生产坦克ID
+    optional Grab grab = 3;             //所需资源
+    optional Tank tank = 4;             //所需坦克
+    repeated Prop prop = 5;             //所需道具
+}
+
+message TankExtract {
+    optional int32 extractId = 1;                   //M1A2的ID
+    optional int32 price=2;                         //普通单价
+    optional int32 tenPrice = 3;                    //普通10连单价
+    optional int32 highPrice = 4;                   //单价
+    optional int32 highTenPrice = 5;                //10连单价
+    optional int32 commonTankId = 6;                //普通坦克ID
+    optional int32 seniorTankId = 7;                //高级坦克ID
+
+}
+
+message MilitaryScienceGrid{
+    optional int32 tankId = 1; //tankId
+    optional int32 pos = 2;// 位置 ，从1开始
+    optional int32 status = 3;//格子状态:0已解锁1未解锁2未开放3效率',
+    optional int32 militaryScienceId = 4;// 当装载后科技后有效,默认为0
+}
+
+message MilitaryMaterial{
+    optional int32 id = 1;
+    optional int64 count = 2;
+}
+
+message Equate{
+    optional int32 equateId = 1;        //等同ID
+    repeated Atom atom = 2;             //数据列表
+    repeated Award award = 3;           //奖励
+}
+
+message Atom2{
+    optional int32 kind = 1;
+    optional int32 id = 2;
+    optional int64 count = 3;
+}
+
+message Pendant{
+    optional int32 pendantId = 1;   //挂件
+    optional int32 endTime = 2;     //到期时间
+    optional bool foreverHold = 3;  //是否永久获取
+}
+
+message Portrait{
+    optional int32 id = 1;          //id
+    optional int32 endTime = 2;     //到期时间
+    optional bool foreverHold = 3;  //是否永久获取
+}
+
+message FortressBattleParty{
+    required int32 rank = 1;                //排名
+    required int32 partyId = 2;             //军团ID
+    required string partyName = 3;          //军团名称
+}
+
+message FortressSelf{
+    required int32 nowNum = 1;   //当前防守NPC个数
+    required int32 totalNum = 2; //总耐久度
+}
+
+message FortressDefend{
+    required int64 lordId = 1;
+    required string nick = 2;
+    required int32 level = 3;
+    required int64 fight = 4;
+}
+
+message WarRankInfo{
+    required int32 dateTime = 1;
+    required int32 rankId = 2;
+    required int32 partyId = 3;
+    optional string partyName = 4;
+}
+
+message FortressRecord{                 //要塞战record
+    required int32 reportKey = 1;
+    optional string partyName1 = 2;     //进攻方军团名字
+    optional string name1 = 3;          //进攻方玩家名字
+    optional int32 hp1 = 4;
+    optional string partyName2 = 5;     //防守方军团名字
+    optional string name2 = 6;          //防守方玩家名字
+    optional int32 hp2 = 7;
+    optional int32 result = 8;          //胜负 0.失败 1.胜利
+    optional int32 time = 9;
+    optional bool isNPC = 10;           // 是否是NPC(影响partyName2)
+}
+
+message RptAtkFortress{                 //要塞战战报
+    required int32 reportKey = 1;
+    required bool result = 2;
+    required bool first = 3;
+    required RptMan attacker = 4;
+    optional RptMan defencer = 5;
+    optional Record record = 6;
+}
+
+message FortressPartyRank{
+    required int32 rank = 1;
+    required string partyName = 2;
+    required int32 fightNum = 3;
+    required int32 jifen = 4;
+    required bool isAttack = 5;
+}
+
+message FortressJiFenRank{
+    required int32 rank = 1;
+    required string nick = 2;
+    required int32 fightNum = 3;
+    required int32 jifen = 4;
+}
+
+message MyFortressAttr{
+    required int32 id = 1;
+    required int32 level = 2;
+}
+
+message FightValueAdd{
+    optional bool isReceived = 1;// 是否领取
+    optional int32 receiveTime = 2;
+    optional int32 recvTimes = 3;    // 领取次数
+}
+
+message NobilityAncestry{
+    optional int32 ancestryId = 1;      // 血统ID
+    optional bool status = 2;           //是否领取
+    optional int32 receiveTime = 3;     //血统领时间
+}
+
+
+message SufferTank{
+    required int32 tankId = 1;
+    required int32 sufferCount = 2;
+}
+
+message MyCD{
+    required int32 beginTime = 1;
+    required int32 endTime = 2;
+}
+
+message FortressJob{
+    required int32 jobId = 1;   //职位id
+    required int32 index = 2;   //职位索引(1,2,3)
+    required int64 lordId = 3;
+    required string nick = 4;
+    required int32 appointTime = 5;
+    required int32 endTime = 6;
+}
+
+message MyFortressFightData{
+    required int64 lordId = 1;
+    repeated SufferTank sufferTankMap = 2;
+    repeated SufferTank destoryTankMap = 3;
+    required MyCD myCD = 4;
+    required int32 jifen = 5;
+    required int32 fightNum = 6;
+    required int32 winNum = 7;
+    repeated int32 myReportKeys = 8;
+    repeated MyFortressAttr myFortressAttr = 9;
+    required int32 sufferTankCountForevel = 10;
+    optional int32 mplt = 11;//本次要塞战获得军功
+}
+
+message MyPartyStatistics{
+    required int32 partyId = 1;
+    required int32 fightNum = 2;
+    required int32 jifen = 3;
+    required int32 winNum = 4;
+    required bool isAttack = 5;
+    repeated SufferTank destoryTankMap = 6;
+}
+
+message FortressJobAppoint{
+    required int32 jobId = 1;
+    required int64 lordId = 2;
+    required int32 appointTime = 3;
+    required int32 endTime = 4;
+    required int32 index = 5;
+    required string nick = 6;
+}
+
+message EnergyStoneInlay{
+    required int32 hole = 1;        // 镶嵌孔id,从1开始
+    required int32 stoneId = 2;     // 能晶id
+    required int32 pos = 3;         // 出战部位 1.阵型第一格 2.阵型第二格 ...
+}
+
+message TreasureShopBuy{
+    required int32 treasureId = 1;  // 本星期已经购买过的商品id，没有购买过的商品不返回购买次数
+    required int32 buyNum = 2;      // 已购买次数
+    required int32 buyWeek = 3;     // 最后一次购买该物品的是开服第几周
+}
+
+message ShopBuy{
+    required int32 gid = 1;             //商品ID
+    required int32 buyCount = 2;        //购买次数
+}
+
+message Shop{
+    optional int32 sty = 1;             //商店类型, 101:VIP商城,201世界商城
+    optional int32 refreashTime = 2;    //商品刷新时间
+    repeated ShopBuy buy = 3;           //商品购买信息
+}
+
+message DrillFightData {
+    required int64 lordId = 1;          //
+    required int32 lastEnrollDate = 2;  // 玩家最后一次报名红蓝大战的日期，格式:20160809
+    required int32 successNum = 3;      // 胜利次数
+    required int32 failNum = 4;         // 失败次数
+    required int32 exploit = 5;         // 玩家在最近一次红蓝大战活动中获得的总功勋值
+    required bool isRed = 6;            // 玩家的阵营，true为红方，否则为蓝方
+    required bool campRewad = 7;        // 是否已领取本次的阵营奖励
+    repeated int32 firstRecordKey = 8;  // 上路战报key记录
+    repeated int32 secondRecordKey = 9; // 中路战报key记录
+    repeated int32 thirdRecordKey = 10; // 下路战报key记录
+}
+
+message DrillResult {
+    required int32 redRest = 1;         // 红方部队剩余数量
+    required int32 redTotal = 2;        // 红方部队总数
+    required int32 blueRest = 3;        // 蓝方部队剩余数量
+    required int32 blueTotal = 4;       // 蓝方部队总数
+    optional bool redWin = 5;           // 胜利方是否是红方
+}
+
+message DrillRecord {                   // 军事演习（红蓝大战）战况
+    required int32 reportKey = 1;
+    optional string attacker = 2;       // 进攻方玩家名字
+    optional int32 attackNum = 3;       // 进攻方玩家的坦克数量百分比，1~100
+    optional bool attackCamp = 4;       // 进攻方玩家阵营，是否属于红方，是则为true，否则为false
+    optional string defender = 5;       // 防守方玩家名字
+    optional int32 defendNum = 6;       // 防守方玩家的坦克数量百分比，1~100
+    optional bool defendCamp = 7;       // 防守方玩家阵营，是否属于红方，是则为true，否则为false
+    optional bool result = 8;           // 进攻方是否胜利，true表示胜利
+    optional int32 time = 9;            // 时间
+}
+
+message DrillRank {                     // 军事演习排行
+    required int32 rank = 1;            // 排名
+    required int64 lordId = 2;          // lordId
+    required string name = 3;           // 玩家名称
+    required int64 fightNum = 4;        // 玩家战力
+    required int32 successNum = 5;      // 玩家胜利次数
+    required int32 failNum = 6;         // 玩家失败次数
+    required bool camp = 7;             // 玩家所属阵营，true为红方
+    required bool isReward = 8;         // 是否已经领取奖励
+}
+
+message DrillShopBuy {
+    required int32 shopId = 1;          // 商品id
+    optional int32 buyNum = 2;          // 玩家已购买次数
+    optional int32 restNum = 3;         // 全服限购商品的剩余数量
+}
+
+message DrillImproveInfo {
+    required int32 buffId = 1;          // buffId
+    required int32 buffLv = 2;          // buff当前等级
+    required int32 exper = 3;           // 本级buff当前的经验值
+    required int32 ratio = 4;           // 红方等级/（红方+蓝方等级）的百分比
+}
+
+message PushComment{
+    optional int32 state = 1; // 推送状态: 0未推送 1推送
+    optional int32 lastCommentTime = 2; // 最后一次提交推送的时间
+    optional int32 shouldPushTime = 3;  // 应该推送的时间
+}
+
+message GameServerInfo{
+    required int32 serverId = 1;
+    required string serverName = 2;
+}
+
+message CrossSysChatInfo{
+    optional int32 dayNum = 1;
+    optional string dayTime = 2;
+}
+
+message Athlete{
+    required int32 serverId = 1;
+    required int64 roleId = 2;
+    required string nick = 3;
+    required int32 groupId = 4;
+    required int64 fight = 5;
+    optional int32 winNum = 6;
+    optional int32 failNum = 7;
+    repeated int32 myReportKeys = 8;
+    repeated Form form = 9;
+    repeated Equip equip = 10;
+    repeated Part part = 11;
+    repeated Science science = 12;
+    repeated Skill skill = 13;
+    repeated Effect effect = 14;
+    required int32 staffingId = 15;
+    repeated EnergyStoneInlay inlay = 16;
+    repeated MilitaryScienceGrid militaryScienceGrid = 17;
+    repeated MilitaryScience militaryScience  = 18;
+    optional int32 portrait = 19;
+    optional string partyName = 20;
+    optional int32 level = 21;
+    repeated Medal medal = 22;
+    repeated MedalBouns medalBouns = 23;            // 勋章展厅
+    repeated AwakenHero awakenHero = 24;            // 觉醒英雄
+    repeated LordEquip leq = 25;                    // 军备信息
+    optional int32 militaryRank = 26;               // 军衔等级
+    repeated SecretWeapon secretWeapon = 27;        // 秘密武器
+    repeated AttackEffectPb atkEft = 28;            // 攻击特效
+    repeated GraduateInfoPb graduateInfo = 29;      // 作战实验室
+	repeated int64 historyRoleId = 30;//积分赛挑战过的玩家
+	repeated Science partyScience = 31;//军团科技列表
+	optional ThreeInt energyCore=32;//能源核心
+}
+
+message JiFenPlayer{
+    required int32 serverId = 1;
+    required int64 roleId = 2;
+    required string nick = 3;
+    required int32 jifen = 4;
+    required int32 exchangeJifen = 5;
+    repeated MyBet mybet = 6;
+    repeated CrossTrend crossTrends = 7;           // 跨服战积分详情
+    repeated CrossShopBuy CrossShopBuy = 8;         // 商店购买记录
+    optional int32 lastUpdateCrossShopDate =9;      // 最后一次更新跨服商店购买记录的日期
+}
+
+message Rebel {
+    required int32 rebelId = 1;         // 叛军id
+    required int32 rebelLv = 2;         // 叛军的等级
+    required int32 heroPick = 3;        // 对应s_rebel_hero_push表中的heroPick字段
+    required int32 state = 4;           // 叛军状态，0 已击杀，1 未击杀，2 已逃跑
+    required int32 type = 5;            // 叛军类型，1 分队，2 卫队，3 领袖
+    optional int32 pos = 6;             // 坐标
+}
+
+message RebelRank {
+    required int32 rank = 1;            // 排行
+    required int64 lordId = 2;          // lordId
+    required string name = 3;           // 玩家名称
+    required int32 killUnit = 4;        // 玩家击杀分队数量
+    required int32 killGuard = 5;       // 玩家击杀卫队数量
+    required int32 killLeader = 6;      // 玩家击杀领袖数量
+    required int32 score = 7;           // 玩家的积分
+}
+
+message RoleRebelData {
+    required int64 lordId = 1;          // lordId
+    required string name = 2;           // 玩家名称
+    required int32 lastUpdateWeek = 3;  // 玩家最后一次参加叛军活动是开服第几周
+    required int32 lastUpdateTime = 4;  // 玩家最后一次参加叛军活动的活动开启时间
+    required int32 killNum = 5;         // 今日击杀数
+    required int32 killUnit = 6;        // 本周玩家击杀分队数量
+    required int32 killGuard = 7;       // 本周玩家击杀卫队数量
+    required int32 killLeader = 8;      // 本周玩家击杀领袖数量
+    required int32 score = 9;           // 本周玩家获得的积分
+    required int32 totalUnit = 10;      // 玩家击杀分队叛军总数
+    required int32 totalGuard = 11;     // 玩家击杀卫队叛军总数
+    required int32 totalLeader = 12;    // 玩家击杀领袖叛军总数
+    required int32 totalScore = 13;     // 玩家总积分
+    required int32 weekRankTime = 14;   // 玩家进入周排行榜的时间
+    required int32 totalRankTime = 15;  // 玩家进入总排行榜的时间
+}
+
+message CrossRecord{                 //跨服战record
+    required int32 reportKey = 1;
+    optional string serverName1 = 2;     //进攻方区服名字
+    optional string name1 = 3;          //进攻方玩家名字
+    optional int32 hp1 = 4;
+    optional string serverName2 = 5;     //防守方区服名字
+    optional string name2 = 6;          //防守方玩家名字
+    optional int32 hp2 = 7;
+    optional int32 result = 8;          //胜负 -1都失败 0.失败 1.胜利
+    optional int32 time = 9;
+    optional int32 detail = 10;      //详情: 1战斗,2进攻方未设置阵型,3防守方未设置阵型，4防守方不存在,5双方未设置,6进攻方不存在
+}
+
+message CrossRptAtk{                 //跨服战战报
+    required int32 reportKey = 1;
+    required int32 result = 2;      //胜负 -1都失败 0.失败 1.胜利
+    required int32 detail = 3;      //详情: 1战斗,2进攻方未设置阵型,3防守方未设置阵型，4防守方不存在,5双方未设置,6进攻方不存在
+    required bool first = 4;
+    optional CrossRptMan attacker = 5;
+    optional CrossRptMan defencer = 6;
+    optional Record record = 7;
+}
+
+message CrossJiFenRank{
+    required int32 rank = 1;        // 排名
+    required string serverName = 2; // 区名字
+    required string name = 3;
+    required int32 winNum = 4;      // 胜利次数
+    required int32 failNum =  5;    // 失败次数
+    required int32 jifen = 6;       // 积分
+    optional int32 myGroup = 7;     // 0没有参加 1精英组 2巅峰组
+}
+
+message CompteRound{
+    required int32 roundNum = 1;    // 第几场: 1,2,3
+    required int32 win = 2; //  -1.未战斗 0.失败 1.胜利
+    required int32 reportKey = 3; // 战报key  默认0
+    optional int32 detail = 4;  //详情: 1战斗,2进攻方未设置阵型,3防守方未设置阵型，4防守方不存在,5双方未设置,6进攻方不存在
+}
+
+message ComptePojo{
+    required int32 pos = 1;     // 1 和 2
+    required int32 serverId = 2;
+    required int64 roleId = 3;
+    required string nick = 4;
+    required int32 bet = 5;     // 被下注总金额
+    required int32 myBetNum = 6;   // 我的下注次数，默认是0次
+    optional string serverName = 7;
+    optional int64 fight = 8;
+    optional int32 portrait = 9;// 头像
+    optional string partyName = 10;// 军团名
+    optional int32 level = 11;// 等级
+}
+
+message KnockoutCompetGroup{
+    required int32 competGroupId = 1;   //1-8组     9-12组    13-14组    15组
+    optional ComptePojo c1 = 2;
+    optional ComptePojo c2 = 3;
+    optional int32 win = 4; // -1.未战斗 0.失败 1.胜利,2平局
+    repeated CompteRound compteRound = 5;
+}
+
+message KnockoutBattleGroup{
+    required int32 groupType = 1;   // 1A   2B  3C  4D
+    repeated KnockoutCompetGroup competGroup = 2;
+}
+
+message FinalCompetGroup{
+    required int32 competGroupId = 1;   //1-2组    3组(冠亚军) 4组(季殿军)
+    optional ComptePojo c1 = 2;
+    optional ComptePojo c2 = 3;
+    optional int32 win = 4; // -1.未战斗 0.失败 1.胜利，2平局
+    repeated CompteRound compteRound = 5;
+}
+
+message MyBet{
+    required int32 myGroup = 1; // 1精英组 2巅峰组
+    required int32 stage = 2;   // 1淘汰赛,2总决赛
+    required int32 groupType = 3; // 淘汰赛有分组,1A 2B 3C 4D  总决赛0
+    required int32 competGroupId = 4;//淘汰赛(1-15组) 总决赛(1-4组)
+    required ComptePojo c1 = 5;
+    required ComptePojo c2 = 6;
+    required int32 win = 7; // -1.未战斗 0.失败 1.胜利 默认-2
+    repeated CompteRound compteRound = 8;
+    required int32 betState = 9;// 1已经领取,2点击领取，3 还未结束（默认值）
+    optional int64 betTime = 10;    // 下注时间(秒)
+}
+
+message CrossTrend {
+    required int32 trendId = 1;                 //详情id
+    repeated string trendParam = 2;                     //军情参数
+    required int32 trendTime = 3;                   //军情发生时间
+}
+
+message CrossShopBuy {
+    required int32 shopId = 1;          // 商品id
+    optional int32 buyNum = 2;          // 玩家已购买次数
+    optional int32 restNum = 3;         // 全服限购商品的剩余数量
+}
+
+message CrossTopRank{
+    required int32 rank = 1;        // 排名
+    required string serverName = 2; // 区名字
+    required string name = 3;       // 玩家角色名
+    required int64 fight = 4;       // 战力
+    required int64 roleId = 5;      // roleId
+}
+
+message FamePojo{
+    required int32 id = 1;  // 1冠军 2亚军 3季军  4殿军  5 人气王
+    required string name = 2;
+    required int32 serverId = 3;
+    required string serverName = 4;
+    required int32 level = 5;
+    required int64 fight = 6;
+    required int32 portrait = 7;
+}
+
+message FameBattleReview{
+    required int32 pos = 1; // 1-8  9-12 13-14 15 顺序排列
+    required string name = 2;
+    required int32 serverId = 3;
+    required string serverName = 4;
+    required int32 level = 5;
+    required int64 fight = 6;
+    required int32 portrait = 7;
+}
+
+message CrossFame{
+    required int32 groupId = 1; // 1精英组 2巅峰组
+    repeated FamePojo famePojo = 2; // 名人
+    repeated FameBattleReview fameBattleReview= 3;  // 战局回顾
+}
+
+message CrossFameInfo{
+    required string beginTime = 1;
+    required string endTime = 2;
+    repeated CrossFame crossFame = 3;
+    optional int32 keyId = 4;
+}
+
+message CPFame{
+    required int32 type = 1;    // 1冠2亚3季军团   4个人积分第一玩家  5连胜第一名玩家
+    required string serverName = 2;
+    required string name = 3;
+    optional int32 portrait = 4;
+}
+
+message CPFameInfo{
+    required string beginTime = 1;
+    required string endTime = 2;
+    repeated CPFame cpFame = 3;
+    optional int32 keyId = 4;
+}
+
+message CDFame {
+    required string championServer = 1;     // 冠军服务器
+    required string secondServer = 2;       // 亚军服务器
+    required string thirdServer = 3;        // 季军服务器
+    required string hotServer = 4;          // 人气服务器
+    required FamePojo heroChampion = 5;     // 军演英雄，英雄榜第一名
+}
+
+message CDFameInfo { // 跨服军演名人堂信息
+    required int32 keyId = 1;
+    required string beginTime = 2;
+    required string endTime = 3;
+    required CDFame cdFame = 4;
+}
+
+message TankCarnivalReward {        // 坦克嘉年华活动，某条线的全部奖励
+    required int32 lineNum = 1;     // 1~8
+    repeated Award awards = 2;
+}
+
+message PartSmeltRecord {                   //配件淬炼记录
+    repeated PartSmeltAttr  attrs       = 1;//属性数组
+    required bool           save        = 2;//是否保存
+    optional Kv             crit        = 3;//暴击信息, KEY:暴击倍数, VALUE:暴击经验
+}
+
+message PartSmeltAttr {              //配件淬炼属性
+    required int32 id          = 1;       //属性id
+    required int32 val         = 2;       //属性值
+    optional int32 newVal      = 3;       //新值
+}
+
+message CPMemberReg {                        //跨服军团成员报名数据
+    required int32 time = 1;
+    required string name = 2;
+    required int32 lv = 3;
+    required int64 fight = 4;
+    required int32 partyId = 5;
+    required string partyName = 6;
+}
+
+message CPPartyInfo{
+    required int32 partyLv = 1;     // 军团等级
+    required int32 partyId = 2;     // 军团id
+    required string partyName = 3;  // 军团名字
+    required int32 memberNum = 4;   // 军团人数
+    required int64 totalFight = 5;  //  战力
+    optional string serverName = 6; // 区服名字
+}
+
+message CPRecord {                         //跨服混战战况
+    optional int32 reportKey = 1;
+    optional string partyName1 = 2;     //进攻方军团名字
+    optional string name1 = 3;          //进攻方玩家名字
+    optional string serverName1 = 4;    //进攻方服务器名字
+    optional int32 hp1 = 5;
+    optional string partyName2 = 6;     //防守方军团名字
+    optional string name2 = 7;          //防守方玩家名字
+    optional string serverName2 = 8;    //防守方服务器名字
+    optional int32 hp2 = 9;
+    optional int32 result = 10;          //胜负 0.失败 1.胜利 2.2连胜 3.3连胜。。。
+    optional int32 rank = 11;            //最终名次
+    optional int32 time = 12;
+    optional int32 group = 13;           // 1A 2B 3C 4D 5E
+    optional bool isMy = 14;             // 是否我参与的
+    optional int32 serverId1 = 15;
+    optional int32 serverId2 = 16;
+    optional int64 roleId1 = 17;
+    optional int64 roleId2 = 18;
+}
+
+message CPRptAtk{                 //跨服军团战战报
+    required int32 reportKey = 1;
+    required bool result = 2;
+    required bool first = 3;
+    required CrossRptMan attacker = 4;
+    optional CrossRptMan defencer = 5;
+    optional Record record = 6;
+}
+
+message CPRank{
+    optional int32 rank = 1;            // 排名
+    optional string partyName = 2;      // 军团名
+    optional string name = 3;           // 玩家名
+    optional int32 fightCount = 4;      // 战斗次数
+    optional int64 fight = 5;           // 战力
+    optional int32 jifen = 6;           // 总积分
+    optional int32 winCount = 7;        // 连胜次数
+    optional string serverName = 8;     // 服务器名
+    optional int32 rewardState = 9;     // 1不能领取  2可以领取  3已经领取
+}
+
+message CDMorale { // 跨服军演士气信息
+    required int32 buffId = 1;          // buffId
+    required int32 buffLv = 2;          // buff当前等级
+    optional int32 serverId = 3;        // 服务端用
+}
+
+message ReceiveRank { // 已领奖玩家记录
+    required int32 serverId = 1;
+    required int64 lordId = 2;
+}
+
+message CDFinalRank { // 跨服军演总排行榜
+    required int32 rank = 1;            // 排名
+    optional int32 serverId = 2;        // 服务器id
+    required string serverName = 3;     // 服务器名称
+    required int64 totalScore = 4;      // 总积分
+    required int32 totalWin = 5;        // 总胜利次数
+    required int32 totalLost = 6;       // 总失败次数
+    optional int32 sort = 7;            // 跨服军演的最终排名
+    optional int32 rankTime = 8;        // 最后上榜时间
+}
+
+message CDBattleMatch { // 描述跨服军演的单个战场匹配信息
+    required int32 fieldId = 1;             // 战场id，在整个跨服军演活动中，每个战场唯一一个id
+    required int32 redServerId = 2;         // 红方服务器id
+    required string redServerName = 3;      // 红方服务器名称
+    required int32 blueServerId = 4;        // 蓝方服务器id
+    required string blueServerName = 5;     // 蓝方服务器名称
+}
+
+message CDTeamServerMatch { // 跨服军演小组内某一轮对战信息
+    required int32 teamId = 1;              // 分组id,1-8，对应A-H组
+    required int32 batch = 2;               // 这是本小组第几轮比赛
+    required int32 battleTime = 3;          // 本轮比赛开始时间
+    repeated CDBattleMatch battle = 4;      // 本轮比赛的对战匹配信息
+}
+
+message CDTeamServerDistribution { // 跨服军演服务器对战分布信息
+    required int32 teamId = 1;              // 分组id,1-8，对应A-H组
+    required int32 seedServerId = 2;        // 种子服id
+    required string seedServerName = 3;     // 种子服名称
+    repeated CDTeamServerMatch team = 4;    // 各小组对战信息
+}
+
+message CDMyTeamData { // 跨服军演我的分组信息
+    required int32 teamId = 1;              // 分组id,1-8，对应A-H组
+    repeated CDMyTeamBatchData batch = 2;   // 每轮数据
+}
+
+message CDMyTeamBatchData { // 跨服军演我的分组每轮信息
+    required int32 batchId = 1;     // 1,2,3轮
+    required int32 fieldId = 2;     // 战斗id
+    required int32 battleTime = 3;  // 战斗时间
+}
+
+message CDStrongholdFormData { // 跨服军演我的布阵信息
+    required int32 strongholdId = 1;        // 据点id
+    required Form form = 2;                 // 据点阵型，阵型类型，1 本据点部队1，2 本据点部队2
+}
+
+message CDTeamScore { // 跨服军演小组积分信息
+    required int32 teamId = 1;              // 服务器所属的小组id，组别
+    required string serverName = 2;         // 服务器名称
+    required int32 score = 3;               // 积分
+    required int64 totalFight = 4;          // 总战力
+    optional int32 serverId = 5;            // 服务器id
+    optional int32 updateTime = 6;          // 最后更新时间，服务器使用
+}
+
+message CDHeroRank { // 跨服军演小组赛英雄榜信息
+    required int32 rank = 1;                // 排名
+    required string nick = 2;               // 玩家名
+    required string serverName = 3;         // 玩家所属服务器名称
+    required int32 winNum = 4;              // 胜利次数
+    required int32 lostNum = 5;             // 失败次数
+    required int64 fight = 6;               // 战力
+    optional int64 lordId = 7;              // 玩家ID
+    optional int32 serverId = 8;            // 服务器id
+    optional int32 updateTime = 9;          // 最后更新时间
+}
+
+message CDTeamBattleData { // 跨服军演某个小组中某个服务器的战场数据
+    required int32 teamId = 1;
+    required string serverName = 2;         // 服务器名称
+    required int32 armyNum = 3;             // 参战部队数
+    required int32 occupyNum = 4;           // 攻占据点数
+    required int32 winNum = 5;              // 总胜利次数
+    required int32 lostNum = 6;             // 总失败次数
+    optional int32 serverId = 7;            // 服务器id
+}
+
+message CDBattleStronghold { // 跨服军演某个战场的某个据点的战场信息
+    required int32 point = 1;               // 据点标志，1 上路，2 中路，3 下路
+    required int32 battleTime = 2;          // 本路战斗开始时间
+    required int32 status = 3;              // 当前状态，-2 未开始，-1 进行中，0 平局，1 红方胜，2 蓝方胜
+    required int32 redArmy = 4;             // 红方参战部队数
+    required int32 redWin = 5;              // 红方胜利次数
+    required int32 redLost = 6;             // 红方失败次数
+    required int32 blueArmy = 7;            // 蓝方参战部队数
+    required int32 blueWin = 8;             // 蓝方胜利次数
+    required int32 blueLost = 9;            // 蓝方失败次数
+    required int32 strongholdId = 10;       // 据点id，唯一id
+    optional int32 fieldId = 11;            // 所属战场id
+}
+
+message CDBattleField { // 跨服军演某个战场的战场信息
+    required int32 fieldId = 1;             // 战场id，在整个跨服军演活动中，每个战场唯一一个id
+    required int32 fieldStatus = 2;         // 战场状态，0 未开启，1 备战，2 上路战斗，3 中路战斗，4 下路战斗中，5 已结束
+    required int32 battleTime = 3;          // 本战场战斗开始时间
+    required int32 redServerId = 4;         // 红方服务器id
+    required int32 blueServerId = 5;        // 蓝方服务器id
+    required string redServerName = 6;      // 红方服务器名称
+    required string blueServerName = 7;     // 蓝方服务器名称
+    required int32 result = 8;              // 据点战斗结果，-1 未结束，1 红方胜，2 蓝方胜
+    repeated int32 strongholdId = 9;        // 战场各据点id
+    optional int32 batch = 10;              // 属于跨服军演活动中的第几轮战斗（1-7），服务器自用
+}
+
+message CDRecord { // 跨服军演战况
+    required int32 reportKey = 1;
+    required string attacker = 2;           // 进攻方玩家名字
+    required string attackServer = 3;       // 进攻方玩家所属服务器名称
+    required int32 attackArmy = 4;          // 这是进攻方玩家在本据点的第几只部队
+    required int32 attackNum = 5;           // 进攻方玩家的坦克数量百分比，1~100
+    required bool attackCamp = 6;           // 进攻方玩家阵营，是否属于红方，是则为true，否则为false
+    required string defender = 7;           // 防守方玩家名字
+    required string defendServer = 8;       // 防守方玩家所属服务器名称
+    required int32 defendArmy = 9;          // 这是防守方玩家在本据点的第几只部队
+    required int32 defendNum = 10;          // 防守方玩家的坦克数量百分比，1~100
+    required bool defendCamp = 11;          // 防守方玩家阵营，是否属于红方，是则为true，否则为false
+    required bool result = 12;              // 进攻方是否胜利，true表示胜利
+    required int32 time = 13;               // 时间
+    optional int32 strongholdId = 14;       // 所属据点
+    optional int32 attackServerId = 15;     // 攻击方玩家服务器id
+    optional int32 defencServerId = 16;     // 防守方玩家服务器id
+    optional int64 attackerId = 17;         // 攻击方玩家id
+    optional int64 defencerId = 18;         // 防守方玩家id
+}
+
+message CDStrongholdRank { // 跨服军演据点排行榜
+    required int32 rank = 1;
+    required string serverName = 2;         // 服务器名称
+    required string nick = 3;               // 玩家名称
+    required int32 winNum = 4;              // 胜利次数
+    required int32 lostNum = 5;             // 失败次数
+    required int64 fightNum = 6;            // 战力
+    optional int64 lordId = 7;              // 玩家ID
+    optional int32 serverId = 8;            // 服务器id
+    optional int32 updateTime = 9;          // 最后更新时间
+    optional int32 strongholdId = 10;       // 所属据点
+}
+
+message CDBattlePojo { // 跨服军演淘汰赛显示界面的服务器信息
+    required string serverName = 1;
+    required int32 totalMember = 2;         // 总报名人数
+    required int32 totalMorale = 3;         // 总士气值
+    required int64 totalFight = 4;          // 总战力
+    optional int32 serverId = 5;
+}
+
+message CDKnockoutBattle { // 跨服军演淘汰赛某个组的服务器匹配信息
+    required int32 battleGroupId = 1;       // 淘汰赛组别，1-8组（淘汰赛第1轮），9-12组（淘汰赛第2轮），13-14组（半决赛），15组（决赛），16组（季军争夺赛）
+    required int32 fieldId = 2;             // 战场id，在整个跨服军演活动中，每个战场唯一一个id
+    required int32 state = 3;               // -1 未开始，1 c1胜，2 c2胜
+    required CDBattlePojo c1 = 4;           // 淘汰赛对战匹配中，在上边或左边的服务器，红方
+    required CDBattlePojo c2 = 5;
+    required int32 beginTime = 6;           // 比赛开始时间（下注结束时间）
+    optional int32 batch = 7;               // 属于跨服军演活动中的第几轮战斗（4-7）
+    optional int32 myBet = 8;               // 玩家下注信息，0 未下注，1 下注c1，2 下注c2
+    optional int32 betNum = 9;              // 下注数量
+}
+
+message CDBattleBet { // 跨服军演玩家个人在某场战斗中的下注信息
+    required int32 battleGroupId = 1;       // 淘汰赛组别，1-8组（淘汰赛第1轮），9-12组（淘汰赛第2轮），13-14组（半决赛），15组（决赛），16组（季军争夺赛）
+    required int32 beginTime = 2;           // 本轮比赛开始时间
+    required string serverName1 = 3;
+    required string serverName2 = 4;
+    required int32 myBet = 5;               // 下注目标，1 下注c1，2 下注c2
+    required int32 betNum = 6;              // 下注数量
+    required int32 betCount = 7;            // 已下注次数
+    required int32 winNum = 8;              // 赢得积分数量
+    required int32 state = 9;               // 当前比赛状态，-1 未开始（下注时间）， 0 未结束，1 已领取，2 未领取
+    repeated TwoInt strongholdState = 10;   // 各据点状态，TwoInt的第一个值表示上中下据点（1-3），第二个值表示状态（-1未开始，0 未结束，1 已结束）
+}
+
+message CDPlayer {
+    required int32 serverId = 1;
+    required int64 lordId = 2;
+    required int32 level = 3;
+    required int64 fight = 4;
+    required int32 maxTankNum = 5;
+    repeated Hero hero = 6;
+    repeated Part part = 7;
+    repeated Equip equip = 8;
+    repeated Skill skill = 9;
+    repeated Effect effect = 10;
+    repeated Science science = 11;
+    required int32 staffingLv = 12;
+    repeated EnergyStoneInlay inlay = 13;
+    repeated MilitaryScience militaryScience  = 14;
+    repeated MilitaryScienceGrid militaryScienceGrid = 15;
+    repeated Science partyScience = 16;     // 玩家所在军团的军团科技
+    repeated Tank cdTank = 17;              // 玩家兑换的坦克
+    repeated int32 betGroupId = 18;         // 玩家下注过的淘汰赛分组id
+    repeated int32 formStrongholdId = 19;   // 玩家设置过阵型的据点id
+    repeated CrossShopBuy buy = 20;         // 商店购买记录
+    required int32 updateCDShopDate = 21;   // 最后一次更新跨服商店购买记录的日期
+    required int32 jifen = 22;              // 玩家积分
+    required string nick = 23;              // 玩家名称
+    required int32 winNum = 24;             // 胜利次数
+    required int32 lostNum = 25;            // 失败次数
+    required int32 staffingId = 26;         // 编制id
+    repeated Medal medal = 27;              // 勋章
+    repeated MedalBouns medalBouns = 28;    // 勋章展厅
+    repeated AwakenHero awakenHeros = 29;   // 觉醒将领
+}
+
+message PayRebate {
+    required int32 money = 1;         // 档位需求金额
+    required int32 rate = 2;          // 档位返利比率  （百分率）
+    required int32 recharge = 3;      // 档位已充值金额
+    required int32 num = 4;           // 剩余转盘次数
+}
+
+message CPPartyMember{
+    required int32 serverId = 1;
+    required int64 roleId = 2;
+    required string nick = 3;
+    required int64 fight = 4;
+    required int32 level = 5;
+    required int32 groupWinNum = 6;
+    required int32 finalWinNum = 7;
+    required int32 fightCount = 8;
+    required int32 partyId = 9;
+    required string partyName = 10;
+    required int32 jifen = 11;
+    required int32 regTime = 12;
+    repeated int32 myReportKeys = 13;
+    repeated CrossShopBuy crossShopBuy = 14;
+    optional Form form = 15;
+    repeated Equip equip = 16;
+    repeated Part part = 17;
+    repeated Science science = 18;
+    repeated Skill skill = 19;
+    repeated Effect effect = 20;
+    required int32 staffingId = 21;
+    repeated EnergyStoneInlay inlay = 22;
+    repeated MilitaryScienceGrid militaryScienceGrid = 23;
+    repeated MilitaryScience militaryScience  = 24;
+    required int32 state = 25;
+    optional Form instForm = 26;
+    optional int32 jifenjiangli = 27;
+    optional int32 exchangeJifen = 28;
+    repeated CrossTrend crossTrends = 29;           // 跨服战积分详情
+    optional int32 portrait = 30;// 头像
+    repeated Medal medal = 31;
+    repeated MedalBouns medalBouns = 32;            // 勋章展厅
+    repeated AwakenHero awakenHero = 33;            // 觉醒英雄
+    repeated LordEquip leq = 34;                    // 军备信息
+    optional int32 militaryRank = 35;               // 军衔等级
+    repeated SecretWeapon secretWeapon = 36;        // 秘密武器
+    repeated AttackEffectPb attackEffect = 37;      // 攻击特效
+    repeated GraduateInfoPb graduateInfo = 38;      // 作战实验室科技树
+	repeated Science partyScience = 39;//军团科技列表
+	optional ThreeInt energyCore=40;//能源核心
+}
+
+message ServerSisuation{
+    required int32 serverId = 1;
+    repeated int32 groupKeyList = 2;
+    repeated int32 finalKeyList = 3;
+}
+
+message CPParty{
+   repeated int64 roleId = 1;
+   required int32 order = 2;
+   required int32 outCount = 3;
+   required int32 formNum = 4;
+   required int32 serverId = 5;
+   required int32 partyId = 6;
+   required string partyName = 7;
+   required int32 partyLv = 8;
+   required int32 warRank = 9;
+   required int64 fight = 10;
+   required int32 group = 11;
+   required bool isFinalGroup = 12;
+   repeated int32 partyReportKey = 13;
+   required int32 totalJifen = 14;
+   repeated int64 fighters= 15;
+   optional int32 myPartySirPortrait = 16;
+}
+
+message RankParty{
+    required int32 rank = 1;
+    required string key = 2;
+}
+
+message GroupParty{
+    required int32 group = 1;
+    repeated string groupPartyMap = 2;
+    repeated int32 groupKeyList = 3;
+    repeated RankParty rankParty = 4;
+}
+
+message Reborn {
+    required int32 round = 1;//死亡时回合
+    repeated int32 pos   = 2;//重生位置  先手方123456 后手789101112
+    repeated int32 tankId = 3;//复活的坦克ID
+    repeated int32 count  = 4;//复活的坦克数量
+    repeated int64 hp = 5;//复活后的血量
+	repeated int32 awake=6;//1是觉醒将领
+}
+
+message PirateGrid {
+    required bool has = 1;       // 是否已经抽中
+    required Atom gridData = 2;  //  奖励信息
+}
+
+message PirateData {
+    required int32 count = 1;               // 可抽奖次数
+    required int32 oneLottery = 2;          // 单抽价格   0表示不显示单抽按钮
+    required int32 allLottery = 3;          // 全抽价格   0表示不显示全抽按钮
+    repeated PirateGrid grids = 4;          // 格子物品信息
+    required bool isReset = 5;              // 是否可重置
+}
+
+message Medal{
+    required int32 keyId = 1;      //唯一标识
+    required int32 medalId = 2;    //勋章id
+    required int32 upLv = 3;       //强化等级
+    required int32 upExp = 4;      //强化经验
+    required int32 refitLv = 5;    //改造等级
+    required int32 pos = 6;        //0是仓库 1将领身上 20展示
+    required bool locked = 7;      //是否已锁
+}
+
+message MedalChip{
+    required int32 chipId = 1;     //勋章碎片id
+    required int32 count = 2;      //数量
+}
+
+message MedalData{
+    required int32 medalId = 1;    //勋章id
+    required int32 upLv = 2;       //强化等级
+    required int32 refitLv = 3;    //改造等级
+}
+
+message MedalBouns{
+    required int32 medalId = 1;    //勋章id
+    required int32 state = 2;      //0获得过且未展示 1获得过且已展示
+}
+
+message SectionReward{
+    required int32 sectionType = 1;  //关卡类型
+    required int32 times = 2;        //进行次数
+    repeated int32  recvId = 3;      //已领id
+}
+
+message Day7Act{
+    required int32 keyId = 1;        //奖励id
+    required int32 status = 2;       //当前状态
+    required int32 recved = 3;       //领奖状态 0可以领取 1进度未达到 2天数未达到 3已领取
+}
+message DbDay7Act{
+    repeated int32  recvAwardIds = 1; //已领取奖励id
+    repeated TwoInt status = 2;       //当前累计进度状态
+    repeated TwoInt tankTypes = 3;    //坦克类型累计
+    optional int32  lvUpDay = 4;      //使用升级日期天
+    repeated TwoInt equips = 5;       //装备品质-等级
+}
+
+message Lottery{
+    required int32 lucky = 1;               //当前幸运值
+    repeated int32  recvLuckyAwardIds = 2;  //已领取幸运值奖励id
+    optional int32 lastResetDay = 3;        //最后重置日期天
+}
+
+message ActRebelRank {
+    required int32 rank = 1;            // 排行
+    required int64 lordId = 2;          // lordId
+    required string name = 3;           // 玩家名称
+    required int32 killNum = 4;         // 玩家击杀数量
+    required int32 score = 5;           // 玩家的积分
+}
+
+message AwakenHero {
+    required int32 keyId = 1;           // 唯一id
+    optional int32 heroId = 2;          // 英雄id
+    optional int32 state = 3;           // 英雄状态 0未派出 1派出
+    repeated TwoInt skillLv = 4;        // 技能id-等级
+    optional int32 failTimes = 5;       // 失败次数
+}
+
+message SkillEffect {
+    required int32 round = 1;           // 操作回合
+    required int32 key = 2;             // 部队位置1-12
+    required int32 id = 3;              // 技能id 1=烟幕打击 6=幽能屏障
+	optional int32 state = 4; 			// 1假buff只播放动画
+}
+
+//飞艇进攻信息
+message AirshipAttackInfo{
+    required int32 partId = 1;         //进攻方军团ID
+    required string partName = 2;      //进攻方军团名字
+    optional int32 armyCount = 3;      //进攻方部队数量
+    optional int32 marchTime = 4;      //进攻行军开始时间
+}
+
+//本工会飞艇额外信息
+message AirshipDetail{
+    optional int32 produceTime = 1;         //自产开始时间(-1飞艇目前不能生产道具)
+    required int32 produceNum = 2;          //自产数量
+    required int32 durability = 3;          //耐久度(0-100)
+}
+
+//飞艇占领信息
+message AirshipOccupy{
+    optional int32 partyId = 1;                 // 占领军团id(空表示没有工会战力)
+    optional string partyName = 2;              // 军团名
+    optional int64 lordId = 3;                  // 指挥官id
+    optional string lordName = 4;               // 指挥官名字
+    optional int32 portrait = 5;                // 指挥官头像
+}
+
+//飞艇基础信息
+message AirshipBase{
+    required int32 id = 1;                      //飞艇id
+    required int32 safeEndTime = 2;             //保护罩结束时间
+    optional int64 teamLeader = 3;              //本工会发起队伍集结的玩家ID(一个工会同一时间只能对一个飞艇发起一个队伍集结)
+    optional int32 attackCount = 4;             //进攻此飞艇的队伍数量
+    optional bool  ruins = 5;                   //ture:飞艇处于废墟状态, false: 飞艇处于生产状态
+}
+
+//飞艇信息
+message Airship {
+    required AirshipBase base = 1;              //飞艇基础信息
+    optional AirshipOccupy occupy = 2;          //飞艇占领信息, 空表示没有占领信息
+    optional AirshipDetail detail =3;           //如果是本工会的飞艇,则显示飞艇详细信息
+}
+
+message AirshipTeam {
+    required int32 airshipId = 1;       // 飞艇id
+    required int64 lordId = 2;          // 发起者角色id
+    required string lordName = 3;       // 发起者角色名字
+    required int32 portrait = 4;        // 发起者肖像
+    required int32 armyNum = 5;         // 部队数量
+    required int64 fight = 6;           // 总共战斗力
+    required int32 state = 7;           // 当前状态
+    required int32 endTime = 8;         // 结束时间
+}
+
+message AirshipArmy{
+    required int64 lordId = 1;          // 发起者角色id
+    required int32 armyKeyId = 2;       // 发起者角色id
+    required string lordName = 3;       // 发起者角色名字
+    required int32 portrait = 4;        // 发起者肖像
+    required int32 tankCount = 5;       // 坦克数量
+    required int64 fight = 6;           // 总共战斗力
+    required int32 level = 7;           // 角色等级
+    required int32 commander = 8;       // 指挥官id
+}
+
+//飞艇战报
+message RptAtkAirship {
+    required bool result = 1;
+    repeated bool first = 2;            //true-进攻方先手
+    repeated Record record = 3;         //战斗记录
+    repeated TwoLong recordLord  = 4;   //战斗记录中双方指挥官ID(播放战斗使用, 0: 飞艇)
+    repeated RptAtkMan attackers = 5;   //进攻方列表(战报统计使用)
+    repeated RptAtkMan defencers = 6;   //防守方列表(战报统计使用)
+    required string attackerName = 7;   //攻击方军团名字
+    required string defencerName = 8;   //防守方军团名字
+    required int32 airshipId = 9;       //进攻飞艇id
+    optional int32 lostDurb = 10;       //飞艇损失耐久
+    optional int32 remainDurb = 11;     //飞艇剩余耐久
+}
+
+//飞艇征收记录
+message RecvAirshipProduceAwardRecord{
+    required int32 recvTime = 1;        //征收时间
+    required string nick = 2;           //征收团员名字
+    required int32 type = 3;            //类型
+    required int32 awardId = 4;         //征收物品id
+    required int32 count = 5;           //征收数量
+    required int32 mplt = 6;            //消耗军功
+}
+
+
+message RptAtkMan {
+    required int64 lordId = 1;          //指挥官ID
+    required string name = 2;           //指挥官名字
+    required int32 commander = 3;       //指挥官id
+    repeated RptTank tank = 4;          //战损
+    optional int32 mplt = 5;            //军功
+    optional int32 firstValue =6;       //先手值
+}
+
+//指挥官装备
+message LordEquip{
+    optional sint32 keyId = 1;          //唯一ID
+    optional sint32 equip_id = 2;       //军备ID
+    optional int32  pos =3;             //位置0-军备仓库,1-20 装备位置
+    repeated TwoInt skillLv = 4;        //军备技能id-等级
+	optional bool  isLock =5;
+	repeated TwoInt skillLvSecond = 6;        //第二套军备技能id-等级
+	optional int32 lordEquipSaveType=7;//军备保存的是第几套  0第一套，1第二套
+}
+
+//生产中的指挥官装备
+message LordEquipBuilding{
+    optional int32 equip_id = 1;        //生产中的军备ID
+    optional int32 period = 2;          //生产时间
+    optional int32 endTime = 3;         //生产结束时间
+    optional int32 tech_id = 4;         //使用过的铁匠 0-没有使用过铁匠加速
+}
+
+//生产中的军备材料
+message LeqMatBuilding{
+    optional int32 pid = 1;             //生产中的材料ID
+    optional int32 count = 2;           //生产的材料数量(目前数量=1)
+    optional int64 period = 3;          //生产结束需要的总进度
+    optional int64 complete = 4;        //当前完成的进度
+    optional int64 endTime = 5;         //预计结束时间
+}
+
+//活动中的显示频道
+message Broadcast{
+    required string nick = 1;           //玩家名字
+    required string type = 2;           //道具类型
+    required string id = 3;             //道具类型
+    required string count = 4;          //道具数量
+}
+
+//文官进驻信息
+message HeroPut{
+    required int32 partId = 1;             //分类id
+    repeated int32 heroId = 2;             //进驻的heroId
+}
+
+
+//连续三天充值达标活动充值详情
+message ActCumulativePayInfo{
+    required int32 dayId = 1;            //1，2，3 第几天充值
+    required int32 totalPay = 3;         //总充值能量
+    required int32 addPay = 4;           //增加的能量
+    required int32 status = 5;           //领取状态 1 可领 0 不能领 -1 已领
+}
+
+//皮肤信息
+message Skin{
+    required int32 skinId = 1;           //外观id
+    required int32 status = 2;           //状态 0 没有该皮肤，不可使用 1 有该皮肤，未使用 2 已使用 3 使用过，被替换
+    optional int32 remaining = 3;        //剩余时间（秒）如果正在使用或被替换，表示剩余时间
+    optional int32 count = 4;            //如果购买未使用，表示该皮肤数量
+}
+
+//超时空财团
+message Quinn{
+    required int32 type = 1;            //道具大类
+    required int32 id = 2;              //道具编号
+    required int32 count = 3;           //道具数量
+    required string desc = 4;           //道具名称
+    required int32 sold = 5;            //是否售罄 0 未售，1 已售
+    optional int32 dis = 6;             //折扣 1-9
+    optional int32 price = 7;           //折扣后价格
+    optional int32 especial = 8;        //是否为特殊道具 0 否  1 是
+
+}
+//超时空财团 面板
+message QuinnPanel {
+    required int32 type = 1;                //面板类型  1贸易  2兑换
+    repeated Quinn quinn = 2;               //商品对象
+    required int32 getType = 3;             //当前刷新类型 1免费 2刷新券 3金币
+    optional int32 getNumber = 4;           //当前金币刷新次数(刷新类型为免费时此字段为剩余免费次数，)
+    optional int32 getSum = 5;              //花费金币总额
+    optional int64 refreshTime = 6;         //刷新时间
+    repeated Award award = 7;               //当前额外奖励（可以没有）
+    optional int32 eggId = 8;               //当前彩蛋id
+}
+
+//秘密武器技能栏
+message SecretWeaponBar{
+    required int32 sid = 1;                 //技能ID
+    required bool locked = 2;               //true-锁定
+}
+
+//秘密武器信息
+message SecretWeapon{
+    required int32 id   = 1;                //秘密武器ID
+    repeated SecretWeaponBar bar  = 2;      //洗练的技能ID, 下标对应洗练条目位置
+}
+
+//攻击特效信息
+message AttackEffectPb{
+    required int32 type     = 1;                //兵种类型
+    required int32 useId    = 2;                //使用的特效组ID
+    repeated int32 unlock   = 3;                //已经解锁的特效组列表
+}
+
+//作战研究院
+message LabInfoPb{
+    repeated TwoInt labItemInfo = 1;//作战研究所物品数量 key itemid，value 数量
+    repeated TwoInt archInfo    = 2;//建筑信息 key 建筑id，value 是否激活 1 激活
+    repeated TwoInt techInfo    = 3;//科技信息 key 科技id，value 等级
+    repeated TwoInt personInfo  = 4;//人员信息 key 分配类型，value 数量
+    repeated TwoInt resourceInfo    = 5;// 资源信息 key 资源id，value 数量
+    repeated int32 rewardInfo   = 6;//奖励信息 已经领取奖励的id
+    repeated GraduateInfoPb graduateInfo = 7;     //研究信息
+    repeated ThreeInt proInfo   = 8;//生产信息 资源id ,生产状态,已经生产的时间
+	repeated SpyInfo spyInfo =9 ;//间谍信息
+
+
+}
+
+//作战研究院
+message GraduateInfoPb{
+    required int32 type =1;//研究类型
+    repeated TwoInt graduateInfo    = 2;//key 研究小类id value 等级
+}
+
+//抢红包信息
+message GrabRedBag{
+    optional string lordName = 1;               //抢红包的玩家名
+    optional int32 portrait = 2;                //玩家角色头像
+    optional int32 grabMoney = 3;               //抢到的金额
+    optional int64 grabTime = 4;                //抢红包时间(单位:ms)
+}
+
+//红包摘要信息
+message RedBagSummary{
+    optional int32 uid = 1;                     //红包唯一ID
+    optional string lordName = 2;               //红包所属玩家角色名
+    optional int32 remainGrab = 3;              //红包剩余可抢次数, <=0标识红包抢完了
+
+}
+
+//红包广播消息
+message RedBagChat{
+    optional int32 time = 1;                    //红包发放时间
+    optional string name = 2;                   //红包所属玩家
+    optional int32 portrait = 3;                //玩家角色头像
+    optional int32 staffing = 4;                //玩家编制
+    optional int32 vip = 5;                     //玩家VIP等级
+    optional int32 militaryRank = 6;            //玩家军衔等级
+	optional int32 bubble = 7;            		//当前聊天气泡
+    optional int32 uid = 8;                     //红包ID
+    optional int32 remainGrab = 9;              //剩余可抢次数,<=0 :该红包已经被抢光, >0 :可以抢红包
+	optional int32 type = 10;					//1-世界红包,2-军团红包
+	optional int32 isSys = 11; 					//是否是系统红包 ，0不是/1是
+}
+
+
+//红包信息
+message ActRedBag{
+    optional int32 uid = 1;                     //红包唯一ID
+    optional string lordName = 2;               //红包所属玩家
+    optional int32 portrait = 3;                //玩家角色头像
+    optional int32 totalMoney = 4;              //红包总金额
+    optional int32 remainMoney = 5;             //红包剩余金额
+    optional int32 grabCnt = 6;                 //发放人数
+    optional int64 sendTime = 7;                //发放时间(单位: ms)
+    repeated GrabRedBag grab = 8;               //抢红包信息
+}
+
+//间谍信息
+message SpyInfo{
+  required int32 areaId =1;//区域id
+  required int32 state=2;//是否解锁 0未解锁 1可以解锁 2待接任务 3任务进行中 4完成
+  optional int32 taskId=3;//任务id
+  optional int32 time =4;//任务剩余时间
+  optional int32 spyId =5;//间谍id
+
+}
+
+//红色方案信息
+message RedPlanInfo{
+	repeated TwoInt pointInfo =1;//区域id-对应通关的pointId 已经通过的
+	repeated int32 rewardInfo =2;//已经领取过通关奖励的区域id
+	optional int32 itemCount =3;//代币数
+	optional int32 fuel = 4;//燃料数量
+	repeated TwoInt shopInfo =5;//兑换物品信息 goodsid- count已经对接次数
+	optional string version =6;//获得id
+	optional int32 fuelBuyCount = 7;//购买燃料次数
+	optional int32 nowPointId =8;// 当前区域对应的关卡
+	optional int32 buyTime =9;//购买次数时间用于清空购买次数
+	repeated TwoInt linePointInfo =10;//区域id-对应通关的pointId 挑战线路
+	optional int32 nowAreaId =11;// 当前区域对应的id
+	optional int32 fuelTime = 12;//下次回复燃料时间戳
+}
+
+//组队角色信息
+message TeamRoleInfo{
+	required int64 roleId =1;  //角色ID
+	required int32 portrait =2; //角色头像
+	required string nick =3; //角色昵称
+	required int64 fight =4; //角色战力
+	required int32 status =5; //角色状态，-1 未就绪/0 就绪/1 战斗中
+	optional string serverName=6;
+}
+
+//假日碎片
+message FestivalInfo{
+	repeated TwoInt countInfo =1;//兑换次数
+	required int32 loginRewardState =2;  //登录奖励领取状态
+	optional int32 loginTime = 3;//领取时间
+	optional string version =4;//
+}
+
+//幸运奖池
+message LuckyInfo{
+	optional string version =1;//
+	required int32 useLuckyCount =2;  //已经抽奖次数
+	optional int32 recharge = 3;//充值总金额
+
+}
+
+//幸运奖池奖池金额
+message LuckyGlobalInfo{
+	optional string version =1;//
+	optional int32 poolGold =2;  //奖池金额
+	repeated ActLuckyPoolLog luckyLog =3; //幸运记录
+}
+
+//组队副本
+message TeamInstanceInfo{
+	repeated TwoInt countInfo =1;//兑换次数
+	repeated TwoInt rewardInfo =2;//奖励领取状态
+	required int64 time = 3;//领取时间
+	repeated TwoInt taskInfo =4;//任务记录
+	repeated TwoInt taskRewardState =5;//任务奖励领取状态
+	optional int32 bounty =6; //赏金代币总数
+	optional int32 dayItemCount =7; //每日获得的代币数量
+}
+
+// 幸运奖池中大奖记录
+message ActLuckyPoolLog{
+	required string name = 1 ;   	// 玩家昵称
+	required int32 time = 2;		// 中奖时间
+	required string goodInfo = 3;  // 物品信息 格式： 百分比-金额
+}
+
+// 叛军活动军团每周数据
+message PartyRebelData {
+	required int32 partyId = 1;              //军团ID
+    required string partyName = 2;          // 军团名称
+    required int32 rank = 3;                //军团在军团系统中的排名
+    required int32 lastRank = 4;            //军团在叛军系统中的上周排名
+	required int32 killUnit = 5;		    //上周击杀分队数目
+    required int32 killGuard = 6;           //上周击杀卫队数目
+	required int32 killLeader = 7;			//上周击杀头目数目
+    required int32 score = 8;              //军团本周积分
+}
+
+// 转盘类活动每日活动信息统一结构
+message DialDailyGoalInfo {
+	required int32 lastDay = 1;            //最后一次抽取
+	required int32 count = 2;			  //当日抽奖次数
+	repeated TwoInt rewardStatus = 3;	  //奖励状态
+}
+
+
+//组队副本全服任务信息
+message TeamTaskData {
+	repeated KvLong taskInfo =1;//任务信息
+
+}
+
+
+message TeamTask {
+    required int32 taskId = 1;              //任务编号
+    required int64 schedule = 2;            //进度值
+    optional int32 status = 3;              //1已领 其它未领取
+}
+
+
+
+
+// 荣耀积分(包括军团以及个人)
+message HonourScore {
+    optional int64 roleId = 1;
+    required int32 openTime = 2;
+    required int32 score = 3;
+	required int32 rankTime = 4;
+	optional int32 partyId = 5;
+}
+
+
+//荣耀排行
+message HonourRank {
+    required int32 rank = 1;
+    required string nick = 2;          //玩家昵称或军团名
+    required int32 score = 3;
+}
+
+// 军备保存方案
+message LeqScheme {
+	required int32 type = 1;	//方案类型
+	repeated TwoInt leq = 2;	// key:部位，value:军备keyId
+	optional string name = 3;	//方案名称
+}
+
+// 作战实验室间谍任务奖励
+message SpyTaskReward {
+	required int32 areaId = 1;
+	repeated Award award = 2;
+	required int32 awardLevel =3;//奖励等级 0成功 1大成功
+}
+
+// 问卷调查的答案
+message QueAnswer {
+	required int32 keyId = 1;	//题号
+	required int32 value = 2;	//答案
+	optional string addtional = 3;	//自定义文本
+}
+
+// 世界矿点编制经验
+message WorldStaffing {
+	required int64 exp = 1;	//编制exp
+}
+
+
+// 军团战活跃
+message WarActivityInfo {
+	optional string version = 1;	//版本号
+	repeated TwoInt info = 2;	// key:id value:已经完成的值
+	repeated TwoInt rewardState = 3;	// key:id value:是否领取奖励  1领取 0未领取
+}
+
+
+// 战术大师
+message TacticsInfo{
+	repeated Tactics info=1;//战术
+	repeated TwoInt  tacticsSlice = 2;//战术碎片 key:Id value:count
+	repeated TwoInt  tacticsItem = 3;//战术材料 key:Id value:count
+	optional int32   keyId = 4;//每个玩家维护一个 keyid 每次自增
+	optional int32   combatId = 5;//战术大师副本进度
+	repeated TacticsForm tacticsForm=6;
+
+}
+
+// 战术
+message Tactics {
+	required int32 keyId = 1;//唯一id
+	required int32 tacticsId = 2;//战术id
+	required int32 lv = 3;//等级
+	required int32 exp = 4;//等级exp
+	required int32 use = 5;//是否佩戴  0没有  1佩戴
+	required int32 state =6;//是否突破  0没有  1已经突破，这个只有在需要突破的等级才会生效
+	optional int32 bind =7;//是否绑定 0未绑定 1绑定
+
+}
+
+// 服务端存储 最强王者
+message PersonKingInfo {
+  optional string version = 1;  //版本号
+  repeated PersonRankInfo killInfo=2;//击杀叛军
+  repeated PersonRankInfo sourceInfo=3;//采集资源
+  repeated PersonRankInfo creditInfo=4;//获取军工
+  repeated PersonRankInfo totalKillInfo=5;//个人总积分
+  repeated PartyRankInfo partyInfo=6;//军团总积分
+
+}
+
+//服务端存储 个人榜
+message PersonRankInfo{
+    required int64 lordId   = 1;    //个人
+    required int64 totalNumber = 2; //击杀数或者资源数
+    required int64 points = 3 ; //积分
+	required int64 time = 4 ; //最后更新积分时间
+}
+
+
+//服务端存储 军团榜
+message PartyRankInfo{
+    required int64 partyId = 1; //军团Id
+    required int64 points = 2 ; //积分
+	required int64 time = 3 ; //最后更新积分时间
+}
+
+//服务端存储 奖励领取信息
+message KingRankRewardInfo{
+    optional string version = 1;	//版本号
+    repeated TwoInt pointsStatus = 2;  //条件奖励状态
+    repeated TwoInt rankStatus = 3;  //排行榜奖励状态
+
+}
+
+//排行榜信息
+message KingRankInfo{
+	required string nick = 1;//玩家名称
+    required int64 points = 2 ; //积分
+
+}
+//战术阵型
+message TacticsForm{
+	required int32 index = 1;	// 1 2 3 4 5 6 7 8
+	repeated int32 keyId =2;//Tactics keyid
+}
+//探险副本扫荡信息
+message WipeInfo{
+	required int32 exploreType=1;//副本类型
+	required int32 combatId=2;//设置的扫荡关卡id
+	required int32 buyCount=3;//设置的购买次数
+}
+
+//探险副本扫荡获得奖励信息
+message WipeRewardInfo{
+	required int32 exploreType=1;//副本类型
+    repeated Award award = 2;//奖励
+	required int64 exp=3;//exp
+
+}
+
+//好友赠送
+message FriendGive{
+  required int64 lordId = 1;
+  required int32 count = 2;
+  required int64 giveTime = 3;
+}
+
+message GetGiveProp{
+  required int32 type = 1;
+  required int32 propId = 2;
+  required int32 num = 3;
+  required int64 lastGiveTime = 4;//最后一次获赠时间
+}
+
+message DBFriendliness{
+  required int64 lordId = 1;
+  optional int32 state = 2;
+  optional int32 createTime = 3;
+}
+
+message EnergyCore{
+    required int32 level=1;
+	required int32 section=2;
+	required int32 exp=3;
+	required int32 state=4;
+	repeated TwoInt attMap=5;
+	optional int32 redExp = 6;
+}
+
+message LordEnergyInfo{
+    optional int64 roleId=1;
+	optional string nick=2;
+	optional int32 level=3;
+	optional int64 fight=4;
+	repeated LordPart part=5;
+	optional int32 enLevel = 6;
+	optional int32 vip=7;
+	optional int32 allmoney=8;
+}
+
+message LordPart{
+	optional int32 partId=1;
+	optional int32 upLv=2;
+	optional int32 refitLv=3;
+	optional int32 smeltLv=4;
+}

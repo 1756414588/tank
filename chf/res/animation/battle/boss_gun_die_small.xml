@@ -1,0 +1,91 @@
+<skeleton name="boss_baozha_huo" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="boss_gun_die_small">
+   <b name="3" x="0" y="-0.05" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0">
+    <d name="part-hy"/>
+   </b>
+   <b name="1" x="0" y="-4.1" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="1">
+    <d name="part-boss_baozha_huo1"/>
+    <d name="part-boss_baozha_huo2"/>
+    <d name="part-boss_baozha_huo3"/>
+    <d name="part-boss_baozha_huo4"/>
+    <d name="part-boss_baozha_huo5"/>
+    <d name="part-boss_baozha_huo6"/>
+    <d name="part-boss_baozha_huo7"/>
+    <d name="part-boss_baozha_huo8"/>
+    <d name="part-boss_baozha_huo9"/>
+    <d name="part-boss_baozha_huo10"/>
+    <d name="part-boss_baozha_huo11"/>
+    <d name="part-boss_baozha_huo12"/>
+    <d name="part-boss_baozha_huo13"/>
+    <d name="part-boss_baozha_huo14"/>
+    <d name="part-boss_baozha_huo15"/>
+    <d name="part-boss_baozha_huo16"/>
+    <d name="part-boss_baozha_huo17"/>
+    <d name="part-boss_baozha_huo18"/>
+    <d name="part-boss_baozha_huo19"/>
+    <d name="part-boss_baozha_huo20"/>
+    <d name="part-boss_baozha_huo21"/>
+    <d name="part-boss_baozha_huo22"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="boss_gun_die_small">
+   <mov name="start" dr="66" to="6" drTW="66" lp="1" twE="NaN">
+    <b name="3" sc="1" dl="0">
+     <f x="0" y="-0.05" cocos2d_x="0" cocos2d_y="-0.05" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="66"/>
+    </b>
+    <b name="1" sc="1" dl="0">
+     <f x="0" y="-4.1" cocos2d_x="0" cocos2d_y="-4.1" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="1" dI="0" dr="3"/>
+     <f x="0" y="-4.1" cocos2d_x="0" cocos2d_y="-4.1" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="1" dI="1" dr="3"/>
+     <f x="0" y="-4.1" cocos2d_x="0" cocos2d_y="-4.1" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="1" dI="2" dr="3"/>
+     <f x="0" y="-4.1" cocos2d_x="0" cocos2d_y="-4.1" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="1" dI="3" dr="3"/>
+     <f x="0" y="-4.1" cocos2d_x="0" cocos2d_y="-4.1" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="1" dI="4" dr="3"/>
+     <f x="0" y="-4.1" cocos2d_x="0" cocos2d_y="-4.1" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="1" dI="5" dr="3"/>
+     <f x="0" y="-4.1" cocos2d_x="0" cocos2d_y="-4.1" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="1" dI="6" dr="3"/>
+     <f x="0" y="-4.1" cocos2d_x="0" cocos2d_y="-4.1" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="1" dI="7" dr="3"/>
+     <f x="0" y="-4.1" cocos2d_x="0" cocos2d_y="-4.1" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="1" dI="8" dr="3"/>
+     <f x="0" y="-4.1" cocos2d_x="0" cocos2d_y="-4.1" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="1" dI="9" dr="3"/>
+     <f x="0" y="-4.1" cocos2d_x="0" cocos2d_y="-4.1" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="1" dI="10" dr="3"/>
+     <f x="0" y="-4.1" cocos2d_x="0" cocos2d_y="-4.1" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="1" dI="11" dr="3"/>
+     <f x="0" y="-4.1" cocos2d_x="0" cocos2d_y="-4.1" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="1" dI="12" dr="3"/>
+     <f x="0" y="-4.1" cocos2d_x="0" cocos2d_y="-4.1" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="1" dI="13" dr="3"/>
+     <f x="0" y="-4.1" cocos2d_x="0" cocos2d_y="-4.1" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="1" dI="14" dr="3"/>
+     <f x="0" y="-4.1" cocos2d_x="0" cocos2d_y="-4.1" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="1" dI="15" dr="3"/>
+     <f x="0" y="-4.1" cocos2d_x="0" cocos2d_y="-4.1" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="1" dI="16" dr="3"/>
+     <f x="0" y="-4.1" cocos2d_x="0" cocos2d_y="-4.1" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="1" dI="17" dr="3"/>
+     <f x="0" y="-4.1" cocos2d_x="0" cocos2d_y="-4.1" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="1" dI="18" dr="3"/>
+     <f x="0" y="-4.1" cocos2d_x="0" cocos2d_y="-4.1" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="1" dI="19" dr="3"/>
+     <f x="0" y="-4.1" cocos2d_x="0" cocos2d_y="-4.1" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="1" dI="20" dr="3"/>
+     <f x="0" y="-4.1" cocos2d_x="0" cocos2d_y="-4.1" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="1" dI="21" dr="3"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="boss_baozha_huo" width="128" height="128">
+  <SubTexture name="part-boss_baozha_huo22" width="21" height="17" cocos2d_pX="10.15" cocos2d_pY="8.45" x="46" y="57"/>
+  <SubTexture name="part-boss_baozha_huo21" width="21" height="17" cocos2d_pX="10.15" cocos2d_pY="8.45" x="0" y="86"/>
+  <SubTexture name="part-boss_baozha_huo20" width="21" height="17" cocos2d_pX="10.15" cocos2d_pY="8.45" x="69" y="76"/>
+  <SubTexture name="part-boss_baozha_huo19" width="21" height="17" cocos2d_pX="10.15" cocos2d_pY="8.45" x="42" y="19"/>
+  <SubTexture name="part-boss_baozha_huo18" width="21" height="17" cocos2d_pX="10.15" cocos2d_pY="8.45" x="92" y="57"/>
+  <SubTexture name="part-boss_baozha_huo17" width="21" height="17" cocos2d_pX="10.15" cocos2d_pY="8.45" x="88" y="19"/>
+  <SubTexture name="part-boss_baozha_huo16" width="21" height="17" cocos2d_pX="10.15" cocos2d_pY="8.45" x="46" y="95"/>
+  <SubTexture name="part-boss_baozha_huo15" width="21" height="17" cocos2d_pX="10.15" cocos2d_pY="8.45" x="65" y="38"/>
+  <SubTexture name="part-boss_baozha_huo14" width="21" height="17" cocos2d_pX="10.15" cocos2d_pY="8.45" x="23" y="76"/>
+  <SubTexture name="part-boss_baozha_huo13" width="21" height="17" cocos2d_pX="10.15" cocos2d_pY="8.45" x="0" y="48"/>
+  <SubTexture name="part-boss_baozha_huo12" width="21" height="17" cocos2d_pX="10.15" cocos2d_pY="8.45" x="23" y="95"/>
+  <SubTexture name="part-boss_baozha_huo11" width="21" height="17" cocos2d_pX="10.15" cocos2d_pY="8.45" x="42" y="0"/>
+  <SubTexture name="part-boss_baozha_huo10" width="21" height="17" cocos2d_pX="10.15" cocos2d_pY="8.45" x="65" y="0"/>
+  <SubTexture name="part-boss_baozha_huo9" width="21" height="17" cocos2d_pX="10.15" cocos2d_pY="8.45" x="88" y="0"/>
+  <SubTexture name="part-boss_baozha_huo8" width="21" height="17" cocos2d_pX="10.15" cocos2d_pY="8.45" x="65" y="19"/>
+  <SubTexture name="part-boss_baozha_huo7" width="21" height="17" cocos2d_pX="10.15" cocos2d_pY="8.45" x="42" y="38"/>
+  <SubTexture name="part-boss_baozha_huo6" width="21" height="17" cocos2d_pX="10.15" cocos2d_pY="8.45" x="88" y="38"/>
+  <SubTexture name="part-boss_baozha_huo5" width="21" height="17" cocos2d_pX="10.15" cocos2d_pY="8.45" x="23" y="57"/>
+  <SubTexture name="part-boss_baozha_huo4" width="21" height="17" cocos2d_pX="10.15" cocos2d_pY="8.45" x="69" y="57"/>
+  <SubTexture name="part-boss_baozha_huo3" width="21" height="17" cocos2d_pX="10.15" cocos2d_pY="8.45" x="0" y="67"/>
+  <SubTexture name="part-boss_baozha_huo2" width="21" height="17" cocos2d_pX="10.15" cocos2d_pY="8.45" x="46" y="76"/>
+  <SubTexture name="part-boss_baozha_huo1" width="21" height="17" cocos2d_pX="10.15" cocos2d_pY="8.45" x="92" y="76"/>
+  <SubTexture name="part-hy" width="40" height="46" cocos2d_pX="19.55" cocos2d_pY="22.6" x="0" y="0"/>
+ </TextureAtlas>
+</skeleton>

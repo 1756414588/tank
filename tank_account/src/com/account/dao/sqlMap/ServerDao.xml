@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="ServerDao">
+
+    <select id="selectById" parameterType="Integer"
+            resultType="com.account.domain.Server">
+		select * from `u_server` where serverId=#{serverId}
+	</select>
+
+    <select id="selectByName" parameterType="String"
+            resultType="com.account.domain.Server">
+		select * from `u_server` where serverName=#{serverName}
+	</select>
+
+    <update id="updateServer" parameterType="com.account.domain.Server">
+		update u_server
+		set
+		serverType=#{serverType},ip=#{ip},port=#{port},operateTime=#{operateTime},manuTime=#{manuTime},lastStartTime=#{lastStartTime},
+		startTime=#{startTime},state=#{state},dbName=#{dbName},userName=#{userName},userPwd=#{userPwd}
+		where serverId=#{serverId}
+	</update>
+
+    <insert id="insertServer" parameterType="com.account.domain.Server">
+        <selectKey resultType="Integer" order="AFTER" keyProperty="serverId">
+            SELECT LAST_INSERT_ID()
+        </selectKey>
+        insert into
+        u_server(serverName,serverType,ip,port,manuTime,startTime,state,dbName,userName,userPwd,createTime)
+        values(#{serverName},#{serverType},#{ip},#{port},#{manuTime},#{startTime},#{state},#{dbName},#{userName},#{userPwd},#{createTime})
+    </insert>
+
+    <insert id="insertGameSaveErrorLog" parameterType="com.account.domain.GameSaveErrorLog">
+		insert into
+		g_save_error_log(serverId,dataType,errorCount,errorDesc,errorTime,logTime)
+		values(#{serverId},#{dataType},#{errorCount},#{errorDesc},#{errorTime},#{logTime})
+	</insert>
+
+</mapper>

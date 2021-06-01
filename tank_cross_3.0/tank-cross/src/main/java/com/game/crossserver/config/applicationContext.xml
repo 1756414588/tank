@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:task="http://www.springframework.org/schema/task"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+       http://www.springframework.org/schema/task
+       http://www.springframework.org/schema/task/spring-task-3.1.xsd
+
+
+
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd">
+
+    <context:property-placeholder location="classpath:gameServer.properties,classpath:jdbc.properties" file-encoding="utf-8"/>
+
+    <context:component-scan base-package="com.game"/>
+
+    <task:annotation-driven/>
+
+    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"
+          destroy-method="close">
+        <property name="driverClass" value="com.mysql.jdbc.Driver"/>
+        <property name="jdbcUrl" value="#{serverConfig.jdbcUrl}"/>
+        <property name="user" value="#{serverConfig.user}"/>
+        <property name="password" value="#{serverConfig.password}"/>
+        <property name="initialPoolSize" value="25"/>
+        <property name="minPoolSize" value="25"/>
+        <property name="maxPoolSize" value="50"/>
+        <property name="maxIdleTime" value="7000"/>
+        <property name="acquireIncrement" value="5"/>
+        <property name="acquireRetryAttempts" value="30"/>
+        <property name="acquireRetryDelay" value="1000"/>
+        <property name="numHelperThreads" value="5"/>
+        <property name="idleConnectionTestPeriod" value="120"/>
+        <property name="testConnectionOnCheckout" value="false"/>
+        <property name="testConnectionOnCheckin" value="false"/>
+        <property name="preferredTestQuery" value="select 'x'"/>
+    </bean>
+
+    <bean id="dataCacheManager" class="com.gamemysql.cache.DataCacheManager">
+        <constructor-arg index="0" ref="dataSource"/>
+    </bean>
+    <bean id="dataRepository" class="com.gamemysql.core.entity.DataRepository">
+        <constructor-arg index="0" ref="dataSource"/>
+        <constructor-arg index="1" ref="dataCacheManager"/>
+    </bean>
+    <import resource="sDaoBean.xml"/>
+</beans>

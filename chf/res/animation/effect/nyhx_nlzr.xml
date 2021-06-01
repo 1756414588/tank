@@ -1,0 +1,53 @@
+<skeleton name="nyhx_nlzr" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="nyhx_nlzr">
+   <b name="1" x="-3.15" y="-12.05" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0">
+    <d name="nyhx_nlzr_3"/>
+    <d name="nyhx_nlzr_7"/>
+    <d name="nyhx_nlzr_11"/>
+    <d name="nyhx_nlzr_15"/>
+    <d name="nyhx_nlzr_19"/>
+    <d name="nyhx_nlzr_23"/>
+    <d name="nyhx_nlzr_27"/>
+    <d name="nyhx_nlzr_31"/>
+    <d name="nyhx_nlzr_35"/>
+    <d name="nyhx_nlzr_39"/>
+    <d name="nyhx_nlzr_43"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="nyhx_nlzr">
+   <mov name="start" dr="46" to="0" drTW="46" lp="0" twE="NaN">
+    <b name="1" sc="1" dl="0">
+     <f dr="1" dI="-1"/>
+     <f x="-3.15" y="-12.05" cocos2d_x="-3.15" cocos2d_y="-12.05" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="4"/>
+     <f x="-3.15" y="-12.05" cocos2d_x="-3.15" cocos2d_y="-12.05" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="1" dr="4"/>
+     <f x="-3.15" y="-12.05" cocos2d_x="-3.15" cocos2d_y="-12.05" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="2" dr="4"/>
+     <f x="-3.15" y="-12.05" cocos2d_x="-3.15" cocos2d_y="-12.05" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="3" dr="4"/>
+     <f x="-3.15" y="-12.05" cocos2d_x="-3.15" cocos2d_y="-12.05" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="4" dr="4"/>
+     <f x="-3.15" y="-12.05" cocos2d_x="-3.15" cocos2d_y="-12.05" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="5" dr="4"/>
+     <f x="-3.15" y="-12.05" cocos2d_x="-3.15" cocos2d_y="-12.05" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="6" dr="4"/>
+     <f x="-3.15" y="-12.05" cocos2d_x="-3.15" cocos2d_y="-12.05" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="7" dr="4"/>
+     <f x="-3.15" y="-12.05" cocos2d_x="-3.15" cocos2d_y="-12.05" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="8" dr="4"/>
+     <f x="-3.15" y="-12.05" cocos2d_x="-3.15" cocos2d_y="-12.05" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="9" dr="4"/>
+     <f x="-3.15" y="-12.05" cocos2d_x="-3.15" cocos2d_y="-12.05" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="10" dr="4"/>
+     <f dr="1" dI="-1"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="nyhx_nlzr" width="1024" height="1024">
+  <SubTexture name="nyhx_nlzr_43" width="220" height="220" cocos2d_pX="110" cocos2d_pY="110" x="444" y="222"/>
+  <SubTexture name="nyhx_nlzr_39" width="220" height="220" cocos2d_pX="110" cocos2d_pY="110" x="444" y="0"/>
+  <SubTexture name="nyhx_nlzr_35" width="220" height="220" cocos2d_pX="110" cocos2d_pY="110" x="444" y="444"/>
+  <SubTexture name="nyhx_nlzr_31" width="220" height="220" cocos2d_pX="110" cocos2d_pY="110" x="0" y="222"/>
+  <SubTexture name="nyhx_nlzr_27" width="220" height="220" cocos2d_pX="110" cocos2d_pY="110" x="222" y="444"/>
+  <SubTexture name="nyhx_nlzr_23" width="220" height="220" cocos2d_pX="110" cocos2d_pY="110" x="0" y="0"/>
+  <SubTexture name="nyhx_nlzr_19" width="220" height="220" cocos2d_pX="110" cocos2d_pY="110" x="222" y="0"/>
+  <SubTexture name="nyhx_nlzr_15" width="220" height="220" cocos2d_pX="110" cocos2d_pY="110" x="666" y="0"/>
+  <SubTexture name="nyhx_nlzr_11" width="220" height="220" cocos2d_pX="110" cocos2d_pY="110" x="222" y="222"/>
+  <SubTexture name="nyhx_nlzr_7" width="220" height="220" cocos2d_pX="110" cocos2d_pY="110" x="666" y="222"/>
+  <SubTexture name="nyhx_nlzr_3" width="220" height="220" cocos2d_pX="110" cocos2d_pY="110" x="0" y="444"/>
+ </TextureAtlas>
+</skeleton>

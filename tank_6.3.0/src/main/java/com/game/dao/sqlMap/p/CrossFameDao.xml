@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="CrossFameDao">
+	<select id="selectCrossFameInfo"  resultType="DbCrossFameInfo">
+		select keyId,beginTime,endTime,crossFames from p_crossFames
+	</select>
+
+	<insert id="insertCrossFameInfo" parameterType="DbCrossFameInfo">
+		insert into p_crossFames(beginTime,endTime,crossFames) values(#{beginTime},#{endTime},#{crossFames})
+	</insert>
+	
+	<select id="selectCPFameInfo"  resultType="DbCPFame">
+		select keyId,beginTime,endTime,crossFames from p_cpFames
+	</select>
+	
+	<insert id="insertCPFameInfo" parameterType="DbCPFame">
+		insert into p_cpFames(beginTime,endTime,crossFames) values(#{beginTime},#{endTime},#{crossFames})
+	</insert>
+
+</mapper>

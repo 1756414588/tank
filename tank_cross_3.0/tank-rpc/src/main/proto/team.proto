@@ -1,0 +1,353 @@
+syntax = "proto2";
+option java_package = "com.game.grpc.proto.team";
+option java_outer_classname = "CrossTeamProto";
+
+message RpcSynPlayerRequest{
+    required int32 serverId = 1;
+    required int64 roleId = 2;                      //玩家id
+    optional string nick = 3;                       //玩家昵称
+    optional int64 fight = 4;                       //战力
+    optional int32 level =5;                        //等级
+    optional int32 portrait = 6;                    //指挥官头像
+    optional int32 staffingId = 7;                  //编制id
+    optional int32 militaryRank = 8;                // 军衔等级
+    optional Form form = 9;
+    repeated Equip equip = 10;
+    repeated Science science = 11;
+    repeated Part part = 12;
+    repeated Skill skill = 13;
+    repeated Effect effect = 14;
+    repeated EnergyStoneInlay inlay = 15;//镶嵌信息
+    repeated MilitaryScience militaryScience  = 16;         //军工科技
+    repeated MilitaryScienceGrid militaryScienceGrid = 17;  //军工格子信息
+    repeated Medal medal = 18;                              // 勋章
+    repeated MedalBouns medalBouns = 19;                    // 勋章展厅
+    repeated AwakenHero awakenHero = 20;                    // 觉醒英雄
+    repeated LordEquip leq = 21;                            // 军备信息
+    repeated SecretWeapon secretWeapon = 22;                // 秘密武器
+    repeated AttackEffectPb atkEft = 23;                    // 攻击特效
+    repeated GraduateInfoPb graduateInfo = 24;			    // 作战实验室科技
+    repeated Science partyScience = 25;                     //军团科技列表
+    optional int32 openTime =26;                            //开服时间
+    optional ThreeInt energyCore=27;                        //v1.等级 v2 阶段. v3.状态
+    optional int32 partyId = 28;
+    optional string partyName = 29;
+    optional int32 vip=30;
+    optional int32 honor =31;
+    optional int32 pros =32 ;
+    optional int32 maxPros =33 ;
+    optional int32 type =34;  //1.跨服组队同步 2.跨服军矿同步
+    optional int32 crossMineScore =35;
+
+}
+message Form {
+    optional int32 commander = 1;   //指挥官id
+    optional TwoInt p1 = 2;         //1号位坦克(id,数量)
+    optional TwoInt p2 = 3;
+    optional TwoInt p3 = 4;
+    optional TwoInt p4 = 5;
+    optional TwoInt p5 = 6;
+    optional TwoInt p6 = 7;
+    optional int32 type = 8;            //阵型类型（获取阵型列表的时候，会存在这个字段）//1.模板阵型 2.基地防守 3.竞技场防守 7.世界boss 8 要塞战防守
+    optional AwakenHero awakenHero = 9; //使用觉醒将领
+    optional string formName = 10;       //阵形名字
+	repeated int32 tacticsKeyId =11;//战术的keyid
+	repeated TwoInt tactics =12;//战术的 tacticsId,level ,用于播放战报
+}
+message Equip {
+    required int32 keyId = 1;
+    required int32 equipId = 2;
+    required int32 lv = 3;
+    required int32 exp = 4;
+    required int32 pos = 5;         //装备位置 0.未装备 1.阵型第一格 2.阵型第二格 。。。
+	optional int32 starLv = 6; //装备星级
+}
+message Part {
+    required int32 keyId = 1;
+    required int32 partId = 2;
+    required int32 upLv = 3;
+    required int32 refitLv = 4;
+    required int32 pos = 5;         //配件位置 0.未装备 1.坦克 2.战车 3.火炮 4.火箭
+    optional bool locked = 6;       //是否已锁
+    optional int32 smeltLv = 7;     //淬炼等级
+    optional int32 smeltExp = 8;     //淬炼经验
+    repeated PartSmeltAttr attr = 9; //淬炼属性
+    optional bool saved = 10[default = true];       //是否保存萃取
+}
+message Science {
+    required int32 scienceId = 1; //科技ID
+    required int32 scienceLv = 2; //科技等级
+    optional int32 schedule = 3; //研究进度(帮派科技用到)
+}
+message Skill {
+    required int32 id = 1;
+    required int32 lv = 2;
+}
+message Effect {              //特殊加成
+    required int32 id = 1;
+    required int32 endTime = 2;
+}
+message EnergyStoneInlay{
+    required int32 hole = 1;        // 镶嵌孔id,从1开始
+    required int32 stoneId = 2;     // 能晶id
+    required int32 pos = 3;         // 出战部位 1.阵型第一格 2.阵型第二格 ...
+}
+message MilitaryScienceGrid{
+    optional int32 tankId = 1; //tankId
+    optional int32 pos = 2;// 位置 ，从1开始
+    optional int32 status = 3;//格子状态:0已解锁1未解锁2未开放3效率',
+    optional int32 militaryScienceId = 4;// 当装载后科技后有效,默认为0
+}
+message MilitaryScience{
+    optional int32 militaryScienceId = 1;
+    optional int32 level = 2;
+    optional int32 fitTankId = 3;
+    optional int32 fitPos = 4;
+}
+message Medal{
+    required int32 keyId = 1;      //唯一标识
+    required int32 medalId = 2;    //勋章id
+    required int32 upLv = 3;       //强化等级
+    required int32 upExp = 4;      //强化经验
+    required int32 refitLv = 5;    //改造等级
+    required int32 pos = 6;        //0是仓库 1将领身上 20展示
+    required bool locked = 7;      //是否已锁
+}
+message MedalBouns{
+    required int32 medalId = 1;    //勋章id
+    required int32 state = 2;      //0获得过且未展示 1获得过且已展示
+}
+message AwakenHero {
+    required int32 keyId = 1;           // 唯一id
+    optional int32 heroId = 2;          // 英雄id
+    optional int32 state = 3;           // 英雄状态 0未派出 1派出
+    repeated TwoInt skillLv = 4;        // 技能id-等级
+    optional int32 failTimes = 5;       // 失败次数
+}
+//指挥官装备
+message LordEquip{
+    optional int32 keyId = 1;          //唯一ID
+    optional int32 equip_id = 2;       //军备ID
+    optional int32  pos =3;             //位置0-军备仓库,1-20 装备位置
+    repeated TwoInt skillLv = 4;        //军备技能id-等级
+	optional bool  isLock =5;
+	repeated TwoInt skillLvSecond = 6;        //第二套军备技能id-等级
+	optional int32 lordEquipSaveType=7;//军备保存的是第几套  0第一套，1第二套
+}
+//秘密武器信息
+message SecretWeapon{
+    required int32 id   = 1;                //秘密武器ID
+    repeated SecretWeaponBar bar  = 2;      //洗练的技能ID, 下标对应洗练条目位置
+}
+
+//秘密武器技能栏
+message SecretWeaponBar{
+    required int32 sid = 1;                 //技能ID
+    required bool locked = 2;               //true-锁定
+}
+
+//攻击特效信息
+message AttackEffectPb{
+    required int32 type     = 1;                //兵种类型
+    required int32 useId    = 2;                //使用的特效组ID
+    repeated int32 unlock   = 3;                //已经解锁的特效组列表
+}
+//作战研究院
+message GraduateInfoPb{
+    required int32 type =1;//研究类型
+    repeated TwoInt graduateInfo    = 2;//key 研究小类id value 等级
+}
+
+message PartSmeltAttr {              //配件淬炼属性
+    required int32 id          = 1;       //属性id
+    required int32 val         = 2;       //属性值
+    optional int32 newVal      = 3;       //新值
+}
+
+message TwoInt {
+    required int32 v1 = 1;
+    required int32 v2 = 2;
+}
+
+message ThreeInt {
+    required int32 v1 = 1;
+    required int32 v2 = 2;
+    required int32 v3 = 3;
+}
+
+message RpcCodeTeamResponse {
+    optional int32 code = 1; //错误码
+}
+
+
+message RpcCreateTeamRequest {
+    required int64 roleId = 1; //角色ID
+    required int32 teamType = 2; //队伍类型
+    required int64 fight = 3; //战力
+
+}
+message RpcCreateTeamResponse {
+    optional int32 code = 1; //错误码
+    optional int32 teamId = 2; //队伍ID
+    optional RpcTeamRoleInfo roleInfo = 3; //队伍角色信息
+}
+
+//组队角色信息
+message RpcTeamRoleInfo {
+    required int64 roleId = 1; //角色ID
+    required int32 portrait = 2; //角色头像
+    required string nick = 3; //角色昵称
+    required int64 fight = 4; //角色战力
+    required int32 status = 5; //角色状态，-1 未就绪/0 就绪/1 战斗中
+    optional string serverName=6;//服务器名称
+}
+
+message RpcDisMissTeamRequest {
+    required int64 roleId = 1; //角色ID
+}
+
+//寻找队伍
+message RpcFindTeamRequest {
+    required int64 roleId=1;
+	required int32 teamType = 2; //队伍类型
+}
+
+//离开队伍
+message RpcLeaveTeamRequest {
+    required int64 roleId=1;
+}
+
+//踢出队伍
+message RpcKickTeamRequest {
+    required int64 roleId=1; //踢人id
+	required int64 broleId = 2; //被踢队员ID
+}
+
+//加入队伍
+message RpcJoinTeamRequest {
+    required int64 roleId=1;
+    required int32 teamId = 2;	 //队伍ID
+}
+
+//加入队伍
+message RpcChangeMemberStatusRequest {
+    required int64 roleId=1;
+}
+
+//交换队员出战顺序
+message CrossExchangeOrderRequest {
+    required int64 roleId =  1;
+	required int32 roleOne = 2;   //位置序号1
+	required int32 roleTwo = 3;	 //位置序号2
+}
+
+//队伍聊天协议
+message CrossTeamChatRequest{
+    required int64 roleId=1;
+	required string message = 2; //聊天内容
+	required int64 time=3;
+}
+
+message CrossTeamChatResponse{
+    required  int32 code=1;
+	required int64 time = 2; //聊天发起时间
+}
+
+//查看队员阵型
+message CrossLookFormRequest{
+    required int64 roleId=1;
+}
+message CrossLookFormResponse{
+    required int32 code=1;
+	optional Form form = 2; //队伍阵型
+    optional int64 fight = 3; //阵型战力
+}
+
+//发送世界消息邀请玩家
+message CrossInviteRequest {
+    required int64 roleId = 1;
+	required int32 stageId = 2;  //关卡ID
+}
+
+message CrossTeamFightRequest{
+    required int64 roleId = 1;
+}
+
+message CrossSynFormRequest{
+    required int64 roleId = 1;
+    required Form form=2;
+    required int64 fight=3;
+}
+
+message CrossLogOutRequest{
+    required int64 roleId = 1;
+}
+
+message CrossWorldChatRequest{
+    required int64 roleId = 1;
+    required string content =2;
+    optional int32 time=3;
+    optional string nickName=4;
+    optional int32 port=5;
+    optional int32 bubble=6;
+    optional bool isGm=7;
+    optional int32 lv=8;
+    optional int32 staffing=9;
+    optional int32 military=10;
+    optional int32 vip=11;
+    optional string serverName=12;
+    optional int64 fight=13;
+    optional string partyName=14;
+    optional int32 serverId =15;
+}
+
+message CrossServerListRequest{
+}
+
+message CrossServerListResponse{
+    repeated GameServerInfo listInfo =1;
+}
+
+message GameServerInfo{
+    required int32 serverId = 1;
+    required string serverName = 2;
+}
+
+
+service TeamHandler{
+    //同步信息
+    rpc synPlayer(RpcSynPlayerRequest) returns (RpcCodeTeamResponse);
+    //创建组队
+    rpc createTeam (RpcCreateTeamRequest) returns (RpcCreateTeamResponse);
+    //解散队伍
+    rpc dismissTeam(RpcDisMissTeamRequest) returns (RpcCodeTeamResponse);
+    //寻找队伍
+    rpc findTeam(RpcFindTeamRequest) returns (RpcCodeTeamResponse);
+    //退出队伍
+    rpc leaveTeam(RpcLeaveTeamRequest) returns (RpcCodeTeamResponse);
+    //踢出队伍
+    rpc kickTeam(RpcKickTeamRequest) returns (RpcCodeTeamResponse);
+    //加入队伍
+    rpc joinTeam(RpcJoinTeamRequest) returns (RpcCodeTeamResponse);
+    //交换队伍出站顺序
+    rpc changeTeamOrder(CrossExchangeOrderRequest) returns (RpcCodeTeamResponse);
+    //更改队员准备状态
+    rpc changeMemberStatus(RpcChangeMemberStatusRequest) returns (RpcCodeTeamResponse);
+    //查看阵型
+    rpc lookForm(CrossLookFormRequest) returns (CrossLookFormResponse);
+    //世界频道发送聊天
+    rpc teamInvite(CrossInviteRequest) returns (RpcCodeTeamResponse);
+    //战斗
+    rpc fight(CrossTeamFightRequest) returns (RpcCodeTeamResponse);
+    //同步阵型
+    rpc synForm(CrossSynFormRequest) returns (RpcCodeTeamResponse);
+    //退出
+    rpc logOut(CrossLogOutRequest) returns (RpcCodeTeamResponse);
+    //跨服世界频道聊天
+    rpc worldChat(CrossWorldChatRequest) returns (RpcCodeTeamResponse);
+    // 获取服务器列表
+    rpc queryServerList(CrossServerListRequest) returns (CrossServerListResponse);
+}
+
+
+

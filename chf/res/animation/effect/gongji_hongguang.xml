@@ -1,0 +1,55 @@
+<skeleton name="gongji_hongguang" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="gongji_hongguang">
+   <b name="1" x="15" y="-560.15" kX="0" kY="0" cX="1.92" cY="1" pX="0" pY="0" z="0">
+    <d name="part-zhaohuo_x1"/>
+   </b>
+   <b name="2" x="-4" y="547.15" kX="180" kY="0" cX="1.92" cY="1" pX="0" pY="0" z="1">
+    <d name="part-zhaohuo_x1"/>
+   </b>
+   <b name="3" x="-294.15" y="-5" kX="-90.06" kY="89.94" cX="3.37" cY="1.22" pX="0" pY="0" z="2">
+    <d name="part-zhaohuo_x1"/>
+   </b>
+   <b name="4" x="302" y="-5" kX="90.06" kY="90.06" cX="3.37" cY="1.22" pX="0" pY="0" z="3">
+    <d name="part-zhaohuo_x1"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="gongji_hongguang">
+   <mov name="start" dr="120" to="6" drTW="120" lp="1" twE="NaN">
+    <b name="1" sc="1" dl="0">
+     <f x="15" y="-560.15" cocos2d_x="15" cocos2d_y="-560.15" kX="0" kY="0" cX="1.92" cY="1" pX="0" pY="0" z="0" dI="0" twE="0" dr="59"/>
+     <f x="15" y="-560.15" cocos2d_x="15" cocos2d_y="-560.15" kX="0" kY="0" cX="1.92" cY="1" pX="0" pY="0" z="0" dI="0" twE="0" dr="60">
+      <colorTransform a="0" r="0" g="0" b="0" aM="48" rM="100" gM="100" bM="100"/>
+     </f>
+     <f x="15" y="-560.15" cocos2d_x="15" cocos2d_y="-560.15" kX="0" kY="0" cX="1.92" cY="1" pX="0" pY="0" z="0" dI="0" twE="0" dr="1"/>
+    </b>
+    <b name="2" sc="1" dl="0">
+     <f x="-4" y="547.15" cocos2d_x="-4" cocos2d_y="547.15" kX="180" kY="0" cX="1.92" cY="1" pX="0" pY="0" z="1" dI="0" twE="0" dr="59"/>
+     <f x="-4" y="547.15" cocos2d_x="-4" cocos2d_y="547.15" kX="180" kY="0" cX="1.92" cY="1" pX="0" pY="0" z="1" dI="0" twE="0" dr="60">
+      <colorTransform a="0" r="0" g="0" b="0" aM="48" rM="100" gM="100" bM="100"/>
+     </f>
+     <f x="-4" y="547.15" cocos2d_x="-4" cocos2d_y="547.15" kX="180" kY="0" cX="1.92" cY="1" pX="0" pY="0" z="1" dI="0" twE="0" dr="1"/>
+    </b>
+    <b name="3" sc="1" dl="0">
+     <f x="-294.15" y="-5" cocos2d_x="-294.15" cocos2d_y="-5" kX="-90.06" kY="89.94" cX="3.37" cY="1.22" pX="0" pY="0" z="2" dI="0" twE="0" dr="59"/>
+     <f x="-294.15" y="-5" cocos2d_x="-294.15" cocos2d_y="-5" kX="-90.06" kY="89.94" cX="3.37" cY="1.22" pX="0" pY="0" z="2" dI="0" twE="0" dr="60">
+      <colorTransform a="0" r="0" g="0" b="0" aM="48" rM="100" gM="100" bM="100"/>
+     </f>
+     <f x="-294.15" y="-5" cocos2d_x="-294.15" cocos2d_y="-5" kX="-90.06" kY="89.94" cX="3.37" cY="1.22" pX="0" pY="0" z="2" dI="0" twE="0" dr="1"/>
+    </b>
+    <b name="4" sc="1" dl="0">
+     <f x="302" y="-5" cocos2d_x="302" cocos2d_y="-5" kX="90.06" kY="90.06" cX="3.37" cY="1.22" pX="0" pY="0" z="3" dI="0" twE="0" dr="59"/>
+     <f x="302" y="-5" cocos2d_x="302" cocos2d_y="-5" kX="90.06" kY="90.06" cX="3.37" cY="1.22" pX="0" pY="0" z="3" dI="0" twE="0" dr="60">
+      <colorTransform a="0" r="0" g="0" b="0" aM="48" rM="100" gM="100" bM="100"/>
+     </f>
+     <f x="302" y="-5" cocos2d_x="302" cocos2d_y="-5" kX="90.06" kY="90.06" cX="3.37" cY="1.22" pX="0" pY="0" z="3" dI="0" twE="0" dr="1"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="gongji_hongguang" width="512" height="128">
+  <SubTexture name="part-zhaohuo_x1" width="367" height="91" cocos2d_pX="183.25" cocos2d_pY="45.5" x="0" y="0"/>
+ </TextureAtlas>
+</skeleton>

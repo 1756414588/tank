@@ -1,0 +1,139 @@
+<skeleton name="cidian_shot" frameRate="24" version="2.0">
+ <armatures>
+  <armature name="cidian_shot">
+   <b name="3" x="-0.05" y="0" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0">
+    <d name="part-cidian_shothou01"/>
+    <d name="part-cidian_shothou02"/>
+    <d name="part-cidian_shothou03"/>
+    <d name="part-cidian_shothou04"/>
+    <d name="part-cidian_shothou05"/>
+    <d name="part-cidian_shothou06"/>
+   </b>
+   <b name="6" x="21.95" y="0" kX="105.74" kY="105.74" cX="1.18" cY="1.18" pX="0" pY="0" z="0">
+    <d name="part-cidian_shothou01"/>
+    <d name="part-cidian_shothou02"/>
+    <d name="part-cidian_shothou03"/>
+    <d name="part-cidian_shothou04"/>
+    <d name="part-cidian_shothou05"/>
+    <d name="part-cidian_shothou06"/>
+   </b>
+   <b name="4" x="-0.05" y="0" kX="-132.66" kY="-132.66" cX="1.8" cY="1.8" pX="0" pY="0" z="0">
+    <d name="part-cidian_shothou01"/>
+    <d name="part-cidian_shothou02"/>
+    <d name="part-cidian_shothou03"/>
+    <d name="part-cidian_shothou04"/>
+    <d name="part-cidian_shothou05"/>
+    <d name="part-cidian_shothou06"/>
+   </b>
+   <b name="5" x="-0.05" y="0" kX="-14.99" kY="-14.99" cX="1.44" cY="1.44" pX="0" pY="0" z="0">
+    <d name="part-cidian_shothou01"/>
+    <d name="part-cidian_shothou02"/>
+    <d name="part-cidian_shothou03"/>
+    <d name="part-cidian_shothou04"/>
+    <d name="part-cidian_shothou05"/>
+    <d name="part-cidian_shothou06"/>
+   </b>
+   <b name="2" x="-0.05" y="-0.1" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0">
+    <d name="part-cidian_shot01"/>
+    <d name="part-cidian_shot02"/>
+    <d name="part-cidian_shot03"/>
+    <d name="part-cidian_shot04"/>
+    <d name="part-cidian_shot05"/>
+    <d name="part-cidian_shot06"/>
+    <d name="part-cidian_shot07"/>
+    <d name="part-cidian_shot08"/>
+    <d name="part-cidian_shot09"/>
+    <d name="part-cidian_shot10"/>
+    <d name="part-cidian_shot11"/>
+    <d name="part-cidian_shot12"/>
+    <d name="part-cidian_shot13"/>
+    <d name="part-cidian_shot14"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="cidian_shot">
+   <mov name="start" dr="56" to="0" drTW="56" lp="0" twE="NaN">
+    <b name="3" sc="1" dl="0">
+     <f dr="6" dI="-1"/>
+     <f x="-0.05" y="0" cocos2d_x="-0.05" cocos2d_y="0" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="0" dr="2"/>
+     <f x="-0.05" y="0" cocos2d_x="-0.05" cocos2d_y="0" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="1" dr="2"/>
+     <f x="-0.05" y="0" cocos2d_x="-0.05" cocos2d_y="0" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="2" dr="2"/>
+     <f x="-0.05" y="0" cocos2d_x="-0.05" cocos2d_y="0" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="3" dr="2"/>
+     <f x="-0.05" y="0" cocos2d_x="-0.05" cocos2d_y="0" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="4" dr="2"/>
+     <f x="-0.05" y="0" cocos2d_x="-0.05" cocos2d_y="0" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="5" dr="2"/>
+     <f dr="38" dI="-1"/>
+    </b>
+    <b name="6" sc="1" dl="0">
+     <f dr="42" dI="-1"/>
+     <f x="21.95" y="0" cocos2d_x="21.95" cocos2d_y="0" kX="105.74" kY="105.74" cX="1.18" cY="1.18" pX="0" pY="0" z="0" dI="0" dr="2"/>
+     <f x="21.95" y="0" cocos2d_x="21.95" cocos2d_y="0" kX="105.74" kY="105.74" cX="1.18" cY="1.18" pX="0" pY="0" z="0" dI="1" dr="2"/>
+     <f x="21.95" y="0" cocos2d_x="21.95" cocos2d_y="0" kX="105.74" kY="105.74" cX="1.18" cY="1.18" pX="0" pY="0" z="0" dI="2" dr="2"/>
+     <f x="21.95" y="0" cocos2d_x="21.95" cocos2d_y="0" kX="105.74" kY="105.74" cX="1.18" cY="1.18" pX="0" pY="0" z="0" dI="3" dr="2"/>
+     <f x="21.95" y="0" cocos2d_x="21.95" cocos2d_y="0" kX="105.74" kY="105.74" cX="1.18" cY="1.18" pX="0" pY="0" z="0" dI="4" dr="2"/>
+     <f x="21.95" y="0" cocos2d_x="21.95" cocos2d_y="0" kX="105.74" kY="105.74" cX="1.18" cY="1.18" pX="0" pY="0" z="0" dI="5" dr="2"/>
+     <f dr="2" dI="-1"/>
+    </b>
+    <b name="4" sc="1" dl="0">
+     <f dr="18" dI="-1"/>
+     <f x="-0.05" y="0" cocos2d_x="-0.05" cocos2d_y="0" kX="-132.66" kY="-132.66" cX="1.8" cY="1.8" pX="0" pY="0" z="0" dI="0" dr="2"/>
+     <f x="-0.05" y="0" cocos2d_x="-0.05" cocos2d_y="0" kX="-132.66" kY="-132.66" cX="1.8" cY="1.8" pX="0" pY="0" z="0" dI="1" dr="2"/>
+     <f x="-0.05" y="0" cocos2d_x="-0.05" cocos2d_y="0" kX="-132.66" kY="-132.66" cX="1.8" cY="1.8" pX="0" pY="0" z="0" dI="2" dr="2"/>
+     <f x="-0.05" y="0" cocos2d_x="-0.05" cocos2d_y="0" kX="-132.66" kY="-132.66" cX="1.8" cY="1.8" pX="0" pY="0" z="0" dI="3" dr="2"/>
+     <f x="-0.05" y="0" cocos2d_x="-0.05" cocos2d_y="0" kX="-132.66" kY="-132.66" cX="1.8" cY="1.8" pX="0" pY="0" z="0" dI="4" dr="2"/>
+     <f x="-0.05" y="0" cocos2d_x="-0.05" cocos2d_y="0" kX="-132.66" kY="-132.66" cX="1.8" cY="1.8" pX="0" pY="0" z="0" dI="5" dr="2"/>
+     <f dr="26" dI="-1"/>
+    </b>
+    <b name="5" sc="1" dl="0">
+     <f dr="30" dI="-1"/>
+     <f x="-0.05" y="0" cocos2d_x="-0.05" cocos2d_y="0" kX="-14.99" kY="-14.99" cX="1.44" cY="1.44" pX="0" pY="0" z="0" dI="0" dr="2"/>
+     <f x="-0.05" y="0" cocos2d_x="-0.05" cocos2d_y="0" kX="-14.99" kY="-14.99" cX="1.44" cY="1.44" pX="0" pY="0" z="0" dI="1" dr="2"/>
+     <f x="-0.05" y="0" cocos2d_x="-0.05" cocos2d_y="0" kX="-14.99" kY="-14.99" cX="1.44" cY="1.44" pX="0" pY="0" z="0" dI="2" dr="2"/>
+     <f x="-0.05" y="0" cocos2d_x="-0.05" cocos2d_y="0" kX="-14.99" kY="-14.99" cX="1.44" cY="1.44" pX="0" pY="0" z="0" dI="3" dr="2"/>
+     <f x="-0.05" y="0" cocos2d_x="-0.05" cocos2d_y="0" kX="-14.99" kY="-14.99" cX="1.44" cY="1.44" pX="0" pY="0" z="0" dI="4" dr="2"/>
+     <f x="-0.05" y="0" cocos2d_x="-0.05" cocos2d_y="0" kX="-14.99" kY="-14.99" cX="1.44" cY="1.44" pX="0" pY="0" z="0" dI="5" dr="2"/>
+     <f dr="14" dI="-1"/>
+    </b>
+    <b name="2" sc="1" dl="0">
+     <f x="-0.05" y="-0.1" cocos2d_x="-0.05" cocos2d_y="-0.1" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="0" dr="2"/>
+     <f x="-0.05" y="-0.1" cocos2d_x="-0.05" cocos2d_y="-0.1" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="1" dr="2"/>
+     <f x="-0.05" y="-0.1" cocos2d_x="-0.05" cocos2d_y="-0.1" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="2" dr="2"/>
+     <f x="-0.05" y="-0.1" cocos2d_x="-0.05" cocos2d_y="-0.1" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="1" dI="3" dr="2"/>
+     <f x="-0.05" y="-0.1" cocos2d_x="-0.05" cocos2d_y="-0.1" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="1" dI="4" dr="2"/>
+     <f x="-0.05" y="-0.1" cocos2d_x="-0.05" cocos2d_y="-0.1" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="1" dI="5" dr="2"/>
+     <f x="-0.05" y="-0.1" cocos2d_x="-0.05" cocos2d_y="-0.1" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="1" dI="6" dr="2"/>
+     <f x="-0.05" y="-0.1" cocos2d_x="-0.05" cocos2d_y="-0.1" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="1" dI="7" dr="2"/>
+     <f x="-0.05" y="-0.1" cocos2d_x="-0.05" cocos2d_y="-0.1" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="1" dI="8" dr="2"/>
+     <f x="-0.05" y="-0.1" cocos2d_x="-0.05" cocos2d_y="-0.1" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="1" dI="9" dr="2"/>
+     <f x="-0.05" y="-0.1" cocos2d_x="-0.05" cocos2d_y="-0.1" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="1" dI="10" dr="2"/>
+     <f x="-0.05" y="-0.1" cocos2d_x="-0.05" cocos2d_y="-0.1" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="1" dI="11" dr="2"/>
+     <f x="-0.05" y="-0.1" cocos2d_x="-0.05" cocos2d_y="-0.1" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="1" dI="12" dr="2"/>
+     <f x="-0.05" y="-0.1" cocos2d_x="-0.05" cocos2d_y="-0.1" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="1" dI="13" dr="2"/>
+     <f dr="28" dI="-1"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="cidian_shot" width="1024" height="1024">
+  <SubTexture name="part-cidian_shot14" width="150" height="150" cocos2d_pX="75" cocos2d_pY="75" x="152" y="0"/>
+  <SubTexture name="part-cidian_shot13" width="150" height="150" cocos2d_pX="75" cocos2d_pY="75" x="760" y="152"/>
+  <SubTexture name="part-cidian_shot12" width="150" height="150" cocos2d_pX="75" cocos2d_pY="75" x="456" y="0"/>
+  <SubTexture name="part-cidian_shot11" width="150" height="150" cocos2d_pX="75" cocos2d_pY="75" x="152" y="456"/>
+  <SubTexture name="part-cidian_shot10" width="150" height="150" cocos2d_pX="75" cocos2d_pY="75" x="760" y="0"/>
+  <SubTexture name="part-cidian_shot09" width="150" height="150" cocos2d_pX="75" cocos2d_pY="75" x="152" y="304"/>
+  <SubTexture name="part-cidian_shot08" width="150" height="150" cocos2d_pX="75" cocos2d_pY="75" x="152" y="152"/>
+  <SubTexture name="part-cidian_shot07" width="150" height="150" cocos2d_pX="75" cocos2d_pY="75" x="0" y="456"/>
+  <SubTexture name="part-cidian_shot06" width="150" height="150" cocos2d_pX="75" cocos2d_pY="75" x="456" y="152"/>
+  <SubTexture name="part-cidian_shot05" width="150" height="150" cocos2d_pX="75" cocos2d_pY="75" x="456" y="304"/>
+  <SubTexture name="part-cidian_shot04" width="150" height="150" cocos2d_pX="75" cocos2d_pY="75" x="0" y="0"/>
+  <SubTexture name="part-cidian_shot03" width="150" height="150" cocos2d_pX="75" cocos2d_pY="75" x="304" y="0"/>
+  <SubTexture name="part-cidian_shot02" width="150" height="150" cocos2d_pX="75" cocos2d_pY="75" x="608" y="0"/>
+  <SubTexture name="part-cidian_shot01" width="150" height="150" cocos2d_pX="75" cocos2d_pY="75" x="0" y="152"/>
+  <SubTexture name="part-cidian_shothou06" width="150" height="150" cocos2d_pX="75" cocos2d_pY="75" x="304" y="152"/>
+  <SubTexture name="part-cidian_shothou05" width="150" height="150" cocos2d_pX="75" cocos2d_pY="75" x="608" y="152"/>
+  <SubTexture name="part-cidian_shothou04" width="150" height="150" cocos2d_pX="75" cocos2d_pY="75" x="0" y="304"/>
+  <SubTexture name="part-cidian_shothou03" width="150" height="150" cocos2d_pX="75" cocos2d_pY="75" x="304" y="304"/>
+  <SubTexture name="part-cidian_shothou02" width="150" height="150" cocos2d_pX="75" cocos2d_pY="75" x="608" y="304"/>
+  <SubTexture name="part-cidian_shothou01" width="150" height="150" cocos2d_pX="75" cocos2d_pY="75" x="760" y="304"/>
+ </TextureAtlas>
+</skeleton>

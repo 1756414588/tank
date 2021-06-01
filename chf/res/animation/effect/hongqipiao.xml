@@ -1,0 +1,42 @@
+<skeleton name="hongqi" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="hongqipiao">
+   <b name="3" x="13.5" y="-14.5" kX="0" kY="0" cX="1.39" cY="1.39" pX="0" pY="0" z="0">
+    <d name="part-hongqi_1"/>
+    <d name="part-hongqi_2"/>
+    <d name="part-hongqi_3"/>
+    <d name="part-hongqi_4"/>
+    <d name="part-hongqi_5"/>
+    <d name="part-hongqi_6"/>
+    <d name="part-hongqi_7"/>
+    <d name="part-hongqi_8"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="hongqipiao">
+   <mov name="start" dr="48" to="6" drTW="48" lp="1" twE="NaN">
+    <b name="3" sc="1" dl="0">
+     <f x="13.5" y="-14.5" cocos2d_x="13.5" cocos2d_y="-14.5" kX="0" kY="0" cX="1.39" cY="1.39" pX="0" pY="0" z="0" dI="0" dr="6"/>
+     <f x="13.5" y="-14.45" cocos2d_x="13.5" cocos2d_y="-14.4" kX="0" kY="0" cX="1.39" cY="1.39" pX="0" pY="0" z="0" dI="1" dr="6"/>
+     <f x="13.4" y="-14.5" cocos2d_x="13.4" cocos2d_y="-14.5" kX="0" kY="0" cX="1.39" cY="1.39" pX="0" pY="0" z="0" dI="2" dr="6"/>
+     <f x="13.4" y="-14.45" cocos2d_x="13.4" cocos2d_y="-14.45" kX="0" kY="0" cX="1.39" cY="1.39" pX="0" pY="0" z="0" dI="3" dr="6"/>
+     <f x="13.4" y="-14.6" cocos2d_x="13.4" cocos2d_y="-14.6" kX="0" kY="0" cX="1.39" cY="1.39" pX="0" pY="0" z="0" dI="4" dr="6"/>
+     <f x="13.4" y="-14.6" cocos2d_x="13.4" cocos2d_y="-14.6" kX="0" kY="0" cX="1.39" cY="1.39" pX="0" pY="0" z="0" dI="5" dr="6"/>
+     <f x="13.3" y="-14.5" cocos2d_x="13.3" cocos2d_y="-14.5" kX="0" kY="0" cX="1.39" cY="1.39" pX="0" pY="0" z="0" dI="6" dr="6"/>
+     <f x="13.3" y="-14.55" cocos2d_x="13.3" cocos2d_y="-14.5" kX="0" kY="0" cX="1.39" cY="1.39" pX="0" pY="0" z="0" dI="7" dr="6"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="hongqi" width="64" height="128">
+  <SubTexture name="part-hongqi_8" width="21" height="21" cocos2d_pX="10.2" cocos2d_pY="9.75" x="23" y="69"/>
+  <SubTexture name="part-hongqi_7" width="21" height="21" cocos2d_pX="10.2" cocos2d_pY="9.95" x="23" y="46"/>
+  <SubTexture name="part-hongqi_6" width="21" height="21" cocos2d_pX="10.25" cocos2d_pY="9.95" x="0" y="24"/>
+  <SubTexture name="part-hongqi_5" width="21" height="21" cocos2d_pX="10.25" cocos2d_pY="10.3" x="0" y="70"/>
+  <SubTexture name="part-hongqi_4" width="21" height="21" cocos2d_pX="10.25" cocos2d_pY="10.5" x="23" y="0"/>
+  <SubTexture name="part-hongqi_3" width="21" height="21" cocos2d_pX="10.25" cocos2d_pY="10.5" x="23" y="23"/>
+  <SubTexture name="part-hongqi_2" width="21" height="22" cocos2d_pX="10.35" cocos2d_pY="10.65" x="0" y="0"/>
+  <SubTexture name="part-hongqi_1" width="21" height="21" cocos2d_pX="10.35" cocos2d_pY="10.5" x="0" y="47"/>
+ </TextureAtlas>
+</skeleton>

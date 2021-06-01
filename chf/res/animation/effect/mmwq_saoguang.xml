@@ -1,0 +1,28 @@
+<skeleton name="mmwq_saoguang" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="mmwq_saoguang">
+   <b name="2" x="-159.6" y="-0.65" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0">
+    <d name="part-mmwq_saoguang"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="mmwq_saoguang">
+   <mov name="start" dr="116" to="0" drTW="116" lp="1" twE="NaN">
+    <b name="2" sc="1" dl="0">
+     <f x="-159.6" y="-0.65" cocos2d_x="-159.6" cocos2d_y="-0.65" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" twE="0" dr="27">
+      <colorTransform a="0" r="0" g="0" b="0" aM="0" rM="100" gM="100" bM="100"/>
+     </f>
+     <f x="-68.15" y="-0.65" cocos2d_x="-68.15" cocos2d_y="-0.65" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" twE="0" dr="35"/>
+     <f x="49.4" y="-0.65" cocos2d_x="49.4" cocos2d_y="-0.65" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" twE="0" dr="33"/>
+     <f x="160.4" y="-0.65" cocos2d_x="160.4" cocos2d_y="-0.65" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="21">
+      <colorTransform a="0" r="0" g="0" b="0" aM="0" rM="100" gM="100" bM="100"/>
+     </f>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="mmwq_saoguang" width="256" height="512">
+  <SubTexture name="part-mmwq_saoguang" width="172" height="268" cocos2d_pX="85.95" cocos2d_pY="133.85" x="0" y="0"/>
+ </TextureAtlas>
+</skeleton>

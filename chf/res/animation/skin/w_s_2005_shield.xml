@@ -1,0 +1,117 @@
+<skeleton name="szn_baohuzhao" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="w_s_2005_shield">
+   <b name="1" x="-1" y="-5.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0">
+    <d name="part-szn_baohuzhao_32"/>
+    <d name="part-szn_baohuzhao_31"/>
+    <d name="part-szn_baohuzhao_30"/>
+    <d name="part-szn_baohuzhao_29"/>
+    <d name="part-szn_baohuzhao_28"/>
+    <d name="part-szn_baohuzhao_27"/>
+    <d name="part-szn_baohuzhao_26"/>
+    <d name="part-szn_baohuzhao_25"/>
+    <d name="part-szn_baohuzhao_24"/>
+    <d name="part-szn_baohuzhao_23"/>
+    <d name="part-szn_baohuzhao_22"/>
+    <d name="part-szn_baohuzhao_21"/>
+    <d name="part-szn_baohuzhao_20"/>
+    <d name="part-szn_baohuzhao_19"/>
+    <d name="part-szn_baohuzhao_18"/>
+    <d name="part-szn_baohuzhao_17"/>
+    <d name="part-szn_baohuzhao_16"/>
+    <d name="part-szn_baohuzhao_15"/>
+    <d name="part-szn_baohuzhao_14"/>
+    <d name="part-szn_baohuzhao_13"/>
+    <d name="part-szn_baohuzhao_12"/>
+    <d name="part-szn_baohuzhao_11"/>
+    <d name="part-szn_baohuzhao_10"/>
+    <d name="part-szn_baohuzhao_9"/>
+    <d name="part-szn_baohuzhao_8"/>
+    <d name="part-szn_baohuzhao_7"/>
+    <d name="part-szn_baohuzhao_6"/>
+    <d name="part-szn_baohuzhao_5"/>
+    <d name="part-szn_baohuzhao_4"/>
+    <d name="part-szn_baohuzhao_3"/>
+    <d name="part-szn_baohuzhao_2"/>
+    <d name="part-szn_baohuzhao_1"/>
+    <d name="part-szn_baohuzhao_0"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="w_s_2005_shield">
+   <mov name="start" dr="99" to="0" drTW="99" lp="1" twE="NaN">
+    <b name="1" sc="1" dl="0">
+     <f x="-1" y="-5.95" cocos2d_x="-1" cocos2d_y="-5.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="0" dr="3"/>
+     <f x="-1" y="-5.95" cocos2d_x="-1" cocos2d_y="-5.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="1" dr="3"/>
+     <f x="-1" y="-5.95" cocos2d_x="-1" cocos2d_y="-5.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="2" dr="3"/>
+     <f x="-1" y="-5.95" cocos2d_x="-1" cocos2d_y="-5.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="3" dr="3"/>
+     <f x="-1" y="-5.95" cocos2d_x="-1" cocos2d_y="-5.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="4" dr="3"/>
+     <f x="-1" y="-5.95" cocos2d_x="-1" cocos2d_y="-5.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="5" dr="3"/>
+     <f x="-1" y="-5.95" cocos2d_x="-1" cocos2d_y="-5.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="6" dr="3"/>
+     <f x="-1" y="-5.95" cocos2d_x="-1" cocos2d_y="-5.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="7" dr="3"/>
+     <f x="-1" y="-5.95" cocos2d_x="-1" cocos2d_y="-5.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="8" dr="3"/>
+     <f x="-1" y="-5.95" cocos2d_x="-1" cocos2d_y="-5.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="9" dr="3"/>
+     <f x="-1" y="-5.95" cocos2d_x="-1" cocos2d_y="-5.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="10" dr="3"/>
+     <f x="-1" y="-5.95" cocos2d_x="-1" cocos2d_y="-5.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="11" dr="3"/>
+     <f x="-1" y="-5.95" cocos2d_x="-1" cocos2d_y="-5.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="12" dr="3"/>
+     <f x="-1" y="-5.95" cocos2d_x="-1" cocos2d_y="-5.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="13" dr="3"/>
+     <f x="-1" y="-5.95" cocos2d_x="-1" cocos2d_y="-5.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="14" dr="3"/>
+     <f x="-1" y="-5.95" cocos2d_x="-1" cocos2d_y="-5.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="15" dr="3"/>
+     <f x="-1" y="-5.95" cocos2d_x="-1" cocos2d_y="-5.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="16" dr="3"/>
+     <f x="-1" y="-5.95" cocos2d_x="-1" cocos2d_y="-5.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="17" dr="3"/>
+     <f x="-1" y="-5.95" cocos2d_x="-1" cocos2d_y="-5.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="18" dr="3"/>
+     <f x="-1" y="-5.95" cocos2d_x="-1" cocos2d_y="-5.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="19" dr="3"/>
+     <f x="-1" y="-5.95" cocos2d_x="-1" cocos2d_y="-5.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="20" dr="3"/>
+     <f x="-1" y="-5.95" cocos2d_x="-1" cocos2d_y="-5.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="21" dr="3"/>
+     <f x="-1" y="-5.95" cocos2d_x="-1" cocos2d_y="-5.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="22" dr="3"/>
+     <f x="-1" y="-5.95" cocos2d_x="-1" cocos2d_y="-5.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="23" dr="3"/>
+     <f x="-1" y="-5.95" cocos2d_x="-1" cocos2d_y="-5.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="24" dr="3"/>
+     <f x="-1" y="-5.95" cocos2d_x="-1" cocos2d_y="-5.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="25" dr="3"/>
+     <f x="-1" y="-5.95" cocos2d_x="-1" cocos2d_y="-5.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="26" dr="3"/>
+     <f x="-1" y="-5.95" cocos2d_x="-1" cocos2d_y="-5.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="27" dr="3"/>
+     <f x="-1" y="-5.95" cocos2d_x="-1" cocos2d_y="-5.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="28" dr="3"/>
+     <f x="-1" y="-5.95" cocos2d_x="-1" cocos2d_y="-5.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="29" dr="3"/>
+     <f x="-1" y="-5.95" cocos2d_x="-1" cocos2d_y="-5.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="30" dr="3"/>
+     <f x="-1" y="-5.95" cocos2d_x="-1" cocos2d_y="-5.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="31" dr="3"/>
+     <f x="-1" y="-5.95" cocos2d_x="-1" cocos2d_y="-5.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="32" dr="3"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="szn_baohuzhao" width="1024" height="2048">
+  <SubTexture name="part-szn_baohuzhao_0" width="200" height="150" cocos2d_pX="100" cocos2d_pY="75" x="404" y="912"/>
+  <SubTexture name="part-szn_baohuzhao_1" width="200" height="150" cocos2d_pX="100" cocos2d_pY="75" x="404" y="0"/>
+  <SubTexture name="part-szn_baohuzhao_2" width="200" height="150" cocos2d_pX="100" cocos2d_pY="75" x="606" y="456"/>
+  <SubTexture name="part-szn_baohuzhao_3" width="200" height="150" cocos2d_pX="100" cocos2d_pY="75" x="808" y="0"/>
+  <SubTexture name="part-szn_baohuzhao_4" width="200" height="150" cocos2d_pX="100" cocos2d_pY="75" x="202" y="760"/>
+  <SubTexture name="part-szn_baohuzhao_5" width="200" height="150" cocos2d_pX="100" cocos2d_pY="75" x="202" y="152"/>
+  <SubTexture name="part-szn_baohuzhao_6" width="200" height="150" cocos2d_pX="100" cocos2d_pY="75" x="0" y="608"/>
+  <SubTexture name="part-szn_baohuzhao_7" width="200" height="150" cocos2d_pX="100" cocos2d_pY="75" x="606" y="152"/>
+  <SubTexture name="part-szn_baohuzhao_8" width="200" height="150" cocos2d_pX="100" cocos2d_pY="75" x="202" y="912"/>
+  <SubTexture name="part-szn_baohuzhao_9" width="200" height="150" cocos2d_pX="100" cocos2d_pY="75" x="0" y="304"/>
+  <SubTexture name="part-szn_baohuzhao_10" width="200" height="150" cocos2d_pX="100" cocos2d_pY="75" x="404" y="608"/>
+  <SubTexture name="part-szn_baohuzhao_11" width="200" height="150" cocos2d_pX="100" cocos2d_pY="75" x="404" y="304"/>
+  <SubTexture name="part-szn_baohuzhao_12" width="200" height="150" cocos2d_pX="100" cocos2d_pY="75" x="606" y="760"/>
+  <SubTexture name="part-szn_baohuzhao_13" width="200" height="150" cocos2d_pX="100" cocos2d_pY="75" x="808" y="304"/>
+  <SubTexture name="part-szn_baohuzhao_14" width="200" height="150" cocos2d_pX="100" cocos2d_pY="75" x="808" y="608"/>
+  <SubTexture name="part-szn_baohuzhao_15" width="200" height="150" cocos2d_pX="100" cocos2d_pY="75" x="202" y="456"/>
+  <SubTexture name="part-szn_baohuzhao_16" width="200" height="150" cocos2d_pX="100" cocos2d_pY="75" x="0" y="0"/>
+  <SubTexture name="part-szn_baohuzhao_17" width="200" height="150" cocos2d_pX="100" cocos2d_pY="75" x="202" y="0"/>
+  <SubTexture name="part-szn_baohuzhao_18" width="200" height="150" cocos2d_pX="100" cocos2d_pY="75" x="606" y="0"/>
+  <SubTexture name="part-szn_baohuzhao_19" width="200" height="150" cocos2d_pX="100" cocos2d_pY="75" x="0" y="152"/>
+  <SubTexture name="part-szn_baohuzhao_20" width="200" height="150" cocos2d_pX="100" cocos2d_pY="75" x="404" y="152"/>
+  <SubTexture name="part-szn_baohuzhao_21" width="200" height="150" cocos2d_pX="100" cocos2d_pY="75" x="808" y="152"/>
+  <SubTexture name="part-szn_baohuzhao_22" width="200" height="150" cocos2d_pX="100" cocos2d_pY="75" x="202" y="304"/>
+  <SubTexture name="part-szn_baohuzhao_23" width="200" height="150" cocos2d_pX="100" cocos2d_pY="75" x="606" y="304"/>
+  <SubTexture name="part-szn_baohuzhao_24" width="200" height="150" cocos2d_pX="100" cocos2d_pY="75" x="0" y="456"/>
+  <SubTexture name="part-szn_baohuzhao_25" width="200" height="150" cocos2d_pX="100" cocos2d_pY="75" x="404" y="456"/>
+  <SubTexture name="part-szn_baohuzhao_26" width="200" height="150" cocos2d_pX="100" cocos2d_pY="75" x="808" y="456"/>
+  <SubTexture name="part-szn_baohuzhao_27" width="200" height="150" cocos2d_pX="100" cocos2d_pY="75" x="202" y="608"/>
+  <SubTexture name="part-szn_baohuzhao_28" width="200" height="150" cocos2d_pX="100" cocos2d_pY="75" x="606" y="608"/>
+  <SubTexture name="part-szn_baohuzhao_29" width="200" height="150" cocos2d_pX="100" cocos2d_pY="75" x="0" y="760"/>
+  <SubTexture name="part-szn_baohuzhao_30" width="200" height="150" cocos2d_pX="100" cocos2d_pY="75" x="404" y="760"/>
+  <SubTexture name="part-szn_baohuzhao_31" width="200" height="150" cocos2d_pX="100" cocos2d_pY="75" x="808" y="760"/>
+  <SubTexture name="part-szn_baohuzhao_32" width="200" height="150" cocos2d_pX="100" cocos2d_pY="75" x="0" y="912"/>
+ </TextureAtlas>
+</skeleton>

@@ -1,0 +1,29 @@
+<skeleton name="zuzhuang_tx2" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="ui_mecha_btn_flash">
+   <b name="1" x="0" y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0">
+    <d name="part-zuzhuang_tx2"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="ui_mecha_btn_flash">
+   <mov name="start" dr="24" to="6" drTW="24" lp="0" twE="NaN">
+    <b name="1" sc="1" dl="0">
+     <f x="0" y="0" cocos2d_x="0" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" twE="0" dr="10">
+      <colorTransform a="0" r="0" g="0" b="0" aM="14" rM="100" gM="100" bM="100"/>
+     </f>
+     <f x="0" y="0" cocos2d_x="0" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="5"/>
+     <f x="0" y="0" cocos2d_x="0" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" twE="0" dr="7"/>
+     <f x="0" y="0" cocos2d_x="0" cocos2d_y="0" kX="0" kY="0" cX="1.11" cY="1.11" pX="0" pY="0" z="0" dI="0" dr="1">
+      <colorTransform a="0" r="0" g="0" b="0" aM="10" rM="100" gM="100" bM="100"/>
+     </f>
+     <f dr="1" dI="-1"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="zuzhuang_tx2" width="256" height="64">
+  <SubTexture name="part-zuzhuang_tx2" width="139" height="59" cocos2d_pX="67.9" cocos2d_pY="27.5" x="0" y="0"/>
+ </TextureAtlas>
+</skeleton>

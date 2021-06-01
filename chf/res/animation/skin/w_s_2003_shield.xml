@@ -1,0 +1,259 @@
+<skeleton name="pifu_baohuzhao" frameRate="24" version="2.0">
+ <armatures>
+  <armature name="w_s_2003_shield">
+   <b name="4" x="1" y="40" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0">
+    <d name="part-tk_pfbhz4_00000"/>
+    <d name="part-tk_pfbhz4_00002"/>
+    <d name="part-tk_pfbhz4_00004"/>
+    <d name="part-tk_pfbhz4_00006"/>
+    <d name="part-tk_pfbhz4_00008"/>
+    <d name="part-tk_pfbhz4_00010"/>
+    <d name="part-tk_pfbhz4_00012"/>
+    <d name="part-tk_pfbhz4_00014"/>
+    <d name="part-tk_pfbhz4_00016"/>
+    <d name="part-tk_pfbhz4_00018"/>
+    <d name="part-tk_pfbhz4_00020"/>
+    <d name="part-tk_pfbhz4_00022"/>
+    <d name="part-tk_pfbhz4_00024"/>
+    <d name="part-tk_pfbhz4_00026"/>
+    <d name="part-tk_pfbhz4_00028"/>
+    <d name="part-tk_pfbhz4_00030"/>
+    <d name="part-tk_pfbhz4_00032"/>
+    <d name="part-tk_pfbhz4_00034"/>
+    <d name="part-tk_pfbhz4_00036"/>
+    <d name="part-tk_pfbhz4_00038"/>
+    <d name="part-tk_pfbhz4_00040"/>
+    <d name="part-tk_pfbhz4_00042"/>
+    <d name="part-tk_pfbhz4_00044"/>
+    <d name="part-tk_pfbhz4_00046"/>
+    <d name="part-tk_pfbhz4_00048"/>
+    <d name="part-tk_pfbhz4_00050"/>
+    <d name="part-tk_pfbhz4_00052"/>
+    <d name="part-tk_pfbhz4_00054"/>
+    <d name="part-tk_pfbhz4_00056"/>
+    <d name="part-tk_pfbhz4_00058"/>
+   </b>
+   <b name="3" x="-3" y="54" kX="0" kY="0" cX="1" cY="1" pX="175" pY="125" z="1">
+    <d name="part-tk_pfbhz3_00000"/>
+   </b>
+   <b name="2" x="-2" y="56" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2">
+    <d name="part-tk_pfbhz1_00004"/>
+    <d name="part-tk_pfbhz1_00006"/>
+    <d name="part-tk_pfbhz1_00008"/>
+    <d name="part-tk_pfbhz1_00010"/>
+    <d name="part-tk_pfbhz1_00012"/>
+    <d name="part-tk_pfbhz1_00014"/>
+    <d name="part-tk_pfbhz1_00016"/>
+    <d name="part-tk_pfbhz1_00018"/>
+    <d name="part-tk_pfbhz1_00020"/>
+    <d name="part-tk_pfbhz1_00022"/>
+    <d name="part-tk_pfbhz1_00024"/>
+    <d name="part-tk_pfbhz1_00026"/>
+    <d name="part-tk_pfbhz1_00028"/>
+    <d name="part-tk_pfbhz1_00030"/>
+    <d name="part-tk_pfbhz1_00032"/>
+    <d name="part-tk_pfbhz1_00034"/>
+    <d name="part-tk_pfbhz1_00036"/>
+    <d name="part-tk_pfbhz1_00038"/>
+    <d name="part-tk_pfbhz1_00040"/>
+    <d name="part-tk_pfbhz1_00042"/>
+    <d name="part-tk_pfbhz1_00044"/>
+    <d name="part-tk_pfbhz1_00046"/>
+    <d name="part-tk_pfbhz1_00048"/>
+    <d name="part-tk_pfbhz1_00050"/>
+    <d name="part-tk_pfbhz1_00052"/>
+   </b>
+   <b name="1" x="0" y="8" kX="0" kY="0" cX="1" cY="1" pX="50" pY="25" z="2">
+    <d name="part-tk_pfbhz_00001 "/>
+    <d name="part-tk_pfbhz_00003"/>
+    <d name="part-tk_pfbhz_00006"/>
+    <d name="part-tk_pfbhz_00009"/>
+    <d name="part-tk_pfbhz_00012"/>
+    <d name="part-tk_pfbhz_00015"/>
+    <d name="part-tk_pfbhz_00018"/>
+    <d name="part-tk_pfbhz_00021"/>
+    <d name="part-tk_pfbhz_00024"/>
+    <d name="part-tk_pfbhz_00027"/>
+    <d name="part-tk_pfbhz_00030"/>
+    <d name="part-tk_pfbhz_00033"/>
+    <d name="part-tk_pfbhz_00036"/>
+    <d name="part-tk_pfbhz_00039"/>
+    <d name="part-tk_pfbhz_00042"/>
+    <d name="part-tk_pfbhz_00045"/>
+    <d name="part-tk_pfbhz_00048"/>
+    <d name="part-tk_pfbhz_00051"/>
+    <d name="part-tk_pfbhz_00054"/>
+    <d name="part-tk_pfbhz_00057"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="w_s_2003_shield">
+   <mov name="start" dr="60" to="0" drTW="60" lp="1" twE="NaN">
+    <b name="4" sc="1" dl="0">
+     <f x="1" y="40" cocos2d_x="1" cocos2d_y="40" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="2"/>
+     <f x="1" y="40" cocos2d_x="1" cocos2d_y="40" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="1" dr="2"/>
+     <f x="1" y="40" cocos2d_x="1" cocos2d_y="40" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="2" dr="2"/>
+     <f x="1" y="40" cocos2d_x="1" cocos2d_y="40" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="3" dr="2"/>
+     <f x="1" y="40" cocos2d_x="1" cocos2d_y="40" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="4" dr="2"/>
+     <f x="1" y="40" cocos2d_x="1" cocos2d_y="40" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="5" dr="2"/>
+     <f x="1" y="40" cocos2d_x="1" cocos2d_y="40" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="6" dr="2"/>
+     <f x="1" y="40" cocos2d_x="1" cocos2d_y="40" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="7" dr="2"/>
+     <f x="1" y="40" cocos2d_x="1" cocos2d_y="40" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="8" dr="2"/>
+     <f x="1" y="40" cocos2d_x="1" cocos2d_y="40" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="9" dr="2"/>
+     <f x="1" y="40" cocos2d_x="1" cocos2d_y="40" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="10" dr="2"/>
+     <f x="1" y="40" cocos2d_x="1" cocos2d_y="40" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="11" dr="2"/>
+     <f x="1" y="40" cocos2d_x="1" cocos2d_y="40" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="12" dr="2"/>
+     <f x="1" y="40" cocos2d_x="1" cocos2d_y="40" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="13" dr="2"/>
+     <f x="1" y="40" cocos2d_x="1" cocos2d_y="40" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="14" dr="2"/>
+     <f x="1" y="40" cocos2d_x="1" cocos2d_y="40" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="15" dr="2"/>
+     <f x="1" y="40" cocos2d_x="1" cocos2d_y="40" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="16" dr="2"/>
+     <f x="1" y="40" cocos2d_x="1" cocos2d_y="40" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="17" dr="2"/>
+     <f x="1" y="40" cocos2d_x="1" cocos2d_y="40" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="18" dr="2"/>
+     <f x="1" y="40" cocos2d_x="1" cocos2d_y="40" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="19" dr="2"/>
+     <f x="1" y="40" cocos2d_x="1" cocos2d_y="40" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="20" dr="2"/>
+     <f x="1" y="40" cocos2d_x="1" cocos2d_y="40" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="21" dr="2"/>
+     <f x="1" y="40" cocos2d_x="1" cocos2d_y="40" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="22" dr="2"/>
+     <f x="1" y="40" cocos2d_x="1" cocos2d_y="40" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="23" dr="2"/>
+     <f x="1" y="40" cocos2d_x="1" cocos2d_y="40" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="24" dr="2"/>
+     <f x="1" y="40" cocos2d_x="1" cocos2d_y="40" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="25" dr="2"/>
+     <f x="1" y="40" cocos2d_x="1" cocos2d_y="40" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="26" dr="2"/>
+     <f x="1" y="40" cocos2d_x="1" cocos2d_y="40" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="27" dr="2"/>
+     <f x="1" y="40" cocos2d_x="1" cocos2d_y="40" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="28" dr="2"/>
+     <f x="1" y="40" cocos2d_x="1" cocos2d_y="40" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="29" dr="2"/>
+    </b>
+    <b name="3" sc="1" dl="0">
+     <f x="-3" y="54" cocos2d_x="-178" cocos2d_y="-71" kX="0" kY="0" cX="1" cY="1" pX="175" pY="125" z="1" dI="0" dr="60"/>
+    </b>
+    <b name="2" sc="1" dl="0">
+     <f dr="10" dI="-1"/>
+     <f x="-2" y="56" cocos2d_x="-2" cocos2d_y="56" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="0" dr="2"/>
+     <f x="-2" y="56" cocos2d_x="-2" cocos2d_y="56" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="1" dr="2"/>
+     <f x="-2" y="56" cocos2d_x="-2" cocos2d_y="56" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="2" dr="2"/>
+     <f x="-2" y="56" cocos2d_x="-2" cocos2d_y="56" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="3" dr="2"/>
+     <f x="-2" y="56" cocos2d_x="-2" cocos2d_y="56" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="4" dr="2"/>
+     <f x="-2" y="56" cocos2d_x="-2" cocos2d_y="56" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="5" dr="2"/>
+     <f x="-2" y="56" cocos2d_x="-2" cocos2d_y="56" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="6" dr="2"/>
+     <f x="-2" y="56" cocos2d_x="-2" cocos2d_y="56" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="7" dr="2"/>
+     <f x="-2" y="56" cocos2d_x="-2" cocos2d_y="56" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="8" dr="2"/>
+     <f x="-2" y="56" cocos2d_x="-2" cocos2d_y="56" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="9" dr="2"/>
+     <f x="-2" y="56" cocos2d_x="-2" cocos2d_y="56" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="10" dr="2"/>
+     <f x="-2" y="56" cocos2d_x="-2" cocos2d_y="56" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="11" dr="2"/>
+     <f x="-2" y="56" cocos2d_x="-2" cocos2d_y="56" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="12" dr="2"/>
+     <f x="-2" y="56" cocos2d_x="-2" cocos2d_y="56" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="13" dr="2"/>
+     <f x="-2" y="56" cocos2d_x="-2" cocos2d_y="56" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="14" dr="2"/>
+     <f x="-2" y="56" cocos2d_x="-2" cocos2d_y="56" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="15" dr="2"/>
+     <f x="-2" y="56" cocos2d_x="-2" cocos2d_y="56" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="16" dr="2"/>
+     <f x="-2" y="56" cocos2d_x="-2" cocos2d_y="56" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="17" dr="2"/>
+     <f x="-2" y="56" cocos2d_x="-2" cocos2d_y="56" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="18" dr="2"/>
+     <f x="-2" y="56" cocos2d_x="-2" cocos2d_y="56" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="19" dr="2"/>
+     <f x="-2" y="56" cocos2d_x="-2" cocos2d_y="56" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="20" dr="2"/>
+     <f x="-2" y="56" cocos2d_x="-2" cocos2d_y="56" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="21" dr="2"/>
+     <f x="-2" y="56" cocos2d_x="-2" cocos2d_y="56" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="22" dr="2"/>
+     <f x="-2" y="56" cocos2d_x="-2" cocos2d_y="56" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="23" dr="2"/>
+     <f x="-2" y="56" cocos2d_x="-2" cocos2d_y="56" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="24" dr="2"/>
+    </b>
+    <b name="1" sc="1" dl="0">
+     <f x="0" y="8" cocos2d_x="-50" cocos2d_y="-17" kX="0" kY="0" cX="1" cY="1" pX="50" pY="25" z="2" dI="0" dr="3"/>
+     <f x="0" y="8" cocos2d_x="-50" cocos2d_y="-17" kX="0" kY="0" cX="1" cY="1" pX="50" pY="25" z="2" dI="1" dr="3"/>
+     <f x="0" y="8" cocos2d_x="-50" cocos2d_y="-17" kX="0" kY="0" cX="1" cY="1" pX="50" pY="25" z="2" dI="2" dr="3"/>
+     <f x="0" y="8" cocos2d_x="-50" cocos2d_y="-17" kX="0" kY="0" cX="1" cY="1" pX="50" pY="25" z="3" dI="3" dr="3"/>
+     <f x="0" y="8" cocos2d_x="-50" cocos2d_y="-17" kX="0" kY="0" cX="1" cY="1" pX="50" pY="25" z="3" dI="4" dr="3"/>
+     <f x="0" y="8" cocos2d_x="-50" cocos2d_y="-17" kX="0" kY="0" cX="1" cY="1" pX="50" pY="25" z="3" dI="5" dr="3"/>
+     <f x="0" y="8" cocos2d_x="-50" cocos2d_y="-17" kX="0" kY="0" cX="1" cY="1" pX="50" pY="25" z="3" dI="6" dr="3"/>
+     <f x="0" y="8" cocos2d_x="-50" cocos2d_y="-17" kX="0" kY="0" cX="1" cY="1" pX="50" pY="25" z="3" dI="7" dr="3"/>
+     <f x="0" y="8" cocos2d_x="-50" cocos2d_y="-17" kX="0" kY="0" cX="1" cY="1" pX="50" pY="25" z="3" dI="8" dr="3"/>
+     <f x="0" y="8" cocos2d_x="-50" cocos2d_y="-17" kX="0" kY="0" cX="1" cY="1" pX="50" pY="25" z="3" dI="9" dr="3"/>
+     <f x="0" y="8" cocos2d_x="-50" cocos2d_y="-17" kX="0" kY="0" cX="1" cY="1" pX="50" pY="25" z="3" dI="10" dr="3"/>
+     <f x="0" y="8" cocos2d_x="-50" cocos2d_y="-17" kX="0" kY="0" cX="1" cY="1" pX="50" pY="25" z="3" dI="11" dr="3"/>
+     <f x="0" y="8" cocos2d_x="-50" cocos2d_y="-17" kX="0" kY="0" cX="1" cY="1" pX="50" pY="25" z="3" dI="12" dr="3"/>
+     <f x="0" y="8" cocos2d_x="-50" cocos2d_y="-17" kX="0" kY="0" cX="1" cY="1" pX="50" pY="25" z="3" dI="13" dr="3"/>
+     <f x="0" y="8" cocos2d_x="-50" cocos2d_y="-17" kX="0" kY="0" cX="1" cY="1" pX="50" pY="25" z="3" dI="14" dr="3"/>
+     <f x="0" y="8" cocos2d_x="-50" cocos2d_y="-17" kX="0" kY="0" cX="1" cY="1" pX="50" pY="25" z="3" dI="15" dr="3"/>
+     <f x="0" y="8" cocos2d_x="-50" cocos2d_y="-17" kX="0" kY="0" cX="1" cY="1" pX="50" pY="25" z="3" dI="16" dr="3"/>
+     <f x="0" y="8" cocos2d_x="-50" cocos2d_y="-17" kX="0" kY="0" cX="1" cY="1" pX="50" pY="25" z="3" dI="17" dr="3"/>
+     <f x="0" y="8" cocos2d_x="-50" cocos2d_y="-17" kX="0" kY="0" cX="1" cY="1" pX="50" pY="25" z="3" dI="18" dr="3"/>
+     <f x="0" y="8" cocos2d_x="-50" cocos2d_y="-17" kX="0" kY="0" cX="1" cY="1" pX="50" pY="25" z="3" dI="19" dr="3"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="pifu_baohuzhao" width="2048" height="1024">
+  <SubTexture name="part-tk_pfbhz_00057" width="100" height="50" cocos2d_pX="0" cocos2d_pY="0" x="1864" y="208"/>
+  <SubTexture name="part-tk_pfbhz_00054" width="100" height="50" cocos2d_pX="0" cocos2d_pY="0" x="1768" y="520"/>
+  <SubTexture name="part-tk_pfbhz_00051" width="100" height="50" cocos2d_pX="0" cocos2d_pY="0" x="1864" y="0"/>
+  <SubTexture name="part-tk_pfbhz_00048" width="100" height="50" cocos2d_pX="0" cocos2d_pY="0" x="1816" y="312"/>
+  <SubTexture name="part-tk_pfbhz_00045" width="100" height="50" cocos2d_pX="0" cocos2d_pY="0" x="1870" y="512"/>
+  <SubTexture name="part-tk_pfbhz_00042" width="100" height="50" cocos2d_pX="0" cocos2d_pY="0" x="1564" y="508"/>
+  <SubTexture name="part-tk_pfbhz_00039" width="100" height="50" cocos2d_pX="0" cocos2d_pY="0" x="1918" y="460"/>
+  <SubTexture name="part-tk_pfbhz_00036" width="100" height="50" cocos2d_pX="0" cocos2d_pY="0" x="1564" y="456"/>
+  <SubTexture name="part-tk_pfbhz_00033" width="100" height="50" cocos2d_pX="0" cocos2d_pY="0" x="1918" y="408"/>
+  <SubTexture name="part-tk_pfbhz_00030" width="100" height="50" cocos2d_pX="0" cocos2d_pY="0" x="1864" y="104"/>
+  <SubTexture name="part-tk_pfbhz_00027" width="100" height="50" cocos2d_pX="0" cocos2d_pY="0" x="1864" y="52"/>
+  <SubTexture name="part-tk_pfbhz_00024" width="100" height="50" cocos2d_pX="0" cocos2d_pY="0" x="1666" y="508"/>
+  <SubTexture name="part-tk_pfbhz_00021" width="100" height="50" cocos2d_pX="0" cocos2d_pY="0" x="1816" y="416"/>
+  <SubTexture name="part-tk_pfbhz_00018" width="100" height="50" cocos2d_pX="0" cocos2d_pY="0" x="0" y="556"/>
+  <SubTexture name="part-tk_pfbhz_00015" width="100" height="50" cocos2d_pX="0" cocos2d_pY="0" x="1816" y="364"/>
+  <SubTexture name="part-tk_pfbhz_00012" width="100" height="50" cocos2d_pX="0" cocos2d_pY="0" x="1768" y="468"/>
+  <SubTexture name="part-tk_pfbhz_00009" width="100" height="50" cocos2d_pX="0" cocos2d_pY="0" x="1864" y="260"/>
+  <SubTexture name="part-tk_pfbhz_00006" width="100" height="50" cocos2d_pX="0" cocos2d_pY="0" x="102" y="556"/>
+  <SubTexture name="part-tk_pfbhz_00003" width="100" height="50" cocos2d_pX="0" cocos2d_pY="0" x="1864" y="156"/>
+  <SubTexture name="part-tk_pfbhz_00001 " width="100" height="50" cocos2d_pX="0" cocos2d_pY="0" x="1666" y="456"/>
+  <SubTexture name="part-tk_pfbhz1_00052" width="250" height="150" cocos2d_pX="125" cocos2d_pY="75" x="304" y="304"/>
+  <SubTexture name="part-tk_pfbhz1_00050" width="250" height="150" cocos2d_pX="125" cocos2d_pY="75" x="808" y="304"/>
+  <SubTexture name="part-tk_pfbhz1_00048" width="250" height="150" cocos2d_pX="125" cocos2d_pY="75" x="1312" y="304"/>
+  <SubTexture name="part-tk_pfbhz1_00046" width="250" height="150" cocos2d_pX="125" cocos2d_pY="75" x="0" y="404"/>
+  <SubTexture name="part-tk_pfbhz1_00044" width="250" height="150" cocos2d_pX="125" cocos2d_pY="75" x="556" y="456"/>
+  <SubTexture name="part-tk_pfbhz1_00042" width="250" height="150" cocos2d_pX="125" cocos2d_pY="75" x="808" y="456"/>
+  <SubTexture name="part-tk_pfbhz1_00040" width="250" height="150" cocos2d_pX="125" cocos2d_pY="75" x="556" y="304"/>
+  <SubTexture name="part-tk_pfbhz1_00038" width="250" height="150" cocos2d_pX="125" cocos2d_pY="75" x="1612" y="152"/>
+  <SubTexture name="part-tk_pfbhz1_00036" width="250" height="150" cocos2d_pX="125" cocos2d_pY="75" x="1108" y="152"/>
+  <SubTexture name="part-tk_pfbhz1_00034" width="250" height="150" cocos2d_pX="125" cocos2d_pY="75" x="604" y="152"/>
+  <SubTexture name="part-tk_pfbhz1_00032" width="250" height="150" cocos2d_pX="125" cocos2d_pY="75" x="1612" y="0"/>
+  <SubTexture name="part-tk_pfbhz1_00030" width="250" height="150" cocos2d_pX="125" cocos2d_pY="75" x="1108" y="0"/>
+  <SubTexture name="part-tk_pfbhz1_00028" width="250" height="150" cocos2d_pX="125" cocos2d_pY="75" x="856" y="0"/>
+  <SubTexture name="part-tk_pfbhz1_00026" width="250" height="150" cocos2d_pX="125" cocos2d_pY="75" x="1060" y="456"/>
+  <SubTexture name="part-tk_pfbhz1_00024" width="250" height="150" cocos2d_pX="125" cocos2d_pY="75" x="0" y="252"/>
+  <SubTexture name="part-tk_pfbhz1_00022" width="250" height="150" cocos2d_pX="125" cocos2d_pY="75" x="1564" y="304"/>
+  <SubTexture name="part-tk_pfbhz1_00020" width="250" height="150" cocos2d_pX="125" cocos2d_pY="75" x="1360" y="152"/>
+  <SubTexture name="part-tk_pfbhz1_00018" width="250" height="150" cocos2d_pX="125" cocos2d_pY="75" x="1312" y="456"/>
+  <SubTexture name="part-tk_pfbhz1_00016" width="250" height="150" cocos2d_pX="125" cocos2d_pY="75" x="352" y="0"/>
+  <SubTexture name="part-tk_pfbhz1_00014" width="250" height="150" cocos2d_pX="125" cocos2d_pY="75" x="604" y="0"/>
+  <SubTexture name="part-tk_pfbhz1_00012" width="250" height="150" cocos2d_pX="125" cocos2d_pY="75" x="856" y="152"/>
+  <SubTexture name="part-tk_pfbhz1_00010" width="250" height="150" cocos2d_pX="125" cocos2d_pY="75" x="1060" y="304"/>
+  <SubTexture name="part-tk_pfbhz1_00008" width="250" height="150" cocos2d_pX="125" cocos2d_pY="75" x="352" y="152"/>
+  <SubTexture name="part-tk_pfbhz1_00006" width="250" height="150" cocos2d_pX="125" cocos2d_pY="75" x="304" y="456"/>
+  <SubTexture name="part-tk_pfbhz1_00004" width="250" height="150" cocos2d_pX="125" cocos2d_pY="75" x="1360" y="0"/>
+  <SubTexture name="part-tk_pfbhz3_00000" width="350" height="250" cocos2d_pX="0" cocos2d_pY="0" x="0" y="0"/>
+  <SubTexture name="part-tk_pfbhz4_00058" width="50" height="100" cocos2d_pX="25" cocos2d_pY="50" x="776" y="608"/>
+  <SubTexture name="part-tk_pfbhz4_00056" width="50" height="100" cocos2d_pX="25" cocos2d_pY="50" x="516" y="608"/>
+  <SubTexture name="part-tk_pfbhz4_00054" width="50" height="100" cocos2d_pX="25" cocos2d_pY="50" x="252" y="252"/>
+  <SubTexture name="part-tk_pfbhz4_00052" width="50" height="100" cocos2d_pX="25" cocos2d_pY="50" x="104" y="608"/>
+  <SubTexture name="part-tk_pfbhz4_00050" width="50" height="100" cocos2d_pX="25" cocos2d_pY="50" x="252" y="354"/>
+  <SubTexture name="part-tk_pfbhz4_00048" width="50" height="100" cocos2d_pX="25" cocos2d_pY="50" x="1966" y="0"/>
+  <SubTexture name="part-tk_pfbhz4_00046" width="50" height="100" cocos2d_pX="25" cocos2d_pY="50" x="1972" y="512"/>
+  <SubTexture name="part-tk_pfbhz4_00044" width="50" height="100" cocos2d_pX="25" cocos2d_pY="50" x="308" y="608"/>
+  <SubTexture name="part-tk_pfbhz4_00042" width="50" height="100" cocos2d_pX="25" cocos2d_pY="50" x="1564" y="560"/>
+  <SubTexture name="part-tk_pfbhz4_00040" width="50" height="100" cocos2d_pX="25" cocos2d_pY="50" x="620" y="608"/>
+  <SubTexture name="part-tk_pfbhz4_00038" width="50" height="100" cocos2d_pX="25" cocos2d_pY="50" x="1668" y="560"/>
+  <SubTexture name="part-tk_pfbhz4_00036" width="50" height="100" cocos2d_pX="25" cocos2d_pY="50" x="412" y="608"/>
+  <SubTexture name="part-tk_pfbhz4_00034" width="50" height="100" cocos2d_pX="25" cocos2d_pY="50" x="1720" y="572"/>
+  <SubTexture name="part-tk_pfbhz4_00032" width="50" height="100" cocos2d_pX="25" cocos2d_pY="50" x="828" y="608"/>
+  <SubTexture name="part-tk_pfbhz4_00030" width="50" height="100" cocos2d_pX="25" cocos2d_pY="50" x="0" y="608"/>
+  <SubTexture name="part-tk_pfbhz4_00028" width="50" height="100" cocos2d_pX="25" cocos2d_pY="50" x="1966" y="102"/>
+  <SubTexture name="part-tk_pfbhz4_00026" width="50" height="100" cocos2d_pX="25" cocos2d_pY="50" x="1966" y="204"/>
+  <SubTexture name="part-tk_pfbhz4_00024" width="50" height="100" cocos2d_pX="25" cocos2d_pY="50" x="1966" y="306"/>
+  <SubTexture name="part-tk_pfbhz4_00022" width="50" height="100" cocos2d_pX="25" cocos2d_pY="50" x="252" y="456"/>
+  <SubTexture name="part-tk_pfbhz4_00020" width="50" height="100" cocos2d_pX="25" cocos2d_pY="50" x="204" y="558"/>
+  <SubTexture name="part-tk_pfbhz4_00018" width="50" height="100" cocos2d_pX="25" cocos2d_pY="50" x="1616" y="560"/>
+  <SubTexture name="part-tk_pfbhz4_00016" width="50" height="100" cocos2d_pX="25" cocos2d_pY="50" x="1870" y="564"/>
+  <SubTexture name="part-tk_pfbhz4_00014" width="50" height="100" cocos2d_pX="25" cocos2d_pY="50" x="1772" y="572"/>
+  <SubTexture name="part-tk_pfbhz4_00012" width="50" height="100" cocos2d_pX="25" cocos2d_pY="50" x="52" y="608"/>
+  <SubTexture name="part-tk_pfbhz4_00010" width="50" height="100" cocos2d_pX="25" cocos2d_pY="50" x="256" y="608"/>
+  <SubTexture name="part-tk_pfbhz4_00008" width="50" height="100" cocos2d_pX="25" cocos2d_pY="50" x="360" y="608"/>
+  <SubTexture name="part-tk_pfbhz4_00006" width="50" height="100" cocos2d_pX="25" cocos2d_pY="50" x="464" y="608"/>
+  <SubTexture name="part-tk_pfbhz4_00004" width="50" height="100" cocos2d_pX="25" cocos2d_pY="50" x="568" y="608"/>
+  <SubTexture name="part-tk_pfbhz4_00002" width="50" height="100" cocos2d_pX="25" cocos2d_pY="50" x="672" y="608"/>
+  <SubTexture name="part-tk_pfbhz4_00000" width="50" height="100" cocos2d_pX="25" cocos2d_pY="50" x="724" y="608"/>
+ </TextureAtlas>
+</skeleton>

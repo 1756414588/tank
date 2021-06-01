@@ -1,0 +1,43 @@
+<skeleton name="ftzd_yun" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="ftzd_yun">
+   <b name="4" x="155.55" y="-651.05" kX="0" kY="0" cX="0.86" cY="0.52" pX="0" pY="0" z="0">
+    <d name="part-feiting_zhandouyun"/>
+   </b>
+   <b name="3" x="25.4" y="-617.3" kX="0" kY="0" cX="0.43" cY="0.26" pX="0" pY="0" z="0">
+    <d name="part-feiting_zhandouyun"/>
+   </b>
+   <b name="2" x="-191.75" y="-694.4" kX="0" kY="5.97" cX="2.32" cY="0.77" pX="0" pY="0" z="2">
+    <d name="part-feiting_zhandouyun"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="ftzd_yun">
+   <mov name="start" dr="490" to="0" drTW="490" lp="1" twE="NaN">
+    <b name="4" sc="1" dl="0">
+     <f x="155.55" y="-651.05" cocos2d_x="155.55" cocos2d_y="-651.05" kX="0" kY="0" cX="0.86" cY="0.52" pX="0" pY="0" z="0" dI="0" twE="0" dr="280"/>
+     <f x="153.45" y="690.4" cocos2d_x="153.45" cocos2d_y="690.4" kX="0" kY="0" cX="1.3" cY="0.78" pX="0" pY="0" z="0" dI="0" dr="1"/>
+     <f dr="209" dI="-1"/>
+    </b>
+    <b name="3" sc="1" dl="0">
+     <f dr="19" dI="-1"/>
+     <f x="25.4" y="-617.3" cocos2d_x="25.4" cocos2d_y="-617.3" kX="0" kY="0" cX="0.43" cY="0.26" pX="0" pY="0" z="0" dI="0" twE="0" dr="286"/>
+     <f x="67" y="640.7" cocos2d_x="67" cocos2d_y="640.7" kX="0" kY="0" cX="0.43" cY="0.26" pX="0" pY="0" z="0" dI="0" dr="1"/>
+     <f dr="184" dI="-1"/>
+    </b>
+    <b name="2" sc="1" dl="0">
+     <f dr="125" dI="-1"/>
+     <f x="-191.75" y="-694.4" cocos2d_x="-191.75" cocos2d_y="-694.4" kX="0" kY="5.97" cX="2.32" cY="0.77" pX="0" pY="0" z="2" dI="0" twE="0" dr="113"/>
+     <f x="-285.35" y="-136.3" cocos2d_x="-285.35" cocos2d_y="-136.3" kX="0" kY="7.05" cX="1.95" cY="0.98" pX="0" pY="0" z="0" dI="0" twE="0" dr="132"/>
+     <f x="-210.9" y="515.65" cocos2d_x="-210.9" cocos2d_y="515.65" kX="0" kY="8.52" cX="2.26" cY="1.23" pX="0" pY="0" z="0" dI="0" twE="0" dr="34"/>
+     <f x="-245.95" y="708.9" cocos2d_x="-245.95" cocos2d_y="708.9" kX="0" kY="8.97" cX="1.99" cY="1.3" pX="0" pY="0" z="0" dI="0" dr="1"/>
+     <f dr="85" dI="-1"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="ftzd_yun" width="512" height="256">
+  <SubTexture name="part-feiting_zhandouyun" width="419" height="249" cocos2d_pX="209.5" cocos2d_pY="124.5" x="0" y="0"/>
+ </TextureAtlas>
+</skeleton>

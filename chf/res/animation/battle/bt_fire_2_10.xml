@@ -1,0 +1,49 @@
+<skeleton name="zhanche_huoshe2" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="bt_fire_2_10">
+   <b name="11" x="-7.25" y="-44.6" kX="-90.05" kY="-90.05" cX="1" cY="1" pX="0" pY="0" z="0">
+    <d name="part-jiqiang_huoshe1"/>
+    <d name="part-jiqiang_huoshe2"/>
+    <d name="part-jiqiang_huoshe3"/>
+    <d name="part-jiqiang_huoshe4"/>
+    <d name="part-jiqiang_huoshe5"/>
+   </b>
+   <b name="110" x="10.95" y="-44.6" kX="-90.05" kY="-90.05" cX="1" cY="1" pX="0" pY="0" z="1">
+    <d name="part-jiqiang_huoshe1"/>
+    <d name="part-jiqiang_huoshe2"/>
+    <d name="part-jiqiang_huoshe3"/>
+    <d name="part-jiqiang_huoshe4"/>
+    <d name="part-jiqiang_huoshe5"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="bt_fire_2_10">
+   <mov name="start" dr="14" to="6" drTW="14" lp="1" twE="NaN">
+    <b name="11" sc="1" dl="0">
+     <f x="-7.25" y="-44.6" cocos2d_x="-7.25" cocos2d_y="-44.6" kX="-90.05" kY="-90.05" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="2"/>
+     <f x="-7.3" y="-44.6" cocos2d_x="-7.3" cocos2d_y="-44.6" kX="-90.05" kY="-90.05" cX="1" cY="1" pX="0" pY="0" z="0" dI="1" dr="2"/>
+     <f x="-7.2" y="-44.6" cocos2d_x="-7.2" cocos2d_y="-44.6" kX="-90.05" kY="-90.05" cX="1" cY="1" pX="0" pY="0" z="0" dI="2" dr="2"/>
+     <f x="-7.2" y="-44.6" cocos2d_x="-7.2" cocos2d_y="-44.6" kX="-90.05" kY="-90.05" cX="1" cY="1" pX="0" pY="0" z="0" dI="3" dr="2"/>
+     <f x="-7.3" y="-44.6" cocos2d_x="-7.3" cocos2d_y="-44.6" kX="-90.05" kY="-90.05" cX="1" cY="1" pX="0" pY="0" z="0" dI="4" dr="2"/>
+     <f dr="4" dI="-1"/>
+    </b>
+    <b name="110" sc="1" dl="0">
+     <f x="10.95" y="-44.6" cocos2d_x="10.95" cocos2d_y="-44.6" kX="-90.05" kY="-90.05" cX="1" cY="1" pX="0" pY="0" z="1" dI="0" dr="2"/>
+     <f x="10.9" y="-44.6" cocos2d_x="10.9" cocos2d_y="-44.6" kX="-90.05" kY="-90.05" cX="1" cY="1" pX="0" pY="0" z="1" dI="1" dr="2"/>
+     <f x="11" y="-44.6" cocos2d_x="11" cocos2d_y="-44.6" kX="-90.05" kY="-90.05" cX="1" cY="1" pX="0" pY="0" z="1" dI="2" dr="2"/>
+     <f x="11" y="-44.6" cocos2d_x="11" cocos2d_y="-44.6" kX="-90.05" kY="-90.05" cX="1" cY="1" pX="0" pY="0" z="1" dI="3" dr="2"/>
+     <f x="10.9" y="-44.6" cocos2d_x="10.9" cocos2d_y="-44.6" kX="-90.05" kY="-90.05" cX="1" cY="1" pX="0" pY="0" z="1" dI="4" dr="2"/>
+     <f dr="4" dI="-1"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="zhanche_huoshe2" width="256" height="128">
+  <SubTexture name="part-jiqiang_huoshe5" width="103" height="60" cocos2d_pX="51.2" cocos2d_pY="31.8" x="0" y="0"/>
+  <SubTexture name="part-jiqiang_huoshe4" width="103" height="32" cocos2d_pX="51.2" cocos2d_pY="15.8" x="0" y="62"/>
+  <SubTexture name="part-jiqiang_huoshe3" width="103" height="47" cocos2d_pX="50.1" cocos2d_pY="24" x="105" y="0"/>
+  <SubTexture name="part-jiqiang_huoshe2" width="103" height="24" cocos2d_pX="51.2" cocos2d_pY="13" x="105" y="87"/>
+  <SubTexture name="part-jiqiang_huoshe1" width="103" height="36" cocos2d_pX="51.2" cocos2d_pY="17.9" x="105" y="49"/>
+ </TextureAtlas>
+</skeleton>

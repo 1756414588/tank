@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>part-v3_xb_weiyan_1.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,2},{42,50}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{42,50}}</string>
+                <key>sourceSize</key>
+                <string>{42,50}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>2</integer>
+            <key>realTextureFileName</key>
+            <string>v3_xb_weiyan_output.pvr.ccz</string>
+            <key>size</key>
+            <string>{64,64}</string>
+            <key>smartupdate</key>
+            <string>$TexturePacker:SmartUpdate:0e75fec19c99165b4665ab03badb9e59:1/1$</string>
+            <key>textureFileName</key>
+            <string>v3_xb_weiyan_output.pvr.ccz</string>
+        </dict>
+    </dict>
+</plist>

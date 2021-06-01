@@ -1,0 +1,1091 @@
+option java_package = "com.game.pb";
+option java_outer_classname = "SerializePb";
+
+import "Common.proto";
+
+message SerChip {
+    repeated Chip chip = 1;
+}
+
+message SerEquip {
+    repeated Equip equip = 1;
+}
+
+message SerPart {
+    repeated Part part = 1;
+}
+
+message SerProp {
+    repeated Prop prop = 1;
+}
+
+message SerTank {
+    repeated Tank Tank = 1;
+}
+
+message SerForm {
+    repeated Form form = 1;
+}
+
+message SerTankQue {
+    repeated TankQue que = 1;
+}
+
+message SerRefitQue {
+    repeated RefitQue que = 1;
+}
+
+message SerPropQue {
+    repeated PropQue que = 1;
+}
+
+message SerBuildQue {
+    repeated BuildQue que = 1;
+}
+
+message SerCombat {
+    repeated Combat combat = 1;
+}
+
+message SerScience {
+    repeated Science science = 1;
+}
+
+message SerScienceQue {
+    repeated ScienceQue scienceQue = 1;
+}
+
+message SerHero {
+    repeated Hero hero = 1;
+}
+
+message SerDbBless {
+    repeated DbBless dbBless = 1;
+}
+
+// message SerFriend {
+//     repeated Friend friend = 1;
+// }
+
+message SerStore {
+    repeated Store store = 1;
+}
+
+message SerSection {
+    repeated Section section = 1;
+}
+
+message SerSkill {
+    repeated Skill skill = 1;
+}
+
+message SerMill {
+    repeated Mill mill = 1;
+}
+
+message SerEffect {
+    repeated Effect effect = 1;
+}
+
+message SerMail {
+    repeated Mail mail = 1;
+}
+
+message SerLotteryEquip {
+    repeated LotteryEquip lotteryEquip = 1;
+}
+
+message SerWeal {
+    required Weal weal = 1;
+}
+
+message SerLiveTask {
+    repeated LiveTask liveTask = 1;
+}
+
+message SerPartyProp {
+    repeated PartyProp partyProp = 1;
+}
+
+message SerPartyApply {
+    repeated DbPartyApply dbPartyApply = 1;
+}
+
+message SerArmy {
+    repeated Army army = 1;
+}
+
+message SerTrend {
+    repeated Trend trend = 1;
+}
+
+message SerDbTrend {
+    repeated DbTrend dbTrend = 1;
+}
+
+message SerTaskDayiy {
+    repeated TaskDayiy taskDayiy = 1;
+}
+
+message SerTaskLive {
+    repeated TaskLive taskLive = 1;
+}
+
+message SerPartyCombat {
+    repeated PartyCombat partyCombat = 1;
+}
+
+message SerOneInt {
+    repeated int32 v = 1;
+}
+
+message SerTask {
+    repeated Task task = 1;
+}
+
+message SerAtkExtreme {
+    repeated AtkExtreme atkExtreme = 1;
+}
+
+message SerDbFriend {
+    repeated DbFriend dbFriend = 1;
+}
+
+message SerPartyDonate {
+    required PartyDonate partyDonate = 1;
+}
+
+message SerDbActivity {
+    repeated DbActivity dbActivity = 1;
+}
+
+message SerAmyRebate {
+    repeated AmyRebate amyRebate = 1;
+}
+
+message SerActPlayerRank {
+    repeated ActPlayerRank actPlayerRank = 1;
+}
+
+message SerActPartyRank {
+    repeated ActPartyRank actPartyRank = 1;
+}
+
+message SerMemberReg {
+    repeated MemberReg memberReg = 1;
+}
+
+message SerWarRecord {
+    repeated WarRecord warRecord = 1;
+}
+
+message SerWarRankInfo{
+    repeated WarRankInfo warRankInfo = 1;
+}
+
+message SerCanFightFortressPartyMap{
+    optional int32 calCanJoinFortressTime = 1;
+    repeated FortressBattleParty fortressBattleParty = 2;
+}
+
+message SerFortressRecords{
+    repeated FortressRecord fortressRecord = 1;
+}
+
+message SerRptRtkFortresss{
+    repeated RptAtkFortress rptAtkFortress = 1;
+}
+
+message SerMyFortressFightDatas{
+    repeated MyFortressFightData myFortressFightData = 1;
+}
+
+message SerPartyStatisticsMap{
+    repeated MyPartyStatistics myPartyStatistics = 1;
+}
+
+message SerFortressJobAppointList{
+    optional int32 clearJobTime = 1;
+    repeated FortressJobAppoint fortressJobAppoint = 2;
+}
+
+message SerAllServerFortressFightDataRankLordMap{
+    repeated MyFortressFightData myFortressFightData = 1;
+}
+
+message SerPersonWarRecord {
+    repeated WarRecordPerson warRecord = 1;
+}
+
+message SerCrossSysChatInfo{
+    required CrossSysChatInfo crossSysChatInfo = 1;
+}
+
+message SerCrossSysMailInfo{
+    required CrossSysChatInfo crossSysChatInfo = 1;
+}
+
+message SerAthleteMap{
+    repeated Athlete athlete = 1;
+}
+
+
+message SerOneLong {
+    repeated int64 v = 1;
+}
+
+message SerMonthSign{
+    optional sint32 today_sign = 1;
+    optional sint32 signTime = 2;
+    optional sint32 days = 3;
+    repeated sint32 day_ext = 4;
+
+}
+
+message SerLeqMatBuilding{
+    optional LeqMatBuilding lemb = 1;
+    optional int32  last_time = 2;
+    optional int64 speed = 3;
+}
+
+message SerLordEquipInfo{
+    repeated LordEquip put_on =1;//指挥官身上的军备
+    repeated LordEquip store = 2;//仓库中的军备
+    repeated Prop prop = 3;//军备材料
+    optional int32 unlock_tech_max = 4;//已解锁的最高铁匠
+    optional bool free = 5;//true : 最高解锁的铁匠有一次免费使用的机会
+    optional int32 employTechId = 6;//雇佣的铁匠
+    optional int32 employEndTime = 7;//雇佣铁匠的过期时间
+    optional LordEquipBuilding leqb = 8;//建造中的军备信息
+    //*********材料相关*************
+    optional int32 buyMatCount = 9;//购买的材料生产坑位
+    repeated SerLeqMatBuilding mat_que = 10;//生产中的材料列表
+	optional int32 freeChangeNum = 11;             //免费洗练次数
+	optional int64 changeTimeSec = 12;             //计算洗练恢复时间的起点时间
+}
+
+message SerData {
+    repeated Tank tank = 1;						//坦克
+    repeated Prop prop = 2;						//道具
+    repeated Form form = 3;						//阵型
+    repeated Equip equip = 4;					//装备
+    repeated Part part = 5;						
+    repeated Chip chip = 6;
+    repeated Skill skill = 7;
+    repeated Combat combat = 8;
+    repeated Combat explore = 9;
+    repeated Section section = 10;
+    repeated Mill mill = 11;
+    repeated Science science = 12;
+    repeated Hero hero = 13;
+    repeated DbFriend friend = 14;
+    repeated DbBless bless = 15;
+    repeated LotteryEquip lotteryEquip = 16;
+    repeated TankQue tankQue1 = 17;
+    repeated TankQue tankQue2 = 18;
+    repeated PropQue propQue = 19;
+    repeated RefitQue refitQue = 20;
+    repeated BuildQue buildQue = 21;
+    repeated ScienceQue scienceQue = 22;
+    repeated Army army = 23;
+    repeated Effect effect = 24;
+    repeated int32 sign = 25;
+    repeated Task majorTask = 26;
+    repeated Task dayiyTask = 27;
+    repeated Task liveTask = 28;
+    repeated DbActivity activity = 29;
+    repeated Cash cash = 30;
+    repeated FailNum failNum = 31;
+    optional Ruins runis = 32;
+    repeated Pray pray = 33;
+    repeated MilitaryScience militaryScience = 34;
+    repeated MilitaryScienceGrid militaryScienceGrid = 35;
+    repeated MilitaryMaterial militaryMaterial = 36;
+    optional FightValueAdd fightValueAdd = 37;
+    optional NobilityAncestry nobilityAncestry = 38;
+    repeated Pendant pendant=39;
+    repeated Prop energyStone = 40;                 // 能晶仓库
+    repeated EnergyStoneInlay energyInlay = 41;     // 能晶镶嵌信息
+    repeated TreasureShopBuy treasureShopBuy = 42;  // 宝物商店购买次数记录
+    repeated Tank drillTanks = 43;                  // 军事演习（红蓝大战）中玩家拥有的坦克
+    optional DrillFightData drillFightData = 44;    // 玩家关于红蓝大战的战斗信息
+    repeated DrillShopBuy drillShopBuy = 45;        // 玩家在军演商店的购买记录
+    optional PushComment pushComment = 46;          // ios评论界面推送
+    repeated TwoInt drillKillTank = 47;             // 记录玩家在红蓝大战中击毁的坦克和数量
+    optional RoleRebelData rebelData = 48;          // 玩家在叛军入侵活动中的数据
+    optional int32 crossJiFen = 49;                 // 跨服战积分
+    repeated Portrait portrait = 50;                // 角色肖像
+    repeated int32 combatBuff = 51;                 // 关卡buffId
+    optional bool combatBuffIsInit = 52;            // 关卡buff是否初始化(旧玩家已经通关了也需要添加buff)
+    repeated Medal medal = 53;                      // 勋章
+    repeated MedalChip medalChip = 54;              // 勋章碎片
+    repeated SectionReward sectionReward = 56;      // 攻打某类型关卡次数,奖励
+    repeated MedalBouns medalBouns = 55;            // 勋章展厅
+    repeated TwoInt partMatrial = 57;               // 10以后的配件材料
+    repeated int32 lockHero = 58;                   // 已锁英雄id
+    optional DbDay7Act dbDay7Act = 59;              // 7日活动
+    repeated int32 closeType = 60;                  // 已关闭设置
+    optional Lottery lottery = 61;                  // 探宝
+    repeated AwakenHero awakenHeros = 62;           // 觉醒将领
+    repeated Shop shop = 63;                        // 商店信息
+    optional SerMonthSign monthSign = 64;           // 每月签到信息
+    optional SerLordEquipInfo lordEquipInfo = 65;   // 军备信息
+	repeated TwoInt liveTaskAward = 66;				// 活跃奖励信息
+	repeated TwoInt backAward = 67;               	// 回归玩家领取记录
+	repeated Effect skin = 68;                      // 玩家皮肤
+	repeated TwoInt skinMap = 69;                   // 玩家购买皮肤列表(除外观外)
+	repeated ThreeInt usedSkinMap = 70;             // 正在使用皮肤(除外观外)
+	repeated TwoInt currentSkin = 71;               //当前使用皮肤列表(除外观外)
+	repeated QuinnPanel quinnPanel = 72; 			//超时空财团商品面板
+	repeated SecretWeapon weapon = 73;				//秘密武器
+	repeated AttackEffectPb atkEft = 74;			//坦克攻击特效
+	optional LabInfoPb labInfo = 75;				//作战研究院
+	optional int32 giftRewardCount = 76;    		// 点击宝箱获得奖励次数
+	optional int32 giftRewardTime = 77;    			// 点击宝箱获得奖励领取时间
+	optional RedPlanInfo redPlanInfo = 78;    		// 红色方案信息
+	repeated int32 guideRewardInfo = 79; 			//新手引导领取奖励
+	optional FestivalInfo festivalInfo = 80; 		//假日碎片
+	optional LuckyInfo luckyInfo = 81;				//幸运奖池
+	optional TeamInstanceInfo teamInstanceInfo = 82;//组队副本信息
+	optional int32 rebelBoxTime = 83;				//叛军礼盒最后一次领取时间
+	repeated int32 rebelBoxCount = 84;				//叛军礼盒领取次数
+	optional int32 rebelRedBagTime = 85;			//叛军红包最后一次领取时间
+	repeated int32 rebelRedBagCount = 86;			//叛军红包领取次数
+	optional DialDailyGoalInfo fortuneInfo = 87; 		//幸运转盘每日活动信息
+	optional DialDailyGoalInfo energyInfo = 88;       //能晶转盘每日活动信息
+	optional DialDailyGoalInfo equipInfo = 89;      //装备转盘每日活动信息
+	optional string newPayVersion = 90;
+	repeated int32 newPayInfo = 91;
+	repeated TwoInt dayBoxinfo = 92;    			//id count每周每日礼包领取次数
+	optional int64 dayBoxTime = 93;					//每周每日礼包领取次数 领取时间
+	optional int64 scoutFreeTime = 94;				//侦查cd时间
+	optional int32 scoutFreeTimeCount = 95;			//侦查失败次数
+	optional int32 scoutRewardCount = 96;			//侦查成功领取奖励次数
+	optional int64 scoutRewardTime = 97;			//侦查成功领取奖励时间
+	optional int32 scoutBanCount = 98;				//侦查禁止次数
+	optional bool honourNotify = 99;				//荣耀生存玩法通知标记
+	optional HonourScore honourRoleScore = 100;		//荣耀生存玩法玩家积分
+	optional int32 activeFail = 101; 				//新活跃宝箱刷新失败次数
+	optional int32 activeSuc = 102; 				//新活跃宝箱每日刷新成功次数
+	repeated int32 activeBox = 103;					//新活跃宝箱
+	optional int32 honourGoldTime = 104;			//荣耀玩法获得金币的上一次计算时间点
+	optional int32 honourGrabGold = 105;			//荣耀玩法玩家一次玩法期间掠夺金币数量
+	optional string new2PayVersion = 106;			//新首冲第二个活动
+	repeated int32 new2PayInfo = 107;				//新首冲第二个活动
+	optional int32 newHeroAddGold = 108;		//新英雄掠夺的金币数量总和
+	optional int64 newHeroAddGoldTime = 109;//新英雄掠夺的金币时间
+	repeated KvLong newHeroExpiredTime  = 110;  //英雄过期时间
+	repeated KvLong newHeroACd =111;//破罩将领cd
+	optional int32 newHeroAddCount =112;//破罩将领每天重置次数
+	optional int64 newHeroAddClearCdTime = 113;//破罩将领每天重置时间
+	optional int32 honourPartyId = 114; //	荣耀玩法结束时玩家所在军团
+	repeated LeqScheme leqScheme = 115;	//军备方案
+	optional int32  honourScoreGoldStatus = 116; //荣耀积分对应的金币领取状态
+	optional int32 isVerification =117;//侦查验证码是否验证成功
+	repeated TwoInt heroClearCdCount =118;//破罩将领每天重置次数
+	optional int32 rebelEndPartyId = 119; //	叛军每周结算时玩家最后所在军团
+	optional int64 contributionWorldStaffing=120;//玩家贡献的世界编制经验
+	optional WarActivityInfo warActivityInfo = 121;//军团活动
+	repeated TwoInt contributeCount = 122;	// key:type value:count  捐献的类型、次数
+	optional TacticsInfo tacticInfo =123;//战术
+	optional KingRankRewardInfo kingRankRewardInfo=124;//最强王者活动信息
+	repeated WipeInfo wipeInfo=125;//扫荡副本保存信息
+	repeated FriendGive friendGive =126;//好友赠送
+	repeated GetGiveProp getGiveProp =127;//获得好友赠送道具
+	repeated DBFriendliness friendliness = 128;//祝福加友好度
+	optional DialDailyGoalInfo ticInfo = 129;      //战术转盘每日活动信息
+	optional EnergyCore energyCore = 130;			//能源核心
+}
+
+message SerSeniorScore {
+    repeated SeniorScore seniorScore = 1;
+}
+
+message SerSeniorPartyScore {
+    repeated SeniorPartyScore seniorPartyScore = 1;
+}
+
+message SerTwoValue {
+    repeated TwoValue twoValue = 1;
+}
+
+message SerDrillRank {
+    repeated DrillRank firstRank = 1;
+    repeated DrillRank secondRank = 2;
+    repeated DrillRank thirdRank = 3;
+    repeated DrillRank totalRank = 4;
+}
+
+message SerDrillRecord {
+    repeated DrillRecord firstRecord = 1;
+    repeated DrillRecord secondRecord = 2;
+    repeated DrillRecord thirdRecord = 3;
+}
+
+message SerDrillResult {
+    optional DrillResult firstResult = 1;
+    optional DrillResult secondResult = 2;
+    optional DrillResult thirdResult = 3;
+    optional int32 redExploit = 4;              // 红方阵营功勋
+    optional int32 blueExploit = 5;             // 蓝方阵营功勋
+    optional int32 drillWinner = 6;             // 红蓝大战最终胜利阵营，0 平局（无效），1 红方胜，2 蓝方胜
+}
+
+message SerDrillShopBuy {
+    repeated DrillShopBuy buy = 1;
+    optional int32 refreshShopDate = 2;         // 上次刷新军演商店的日期
+}
+
+message SerDrillImproveInfo {
+    repeated DrillImproveInfo redImprove = 1;
+    repeated DrillImproveInfo BlueImprove = 2;
+}
+
+message SerCrossRecords{
+    repeated CrossRecord crossRecord = 1;
+}
+
+message SerCrossRptAtks{
+    repeated CrossRptAtk crossRptAtk = 2;
+}
+
+message SerRebelTotalData {                     // 叛军入侵活动，所有公共数据
+    repeated Rebel rebel = 1;
+    repeated int64 lastWeekRank = 2;            // 上周玩家排行
+    repeated int64 rebelReward = 3;             // 已领取上周个人排行的玩家lordId
+    repeated TwoInt rebelHeroDrop = 4;          // 本次活动已掉落将领记录
+    repeated TwoInt rebelTypeDrop = 5;          // 叛军入侵活动，本次活动已掉落将领，按叛军类型记录数量
+    optional int32 lastWeekRankDate = 6;        // 上次刷新周排行榜的日期
+	repeated int32 lastWeekPartyRank = 7;		// 上周军团排行
+	repeated TwoInt boxDropTime = 8;			// 礼盒掉落时间
+	repeated TwoInt boxLeftCount = 9;			// 礼盒剩余可领取次数
+	repeated SerActRedBag redBag = 10;        	// 叛军红包
+	repeated int64 partyReward = 11;			// 已领取上周军团排行的玩家lordId
+	repeated PartyRebelData partyRebelData = 12;// 每周的军团叛军活动数据
+}
+
+message SerDFKnockoutBattleGroups{
+    repeated KnockoutBattleGroup knockoutBattleGroup = 1;
+}
+
+message SerJYKnockoutBattleGroups{
+    repeated KnockoutBattleGroup knockoutBattleGroup = 1;
+}
+
+message SerDFFinalBattleGroups{
+    repeated FinalCompetGroup finalCompetGroup = 1;
+}
+
+message SerJYFinalBattleGroups{
+    repeated FinalCompetGroup finalCompetGroup = 1;
+}
+
+message SerJYRankMap{
+    repeated string athleteKey = 1;
+}
+
+message SerDFRankMap{
+    repeated string athleteKey = 1;
+}
+
+message SerCrossShop {
+    repeated CrossShopBuy crossShop = 1;        // 跨服商店的珍品购买情况
+}
+
+message SerReceiveCrossRankRward{
+    repeated string receiveCrossRankRwardKey = 1;   // 领取排行奖励的key
+}
+
+message SerJiFenPlayer{
+    repeated JiFenPlayer jiFenPlayer = 1;   // 所有积分用户
+}
+
+message SerCrossFame{
+    repeated CrossFame crossFame = 1;
+}
+
+message SerCpFame{
+    repeated CPFame cpFame = 1;
+}
+
+message SerPAccount {                   // 对应p_account表数据
+    required int32 keyId = 1;
+    required int32 accountKey = 2;
+    required int32 serverId = 3;
+    required int32 platNo = 4;
+    required string platId = 5;
+    required int32 childNo = 6;
+    required int32 forbid = 7;
+    required int32 whiteName = 8;
+    required int64 lordId = 9;
+    required int32 created = 10;
+    required string deviceNo = 11;
+    required int32 createDate = 12;
+    required int32 loginDays = 13;
+    required int32 loginDate = 14;
+    required int32 isGm = 15;
+    required int32 isGuider = 16;
+}
+
+message SerPBuilding {                  // 对应p_building表
+    required int64 lordId = 1;
+    required int32 ware1 = 2;           // 第一仓库等级
+    required int32 ware2 = 3;           // 第一仓库等级
+    required int32 tech = 4;            // 科技馆等级
+    required int32 factory1 = 5;        // 第一战车工厂等级
+    required int32 factory2 = 6;        // 第一战车工厂等级
+    required int32 refit = 7;           // 改装工厂等级
+    required int32 command = 8;         // 司令部等级
+    required int32 workShop = 9;        // 制造车间等级
+}
+
+message SerPData {                      // 对应p_data表
+    required int64 lordId = 1;
+    optional SerData serData = 2;
+    optional SerMail serMail = 3;
+    required int32 combatId = 4;            // 普通副本进度
+    required int32 equipEplrId = 5;         // 装备副本进度
+    required int32 partEplrId = 6;          // 配件副本进度
+    required int32 militaryEplrId = 7;      // 军工副本次数
+    required int32 extrEplrId = 8;          // 极限副本进度
+    required int32 extrMark = 9;            // 极限副本最高层数
+    required int32 wipeTime = 10;           // 极限副本扫荡开始时间
+    required int32 timePrlrId = 11;         // 限时副本进度
+    required int32 energyStoneEplrId = 12;  // 能晶副本进度
+    required int32 signLogin = 13;          // 签到登录奖励
+    required int32 maxKey = 14;             // 最大key
+    required int32 seniorDay = 15;          // 军事矿区参与时间
+    required int32 seniorCount = 16;        // 军事矿区掠夺剩余次数
+    required int32 seniorScore = 17;        // 军事矿区掠夺积分
+    required int32 seniorAward = 18;        // 是否领取了军事矿区军团排名奖励
+    required int32 seniorBuy = 19;          // 军事矿区掠夺购买次数
+}
+
+message SerPLord {                      // 对应p_lord表
+    required int64 lordId = 1;              // 玩家id
+    required string nick = 2;               // 主公名字
+    required int32 portrait = 3;            // 头像
+    required int32 sex = 4;                 // 性别
+    required int32 level = 5;               // 当前等级
+    required int32 exp = 6;                 // 当前经验值
+    required int32 vip = 7;                 // vip等级
+    required int32 topup = 8;               // 总充值金额
+    required int32 pos = 9;                 // 坐标
+    required int32 gold = 10;               // 金币
+    required int32 goldCost = 11;           // 金币总消耗
+    required int32 goldGive = 12;           // 总共赠予的金币
+    required int32 goldTime = 13;           // 财政官金发送取时间
+    required int32 huangbao = 14;           // 荒宝碎片数量
+    required int32 ranks = 15;              // 军衔
+    required int32 command = 16;            // 统帅等级
+    required int32 fame = 17;               // 声望
+    required int32 fameLv = 18;             // 声望等级
+    required int32 fameTime1 = 19;          // 军衔领取声望的时间
+    required int32 fameTime2 = 20;          // 授勋领取声望的时间
+    required int32 honour = 21;             // 荣誉
+    required int32 pros = 22;               // 繁荣度
+    required int32 prosMax = 23;            // 最大繁荣度
+    required int32 prosTime = 24;           // 繁荣度恢复时间
+    required int32 power = 25;              // 当前行动力
+    required int32 powerTime = 26;          // 上一次回复行动力的时间
+    required int64 newState = 27;           // 新手引导步骤
+    required int64 fight = 28;              // 战斗力
+    required int32 equip = 29;              // 装备仓库容量
+    required int32 fitting = 30;            // 零件数量
+    required int32 metal = 31;              // 记忆金属数量
+    required int32 plan = 32;               // 设计蓝图数量
+    required int32 mineral = 33;            // 金属矿物数量
+    required int32 tool = 34;               // 改造工具数量
+    required int32 draw = 35;               // 改造图纸数量
+    required int32 eplrTime = 36;           // 探险副本重置时间
+    required int32 equipEplr = 37;          // 装备副本挑战次数
+    required int32 partEplr = 38;           // 配件副本挑战次数
+    required int32 militaryEplr = 39;       // 军工副本挑战次数
+    required int32 extrEplr = 40;           // 极限副本挑战次数
+    required int32 timeEplr = 41;           // 限时副本挑战次数
+    required int32 energyStoneEplr = 42;    // 能晶副本挑战次数
+    required int32 equipBuy = 43;           // 装备探险购买次数
+    required int32 partBuy = 44;            // 配件副本购买次数
+    required int32 militaryBuy = 45;        // 军工副本购买次数
+    required int32 extrReset = 46;          // 探险副本重置次数
+    required int32 timeBuy = 47;            // 限时副本购买次数
+    required int32 energyStoneBuy = 48;     // 能晶副本购买次数
+    required int32 goldHeroCount = 49;      // 金币抽将次数
+    required int32 goldHeroTime = 50;       //
+    required int32 stoneHeroCount = 51;     // 宝石抽将次数
+    required int32 stoneHeroTime = 52;      //
+    required int32 blessCount = 53;         // 祝福次数
+    required int32 blessTime = 54;          // 祝福时间
+    required int32 taskDayiy = 55;          // 日常任务环数
+    required int32 dayiyCount = 56;         // 日常任务购买次数
+    required int32 taskLive = 57;           // 日常总活跃
+    required int32 taskLiveAd = 58;         // 日常活跃领取奖励值
+    required int32 taskTime = 59;           // 任务刷新时间
+    required int32 buyPower = 60;           // 购买能量次数
+    required int32 buyPowerTime = 61;       // 购买能量日期
+    required int32 stars = 62;              // 关卡总星数
+    required int32 starRankTime = 63;       // 玩家最近一次上关卡总星榜的时间
+    required int32 lotterExplore = 64;      // 单次探宝时间
+    required int32 buildCount = 65;         // 购买的建筑位
+    required int32 newerGift = 66;          // 0未领取新手礼包 1已领取
+    required int32 onTime = 67;             // 最近一次上线时间
+    required int32 olTime = 68;             // 当日在线时长
+    required int32 offTime = 69;            // 最近一次离线时间
+    required int32 ctTime = 70;             // 在线奖励倒计时开始时间
+    required int32 olAward = 71;            // 领取了第几个在线奖励
+    required int32 silence = 72;            // 禁言
+    required int32 olMonth = 73;            // 每月登录天数，值=月份*10000+登录时间*100+天数
+    required int32 pawn = 74;               // 极限单兵领取时间
+    required int32 partDial = 75;           // 配件转盘
+    required int32 consumeDial = 76;        // 消费转盘
+    required int32 tankRaffle = 77;         // 坦克拉霸
+    required int32 partyLvAward = 78;       // 帮派等级奖励
+    required int32 partyFightAward = 79;    // 帮派战力奖励
+    required int32 partyTipAward = 80;      // 军团提示奖励
+    required int32 freeMecha = 81;          // 机甲洪流活动免费抽取日期
+    required int32 upBuildTime = 82;        // 剩余自动升级时间
+    required int32 onBuild = 83;            // 打开自动升级
+    required int32 staffing = 84;           // 编制
+    required int32 staffingLv = 85;         // 编制等级
+    required int32 staffingExp = 86;        // 编制经验
+    required int32 exploit = 87;            //玩家的功勋值
+    required int32 resetDrillShopTime = 88; // 玩家上次重置军演商店购买信息的时间
+}
+
+message SerPParty {                     // 对应p_party表
+    required int32 partyId = 1;
+    required string partyName = 2;
+    required string legatusName = 3;        // 军团长名称
+    required int32 partyLv = 4;             // 军团大厅等级
+    required int32 scienceLv = 5;           // 科技馆等级
+    required int32 wealLv = 6;              // 福利院等级
+    required int32 lively = 7;              // 军团活跃值
+    required int32 build = 8;               // 建设度
+    required int64 fight = 9;               // 战斗力
+    required int32 apply = 10;              // 1申请即可加入 2申请需要审批
+    required int32 applyLv = 11;            // 申请等级
+    required int64 applyFight = 12;         // 申请战斗力
+    optional string slogan = 13;            // 公会宣传语
+    optional string innerSlogan = 14;       // 内部宣传语
+    optional string jobName1 = 15;          // 职位1的名称
+    optional string jobName2 = 16;          // 职位2的名称
+    optional string jobName3 = 17;          // 职位3的名称
+    optional string jobName4 = 18;          // 职位4的名称
+    required SerWeal mine = 19;             // 全员采集资源数量
+    required SerScience science = 20;       // 帮派科技信息
+    required SerPartyApply applyList = 21;  // 工会申请列表（最大20个）
+    required SerDbTrend trend = 22;         // 军情
+    required SerPartyCombat partyCombat = 23;// 军团副本
+    required SerLiveTask liveTask = 24;     // 军团活跃任务
+    required SerDbActivity activity = 25;   //
+    required SerProp amyProps = 26;         // 战事福利
+    required SerTwoValue donates = 27;      // 捐献者ID
+    required string shopProps = 28;         // 已购买次数
+    required int32 refreshTime = 29;        // 采集时间
+    required SerWarRecord warRecord = 30;   // 百团混战军团战况
+    required int32 regLv = 31;              // 军团报名等级
+    required int64 regFight = 32;           // 军团报名战力
+    required int32 warRank = 33;            // 百团混战排名
+    required int32 score = 34;              // 军事矿区积分
+    required int32 altarLv = 35;            // 军团祭坛的等级
+    required int32 nextCallBossSec = 36;    // 下一次可以召唤祭坛BOSS的时间（CD结束时间），毫秒数/1000
+    required int32 bossLv = 37;             // 祭坛BOSS的等级
+    required int32 bossState = 38;          // 祭坛BOSS的状态
+    required int32 bossWhich = 39;          // 祭坛BOSS当前是第几管血
+    required int32 bossHp = 40;             // 祭坛BOSS当前血量万分比
+    required string bossHurtRank = 41;      // 祭坛BOSS伤害排行
+    required string bossAward = 42;         // 祭坛BOSS排行奖励，已领取奖励的玩家记录
+    required int32 shopTime = 43;           //军团商店 上次全局刷新时间
+}
+
+message SerPPartyMember {               // 对应p_party_member表
+    required int64 lordId = 1;
+    required int32 partyId = 2;
+    required int32 job = 3;                 // 99军团长 10普通成员 0申请玩家
+    required int32 donate = 4;              // 个人贡献
+    required int64 prestige = 5;            // 军团内部威望
+    required int32 weekAllDonate = 6;       // 周总贡献
+    required int32 weekDonate = 7;          // 周贡献
+    required int32 donateTime = 8;          // 贡献时间
+    required int32 dayWeal = 9;             // 日常福利：0.未领 1.已领
+    required SerPartyDonate hallMine = 10;  // 大厅宝石贡献次数
+    required SerPartyDonate scienceMine = 11;// 科技宝石贡献次数
+    required SerWeal wealMine = 12;         // 科技硅石贡献次数
+    required SerPartyProp partyProp = 13;   // 帮派道具
+    required SerOneInt combatId = 14;       // 军团副本记录
+    required string applyList = 15;         // 申请列表
+    required int32 combatCount = 16;        // 打军团本次数
+    required int32 refreshTime = 17;        // 领取福利日期
+    required int32 enterTime = 18;          // 申请/加入帮派时间
+    required int32 activity = 19;           // 活跃度
+    required int32 regParty = 20;           // 报名时所在军团id
+    required int32 regTime = 21;            // 百团报名时间
+    required int32 regLv = 22;              // 报名等级
+    required int32 regFight = 23;           // 报名战力
+    required int32 winCount = 24;           // 百团混战连胜数
+    required SerPersonWarRecord warRecord = 25;// 百团混战个人战报
+}
+
+message SerPResource {                  // 对应p_resource表
+    required int64 lordId = 1;
+    required int64 iron = 2;                // 铁
+    required int64 oil = 3;                 // 石油
+    required int64 copper = 4;              // 铜
+    required int64 silicon = 5;             // 硅
+    required int64 stone = 6;               // 宝石
+    required int64 ironOut = 7;             // 周贡献
+    required int64 oilOut = 8;              // 贡献时间
+    required int64 copperOut = 9;           // 日常福利：0.未领 1.已领
+    required int64 siliconOut = 10;         // 大厅宝石贡献次数
+    required int64 stoneOut = 11;           // 科技宝石贡献次数
+    required int64 ironOutF = 12;           // 科技硅石贡献次数
+    required int32 oilOutF = 13;
+    required int32 copperOutF = 14;
+    required int32 siliconOutF = 15;
+    required int32 stoneOutF = 16;
+    required int64 ironMax = 17;
+    required int64 oilMax = 18;
+    required int64 copperMax = 19;
+    required int64 siliconMax = 20;
+    required int64 stoneMax = 21;
+    required int32 storeF = 22;
+    required int64 tIron = 23;
+    required int64 tOil = 24;
+    required int64 tCopper = 25;
+    required int64 tSilicon = 26;
+    required int64 tStone = 27;
+    required int32 storeTime = 28;
+}
+
+message SerPTipGuy {                    // 对应p_tip_guy表
+    required int64 lordId = 1;          // 被举报玩家ID
+    required int32 vip = 2;             // vip等级
+    required int32 level = 3;           // 玩家等级
+    required int32 count = 4;           // 被举报次数
+    required SerOneLong tips = 5;       // 举报次数
+    required string content = 6;
+}
+
+message FullPlayerData {
+    required SerPAccount account = 1;   // 玩家的account信息
+    required SerPBuilding build = 2;    // 玩家的建筑信息
+    required SerPData data = 3;         // 玩记录在p_data表中的数据
+    required SerPLord lord = 4;         // 玩家在p_lord表中的数据
+    required SerPPartyMember member = 5;// 玩家军团相关信息
+    required SerPResource resource = 6; // 玩家资源产出相关数据
+    optional SerPTipGuy tipGuy = 7;     // 玩家举报信息
+}
+
+message SerPartyMembers{
+    repeated CPPartyMember cpPartyMember = 1;
+}
+
+message SerPartys{
+    repeated CPParty cpParty = 2;
+}
+
+
+message SerGroupMap{
+    repeated GroupParty groupParty = 1;
+}
+
+message SerLianShengRank{
+    repeated string lianShengRank = 1;
+}
+
+message SerServerSisuation{
+    repeated ServerSisuation serverSisuation = 1;
+}
+
+message SerCPRecords{
+    repeated CPRecord cpRecord = 1;
+}
+
+message SerCPRptAtks{
+    repeated CPRptAtk cpRptAtk = 1;
+}
+
+message SerReceivePersionRward{
+    repeated string receivePersionRward = 1;
+}
+
+message SerReceiveLianShengRward{
+    repeated string receiveLianShengRward = 1;
+}
+
+message CDReg {
+    required int32 serverId = 1;
+    required int64 lordId = 2;
+}
+
+message SerCDReg { // 跨服军演报名数据
+    repeated CDReg reg = 1;
+}
+
+message CDBet { // 跨服军演下注信息
+    required int64 lordId = 1;              // 下注人id
+    required int32 serverId = 2;            // 下注人服务器id
+    required int32 battleGroupId = 3;       // 淘汰赛组别，1-8组     9-12组    13-14组    15组
+    required int32 myBet = 4;               // 玩家下注信息，0 未下注，1 下注c1，2 下注c2
+    required int32 betNum = 5;              // 下注数量
+    required int32 betCount = 6;            // 已下注次数
+    required int32 state = 7;               // 状态，-1 不能领取， 0 未领取，1 已领取
+    required int32 winNum = 8;              // 赢得的积分数量
+}
+
+message SerCDBet {
+    repeated CDBet bet = 1;
+}
+
+message SerCDMorale { // 跨服军演士气数据
+    repeated CDMorale morale = 1;
+}
+
+message SerCDTeamDistribution { // 跨服军演小组赛服务器分组数据
+    repeated CDTeamServerDistribution distribution = 1;
+    repeated int32 seedServerId = 2;        // 种子服id
+}
+
+message SerCDAwardRank { // 可领奖的排行榜数据
+    repeated CDFinalRank fianlRank = 1;     // 总榜数据
+    repeated CDHeroRank heroRank = 2;       // 英雄榜数据
+    repeated ReceiveRank finalReceive = 3;  // 总榜已领取奖励玩家
+    repeated ReceiveRank heroReceive = 4;   // 英雄榜已领取奖励玩家
+}
+
+message SerCDTeamScore { // 跨服军演小组积分数据
+    repeated CDTeamScore teamScore = 1;
+}
+
+message SerCDStrongholdRank { // 跨服军演所有据点排行榜数据
+    repeated CDStrongholdRank rank = 1;
+}
+
+message SerCDTeamBattleData { // 跨服军演小组赛各小组战场数据
+    repeated CDTeamBattleData battleData = 1;
+}
+
+message SerCDBattleField { // 跨服军演战场的战场信息
+    repeated CDBattleField field = 1;
+}
+
+message SerCDBattleStronghold { // 跨服军演所有据点的详细数据
+    repeated CDBattleStronghold stronghold = 1;
+}
+
+message SerCDKnockoutBattle { // 跨服军演淘汰赛匹配数据
+    repeated CDKnockoutBattle battle = 1;
+    repeated TwoInt serverScore = 2;        // 记录服务器获得的比赛积分
+    repeated TwoInt serverJifen = 3;        // 记录服务器获得的跨服军演商店的积分
+}
+
+message SerCDRecord {
+    repeated CDRecord record = 1;
+}
+
+message SerCDReport {
+    repeated RptAtkFortress report = 1;
+}
+
+message CDForm {
+    required int32 strongholdId = 1;        // 据点id
+    required int64 lordId = 2;              // 玩家id
+    required int32 serverId = 3;            // 服务器id
+    repeated Form form = 4;                 // 阵型，阵型类型，1 本据点部队1，2 本据点部队2
+}
+
+message SerCDForm {
+    repeated CDForm form = 1;
+}
+
+message SerCDShop { // 跨服军演商店购买数据
+    repeated CrossShopBuy buy = 1;
+}
+
+message SerCDPlayer { // 跨服军演玩家数据
+    repeated CDPlayer player = 1;
+}
+
+message SerActBoss { // 活动boss
+    required int32 state = 1;        // 0未召唤 1已召唤
+    required int32 endTime = 2;      // 死亡时间
+    required int32 bossBagNum = 3;   // 福袋数量
+    required int32 callTimes = 4;    // 召唤次数
+    required int64 lordId = 5;       // 召唤人
+    required string bossName = 6;    // 名字
+    required int32 bossIcon = 7;     // icon
+    repeated int64 joinLordIds = 8;  // 参与人id
+}
+
+message SerActRebel { // 活动叛军
+    repeated SerActRebelRank rebelRank = 1;  // 叛军排行
+}
+
+message SerActRebelRank { // 活动叛军排行
+    required int64 lordId = 1;          // lordId
+    required int32 killNum = 2;         // 玩家击杀数量
+    required int32 score = 3;           // 玩家的积分
+    optional int32 lastUpdateTime = 4;  //最后重置日期秒
+}
+
+message SerMineScout{
+    optional int64 lordId = 1;//玩家ID
+    optional int32 scout_time = 2;//侦查时间
+}
+
+message SerMine{
+    required Mine mine =1;//矿点信息
+    optional int32 modTime = 2;//最后被占领时间
+    repeated SerMineScout scout = 3;//被侦查列表
+}
+
+message SerWorldMine{
+    repeated SerMine mine = 1;//世界地图矿点信息
+}
+
+message SerPlayerAirship{
+    optional int64 lordId = 1;                  	//玩家ID
+	optional int32 freeCnt = 2;						//玩家使用的免费次数
+	optional int32 freeDay = 3;						//玩家使用免费次数时间
+    repeated Kv scout = 4;						       	//飞艇侦查有效结束时间(K:飞艇ID, VALUE:侦查效果结束时间)
+}
+
+message AirshipDb {
+    optional int32 id = 1;                          //飞艇id
+    optional int32 partyId = 2;                     //占领军团id
+    optional int32 safeEndTime = 3;                 //保护罩结束时间
+    optional int32 produceTime = 4;                 //自产开始时间(-1不能生产)
+    optional int32 produceNum = 5;                  //自产数量
+    optional int32 durability = 6;                  //耐久度
+	optional bool ruins = 8;						//true:飞艇处于废墟状态
+	optional int32 occupyTime = 9;					//飞艇被占领时间
+
+	repeated SaveRecvRecord recvRecords = 10;//飞艇征收记录
+}
+
+message NotGetAward {
+	required int64 lordId = 1;
+	required int32 type = 2;
+	repeated Award award = 3;
+}
+message SerNotGetAward{
+	repeated NotGetAward award = 1;
+}
+
+message SaveRecvRecord {
+	required int32 recvTime = 1;        //征收时间
+	required int64 lordId = 2;          //征收团员名字
+	required int32 type = 3;            //类型
+	required int32 awardId = 4;         //征收物品id
+	required int32 count = 5;           //征收数量
+	required int32 mplt = 6;            //消耗军功
+}
+
+message SerAirship{
+    repeated AirshipDb airship = 1;    				//飞艇信息
+    repeated SerPlayerAirship playerAirship = 7;    //玩家参与飞艇信息
+}
+
+message SerPartyJobFree{
+	optional int32 job = 1;							//军团职位
+	optional int32 free = 2;						//今日使用免费次数
+	optional int32 freeDay = 3;						//时间时间
+}
+
+message SerAirshipData{
+    repeated AirshipTeamDb airshipTeam = 1;    		//飞艇组队信息
+    repeated AirshipGuard guard = 2;           		//飞艇驻军信息
+    repeated TwoLong leaders = 3;              		//飞艇指挥官id K:飞艇ID, V: lordId
+	repeated SerPartyJobFree free = 4;				//军团飞艇免费次数使用信息
+}
+
+message AirshipTeamDb {
+    required int32 id = 1;              			// 飞艇id
+    required int64 lordId = 2;          			// 发起人id
+    required int32 state = 3;           			// 当前状态
+    required int32 endTime = 4;         			// 结束时间
+    repeated TwoLong armys = 5;         			// 角色部队信息-角色id-部队id
+}
+
+message AirshipGuard {
+    required int32 id = 1;              			// 飞艇id
+    repeated TwoLong armys = 2;         			// 角色部队信息-角色id-部队id
+}
+
+message TwoIntMap{
+	repeated TwoInt v = 1;							//kv值列表序列对象
+}
+
+
+//抢红包信息
+message SerGrabRedBag{
+    optional int64 lordId = 1;                  //抢红包的玩家ID
+    optional int32 grabMoney = 3;               //抢到的金额
+    optional int64 grabTime = 4;                //抢红包时间(单位:ms)
+}
+
+
+//红包信息
+message SerActRedBag{
+    optional int32 uid = 1;                     //红包唯一ID
+    optional int64 lordId = 2;                  //红包所属玩家
+    optional int32 totalMoney = 3;              //红包总金额
+    optional int32 remainMoney = 4;             //红包剩余金额
+	optional int32 partyId = 5;					//红包所属军团
+    optional int32 grabCnt = 6;                 //发放人数
+	optional int64 sendTime = 7;				//发放时间(单位: ms)
+    repeated SerGrabRedBag grab = 8;            //抢红包信息
+}
+
+
+//全服活动信息记录
+message SerUsualData{
+	repeated SerActRedBag redbag = 1;			//红包信息记录
+}
+
+
+// 荣耀生存玩法公共数据
+message SerHonourTotalData {
+    repeated TwoInt points = 1;					// 中心点坐标
+    required int32 phase = 2;             		// 毒圈阶段
+    required int32 openTime = 3;         		// 本次玩法开启时间
+	repeated HonourScore partyScore = 4;   		// 荣耀生存玩法军团积分
+	repeated int64 playerRankAward = 5;			// 已领取个人排行奖励的玩家
+	repeated int64 partyRankAward = 6;			// 已领取军团排行奖励的玩家
+}
+
+//跨服军矿驻军信息
+message SerCrossMineArmy{
+	repeated CrossMineArmy info=1;
+}
+
+message CrossMineArmy{
+	optional int64 roleId=1;
+	optional Army army = 2;
+}
+
+//跨服军矿玩家排行
+message CrossMinePalyerRankInfo{
+	repeated CrossMinePlayerRank rank=1;
+}
+
+message CrossMinePlayerRank{
+	optional int64 roleId =1;
+	optional int32 score=2;
+	optional bool get = 3; 			//是否领取 排名奖励
+}
+
+//跨服军矿服务器排行
+message  CrossMineServerRankInfo{
+	repeated CrossMineServerRank rank =1;
+}
+
+message CrossMineServerRank{
+	optional int64 serverId =1;
+	optional int32 score=2;
+}
+
+//跨服军矿领取过服务器排名奖励的玩家
+message CrossMineGetInfo{
+	repeated int64 roleId =1;
+}

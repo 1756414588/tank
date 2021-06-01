@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>part-b_huojianche_daodan2.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,2},{20,83}}</string>
+                <key>offset</key>
+                <string>{-3,2}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{1,0},{20,83}}</string>
+                <key>sourceSize</key>
+                <string>{28,87}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>2</integer>
+            <key>realTextureFileName</key>
+            <string>bt_1_ammo_4_16.pvr.ccz</string>
+            <key>size</key>
+            <string>{32,128}</string>
+            <key>smartupdate</key>
+            <string>$TexturePacker:SmartUpdate:9200e3ce1e1bac652332cc9821c6a597:1/1$</string>
+            <key>textureFileName</key>
+            <string>bt_1_ammo_4_16.pvr.ccz</string>
+        </dict>
+    </dict>
+</plist>

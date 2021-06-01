@@ -1,0 +1,28 @@
+<skeleton name="zhuangbeigongchang" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="ui_base_equip">
+   <b name="zhuangbeigongchang2" x="-0.95" y="-1.55" kX="-0.45" kY="-0.45" cX="1" cY="1" pX="16" pY="-4" z="0">
+    <d name="part-zhuangbeigongchang2"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="ui_base_equip">
+   <mov name="start" dr="401" to="6" drTW="401" lp="1" twE="NaN">
+    <b name="zhuangbeigongchang2" sc="1" dl="0">
+     <f x="-0.95" y="-1.55" cocos2d_x="-17.2" cocos2d_y="2.55" kX="-0.45" kY="-0.45" cX="1" cY="1" pX="16" pY="-4" z="0" dI="0" twE="0" dr="50"/>
+     <f x="-1" y="-1.5" cocos2d_x="-17.2" cocos2d_y="-2.2" kX="5.51" kY="16.23" cX="1.02" cY="1" pX="16" pY="-4" z="0" dI="0" dr="11"/>
+     <f x="-1" y="-1.5" cocos2d_x="-17.2" cocos2d_y="-2.2" kX="5.51" kY="16.23" cX="1.02" cY="1" pX="16" pY="-4" z="0" dI="0" twE="0" dr="42"/>
+     <f x="-0.2" y="-1.5" cocos2d_x="-13.6" cocos2d_y="-1.35" kX="5.51" kY="16.23" cX="0.83" cY="1" pX="16" pY="-4" z="0" dI="0" dr="63"/>
+     <f x="-0.2" y="-1.5" cocos2d_x="-13.6" cocos2d_y="-1.35" kX="5.51" kY="16.23" cX="0.83" cY="1" pX="16" pY="-4" z="0" dI="0" twE="0" dr="44"/>
+     <f x="-1" y="-1.5" cocos2d_x="-17.2" cocos2d_y="-2.2" kX="5.51" kY="16.23" cX="1.02" cY="1" pX="16" pY="-4" z="0" dI="0" dr="13"/>
+     <f x="-1" y="-1.5" cocos2d_x="-17.2" cocos2d_y="-2.2" kX="5.51" kY="16.23" cX="1.02" cY="1" pX="16" pY="-4" z="0" dI="0" twE="0" dr="74"/>
+     <f x="-0.95" y="-1.55" cocos2d_x="-17.2" cocos2d_y="2.55" kX="-0.45" kY="-0.45" cX="1" cY="1" pX="16" pY="-4" z="0" dI="0" dr="104"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="zhuangbeigongchang" width="64" height="64">
+  <SubTexture name="part-zhuangbeigongchang2" width="53" height="47" cocos2d_pX="30.1" cocos2d_pY="26.05" x="0" y="0"/>
+ </TextureAtlas>
+</skeleton>

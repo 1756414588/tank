@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="BuildingDao">
+    <select id="selectBuilding" parameterType="Long" resultType="Building">
+		select 
+		lordId,ware1,ware2,tech,factory1,factory2,refit,command,workShop,leqm
+		from p_building where lordId=#{lordId}
+	</select>
+
+    <update id="updateBuilding" parameterType="Building">
+		update p_building set ware1=#{ware1},ware2=#{ware2},tech=#{tech},factory1=#{factory1},factory2=#{factory2},
+		refit=#{refit},command=#{command},workShop=#{workShop}, leqm=#{leqm} where lordId=#{lordId}
+	</update>
+
+    <insert id="insertBuilding" parameterType="Building">
+		insert into
+		p_building(lordId,ware1,ware2,tech,factory1,factory2,refit,command,workShop,leqm)
+		values(#{lordId},#{ware1},#{ware2},#{tech},#{factory1},#{factory2},#{refit},#{command},#{workShop},#{leqm})
+	</insert>
+
+    <select id="load" parameterType="Map" resultType="Building">
+		select 
+		lordId,ware1,ware2,tech,factory1,factory2,refit,command,workShop,leqm
+		from p_building where lordId > #{curIndex} order by lordId limit 0,#{count}
+	</select>
+
+</mapper>

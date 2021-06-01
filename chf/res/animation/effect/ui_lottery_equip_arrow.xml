@@ -1,0 +1,33 @@
+<skeleton name="czb_lanse_jiantou" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="ui_lottery_equip_arrow">
+   <b name="1" x="-0.2" y="28.6" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0">
+    <d name="part-jiantou2"/>
+   </b>
+   <b name="2" x="-0.6" y="-2.75" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1">
+    <d name="part-jiantou1"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="ui_lottery_equip_arrow">
+   <mov name="start" dr="66" to="6" drTW="66" lp="1" twE="NaN">
+    <b name="1" sc="1" dl="0">
+     <f x="-0.2" y="28.6" cocos2d_x="-0.2" cocos2d_y="28.6" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="11"/>
+     <f x="-0.2" y="28.6" cocos2d_x="-0.2" cocos2d_y="28.6" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" twE="0" dr="27"/>
+     <f x="-0.2" y="35.8" cocos2d_x="-0.2" cocos2d_y="35.8" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" twE="0" dr="27"/>
+     <f x="-0.2" y="28.6" cocos2d_x="-0.2" cocos2d_y="28.6" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" twE="0" dr="1"/>
+    </b>
+    <b name="2" sc="1" dl="0">
+     <f x="-0.6" y="-2.75" cocos2d_x="-0.6" cocos2d_y="-2.75" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1" dI="0" twE="0" dr="28"/>
+     <f x="-0.6" y="4.45" cocos2d_x="-0.6" cocos2d_y="4.45" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1" dI="0" twE="0" dr="26"/>
+     <f x="-0.6" y="-2.75" cocos2d_x="-0.6" cocos2d_y="-2.75" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1" dI="0" dr="12"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="czb_lanse_jiantou" width="128" height="128">
+  <SubTexture name="part-jiantou1" width="118" height="59" cocos2d_pX="59" cocos2d_pY="29.5" x="0" y="0"/>
+  <SubTexture name="part-jiantou2" width="60" height="31" cocos2d_pX="30" cocos2d_pY="15.5" x="0" y="61"/>
+ </TextureAtlas>
+</skeleton>

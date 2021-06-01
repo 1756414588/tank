@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>part-zdsbai_zhuanguang.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,2},{198,198}}</string>
+                <key>offset</key>
+                <string>{-1,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{15,9},{198,198}}</string>
+                <key>sourceSize</key>
+                <string>{230,216}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>2</integer>
+            <key>realTextureFileName</key>
+            <string>ui_balance_fail.pvr.ccz</string>
+            <key>size</key>
+            <string>{202,202}</string>
+            <key>smartupdate</key>
+            <string>$TexturePacker:SmartUpdate:864f4a429887b997e5346abfab554ba3:8661d998cac96732d5cd52e2fe2338db:6fd453520479a62e4b438bca9e35737d$</string>
+            <key>textureFileName</key>
+            <string>ui_balance_fail.pvr.ccz</string>
+        </dict>
+    </dict>
+</plist>

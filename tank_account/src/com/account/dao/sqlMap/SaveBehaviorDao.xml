@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="SaveBehaviorDao">
+
+	<insert id="save" parameterType="com.account.domain.SaveBehavior">
+		insert into s_bahavior_save(deviceNo,platName,areaId,lordId,content)
+		values(#{deviceNo},#{platName},#{areaId},#{lordId},#{content})
+	</insert>
+	
+	 <select id="showTables" resultType="String">
+		SHOW TABLES
+	</select>
+
+    <update id="createTable" statementType="STATEMENT" parameterType="java.util.Map">
+		${sql}
+	</update>
+	
+</mapper>

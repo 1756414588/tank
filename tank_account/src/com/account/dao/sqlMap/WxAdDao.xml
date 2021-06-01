@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="WxAdDao">
+
+    <select id="selectWxAdvertise" parameterType="Map"
+            resultType="com.account.domain.WxAdvertise">
+		select * from `u_wx_advertise` where platNo=#{platNo} and muid=#{muid};
+	</select>
+
+    <insert id="insertWxAdvertise" useGeneratedKeys="true" keyProperty="keyId" parameterType="com.account.domain.WxAdvertise">
+		insert into
+		u_wx_advertise(platNo,muid,clickTime,clickId,appid,appType,advertiserId,createTime,checkTime)
+		values(#{platNo},#{muid},#{clickTime},#{clickId},#{appid},#{appType},#{advertiserId},#{createTime},#{checkTime})
+	</insert>
+
+    <update id="updateWxAdvertise" parameterType="com.account.domain.WxAdvertise">
+		update
+		u_wx_advertise
+		set
+		checkTime=#{checkTime}
+		where
+		keyId=#{keyId}
+	</update>
+
+
+</mapper>

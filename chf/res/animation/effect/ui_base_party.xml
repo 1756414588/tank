@@ -1,0 +1,100 @@
+<skeleton name="juntuan" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="ui_base_party">
+   <b name="zcjjianzhu_hongdeng" x="-26.65" y="-81.35" kX="0" kY="0" cX="0.94" cY="0.94" pX="0" pY="0" z="0">
+    <d name="part-zcjjianzhu_hongdeng"/>
+   </b>
+   <b name="zcjjianzhu_hongdeng0" x="30.15" y="-53.25" kX="0" kY="0" cX="0.94" cY="0.94" pX="0" pY="0" z="1">
+    <d name="part-zcjjianzhu_hongdeng"/>
+   </b>
+   <b name="jsxt_landiandian" x="-35.6" y="-30.25" kX="0" kY="0" cX="1.13" cY="1.13" pX="0" pY="0" z="0">
+    <d name="part-jsxt_landiandian"/>
+   </b>
+   <b name="jsxt_landiandian0" x="40.3" y="-17.7" kX="0" kY="0" cX="1.13" cY="1.13" pX="0" pY="0" z="1">
+    <d name="part-jsxt_landiandian"/>
+   </b>
+   <b name="zcjjianzhu_hongdeng1" x="-36.75" y="10.05" kX="0" kY="0" cX="0.94" cY="0.94" pX="0" pY="0" z="2">
+    <d name="part-zcjjianzhu_hongdeng"/>
+   </b>
+   <b name="zcjjianzhu_hongdeng2" x="28.7" y="31.8" kX="0" kY="0" cX="0.94" cY="0.94" pX="0" pY="0" z="3">
+    <d name="part-zcjjianzhu_hongdeng"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="ui_base_party">
+   <mov name="start" dr="207" to="6" drTW="207" lp="1" twE="NaN">
+    <b name="zcjjianzhu_hongdeng" sc="1" dl="0">
+     <f x="-26.65" y="-81.35" cocos2d_x="-26.65" cocos2d_y="-81.35" kX="0" kY="0" cX="0.94" cY="0.94" pX="0" pY="0" z="0" dI="0" twE="0" dr="27"/>
+     <f x="-26.65" y="-81.35" cocos2d_x="-26.65" cocos2d_y="-81.35" kX="0" kY="0" cX="0.94" cY="0.94" pX="0" pY="0" z="0" dI="0" dr="1">
+      <colorTransform a="0" r="0" g="0" b="0" aM="0" rM="100" gM="100" bM="100"/>
+     </f>
+     <f dr="151" dI="-1"/>
+     <f x="-26.65" y="-81.35" cocos2d_x="-26.65" cocos2d_y="-81.35" kX="0" kY="0" cX="0.94" cY="0.94" pX="0" pY="0" z="0" dI="0" twE="0" dr="27">
+      <colorTransform a="0" r="0" g="0" b="0" aM="0" rM="100" gM="100" bM="100"/>
+     </f>
+     <f x="-26.65" y="-81.35" cocos2d_x="-26.65" cocos2d_y="-81.35" kX="0" kY="0" cX="0.94" cY="0.94" pX="0" pY="0" z="0" dI="0" dr="1"/>
+    </b>
+    <b name="zcjjianzhu_hongdeng0" sc="1" dl="0">
+     <f x="30.15" y="-53.25" cocos2d_x="30.15" cocos2d_y="-53.25" kX="0" kY="0" cX="0.94" cY="0.94" pX="0" pY="0" z="1" dI="0" twE="0" dr="27"/>
+     <f x="30.15" y="-53.25" cocos2d_x="30.15" cocos2d_y="-53.25" kX="0" kY="0" cX="0.94" cY="0.94" pX="0" pY="0" z="1" dI="0" dr="1">
+      <colorTransform a="0" r="0" g="0" b="0" aM="0" rM="100" gM="100" bM="100"/>
+     </f>
+     <f dr="151" dI="-1"/>
+     <f x="30.15" y="-53.25" cocos2d_x="30.15" cocos2d_y="-53.25" kX="0" kY="0" cX="0.94" cY="0.94" pX="0" pY="0" z="1" dI="0" twE="0" dr="27">
+      <colorTransform a="0" r="0" g="0" b="0" aM="0" rM="100" gM="100" bM="100"/>
+     </f>
+     <f x="30.15" y="-53.25" cocos2d_x="30.15" cocos2d_y="-53.25" kX="0" kY="0" cX="0.94" cY="0.94" pX="0" pY="0" z="1" dI="0" dr="1"/>
+    </b>
+    <b name="jsxt_landiandian" sc="1" dl="0">
+     <f dr="25" dI="-1"/>
+     <f x="-35.6" y="-30.25" cocos2d_x="-35.6" cocos2d_y="-30.25" kX="0" kY="0" cX="1.13" cY="1.13" pX="0" pY="0" z="0" dI="0" twE="0" dr="22">
+      <colorTransform a="0" r="0" g="0" b="0" aM="0" rM="100" gM="100" bM="100"/>
+     </f>
+     <f x="-35.6" y="-30.25" cocos2d_x="-35.6" cocos2d_y="-30.25" kX="0" kY="0" cX="1.13" cY="1.13" pX="0" pY="0" z="0" dI="0" dr="34"/>
+     <f x="-35.6" y="-30.25" cocos2d_x="-35.6" cocos2d_y="-30.25" kX="0" kY="0" cX="1.13" cY="1.13" pX="0" pY="0" z="0" dI="0" twE="0" dr="22"/>
+     <f x="-35.6" y="-30.25" cocos2d_x="-35.6" cocos2d_y="-30.25" kX="0" kY="0" cX="1.13" cY="1.13" pX="0" pY="0" z="2" dI="0" dr="104">
+      <colorTransform a="0" r="0" g="0" b="0" aM="0" rM="100" gM="100" bM="100"/>
+     </f>
+    </b>
+    <b name="jsxt_landiandian0" sc="1" dl="0">
+     <f dr="25" dI="-1"/>
+     <f x="40.3" y="-17.7" cocos2d_x="40.3" cocos2d_y="-17.7" kX="0" kY="0" cX="1.13" cY="1.13" pX="0" pY="0" z="1" dI="0" twE="0" dr="22">
+      <colorTransform a="0" r="0" g="0" b="0" aM="0" rM="100" gM="100" bM="100"/>
+     </f>
+     <f x="40.3" y="-17.7" cocos2d_x="40.3" cocos2d_y="-17.7" kX="0" kY="0" cX="1.13" cY="1.13" pX="0" pY="0" z="1" dI="0" dr="34"/>
+     <f x="40.3" y="-17.7" cocos2d_x="40.3" cocos2d_y="-17.7" kX="0" kY="0" cX="1.13" cY="1.13" pX="0" pY="0" z="1" dI="0" twE="0" dr="22"/>
+     <f x="40.3" y="-17.7" cocos2d_x="40.3" cocos2d_y="-17.7" kX="0" kY="0" cX="1.13" cY="1.13" pX="0" pY="0" z="3" dI="0" dr="104">
+      <colorTransform a="0" r="0" g="0" b="0" aM="0" rM="100" gM="100" bM="100"/>
+     </f>
+    </b>
+    <b name="zcjjianzhu_hongdeng1" sc="1" dl="0">
+     <f dr="100" dI="-1"/>
+     <f x="-36.75" y="10.05" cocos2d_x="-36.75" cocos2d_y="10.05" kX="0" kY="0" cX="0.94" cY="0.94" pX="0" pY="0" z="2" dI="0" twE="0" dr="22">
+      <colorTransform a="0" r="0" g="0" b="0" aM="0" rM="100" gM="100" bM="100"/>
+     </f>
+     <f x="-36.75" y="10.05" cocos2d_x="-36.75" cocos2d_y="10.05" kX="0" kY="0" cX="0.94" cY="0.94" pX="0" pY="0" z="2" dI="0" dr="40"/>
+     <f x="-36.75" y="10.05" cocos2d_x="-36.75" cocos2d_y="10.05" kX="0" kY="0" cX="0.94" cY="0.94" pX="0" pY="0" z="4" dI="0" twE="0" dr="20"/>
+     <f x="-36.75" y="10.05" cocos2d_x="-36.75" cocos2d_y="10.05" kX="0" kY="0" cX="0.94" cY="0.94" pX="0" pY="0" z="4" dI="0" dr="25">
+      <colorTransform a="0" r="0" g="0" b="0" aM="0" rM="100" gM="100" bM="100"/>
+     </f>
+    </b>
+    <b name="zcjjianzhu_hongdeng2" sc="1" dl="0">
+     <f dr="100" dI="-1"/>
+     <f x="28.7" y="31.8" cocos2d_x="28.7" cocos2d_y="31.8" kX="0" kY="0" cX="0.94" cY="0.94" pX="0" pY="0" z="3" dI="0" twE="0" dr="22">
+      <colorTransform a="0" r="0" g="0" b="0" aM="0" rM="100" gM="100" bM="100"/>
+     </f>
+     <f x="28.7" y="31.8" cocos2d_x="28.7" cocos2d_y="31.8" kX="0" kY="0" cX="0.94" cY="0.94" pX="0" pY="0" z="3" dI="0" dr="40"/>
+     <f x="28.7" y="31.8" cocos2d_x="28.7" cocos2d_y="31.8" kX="0" kY="0" cX="0.94" cY="0.94" pX="0" pY="0" z="5" dI="0" twE="0" dr="20"/>
+     <f x="28.7" y="31.8" cocos2d_x="28.7" cocos2d_y="31.8" kX="0" kY="0" cX="0.94" cY="0.94" pX="0" pY="0" z="5" dI="0" dr="25">
+      <colorTransform a="0" r="0" g="0" b="0" aM="0" rM="100" gM="100" bM="100"/>
+     </f>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="juntuan" width="16" height="32">
+  <SubTexture name="part-jsxt_landiandian" width="8" height="8" cocos2d_pX="3.85" cocos2d_pY="3.85" x="0" y="10"/>
+  <SubTexture name="part-zcjjianzhu_hongdeng" width="8" height="8" cocos2d_pX="3.6" cocos2d_pY="3.25" x="0" y="0"/>
+ </TextureAtlas>
+</skeleton>

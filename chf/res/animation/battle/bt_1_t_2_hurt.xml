@@ -1,0 +1,28 @@
+<skeleton name="b_huojianche_ddqingyan" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="bt_1_t_2_hurt">
+   <b name="1" x="-0.5" y="26.85" kX="-179.72" kY="0.28" cX="0.17" cY="0.16" pX="0" pY="0" z="0">
+    <d name="part-b_huojianche_ddqingyan"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="bt_1_t_2_hurt">
+   <mov name="start" dr="46" to="0" drTW="46" lp="0" twE="NaN">
+    <b name="1" sc="1" dl="0">
+     <f x="-0.5" y="26.85" cocos2d_x="-0.5" cocos2d_y="26.85" kX="-179.72" kY="0.28" cX="0.17" cY="0.16" pX="0" pY="0" z="0" dI="0" twE="0" dr="15"/>
+     <f x="0.05" y="33.15" cocos2d_x="0.05" cocos2d_y="33.15" kX="-179.95" kY="0.05" cX="0.24" cY="0.24" pX="0" pY="0" z="0" dI="0" twE="0" dr="29">
+      <colorTransform a="0" r="0" g="0" b="0" aM="41" rM="100" gM="100" bM="100"/>
+     </f>
+     <f x="0.4" y="37.15" cocos2d_x="0.4" cocos2d_y="37.15" kX="-179.87" kY="0.13" cX="0.29" cY="0.29" pX="0" pY="0" z="0" dI="0" dr="1">
+      <colorTransform a="0" r="0" g="0" b="0" aM="3" rM="100" gM="100" bM="100"/>
+     </f>
+     <f dr="1" dI="-1"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="b_huojianche_ddqingyan" width="256" height="256">
+  <SubTexture name="part-b_huojianche_ddqingyan" width="125" height="160" cocos2d_pX="60.15" cocos2d_pY="78.15" x="0" y="0"/>
+ </TextureAtlas>
+</skeleton>

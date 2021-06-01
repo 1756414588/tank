@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="RoleDao">
+
+    <select id="selectRoleDataByAccountKey" parameterType="Integer"
+            resultType="com.account.domain.RoleData">
+		select * from `u_role_data` where accountKey=#{accountKey};
+	</select>
+
+    <insert id="insertRoleData" parameterType="com.account.domain.RoleData">
+		insert into
+		u_role_data(accountKey,roles, searched)
+		values(#{accountKey},#{roles},#{searched})
+	</insert>
+
+    <update id="updateRoleData" parameterType="com.account.domain.RoleData">
+		update u_role_data
+		set
+		roles=#{roles},searched=#{searched}
+		where
+		accountKey=#{accountKey}
+	</update>
+
+</mapper>

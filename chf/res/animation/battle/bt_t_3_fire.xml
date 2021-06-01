@@ -1,0 +1,112 @@
+<skeleton name="huopao_huoshe" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="bt_t_3_fire">
+   <b name="gfrdsfjuh" x="-5.75" y="-20.15" kX="-8.01" kY="-8.01" cX="1" cY="1" pX="0" pY="0" z="0">
+    <d name="part-chuanjiadan_kezi"/>
+   </b>
+   <b name="gfrdsfjuh0" x="2.65" y="-20.1" kX="9.51" kY="-170.49" cX="1" cY="1" pX="0" pY="0" z="1">
+    <d name="part-chuanjiadan_kezi"/>
+   </b>
+   <b name="bvfdsh" x="1.1" y="-40.7" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2">
+    <d name="part-chuanjiadan_huoshe1"/>
+    <d name="part-chuanjiadan_huoshe2"/>
+    <d name="part-chuanjiadan_huoshe3"/>
+    <d name="part-chuanjiadan_huoshe4"/>
+    <d name="part-chuanjiadan_huoshe5"/>
+    <d name="part-chuanjiadan_huoshe6"/>
+    <d name="part-chuanjiadan_huoshe7"/>
+    <d name="part-chuanjiadan_huoshe8"/>
+    <d name="part-chuanjiadan_huoshe9"/>
+    <d name="part-chuanjiadan_huoshe10"/>
+    <d name="part-chuanjiadan_huoshe11"/>
+   </b>
+   <b name="jbfshg" x="0.25" y="-130.65" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="3">
+    <d name="part-chuanjiadan_qilang1"/>
+    <d name="part-chuanjiadan_qilang2"/>
+    <d name="part-chuanjiadan_qilang3"/>
+    <d name="part-chuanjiadan_qilang4"/>
+    <d name="part-chuanjiadan_qilang5"/>
+    <d name="part-chuanjiadan_qilang6"/>
+    <d name="part-chuanjiadan_qilang7"/>
+    <d name="part-chuanjiadan_qilang8"/>
+    <d name="part-chuanjiadan_qilang9"/>
+    <d name="part-chuanjiadan_qilang10"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="bt_t_3_fire">
+   <mov name="start" dr="31" to="6" drTW="31" lp="0" twE="NaN">
+    <b name="gfrdsfjuh" sc="1" dl="0">
+     <f x="-5.75" y="-20.15" cocos2d_x="-5.75" cocos2d_y="-20.15" kX="-8.01" kY="-8.01" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" twE="0" dr="10"/>
+     <f x="-37.35" y="-57" cocos2d_x="-37.35" cocos2d_y="-57" kX="-32.58" kY="-32.58" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" twE="0" dr="8"/>
+     <f x="-38.5" y="-58.25" cocos2d_x="-38.5" cocos2d_y="-58.25" kX="-33.44" kY="-33.44" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" twE="0" dr="11"/>
+     <f x="-41.45" y="-59.75" cocos2d_x="-41.45" cocos2d_y="-59.75" kX="-33.44" kY="-33.44" cX="0.7" cY="0.7" pX="0" pY="0" z="0" dI="0" dr="1">
+      <colorTransform a="0" r="0" g="0" b="0" aM="34" rM="100" gM="100" bM="100"/>
+     </f>
+     <f dr="1" dI="-1"/>
+    </b>
+    <b name="gfrdsfjuh0" sc="1" dl="0">
+     <f x="2.65" y="-20.1" cocos2d_x="2.65" cocos2d_y="-20.1" kX="9.51" kY="-170.49" cX="1" cY="1" pX="0" pY="0" z="1" dI="0" twE="0" dr="10"/>
+     <f x="37.85" y="-57.3" cocos2d_x="37.85" cocos2d_y="-57.3" kX="32.59" kY="-147.41" cX="1" cY="1" pX="0" pY="0" z="1" dI="0" twE="0" dr="8"/>
+     <f x="39.05" y="-58.65" cocos2d_x="39.05" cocos2d_y="-58.65" kX="33.44" kY="-146.56" cX="1" cY="1" pX="0" pY="0" z="1" dI="0" twE="0" dr="11"/>
+     <f x="42.05" y="-60.15" cocos2d_x="42.05" cocos2d_y="-60.15" kX="33.44" kY="-146.56" cX="0.7" cY="0.7" pX="0" pY="0" z="1" dI="0" dr="1">
+      <colorTransform a="0" r="0" g="0" b="0" aM="34" rM="100" gM="100" bM="100"/>
+     </f>
+     <f dr="1" dI="-1"/>
+    </b>
+    <b name="bvfdsh" sc="1" dl="0">
+     <f x="1.1" y="-40.7" cocos2d_x="1.1" cocos2d_y="-40.7" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="0" dr="3"/>
+     <f x="1.1" y="-47.05" cocos2d_x="1.1" cocos2d_y="-47.05" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="1" dr="3"/>
+     <f x="-0.55" y="-53.9" cocos2d_x="-0.55" cocos2d_y="-53.9" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="2" dr="3"/>
+     <f x="-0.8" y="-55.25" cocos2d_x="-0.8" cocos2d_y="-55.25" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="3" dr="3"/>
+     <f x="-1.85" y="-58.55" cocos2d_x="-1.85" cocos2d_y="-58.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="4" dr="2"/>
+     <f x="-1.65" y="-58.45" cocos2d_x="-1.65" cocos2d_y="-58.45" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="5" dr="2"/>
+     <f x="-1.65" y="-58.4" cocos2d_x="-1.65" cocos2d_y="-58.4" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="6" dr="2"/>
+     <f x="-1.65" y="-58.35" cocos2d_x="-1.65" cocos2d_y="-58.35" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="7" dr="2"/>
+     <f x="-1.65" y="-55.65" cocos2d_x="-1.65" cocos2d_y="-55.65" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="8" dr="2"/>
+     <f x="-1.65" y="-55.65" cocos2d_x="-1.65" cocos2d_y="-55.65" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="9" dr="2"/>
+     <f x="-1.65" y="-55.65" cocos2d_x="-1.65" cocos2d_y="-55.65" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="10" dr="2"/>
+     <f dr="5" dI="-1"/>
+    </b>
+    <b name="jbfshg" sc="1" dl="0">
+     <f x="0.25" y="-130.65" cocos2d_x="0.25" cocos2d_y="-130.65" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="3" dI="0" dr="2"/>
+     <f x="-0.1" y="-138.7" cocos2d_x="-0.1" cocos2d_y="-138.7" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="3" dI="1" dr="2"/>
+     <f x="-0.55" y="-149.75" cocos2d_x="-0.55" cocos2d_y="-149.75" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="3" dI="2" dr="2"/>
+     <f x="-1" y="-159.6" cocos2d_x="-1" cocos2d_y="-159.6" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="3" dI="3" dr="2"/>
+     <f x="-1.4" y="-171.05" cocos2d_x="-1.4" cocos2d_y="-171.05" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="3" dI="4" dr="2"/>
+     <f x="-1.85" y="-192.3" cocos2d_x="-1.85" cocos2d_y="-192.3" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="3" dI="5" dr="2"/>
+     <f x="-0.9" y="-201.45" cocos2d_x="-0.9" cocos2d_y="-201.45" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="3" dI="6" dr="2"/>
+     <f x="-1.35" y="-211.75" cocos2d_x="-1.35" cocos2d_y="-211.75" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="3" dI="7" dr="2"/>
+     <f x="-1.4" y="-221.15" cocos2d_x="-1.4" cocos2d_y="-221.15" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="3" dI="8" dr="2"/>
+     <f x="-1.85" y="-233.35" cocos2d_x="-1.85" cocos2d_y="-233.35" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="3" dI="9" dr="2"/>
+     <f dr="11" dI="-1"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="huopao_huoshe" width="512" height="512">
+  <SubTexture name="part-chuanjiadan_qilang10" width="31" height="9" cocos2d_pX="15.2" cocos2d_pY="4.3" x="398" y="170"/>
+  <SubTexture name="part-chuanjiadan_qilang9" width="31" height="35" cocos2d_pX="15.2" cocos2d_pY="17.5" x="292" y="147"/>
+  <SubTexture name="part-chuanjiadan_qilang8" width="32" height="63" cocos2d_pX="15.8" cocos2d_pY="31.2" x="107" y="152"/>
+  <SubTexture name="part-chuanjiadan_qilang7" width="32" height="85" cocos2d_pX="15.8" cocos2d_pY="42.5" x="37" y="152"/>
+  <SubTexture name="part-chuanjiadan_qilang6" width="35" height="114" cocos2d_pX="17.2" cocos2d_pY="56.7" x="325" y="147"/>
+  <SubTexture name="part-chuanjiadan_qilang5" width="35" height="106" cocos2d_pX="17.1" cocos2d_pY="52.6" x="0" y="152"/>
+  <SubTexture name="part-chuanjiadan_qilang4" width="34" height="82" cocos2d_pX="17" cocos2d_pY="40.9" x="71" y="152"/>
+  <SubTexture name="part-chuanjiadan_qilang3" width="34" height="59" cocos2d_pX="17" cocos2d_pY="29.1" x="141" y="152"/>
+  <SubTexture name="part-chuanjiadan_qilang2" width="34" height="34" cocos2d_pX="17" cocos2d_pY="17" x="362" y="152"/>
+  <SubTexture name="part-chuanjiadan_qilang1" width="34" height="16" cocos2d_pX="17" cocos2d_pY="7.9" x="398" y="152"/>
+  <SubTexture name="part-chuanjiadan_huoshe11" width="63" height="145" cocos2d_pX="31.3" cocos2d_pY="72.1" x="325" y="0"/>
+  <SubTexture name="part-chuanjiadan_huoshe10" width="63" height="145" cocos2d_pX="31.3" cocos2d_pY="72.1" x="195" y="0"/>
+  <SubTexture name="part-chuanjiadan_huoshe9" width="63" height="145" cocos2d_pX="31.3" cocos2d_pY="72.1" x="260" y="0"/>
+  <SubTexture name="part-chuanjiadan_huoshe8" width="63" height="150" cocos2d_pX="31.3" cocos2d_pY="74.9" x="130" y="0"/>
+  <SubTexture name="part-chuanjiadan_huoshe7" width="63" height="150" cocos2d_pX="31.3" cocos2d_pY="74.9" x="0" y="0"/>
+  <SubTexture name="part-chuanjiadan_huoshe6" width="63" height="150" cocos2d_pX="31.3" cocos2d_pY="74.9" x="65" y="0"/>
+  <SubTexture name="part-chuanjiadan_huoshe5" width="53" height="150" cocos2d_pX="26.1" cocos2d_pY="75" x="390" y="0"/>
+  <SubTexture name="part-chuanjiadan_huoshe4" width="56" height="134" cocos2d_pX="27.8" cocos2d_pY="66.7" x="445" y="0"/>
+  <SubTexture name="part-chuanjiadan_huoshe3" width="47" height="123" cocos2d_pX="23.5" cocos2d_pY="61.4" x="445" y="136"/>
+  <SubTexture name="part-chuanjiadan_huoshe2" width="48" height="117" cocos2d_pX="23.6" cocos2d_pY="58.2" x="195" y="147"/>
+  <SubTexture name="part-chuanjiadan_huoshe1" width="45" height="109" cocos2d_pX="22.4" cocos2d_pY="54.4" x="245" y="147"/>
+  <SubTexture name="part-chuanjiadan_kezi" width="5" height="24" cocos2d_pX="1.35" cocos2d_pY="9.5" x="503" y="0"/>
+ </TextureAtlas>
+</skeleton>

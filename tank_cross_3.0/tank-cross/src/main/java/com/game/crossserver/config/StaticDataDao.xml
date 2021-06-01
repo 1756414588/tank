@@ -1,0 +1,951 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="StaticDao">
+
+    <!-- 查询作战实验室 -->
+    <resultMap id="laboratoryMilitaryMap" type="StaticLaboratoryMilitary">
+        <id column="kid" property="kid"/>
+        <result column="cost" property="cost" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+        <result column="effect" property="effect" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+        <result column="perSkill" property="perSkill" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+        <result column="object" property="obj"/>
+    </resultMap>
+
+    <select id="selectLaboratoryMilitary" resultMap="laboratoryMilitaryMap">
+        select * from s_laboratory_military
+    </select>
+
+
+    <resultMap id="laboratoryResearchMap" type="StaticLaboratoryResearch">
+        <id column="kid" property="kid"/>
+        <result column="itemConsume" property="itemConsume" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+        <result column="preBuilding" property="preBuilding" typeHandler="com.game.dao.handle.ListIntTypeHandler"/>
+    </resultMap>
+
+    <select id="selectLaboratoryResearch" resultMap="laboratoryResearchMap">
+        select * from s_laboratory_research
+    </select>
+
+    <resultMap id="LaboratoryTechMap" type="StaticLaboratoryTech">
+        <id column="kid" property="kid"/>
+        <result column="itemConsume" property="itemConsume" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+    </resultMap>
+
+    <select id="selecLtaboratoryTech" resultMap="LaboratoryTechMap">
+        select * from s_laboratory_tech
+    </select>
+
+    <select id="selectLaboratoryItem" resultType="StaticLaboratoryItem">
+        select * from s_laboratory_item
+    </select>
+
+
+    <resultMap id="laboratoryProgressMap" type="StaticLaboratoryProgress">
+        <id column="id" property="id"/>
+        <result column="award" property="award" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+        <result column="progress" property="progress" typeHandler="com.game.dao.handle.ListIntTypeHandler"/>
+
+    </resultMap>
+
+    <select id="selectLaboratoryProgress" resultMap="laboratoryProgressMap">
+        select * from s_laboratory_progress
+    </select>
+
+    <!-- 查询秘密武器技能-->
+    <resultMap id="selectSecretWeaponSkillMap" type="StaticSecretWeaponSkill">
+        <id column="sid" property="sid"/>
+        <result column="attr" property="attr" typeHandler="com.game.dao.handle.ListIntTypeHandler"/>
+        <result column="weight" property="weight" typeHandler="com.game.dao.handle.MapIntTypeHandler"/>
+    </resultMap>
+
+    <select id="selectSecretWeaponSkill" resultMap="selectSecretWeaponSkillMap">
+        SELECT * FROM s_secret_weapon_skill;
+    </select>
+
+    <resultMap id="selectSecretWeaponMap" type="StaticSecretWeapon">
+        <id column="id" property="id"/>
+        <result column="unlockCost" property="unlockCost" typeHandler="com.game.dao.handle.ListIntTypeHandler"/>
+        <result column="studyProp" property="studyProp" typeHandler="com.game.dao.handle.ListIntTypeHandler"/>
+        <result column="studyLockCost" property="studyLockCost" typeHandler="com.game.dao.handle.ListIntTypeHandler"/>
+    </resultMap>
+
+    <!-- 查询秘密武器-->
+    <select id="selectSecretWeapon" resultMap="selectSecretWeaponMap">
+        SELECT * FROM s_secret_weapon;
+    </select>
+
+    <!-- 查询军衔信息 -->
+    <resultMap id="selectMilitaryRankMap" type="com.game.domain.s.StaticMilitaryRank">
+        <id column="id" property="id"/>
+        <result column="upCost" property="upCost" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+        <result column="attrs" property="attrs" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+    </resultMap>
+
+    <select id="selectMilitaryRank" resultMap="selectMilitaryRankMap">
+        select * FROM s_military_rank;
+    </select>
+
+    <!-- 查询军备 -->
+    <resultMap id="staticLordEquipMap" type="StaticLordEquip">
+        <result column="atts" property="atts" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+    </resultMap>
+
+    <select id="selectLordEquip" resultMap="staticLordEquipMap">
+        select * from s_lord_equip
+    </select>
+
+    <select id="selectBuilding" resultType="StaticBuilding">
+		select * from s_building
+	</select>
+
+    <select id="selectBuildingLv" resultType="StaticBuildingLv">
+		select * from s_building_lv;
+	</select>
+
+    <resultMap id="lordMap" type="StaticIniLord">
+        <id column="keyId" property="keyId"/>
+        <result column="tanks" property="tanks" typeHandler="com.game.dao.handle.MapIntTypeHandler"/>
+        <result column="props" property="props" typeHandler="com.game.dao.handle.MapIntTypeHandler"/>
+        <result column="equips" property="equips" typeHandler="com.game.dao.handle.MapIntTypeHandler"/>
+    </resultMap>
+
+    <select id="selectName" resultType="StaticIniName">
+		select * from s_ini_name
+	</select>
+
+    <select id="selectLord" resultMap="lordMap">
+		select * from s_ini_lord
+	</select>
+
+    <select id="selectLordLv" resultType="StaticLordLv">
+		select * from s_lord_lv
+	</select>
+
+    <select id="selectLordCommand" resultType="StaticLordCommand">
+		select * from s_lord_command
+	</select>
+
+    <select id="selectLordPros" resultType="StaticLordPros">
+		select * from s_lord_pros order by prosLv
+	</select>
+
+    <select id="selectLordRank" resultType="StaticLordRank">
+		select * from s_lord_rank
+	</select>
+
+    <resultMap id="tankMap" type="StaticTank">
+        <id column="tankId" property="tankId"/>
+        <result column="restriction" property="restriction" typeHandler="com.game.dao.handle.MapIntTypeHandler"/>
+        <result column="aura" property="aura" typeHandler="com.game.dao.handle.ListIntTypeHandler"/>
+    </resultMap>
+
+    <select id="selectTank" resultMap="tankMap">
+		select * from s_tank
+	</select>
+
+    <resultMap id="propMap" type="StaticProp">
+        <id column="propId" property="propId"/>
+        <result column="effectValue" property="effectValue" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+    </resultMap>
+
+    <select id="selectProp" resultMap="propMap">
+		select * from s_prop
+	</select>
+
+    <resultMap id="staticEquip" type="StaticEquip">
+        <result column="cost" property="cost" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+    </resultMap>
+
+    <select id="selectEquip" resultMap="staticEquip">
+		select * from s_equip
+	</select>
+
+    <resultMap id="staticEquipBonusAttribute" type="StaticEquipBonusAttribute">
+        <result column="attribute" property="attribute" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+    </resultMap>
+
+    <select id="selectEquipBonusAttribute" resultMap="staticEquipBonusAttribute">
+		select * from s_equip_bonus_attribute
+	</select>
+
+    <select id="selectEquipLv" resultType="StaticEquipLv">
+		select * from s_equip_lv;
+	</select>
+
+    <resultMap id="staticPart" type="StaticPart">
+        <id column="partId" property="partId"/>
+        <id column="type" property="type"/>
+        <id column="quality" property="quality"/>
+        <id column="attr1" property="attr1"/>
+        <id column="attr2" property="attr2"/>
+        <id column="a1" property="a1"/>
+        <id column="a2" property="a2"/>
+        <id column="b1" property="b1"/>
+        <id column="b2" property="b2"/>
+        <id column="chipCount" property="chipCount"/>
+        <id column="lvMax" property="lvMax"/>
+        <id column="smeltExp" property="smeltExp" typeHandler="com.game.dao.handle.ListIntTypeHandler"/>
+        <result column="s_attr" property="s_attr" typeHandler="com.game.dao.handle.MapListType2Handler"/>
+        <result column="unlockAttr" property="unlockAttr" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+        <result column="unlockAttrCondition" property="unlockAttrCondition"
+                typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+        <result column="s_attrCondition" property="s_attrCondition"
+                typeHandler="com.game.dao.handle.MapListType2Handler"/>
+    </resultMap>
+
+    <select id="selectPart" resultMap="staticPart">
+		select * from s_part
+	</select>
+
+    <select id="selectPartUp" resultType="StaticPartUp">
+		select * from s_part_up
+	</select>
+
+    <select id="selectPartRefit" resultType="StaticPartRefit">
+		select * from s_part_refit
+	</select>
+
+    <select id="selectRefine" resultType="StaticRefine">
+		select * from s_refine
+	</select>
+
+    <select id="selectRefineLv" resultType="StaticRefineLv">
+		select * from s_refine_lv
+	</select>
+
+    <resultMap id="combatMap" type="StaticCombat">
+        <id column="combatId" property="combatId"/>
+        <result column="drop" property="drop" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+        <result column="firstAward" property="firstAward" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+        <result column="form" property="form" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+        <result column="hero" property="hero" typeHandler="com.game.dao.handle.ListIntTypeHandler"/>
+        <result column="attr" property="attr" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+    </resultMap>
+
+    <select id="selectCombat" resultMap="combatMap">
+		select * from s_combat order by combatId
+	</select>
+
+    <resultMap id="sectionMap" type="StaticSection">
+        <id column="sectionId" property="sectionId"/>
+        <result column="box1" property="box1" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+        <result column="box2" property="box2" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+        <result column="box3" property="box3" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+    </resultMap>
+
+    <select id="selectSection" resultMap="sectionMap">
+		select * from s_section
+	</select>
+
+    <resultMap id="awardsMap" type="StaticAwards">
+        <id column="awardId" property="awardId"/>
+        <result column="awardList" property="awardList" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+        <result column="displayList" property="displayList" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+    </resultMap>
+
+    <select id="selectAwards" resultMap="awardsMap">
+		select * from s_awards
+	</select>
+
+    <select id="selectCost" resultType="StaticCost">
+		select * from s_cost
+	</select>
+
+    <resultMap id="heroMap" type="StaticHero">
+        <id column="heroId" property="heroId"/>
+        <result column="meta" property="meta" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+        <result column="attr" property="attr" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+        <result column="awakenSkillArr" property="awakenSkillArr" typeHandler="com.game.dao.handle.ListIntTypeHandler"/>
+        <result column="cost1" property="cost1" typeHandler="com.game.dao.handle.ListIntTypeHandler"/>
+        <result column="cost2" property="cost2" typeHandler="com.game.dao.handle.ListIntTypeHandler"/>
+    </resultMap>
+
+    <select id="selectHero" resultMap="heroMap">
+		select * from s_hero
+	</select>
+
+    <resultMap id="exploreMap" type="StaticExplore">
+        <id column="exploreId" property="exploreId"/>
+        <result column="drop" property="drop" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+        <result column="dropOne" property="dropOne" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+        <result column="dropMaterial" property="dropMaterial" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+        <result column="form" property="form" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+        <result column="hero" property="hero" typeHandler="com.game.dao.handle.ListIntTypeHandler"/>
+        <result column="attr" property="attr" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+    </resultMap>
+
+    <select id="selectExplore" resultMap="exploreMap">
+		select * from s_explore order by exploreId
+	</select>
+
+    <select id="selectBuff" resultType="StaticBuff">
+		select * from s_buff
+	</select>
+
+    <select id="selectSkill" resultType="StaticSkill">
+		select * from s_skill
+	</select>
+
+    <resultMap id="arenaAwardMap" type="StaticArenaAward">
+        <id column="keyId" property="keyId"/>
+        <result column="award" property="award" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+    </resultMap>
+
+    <select id="selectArenaAward" resultMap="arenaAwardMap">
+		select * from s_arena_award order by keyId
+	</select>
+
+    <select id="selectPartyBuildLevel" resultType="StaticPartyBuildLevel">
+		SELECT * FROM s_party_build_level order by type asc,buildLv asc
+	</select>
+
+    <select id="selectPartyContribute" resultType="StaticPartyContribute">
+		SELECT * FROM s_party_contribute order by keyId
+	</select>
+
+    <select id="selectPartyLively" resultType="StaticPartyLively">
+		SELECT * FROM s_party_lively
+	</select>
+
+    <select id="selectPartyProp" resultType="StaticPartyProp">
+		SELECT * FROM s_party_prop
+	</select>
+
+    <select id="selectPartyScience" resultType="StaticPartyScience">
+		SELECT * FROM s_party_science
+	</select>
+
+    <resultMap id="partyWealMap" type="StaticPartyWeal">
+        <id column="keyId" property="keyId"/>
+        <result column="wealList" property="wealList" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+    </resultMap>
+
+    <select id="selectPartyWeal" resultMap="partyWealMap">
+		SELECT * FROM s_party_weal
+	</select>
+
+    <resultMap id="mineMap" type="StaticMine">
+        <id column="pos" property="pos"/>
+        <result column="dropOne" property="dropOne" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+    </resultMap>
+
+    <select id="selectMine" resultMap="mineMap">
+		select * from s_mine
+	</select>
+
+    <select id="selectScout" resultType="StaticScout">
+		select * from s_scout
+	</select>
+
+    <select id="selectMineLv" resultType="StaticMineLv">
+		select * from s_mine_lv
+	</select>
+
+    <resultMap id="mineFormMap" type="StaticMineForm">
+        <id column="keyId" property="keyId"/>
+        <result column="form" property="form" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+        <result column="attr" property="attr" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+    </resultMap>
+
+    <select id="selectMineForm" resultMap="mineFormMap">
+		select * from s_mine_form
+	</select>
+
+    <select id="selectPartyLiveTask" resultType="StaticLiveTask">
+		SELECT * FROM s_live_task
+	</select>
+
+    <resultMap id="taskMap" type="StaticTask">
+        <result column="awardList" property="awardList" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+        <result column="param" property="param" typeHandler="com.game.dao.handle.ListIntTypeHandler"/>
+    </resultMap>
+    <select id="selectTask" resultMap="taskMap">
+		SELECT * FROM s_task
+	</select>
+
+    <resultMap id="taskLiveMap" type="StaticTaskLive">
+        <result column="awardList" property="awardList" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+    </resultMap>
+    <select id="selectLiveTask" resultMap="taskLiveMap">
+		SELECT * FROM s_task_live ORDER BY live asc
+	</select>
+
+    <select id="selectTrend" resultType="StaticPartyTrend">
+		SELECT * FROM s_party_trend
+	</select>
+
+    <select id="selectSlot" resultType="StaticSlot">
+		select * from s_slot order by keyId
+	</select>
+
+    <select id="selectMail" resultType="StaticMail">
+		select * from s_mail
+	</select>
+
+    <resultMap id="partyCombatMap" type="StaticPartyCombat">
+        <id column="keyId" property="keyId"/>
+        <result column="drop" property="drop" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+        <result column="lastAward" property="lastAward" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+        <result column="form" property="form" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+        <result column="attr" property="attr" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+        <result column="box" property="box" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+    </resultMap>
+
+    <select id="selectPartyCombat" resultMap="partyCombatMap">
+		select * from s_party_combat
+	</select>
+
+    <resultMap id="signMap" type="StaticSign">
+        <result column="awardList" property="awardList" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+    </resultMap>
+
+    <select id="selectSign" resultMap="signMap">
+		select * from s_sign
+	</select>
+
+    <select id="selectVip" resultType="StaticVip">
+		select * from s_vip order by vip
+	</select>
+
+    <select id="selectParty" resultType="StaticParty">
+		select * from s_party
+	</select>
+
+    <resultMap id="activityAwardMap" type="StaticActAward">
+        <id column="keyId" property="keyId"/>
+        <result column="awardList" property="awardList" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+    </resultMap>
+
+    <select id="selectActAward" resultMap="activityAwardMap">
+		select * from s_activity_award
+	</select>
+
+    <resultMap id="staticActMechaMap" type="StaticActMecha">
+        <id column="mechaId" property="mechaId"/>
+        <result column="tank1PartList" property="tank1PartList" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+        <result column="tank2PartList" property="tank2PartList" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+        <result column="critList" property="critList" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+    </resultMap>
+
+    <select id="selectActMecha" resultMap="staticActMechaMap">
+		SELECT * FROM s_act_mecha
+	</select>
+
+    <resultMap id="staticActQuotaMap" type="StaticActQuota">
+        <id column="quotaId" property="quotaId"/>
+        <result column="awardList" property="awardList" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+    </resultMap>
+
+    <select id="selectActQuota" resultMap="staticActQuotaMap">
+		SELECT * FROM s_act_quota
+	</select>
+
+    <resultMap id="staticActRebateMap" type="StaticActRebate">
+        <id column="rebateId" property="rebateId"/>
+        <result column="probability" property="probability" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+    </resultMap>
+
+    <select id="selectActRebate" resultMap="staticActRebateMap">
+		SELECT * FROM s_act_rebate
+	</select>
+
+    <select id="selectPay" resultType="StaticPay">
+		select * from s_pay order by payId
+	</select>
+
+    <select id="selectPayIos" resultType="StaticPay">
+		select * from s_pay_ios order by payId
+	</select>
+
+    <resultMap id="staticActFortuneMap" type="StaticActFortune">
+        <id column="fortuneId" property="fortuneId"/>
+        <result column="awardList" property="awardList" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+    </resultMap>
+
+    <select id="selectActFortune" resultMap="staticActFortuneMap">
+		SELECT * FROM s_act_fortune
+	</select>
+
+    <resultMap id="staticActRankMap" type="StaticActRank">
+        <id column="keyId" property="keyId"/>
+        <result column="awardList" property="awardList" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+    </resultMap>
+
+    <select id="selectActRank" resultMap="staticActRankMap">
+		SELECT * FROM s_act_rank
+	</select>
+
+    <select id="selectSignLogin" resultType="StaticSignLogin">
+		SELECT * FROM s_sign_login
+	</select>
+
+    <resultMap id="staticActProfotoMap" type="StaticActProfoto">
+        <id column="profotoId" property="profotoId"/>
+        <result column="dropList" property="dropList" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+    </resultMap>
+
+    <select id="selectActProfoto" resultMap="staticActProfotoMap">
+		SELECT * FROM s_act_profoto
+	</select>
+
+    <resultMap id="staticActRaffleMap" type="StaticActRaffle">
+        <id column="raffleId" property="raffleId"/>
+        <result column="tankList" property="tankList" typeHandler="com.game.dao.handle.ListIntTypeHandler"/>
+    </resultMap>
+
+    <select id="selectActRaffle" resultMap="staticActRaffleMap">
+		SELECT * FROM s_act_raffle
+	</select>
+
+    <resultMap id="staticActCourseMap" type="StaticActCourse">
+        <id column="courseId" property="courseId"/>
+        <result column="dropList" property="dropList" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+    </resultMap>
+
+    <select id="selectActCourse" resultMap="staticActCourseMap">
+		SELECT * FROM s_act_course
+	</select>
+
+    <select id="selectStaticActivity" resultType="StaticActivity">
+		SELECT * FROM s_activity
+	</select>
+
+    <select id="selectStaticActivityPlan" resultType="StaticActivityPlan">
+		SELECT * FROM s_activity_plan
+	</select>
+
+    <resultMap id="staticActTechMap" type="StaticActTech">
+        <id column="techId" property="techId"/>
+        <result column="awardList" property="awardList" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+    </resultMap>
+
+    <select id="selectActTech" resultMap="staticActTechMap">
+		SELECT * FROM s_act_tech
+	</select>
+
+    <resultMap id="warAwardMap" type="StaticWarAward">
+        <id column="rank" property="rank"/>
+        <result column="rankAwards" property="rankAwards" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+        <result column="winAwards" property="winAwards" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+        <result column="hurtAwards" property="hurtAwards" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+        <result column="scoreAwards" property="scoreAwards" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+        <result column="scorePartyAwards" property="scorePartyAwards"
+                typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+        <result column="fortressRankAward" property="fortressRankAward"
+                typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+        <result column="eliteServerRankAwards" property="eliteServerRankAwards"
+                typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+        <result column="eliteAllAwards" property="eliteAllAwards"
+                typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+        <result column="topServerRankAwards" property="topServerRankAwards"
+                typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+        <result column="topAllAwards" property="topAllAwards" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+        <result column="serverPartyRankAward" property="serverPartyRankAward"
+                typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+        <result column="serverPartyPersonAward" property="serverPartyPersonAward"
+                typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+        <result column="serverPartyWinAward" property="serverPartyWinAward"
+                typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+        <result column="serverPartyAllAward" property="serverPartyAllAward"
+                typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+    </resultMap>
+
+    <select id="selectWarAward" resultMap="warAwardMap">
+		SELECT * FROM s_war_award
+	</select>
+
+    <resultMap id="staticActGeneralMap" type="StaticActGeneral">
+        <id column="generalId" property="generalId"/>
+        <result column="awardList" property="awardList" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+    </resultMap>
+
+    <select id="selectActGeneral" resultMap="staticActGeneralMap">
+		SELECT * FROM s_act_general
+	</select>
+
+    <resultMap id="staticActEveryDayPayMap" type="StaticActEverydayPay">
+        <id column="everydayId" property="everydayId"/>
+        <result column="specialList" property="specialList" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+    </resultMap>
+
+    <select id="selectActEveryDayPay" resultMap="staticActEveryDayPayMap">
+		SELECT * FROM s_act_everyday_pay
+	</select>
+
+    <select id="selectActDestory" resultType="staticActDestory">
+		SELECT * FROM s_act_destory
+	</select>
+
+    <resultMap id="staffingMap" type="StaticStaffing">
+        <id column="staffingId" property="staffingId"/>
+        <result column="attr" property="attr" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+    </resultMap>
+
+    <select id="selectStaffingLv" resultType="StaticStaffingLv">
+		select * from s_staffing_lv
+	</select>
+
+    <select id="selectStaffing" resultMap="staffingMap">
+		select * from s_staffing
+	</select>
+
+    <select id="selectStaffingWorld" resultType="StaticStaffingWorld">
+		select * from s_staffing_world
+	</select>
+
+    <select id="selectMineSenior" resultMap="mineMap">
+		select * from s_mine_senior
+	</select>
+
+    <resultMap id="staticActVacationlandMap" type="StaticActVacationland">
+        <id column="landId" property="landId"/>
+        <result column="awardList" property="awardList" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+    </resultMap>
+
+    <select id="selectActVacationland" resultMap="staticActVacationlandMap">
+		SELECT * FROM s_act_vacationland order by villageId ASC,onday asc
+	</select>
+
+    <resultMap id="staticActExchangeMap" type="StaticActExchange">
+        <id column="exchangeId" property="exchangeId"/>
+        <result column="meta1" property="meta1" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+        <result column="meta2" property="meta2" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+        <result column="meta3" property="meta3" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+        <result column="meta4" property="meta4" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+        <result column="meta5" property="meta5" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+        <result column="metas" property="metas" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+        <result column="awardList" property="awardList" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+    </resultMap>
+
+    <select id="selectActExchange" resultMap="staticActExchangeMap">
+		SELECT * FROM s_act_exchange
+	</select>
+
+    <resultMap id="staticActResolveMap" type="StaticActPartResolve">
+        <id column="resolveId" property="resolveId"/>
+        <result column="awardList" property="awardList" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+        <result column="resolveList" property="resolveList" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+    </resultMap>
+
+    <select id="selectActPartResolve" resultMap="staticActResolveMap">
+		SELECT * FROM s_act_part_resolve
+	</select>
+
+    <resultMap id="staticActGambleMap" type="StaticActGamble">
+        <id column="gambleId" property="gambleId"/>
+        <result column="awardList" property="awardList" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+    </resultMap>
+
+    <select id="selectActGamble" resultMap="staticActGambleMap">
+		SELECT * FROM s_act_gamble
+	</select>
+
+    <select id="selectFunctionPlan" resultType="StaticFunctionPlan">
+		SELECT * FROM s_function_plan
+	</select>
+    <select id="selectMailPlat" resultType="StaticMailPlat">
+		SELECT * FROM s_mail_plat
+	</select>
+
+    <select id="selectActionMsg" resultType="StaticActionMsg">
+		SELECT * FROM s_action_msg
+	</select>
+
+    <select id="selectFortressSufferJifenMap" resultType="StaticFortressSufferJifen">
+		SELECT * FROM s_fortress_sufferJifen
+	</select>
+
+    <resultMap id="fortressAttrMap" type="StaticFortressAttr">
+        <id column="id" property="id"/>
+        <id column="level" property="level"/>
+        <id column="name" property="name"/>
+        <id column="_desc" property="_desc"/>
+        <id column="price" property="price"/>
+        <result column="effect" property="effect" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+    </resultMap>
+
+    <select id="selectFortressAttr" resultMap="fortressAttrMap">
+		SELECT * FROM s_fortress_attr
+	</select>
+
+    <select id="selectFortressJob" resultType="StaticFortressJob">
+		SELECT * FROM s_fortress_job
+	</select>
+
+    <resultMap id="militaryMap" type="StaticMilitary">
+        <id column="tankId" property="tankId"/>
+        <id column="tankName" property="tankName"/>
+        <id column="developPoint" property="developPoint"/>
+        <id column="assembleNum" property="assembleNum"/>
+        <id column="pukCondition" property="pukCondition"/>
+        <result column="gridStatus" property="gridStatus" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+        <result column="unLockConsume" property="unLockConsume" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+        <result column="militaryRefitConsume" property="militaryRefitConsume"
+                typeHandler="com.game.dao.handle.ListListLongTypeHandler"/>
+    </resultMap>
+
+    <select id="selectStaticMilitary" resultMap="militaryMap">
+		SELECT * FROM s_military
+	</select>
+
+    <resultMap id="militaryDevelopTreeMap" type="StaticMilitaryDevelopTree">
+        <id column="id" property="id"/>
+        <id column="level" property="level"/>
+        <id column="tankId" property="tankId"/>
+        <id column="oreGrain" property="oreGrain"/>
+        <id column="ore" property="ore"/>
+        <id column="oreCrystal" property="oreCrystal"/>
+        <id column="catalyst" property="catalyst"/>
+        <id column="lube" property="lube"/>
+        <id column="alcahest" property="alcahest"/>
+        <result column="materials" property="materials" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+        <result column="effect" property="effect" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+        <result column="scope" property="scope" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+        <result column="require" property="require" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+    </resultMap>
+
+
+    <select id="selectStaticMilitaryDevelopTree" resultMap="militaryDevelopTreeMap">
+		SELECT * FROM s_military_develop_tree
+	</select>
+
+    <select id="selectStaticMilitaryMaterial" resultType="StaticMilitaryMaterial">
+		SELECT * FROM s_military_material
+	</select>
+
+    <resultMap id="staticMilitaryBlessMap" type="StaticMilitaryBless">
+        <result column="awardOne" property="awardOne" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+    </resultMap>
+
+    <select id="selectStaticMilitaryBless" resultMap="staticMilitaryBlessMap">
+		SELECT * FROM s_military_bless
+	</select>
+
+    <select id="selectStaticPendant" resultType="StaticPendant">
+		SELECT * FROM s_pendant
+	</select>
+
+    <select id="selectEnergyStoneMap" resultType="StaticEnergyStone">
+		SELECT * FROM s_energy_stone
+	</select>
+
+    <resultMap id="staticEnergyHiddenAttrMap" type="StaticEnergyHiddenAttr">
+        <id column="attributeID" property="attributeID"/>
+        <result column="rule" property="ruleList" typeHandler="com.game.dao.handle.ListIntTypeHandler"/>
+        <result column="effect" property="effectList" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+    </resultMap>
+
+    <select id="selectEnergyHiddenAttrMap" resultMap="staticEnergyHiddenAttrMap">
+		SELECT * FROM s_energy_hidden_attribute
+	</select>
+
+    <resultMap id="staticAltarBossMap" type="StaticAltarBoss">
+        <id column="lv" property="lv"/>
+        <id column="callBossCost" property="callBossCost"/>
+        <id column="callBossCD" property="callBossCD"/>
+        <id column="fightTime" property="fightTime"/>
+        <id column="bossName" property="bossName"/>
+        <result column="partAward" property="partAward" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+        <result column="killAward" property="killAward" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+        <result column="rankAward1" property="rankAward1" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+        <result column="rankAward2" property="rankAward2" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+        <result column="rankAward3" property="rankAward3" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+    </resultMap>
+
+    <select id="selectAltarBossMap" resultMap="staticAltarBossMap">
+		SELECT * FROM s_altar_boss
+	</select>
+
+    <resultMap id="staticCrossShop" type="StaticCrossShop">
+        <id column="goodID" property="goodID"/>
+        <id column="goodName" property="goodName"/>
+        <id column="type" property="type"/>
+        <id column="treasure" property="treasure"/>
+        <id column="cost" property="cost"/>
+        <id column="personNumber" property="personNumber"/>
+        <id column="totalNumber" property="totalNumber"/>
+        <result column="reward" property="rewardList" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+    </resultMap>
+
+    <select id="selectCrossShopMap" resultMap="staticCrossShop">
+		SELECT * FROM s_server_war_shop
+	</select>
+
+    <select id="selectSeverWarBetting" resultType="StaticSeverWarBetting">
+		SELECT * from s_server_war_betting
+	</select>
+
+    <select id="selectServerPartyWining" resultType="StaticServerPartyWining">
+		SELECT * from s_server_party_wining
+	</select>
+
+    <resultMap id="staticMedal" type="StaticMedal">
+        <result column="attrShowed" property="attrShowed" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+    </resultMap>
+
+    <select id="selectMedal" resultMap="staticMedal">
+		SELECT * from s_medal
+	</select>
+
+    <resultMap id="staticMedalUp" type="StaticMedalUp">
+        <result column="cost" property="cost" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+        <result column="explode" property="explode" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+    </resultMap>
+
+    <select id="selectMedalUp" resultMap="staticMedalUp">
+		SELECT * from s_medal_up
+	</select>
+
+    <resultMap id="staticMedalRefit" type="StaticMedalRefit">
+        <result column="cost" property="cost" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+        <result column="explode" property="explode" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+    </resultMap>
+
+    <select id="selectMedalRefit" resultMap="staticMedalRefit">
+		SELECT * from s_medal_refit
+	</select>
+
+    <resultMap id="staticMedalBouns" type="StaticMedalBouns">
+        <result column="bonus" property="bonus" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+    </resultMap>
+
+    <select id="selectMedalBouns" resultMap="staticMedalBouns">
+		SELECT * FROM s_medal_bouns
+	</select>
+
+    <select id="selectSystemMap" resultType="StaticSystem">
+		SELECT * FROM s_system
+	</select>
+
+    <select id="selectStaticHeroAwakenSkill" resultType="StaticHeroAwakenSkill">
+		SELECT * FROM s_hero_awaken_skill
+	</select>
+
+    <resultMap id="selectStaticEquipUpStarMap" type="StaticEquipUpStar">
+        <result column="need" property="need" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+    </resultMap>
+
+    <select id="selectStaticEquipUpStar" resultMap="selectStaticEquipUpStarMap">
+		SELECT * FROM s_equip_upstar
+	</select>
+
+
+    <resultMap id="staticLordEquipSkill" type="StaticLordEquipSkill">
+        <result column="attrs" property="attrs" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+    </resultMap>
+
+    <select id="selectStaticLordEquipSkill" resultMap="staticLordEquipSkill">
+		SELECT * FROM s_lord_equip_skill
+	</select>
+
+    <resultMap id="selectStaticTacticsMap" type="StaticTactics">
+        <result column="attrBase" property="attrBase" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+        <result column="attrLv" property="attrLv" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+    </resultMap>
+    <select id="selectStaticTactics" resultMap="selectStaticTacticsMap">
+		select * from s_tactics
+	</select>
+
+
+    <resultMap id="StaticTacticsTankSuitMap" type="StaticTacticsTankSuit">
+        <result column="attrUp" property="attrUp" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+    </resultMap>
+    <select id="selectStaticTacticsTankSuit" resultMap="StaticTacticsTankSuitMap">
+		select * from s_tactics_tankSuit
+	</select>
+
+    <resultMap id="selectStaticTacticsTacticsRestrictMap" type="StaticTacticsTacticsRestrict">
+        <result column="attrSuit" property="attrSuit" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+    </resultMap>
+    <select id="selectStaticTacticsTacticsRestrict" resultMap="selectStaticTacticsTacticsRestrictMap">
+		select * from s_tactics_tacticsRestrict
+	</select>
+
+
+    <select id="selectStaticTacticsUplv" resultType="StaticTacticsUplv">
+		select * from s_tactics_uplv
+	</select>
+    <resultMap id="selectStaticTacticsBreakMap" type="StaticTacticsBreak">
+        <result column="breakNeed" property="breakNeed" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+    </resultMap>
+    <select id="selectStaticTacticsBreak" resultMap="selectStaticTacticsBreakMap">
+		select * from s_tactics_break
+	</select>
+
+    <resultMap id="selectStaticBountyShopMap" type="StaticBountyShop">
+        <id column="goodId" property="goodId"/>
+        <result column="reward" property="reward" typeHandler="com.game.dao.handle.ListIntTypeHandler"/>
+    </resultMap>
+    <select id="selectStaticBountyShop" resultMap="selectStaticBountyShopMap">
+        select * from s_bounty_shop
+    </select>
+
+    <resultMap id="selectStaticBountyBossMap" type="StaticBountyBoss">
+        <id column="id" property="id"/>
+    </resultMap>
+    <select id="selectStaticBountyBoss" resultMap="selectStaticBountyBossMap">
+        select * from s_bounty_boss
+    </select>
+
+    <resultMap id="selectStaticBountyEnemyMap" type="StaticBountyEnemy">
+        <id column="id" property="id"/>
+        <result column="enemy" property="enemy" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+        <result column="attr" property="attr" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+        <result column="skillId" property="skillId" typeHandler="com.game.dao.handle.ListIntTypeHandler"/>
+    </resultMap>
+    <select id="selectStaticBountyEnemy" resultMap="selectStaticBountyEnemyMap">
+        select * from s_bounty_enemy
+    </select>
+
+    <resultMap id="selectStaticBountyStageMap" type="StaticBountyStage">
+        <id column="id" property="id"/>
+        <result column="openTime" property="openTime" typeHandler="com.game.dao.handle.ListIntTypeHandler"/>
+        <result column="reward" property="reward" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+    </resultMap>
+    <select id="selectStaticBountyStage" resultMap="selectStaticBountyStageMap">
+        select * from s_bounty_stage
+    </select>
+
+    <resultMap id="selectStaticBountySkillMap" type="StaticBountySkill">
+        <id column="id" property="id"/>
+        <result column="param" property="param" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+    </resultMap>
+    <select id="selectStaticBountySkill" resultMap="selectStaticBountySkillMap">
+        select * from s_bounty_skill
+    </select>
+
+    <resultMap id="selectStaticBountyWantedMap" type="StaticBountyWanted">
+        <id column="id" property="id"/>
+        <result column="param" property="param" typeHandler="com.game.dao.handle.ListIntTypeHandler"/>
+        <result column="openDay" property="openDay" typeHandler="com.game.dao.handle.ListIntTypeHandler"/>
+    </resultMap>
+    <select id="selectStaticBountyWanted" resultMap="selectStaticBountyWantedMap">
+        select * from s_bounty_wanted
+    </select>
+
+    <resultMap id="selectStaticBountyConfigMap" type="StaticBountyConfig">
+        <id column="id" property="id"/>
+    </resultMap>
+    <select id="selectStaticBountyConfig" resultMap="selectStaticBountyConfigMap">
+        select * from s_bounty_config
+    </select>
+
+    <select id="selectStaticCoreExp" resultType="StaticCoreExp">
+        select * from s_core_exp
+    </select>
+    <resultMap id="StaticCoreAward" type="StaticCoreAward">
+        <result column="lightAward" property="lightAward" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+        <result column="finishAward" property="finishAward" typeHandler="com.game.dao.handle.ListListTypeHandler"/>
+    </resultMap>
+    <select id="selectStaticCoreAward" resultMap="StaticCoreAward">
+        select * from s_core_award
+    </select>
+
+
+    <select id="selectCrossMineSenior" resultMap="mineMap">
+		select * from s_mine_cross
+	</select>
+</mapper>
+

@@ -1,0 +1,74 @@
+<skeleton name="kaipao_huoshe2" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="f_fire_1_17">
+   <b name="1" x="-17.85" y="-58.5" kX="0" kY="0" cX="1.44" cY="1.44" pX="0" pY="0" z="0">
+    <d name="part-kaipao_huoshe1"/>
+    <d name="part-kaipao_huoshe2"/>
+    <d name="part-kaipao_huoshe3"/>
+    <d name="part-kaipao_huoshe4"/>
+    <d name="part-kaipao_huoshe5"/>
+    <d name="part-kaipao_huoshe6"/>
+    <d name="part-kaipao_huoshe7"/>
+    <d name="part-kaipao_huoshe8"/>
+    <d name="part-kaipao_huoshe9"/>
+    <d name="part-kaipao_huoshe10"/>
+   </b>
+   <b name="10" x="14.4" y="-56.9" kX="0" kY="0" cX="1.44" cY="1.44" pX="0" pY="0" z="1">
+    <d name="part-kaipao_huoshe1"/>
+    <d name="part-kaipao_huoshe2"/>
+    <d name="part-kaipao_huoshe3"/>
+    <d name="part-kaipao_huoshe4"/>
+    <d name="part-kaipao_huoshe5"/>
+    <d name="part-kaipao_huoshe6"/>
+    <d name="part-kaipao_huoshe7"/>
+    <d name="part-kaipao_huoshe8"/>
+    <d name="part-kaipao_huoshe9"/>
+    <d name="part-kaipao_huoshe10"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="f_fire_1_17">
+   <mov name="start" dr="21" to="6" drTW="21" lp="0" twE="NaN">
+    <b name="1" sc="1" dl="0">
+     <f x="-17.85" y="-58.5" cocos2d_x="-17.85" cocos2d_y="-58.5" kX="0" kY="0" cX="1.44" cY="1.44" pX="0" pY="0" z="0" dI="0" dr="2"/>
+     <f x="-17.8" y="-58.55" cocos2d_x="-17.8" cocos2d_y="-58.55" kX="0" kY="0" cX="1.44" cY="1.44" pX="0" pY="0" z="0" dI="1" dr="2"/>
+     <f x="-17.85" y="-58.55" cocos2d_x="-17.8" cocos2d_y="-58.5" kX="0" kY="0" cX="1.44" cY="1.44" pX="0" pY="0" z="0" dI="2" dr="2"/>
+     <f x="-17.85" y="-58.6" cocos2d_x="-17.85" cocos2d_y="-58.55" kX="0" kY="0" cX="1.44" cY="1.44" pX="0" pY="0" z="0" dI="3" dr="2"/>
+     <f x="-18.05" y="-58.55" cocos2d_x="-18.05" cocos2d_y="-58.5" kX="0" kY="0" cX="1.44" cY="1.44" pX="0" pY="0" z="0" dI="4" dr="2"/>
+     <f x="-18.1" y="-58.6" cocos2d_x="-18.1" cocos2d_y="-58.55" kX="0" kY="0" cX="1.44" cY="1.44" pX="0" pY="0" z="0" dI="5" dr="2"/>
+     <f x="-18" y="-58.4" cocos2d_x="-18" cocos2d_y="-58.35" kX="0" kY="0" cX="1.44" cY="1.44" pX="0" pY="0" z="0" dI="6" dr="2"/>
+     <f x="-18" y="-58.55" cocos2d_x="-18" cocos2d_y="-58.5" kX="0" kY="0" cX="1.44" cY="1.44" pX="0" pY="0" z="0" dI="7" dr="2"/>
+     <f x="-18.1" y="-58.6" cocos2d_x="-18.1" cocos2d_y="-58.55" kX="0" kY="0" cX="1.44" cY="1.44" pX="0" pY="0" z="0" dI="8" dr="2"/>
+     <f x="-17.85" y="-58.8" cocos2d_x="-17.85" cocos2d_y="-58.8" kX="0" kY="0" cX="1.44" cY="1.44" pX="0" pY="0" z="0" dI="9" dr="2"/>
+     <f dr="1" dI="-1"/>
+    </b>
+    <b name="10" sc="1" dl="0">
+     <f x="14.4" y="-56.9" cocos2d_x="14.4" cocos2d_y="-56.9" kX="0" kY="0" cX="1.44" cY="1.44" pX="0" pY="0" z="1" dI="0" dr="2"/>
+     <f x="14.45" y="-56.95" cocos2d_x="14.45" cocos2d_y="-56.95" kX="0" kY="0" cX="1.44" cY="1.44" pX="0" pY="0" z="1" dI="1" dr="2"/>
+     <f x="14.4" y="-56.95" cocos2d_x="14.45" cocos2d_y="-56.9" kX="0" kY="0" cX="1.44" cY="1.44" pX="0" pY="0" z="1" dI="2" dr="2"/>
+     <f x="14.4" y="-57" cocos2d_x="14.4" cocos2d_y="-56.95" kX="0" kY="0" cX="1.44" cY="1.44" pX="0" pY="0" z="1" dI="3" dr="2"/>
+     <f x="14.2" y="-56.95" cocos2d_x="14.2" cocos2d_y="-56.9" kX="0" kY="0" cX="1.44" cY="1.44" pX="0" pY="0" z="1" dI="4" dr="2"/>
+     <f x="14.15" y="-57" cocos2d_x="14.15" cocos2d_y="-56.95" kX="0" kY="0" cX="1.44" cY="1.44" pX="0" pY="0" z="1" dI="5" dr="2"/>
+     <f x="14.25" y="-56.85" cocos2d_x="14.25" cocos2d_y="-56.8" kX="0" kY="0" cX="1.44" cY="1.44" pX="0" pY="0" z="1" dI="6" dr="2"/>
+     <f x="14.25" y="-56.95" cocos2d_x="14.25" cocos2d_y="-56.9" kX="0" kY="0" cX="1.44" cY="1.44" pX="0" pY="0" z="1" dI="7" dr="2"/>
+     <f x="14.15" y="-57" cocos2d_x="14.15" cocos2d_y="-56.95" kX="0" kY="0" cX="1.44" cY="1.44" pX="0" pY="0" z="1" dI="8" dr="2"/>
+     <f x="14.4" y="-57.2" cocos2d_x="14.4" cocos2d_y="-57.2" kX="0" kY="0" cX="1.44" cY="1.44" pX="0" pY="0" z="1" dI="9" dr="2"/>
+     <f dr="1" dI="-1"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="kaipao_huoshe2" width="256" height="512">
+  <SubTexture name="part-kaipao_huoshe10" width="51" height="134" cocos2d_pX="24.55" cocos2d_pY="80.55" x="0" y="136"/>
+  <SubTexture name="part-kaipao_huoshe9" width="53" height="134" cocos2d_pX="25.7" cocos2d_pY="80.7" x="55" y="0"/>
+  <SubTexture name="part-kaipao_huoshe8" width="53" height="134" cocos2d_pX="26.3" cocos2d_pY="81" x="165" y="0"/>
+  <SubTexture name="part-kaipao_huoshe7" width="53" height="134" cocos2d_pX="25.9" cocos2d_pY="80.6" x="0" y="0"/>
+  <SubTexture name="part-kaipao_huoshe6" width="53" height="134" cocos2d_pX="25.9" cocos2d_pY="80.6" x="110" y="0"/>
+  <SubTexture name="part-kaipao_huoshe5" width="39" height="127" cocos2d_pX="19.4" cocos2d_pY="79.4" x="91" y="136"/>
+  <SubTexture name="part-kaipao_huoshe4" width="36" height="134" cocos2d_pX="17.9" cocos2d_pY="80.65" x="53" y="136"/>
+  <SubTexture name="part-kaipao_huoshe3" width="32" height="122" cocos2d_pX="16.45" cocos2d_pY="69.2" x="220" y="0"/>
+  <SubTexture name="part-kaipao_huoshe2" width="32" height="112" cocos2d_pX="16.4" cocos2d_pY="59.25" x="220" y="124"/>
+  <SubTexture name="part-kaipao_huoshe1" width="26" height="102" cocos2d_pX="12.85" cocos2d_pY="50.75" x="132" y="136"/>
+ </TextureAtlas>
+</skeleton>

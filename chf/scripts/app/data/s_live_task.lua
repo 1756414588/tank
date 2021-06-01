@@ -1,0 +1,1 @@
+return {title={"taskId","taskName","count","live","asset"},records={{1,"进行1次捐献",500,1,"t_con"},{2,"攻打1次军团副本",100,2,"t_hero"},{3,"兑换1次商店物品",30,5,"t_food"},{4,"驻军1次",30,5,"t_garrison"},{5,"参加1次军团战",50,3,"t_jjc"}}}

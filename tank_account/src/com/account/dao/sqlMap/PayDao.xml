@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="PayDao">
+    <select id="selectPay" parameterType="map" resultType="com.account.domain.Pay">
+		select * from u_pay where platNo=#{platNo} and orderId=#{orderId}
+	</select>
+
+    <select id="selectRolePay" parameterType="map" resultType="com.account.domain.Pay">
+		select * from u_pay where serverId=#{serverId} and roleId=#{roleId}
+	</select>
+
+    <update id="updateState" parameterType="map">
+		update u_pay set state=#{state},addGold=#{addGold} where platNo=#{platNo} and orderId=#{orderId}
+	</update>
+
+
+    <insert id="createPay" parameterType="com.account.domain.Pay" useGeneratedKeys="true" keyProperty="keyId">
+		insert into
+		u_pay(platNo,platId,childNo,orderId,serialId,serverId,roleId,state,amount,realAmount,packId,payTime)
+		values(#{platNo},#{platId},#{childNo},#{orderId},#{serialId},#{serverId},#{roleId},#{state},#{amount},#{realAmount},#{packId},#{payTime})
+	</insert>
+
+
+</mapper>

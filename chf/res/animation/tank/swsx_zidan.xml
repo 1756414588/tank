@@ -1,0 +1,75 @@
+<skeleton name="swsx_zidan" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="swsx_zidan">
+   <b name="2" x="-2.25" y="-384" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0">
+    <d name="part-swsx_xian_00001"/>
+    <d name="part-swsx_xian_00002"/>
+    <d name="part-swsx_xian_00003"/>
+    <d name="part-swsx_xian_00004"/>
+    <d name="part-swsx_xian_00005"/>
+    <d name="part-swsx_xian_00006"/>
+    <d name="part-swsx_xian_00007"/>
+    <d name="part-swsx_xian_00008"/>
+    <d name="part-swsx_xian_00009"/>
+    <d name="part-swsx_xian_00010"/>
+    <d name="part-swsx_xian_00011"/>
+    <d name="part-swsx_xian_00012"/>
+    <d name="part-swsx_xian_00013"/>
+    <d name="part-swsx_xian_00014"/>
+    <d name="part-swsx_xian_00015"/>
+    <d name="part-swsx_xian_00016"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="swsx_zidan">
+   <mov name="start" dr="10" to="0" drTW="10" lp="0" twE="NaN">
+    <b name="2" sc="1" dl="0">
+     <f x="-2.25" y="-384" cocos2d_x="-2.25" cocos2d_y="-384" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="0" dr="2"/>
+     <f x="-2.25" y="-384" cocos2d_x="-2.25" cocos2d_y="-384" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="1" dr="2"/>
+     <f x="-2.25" y="-384" cocos2d_x="-2.25" cocos2d_y="-384" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="2" dr="2"/>
+     <f x="-2.25" y="-384" cocos2d_x="-2.25" cocos2d_y="-384" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="3" dr="2"/>
+     <f x="-2.25" y="-384" cocos2d_x="-2.25" cocos2d_y="-384" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="4" dr="2"/>
+    </b>
+   </mov>
+   <mov name="start1" dr="10" to="0" drTW="10" lp="0" twE="NaN">
+    <b name="2" sc="1" dl="0">
+     <f x="-2.25" y="-384" cocos2d_x="-2.25" cocos2d_y="-384" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="5" dr="10"/>
+    </b>
+   </mov>
+   <mov name="start2" dr="21" to="0" drTW="21" lp="0" twE="NaN">
+    <b name="2" sc="1" dl="0">
+     <f x="-2.25" y="-384" cocos2d_x="-2.25" cocos2d_y="-384" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="6" dr="2"/>
+     <f x="-2.25" y="-384" cocos2d_x="-2.25" cocos2d_y="-384" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="7" dr="2"/>
+     <f x="-2.25" y="-384" cocos2d_x="-2.25" cocos2d_y="-384" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="8" dr="2"/>
+     <f x="-2.25" y="-384" cocos2d_x="-2.25" cocos2d_y="-384" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="9" dr="2"/>
+     <f x="-2.25" y="-384" cocos2d_x="-2.25" cocos2d_y="-384" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="10" dr="2"/>
+     <f x="-2.25" y="-384" cocos2d_x="-2.25" cocos2d_y="-384" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="11" dr="2"/>
+     <f x="-2.25" y="-384" cocos2d_x="-2.25" cocos2d_y="-384" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="12" dr="2"/>
+     <f x="-2.25" y="-384" cocos2d_x="-2.25" cocos2d_y="-384" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="13" dr="2"/>
+     <f x="-2.25" y="-384" cocos2d_x="-2.25" cocos2d_y="-384" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="14" dr="2"/>
+     <f x="-2.25" y="-384" cocos2d_x="-2.25" cocos2d_y="-384" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="15" dr="2"/>
+     <f dr="1" dI="-1"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="swsx_zidan" width="1024" height="1024">
+  <SubTexture name="part-swsx_xian_00016" width="96" height="450" cocos2d_pX="48" cocos2d_pY="225" x="98" y="0"/>
+  <SubTexture name="part-swsx_xian_00015" width="96" height="450" cocos2d_pX="48" cocos2d_pY="225" x="882" y="0"/>
+  <SubTexture name="part-swsx_xian_00014" width="96" height="450" cocos2d_pX="48" cocos2d_pY="225" x="294" y="0"/>
+  <SubTexture name="part-swsx_xian_00013" width="96" height="450" cocos2d_pX="48" cocos2d_pY="225" x="392" y="452"/>
+  <SubTexture name="part-swsx_xian_00012" width="96" height="450" cocos2d_pX="48" cocos2d_pY="225" x="490" y="0"/>
+  <SubTexture name="part-swsx_xian_00011" width="96" height="450" cocos2d_pX="48" cocos2d_pY="225" x="98" y="452"/>
+  <SubTexture name="part-swsx_xian_00010" width="96" height="450" cocos2d_pX="48" cocos2d_pY="225" x="686" y="0"/>
+  <SubTexture name="part-swsx_xian_00009" width="96" height="450" cocos2d_pX="48" cocos2d_pY="225" x="490" y="452"/>
+  <SubTexture name="part-swsx_xian_00008" width="96" height="450" cocos2d_pX="48" cocos2d_pY="225" x="0" y="0"/>
+  <SubTexture name="part-swsx_xian_00007" width="96" height="450" cocos2d_pX="48" cocos2d_pY="225" x="196" y="0"/>
+  <SubTexture name="part-swsx_xian_00006" width="96" height="450" cocos2d_pX="48" cocos2d_pY="225" x="392" y="0"/>
+  <SubTexture name="part-swsx_xian_00005" width="96" height="450" cocos2d_pX="48" cocos2d_pY="225" x="588" y="0"/>
+  <SubTexture name="part-swsx_xian_00004" width="96" height="450" cocos2d_pX="48" cocos2d_pY="225" x="784" y="0"/>
+  <SubTexture name="part-swsx_xian_00003" width="96" height="450" cocos2d_pX="48" cocos2d_pY="225" x="0" y="452"/>
+  <SubTexture name="part-swsx_xian_00002" width="96" height="450" cocos2d_pX="48" cocos2d_pY="225" x="196" y="452"/>
+  <SubTexture name="part-swsx_xian_00001" width="96" height="450" cocos2d_pX="48" cocos2d_pY="225" x="294" y="452"/>
+ </TextureAtlas>
+</skeleton>

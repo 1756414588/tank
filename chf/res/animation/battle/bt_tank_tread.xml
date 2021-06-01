@@ -1,0 +1,27 @@
+<skeleton name="lvdaiyin" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="bt_tank_tread">
+   <b name="nghffdd4" x="0" y="-0.05" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0">
+    <d name="part-tanke_lvdaiyin"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="bt_tank_tread">
+   <mov name="start" dr="120" to="6" drTW="120" lp="0" twE="NaN">
+    <b name="nghffdd4" sc="1" dl="0">
+     <f x="0" y="-0.05" cocos2d_x="0" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" twE="0" dr="52"/>
+     <f x="0" y="-0.05" cocos2d_x="0" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" twE="0" dr="24"/>
+     <f x="0" y="-0.05" cocos2d_x="0" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" twE="0" dr="42"/>
+     <f x="0" y="-0.05" cocos2d_x="0" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="1">
+      <colorTransform a="0" r="0" g="0" b="0" aM="7" rM="100" gM="100" bM="100"/>
+     </f>
+     <f dr="1" dI="-1"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="lvdaiyin" width="64" height="4">
+  <SubTexture name="part-tanke_lvdaiyin" width="44" height="2" cocos2d_pX="21.9" cocos2d_pY="0.7" x="0" y="0"/>
+ </TextureAtlas>
+</skeleton>

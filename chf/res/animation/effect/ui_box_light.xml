@@ -1,0 +1,23 @@
+<skeleton name="xuanguanbaoxiang_diguang2" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="ui_box_light">
+   <b name="2" x="-0.4" y="-2.6" kX="0" kY="-25.83" cX="1.11" cY="1" pX="0" pY="0" z="0">
+    <d name="part-xuanguanbaoxiang_diguang2"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="ui_box_light">
+   <mov name="start" dr="120" to="6" drTW="120" lp="1" twE="NaN">
+    <b name="2" sc="1" dl="0">
+     <f x="-0.4" y="-2.6" cocos2d_x="-0.4" cocos2d_y="-2.6" kX="0" kY="-25.83" cX="1.11" cY="1" pX="0" pY="0" z="0" dI="0" twE="0" dr="60"/>
+     <f x="0" y="0" cocos2d_x="0" cocos2d_y="0" kX="0" kY="-25.82" cX="1.17" cY="1.06" pX="0" pY="0" z="0" dI="0" twE="0" dr="59"/>
+     <f x="-0.4" y="-2.6" cocos2d_x="-0.4" cocos2d_y="-2.6" kX="0" kY="-25.83" cX="1.11" cY="1" pX="0" pY="0" z="0" dI="0" dr="1"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="xuanguanbaoxiang_diguang2" width="256" height="256">
+  <SubTexture name="part-xuanguanbaoxiang_diguang2" width="181" height="151" cocos2d_pX="90.4" cocos2d_pY="75.35" x="0" y="0"/>
+ </TextureAtlas>
+</skeleton>

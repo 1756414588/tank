@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="ServerLogDao">
+	<select id="selectLastArenaLog" resultType="ArenaLog">
+		select 
+		keyId,arenaTime,count
+		from p_arena_log where keyId=(select max(keyId) from p_arena_log)
+	</select>
+
+	<insert id="insertArenaLog" parameterType="ArenaLog" useGeneratedKeys="true" keyProperty="keyId">
+		insert into p_arena_log(arenaTime,count)
+		values(#{arenaTime},#{count})
+	</insert>
+
+	<select id="selectLastWarLog" resultType="WarLog">
+		select 
+		keyId,warTime,state,partyCount
+		from p_war_log where keyId=(select max(keyId) from p_war_log)
+	</select>
+
+	<insert id="insertWarLog" parameterType="WarLog" useGeneratedKeys="true" keyProperty="keyId">
+		insert into p_war_log(warTime,state,partyCount)
+		values(#{warTime},#{state},#{partyCount})
+	</insert>
+
+	<select id="selectLastWorldLog" resultType="WorldLog">
+		select 
+		keyId,lvTime,worldLv,totalLv
+		from p_world_log where keyId=(select max(keyId) from p_world_log)
+	</select>
+
+	<insert id="insertWorldLog" parameterType="WorldLog" useGeneratedKeys="true" keyProperty="keyId">
+		insert into p_world_log(lvTime,worldLv,totalLv)
+		values(#{lvTime},#{worldLv},#{totalLv})
+	</insert>
+</mapper>

@@ -1,0 +1,12 @@
+package com.game.message.handler.cs.drill;
+
+import com.game.message.handler.ClientHandler;
+import com.game.service.DrillService;
+
+public class GetDrillTankHandler extends ClientHandler {
+
+	@Override
+	public void action() {
+		getService(DrillService.class).getDrillTank(this);
+	}
+}

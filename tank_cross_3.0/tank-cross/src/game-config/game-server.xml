@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servers>
+    <!--<server id="32" name="[跨服战2]" ip="192.168.1.155" httpPort="9204"/>-->
+    <!--<server id="33" name="[跨服战3]" ip="192.168.1.155" httpPort="9206"/>-->
+    <!--<server id="44" name="[跨服战4]" ip="192.168.1.155" httpPort="9208"/>-->
+    <!--<server id="100" name="[跨服战5]" ip="192.168.1.159" httpPort="9202"/>-->
+
+    <server id="137" name="[跨服战5]" ip="192.168.1.137" httpPort="9202"/>
+
+</servers>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="DataNewDao">
+	<!-- <resultMap id="dataMap" type="Data"> <id column="lordId" property="lordId" /> <result column="tank" property="tank" typeHandler="com.game.dao.handle.MapIntTypeHandler" 
+		/> <result column="prop" property="prop" typeHandler="com.game.dao.handle.MapIntTypeHandler" /> <result column="form" property="form" typeHandler="com.game.dao.handle.MapIntTypeHandler" 
+		/> <result column="equip" property="equip" typeHandler="com.game.dao.handle.MapIntTypeHandler" /> <result column="part" property="part" typeHandler="com.game.dao.handle.MapIntTypeHandler" 
+		/> <result column="chip" property="chip" typeHandler="com.game.dao.handle.MapIntTypeHandler" /> <result column="tankQue1" property="tankQue1" typeHandler="com.game.dao.handle.MapIntTypeHandler" 
+		/> <result column="tankQue2" property="tankQue2" typeHandler="com.game.dao.handle.MapIntTypeHandler" /> <result column="propQue" property="propQue" typeHandler="com.game.dao.handle.MapIntTypeHandler" 
+		/> <result column="refitQue" property="refitQue" typeHandler="com.game.dao.handle.MapIntTypeHandler" /> <result column="buildQue" property="buildQue" typeHandler="com.game.dao.handle.MapIntTypeHandler" 
+		/> </resultMap> -->
+
+	<select id="selectData" parameterType="Long" resultType="DataNew">
+		select 
+		mail,lordId,roleData,combatId,equipEplrId,partEplrId,militaryEplrId,extrEplrId,extrMark,wipeTime,timePrlrId,energyStoneEplrId,
+		signLogin,maxKey,seniorDay,seniorCount,seniorScore,seniorAward,seniorBuy,medalEplrId,crossMineScore,crossMineAward
+		from p_data where lordId=#{lordId}
+	</select>
+
+	<insert id="insertData" parameterType="DataNew">
+		insert into
+		p_data(lordId,roleData,maxKey)
+		values(#{lordId},#{roleData},#{maxKey})
+	</insert>
+	
+	<insert id="insertFullData" parameterType="DataNew">
+		insert into
+		p_data(lordId,roleData,combatId,equipEplrId,partEplrId,militaryEplrId,extrEplrId,extrMark,wipeTime,timePrlrId,
+		energyStoneEplrId,signLogin,maxKey,seniorDay,seniorCount,seniorScore,seniorAward,seniorBuy,medalEplrId,crossMineScore,crossMineAward)
+		values(#{lordId},#{roleData},#{combatId},#{equipEplrId},#{partEplrId},#{militaryEplrId},#{extrEplrId},#{extrMark},#{wipeTime},#{timePrlrId},
+		#{energyStoneEplrId},#{signLogin},#{maxKey},#{seniorDay},#{seniorCount},#{seniorScore},#{seniorAward},#{seniorBuy},#{medalEplrId},#{crossMineScore},#{crossMineAward})
+	</insert>
+
+	<update id="updateData" parameterType="DataNew">
+		update p_data set mail=null,
+		roleData=#{roleData},combatId=#{combatId},equipEplrId=#{equipEplrId},partEplrId=#{partEplrId},militaryEplrId=#{militaryEplrId},extrEplrId=#{extrEplrId},extrMark=#{extrMark},
+		wipeTime=#{wipeTime},timePrlrId=#{timePrlrId},energyStoneEplrId=#{energyStoneEplrId},signLogin=#{signLogin},seniorDay=#{seniorDay},seniorCount=#{seniorCount},seniorScore=#{seniorScore},
+		seniorAward=#{seniorAward},seniorBuy=#{seniorBuy},maxKey=#{maxKey},medalEplrId=#{medalEplrId},crossMineScore=#{crossMineScore},crossMineAward=#{crossMineAward}
+		where lordId=#{lordId}
+	</update>
+
+	<select id="loadData" parameterType="Map" resultType="DataNew">
+		select 
+		mail,lordId,roleData,combatId,equipEplrId,partEplrId,militaryEplrId,extrEplrId,extrMark,wipeTime,timePrlrId,energyStoneEplrId,
+		signLogin,maxKey,seniorDay,seniorCount,seniorScore,seniorAward,seniorBuy,medalEplrId,crossMineScore,crossMineAward
+		from p_data where lordId > #{curIndex} order by lordId limit 0,#{count}
+	</select>
+
+</mapper>

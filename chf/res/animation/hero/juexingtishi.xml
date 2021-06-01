@@ -1,0 +1,67 @@
+<skeleton name="juexingtishi2" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="juexingtishi">
+   <b name="gtewt" x="-1.4" y="-2.2" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0">
+    <d name="part-juexing_tishix2"/>
+   </b>
+   <b name="gbfd" x="-1.4" y="-2.2" kX="0" kY="0" cX="1.05" cY="1.05" pX="0" pY="0" z="1">
+    <d name="part-juexing_tishix2"/>
+   </b>
+   <b name="gsdh" x="-1.4" y="-2.2" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2">
+    <d name="part-juexing_tishix2"/>
+   </b>
+   <b name="gdwhg" x="-1.4" y="-2.2" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1">
+    <d name="part-juexing_tishix2"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="juexingtishi">
+   <mov name="start_juexingtishi" dr="67" to="0" drTW="67" lp="0" twE="NaN">
+    <b name="gtewt" sc="1" dl="0">
+     <f x="-1.4" y="-2.2" cocos2d_x="-1.4" cocos2d_y="-2.2" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="49">
+      <colorTransform a="0" r="0" g="0" b="0" aM="62" rM="100" gM="100" bM="100"/>
+     </f>
+     <f x="-1.4" y="-2.2" cocos2d_x="-1.4" cocos2d_y="-2.2" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" twE="0" dr="17">
+      <colorTransform a="0" r="0" g="0" b="0" aM="62" rM="100" gM="100" bM="100"/>
+     </f>
+     <f x="-1.4" y="-2.2" cocos2d_x="-1.4" cocos2d_y="-2.2" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="1"/>
+    </b>
+    <b name="gbfd" sc="1" dl="0">
+     <f dr="25" dI="-1"/>
+     <f x="-1.4" y="-2.2" cocos2d_x="-1.4" cocos2d_y="-2.2" kX="0" kY="0" cX="1.05" cY="1.05" pX="0" pY="0" z="1" dI="0" twE="0" dr="26">
+      <colorTransform a="0" r="0" g="0" b="0" aM="68" rM="100" gM="100" bM="100"/>
+     </f>
+     <f x="-1.4" y="-2.2" cocos2d_x="-1.4" cocos2d_y="-2.2" kX="0" kY="0" cX="1.12" cY="1.12" pX="0" pY="0" z="1" dI="0" dr="1">
+      <colorTransform a="0" r="0" g="0" b="0" aM="10" rM="100" gM="100" bM="100"/>
+     </f>
+     <f dr="15" dI="-1"/>
+    </b>
+    <b name="gsdh" sc="1" dl="0">
+     <f dr="14" dI="-1"/>
+     <f x="-1.4" y="-2.2" cocos2d_x="-1.4" cocos2d_y="-2.2" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="0" twE="0" dr="12">
+      <colorTransform a="0" r="0" g="0" b="0" aM="64" rM="100" gM="100" bM="100"/>
+     </f>
+     <f x="-1.4" y="-2.2" cocos2d_x="-1.4" cocos2d_y="-2.2" kX="0" kY="0" cX="1.05" cY="1.05" pX="0" pY="0" z="2" dI="0" twE="0" dr="26">
+      <colorTransform a="0" r="0" g="0" b="0" aM="54" rM="100" gM="100" bM="100"/>
+     </f>
+     <f x="-1.4" y="-2.2" cocos2d_x="-1.4" cocos2d_y="-2.2" kX="0" kY="0" cX="1.12" cY="1.12" pX="0" pY="0" z="1" dI="0" dr="1">
+      <colorTransform a="0" r="0" g="0" b="0" aM="10" rM="100" gM="100" bM="100"/>
+     </f>
+     <f dr="14" dI="-1"/>
+    </b>
+    <b name="gdwhg" sc="1" dl="0">
+     <f x="-1.4" y="-2.2" cocos2d_x="-1.4" cocos2d_y="-2.2" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1" dI="0" twE="0" dr="12"/>
+     <f x="-1.4" y="-2.2" cocos2d_x="-1.4" cocos2d_y="-2.2" kX="0" kY="0" cX="1.05" cY="1.05" pX="0" pY="0" z="3" dI="0" twE="0" dr="23"/>
+     <f x="-1.4" y="-2.2" cocos2d_x="-1.4" cocos2d_y="-2.2" kX="0" kY="0" cX="1.12" cY="1.12" pX="0" pY="0" z="3" dI="0" dr="1">
+      <colorTransform a="0" r="0" g="0" b="0" aM="8" rM="100" gM="100" bM="100"/>
+     </f>
+     <f dr="31" dI="-1"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="juexingtishi2" width="128" height="128">
+  <SubTexture name="part-juexing_tishix2" width="97" height="97" cocos2d_pX="48.45" cocos2d_pY="48.45" x="0" y="0"/>
+ </TextureAtlas>
+</skeleton>

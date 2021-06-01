@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>part-dijun_laixi.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,2},{100,102}}</string>
+                <key>offset</key>
+                <string>{-1,1}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{2,1},{100,102}}</string>
+                <key>sourceSize</key>
+                <string>{106,106}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>2</integer>
+            <key>realTextureFileName</key>
+            <string>ui_army_invasion.pvr.ccz</string>
+            <key>size</key>
+            <string>{104,106}</string>
+            <key>smartupdate</key>
+            <string>$TexturePacker:SmartUpdate:547f3d9e933f4399aa1393a47d7342eb:d47453773e3e6c4b4fb2a5bbce9fca3a:bc55fa010335ff6b109c78817693085e$</string>
+            <key>textureFileName</key>
+            <string>ui_army_invasion.pvr.ccz</string>
+        </dict>
+    </dict>
+</plist>

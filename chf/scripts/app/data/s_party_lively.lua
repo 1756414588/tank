@@ -1,0 +1,1 @@
+return {title={"livelyLv","livelyExp","costLively","resource","science"},records={{1,500,50,0,1},{2,1000,200,2,1},{3,2500,300,4,3},{4,5000,400,6,4},{5,12000,600,10,5}}}

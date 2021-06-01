@@ -1,0 +1,66 @@
+<skeleton name="v3_xb_qifei" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="v3_xb_qifei_output">
+   <b name="1" x="322" y="643" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0">
+    <d name="part-v3_xb_qifei_15"/>
+    <d name="part-v3_xb_qifei_14"/>
+    <d name="part-v3_xb_qifei_13"/>
+    <d name="part-v3_xb_qifei_12"/>
+    <d name="part-v3_xb_qifei_11"/>
+    <d name="part-v3_xb_qifei_10"/>
+    <d name="part-v3_xb_qifei_9"/>
+    <d name="part-v3_xb_qifei_8"/>
+    <d name="part-v3_xb_qifei_7"/>
+    <d name="part-v3_xb_qifei_6"/>
+    <d name="part-v3_xb_qifei_5"/>
+    <d name="part-v3_xb_qifei_4"/>
+    <d name="part-v3_xb_qifei_3"/>
+    <d name="part-v3_xb_qifei_2"/>
+    <d name="part-v3_xb_qifei_1"/>
+    <d name="part-v3_xb_qifei_0"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="v3_xb_qifei_output">
+   <mov name="start" dr="64" to="0" drTW="64" lp="1" twE="NaN">
+    <b name="1" sc="1" dl="0">
+     <f x="322" y="643" cocos2d_x="322" cocos2d_y="643" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="4"/>
+     <f x="322" y="643" cocos2d_x="322" cocos2d_y="643" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="1" dr="4"/>
+     <f x="322" y="643" cocos2d_x="322" cocos2d_y="643" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="2" dr="4"/>
+     <f x="322" y="643" cocos2d_x="322" cocos2d_y="643" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="3" dr="4"/>
+     <f x="322" y="643" cocos2d_x="322" cocos2d_y="643" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="4" dr="4"/>
+     <f x="322" y="643" cocos2d_x="322" cocos2d_y="643" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="5" dr="4"/>
+     <f x="322" y="643" cocos2d_x="322" cocos2d_y="643" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="6" dr="4"/>
+     <f x="322" y="643" cocos2d_x="322" cocos2d_y="643" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="7" dr="4"/>
+     <f x="322" y="643" cocos2d_x="322" cocos2d_y="643" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="8" dr="4"/>
+     <f x="322" y="643" cocos2d_x="322" cocos2d_y="643" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="9" dr="4"/>
+     <f x="322" y="643" cocos2d_x="322" cocos2d_y="643" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="10" dr="4"/>
+     <f x="322" y="643" cocos2d_x="322" cocos2d_y="643" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="11" dr="4"/>
+     <f x="322" y="643" cocos2d_x="322" cocos2d_y="643" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="12" dr="4"/>
+     <f x="322" y="643" cocos2d_x="322" cocos2d_y="643" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="13" dr="4"/>
+     <f x="322" y="643" cocos2d_x="322" cocos2d_y="643" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="14" dr="4"/>
+     <f x="322" y="643" cocos2d_x="322" cocos2d_y="643" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="15" dr="4"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="v3_xb_qifei" width="1024" height="1024">
+  <SubTexture name="part-v3_xb_qifei_0" width="250" height="250" cocos2d_pX="125" cocos2d_pY="125" x="252" y="0"/>
+  <SubTexture name="part-v3_xb_qifei_1" width="250" height="250" cocos2d_pX="125" cocos2d_pY="125" x="252" y="504"/>
+  <SubTexture name="part-v3_xb_qifei_2" width="250" height="250" cocos2d_pX="125" cocos2d_pY="125" x="756" y="0"/>
+  <SubTexture name="part-v3_xb_qifei_3" width="250" height="250" cocos2d_pX="125" cocos2d_pY="125" x="504" y="756"/>
+  <SubTexture name="part-v3_xb_qifei_4" width="250" height="250" cocos2d_pX="125" cocos2d_pY="125" x="252" y="252"/>
+  <SubTexture name="part-v3_xb_qifei_5" width="250" height="250" cocos2d_pX="125" cocos2d_pY="125" x="756" y="504"/>
+  <SubTexture name="part-v3_xb_qifei_6" width="250" height="250" cocos2d_pX="125" cocos2d_pY="125" x="756" y="252"/>
+  <SubTexture name="part-v3_xb_qifei_7" width="250" height="250" cocos2d_pX="125" cocos2d_pY="125" x="756" y="756"/>
+  <SubTexture name="part-v3_xb_qifei_8" width="250" height="250" cocos2d_pX="125" cocos2d_pY="125" x="0" y="0"/>
+  <SubTexture name="part-v3_xb_qifei_9" width="250" height="250" cocos2d_pX="125" cocos2d_pY="125" x="504" y="0"/>
+  <SubTexture name="part-v3_xb_qifei_10" width="250" height="250" cocos2d_pX="125" cocos2d_pY="125" x="0" y="252"/>
+  <SubTexture name="part-v3_xb_qifei_11" width="250" height="250" cocos2d_pX="125" cocos2d_pY="125" x="504" y="252"/>
+  <SubTexture name="part-v3_xb_qifei_12" width="250" height="250" cocos2d_pX="125" cocos2d_pY="125" x="0" y="504"/>
+  <SubTexture name="part-v3_xb_qifei_13" width="250" height="250" cocos2d_pX="125" cocos2d_pY="125" x="504" y="504"/>
+  <SubTexture name="part-v3_xb_qifei_14" width="250" height="250" cocos2d_pX="125" cocos2d_pY="125" x="0" y="756"/>
+  <SubTexture name="part-v3_xb_qifei_15" width="250" height="250" cocos2d_pX="125" cocos2d_pY="125" x="252" y="756"/>
+ </TextureAtlas>
+</skeleton>

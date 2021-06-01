@@ -1,0 +1,68 @@
+<skeleton name="nyhx_ronglian_6xiaokuang" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="nyhx_ronglian_6xiaokuang">
+   <b name="1" x="-6.6" y="-1.85" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0">
+    <d name="part-nyhx_6xiaokuang_3"/>
+    <d name="part-nyhx_6xiaokuang_5"/>
+    <d name="part-nyhx_6xiaokuang_7"/>
+    <d name="part-nyhx_6xiaokuang_9"/>
+    <d name="part-nyhx_6xiaokuang_11"/>
+    <d name="part-nyhx_6xiaokuang_13"/>
+    <d name="part-nyhx_6xiaokuang_15"/>
+    <d name="part-nyhx_6xiaokuang_17"/>
+    <d name="part-nyhx_6xiaokuang_21"/>
+    <d name="part-nyhx_6xiaokuang_25"/>
+    <d name="part-nyhx_6xiaokuang_29"/>
+    <d name="part-nyhx_6xiaokuang_33"/>
+    <d name="part-nyhx_6xiaokuang_37"/>
+    <d name="part-nyhx_6xiaokuang_41"/>
+    <d name="part-nyhx_6xiaokuang_45"/>
+    <d name="part-nyhx_6xiaokuang_49"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="nyhx_ronglian_6xiaokuang">
+   <mov name="start" dr="41" to="0" drTW="41" lp="0" twE="NaN">
+    <b name="1" sc="1" dl="0">
+     <f dr="1" dI="-1"/>
+     <f x="-6.6" y="-1.85" cocos2d_x="-6.6" cocos2d_y="-1.85" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="2"/>
+     <f x="-6.6" y="-1.85" cocos2d_x="-6.6" cocos2d_y="-1.85" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="1" dr="2"/>
+     <f x="-6.6" y="-1.85" cocos2d_x="-6.6" cocos2d_y="-1.85" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="2" dr="2"/>
+     <f x="-6.6" y="-1.85" cocos2d_x="-6.6" cocos2d_y="-1.85" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="3" dr="2"/>
+     <f x="-6.6" y="-1.85" cocos2d_x="-6.6" cocos2d_y="-1.85" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="4" dr="2"/>
+     <f x="-6.6" y="-1.85" cocos2d_x="-6.6" cocos2d_y="-1.85" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="5" dr="2"/>
+     <f x="-6.6" y="-1.85" cocos2d_x="-6.6" cocos2d_y="-1.85" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="6" dr="2"/>
+     <f x="-6.6" y="-1.85" cocos2d_x="-6.6" cocos2d_y="-1.85" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="7" dr="3"/>
+     <f x="-6.6" y="-1.85" cocos2d_x="-6.6" cocos2d_y="-1.85" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="8" dr="2"/>
+     <f x="-6.6" y="-1.85" cocos2d_x="-6.6" cocos2d_y="-1.85" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="9" dr="3"/>
+     <f x="-6.6" y="-1.85" cocos2d_x="-6.6" cocos2d_y="-1.85" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="10" dr="3"/>
+     <f x="-6.6" y="-1.85" cocos2d_x="-6.6" cocos2d_y="-1.85" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="11" dr="3"/>
+     <f x="-6.6" y="-1.85" cocos2d_x="-6.6" cocos2d_y="-1.85" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="12" dr="3"/>
+     <f x="-6.6" y="-1.85" cocos2d_x="-6.6" cocos2d_y="-1.85" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="13" dr="3"/>
+     <f x="-6.6" y="-1.85" cocos2d_x="-6.6" cocos2d_y="-1.85" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="14" dr="3"/>
+     <f x="-6.6" y="-1.85" cocos2d_x="-6.6" cocos2d_y="-1.85" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="15" dr="2"/>
+     <f dr="1" dI="-1"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="nyhx_ronglian_6xiaokuang" width="2048" height="1024">
+  <SubTexture name="part-nyhx_6xiaokuang_49" width="270" height="270" cocos2d_pX="135" cocos2d_pY="135" x="272" y="0"/>
+  <SubTexture name="part-nyhx_6xiaokuang_45" width="270" height="270" cocos2d_pX="135" cocos2d_pY="135" x="544" y="272"/>
+  <SubTexture name="part-nyhx_6xiaokuang_41" width="270" height="270" cocos2d_pX="135" cocos2d_pY="135" x="816" y="0"/>
+  <SubTexture name="part-nyhx_6xiaokuang_37" width="270" height="270" cocos2d_pX="135" cocos2d_pY="135" x="0" y="544"/>
+  <SubTexture name="part-nyhx_6xiaokuang_33" width="270" height="270" cocos2d_pX="135" cocos2d_pY="135" x="1360" y="0"/>
+  <SubTexture name="part-nyhx_6xiaokuang_29" width="270" height="270" cocos2d_pX="135" cocos2d_pY="135" x="1088" y="272"/>
+  <SubTexture name="part-nyhx_6xiaokuang_25" width="270" height="270" cocos2d_pX="135" cocos2d_pY="135" x="0" y="272"/>
+  <SubTexture name="part-nyhx_6xiaokuang_21" width="270" height="270" cocos2d_pX="135" cocos2d_pY="135" x="272" y="544"/>
+  <SubTexture name="part-nyhx_6xiaokuang_17" width="270" height="270" cocos2d_pX="135" cocos2d_pY="135" x="0" y="0"/>
+  <SubTexture name="part-nyhx_6xiaokuang_15" width="270" height="270" cocos2d_pX="135" cocos2d_pY="135" x="544" y="0"/>
+  <SubTexture name="part-nyhx_6xiaokuang_13" width="270" height="270" cocos2d_pX="135" cocos2d_pY="135" x="1088" y="0"/>
+  <SubTexture name="part-nyhx_6xiaokuang_11" width="270" height="270" cocos2d_pX="135" cocos2d_pY="135" x="1632" y="0"/>
+  <SubTexture name="part-nyhx_6xiaokuang_9" width="270" height="270" cocos2d_pX="135" cocos2d_pY="135" x="272" y="272"/>
+  <SubTexture name="part-nyhx_6xiaokuang_7" width="270" height="270" cocos2d_pX="135" cocos2d_pY="135" x="816" y="272"/>
+  <SubTexture name="part-nyhx_6xiaokuang_5" width="270" height="270" cocos2d_pX="135" cocos2d_pY="135" x="1360" y="272"/>
+  <SubTexture name="part-nyhx_6xiaokuang_3" width="270" height="270" cocos2d_pX="135" cocos2d_pY="135" x="1632" y="272"/>
+ </TextureAtlas>
+</skeleton>

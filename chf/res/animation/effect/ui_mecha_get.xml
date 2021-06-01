@@ -1,0 +1,25 @@
+<skeleton name="zuzhuang_tx1" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="ui_mecha_get">
+   <b name="1" x="-0.5" y="-0.05" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0">
+    <d name="part-zuzhuang_tx1"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="ui_mecha_get">
+   <mov name="start" dr="35" to="6" drTW="35" lp="1" twE="NaN">
+    <b name="1" sc="1" dl="0">
+     <f x="-0.5" y="-0.05" cocos2d_x="-0.5" cocos2d_y="-0.05" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" twE="0" dr="8"/>
+     <f x="0" y="-0.05" cocos2d_x="0" cocos2d_y="-0.05" kX="89.95" kY="89.95" cX="0.89" cY="0.89" pX="0" pY="0" z="0" dI="0" twE="0" dr="9"/>
+     <f x="0" y="-0.05" cocos2d_x="0" cocos2d_y="-0.05" kX="179.29" kY="179.29" cX="0.78" cY="0.78" pX="0" pY="0" z="0" dI="0" twE="0" dr="9"/>
+     <f x="0" y="-0.05" cocos2d_x="0" cocos2d_y="-0.05" kX="-89.55" kY="-89.55" cX="0.89" cY="0.89" pX="0" pY="0" z="0" dI="0" twE="0" dr="8"/>
+     <f x="0" y="-0.05" cocos2d_x="0" cocos2d_y="-0.05" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" twE="0" dr="1"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="zuzhuang_tx1" width="64" height="64">
+  <SubTexture name="part-zuzhuang_tx1" width="49" height="45" cocos2d_pX="24" cocos2d_pY="15.55" x="0" y="0"/>
+ </TextureAtlas>
+</skeleton>

@@ -1,0 +1,53 @@
+<skeleton name="gltk_guangshu" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="gltk_guangshu">
+   <b name="2" x="-1.5" y="-320.25" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0">
+    <d name="part-gltk_guangshu_00062"/>
+    <d name="part-gltk_guangshu_00063"/>
+    <d name="part-gltk_guangshu_00064"/>
+    <d name="part-gltk_guangshu_00065"/>
+    <d name="part-gltk_guangshu_00066"/>
+    <d name="part-gltk_guangshu_00067"/>
+    <d name="part-gltk_guangshu_00068"/>
+    <d name="part-gltk_guangshu_00069"/>
+    <d name="part-gltk_guangshu_00070"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="gltk_guangshu">
+   <mov name="start" dr="9" to="0" drTW="9" lp="1" twE="NaN">
+    <b name="2" sc="1" dl="0">
+     <f x="-1.5" y="-320.25" cocos2d_x="-1.5" cocos2d_y="-320.25" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="0" twE="0" dr="4"/>
+     <f x="-1.6" y="-320.25" cocos2d_x="-1.5" cocos2d_y="-320.25" kX="0" kY="0" cX="1.28" cY="2" pX="0" pY="0" z="0" dI="0" twE="0" dr="4"/>
+     <f x="-1.5" y="-320.25" cocos2d_x="-1.5" cocos2d_y="-320.25" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="0" dr="1"/>
+    </b>
+   </mov>
+   <mov name="start1" dr="19" to="0" drTW="19" lp="0" twE="NaN">
+    <b name="2" sc="1" dl="0">
+     <f x="-1.5" y="-320.25" cocos2d_x="-1.5" cocos2d_y="-320.25" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="0" dr="2"/>
+     <f x="-1.5" y="-320.25" cocos2d_x="-1.5" cocos2d_y="-320.25" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="1" dr="2"/>
+     <f x="-1.5" y="-320.25" cocos2d_x="-1.5" cocos2d_y="-320.25" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="2" dr="2"/>
+     <f x="-1.5" y="-320.25" cocos2d_x="-1.5" cocos2d_y="-320.25" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="3" dr="2"/>
+     <f x="-1.5" y="-320.25" cocos2d_x="-1.5" cocos2d_y="-320.25" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="4" dr="2"/>
+     <f x="-1.5" y="-320.25" cocos2d_x="-1.5" cocos2d_y="-320.25" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="5" dr="2"/>
+     <f x="-1.5" y="-320.25" cocos2d_x="-1.5" cocos2d_y="-320.25" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="6" dr="2"/>
+     <f x="-1.5" y="-320.25" cocos2d_x="-1.5" cocos2d_y="-320.25" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="7" dr="2"/>
+     <f x="-1.5" y="-320.25" cocos2d_x="-1.5" cocos2d_y="-320.25" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="8" dr="2"/>
+     <f dr="1" dI="-1"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="gltk_guangshu" width="1024" height="512">
+  <SubTexture name="part-gltk_guangshu_00070" width="105" height="366" cocos2d_pX="53" cocos2d_pY="183" x="856" y="0"/>
+  <SubTexture name="part-gltk_guangshu_00069" width="105" height="366" cocos2d_pX="53" cocos2d_pY="183" x="214" y="0"/>
+  <SubTexture name="part-gltk_guangshu_00068" width="105" height="366" cocos2d_pX="53" cocos2d_pY="183" x="749" y="0"/>
+  <SubTexture name="part-gltk_guangshu_00067" width="105" height="366" cocos2d_pX="53" cocos2d_pY="183" x="428" y="0"/>
+  <SubTexture name="part-gltk_guangshu_00066" width="105" height="366" cocos2d_pX="53" cocos2d_pY="183" x="0" y="0"/>
+  <SubTexture name="part-gltk_guangshu_00065" width="105" height="366" cocos2d_pX="53" cocos2d_pY="183" x="107" y="0"/>
+  <SubTexture name="part-gltk_guangshu_00064" width="105" height="366" cocos2d_pX="53" cocos2d_pY="183" x="321" y="0"/>
+  <SubTexture name="part-gltk_guangshu_00063" width="105" height="366" cocos2d_pX="53" cocos2d_pY="183" x="535" y="0"/>
+  <SubTexture name="part-gltk_guangshu_00062" width="105" height="366" cocos2d_pX="53" cocos2d_pY="183" x="642" y="0"/>
+ </TextureAtlas>
+</skeleton>

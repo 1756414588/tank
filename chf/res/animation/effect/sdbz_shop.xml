@@ -1,0 +1,131 @@
+<skeleton name="sdbz_shop" frameRate="30" version="2.0">
+ <armatures>
+  <armature name="sdbz_shop">
+   <b name="1" x="-263.85" y="37.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0">
+    <d name="part-sdbz_lhd"/>
+   </b>
+   <b name="2" x="7.15" y="-0.25" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1">
+    <d name="part-sdbz_shopx1"/>
+    <d name="part-sdbz_shopx2"/>
+    <d name="part-sdbz_shopx3"/>
+    <d name="part-sdbz_shopx4"/>
+    <d name="part-sdbz_shopx5"/>
+    <d name="part-sdbz_shopx6"/>
+    <d name="part-sdbz_shopx7"/>
+    <d name="part-sdbz_shopx8"/>
+    <d name="part-sdbz_shopx9"/>
+    <d name="part-sdbz_shopx10"/>
+    <d name="part-sdbz_shopx11"/>
+    <d name="part-sdbz_shopx12"/>
+    <d name="part-sdbz_shopx13"/>
+    <d name="part-sdbz_shopx14"/>
+    <d name="part-sdbz_shopx15"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="sdbz_shop">
+   <mov name="start" dr="30" to="0" drTW="30" lp="0" twE="NaN">
+    <b name="1" sc="1" dl="0">
+     <f x="-263.85" y="37.55" cocos2d_x="-263.85" cocos2d_y="37.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="1">
+      <colorTransform a="0" r="0" g="0" b="0" aM="9" rM="100" gM="100" bM="100"/>
+     </f>
+     <f x="-263.85" y="37.55" cocos2d_x="-263.85" cocos2d_y="37.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="1">
+      <colorTransform a="0" r="0" g="0" b="0" aM="18" rM="100" gM="100" bM="100"/>
+     </f>
+     <f x="-263.85" y="37.55" cocos2d_x="-263.85" cocos2d_y="37.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="1">
+      <colorTransform a="0" r="0" g="0" b="0" aM="27" rM="100" gM="100" bM="100"/>
+     </f>
+     <f x="-263.85" y="37.55" cocos2d_x="-263.85" cocos2d_y="37.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="1">
+      <colorTransform a="0" r="0" g="0" b="0" aM="36" rM="100" gM="100" bM="100"/>
+     </f>
+     <f x="-263.85" y="37.55" cocos2d_x="-263.85" cocos2d_y="37.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="1">
+      <colorTransform a="0" r="0" g="0" b="0" aM="45" rM="100" gM="100" bM="100"/>
+     </f>
+     <f x="-263.85" y="37.55" cocos2d_x="-263.85" cocos2d_y="37.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="1">
+      <colorTransform a="0" r="0" g="0" b="0" aM="55" rM="100" gM="100" bM="100"/>
+     </f>
+     <f x="-263.85" y="37.55" cocos2d_x="-263.85" cocos2d_y="37.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="1">
+      <colorTransform a="0" r="0" g="0" b="0" aM="64" rM="100" gM="100" bM="100"/>
+     </f>
+     <f x="-263.85" y="37.55" cocos2d_x="-263.85" cocos2d_y="37.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="1">
+      <colorTransform a="0" r="0" g="0" b="0" aM="73" rM="100" gM="100" bM="100"/>
+     </f>
+     <f x="-263.85" y="37.55" cocos2d_x="-263.85" cocos2d_y="37.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="1">
+      <colorTransform a="0" r="0" g="0" b="0" aM="82" rM="100" gM="100" bM="100"/>
+     </f>
+     <f x="-263.85" y="37.55" cocos2d_x="-263.85" cocos2d_y="37.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="1">
+      <colorTransform a="0" r="0" g="0" b="0" aM="91" rM="100" gM="100" bM="100"/>
+     </f>
+     <f x="-263.85" y="37.55" cocos2d_x="-263.85" cocos2d_y="37.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="1"/>
+     <f x="-263.85" y="37.55" cocos2d_x="-263.85" cocos2d_y="37.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="1">
+      <colorTransform a="0" r="0" g="0" b="0" aM="91" rM="100" gM="100" bM="100"/>
+     </f>
+     <f x="-263.85" y="37.55" cocos2d_x="-263.85" cocos2d_y="37.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="1">
+      <colorTransform a="0" r="0" g="0" b="0" aM="82" rM="100" gM="100" bM="100"/>
+     </f>
+     <f x="-263.85" y="37.55" cocos2d_x="-263.85" cocos2d_y="37.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="1">
+      <colorTransform a="0" r="0" g="0" b="0" aM="73" rM="100" gM="100" bM="100"/>
+     </f>
+     <f x="-263.85" y="37.55" cocos2d_x="-263.85" cocos2d_y="37.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="1">
+      <colorTransform a="0" r="0" g="0" b="0" aM="64" rM="100" gM="100" bM="100"/>
+     </f>
+     <f x="-263.85" y="37.55" cocos2d_x="-263.85" cocos2d_y="37.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="1">
+      <colorTransform a="0" r="0" g="0" b="0" aM="55" rM="100" gM="100" bM="100"/>
+     </f>
+     <f x="-263.85" y="37.55" cocos2d_x="-263.85" cocos2d_y="37.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="1">
+      <colorTransform a="0" r="0" g="0" b="0" aM="46" rM="100" gM="100" bM="100"/>
+     </f>
+     <f x="-263.85" y="37.55" cocos2d_x="-263.85" cocos2d_y="37.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="1">
+      <colorTransform a="0" r="0" g="0" b="0" aM="37" rM="100" gM="100" bM="100"/>
+     </f>
+     <f x="-263.85" y="37.55" cocos2d_x="-263.85" cocos2d_y="37.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="1">
+      <colorTransform a="0" r="0" g="0" b="0" aM="28" rM="100" gM="100" bM="100"/>
+     </f>
+     <f x="-263.85" y="37.55" cocos2d_x="-263.85" cocos2d_y="37.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="1">
+      <colorTransform a="0" r="0" g="0" b="0" aM="19" rM="100" gM="100" bM="100"/>
+     </f>
+     <f x="-263.85" y="37.55" cocos2d_x="-263.85" cocos2d_y="37.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="1">
+      <colorTransform a="0" r="0" g="0" b="0" aM="10" rM="100" gM="100" bM="100"/>
+     </f>
+     <f dr="9" dI="-1"/>
+    </b>
+    <b name="2" sc="1" dl="0">
+     <f x="7.15" y="-0.25" cocos2d_x="7.15" cocos2d_y="-0.25" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1" dI="0" dr="2"/>
+     <f x="7.15" y="-0.25" cocos2d_x="7.15" cocos2d_y="-0.25" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1" dI="1" dr="2"/>
+     <f x="7.15" y="-0.25" cocos2d_x="7.15" cocos2d_y="-0.25" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1" dI="2" dr="2"/>
+     <f x="7.15" y="-0.25" cocos2d_x="7.15" cocos2d_y="-0.25" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1" dI="3" dr="2"/>
+     <f x="7.15" y="-0.25" cocos2d_x="7.15" cocos2d_y="-0.25" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1" dI="4" dr="2"/>
+     <f x="7.15" y="-0.25" cocos2d_x="7.15" cocos2d_y="-0.25" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1" dI="5" dr="2"/>
+     <f x="7.15" y="-0.25" cocos2d_x="7.15" cocos2d_y="-0.25" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1" dI="6" dr="2"/>
+     <f x="7.15" y="-0.25" cocos2d_x="7.15" cocos2d_y="-0.25" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1" dI="7" dr="2"/>
+     <f x="7.15" y="-0.25" cocos2d_x="7.15" cocos2d_y="-0.25" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1" dI="8" dr="2"/>
+     <f x="7.15" y="-0.25" cocos2d_x="7.15" cocos2d_y="-0.25" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1" dI="9" dr="2"/>
+     <f x="7.15" y="-0.25" cocos2d_x="7.15" cocos2d_y="-0.25" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="10" dr="2"/>
+     <f x="7.15" y="-0.25" cocos2d_x="7.15" cocos2d_y="-0.25" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="11" dr="2"/>
+     <f x="7.15" y="-0.25" cocos2d_x="7.15" cocos2d_y="-0.25" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="12" dr="2"/>
+     <f x="7.15" y="-0.25" cocos2d_x="7.15" cocos2d_y="-0.25" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="13" dr="2"/>
+     <f x="7.15" y="-0.25" cocos2d_x="7.15" cocos2d_y="-0.25" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="14" dr="2"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="sdbz_shop" width="512" height="512">
+  <SubTexture name="part-sdbz_shopx15" width="99" height="92" cocos2d_pX="49.25" cocos2d_pY="46" x="202" y="188"/>
+  <SubTexture name="part-sdbz_shopx14" width="99" height="92" cocos2d_pX="49.25" cocos2d_pY="46" x="101" y="282"/>
+  <SubTexture name="part-sdbz_shopx13" width="99" height="92" cocos2d_pX="49.25" cocos2d_pY="46" x="314" y="0"/>
+  <SubTexture name="part-sdbz_shopx12" width="99" height="92" cocos2d_pX="49.25" cocos2d_pY="46" x="202" y="282"/>
+  <SubTexture name="part-sdbz_shopx11" width="99" height="92" cocos2d_pX="49.25" cocos2d_pY="46" x="213" y="94"/>
+  <SubTexture name="part-sdbz_shopx10" width="99" height="92" cocos2d_pX="49.25" cocos2d_pY="46" x="404" y="188"/>
+  <SubTexture name="part-sdbz_shopx9" width="99" height="92" cocos2d_pX="49.25" cocos2d_pY="46" x="0" y="114"/>
+  <SubTexture name="part-sdbz_shopx8" width="99" height="92" cocos2d_pX="49.25" cocos2d_pY="46" x="303" y="282"/>
+  <SubTexture name="part-sdbz_shopx7" width="99" height="92" cocos2d_pX="49.25" cocos2d_pY="46" x="112" y="0"/>
+  <SubTexture name="part-sdbz_shopx6" width="99" height="92" cocos2d_pX="49.25" cocos2d_pY="46" x="213" y="0"/>
+  <SubTexture name="part-sdbz_shopx5" width="99" height="92" cocos2d_pX="49.25" cocos2d_pY="46" x="112" y="94"/>
+  <SubTexture name="part-sdbz_shopx4" width="99" height="92" cocos2d_pX="49.25" cocos2d_pY="46" x="314" y="94"/>
+  <SubTexture name="part-sdbz_shopx3" width="99" height="92" cocos2d_pX="49.25" cocos2d_pY="46" x="101" y="188"/>
+  <SubTexture name="part-sdbz_shopx2" width="99" height="92" cocos2d_pX="49.25" cocos2d_pY="46" x="303" y="188"/>
+  <SubTexture name="part-sdbz_shopx1" width="99" height="92" cocos2d_pX="49.25" cocos2d_pY="46" x="0" y="208"/>
+  <SubTexture name="part-sdbz_lhd" width="110" height="112" cocos2d_pX="-210.15" cocos2d_pY="93.5" x="0" y="0"/>
+ </TextureAtlas>
+</skeleton>

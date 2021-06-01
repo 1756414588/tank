@@ -1,0 +1,1465 @@
+import "Base.proto";
+import "Common.proto";
+
+option java_package = "com.game.pb";
+option java_outer_classname = "CrossGamePb";
+
+message CCGameServerRegRq{
+  required int32 serverId = 1;
+  required string serverName = 2;
+  extend Base
+  {
+    optional CCGameServerRegRq ext = 2001;
+  }
+}
+
+message CCGameServerRegRs{
+  extend Base
+  {
+    optional CCGameServerRegRs ext = 2002;
+  }
+}
+
+message CCGetCrossServerListRq{
+  required int64 roleId = 1;
+  required string nick = 2;
+  extend Base
+  {
+    optional CCGetCrossServerListRq ext = 2003;
+  }
+}
+
+message CCGetCrossServerListRs{
+  required int64 roleId = 1;
+  repeated GameServerInfo gameServerInfo = 2;
+  extend Base
+  {
+    optional CCGetCrossServerListRs ext = 2004;
+  }
+}
+
+message CCGetCrossFightStateRq{
+  required int64 roleId = 1;
+  extend Base
+  {
+    optional CCGetCrossFightStateRq ext = 2005;
+  }
+}
+message CCGetCrossFightStateRs{
+  required int64 roleId = 1;
+  required string beginTime = 2;
+  required int32 state = 3; // 0未开始   非0表示第几天
+  extend Base
+  {
+    optional CCGetCrossFightStateRs ext = 2006;
+  }
+}
+
+message CCSynChatRq {
+    required Chat chat = 1;
+    extend Base
+    {
+      optional CCSynChatRq ext = 2007;
+    }
+}
+
+message CCCrossFightRegRq{
+  required int64 roleId = 1;
+  required int32 groupId = 2;
+  required int32 rankId = 3;
+  required int64 fight = 4;
+  required string nick = 5;
+  optional int32 portrait = 6;// 头像
+  optional string partyName = 7;// 军团名
+  optional int32 level = 8;// 等级
+  extend Base
+  {
+     optional CCCrossFightRegRq ext = 2009;
+  }
+}
+
+message CCCrossFightRegRs{
+  required int64 roleId = 1;
+  extend Base
+  {
+     optional CCCrossFightRegRs ext = 2010;
+  }
+}
+
+message CCGetCrossRegInfoRq{
+  required int64 roleId = 1;
+  extend Base
+  {
+     optional CCGetCrossRegInfoRq ext = 2011;
+  }
+}
+
+message CCGetCrossRegInfoRs{
+  required int64 roleId = 1;
+  required int32 jyGroupPlayerNum = 2; // 精英组参加人数
+  required int32 dfGroupPlayerNum = 3; // 巅峰组参赛人数
+  required int32 myGroup = 4;     // 0未参加 1精英组 2巅峰组
+  extend Base
+  {
+     optional CCGetCrossRegInfoRs ext = 2012;
+  }
+}
+
+message CCCancelCrossRegRq{
+  required int64 roleId = 1;
+   extend Base
+  {
+     optional CCCancelCrossRegRq ext = 2013;
+  }
+}
+
+message CCCancelCrossRegRs{
+  required int64 roleId = 1;
+   extend Base
+  {
+     optional CCCancelCrossRegRs ext = 2014;
+  }
+}
+
+message CCGetCrossFormRq{
+  required int64 roleId = 1;
+   extend Base
+  {
+     optional CCGetCrossFormRq ext = 2015;
+  }
+}
+
+message CCGetCrossFormRs{
+  required int64 roleId = 1;
+  repeated Form form = 2;
+   extend Base
+  {
+     optional CCGetCrossFormRs ext = 2016;
+  }
+}
+
+message CCSetCrossFormRq{
+  required int64 roleId = 1;
+  required Form form = 2;
+  required int64 fight = 3;
+  repeated Tank tank = 4;
+  repeated Hero hero = 5;
+  required int32 maxTankNum = 6;
+  repeated Equip equip = 7;
+  repeated Part part = 8;
+  repeated Science science = 9;
+  repeated Skill skill = 10;
+  repeated Effect effect = 11;
+  required int32 staffingId = 12;
+  repeated EnergyStoneInlay inlay = 13;
+  repeated MilitaryScienceGrid militaryScienceGrid = 14;
+  repeated MilitaryScience militaryScience  = 15;
+  repeated Medal medal = 16;                            // 勋章
+  repeated MedalBouns medalBouns = 17;                  // 勋章展厅
+  repeated AwakenHero awakenHero = 18;                  // 觉醒英雄
+  repeated LordEquip leq = 19;                          // 军备信息
+  required int32 militaryRank = 20;                     // 军衔
+  repeated SecretWeapon secretWeapon = 21;              // 秘密武器
+  repeated AttackEffectPb atkEft = 22;                  // 攻击特效
+  repeated GraduateInfoPb graduateInfo = 23;			// 作战实验室科技
+  repeated Science partyScience = 24;//军团科技列表
+  required ThreeInt energyCore=25;     //能源核心 v1 等级 v2 阶段
+  extend Base
+  {
+    optional CCSetCrossFormRq ext = 2017;
+  }
+}
+
+message CCSetCrossFormRs{
+  required int64 roleId = 1;
+  required Form form = 2;
+  required int64 fight = 3;
+  extend Base
+  {
+    optional CCSetCrossFormRs ext = 2018;
+  }
+}
+
+
+message CCGetCrossPersonSituationRq{
+    required int64 roleId = 1;
+    required int32 page = 2;
+    extend Base
+    {
+        optional CCGetCrossPersonSituationRq ext = 2019;
+    }
+}
+
+message CCGetCrossPersonSituationRs{
+    required int64 roleId = 1;
+    repeated CrossRecord crossRecord = 2;
+    extend Base
+    {
+        optional CCGetCrossPersonSituationRs ext = 2020;
+    }
+}
+
+message CCGetCrossJiFenRankRq{
+     required int64 roleId = 1;
+     required int32 page = 2;
+     extend Base
+    {
+        optional CCGetCrossJiFenRankRq ext = 2021;
+    }
+}
+
+message CCGetCrossJiFenRankRs{
+    required int64 roleId = 1;
+    repeated CrossJiFenRank crossJiFenRank = 2;
+    optional int32 jifen = 3;// 积分
+    optional int32 myRank = 4;// 排名 0表示未上榜
+    extend Base
+    {
+        optional CCGetCrossJiFenRankRs ext = 2022;
+    }
+}
+
+
+message CCGetCrossReportRq{
+    required int64 roleId = 1;
+    required int32 reportKey = 2;
+    extend Base
+    {
+        optional CCGetCrossReportRq ext = 2023;
+    }
+}
+
+message CCGetCrossReportRs{
+    required int64 roleId = 1;
+    required CrossRptAtk crossRptAtk = 2;
+    extend Base
+    {
+        optional CCGetCrossReportRs ext = 2024;
+    }
+}
+
+message CCGetCrossKnockCompetInfoRq{
+    required int64 roleId = 1;
+    required int32 groupId = 2; // 1精英组 2巅峰组
+    required int32 groupType = 3;  // 1A   2B  3C  4D
+    extend Base
+    {
+        optional CCGetCrossKnockCompetInfoRq ext = 2025;
+    }
+}
+
+message CCGetCrossKnockCompetInfoRs{
+    required int64 roleId = 1;
+    required int32 groupId = 2; // 1精英组 2巅峰组
+    required int32 groupType = 3;  // 1A   2B  3C  4D
+    repeated KnockoutCompetGroup knockoutCompetGroup = 4;
+    extend Base
+    {
+        optional CCGetCrossKnockCompetInfoRs ext = 2026;
+    }
+}
+
+message CCGetCrossFinalCompetInfoRq{
+    required int64 roleId = 1;
+    required int32 groupId = 2; // 1精英组 2巅峰组
+    extend Base
+    {
+        optional CCGetCrossFinalCompetInfoRq ext = 2027;
+    }
+}
+
+message CCGetCrossFinalCompetInfoRs{
+    required int64 roleId = 1;
+    required int32 groupId = 2; // 1精英组 2巅峰组
+    repeated FinalCompetGroup finalCompetGroup = 3;
+    extend Base
+    {
+        optional CCGetCrossFinalCompetInfoRs ext = 2028;
+    }
+}
+
+message CCBetBattleRq{
+   required int64 roleId = 1;
+   required int32 myGroup = 2; // 1精英组 2巅峰组
+   required int32 stage = 3;   // 1淘汰赛,2总决赛
+   required int32 groupType = 4; // 淘汰赛有分组,1A 2B 3C 4D 总决赛0
+   required int32 competGroupId = 5;//淘汰赛(1-15组) 总决赛(1-4组)
+   required int32 pos = 6;    // 位置 1,2
+   extend Base
+    {
+        optional CCBetBattleRq ext = 2029;
+    }
+}
+
+message CCBetBattleRs{
+    required int64 roleId = 1;
+    optional MyBet myBet = 2;
+    optional int32 pos = 3;
+   extend Base
+    {
+        optional CCBetBattleRs ext = 2030;
+    }
+}
+
+message CCGetMyBetRq{
+    required int64 roleId = 1;
+    extend Base
+    {
+        optional CCGetMyBetRq ext = 2031;
+    }
+}
+
+message CCGetMyBetRs{
+    required int64 roleId = 1;
+    repeated MyBet myBets = 2;
+    extend Base
+    {
+        optional CCGetMyBetRs ext = 2032;
+    }
+}
+
+message CCReceiveBetRq{
+    required int64 roleId = 1;
+    required int32 myGroup = 2; // 1精英组 2巅峰组
+    required int32 stage = 3;   // 1淘汰赛,2总决赛
+    required int32 groupType = 4; // 淘汰赛有分组,1A 2B 3C 4D  总决赛0
+    required int32 competGroupId = 5;//淘汰赛(1-15组) 总决赛(1-4组)
+    extend Base
+    {
+        optional CCReceiveBetRq ext = 2033;
+    }
+}
+
+message CCReceiveBetRs{
+    required int64 roleId = 1;
+    optional MyBet myBet = 2;
+    optional int32 jifen = 3;
+    extend Base
+    {
+        optional CCReceiveBetRs ext = 2034;
+    }
+}
+
+message CCGetCrossShopRq {
+    required int64 roleId = 1;
+    extend Base
+    {
+        optional CCGetCrossShopRq ext = 2035;
+    }
+}
+
+message CCGetCrossShopRs {
+    required int64 roleId = 1;
+    required int32 crossJifen = 2;          // 玩家拥有的积分
+    repeated CrossShopBuy buy = 3;          // 玩家在跨服商店的购买信息
+    extend Base
+    {
+        optional CCGetCrossShopRs ext = 2036;
+    }
+}
+
+message CCExchangeCrossShopRq {
+    required int64 roleId = 1;
+    required int32 shopId = 2;              // 要兑换的商品id
+    required int32 count = 3;               // 要兑换的商品数量
+    extend Base
+    {
+        optional CCExchangeCrossShopRq ext = 2037;
+    }
+}
+
+message CCExchangeCrossShopRs {
+      required int64 roleId = 1;
+    required int32 crossJifen = 2;          // 兑换后玩家剩余的积分
+    required int32 shopId = 3;              // 兑换的商品id
+    optional int32 count = 4;               // 玩家兑换数量
+    optional int32 restNum = 5;             // 珍品商品当前剩余数量
+    extend Base
+    {
+        optional CCExchangeCrossShopRs ext = 2038;
+    }
+}
+
+message CCGetCrossTrendRq{
+   required int64 roleId = 1;
+    extend Base
+    {
+        optional CCGetCrossTrendRq ext = 2039;
+    }
+}
+
+message CCGetCrossTrendRs{
+   required int64 roleId = 1;
+    required int32 crossJifen = 2;
+    repeated CrossTrend crossTrend = 3;
+    extend Base
+    {
+        optional CCGetCrossTrendRs ext = 2040;
+    }
+}
+
+message CCBetRollBackRq{
+   required int64 roleId = 1;
+   required int32 myGroup = 2; // 1精英组 2巅峰组
+   required int32 stage = 3;   // 1淘汰赛,2总决赛
+   required int32 groupType = 4; // 淘汰赛有分组,1A 2B 3C 4D 总决赛0
+   required int32 competGroupId = 5;//淘汰赛(1-15组) 总决赛(1-4组)
+   required int32 pos = 6;    // 位置 1,2
+    extend Base
+    {
+        optional CCBetRollBackRq ext = 2041;
+    }
+}
+
+message CCGetCrossFinalRankRq{
+    required int64 roleId = 1;
+    required int32 group = 2; // 1精英组 2巅峰组
+    extend Base
+    {
+        optional CCGetCrossFinalRankRq ext = 2043;
+    }
+}
+
+message CCGetCrossFinalRankRs{
+    required int64 roleId = 1;
+    required int32 group = 2; // 1精英组 2巅峰组
+    repeated CrossTopRank crossTopRank = 3;
+    required int32 myRank = 4;          // 默认0 (1-64可以领取奖励)
+    optional int32 state = 5;           // 0默认  1未领取  2已经领取
+    optional int32 myJiFen = 6;         // 我的积分
+    extend Base
+    {
+        optional CCGetCrossFinalRankRs ext = 2044;
+    }
+}
+
+message CCReceiveRankRwardRq{
+    required int64 roleId = 1;
+    required int32 group = 2; // 1精英组 2巅峰组
+    extend Base
+    {
+        optional CCReceiveRankRwardRq ext = 2045;
+    }
+}
+
+message CCReceiveRankRwardRs{
+    required int64 roleId = 1;
+    required int32 group = 2; // 1精英组 2巅峰组
+    optional int32 rank = 3;// 排名奖励id (能领取的话返回,不能领取错误码处理)
+    extend Base
+    {
+        optional CCReceiveRankRwardRs ext = 2046;
+    }
+}
+
+message CCSynMailRq{
+    required int32 moldId = 1; //邮件模板id
+    required int32 type = 2;  // 类型,1全服,2个人，3系统自行判断
+    optional int64 roleId = 3;  // roldId
+    repeated string param = 4; // 参数
+    extend Base
+    {
+        optional CCSynMailRq ext = 2047;
+    }
+}
+
+message CCSynCrossStateRq{
+  required int32 state = 1;
+  extend Base
+  {
+        optional CCSynCrossStateRq ext = 2049;
+  }
+}
+
+message CCHeartRq{
+  required int32 serverId = 1;
+  extend Base
+  {
+        optional CCHeartRq ext = 2051;
+  }
+}
+
+message CCHeartRs{
+  extend Base
+  {
+        optional CCHeartRs ext = 2052;
+  }
+}
+
+message CCGMSetCrossFormRq{
+  required int32 formNum = 1; // 设置阵型的个数,1 或者 3
+  extend Base
+  {
+        optional CCGMSetCrossFormRq ext = 2053;
+  }
+}
+
+message CCSynCrossFameRq{
+  required string beginTime = 1;
+  required string endTime = 2;
+  repeated CrossFame crossFame = 3;
+  repeated CPFame cpFame = 4;
+  optional CDFame cdFame = 5;
+  optional int32 type = 6; // 1跨服争霸   2跨服军团   3跨服红蓝   4跨服王者
+  extend Base
+  {
+        optional CCSynCrossFameRq ext = 2055;
+  }
+}
+
+message CCGmSynCrossLashRankRq{
+  optional int32 type = 1;  // 1跨服争霸  2 跨服军团  3跨服红蓝  3跨服王者
+  extend Base
+  {
+        optional CCGmSynCrossLashRankRq ext = 2057;
+  }
+}
+
+message CCGetCrossPartyStateRq{
+  required int64 roleId = 1;
+  extend Base
+  {
+    optional CCGetCrossPartyStateRq ext = 2059;
+  }
+}
+
+message CCGetCrossPartyStateRs{
+  required int64 roleId = 1;
+  required string beginTime = 2;
+  required int32 state = 3; // 0未开始   非0表示第几天
+  extend Base
+  {
+    optional CCGetCrossPartyStateRs ext = 2060;
+  }
+}
+
+message CCSynCrossPartyStateRq{
+  required int32 state = 1;  // 1开始  2结束
+  extend Base
+  {
+        optional CCSynCrossPartyStateRq ext = 2061;
+  }
+}
+
+message CCGetCrossPartyServerListRq{
+  required int64 roleId = 1;
+  extend Base
+  {
+    optional CCGetCrossPartyServerListRq ext = 2063;
+  }
+}
+
+message CCGetCrossPartyServerListRs{
+  required int64 roleId = 1;
+  repeated GameServerInfo gameServerInfo = 2;
+  extend Base
+  {
+    optional CCGetCrossPartyServerListRs ext = 2064;
+  }
+}
+
+message CCCrossPartyRegRq{
+    required int64 roleId = 1;
+    required string nick = 2;
+    required int32 level = 3;
+    required int32 warRank = 4;
+    required int32 partyId = 5;
+    required string partyName = 6;
+    required int32 partyLv = 7;
+    optional int32 portrait = 8;// 头像
+    optional int32 myPartySirPortrait = 9;//军团长头像
+	optional int64 gmState = 10;//是否是gm报名
+    extend Base
+    {
+        optional CCCrossPartyRegRq ext = 2065;
+    }
+}
+
+message CCCrossPartyRegRs{
+    required int64 roleId = 1;
+    extend Base
+    {
+        optional CCCrossPartyRegRs ext = 2066;
+    }
+}
+
+message CCGetCPMyRegInfoRq{
+    required int64 roleId = 1;
+    required int32 partyId = 2;
+    extend Base
+    {
+        optional CCGetCPMyRegInfoRq ext = 2067;
+    }
+}
+
+message CCGetCPMyRegInfoRs{
+    required int64 roleId = 1;
+    required bool isReg = 2;
+    extend Base
+    {
+        optional CCGetCPMyRegInfoRs ext = 2068;
+    }
+}
+
+message CCGetCrossPartyMemberRq{
+    required int64 roleId = 1;
+    required int32 warRank = 2;
+    required int32 partyId = 3;
+    extend Base
+    {
+        optional CCGetCrossPartyMemberRq ext = 2069;
+    }
+}
+
+message CCGetCrossPartyMemberRs{
+    required int64 roleId = 1;
+     optional int32 partyNums = 2;  // 已报名军团数
+     optional int32 myPartyMemberNum = 3;   // 我的军团报名人数
+     repeated CPMemberReg cpMemberReg = 4;
+     optional int32 group = 5;  //0暂五 1A  2B  3C 4D
+    extend Base
+    {
+        optional CCGetCrossPartyMemberRs ext = 2070;
+    }
+}
+
+
+message CCGetCrossPartyRq{
+    required int64 roleId = 1;
+    required int32 group = 2;   // 1A 2B 3C 4D
+    extend Base
+    {
+        optional CCGetCrossPartyRq ext = 2071;
+    }
+}
+
+message CCGetCrossPartyRs{
+    required int64 roleId = 1;
+    required int32 group = 2;   // 1A 2B 3C 4D
+    repeated CPPartyInfo cpPartyInfo= 3;  // 跨服军团信息
+    optional int32 totalRegPartyNum = 4; // 总共报名军团数
+    optional int32 groupRegPartyNum = 5; // 当前组报名军团数
+    extend Base
+    {
+        optional CCGetCrossPartyRs ext = 2072;
+    }
+}
+
+message CCGetCPSituationRq{
+    required int64 roleId = 1;
+    required int32 group = 2;  // 1A 2B 3C 4D 5E
+    required int32 page = 3;
+    extend Base
+    {
+        optional CCGetCPSituationRq ext = 2073;
+    }
+}
+
+message CCGetCPSituationRs{
+    required int64 roleId = 1;
+    required int32 group = 2;  // 1A 2B 3C 4D
+    required int32 page = 3;
+    repeated CPRecord cpRecord = 4;
+    extend Base
+    {
+        optional CCGetCPSituationRs ext = 2074;
+    }
+}
+
+message CCGetCPOurServerSituationRq{
+    required int64 roleId = 1;
+    required int32 type = 2;    // 1本服战况 2军团战况 3个人战况
+    required int32 page = 3;
+    optional int32 partyId = 4;
+    extend Base
+    {
+        optional CCGetCPOurServerSituationRq ext = 2075;
+    }
+}
+
+message CCGetCPOurServerSituationRs{
+    required int64 roleId = 1;
+    required int32 type = 2;    // 1本服战况 2军团战况 3个人战况
+    required int32 page = 3;
+    repeated CPRecord cpRecord = 4;
+    extend Base
+    {
+        optional CCGetCPOurServerSituationRs ext = 2076;
+    }
+}
+
+message CCGetCPReportRq{
+  required int64 roleId = 1;
+  required int32 reportKey = 2;
+     extend Base
+    {
+        optional CCGetCPReportRq ext = 2079;
+    }
+}
+
+message CCGetCPReportRs{
+  required int64 roleId = 1;
+  required CPRptAtk cpRptAtk = 2;
+     extend Base
+    {
+        optional CCGetCPReportRs ext = 2080;
+    }
+}
+
+message CCGetCPRankRq{
+    required int64 roleId = 1;
+    required int32 type = 2;    // 1个人排行  2连胜排行   3军团排行
+    required int32 page = 3;
+    extend Base
+    {
+        optional CCGetCPRankRq ext = 2081;
+    }
+}
+
+message CCGetCPRankRs{
+    required int64 roleId = 1;
+    required int32 type = 2;    // 1个人排行  2连胜排行   3军团排行
+    required int32 page = 3;
+    repeated CPRank cpRank = 4; // 排行信息
+    optional CPRank mySelf = 5; // 我的排行
+    optional int32 myJiFen = 6; // 我的积分
+    extend Base
+    {
+        optional CCGetCPRankRs ext = 2082;
+    }
+}
+
+
+message CCReceiveCPRewardRq{
+    required int64 roleId = 1;
+    required int32 type = 2;  // 1个人排行  2连胜排行
+    extend Base
+    {
+        optional CCReceiveCPRewardRq ext = 2083;
+    }
+}
+
+message CCReceiveCPRewardRs{
+    required int64 roleId = 1;
+    required int32 type = 2;
+    optional int32 rank = 3;
+    extend Base
+    {
+        optional CCReceiveCPRewardRs ext = 2084;
+    }
+}
+
+
+message CCGetCPShopRq{
+    required int64 roleId = 1;
+    extend Base
+    {
+        optional CCGetCPShopRq ext = 2085;
+    }
+}
+
+message CCGetCPShopRs{
+    required int64 roleId = 1;
+    required int32 jifen = 2;          // 玩家拥有的积分
+    repeated CrossShopBuy buy = 3;     // 玩家在跨服商店的购买信息
+    extend Base
+    {
+        optional CCGetCPShopRs ext = 2086;
+    }
+}
+
+message CCExchangeCPShopRq{
+    required int64 roleId = 1;
+    required int32 shopId = 2;              // 要兑换的商品id
+    required int32 count = 3;               // 要兑换的商品数量
+    extend Base
+    {
+        optional CCExchangeCPShopRq ext = 2087;
+    }
+}
+
+message CCExchangeCPShopRs{
+    required int64 roleId = 1;
+    required int32 jifen = 2;          // 兑换后玩家剩余的积分
+    required int32 shopId = 3;              // 兑换的商品id
+    optional int32 count = 4;               // 玩家兑换数量
+    optional int32 restNum = 5;             // 珍品商品当前剩余数量
+    extend Base
+    {
+        optional CCExchangeCPShopRs ext = 2088;
+    }
+}
+
+message CCSynCPSituationRq{
+    required int32 gruop = 1;     // 1A 2B 3C 4D 5E(决赛)
+    required CPRecord cpRecord = 2;
+    extend Base
+    {
+        optional CCSynCPSituationRq ext = 2091;
+    }
+}
+
+message CCGetCPFormRq{
+    required int64 roleId = 1;
+    extend Base
+    {
+        optional CCGetCPFormRq ext = 2095;
+    }
+}
+
+message CCGetCPFormRs{
+    required int64 roleId = 1;
+    optional Form form = 2;
+    optional int64 fight = 3;
+    extend Base
+    {
+        optional CCGetCPFormRs ext = 2096;
+    }
+}
+
+message CCSetCPFormRq{
+    required int64 roleId = 1;
+    required Form form = 2;
+    required int64 fight = 3;
+    repeated Tank tank = 4;
+    repeated Hero hero = 5;
+    required int32 maxTankNum = 6;
+    repeated Equip equip = 7;
+    repeated Part part = 8;
+    repeated Science science = 9;
+    repeated Skill skill = 10;
+    repeated Effect effect = 11;
+    required int32 staffingId = 12;
+    repeated EnergyStoneInlay inlay = 13;
+    repeated MilitaryScienceGrid militaryScienceGrid = 14;
+    repeated MilitaryScience militaryScience  = 15;
+    repeated Medal medal = 16;                      // 勋章
+    repeated MedalBouns medalBouns = 17;            // 勋章展厅
+    repeated AwakenHero awakenHero = 18;            // 觉醒英雄
+    repeated LordEquip leq = 19;                    // 军备信息
+    required int32 militaryRank = 20;               // 军衔
+    repeated SecretWeapon secretWeapon = 21;        // 秘密武器
+    repeated AttackEffectPb atkEft = 22;            // 攻击特效
+	repeated GraduateInfoPb graduateInfo = 23;	// 作战实验室科技
+	repeated Science partyScience = 24;//军团科技列表
+	required ThreeInt energyCore=25;     //能源核心 v1 等级 v2 阶段
+    extend Base
+    {
+        optional CCSetCPFormRq ext = 2097;
+    }
+}
+
+message CCSetCPFormRs{
+    required int64 roleId = 1;
+    required Form form = 2;
+    required int64 fight = 3;
+    extend Base
+    {
+        optional CCSetCPFormRs ext = 2098;
+    }
+}
+
+message CCGMSetCPFormRq{
+    required int32 type = 1;  // 0给所有报名玩家设置,1给本服玩家设置
+    extend Base
+    {
+        optional CCGMSetCPFormRq ext = 2099;
+    }
+}
+
+message CCGetCPTrendRq{
+    required int64 roleId = 1;
+    extend Base
+    {
+        optional CCGetCPTrendRq ext = 2101;
+    }
+}
+
+message CCGetCPTrendRs{
+    required int64 roleId = 1;
+    required int32 jifen = 2;
+    repeated CrossTrend crossTrend = 3;
+    extend Base
+    {
+        optional CCGetCPTrendRs ext = 2102;
+    }
+}
+
+message CCCanQuitPartyRq{
+  required int64 roleId = 1;
+  required int32 type = 2;  // 1自己退出  2被踢
+  optional int64 cleanRoleId = 3; // 当被踢时需要传
+    extend Base
+    {
+        optional CCCanQuitPartyRq ext = 2103;
+    }
+}
+
+message CCCanQuitPartyRs{
+    required int64 roleId = 1;
+    required bool isReg = 2;  // true报名  false未报名
+    required int32 type = 3;  // 1自己退出  2被踢
+    optional int64 cleanRoleId = 4; // 当被踢时需要传
+    extend Base
+    {
+        optional CCCanQuitPartyRs ext = 2104;
+    }
+}
+
+message CCGMAddJiFenRq{
+    required int64 roleId = 1;
+    required int32 addJifen = 2;
+    required int32 ccType = 3;  // 1跨服争霸  2跨服军团
+    extend Base
+    {
+        optional CCGMAddJiFenRq ext = 2105;
+    }
+}
+
+message CCGetCDStateRq { // 获取跨服军演状态
+    required int64 roleId = 1;
+    extend Base
+    {
+        optional CCGetCDStateRq ext = 2121;
+    }
+}
+
+message CCGetCDStateRs {
+    required int64 roleId = 1;
+    optional string durationTime = 2;       // 比赛时间
+    optional int32 state = 3;               // 当前状态，0 未开始或已结束，1 报名，2 小组赛，3 淘汰赛，4 领奖兑换时间
+    optional int32 reg = 4;                 // 玩家是否报名，0 未报名， 1 已报名
+    optional CDMyTeamData teamData = 5;     // 我的分组信息
+    extend Base
+    {
+        optional CCGetCDStateRs ext = 2122;
+    }
+}
+
+message CCSynCDStateRq { // 通知跨服军演状态
+    required int32 state = 1;
+    extend Base
+    {
+        optional CCSynCDStateRq ext = 2123;
+    }
+}
+
+message CCGetCDServerListRq { // 获取跨服军演服务器列表
+    required int64 roleId = 1;
+    extend Base
+    {
+        optional CCGetCDServerListRq ext = 2125;
+    }
+}
+
+message CCGetCDServerListRs {
+    required int64 roleId = 1;
+    repeated GameServerInfo gameServerInfo = 2;
+    extend Base
+    {
+        optional CCGetCDServerListRs ext = 2126;
+    }
+}
+
+message CCCrossDrillRegRq { // 跨服军演战报名
+    required int64 roleId = 1;
+    required string nick = 2;
+    required int32 level = 3;
+    required int64 fight = 4;
+    required int32 staffingId = 5;      // 编制id
+    required int32 staffingLv = 6;      // 编制等级
+    extend Base
+    {
+        optional CCCrossDrillRegRq ext = 2127;
+    }
+}
+
+message CCCrossDrillRegRs {
+    required int64 roleId = 1;
+    extend Base
+    {
+        optional CCCrossDrillRegRs ext = 2128;
+    }
+}
+
+message CCGetCDBetRq { // 获取跨服军演下注信息
+    required int64 roleId = 1;
+    extend Base
+    {
+        optional CCGetCDBetRq ext = 2129;
+    }
+}
+
+message CCGetCDBetRs {
+    required int64 roleId = 1;
+    repeated CDBattleBet bet = 2;
+    extend Base
+    {
+        optional CCGetCDBetRs ext = 2130;
+    }
+}
+
+message CCGetCDMoraleRq { // 获取跨服军演本服士气数据
+    required int64 roleId = 1;
+    extend Base
+    {
+        optional CCGetCDMoraleRq ext = 2131;
+    }
+}
+
+message CCGetCDMoraleRs {
+    required int64 roleId = 1;
+    repeated CDMorale morale = 2;
+    extend Base
+    {
+        optional CCGetCDMoraleRs ext = 2132;
+    }
+}
+
+message CCImproveCDMoraleRq { // 提高跨服军演士气
+    required int64 roleId = 1;
+    required int32 buffId = 2;              // 要提升的buffId
+    required int32 gold = 3;                // 玩家拥有金币数量
+    required int64 resource = 4;            // 玩家拥有的资源数量
+    extend Base
+    {
+        optional CCImproveCDMoraleRq ext = 2133;
+    }
+}
+
+message CCImproveCDMoraleRs {
+    required int64 roleId = 1;
+    optional CDMorale morale = 2;           // 鼓舞士气后该buff当前的情况
+    optional int32 gold = 3;                // 玩家需要消耗的金币数量
+    optional int64 resource = 4;            // 玩家需要消耗的资源数量
+    extend Base
+    {
+        optional CCImproveCDMoraleRs ext = 2134;
+    }
+}
+
+message CCGetCDFinalRankRq { // 获取跨服军演总排行榜
+    required int64 roleId = 1;
+    extend Base
+    {
+        optional CCGetCDFinalRankRq ext = 2135;
+    }
+}
+
+message CCGetCDFinalRankRs {
+    required int64 roleId = 1;
+    optional int32 state = 2;               // -1 未结束，0 不能领（无领取资格），1 已领取， 2 未领取
+    repeated CDFinalRank rank = 3;          // 排行榜数据
+    extend Base
+    {
+        optional CCGetCDFinalRankRs ext = 2136;
+    }
+}
+
+message CCReceiveCDFinalRankRq { // 领取跨服军演总排行榜奖励
+    required int64 roleId = 1;
+    extend Base
+    {
+        optional CCReceiveCDFinalRankRq ext = 2137;
+    }
+}
+
+message CCReceiveCDFinalRankRs {
+    required int64 roleId = 1;
+    optional int32 rank = 2;                // 领取第几名的奖励
+    extend Base
+    {
+        optional CCReceiveCDFinalRankRs ext = 2138;
+    }
+}
+
+message CCGetCDDistributionRq { // 获取跨服军演小组赛各服务器分布情况
+    required int64 roleId = 1;
+    extend Base
+    {
+        optional CCGetCDDistributionRq ext = 2139;
+    }
+}
+
+message CCGetCDDistributionRs {
+    required int64 roleId = 1;
+    repeated CDTeamServerDistribution distribute = 2;   // 小组匹配信息
+    extend Base
+    {
+        optional CCGetCDDistributionRs ext = 2140;
+    }
+}
+
+message CCGetCDTeamScoreRq { // 获取跨服军演的小组积分信息
+    required int64 roleId = 1;
+    extend Base
+    {
+        optional CCGetCDTeamScoreRq ext = 2141;
+    }
+}
+
+message CCGetCDTeamScoreRs {
+    required int64 roleId = 1;
+    repeated CDTeamScore teamScore = 2;     // 小组积分信息
+    extend Base
+    {
+        optional CCGetCDTeamScoreRs ext = 2142;
+    }
+}
+
+message CCGetCDHeroRankRq { // 获取跨服军演小组赛英雄榜信息
+    required int64 roleId = 1;
+    extend Base
+    {
+        optional CCGetCDHeroRankRq ext = 2143;
+    }
+}
+
+message CCGetCDHeroRankRs {
+    required int64 roleId = 1;
+    optional int32 rank = 2;                // 玩家排名，0为未上榜
+    optional int32 state = 3;               // -1 未结束，0 无领取资格，1 已领取，2 未领取
+    repeated CDHeroRank heroRank = 4;       // 小组赛英雄榜信息
+    extend Base
+    {
+        optional CCGetCDHeroRankRs ext = 2144;
+    }
+}
+
+message CCReceiveCDHeroRankRq { // 领取跨服军演小组赛英雄榜奖励
+    required int64 roleId = 1;
+    extend Base
+    {
+        optional CCReceiveCDHeroRankRq ext = 2145;
+    }
+}
+
+message CCReceiveCDHeroRankRs {
+    required int64 roleId = 1;
+    optional int32 rank = 2;                // 领取第几名的奖励
+    extend Base
+    {
+        optional CCReceiveCDHeroRankRs ext = 2146;
+    }
+}
+
+message CCGetCDTeamDataRq { // 获取跨服军演某个小组的战场数据
+    required int64 roleId = 1;
+    required int32 teamId = 2;              // 小组id，组别
+    extend Base
+    {
+        optional CCGetCDTeamDataRq ext = 2147;
+    }
+}
+
+message CCGetCDTeamDataRs {
+    required int64 roleId = 1;
+    repeated CDTeamBattleData battleData = 3;   // 战场数据
+    extend Base
+    {
+        optional CCGetCDTeamDataRs ext = 2148;
+    }
+}
+
+message CCGetCDBattlefieldRq { // 获取跨服军演某个战场的战场信息
+    required int64 roleId = 1;
+    required int32 fieldId = 2;             // 战场id，在整个跨服军演活动中，每个战场唯一一个id
+    extend Base
+    {
+        optional CCGetCDBattlefieldRq ext = 2149;
+    }
+}
+
+message CCGetCDBattlefieldRs {
+    required int64 roleId = 1;
+    optional int32 fieldId = 2;                 // 战场id，在整个跨服军演活动中，每个战场唯一一个id
+    optional int32 fieldStatus = 3;             // 战场状态，0 未开启，1 报名，2 备战，3 上路战斗，4 中路战斗，5 下路战斗中，6 已结束
+    optional string redServerName = 4;          // 红方服务器名称，对应淘汰战中的c1
+    optional string blueServerName = 5;         // 蓝方服务器名称
+    optional int32 ratio = 6;                   // 红方士气/（红方+蓝方士气）的百分比
+    repeated CDBattleStronghold stronghold = 7; // 战场各据点的信息
+    extend Base
+    {
+        optional CCGetCDBattlefieldRs ext = 2150;
+    }
+}
+
+message CCGetCDRecordRq { // 获取跨服军演某一路（据点）的战报
+    required int64 roleId = 1;
+    required int32 strongholdId = 2;        // 据点id，唯一id
+    required int32 type = 3;                // 1 据点战报，2 个人战报
+    required int32 page = 4;                // 获取第几页的战报，每一页显示20个，第一页page=0，第二页page=1
+    extend Base
+    {
+        optional CCGetCDRecordRq ext = 2151;
+    }
+}
+
+message CCGetCDRecordRs {
+    required int64 roleId = 1;
+    optional int32 strongholdId = 2;        // 据点id，唯一id
+    optional int32 type = 3;                // 1 据点战报，2 个人战报
+    optional int32 page = 4;                // 获取第几页的战报，每一页显示20个，第一页page=0，第二页page=1
+    repeated CDRecord record = 5;           // 具体战报
+    extend Base
+    {
+        optional CCGetCDRecordRs ext = 2152;
+    }
+}
+
+message CCGetCDReportRq { // 获取跨服军演的战报详情
+    required int64 roleId = 1;
+    required int32 reportKey = 2;           // 战报key
+    extend Base
+    {
+        optional CCGetCDReportRq ext = 2153;
+    }
+}
+
+message CCGetCDReportRs {
+    required int64 roleId = 1;
+    optional RptAtkFortress rptAtkFortress = 2;
+    extend Base
+    {
+        optional CCGetCDReportRs ext = 2154;
+    }
+}
+
+message CCGetCDStrongholdRankRq { // 获取跨服军演某个战场某一路战斗的排行榜
+    required int64 roleId = 1;
+    required int32 strongholdId = 2;        // 据点id，唯一id
+    extend Base
+    {
+        optional CCGetCDStrongholdRankRq ext = 2155;
+    }
+}
+
+message CCGetCDStrongholdRankRs {
+    required int64 roleId = 1;
+    optional int32 strongholdId = 2;        // 据点id，唯一id
+    optional int32 myRank = 3;              // 玩家排行，0为未上榜
+    optional int32 winNum = 4;              // 玩家胜利次数
+    optional int32 lostNum = 5;             // 玩家失败次数
+    repeated CDStrongholdRank rank = 6;     // 排行信息
+    extend Base
+    {
+        optional CCGetCDStrongholdRankRs ext = 2156;
+    }
+}
+
+message CCGetCDTankRq { // 获取跨服军演的演习军力
+    required int64 roleId = 1;
+    extend Base
+    {
+        optional CCGetCDTankRq ext = 2157;
+    }
+}
+
+message CCGetCDTankRs {
+    required int64 roleId = 1;
+    repeated Tank tank = 2;                 // 玩家的跨服军演坦克信息
+    extend Base
+    {
+        optional CCGetCDTankRs ext = 2158;
+    }
+}
+
+message CCExchangeCDTankRq { // 兑换跨服军演的坦克
+    required int64 roleId = 1;
+    required int32 tankId = 2;              // 要兑换的基地坦克id
+    required int32 count = 3;               // 要兑换的基地坦克数量
+    extend Base
+    {
+        optional CCExchangeCDTankRq ext = 2159;
+    }
+}
+
+message CCExchangeCDTankRs {
+    required int64 roleId = 1;
+    optional int32 tankId = 2;              // 兑换到的演习坦克id
+    optional int32 cost = 3;                // 兑换需要消耗的基地坦克数量
+    optional int32 count = 4;               // 演习军力中该坦克当前的坦克数量
+    extend Base
+    {
+        optional CCExchangeCDTankRs ext = 2160;
+    }
+}
+
+message CCGetCDFormRq { // 获取跨服军演的阵型
+    required int64 roleId = 1;
+    required int32 fieldId = 2;                 // 战场id，在整个跨服军演活动中，每个战场唯一一个id
+    extend Base
+    {
+        optional CCGetCDFormRq ext = 2161;
+    }
+}
+
+message CCGetCDFormRs {
+    required int64 roleId = 1;
+    repeated CDStrongholdFormData form = 2;  // 所有布阵信息
+    extend Base
+    {
+        optional CCGetCDFormRs ext = 2162;
+    }
+}
+
+message CCSetCDFormRq { // 设置跨服军演的阵型
+    required int64 roleId = 1;
+    required int32 strongholdId = 2;        // 据点id，唯一id
+    required Form form = 3;                 // 阵型，阵型类型，1 本据点部队1，2 本据点部队2
+    optional bool clean = 4;
+    required int64 fight = 5;
+    required int32 staffingLv = 6;
+    required int32 maxTankNum = 7;
+    repeated Hero hero = 8;
+    repeated Part part = 9;
+    repeated Equip equip = 10;
+    repeated Skill skill = 11;
+    repeated Effect effect = 12;
+    repeated Science science = 13;
+    repeated EnergyStoneInlay inlay = 14;
+    repeated MilitaryScience militaryScience  = 15;
+    repeated MilitaryScienceGrid militaryScienceGrid = 16;
+    repeated Science partyScience = 17;     // 玩家所在军团的军团科技
+    required int32 staffingId = 18;
+    repeated Medal medal = 19;              // 勋章
+    repeated MedalBouns medalBouns = 20;    // 勋章展厅
+    repeated AwakenHero awakenHeros = 21;   // 觉醒将领
+    repeated LordEquip leq = 22;            // 军备信息
+    required int32 militaryRank = 23;       // 军衔
+    extend Base
+    {
+        optional CCSetCDFormRq ext = 2163;
+    }
+}
+
+message CCSetCDFormRs {
+    required int64 roleId = 1;
+    optional int32 strongholdId = 2;        // 据点id，唯一id
+    optional Form form = 3;                 // 设置成功后的阵型
+    optional int64 fight = 4;
+    extend Base
+    {
+        optional CCSetCDFormRs ext = 2164;
+    }
+}
+
+message CCGetCDKnockoutRq { // 获取跨服军演淘汰赛对战信息
+    required int64 roleId = 1;
+    extend Base
+    {
+        optional CCGetCDKnockoutRq ext = 2165;
+    }
+}
+
+message CCGetCDKnockoutRs {
+    required int64 roleId = 1;
+    optional int32 stage = 2;               // 当前阶段，0 淘汰赛未开始，1 第一轮，2 第二轮，3 第三轮（半决赛），4 第四轮（决赛）， 5 战斗已全部结束
+    repeated CDKnockoutBattle battle = 3;   // 各个战斗分组的匹配数据
+    extend Base
+    {
+        optional CCGetCDKnockoutRs ext = 2166;
+    }
+}
+
+message CCCrossDrillBetRq { // 跨服军演下注
+    required int64 roleId = 1;
+    required int32 battleGroupId = 2;       // 淘汰赛组别，1-8组     9-12组    13-14组    15组
+    required int32 target = 3;              // 下注目标，1 c1,2 c2
+    required int32 betNum = 4;              // 下注金额
+    extend Base
+    {
+        optional CCCrossDrillBetRq ext = 2167;
+    }
+}
+
+message CCCrossDrillBetRs {
+    required int64 roleId = 1;
+    optional int32 battleGroupId = 2;       // 淘汰赛组别，1-8组     9-12组    13-14组    15组
+    optional int32 target = 3;              // 下注目标，1 c1,2 c2
+    optional int32 betNum = 4;              // 下注后的总下注金额
+    optional int32 betCount = 5;            // 下注后玩家总下注次数
+    optional int32 cost = 6;                // 本次下注消耗金币数
+    extend Base
+    {
+        optional CCCrossDrillBetRs ext = 2168;
+    }
+}
+
+message CCReceiveCDBetRq { // 领取跨服军演下注奖励
+    required int64 roleId = 1;
+    required int32 battleGroupId = 2;
+    extend Base
+    {
+        optional CCReceiveCDBetRq ext = 2169;
+    }
+}
+
+message CCReceiveCDBetRs {
+    required int64 roleId = 1;
+    optional int32 battleGroupId = 2;
+    optional int32 jifen = 3;               // 玩家当前总积分
+    extend Base
+    {
+        optional CCReceiveCDBetRs ext = 2170;
+    }
+}
+
+message CCGetCDShopRq { // 获取跨服军演商店数据
+    required int64 roleId = 1;
+    extend Base
+    {
+        optional CCGetCDShopRq ext = 2171;
+    }
+}
+
+message CCGetCDShopRs {
+    required int64 roleId = 1;
+    optional int32 jifen = 2;               // 玩家当前总积分
+    repeated CrossShopBuy buy = 3;          // 商店购买情况
+    optional bool canBuyTreasure = 4;       // 玩家是否有资格购买珍品
+    extend Base
+    {
+        optional CCGetCDShopRs ext = 2172;
+    }
+}
+
+message CCExchangeCDShopRq { // 兑换跨服军演商店的物品
+    required int64 roleId = 1;
+    required int32 shopId = 2;              // 要兑换的商品id
+    required int32 count = 3;               // 要兑换的商品数量
+    extend Base
+    {
+        optional CCExchangeCDShopRq ext = 2173;
+    }
+}
+
+message CCExchangeCDShopRs {
+    required int64 roleId = 1;
+    optional int32 jifen = 2;               // 玩家当前总积分
+    optional int32 shopId = 3;              // 兑换的商品id
+    optional int32 count = 4;               // 玩家兑换数量
+    optional int32 restNum = 5;             // 珍品商品当前剩余数量
+    extend Base
+    {
+        optional CCExchangeCDShopRs ext = 2174;
+    }
+}
+
+message CCGetCDTeamBattleResultRq { // 获取跨服军演某队战斗结果数据
+    required int64 roleId = 1;
+    required int32 teamId = 2;              // 小组id，组别
+    extend Base
+    {
+        optional CCGetCDTeamBattleResultRq ext = 2175;
+    }
+}
+
+message CCGetCDTeamBattleResultRs {
+    required int64 roleId = 1;
+    repeated TwoInt battleData = 2; //  据点战斗结果，-1 未结束，1 红方胜，2 蓝方胜
+    extend Base
+    {
+        optional CCGetCDTeamBattleResultRs ext = 2176;
+    }
+}

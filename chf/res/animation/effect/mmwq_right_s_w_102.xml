@@ -1,0 +1,108 @@
+<skeleton name="mmwq_zhuangjiaxian" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="mmwq_right_s_w_102">
+   <b name="1" x="0.5" y="-0.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0">
+    <d name="part-mmgq_zhuangjiaxian0001"/>
+    <d name="part-mmgq_zhuangjiaxian0003"/>
+    <d name="part-mmgq_zhuangjiaxian0005"/>
+    <d name="part-mmgq_zhuangjiaxian0007"/>
+    <d name="part-mmgq_zhuangjiaxian0009"/>
+    <d name="part-mmgq_zhuangjiaxian0011"/>
+    <d name="part-mmgq_zhuangjiaxian0013"/>
+    <d name="part-mmgq_zhuangjiaxian0015"/>
+    <d name="part-mmgq_zhuangjiaxian0017"/>
+    <d name="part-mmgq_zhuangjiaxian0019"/>
+    <d name="part-mmgq_zhuangjiaxian0021"/>
+    <d name="part-mmgq_zhuangjiaxian0023"/>
+    <d name="part-mmgq_zhuangjiaxian0025"/>
+    <d name="part-mmgq_zhuangjiaxian0027"/>
+    <d name="part-mmgq_zhuangjiaxian0029"/>
+    <d name="part-mmgq_zhuangjiaxian0031"/>
+    <d name="part-mmgq_zhuangjiaxian0033"/>
+    <d name="part-mmgq_zhuangjiaxian0035"/>
+    <d name="part-mmgq_zhuangjiaxian0037"/>
+    <d name="part-mmgq_zhuangjiaxian0039"/>
+    <d name="part-mmgq_zhuangjiaxian0041"/>
+    <d name="part-mmgq_zhuangjiaxian0043"/>
+    <d name="part-mmgq_zhuangjiaxian0045"/>
+    <d name="part-mmgq_zhuangjiaxian0047"/>
+    <d name="part-mmgq_zhuangjiaxian0049"/>
+    <d name="part-mmgq_zhuangjiaxian0051"/>
+    <d name="part-mmgq_zhuangjiaxian0053"/>
+    <d name="part-mmgq_zhuangjiaxian0055"/>
+    <d name="part-mmgq_zhuangjiaxian0057"/>
+    <d name="part-mmgq_zhuangjiaxian0059"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="mmwq_right_s_w_102">
+   <mov name="start" dr="120" to="0" drTW="120" lp="1" twE="NaN">
+    <b name="1" sc="1" dl="0">
+     <f x="0.5" y="-0.5" cocos2d_x="0.5" cocos2d_y="-0.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="4"/>
+     <f x="0.5" y="-0.5" cocos2d_x="0.5" cocos2d_y="-0.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="1" dr="4"/>
+     <f x="0.5" y="-0.5" cocos2d_x="0.5" cocos2d_y="-0.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="2" dr="4"/>
+     <f x="0.5" y="-0.5" cocos2d_x="0.5" cocos2d_y="-0.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="3" dr="4"/>
+     <f x="0.5" y="-0.5" cocos2d_x="0.5" cocos2d_y="-0.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="4" dr="4"/>
+     <f x="0.5" y="-0.5" cocos2d_x="0.5" cocos2d_y="-0.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="5" dr="4"/>
+     <f x="0.5" y="-0.5" cocos2d_x="0.5" cocos2d_y="-0.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="6" dr="4"/>
+     <f x="0.5" y="-0.5" cocos2d_x="0.5" cocos2d_y="-0.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="7" dr="4"/>
+     <f x="0.5" y="-0.5" cocos2d_x="0.5" cocos2d_y="-0.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="8" dr="4"/>
+     <f x="0.5" y="-0.5" cocos2d_x="0.5" cocos2d_y="-0.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="9" dr="4"/>
+     <f x="0.5" y="-0.5" cocos2d_x="0.5" cocos2d_y="-0.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="10" dr="4"/>
+     <f x="0.5" y="-0.5" cocos2d_x="0.5" cocos2d_y="-0.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="11" dr="4"/>
+     <f x="0.5" y="-0.5" cocos2d_x="0.5" cocos2d_y="-0.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="12" dr="4"/>
+     <f x="0.5" y="-0.5" cocos2d_x="0.5" cocos2d_y="-0.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="13" dr="4"/>
+     <f x="0.5" y="-0.5" cocos2d_x="0.5" cocos2d_y="-0.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="14" dr="4"/>
+     <f x="0.5" y="-0.5" cocos2d_x="0.5" cocos2d_y="-0.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="15" dr="4"/>
+     <f x="0.5" y="-0.5" cocos2d_x="0.5" cocos2d_y="-0.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="16" dr="4"/>
+     <f x="0.5" y="-0.5" cocos2d_x="0.5" cocos2d_y="-0.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="17" dr="4"/>
+     <f x="0.5" y="-0.5" cocos2d_x="0.5" cocos2d_y="-0.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="18" dr="4"/>
+     <f x="0.5" y="-0.5" cocos2d_x="0.5" cocos2d_y="-0.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="19" dr="4"/>
+     <f x="0.5" y="-0.5" cocos2d_x="0.5" cocos2d_y="-0.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="20" dr="4"/>
+     <f x="0.5" y="-0.5" cocos2d_x="0.5" cocos2d_y="-0.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="21" dr="4"/>
+     <f x="0.5" y="-0.5" cocos2d_x="0.5" cocos2d_y="-0.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="22" dr="4"/>
+     <f x="0.5" y="-0.5" cocos2d_x="0.5" cocos2d_y="-0.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="23" dr="4"/>
+     <f x="0.5" y="-0.5" cocos2d_x="0.5" cocos2d_y="-0.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="24" dr="4"/>
+     <f x="0.5" y="-0.5" cocos2d_x="0.5" cocos2d_y="-0.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="25" dr="4"/>
+     <f x="0.5" y="-0.5" cocos2d_x="0.5" cocos2d_y="-0.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="26" dr="4"/>
+     <f x="0.5" y="-0.5" cocos2d_x="0.5" cocos2d_y="-0.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="27" dr="4"/>
+     <f x="0.5" y="-0.5" cocos2d_x="0.5" cocos2d_y="-0.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="28" dr="4"/>
+     <f x="0.5" y="-0.5" cocos2d_x="0.5" cocos2d_y="-0.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="29" dr="4"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="mmwq_zhuangjiaxian" width="2048" height="1024">
+  <SubTexture name="part-mmgq_zhuangjiaxian0059" width="309" height="173" cocos2d_pX="154.5" cocos2d_pY="86.5" x="311" y="0"/>
+  <SubTexture name="part-mmgq_zhuangjiaxian0057" width="309" height="173" cocos2d_pX="154.5" cocos2d_pY="86.5" x="1555" y="525"/>
+  <SubTexture name="part-mmgq_zhuangjiaxian0055" width="309" height="173" cocos2d_pX="154.5" cocos2d_pY="86.5" x="933" y="0"/>
+  <SubTexture name="part-mmgq_zhuangjiaxian0053" width="309" height="173" cocos2d_pX="154.5" cocos2d_pY="86.5" x="1555" y="350"/>
+  <SubTexture name="part-mmgq_zhuangjiaxian0051" width="309" height="173" cocos2d_pX="154.5" cocos2d_pY="86.5" x="1555" y="0"/>
+  <SubTexture name="part-mmgq_zhuangjiaxian0049" width="309" height="173" cocos2d_pX="154.5" cocos2d_pY="86.5" x="1244" y="700"/>
+  <SubTexture name="part-mmgq_zhuangjiaxian0047" width="309" height="173" cocos2d_pX="154.5" cocos2d_pY="86.5" x="311" y="175"/>
+  <SubTexture name="part-mmgq_zhuangjiaxian0045" width="309" height="173" cocos2d_pX="154.5" cocos2d_pY="86.5" x="311" y="525"/>
+  <SubTexture name="part-mmgq_zhuangjiaxian0043" width="309" height="173" cocos2d_pX="154.5" cocos2d_pY="86.5" x="933" y="175"/>
+  <SubTexture name="part-mmgq_zhuangjiaxian0041" width="309" height="173" cocos2d_pX="154.5" cocos2d_pY="86.5" x="311" y="700"/>
+  <SubTexture name="part-mmgq_zhuangjiaxian0039" width="309" height="173" cocos2d_pX="154.5" cocos2d_pY="86.5" x="1555" y="175"/>
+  <SubTexture name="part-mmgq_zhuangjiaxian0037" width="309" height="173" cocos2d_pX="154.5" cocos2d_pY="86.5" x="933" y="525"/>
+  <SubTexture name="part-mmgq_zhuangjiaxian0035" width="309" height="173" cocos2d_pX="154.5" cocos2d_pY="86.5" x="311" y="350"/>
+  <SubTexture name="part-mmgq_zhuangjiaxian0033" width="309" height="173" cocos2d_pX="154.5" cocos2d_pY="86.5" x="1555" y="700"/>
+  <SubTexture name="part-mmgq_zhuangjiaxian0031" width="309" height="173" cocos2d_pX="154.5" cocos2d_pY="86.5" x="933" y="350"/>
+  <SubTexture name="part-mmgq_zhuangjiaxian0029" width="309" height="173" cocos2d_pX="154.5" cocos2d_pY="86.5" x="0" y="0"/>
+  <SubTexture name="part-mmgq_zhuangjiaxian0027" width="309" height="173" cocos2d_pX="154.5" cocos2d_pY="86.5" x="622" y="0"/>
+  <SubTexture name="part-mmgq_zhuangjiaxian0025" width="309" height="173" cocos2d_pX="154.5" cocos2d_pY="86.5" x="1244" y="0"/>
+  <SubTexture name="part-mmgq_zhuangjiaxian0023" width="309" height="173" cocos2d_pX="154.5" cocos2d_pY="86.5" x="0" y="175"/>
+  <SubTexture name="part-mmgq_zhuangjiaxian0021" width="309" height="173" cocos2d_pX="154.5" cocos2d_pY="86.5" x="622" y="175"/>
+  <SubTexture name="part-mmgq_zhuangjiaxian0019" width="309" height="173" cocos2d_pX="154.5" cocos2d_pY="86.5" x="1244" y="175"/>
+  <SubTexture name="part-mmgq_zhuangjiaxian0017" width="309" height="173" cocos2d_pX="154.5" cocos2d_pY="86.5" x="0" y="350"/>
+  <SubTexture name="part-mmgq_zhuangjiaxian0015" width="309" height="173" cocos2d_pX="154.5" cocos2d_pY="86.5" x="622" y="350"/>
+  <SubTexture name="part-mmgq_zhuangjiaxian0013" width="309" height="173" cocos2d_pX="154.5" cocos2d_pY="86.5" x="1244" y="350"/>
+  <SubTexture name="part-mmgq_zhuangjiaxian0011" width="309" height="173" cocos2d_pX="154.5" cocos2d_pY="86.5" x="0" y="525"/>
+  <SubTexture name="part-mmgq_zhuangjiaxian0009" width="309" height="173" cocos2d_pX="154.5" cocos2d_pY="86.5" x="622" y="525"/>
+  <SubTexture name="part-mmgq_zhuangjiaxian0007" width="309" height="173" cocos2d_pX="154.5" cocos2d_pY="86.5" x="1244" y="525"/>
+  <SubTexture name="part-mmgq_zhuangjiaxian0005" width="309" height="173" cocos2d_pX="154.5" cocos2d_pY="86.5" x="0" y="700"/>
+  <SubTexture name="part-mmgq_zhuangjiaxian0003" width="309" height="173" cocos2d_pX="154.5" cocos2d_pY="86.5" x="622" y="700"/>
+  <SubTexture name="part-mmgq_zhuangjiaxian0001" width="309" height="173" cocos2d_pX="154.5" cocos2d_pY="86.5" x="933" y="700"/>
+ </TextureAtlas>
+</skeleton>

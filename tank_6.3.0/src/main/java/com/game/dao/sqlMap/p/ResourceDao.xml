@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="ResourceDao">
+	<select id="selectResource" parameterType="Long" resultType="Resource">
+		select 
+		lordId,iron,oil,copper,silicon,stone,ironOut,oilOut,copperOut,siliconOut,stoneOut,
+		ironOutF,oilOutF,copperOutF,siliconOutF,stoneOutF,ironMax,oilMax,copperMax,siliconMax,stoneMax,storeF,tIron,tOil,tCopper,tSilicon,tStone,storeTime 
+		from p_resource where lordId=#{lordId}
+	</select>
+
+	<!-- <update id="updateResource" parameterType="Resource"> update p_resource set iron=#{iron},oil=#{oil},copper=#{copper},silicon=#{silicon},stone=#{stone}, tIron=#{tIron},tOil=#{tOil},tCopper=#{tCopper},tSilicon=#{tSilicon},tStone=#{tStone},storeTime=#{storeTime} 
+		where lordId=#{lordId} </update> -->
+
+	<update id="updateResource" parameterType="Resource">
+		update p_resource set iron=#{iron},oil=#{oil},copper=#{copper},silicon=#{silicon},stone=#{stone},
+		ironOut=#{ironOut},oilOut=#{oilOut},copperOut=#{copperOut},siliconOut=#{siliconOut},stoneOut=#{stoneOut},
+		ironOutF=#{ironOutF},oilOutF=#{oilOutF},copperOutF=#{copperOutF},siliconOutF=#{siliconOutF},stoneOutF=#{stoneOutF},
+		ironMax=#{ironMax},oilMax=#{oilMax},copperMax=#{copperMax},siliconMax=#{siliconMax},stoneMax=#{stoneMax},
+		storeF=#{storeF},
+		tIron=#{tIron},tOil=#{tOil},tCopper=#{tCopper},tSilicon=#{tSilicon},tStone=#{tStone},storeTime=#{storeTime} where lordId=#{lordId}
+	</update>
+
+	<update id="updateOut" parameterType="Resource">
+		update p_resource set
+		ironOut=#{ironOut},oilOut=#{oilOut},copperOut=#{copperOut},siliconOut=#{siliconOut},stoneOut=#{stoneOut} where lordId=#{lordId}
+	</update>
+
+	<update id="updateMax" parameterType="Resource">
+		update p_resource set
+		ironMax=#{ironMax},oilMax=#{oilMax},copperMax=#{copperMax},siliconMax=#{siliconMax},stoneMax=#{stoneMax} where lordId=#{lordId}
+	</update>
+
+	<update id="updateTime" parameterType="Resource">
+		update p_resource set storeTime=#{storeTime} where lordId=#{lordId}
+	</update>
+
+	<update id="updateMaxAndOut" parameterType="Resource">
+		update p_resource set
+		ironOut=#{ironOut},oilOut=#{oilOut},copperOut=#{copperOut},siliconOut=#{siliconOut},stoneOut=#{stoneOut},
+		ironMax=#{ironMax},oilMax=#{oilMax},copperMax=#{copperMax},siliconMax=#{siliconMax},stoneMax=#{stoneMax} where lordId=#{lordId}
+	</update>
+
+	<insert id="insertResource" parameterType="Resource">
+		insert into
+		p_resource(lordId,iron,oil,copper,silicon,stone,ironOut,oilOut,copperOut,siliconOut,stoneOut,
+		ironMax,oilMax,copperMax,siliconMax,stoneMax,tIron,tOil,tCopper,tSilicon,tStone,storeTime)
+		values(#{lordId},#{iron},#{oil},#{copper},#{silicon},#{stone},#{ironOut},#{oilOut},#{copperOut},#{siliconOut},#{stoneOut},
+		#{ironMax},#{oilMax},#{copperMax},#{siliconMax},#{stoneMax},#{tIron},#{tOil},#{tCopper},#{tSilicon},#{tStone},#{storeTime})
+	</insert>
+	
+	<insert id="insertFullResource" parameterType="Resource">
+		insert into
+		p_resource(lordId,iron,oil,copper,silicon,stone,ironOut,oilOut,copperOut,siliconOut,stoneOut,
+		ironOutF,oilOutF,copperOutF,siliconOutF,stoneOutF,ironMax,oilMax,copperMax,siliconMax,stoneMax,storeF,tIron,tOil,tCopper,tSilicon,tStone,storeTime)
+		values(#{lordId},#{iron},#{oil},#{copper},#{silicon},#{stone},#{ironOut},#{oilOut},#{copperOut},#{siliconOut},#{stoneOut},
+		#{ironOutF},#{oilOutF},#{copperOutF},#{siliconOutF},#{stoneOutF},#{ironMax},#{oilMax},#{copperMax},#{siliconMax},#{stoneMax},#{storeF},#{tIron},#{tOil},#{tCopper},#{tSilicon},#{tStone},#{storeTime})
+	</insert>
+
+	<select id="load" parameterType="Map" resultType="Resource">
+		select 
+		lordId,iron,oil,copper,silicon,stone,ironOut,oilOut,copperOut,siliconOut,stoneOut,
+		ironOutF,oilOutF,copperOutF,siliconOutF,stoneOutF,ironMax,oilMax,copperMax,siliconMax,stoneMax,storeF,tIron,tOil,tCopper,tSilicon,tStone,storeTime
+		from p_resource where lordId > #{curIndex} order by lordId limit 0,#{count}
+	</select>
+
+</mapper>

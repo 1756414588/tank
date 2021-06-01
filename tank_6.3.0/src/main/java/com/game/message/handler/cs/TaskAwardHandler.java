@@ -1,0 +1,15 @@
+package com.game.message.handler.cs;
+
+import com.game.message.handler.ClientHandler;
+import com.game.pb.GamePb2.TaskAwardRq;
+import com.game.service.TaskService;
+
+public class TaskAwardHandler extends ClientHandler {
+
+	@Override
+	public void action() {
+		TaskAwardRq req = msg.getExtension(TaskAwardRq.ext);
+		getService(TaskService.class).taskAwardRq(req, this);
+	}
+
+}

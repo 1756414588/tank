@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="GiftDao">
+    <select id="selectGift" parameterType="Integer" resultType="com.account.domain.Gift">
+		select * from u_gift where giftId=#{giftId}
+	</select>
+
+    <insert id="insertGift" parameterType="com.account.domain.Gift">
+		insert into u_gift(giftId,giftName, beginTime,endTime,valid,gift,reuse,createTime)
+		values(#{giftId},#{giftName},#{beginTime},#{endTime},#{valid},#{gift},#{reuse},#{createTime})
+	</insert>
+
+    <update id="updateGift" parameterType="com.account.domain.Gift">
+		update u_gift set
+		giftName=#{giftName},beginTime=#{beginTime},endTime=#{endTime},valid=#{valid},gift=#{gift},reuse=#{reuse}
+		where
+		giftId=#{giftId}
+	</update>
+
+    <select id="selectGiftCode" parameterType="String" resultType="com.account.domain.GiftCode">
+		select * from u_gift_code where giftCode=#{giftCode}
+	</select>
+
+    <select id="selectGiftCodeByLord" parameterType="Map" resultType="com.account.domain.GiftCode">
+		select * from u_gift_code where serverId=#{serverId} and
+		lordId=#{lordId} and
+		giftId=#{giftId}
+	</select>
+
+    <insert id="insertGiftCode" parameterType="com.account.domain.GiftCode" useGeneratedKeys="true" keyProperty="keyId">
+		insert into u_gift_code(giftId,giftCode,platNo,mark)
+		values(#{giftId},#{giftCode},#{platNo},#{mark})
+	</insert>
+
+    <update id="updateGiftCode" parameterType="com.account.domain.GiftCode">
+		update u_gift_code set serverId=#{serverId},lordId=#{lordId},useTime=#{useTime}
+		where keyId=#{keyId}
+	</update>
+
+    <select id="selectGiftCodeExt" parameterType="Map" resultType="com.account.domain.GiftCodeExt">
+		select * from u_gift_code_ext where serverId=#{serverId} and lordId=#{lordId} and
+		giftCode=#{giftCode}
+	</select>
+
+    <insert id="insertGiftCodeExt" parameterType="com.account.domain.GiftCodeExt" useGeneratedKeys="true" keyProperty="keyId">
+		insert into u_gift_code_ext(giftCode,serverId,lordId,platNo,useTime)
+		values(#{giftCode},#{serverId},#{lordId},#{platNo},#{useTime})
+	</insert>
+</mapper>

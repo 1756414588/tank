@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!-- <tx:annotation-driven transaction-manager="transactionManager" /> -->
+
+
+    <bean id="iniDataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"
+          destroy-method="close">
+        <property name="driverClass" value="com.mysql.jdbc.Driver"/>
+        <property name="jdbcUrl" value="#{serverConfig.iniJdbcUrl}"/>
+        <property name="user" value="#{serverConfig.iniUser}"/>
+        <property name="password" value="#{serverConfig.iniPassword}"/>
+
+        <property name="minPoolSize" value="2"/>
+        <property name="maxPoolSize" value="5"/>
+        <property name="initialPoolSize" value="2"/>
+        <property name="maxIdleTime" value="7000"/>
+        <property name="acquireIncrement" value="5"/>
+        <property name="acquireRetryAttempts" value="30"/>
+        <property name="acquireRetryDelay" value="500"/>
+        <!-- <property name="maxStatements" value="1000" /> <property name="maxStatementsPerConnection"
+            value="100" /> -->
+        <property name="numHelperThreads" value="2"/>
+        <property name="idleConnectionTestPeriod" value="600"/>
+        <property name="testConnectionOnCheckout" value="false"/>
+        <property name="testConnectionOnCheckin" value="false"/>
+        <property name="preferredTestQuery" value="select 'x'"/>
+    </bean>
+
+
+    <bean id="iniSqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean"
+          p:configLocation="com/game/crossminserver/config/mybatisConfig.xml"
+          p:mapperLocations="com/game/crossminserver/config/StaticDataDao.xml"
+          p:dataSource-ref="iniDataSource"/>
+
+    <bean id="sBaseDao" class="com.game.dao.BaseDao" abstract="true"
+          p:sqlSessionFactory-ref="iniSqlSessionFactory"/>
+
+    <bean class="com.game.dao.impl.s.StaticDataDao" parent="sBaseDao"/>
+
+</beans>

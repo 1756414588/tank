@@ -1,0 +1,81 @@
+
+import "Base.proto";
+
+option java_package = "com.game.pb";
+option java_outer_classname = "AccountPb";
+
+//
+message DoLoginRq {  
+    required string sid = 1;
+  	required string baseVersion = 2;
+  	required string version = 3;
+  	required string deviceNo = 4;
+  	required string plat = 5;
+
+  	extend Base
+    {
+		  optional DoLoginRq ext = 101;
+    }
+}
+
+message DoLoginRs {  
+  	optional int32 keyId = 1;
+  	optional string token = 2;
+  	optional int32 active = 3;
+    repeated int32 recent = 4;
+    optional string userInfo = 5;     //360专用，是个json格式的string;草花也会使用,传回的是个普通字符串
+    optional string coolpadStr = 6;   //酷派字符串,使用&分隔。openid&access_token
+    optional string ftxStr = 7;   // 范特西 返回字符串
+  	extend Base
+    {
+		  optional DoLoginRs ext = 102;
+    }
+}
+
+//
+message DoRegisterRq {  
+    required string accountId = 1;
+    required string passwd = 2;
+    required string version = 3;
+    required string deviceNo = 4;
+    required string baseVersion = 5;
+    required string plat = 6;
+
+    extend Base
+    {
+      optional DoRegisterRq ext = 103;
+    }
+}
+
+message DoRegisterRs {  
+    optional int32 keyId = 1;
+    optional string token = 2;
+    optional int32 active = 3;
+
+    extend Base
+    {
+      optional DoRegisterRs ext = 104;
+    }
+}
+
+//
+message DoActiveRq {  
+    required int32 keyId = 1;
+    required string activeCode = 2;
+
+    extend Base
+    {
+      optional DoActiveRq ext = 105;
+    }
+}
+
+message DoActiveRs {  
+    optional int32 state = 1;
+
+    extend Base
+    {
+      optional DoActiveRs ext = 106;
+    }
+}
+
+//

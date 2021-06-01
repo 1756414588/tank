@@ -1,0 +1,27 @@
+{
+  "iniDb": {
+    "pwd": "jeC02GfP",
+    "dbUrl": "jdbc:mysql://192.168.1.153:3306/tank_ini",
+    "user": "root"
+  },
+  "list": [
+
+    {
+      "nickSuffix": "S866-869",
+      "pwd": "jeC02GfP",
+      "dbUrl": "jdbc:mysql://192.168.1.153:3306/tank_148-152",
+      "serverId": 101,
+      "user": "root"
+    },
+    {
+      "nickSuffix": "S866",
+      "pwd": "jeC02GfP",
+      "dbUrl": "jdbc:mysql://192.168.1.153:3306/tank_733-748",
+      "serverId": 100,
+      "user": "root"
+    }
+  ],
+  "httpMServerUrl": "",
+  "projectName": "tank",
+  "smallLordLv": 20
+}

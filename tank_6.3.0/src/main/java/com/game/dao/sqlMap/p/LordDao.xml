@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="LordDao">
+    <resultMap id="LordMap" type="Lord">
+        <id column="lordId" property="lordId"/>
+        <result column="heroPut" property="heroPut" typeHandler="com.game.dao.handle.MapListTypeHandler"/>
+    </resultMap>
+
+    <select id="selectLordById" parameterType="Long" resultMap="LordMap">
+		select 
+		lordId,nick,portrait,sex,level,exp,vip,topup,topup1st,pos,gold,goldCost,goldGive,goldTime,huangbao,ranks,command,fame,
+		fameLv,fameTime1,fameTime2,honour,pros,prosMax,prosTime,power,powerTime,newState,fight,equip,fitting,metal,plan,mineral,tool,draw,tankDrive,chariotDrive,artilleryDrive,rocketDrive,
+		eplrTime,equipEplr,partEplr,militaryEplr,extrEplr,timeEplr,energyStoneEplr,equipBuy,partBuy,militaryBuy,extrReset,timeBuy,energyStoneBuy,
+		goldHeroCount,goldHeroTime,stoneHeroCount,stoneHeroTime,blessCount,blessTime,taskDayiy,dayiyCount,taskLive,taskLiveAd,taskTime,taskLiveTime,buyPower,buyPowerTime,
+		stars,starRankTime,lotterExplore,buildCount,newerGift,onTime,olTime,offTime,ctTime,olAward,silence,olMonth,pawn,partDial,consumeDial,energyStoneDial,tankRaffle,
+		partyLvAward,partyFightAward,partyTipAward,freeMecha,upBuildTime,onBuild,staffing,staffingLv,staffingExp,staffingSaveExp,lockTankId,lockTime,scountDate,scount,exploit,resetDrillShopTime,
+		detergent,grindstone,polishingMtr,maintainOil,grindTool,precisionInstrument,mysteryStone,medalUpCdTime,medalEplr,medalBuy,frighten,fortitude,medalPrice,militaryRank,militaryRankUpTime,militaryExploit,mpltGetToday,lastMpltDay,maxFight,heroPut,
+		corundumMatrial,inertGas,freeEquipDial,oldPartyId,tacticsBuy,tacticsReset,ticDial
+		from p_lord where lordId=#{lordId}
+	</select>
+
+    <select id="selectLordNotSmallIds" resultType="Long">
+		SELECT lordId FROM p_lord WHERE lordId NOT IN ( SELECT lordId FROM p_smallId ) 
+	</select>
+
+    <select id="selectLordByRank" parameterType="Integer" resultMap="LordMap">
+		select 
+		lordId,nick,portrait,sex,level,exp,vip,topup,topup1st,pos,gold,goldCost,goldGive,goldTime,huangbao,ranks,command,fame,
+		fameLv,fameTime1,fameTime2,honour,pros,prosMax,prosTime,power,powerTime,newState,fight,equip,fitting,metal,plan,mineral,tool,draw,tankDrive,chariotDrive,artilleryDrive,rocketDrive,
+		eplrTime,equipEplr,partEplr,militaryEplr,extrEplr,timeEplr,energyStoneEplr,equipBuy,partBuy,militaryBuy,extrReset,timeBuy,energyStoneBuy,
+		goldHeroCount,goldHeroTime,stoneHeroCount,stoneHeroTime,blessCount,blessTime,taskDayiy,dayiyCount,taskLive,taskLiveAd,taskTime,taskLiveTime,buyPower,buyPowerTime,
+		stars,starRankTime,lotterExplore,buildCount,newerGift,onTime,olTime,offTime,ctTime,olAward,silence,olMonth,pawn,partDial,consumeDial,energyStoneDial,tankRaffle,
+		partyLvAward,partyFightAward,partyTipAward,freeMecha,upBuildTime,onBuild,staffing,staffingLv,staffingExp,staffingSaveExp,lockTankId,lockTime,scountDate,scount,exploit,resetDrillShopTime,
+		detergent,grindstone,polishingMtr,maintainOil,grindTool,precisionInstrument,mysteryStone,medalUpCdTime,medalEplr,medalBuy,frighten,fortitude,medalPrice,militaryRank,militaryRankUpTime,militaryExploit,mpltGetToday,lastMpltDay,maxFight,heroPut,
+		corundumMatrial,inertGas,freeEquipDial,oldPartyId,tacticsBuy,tacticsReset,ticDial
+		from p_lord a WHERE a.nick is not NULL ORDER BY level DESC LIMIT #{rank}
+	</select>
+
+    <select id="getLordListInId" resultMap="LordMap">
+        select
+        lordId,nick,portrait,sex,level,exp,vip,topup,topup1st,pos,gold,goldCost,goldGive,goldTime,huangbao,ranks,command,fame,
+        fameLv,fameTime1,fameTime2,honour,pros,prosMax,prosTime,power,powerTime,newState,fight,equip,fitting,metal,plan,mineral,tool,draw,tankDrive,chariotDrive,artilleryDrive,rocketDrive,
+        eplrTime,equipEplr,partEplr,militaryEplr,extrEplr,timeEplr,energyStoneEplr,equipBuy,partBuy,militaryBuy,extrReset,timeBuy,energyStoneBuy,
+        goldHeroCount,goldHeroTime,stoneHeroCount,stoneHeroTime,blessCount,blessTime,taskDayiy,dayiyCount,taskLive,taskLiveAd,taskTime,taskLiveTime,buyPower,buyPowerTime,
+        stars,starRankTime,lotterExplore,buildCount,newerGift,onTime,olTime,offTime,ctTime,olAward,silence,olMonth,pawn,partDial,consumeDial,energyStoneDial,tankRaffle,
+        partyLvAward,partyFightAward,partyTipAward,freeMecha,upBuildTime,onBuild,staffing,staffingLv,staffingExp,staffingSaveExp,lockTankId,lockTime,scountDate,scount,exploit,resetDrillShopTime,
+        detergent,grindstone,polishingMtr,maintainOil,grindTool,precisionInstrument,mysteryStone,medalUpCdTime,medalEplr,medalBuy,frighten,fortitude,medalPrice,militaryRank,militaryRankUpTime,militaryExploit,mpltGetToday,lastMpltDay,maxFight,heroPut,
+        corundumMatrial,inertGas,freeEquipDial,oldPartyId,tacticsBuy,tacticsReset,ticDial
+        from p_lord where lordId in
+        <foreach item="lordIds" index="index" collection="list" open="(" separator="," close=")">
+            #{lordIds}
+        </foreach>
+    </select>
+
+    <select id="selectLordByNick" parameterType="String" resultMap="LordMap">
+		select 
+		lordId,nick,portrait,sex,level,exp,vip,topup,topup1st,pos,gold,goldCost,goldGive,goldTime,huangbao,ranks,command,fame,
+		fameLv,fameTime1,fameTime2,honour,pros,prosMax,prosTime,power,powerTime,newState,fight,equip,fitting,metal,plan,mineral,tool,draw,tankDrive,chariotDrive,artilleryDrive,rocketDrive,
+		eplrTime,equipEplr,partEplr,militaryEplr,extrEplr,timeEplr,energyStoneEplr,equipBuy,partBuy,militaryBuy,extrReset,timeBuy,energyStoneBuy,
+		goldHeroCount,goldHeroTime,stoneHeroCount,stoneHeroTime,blessCount,blessTime,taskDayiy,dayiyCount,taskLive,taskLiveAd,taskTime,taskLiveTime,buyPower,buyPowerTime,
+		stars,starRankTime,lotterExplore,buildCount,newerGift,onTime,olTime,offTime,ctTime,olAward,silence,olMonth,pawn,partDial,consumeDial,energyStoneDial,tankRaffle,
+		partyLvAward,partyFightAward,partyTipAward,freeMecha,upBuildTime,onBuild,staffing,staffingLv,staffingExp,staffingSaveExp,lockTankId,lockTime,scountDate,scount,exploit,resetDrillShopTime,
+		detergent,grindstone,polishingMtr,maintainOil,grindTool,precisionInstrument,mysteryStone,medalUpCdTime,medalEplr,medalBuy,frighten,fortitude,medalPrice,militaryRank,militaryRankUpTime,militaryExploit,mpltGetToday,lastMpltDay,maxFight,heroPut,
+		corundumMatrial,inertGas,freeEquipDial,oldPartyId,tacticsBuy,tacticsReset,ticDial
+		from p_lord where nick=#{nick}
+	</select>
+
+    <select id="sameNameCount" parameterType="String" resultType="Integer">
+		select count(lordId) from p_lord where nick=#{nick}
+	</select>
+
+    <update id="updateNickPortrait" parameterType="Lord">
+		update p_lord set nick=#{nick},portrait=#{portrait} where lordId=#{lordId}
+	</update>
+
+    <update id="updateGold" parameterType="Lord">
+		update p_lord set gold=#{gold},goldCost=#{goldCost},goldGive=#{goldGive} where lordId=#{lordId}
+	</update>
+
+    <update id="updateVip" parameterType="Lord">
+		update p_lord set ingot=#{ingot},vip=#{vip} where lordId=#{lordId}
+	</update>
+
+    <update id="updateLv" parameterType="Lord">
+		update p_lord set exp=#{exp},level=#{level} where lordId=#{lordId}
+	</update>
+
+    <update id="updateGoldAndEquip" parameterType="Lord">
+		update p_lord set equip=#{equip},gold=#{gold},goldCost=#{goldCost} where lordId=#{lordId}
+	</update>
+
+    <update id="updatePower" parameterType="Lord">
+		update p_lord set power=#{power},powerTime=#{powerTime} where lordId=#{lordId}
+	</update>
+
+    <update id="updateLord" parameterType="Lord">
+		update p_lord set
+		nick=#{nick},portrait=#{portrait},sex=#{sex},level=#{level},exp=#{exp},vip=#{vip},topup=#{topup},topup1st=#{topup1st},pos=#{pos},gold=#{gold},goldCost=#{goldCost},goldGive=#{goldGive},goldTime=#{goldTime},
+		huangbao=#{huangbao},ranks=#{ranks},command=#{command},fame=#{fame},fameLv=#{fameLv},fameTime1=#{fameTime1},fameTime2=#{fameTime2},honour=#{honour},pros=#{pros},prosMax=#{prosMax},prosTime=#{prosTime},
+		power=#{power},powerTime=#{powerTime},newState=#{newState},fight=#{fight},equip=#{equip},fitting=#{fitting},metal=#{metal},plan=#{plan},mineral=#{mineral},tool=#{tool},draw=#{draw},tankDrive=#{tankDrive},chariotDrive=#{chariotDrive},artilleryDrive=#{artilleryDrive},rocketDrive=#{rocketDrive},
+		eplrTime=#{eplrTime},equipEplr=#{equipEplr},partEplr=#{partEplr},militaryEplr=#{militaryEplr},extrEplr=#{extrEplr},timeEplr=#{timeEplr},energyStoneEplr=#{energyStoneEplr},equipBuy=#{equipBuy},partBuy=#{partBuy},militaryBuy=#{militaryBuy},extrReset=#{extrReset},timeBuy=#{timeBuy},energyStoneBuy=#{energyStoneBuy},
+		goldHeroCount=#{goldHeroCount},goldHeroTime=#{goldHeroTime},stoneHeroCount=#{stoneHeroCount},stoneHeroTime=#{stoneHeroTime},blessCount=#{blessCount},blessTime=#{blessTime},
+		buyPower=#{buyPower},buyPowerTime=#{buyPowerTime},stars=#{stars},starRankTime=#{starRankTime},newerGift=#{newerGift},taskDayiy=#{taskDayiy},dayiyCount=#{dayiyCount},taskLive=#{taskLive},taskLiveTime=#{taskLiveTime},taskLiveAd=#{taskLiveAd},taskTime=#{taskTime},
+		lotterExplore=#{lotterExplore},buildCount=#{buildCount},onTime=#{onTime},olTime=#{olTime},offTime=#{offTime},ctTime=#{ctTime},olAward=#{olAward},silence=#{silence},partyLvAward=#{partyLvAward},partyFightAward=#{partyFightAward},
+		freeMecha=#{freeMecha},olMonth=#{olMonth},pawn=#{pawn},partDial=#{partDial},consumeDial=#{consumeDial},energyStoneDial=#{energyStoneDial},tankRaffle=#{tankRaffle},partyTipAward=#{partyTipAward},upBuildTime=#{upBuildTime},onBuild=#{onBuild},staffing=#{staffing},staffingLv=#{staffingLv},staffingExp=#{staffingExp},staffingSaveExp=#{staffingSaveExp},
+		lockTankId=#{lockTankId},lockTime=#{lockTime},scountDate=#{scountDate},scount=#{scount},exploit=#{exploit},resetDrillShopTime=#{resetDrillShopTime},
+		detergent=#{detergent},grindstone=#{grindstone},polishingMtr=#{polishingMtr},maintainOil=#{maintainOil},grindTool=#{grindTool},precisionInstrument=#{precisionInstrument},mysteryStone=#{mysteryStone},medalUpCdTime=#{medalUpCdTime},medalEplr=#{medalEplr},medalBuy=#{medalBuy},frighten=#{frighten},fortitude=#{fortitude},medalPrice=#{medalPrice},
+		militaryRank=#{militaryRank},militaryRankUpTime=#{militaryRankUpTime},militaryExploit=#{militaryExploit},mpltGetToday=#{mpltGetToday},lastMpltDay=#{lastMpltDay},maxFight=#{maxFight},
+		heroPut=#{heroPut,typeHandler=com.game.dao.handle.MapListTypeHandler},corundumMatrial=#{corundumMatrial},inertGas=#{inertGas},freeEquipDial=#{freeEquipDial},oldPartyId=#{oldPartyId},
+		tacticsBuy=#{tacticsBuy},tacticsReset=#{tacticsReset},ticDial=#{ticDial}
+		where
+		lordId=#{lordId}
+	</update>
+
+    <update id="updatePart" parameterType="Lord">
+		update p_lord set
+		fitting=#{fitting},metal=#{metal},plan=#{plan},mineral=#{mineral},tool=#{tool},draw=#{draw},tankDrive=#{tankDrive},chariotDrive=#{chariotDrive},artilleryDrive=#{artilleryDrive},rocketDrive=#{rocketDrive} where
+		lordId=#{lordId}
+	</update>
+
+    <update id="updateFight" parameterType="Lord">
+		update p_lord set fight=#{fight} where lordId=#{lordId}
+	</update>
+
+    <update id="updateNewState" parameterType="Lord">
+		update p_lord set newState=#{newState} where lordId=#{lordId}
+	</update>
+
+    <update id="updatePros" parameterType="Lord">
+		update p_lord set pros=#{pros},prosMax=#{prosMax},prosTime=#{prosTime} where lordId=#{lordId}
+	</update>
+
+    <insert id="insertLord" parameterType="Lord" useGeneratedKeys="true" keyProperty="lordId">
+		insert into
+		p_lord(lordId,level,vip,pos,gold,goldGive,huangbao,ranks,command,fameLv,honour,pros,prosMax,prosTime,power,powerTime,newState,equip,fitting,metal,plan,mineral,tool,draw,tankDrive,chariotDrive,artilleryDrive,rocketDrive
+		,eplrTime,equipEplr,partEplr,militaryEplr,extrEplr,timeEplr,energyStoneEplr,equipBuy,partBuy,militaryBuy,extrReset,timeBuy,energyStoneBuy,olMonth,pawn,partDial,tankRaffle,partyTipAward,exploit,resetDrillShopTime,
+		detergent,grindstone,polishingMtr,maintainOil,grindTool,precisionInstrument,mysteryStone,medalUpCdTime,medalEplr,medalBuy,frighten,fortitude,medalPrice,militaryRank,militaryRankUpTime,militaryExploit,mpltGetToday,
+		lastMpltDay,maxFight,heroPut,oldPartyId,tacticsBuy,tacticsReset)
+		values(#{lordId},#{level},#{vip},#{pos},#{gold},#{goldGive},#{huangbao},#{ranks},#{command},#{fameLv},#{honour},#{pros},#{prosMax},#{prosTime},#{power},#{powerTime},
+		#{newState},#{equip},#{fitting},#{metal},#{plan},#{mineral},#{tool},#{draw},#{tankDrive},#{chariotDrive},#{artilleryDrive},#{rocketDrive},#{eplrTime},#{equipEplr},#{partEplr},#{militaryEplr},#{extrEplr},#{timeEplr},
+		#{energyStoneEplr},#{equipBuy},#{partBuy},#{militaryBuy},#{extrReset},#{timeBuy},#{energyStoneBuy},#{olMonth},#{pawn},#{partDial},#{tankRaffle},#{partyTipAward},#{exploit},#{resetDrillShopTime},
+		#{detergent},#{grindstone},#{polishingMtr},#{maintainOil},#{grindTool},#{precisionInstrument},#{mysteryStone},#{medalUpCdTime},#{medalEplr},#{medalBuy},#{frighten},#{fortitude},#{medalPrice},
+		#{militaryRank},#{militaryRankUpTime},#{militaryExploit},#{mpltGetToday},#{lastMpltDay},#{maxFight},#{heroPut,typeHandler=com.game.dao.handle.MapListTypeHandler},#{oldPartyId},#{tacticsBuy},#{tacticsReset})
+	</insert>
+
+    <insert id="insertFullLord" parameterType="Lord" useGeneratedKeys="true" keyProperty="lordId">
+		insert into
+		p_lord(lordId,nick,portrait,sex,level,exp,vip,topup,topup1st,pos,gold,goldCost,goldGive,goldTime,huangbao,ranks,command,fame,
+		fameLv,fameTime1,fameTime2,honour,pros,prosMax,prosTime,power,powerTime,newState,fight,equip,fitting,metal,plan,mineral,tool,draw,tankDrive,chariotDrive,artilleryDrive,rocketDrive,
+		eplrTime,equipEplr,partEplr,militaryEplr,extrEplr,timeEplr,energyStoneEplr,equipBuy,partBuy,militaryBuy,extrReset,timeBuy,energyStoneBuy,
+		goldHeroCount,goldHeroTime,stoneHeroCount,stoneHeroTime,blessCount,blessTime,taskDayiy,dayiyCount,taskLive,taskLiveAd,taskTime,taskLiveTime,buyPower,buyPowerTime,
+		stars,starRankTime,lotterExplore,buildCount,newerGift,onTime,olTime,offTime,ctTime,olAward,silence,olMonth,pawn,partDial,consumeDial,energyStoneDial,tankRaffle,
+		partyLvAward,partyFightAward,partyTipAward,freeMecha,upBuildTime,onBuild,staffing,staffingLv,staffingExp,staffingSaveExp,lockTankId,lockTime,scountDate,scount,exploit,resetDrillShopTime,
+		detergent,grindstone,polishingMtr,maintainOil,grindTool,precisionInstrument,mysteryStone,medalUpCdTime,medalEplr,medalBuy,frighten,fortitude,medalPrice,militaryRank,militaryRankUpTime,
+		militaryExploit,mpltGetToday,lastMpltDay,maxFight,heroPut,corundumMatrial,inertGas,freeEquipDial,oldPartyId,tacticsBuy,tacticsReset,ticDial)
+		values(#{lordId},#{nick},#{portrait},#{sex},#{level},#{exp},#{vip},#{topup},#{topup1st},#{pos},#{gold},#{goldCost},#{goldGive},#{goldTime},#{huangbao},#{ranks},#{command},#{fame},
+		#{fameLv},#{fameTime1},#{fameTime2},#{honour},#{pros},#{prosMax},#{prosTime},#{power},#{powerTime},#{newState},#{fight},#{equip},#{fitting},#{metal},#{plan},#{mineral},#{tool},#{draw},#{tankDrive},#{chariotDrive},#{artilleryDrive},#{rocketDrive},
+		#{eplrTime},#{equipEplr},#{partEplr},#{militaryEplr},#{extrEplr},#{timeEplr},#{energyStoneEplr},#{equipBuy},#{partBuy},#{militaryBuy},#{extrReset},#{timeBuy},#{energyStoneBuy},
+		#{goldHeroCount},#{goldHeroTime},#{stoneHeroCount},#{stoneHeroTime},#{blessCount},#{blessTime},#{taskDayiy},#{dayiyCount},#{taskLive},#{taskLiveAd},#{taskTime},#{taskLiveTime},#{buyPower},#{buyPowerTime},
+		#{stars},#{starRankTime},#{lotterExplore},#{buildCount},#{newerGift},#{onTime},#{olTime},#{offTime},#{ctTime},#{olAward},#{silence},#{olMonth},#{pawn},#{partDial},#{consumeDial},#{energyStoneDial},#{tankRaffle},
+		#{partyLvAward},#{partyFightAward},#{partyTipAward},#{freeMecha},#{upBuildTime},#{onBuild},#{staffing},#{staffingLv},#{staffingExp},#{staffingSaveExp},#{lockTankId},#{lockTime},#{scountDate},#{scount},#{exploit},#{resetDrillShopTime},
+		#{detergent},#{grindstone},#{polishingMtr},#{maintainOil},#{grindTool},#{precisionInstrument},#{mysteryStone},#{medalUpCdTime},#{medalEplr},#{medalBuy},#{frighten},#{fortitude},#{medalPrice},
+		#{militaryRank},#{militaryRankUpTime},#{militaryExploit},#{mpltGetToday},#{lastMpltDay},#{maxFight},#{heroPut,typeHandler=com.game.dao.handle.MapListTypeHandler},#{corundumMatrial},#{inertGas},
+		#{freeEquipDial},#{oldPartyId},#{tacticsBuy},#{tacticsReset},#{ticDial})
+	</insert>
+
+    <select id="load" parameterType="Map" resultMap="LordMap">
+		select 
+		lordId,nick,portrait,sex,level,exp,vip,topup,topup1st,pos,gold,goldCost,goldGive,goldTime,huangbao,ranks,command,fame,
+		fameLv,fameTime1,fameTime2,honour,pros,prosMax,prosTime,power,powerTime,newState,fight,equip,fitting,metal,plan,mineral,tool,draw,tankDrive,chariotDrive,artilleryDrive,rocketDrive,
+		eplrTime,equipEplr,partEplr,militaryEplr,extrEplr,timeEplr,energyStoneEplr,equipBuy,partBuy,militaryBuy,extrReset,timeBuy,energyStoneBuy,
+		goldHeroCount,goldHeroTime,stoneHeroCount,stoneHeroTime,blessCount,blessTime,taskDayiy,dayiyCount,taskLive,taskLiveAd,taskTime,taskLiveTime,buyPower,buyPowerTime,
+		stars,starRankTime,lotterExplore,buildCount,newerGift,onTime,olTime,offTime,ctTime,olAward,silence,olMonth,pawn,partDial,consumeDial,energyStoneDial,tankRaffle,
+		partyLvAward,partyFightAward,partyTipAward,freeMecha,upBuildTime,onBuild,staffing,staffingLv,staffingExp,staffingSaveExp,lockTankId,lockTime,scountDate,scount,exploit,resetDrillShopTime,
+		detergent,grindstone,polishingMtr,maintainOil,grindTool,precisionInstrument,mysteryStone,medalUpCdTime,medalEplr,medalBuy,frighten,fortitude,medalPrice,militaryRank,militaryRankUpTime,
+		militaryExploit,mpltGetToday,lastMpltDay,maxFight,heroPut,corundumMatrial,inertGas,freeEquipDial,oldPartyId,tacticsBuy,tacticsReset,ticDial
+		from p_lord where lordId > #{curIndex} order by lordId limit 0,#{count}
+	</select>
+
+    <select id="selectLordCount" resultType="Integer">
+		SELECT COUNT(lordId) FROM p_lord
+	</select>
+
+    <select id="selectLordByIds" resultType="Lord" parameterType="list">
+        select lordId,nick,portrait,sex,level,exp,vip,topup,topup1st,pos,gold,goldCost,goldGive,goldTime,huangbao,ranks,command,fame,
+        fameLv,fameTime1,fameTime2,honour,pros,prosMax,prosTime,power,powerTime,newState,fight,equip,fitting,metal,plan,mineral,tool,draw,tankDrive,chariotDrive,artilleryDrive,rocketDrive,
+        eplrTime,equipEplr,partEplr,militaryEplr,extrEplr,timeEplr,energyStoneEplr,equipBuy,partBuy,militaryBuy,extrReset,timeBuy,energyStoneBuy,
+        goldHeroCount,goldHeroTime,stoneHeroCount,stoneHeroTime,blessCount,blessTime,taskDayiy,dayiyCount,taskLive,taskLiveAd,taskTime,taskLiveTime,buyPower,buyPowerTime,
+        stars,starRankTime,lotterExplore,buildCount,newerGift,onTime,olTime,offTime,ctTime,olAward,silence,olMonth,pawn,partDial,consumeDial,energyStoneDial,tankRaffle,
+        partyLvAward,partyFightAward,partyTipAward,freeMecha,upBuildTime,onBuild,staffing,staffingLv,staffingExp,staffingSaveExp,lockTankId,lockTime,scountDate,scount,exploit,resetDrillShopTime,
+        detergent,grindstone,polishingMtr,maintainOil,grindTool,precisionInstrument,mysteryStone,medalUpCdTime,medalEplr,medalBuy,frighten,fortitude,medalPrice,militaryRank,militaryRankUpTime,
+        militaryExploit,mpltGetToday,lastMpltDay,maxFight,heroPut,corundumMatrial,inertGas,freeEquipDial,oldPartyId,tacticsBuy,tacticsReset,ticDial
+        from p_lord where lordId in
+        <foreach collection="list" item="id" separator="," open="(" close=")">
+            #{id}
+        </foreach>
+    </select>
+</mapper>

@@ -1,0 +1,89 @@
+<skeleton name="BOSS_kaipao_yanchen" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="boss_fire_recoil">
+   <b name="1" x="-96.5" y="-10.75" kX="180" kY="0" cX="2.43" cY="2.43" pX="0" pY="0" z="0">
+    <d name="part-tanke_kaipao_yanchen1"/>
+    <d name="part-tanke_kaipao_yanchen2"/>
+    <d name="part-tanke_kaipao_yanchen3"/>
+    <d name="part-tanke_kaipao_yanchen4"/>
+    <d name="part-tanke_kaipao_yanchen5"/>
+    <d name="part-tanke_kaipao_yanchen6"/>
+    <d name="part-tanke_kaipao_yanchen7"/>
+    <d name="part-tanke_kaipao_yanchen8"/>
+    <d name="part-tanke_kaipao_yanchen9"/>
+    <d name="part-tanke_kaipao_yanchen10"/>
+    <d name="part-tanke_kaipao_yanchen11"/>
+    <d name="part-tanke_kaipao_yanchen12"/>
+    <d name="part-tanke_kaipao_yanchen13"/>
+   </b>
+   <b name="10" x="96.8" y="-10.25" kX="180" kY="0" cX="2.43" cY="2.43" pX="0" pY="0" z="1">
+    <d name="part-tanke_kaipao_yanchen1"/>
+    <d name="part-tanke_kaipao_yanchen2"/>
+    <d name="part-tanke_kaipao_yanchen3"/>
+    <d name="part-tanke_kaipao_yanchen4"/>
+    <d name="part-tanke_kaipao_yanchen5"/>
+    <d name="part-tanke_kaipao_yanchen6"/>
+    <d name="part-tanke_kaipao_yanchen7"/>
+    <d name="part-tanke_kaipao_yanchen8"/>
+    <d name="part-tanke_kaipao_yanchen9"/>
+    <d name="part-tanke_kaipao_yanchen10"/>
+    <d name="part-tanke_kaipao_yanchen11"/>
+    <d name="part-tanke_kaipao_yanchen12"/>
+    <d name="part-tanke_kaipao_yanchen13"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="boss_fire_recoil">
+   <mov name="start" dr="33" to="6" drTW="33" lp="0" twE="NaN">
+    <b name="1" sc="1" dl="0">
+     <f x="-96.5" y="-10.75" cocos2d_x="-96.5" cocos2d_y="-10.75" kX="180" kY="0" cX="2.43" cY="2.43" pX="0" pY="0" z="0" dI="0" dr="2"/>
+     <f x="-97.1" y="-10.9" cocos2d_x="-97.1" cocos2d_y="-10.9" kX="180" kY="0" cX="2.43" cY="2.43" pX="0" pY="0" z="0" dI="1" dr="2"/>
+     <f x="-97.1" y="-10.9" cocos2d_x="-97.1" cocos2d_y="-10.9" kX="180" kY="0" cX="2.43" cY="2.43" pX="0" pY="0" z="0" dI="2" dr="2"/>
+     <f x="-97" y="-11" cocos2d_x="-97" cocos2d_y="-11" kX="180" kY="0" cX="2.43" cY="2.43" pX="0" pY="0" z="0" dI="3" dr="2"/>
+     <f x="-97" y="-11" cocos2d_x="-97" cocos2d_y="-11" kX="180" kY="0" cX="2.43" cY="2.43" pX="0" pY="0" z="0" dI="4" dr="2"/>
+     <f x="-96.5" y="-10.75" cocos2d_x="-96.5" cocos2d_y="-10.75" kX="180" kY="0" cX="2.43" cY="2.43" pX="0" pY="0" z="0" dI="5" dr="2"/>
+     <f x="-97" y="-10.9" cocos2d_x="-97" cocos2d_y="-10.9" kX="180" kY="0" cX="2.43" cY="2.43" pX="0" pY="0" z="0" dI="6" dr="2"/>
+     <f x="-97.1" y="-10.9" cocos2d_x="-97.1" cocos2d_y="-10.9" kX="180" kY="0" cX="2.43" cY="2.43" pX="0" pY="0" z="0" dI="7" dr="2"/>
+     <f x="-97.1" y="-10.9" cocos2d_x="-97.1" cocos2d_y="-10.9" kX="180" kY="0" cX="2.43" cY="2.43" pX="0" pY="0" z="0" dI="8" dr="2"/>
+     <f x="-97" y="-10.75" cocos2d_x="-97" cocos2d_y="-10.75" kX="180" kY="0" cX="2.43" cY="2.43" pX="0" pY="0" z="0" dI="9" dr="2"/>
+     <f x="-97.1" y="-10.9" cocos2d_x="-97.1" cocos2d_y="-10.9" kX="180" kY="0" cX="2.43" cY="2.43" pX="0" pY="0" z="0" dI="10" dr="4"/>
+     <f x="-97.1" y="-10.9" cocos2d_x="-97.1" cocos2d_y="-10.9" kX="180" kY="0" cX="2.43" cY="2.43" pX="0" pY="0" z="0" dI="11" dr="4"/>
+     <f x="-97.1" y="-10.9" cocos2d_x="-97.1" cocos2d_y="-10.9" kX="180" kY="0" cX="2.43" cY="2.43" pX="0" pY="0" z="0" dI="12" dr="4"/>
+     <f dr="1" dI="-1"/>
+    </b>
+    <b name="10" sc="1" dl="0">
+     <f x="96.8" y="-10.25" cocos2d_x="96.8" cocos2d_y="-10.25" kX="180" kY="0" cX="2.43" cY="2.43" pX="0" pY="0" z="1" dI="0" dr="2"/>
+     <f x="96.2" y="-10.4" cocos2d_x="96.2" cocos2d_y="-10.4" kX="180" kY="0" cX="2.43" cY="2.43" pX="0" pY="0" z="1" dI="1" dr="2"/>
+     <f x="96.2" y="-10.4" cocos2d_x="96.2" cocos2d_y="-10.4" kX="180" kY="0" cX="2.43" cY="2.43" pX="0" pY="0" z="1" dI="2" dr="2"/>
+     <f x="96.3" y="-10.5" cocos2d_x="96.3" cocos2d_y="-10.5" kX="180" kY="0" cX="2.43" cY="2.43" pX="0" pY="0" z="1" dI="3" dr="2"/>
+     <f x="96.3" y="-10.5" cocos2d_x="96.3" cocos2d_y="-10.5" kX="180" kY="0" cX="2.43" cY="2.43" pX="0" pY="0" z="1" dI="4" dr="2"/>
+     <f x="96.8" y="-10.25" cocos2d_x="96.8" cocos2d_y="-10.25" kX="180" kY="0" cX="2.43" cY="2.43" pX="0" pY="0" z="1" dI="5" dr="2"/>
+     <f x="96.3" y="-10.4" cocos2d_x="96.3" cocos2d_y="-10.4" kX="180" kY="0" cX="2.43" cY="2.43" pX="0" pY="0" z="1" dI="6" dr="2"/>
+     <f x="96.2" y="-10.4" cocos2d_x="96.2" cocos2d_y="-10.4" kX="180" kY="0" cX="2.43" cY="2.43" pX="0" pY="0" z="1" dI="7" dr="2"/>
+     <f x="96.2" y="-10.4" cocos2d_x="96.2" cocos2d_y="-10.4" kX="180" kY="0" cX="2.43" cY="2.43" pX="0" pY="0" z="1" dI="8" dr="2"/>
+     <f x="96.3" y="-10.25" cocos2d_x="96.3" cocos2d_y="-10.25" kX="180" kY="0" cX="2.43" cY="2.43" pX="0" pY="0" z="1" dI="9" dr="2"/>
+     <f x="96.2" y="-10.4" cocos2d_x="96.2" cocos2d_y="-10.4" kX="180" kY="0" cX="2.43" cY="2.43" pX="0" pY="0" z="1" dI="10" dr="4"/>
+     <f x="96.2" y="-10.4" cocos2d_x="96.2" cocos2d_y="-10.4" kX="180" kY="0" cX="2.43" cY="2.43" pX="0" pY="0" z="1" dI="11" dr="4"/>
+     <f x="96.2" y="-10.4" cocos2d_x="96.2" cocos2d_y="-10.4" kX="180" kY="0" cX="2.43" cY="2.43" pX="0" pY="0" z="1" dI="12" dr="4"/>
+     <f dr="1" dI="-1"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="BOSS_kaipao_yanchen" width="512" height="256">
+  <SubTexture name="part-tanke_kaipao_yanchen13" width="71" height="70" cocos2d_pX="30.25" cocos2d_pY="50.5" x="85" y="75"/>
+  <SubTexture name="part-tanke_kaipao_yanchen12" width="78" height="71" cocos2d_pX="38.15" cocos2d_pY="49.85" x="417" y="0"/>
+  <SubTexture name="part-tanke_kaipao_yanchen11" width="83" height="74" cocos2d_pX="42.95" cocos2d_pY="50.85" x="0" y="0"/>
+  <SubTexture name="part-tanke_kaipao_yanchen10" width="81" height="73" cocos2d_pX="40.8" cocos2d_pY="50.25" x="85" y="0"/>
+  <SubTexture name="part-tanke_kaipao_yanchen9" width="81" height="73" cocos2d_pX="40.85" cocos2d_pY="50.25" x="168" y="0"/>
+  <SubTexture name="part-tanke_kaipao_yanchen8" width="81" height="73" cocos2d_pX="40.75" cocos2d_pY="50.35" x="251" y="0"/>
+  <SubTexture name="part-tanke_kaipao_yanchen7" width="81" height="72" cocos2d_pX="40.55" cocos2d_pY="49" x="334" y="0"/>
+  <SubTexture name="part-tanke_kaipao_yanchen6" width="77" height="70" cocos2d_pX="38.35" cocos2d_pY="46.6" x="417" y="73"/>
+  <SubTexture name="part-tanke_kaipao_yanchen5" width="75" height="69" cocos2d_pX="37.95" cocos2d_pY="45.65" x="334" y="74"/>
+  <SubTexture name="part-tanke_kaipao_yanchen4" width="71" height="67" cocos2d_pX="35.75" cocos2d_pY="43.55" x="158" y="75"/>
+  <SubTexture name="part-tanke_kaipao_yanchen3" width="68" height="64" cocos2d_pX="33.25" cocos2d_pY="40.9" x="231" y="75"/>
+  <SubTexture name="part-tanke_kaipao_yanchen2" width="67" height="61" cocos2d_pX="34.5" cocos2d_pY="39.7" x="0" y="76"/>
+  <SubTexture name="part-tanke_kaipao_yanchen1" width="54" height="57" cocos2d_pX="27" cocos2d_pY="34.65" x="0" y="139"/>
+ </TextureAtlas>
+</skeleton>

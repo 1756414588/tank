@@ -1,0 +1,27 @@
+<skeleton name="v3_xb_weiyan" frameRate="24" version="2.0">
+ <armatures>
+  <armature name="v3_xb_weiyan_output">
+   <b name="2" x="1.3" y="17.8" kX="0" kY="0" cX="1" cY="1" pX="21" pY="25" z="0">
+    <d name="part-v3_xb_weiyan_1"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="v3_xb_weiyan_output">
+   <mov name="start" dr="31" to="0" drTW="31" lp="0" twE="NaN">
+    <b name="2" sc="1" dl="0">
+     <f x="1.3" y="17.8" cocos2d_x="-19.5" cocos2d_y="-7" kX="0" kY="0" cX="1" cY="1" pX="21" pY="25" z="0" dI="0" twE="0" dr="29">
+      <colorTransform a="0" r="0" g="0" b="0" aM="50" rM="100" gM="100" bM="100"/>
+     </f>
+     <f x="4.3" y="32.8" cocos2d_x="-23.15" cocos2d_y="0.05" kX="0" kY="0" cX="1.32" cY="1.32" pX="21" pY="25" z="0" dI="0" dr="1">
+      <colorTransform a="0" r="0" g="0" b="0" aM="5" rM="100" gM="100" bM="100"/>
+     </f>
+     <f dr="1" dI="-1"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="v3_xb_weiyan" width="64" height="64">
+  <SubTexture name="part-v3_xb_weiyan_1" width="42" height="50" cocos2d_pX="0" cocos2d_pY="0" x="0" y="0"/>
+ </TextureAtlas>
+</skeleton>

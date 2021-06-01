@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="TipGuyDao">
+
+	<select id="loadTipGuy" resultType="TipGuy">
+		select lordId,vip,level,count,tips,content from p_tip_guy
+	</select>
+	
+	<select id="selectTipGuyByLordId" resultType="TipGuy"  parameterType="Long"> 
+		select lordId,vip,level,count,tips,content from p_tip_guy where lordId=#{lordId} 
+	</select>
+
+	<insert id="insertTipGuy" parameterType="TipGuy" useGeneratedKeys="true" keyProperty="keyId">
+		insert into
+		p_tip_guy(lordId,vip,level,tips,count,content)
+		values(#{lordId},#{vip},#{level},#{tips},#{count},#{content})
+	</insert>
+
+	<update id="updateTipGuy" parameterType="TipGuy">
+		update p_tip_guy set
+		tips=#{tips},
+		vip=#{vip},
+		level=#{level},
+		count=#{count},
+		content=#{content}
+		where
+		lordId=#{lordId}
+	</update>
+
+</mapper>

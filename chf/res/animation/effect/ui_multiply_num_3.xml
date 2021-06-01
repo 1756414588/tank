@@ -1,0 +1,64 @@
+<skeleton name="x3" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="ui_multiply_num_3">
+   <b name="5" x="2.55" y="3.15" kX="0" kY="0" cX="0.51" cY="0.51" pX="0" pY="0" z="0">
+    <d name="part-zuzhuang_d1"/>
+   </b>
+   <b name="4" x="2.55" y="3.15" kX="16.2" kY="16.2" cX="0.71" cY="0.71" pX="0" pY="0" z="0">
+    <d name="part-zuzhuang_d1"/>
+   </b>
+   <b name="3" x="2.55" y="3.15" kX="-18.73" kY="-18.73" cX="0.9" cY="0.9" pX="0" pY="0" z="0">
+    <d name="part-zuzhuang_d1"/>
+   </b>
+   <b name="2" x="2.55" y="3.15" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0">
+    <d name="part-zuzhuang_d1"/>
+    <d name="part-zuzhuang_d2"/>
+    <d name="part-zuzhuang_d3"/>
+   </b>
+   <b name="1" x="13.55" y="-162" kX="0" kY="0" cX="2.17" cY="2.17" pX="0" pY="0" z="0">
+    <d name="part-zuzhuangx3"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="ui_multiply_num_3">
+   <mov name="start" dr="30" to="6" drTW="30" lp="0" twE="NaN">
+    <b name="5" sc="1" dl="0">
+     <f dr="16" dI="-1"/>
+     <f x="2.55" y="3.15" cocos2d_x="2.55" cocos2d_y="3.15" kX="0" kY="0" cX="0.51" cY="0.51" pX="0" pY="0" z="0" dI="0" dr="2"/>
+     <f dr="12" dI="-1"/>
+    </b>
+    <b name="4" sc="1" dl="0">
+     <f dr="18" dI="-1"/>
+     <f x="2.55" y="3.15" cocos2d_x="2.55" cocos2d_y="3.15" kX="16.2" kY="16.2" cX="0.71" cY="0.71" pX="0" pY="0" z="0" dI="0" dr="2"/>
+     <f dr="10" dI="-1"/>
+    </b>
+    <b name="3" sc="1" dl="0">
+     <f dr="20" dI="-1"/>
+     <f x="2.55" y="3.15" cocos2d_x="2.55" cocos2d_y="3.15" kX="-18.73" kY="-18.73" cX="0.9" cY="0.9" pX="0" pY="0" z="0" dI="0" dr="1"/>
+     <f dr="9" dI="-1"/>
+    </b>
+    <b name="2" sc="1" dl="0">
+     <f dr="21" dI="-1"/>
+     <f x="2.55" y="3.15" cocos2d_x="2.55" cocos2d_y="3.15" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="2"/>
+     <f x="-1.7" y="0.85" cocos2d_x="-1.7" cocos2d_y="0.85" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="1" dr="3"/>
+     <f x="3.5" y="-1.5" cocos2d_x="3.5" cocos2d_y="-1.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="2" dr="2"/>
+     <f dr="2" dI="-1"/>
+    </b>
+    <b name="1" sc="1" dl="0">
+     <f dr="1" dI="-1"/>
+     <f x="13.55" y="-162" cocos2d_x="13.55" cocos2d_y="-162" kX="0" kY="0" cX="2.17" cY="2.17" pX="0" pY="0" z="0" dI="0" twE="0" dr="15"/>
+     <f x="0" y="0" cocos2d_x="0" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1" dI="0" twE="0" dr="5"/>
+     <f x="0" y="4" cocos2d_x="0" cocos2d_y="4" kX="0" kY="0" cX="0.95" cY="0.95" pX="0" pY="0" z="1" dI="0" twE="0" dr="5"/>
+     <f x="0" y="0" cocos2d_x="0" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="4"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="x3" width="512" height="256">
+  <SubTexture name="part-zuzhuangx3" width="78" height="62" cocos2d_pX="39.35" cocos2d_pY="29.45" x="356" y="119"/>
+  <SubTexture name="part-zuzhuang_d3" width="190" height="173" cocos2d_pX="95" cocos2d_pY="86.5" x="0" y="0"/>
+  <SubTexture name="part-zuzhuang_d2" width="162" height="171" cocos2d_pX="80.75" cocos2d_pY="85.5" x="192" y="0"/>
+  <SubTexture name="part-zuzhuang_d1" width="135" height="117" cocos2d_pX="67.5" cocos2d_pY="58.5" x="356" y="0"/>
+ </TextureAtlas>
+</skeleton>

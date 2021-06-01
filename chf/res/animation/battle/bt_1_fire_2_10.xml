@@ -1,0 +1,47 @@
+<skeleton name="b_zhanche_huoshe2" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="bt_1_fire_2_10">
+   <b name="1" x="-8.5" y="-40.35" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0">
+    <d name="part-b_zhanche_huoshe_00000"/>
+    <d name="part-b_zhanche_huoshe_00001"/>
+    <d name="part-b_zhanche_huoshe_00002"/>
+    <d name="part-b_zhanche_huoshe_00003"/>
+    <d name="part-b_zhanche_huoshe_00004"/>
+   </b>
+   <b name="10" x="9.5" y="-40.35" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1">
+    <d name="part-b_zhanche_huoshe_00000"/>
+    <d name="part-b_zhanche_huoshe_00001"/>
+    <d name="part-b_zhanche_huoshe_00002"/>
+    <d name="part-b_zhanche_huoshe_00003"/>
+    <d name="part-b_zhanche_huoshe_00004"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="bt_1_fire_2_10">
+   <mov name="start" dr="10" to="0" drTW="10" lp="1" twE="NaN">
+    <b name="1" sc="1" dl="0">
+     <f x="-8.5" y="-40.35" cocos2d_x="-8.5" cocos2d_y="-40.3" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="2"/>
+     <f x="-8.5" y="-40.35" cocos2d_x="-8.5" cocos2d_y="-40.3" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="1" dr="2"/>
+     <f x="-8.5" y="-40.35" cocos2d_x="-8.5" cocos2d_y="-40.3" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="2" dr="2"/>
+     <f x="-8.5" y="-40.35" cocos2d_x="-8.5" cocos2d_y="-40.3" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="3" dr="2"/>
+     <f x="-8.5" y="-40.35" cocos2d_x="-8.5" cocos2d_y="-40.3" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="4" dr="2"/>
+    </b>
+    <b name="10" sc="1" dl="0">
+     <f x="9.5" y="-40.35" cocos2d_x="9.5" cocos2d_y="-40.3" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1" dI="0" dr="2"/>
+     <f x="9.5" y="-40.35" cocos2d_x="9.5" cocos2d_y="-40.3" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1" dI="1" dr="2"/>
+     <f x="9.5" y="-40.35" cocos2d_x="9.5" cocos2d_y="-40.3" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1" dI="2" dr="2"/>
+     <f x="9.5" y="-40.35" cocos2d_x="9.5" cocos2d_y="-40.3" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1" dI="3" dr="2"/>
+     <f x="9.5" y="-40.35" cocos2d_x="9.5" cocos2d_y="-40.3" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1" dI="4" dr="2"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="b_zhanche_huoshe2" width="512" height="1024">
+  <SubTexture name="part-b_zhanche_huoshe_00004" width="202" height="202" cocos2d_pX="100.95" cocos2d_pY="101" x="0" y="408"/>
+  <SubTexture name="part-b_zhanche_huoshe_00003" width="202" height="202" cocos2d_pX="100.95" cocos2d_pY="101" x="204" y="204"/>
+  <SubTexture name="part-b_zhanche_huoshe_00002" width="202" height="202" cocos2d_pX="100.95" cocos2d_pY="101" x="0" y="0"/>
+  <SubTexture name="part-b_zhanche_huoshe_00001" width="202" height="202" cocos2d_pX="100.95" cocos2d_pY="101" x="204" y="0"/>
+  <SubTexture name="part-b_zhanche_huoshe_00000" width="202" height="202" cocos2d_pX="100.95" cocos2d_pY="101" x="0" y="204"/>
+ </TextureAtlas>
+</skeleton>

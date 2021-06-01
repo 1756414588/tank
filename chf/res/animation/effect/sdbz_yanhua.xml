@@ -1,0 +1,460 @@
+<skeleton name="sdbz_yanhua" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="sdbz_yanhua">
+   <b name="7" x="-155.05" y="705.05" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0">
+    <d name="part-sbdz_yanhua2"/>
+   </b>
+   <b name="6" x="-156.3" y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="1">
+    <d name="part-sbdz_yanhua_00000"/>
+    <d name="part-sbdz_yanhua_00002"/>
+    <d name="part-sbdz_yanhua_00004"/>
+    <d name="part-sbdz_yanhua_00006"/>
+    <d name="part-sbdz_yanhua_00008"/>
+    <d name="part-sbdz_yanhua_00010"/>
+    <d name="part-sbdz_yanhua_00012"/>
+    <d name="part-sbdz_yanhua_00014"/>
+    <d name="part-sbdz_yanhua_00016"/>
+    <d name="part-sbdz_yanhua_00018"/>
+    <d name="part-sbdz_yanhua_00020"/>
+    <d name="part-sbdz_yanhua_00022"/>
+    <d name="part-sbdz_yanhua_00024"/>
+    <d name="part-sbdz_yanhua_00026"/>
+    <d name="part-sbdz_yanhua_00028"/>
+    <d name="part-sbdz_yanhua_00030"/>
+    <d name="part-sbdz_yanhua_00033"/>
+    <d name="part-sbdz_yanhua_00034"/>
+    <d name="part-sbdz_yanhua_00036"/>
+    <d name="part-sbdz_yanhua_00038"/>
+    <d name="part-sbdz_yanhua_00040"/>
+    <d name="part-sbdz_yanhua_00042"/>
+    <d name="part-sbdz_yanhua_00044"/>
+    <d name="part-sbdz_yanhua_00046"/>
+    <d name="part-sbdz_yanhua_00048"/>
+    <d name="part-sbdz_yanhua_00050"/>
+    <d name="part-sbdz_yanhua_00052"/>
+    <d name="part-sbdz_yanhua_00054"/>
+    <d name="part-sbdz_yanhua_00056"/>
+    <d name="part-sbdz_yanhua_00058"/>
+    <d name="part-sbdz_yanhua_00060"/>
+    <d name="part-sbdz_yanhua_00062"/>
+    <d name="part-sbdz_yanhua_00064"/>
+    <d name="part-sbdz_yanhua_00066"/>
+    <d name="part-sbdz_yanhua_00068"/>
+    <d name="part-sbdz_yanhua_00070"/>
+   </b>
+   <b name="5" x="155.05" y="705.05" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1">
+    <d name="part-sbdz_yanhua2"/>
+   </b>
+   <b name="4" x="153.3" y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="2">
+    <d name="part-sbdz_yanhua_00000"/>
+    <d name="part-sbdz_yanhua_00002"/>
+    <d name="part-sbdz_yanhua_00004"/>
+    <d name="part-sbdz_yanhua_00006"/>
+    <d name="part-sbdz_yanhua_00008"/>
+    <d name="part-sbdz_yanhua_00010"/>
+    <d name="part-sbdz_yanhua_00012"/>
+    <d name="part-sbdz_yanhua_00014"/>
+    <d name="part-sbdz_yanhua_00016"/>
+    <d name="part-sbdz_yanhua_00018"/>
+    <d name="part-sbdz_yanhua_00020"/>
+    <d name="part-sbdz_yanhua_00022"/>
+    <d name="part-sbdz_yanhua_00024"/>
+    <d name="part-sbdz_yanhua_00026"/>
+    <d name="part-sbdz_yanhua_00028"/>
+    <d name="part-sbdz_yanhua_00030"/>
+    <d name="part-sbdz_yanhua_00033"/>
+    <d name="part-sbdz_yanhua_00034"/>
+    <d name="part-sbdz_yanhua_00036"/>
+    <d name="part-sbdz_yanhua_00038"/>
+    <d name="part-sbdz_yanhua_00040"/>
+    <d name="part-sbdz_yanhua_00042"/>
+    <d name="part-sbdz_yanhua_00044"/>
+    <d name="part-sbdz_yanhua_00046"/>
+    <d name="part-sbdz_yanhua_00048"/>
+    <d name="part-sbdz_yanhua_00050"/>
+    <d name="part-sbdz_yanhua_00052"/>
+    <d name="part-sbdz_yanhua_00054"/>
+    <d name="part-sbdz_yanhua_00056"/>
+    <d name="part-sbdz_yanhua_00058"/>
+    <d name="part-sbdz_yanhua_00060"/>
+    <d name="part-sbdz_yanhua_00062"/>
+    <d name="part-sbdz_yanhua_00064"/>
+    <d name="part-sbdz_yanhua_00066"/>
+    <d name="part-sbdz_yanhua_00068"/>
+    <d name="part-sbdz_yanhua_00070"/>
+   </b>
+   <b name="3" x="6.9" y="701" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2">
+    <d name="part-sbdz_yanhua2"/>
+   </b>
+   <b name="2" x="1.45" y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="3">
+    <d name="part-sbdz_yanhua_00000"/>
+    <d name="part-sbdz_yanhua_00002"/>
+    <d name="part-sbdz_yanhua_00004"/>
+    <d name="part-sbdz_yanhua_00006"/>
+    <d name="part-sbdz_yanhua_00008"/>
+    <d name="part-sbdz_yanhua_00010"/>
+    <d name="part-sbdz_yanhua_00012"/>
+    <d name="part-sbdz_yanhua_00014"/>
+    <d name="part-sbdz_yanhua_00016"/>
+    <d name="part-sbdz_yanhua_00018"/>
+    <d name="part-sbdz_yanhua_00020"/>
+    <d name="part-sbdz_yanhua_00022"/>
+    <d name="part-sbdz_yanhua_00024"/>
+    <d name="part-sbdz_yanhua_00026"/>
+    <d name="part-sbdz_yanhua_00028"/>
+    <d name="part-sbdz_yanhua_00030"/>
+    <d name="part-sbdz_yanhua_00033"/>
+    <d name="part-sbdz_yanhua_00034"/>
+    <d name="part-sbdz_yanhua_00036"/>
+    <d name="part-sbdz_yanhua_00038"/>
+    <d name="part-sbdz_yanhua_00040"/>
+    <d name="part-sbdz_yanhua_00042"/>
+    <d name="part-sbdz_yanhua_00044"/>
+    <d name="part-sbdz_yanhua_00046"/>
+    <d name="part-sbdz_yanhua_00048"/>
+    <d name="part-sbdz_yanhua_00050"/>
+    <d name="part-sbdz_yanhua_00052"/>
+    <d name="part-sbdz_yanhua_00054"/>
+    <d name="part-sbdz_yanhua_00056"/>
+    <d name="part-sbdz_yanhua_00058"/>
+    <d name="part-sbdz_yanhua_00060"/>
+    <d name="part-sbdz_yanhua_00062"/>
+    <d name="part-sbdz_yanhua_00064"/>
+    <d name="part-sbdz_yanhua_00066"/>
+    <d name="part-sbdz_yanhua_00068"/>
+    <d name="part-sbdz_yanhua_00070"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="sdbz_yanhua">
+   <mov name="start" dr="139" to="0" drTW="139" lp="0" twE="NaN">
+    <b name="7" sc="1" dl="0">
+     <f x="-155.05" y="705.05" cocos2d_x="-155.05" cocos2d_y="705.05" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" twE="0" dr="15"/>
+     <f x="-155.05" y="105.05" cocos2d_x="-155.05" cocos2d_y="105.05" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="1"/>
+     <f dr="123" dI="-1"/>
+    </b>
+    <b name="6" sc="1" dl="0">
+     <f dr="15" dI="-1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="1" dI="0" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="0" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="1" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="1" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="2" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="2" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="3" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="3" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="4" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="4" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="5" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="5" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="6" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="6" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="7" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="7" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="8" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="8" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="9" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="9" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="10" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="10" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="11" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="11" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="12" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="12" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="13" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="13" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="14" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="14" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="15" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="15" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="16" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="16" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="17" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="17" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="18" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="18" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="19" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="19" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="20" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="20" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="21" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="21" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="22" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="22" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="23" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="23" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="24" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="24" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="25" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="25" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="26" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="26" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="27" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="27" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="28" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="28" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="28" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="28" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="29" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="29" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="29" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="29" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="30" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="30" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="30" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="30" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="31" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="31" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="31" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="31" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="32" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="32" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="32" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="32" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="33" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="33" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="33" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="33" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="34" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="34" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="34" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="34" dr="1"/>
+     <f x="-156.3" y="124.95" cocos2d_x="-156.3" cocos2d_y="124.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="35" dr="1"/>
+     <f dr="39" dI="-1"/>
+    </b>
+    <b name="5" sc="1" dl="0">
+     <f dr="6" dI="-1"/>
+     <f x="155.05" y="705.05" cocos2d_x="155.05" cocos2d_y="705.05" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1" dI="0" twE="0" dr="15"/>
+     <f x="155.05" y="105.05" cocos2d_x="155.05" cocos2d_y="105.05" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1" dI="0" dr="1"/>
+     <f dr="117" dI="-1"/>
+    </b>
+    <b name="4" sc="1" dl="0">
+     <f dr="21" dI="-1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="2" dI="0" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="0" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="1" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="1" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="2" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="2" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="3" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="3" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="4" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="4" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="5" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="5" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="6" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="6" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="7" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="7" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="8" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="8" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="9" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="9" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="10" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="10" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="11" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="11" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="12" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="12" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="13" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="13" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="14" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="14" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="15" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="15" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="16" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="16" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="17" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="17" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="18" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="18" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="19" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="19" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="20" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="20" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="21" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="21" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="22" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="22" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="23" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="23" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="24" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="24" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="25" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="25" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="26" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="26" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="27" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="27" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="28" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="28" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="28" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="28" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="29" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="29" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="29" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="29" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="30" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="30" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="30" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="30" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="31" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="31" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="31" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="31" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="32" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="32" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="32" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="32" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="33" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="33" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="1" dI="33" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="0" dI="33" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="0" dI="34" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="0" dI="34" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="0" dI="34" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="0" dI="34" dr="1"/>
+     <f x="153.3" y="121.1" cocos2d_x="153.3" cocos2d_y="121.1" kX="0" kY="0" cX="1.57" cY="1.57" pX="0" pY="0" z="0" dI="35" dr="1"/>
+     <f dr="33" dI="-1"/>
+    </b>
+    <b name="3" sc="1" dl="0">
+     <f dr="28" dI="-1"/>
+     <f x="6.9" y="701" cocos2d_x="6.9" cocos2d_y="701" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="0" twE="0" dr="15"/>
+     <f x="6.9" y="1" cocos2d_x="6.9" cocos2d_y="1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="0" dr="1"/>
+     <f dr="95" dI="-1"/>
+    </b>
+    <b name="2" sc="1" dl="0">
+     <f dr="43" dI="-1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="3" dI="0" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="2" dI="0" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="2" dI="1" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="2" dI="1" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="2" dI="2" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="2" dI="2" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="2" dI="3" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="2" dI="3" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="2" dI="4" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="2" dI="4" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="2" dI="5" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="2" dI="5" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="2" dI="6" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="2" dI="6" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="2" dI="7" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="2" dI="7" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="2" dI="8" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="2" dI="8" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="2" dI="9" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="2" dI="9" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="2" dI="10" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="2" dI="10" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="2" dI="11" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="2" dI="11" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="2" dI="12" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="2" dI="12" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="2" dI="13" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="2" dI="13" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="2" dI="14" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="2" dI="14" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="2" dI="15" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="2" dI="15" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="2" dI="16" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="2" dI="16" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="2" dI="17" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="2" dI="17" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="2" dI="18" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="2" dI="18" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="2" dI="19" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="2" dI="19" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="2" dI="20" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="2" dI="20" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="2" dI="21" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="2" dI="21" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="2" dI="22" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="2" dI="22" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="2" dI="23" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="2" dI="23" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="2" dI="24" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="2" dI="24" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="2" dI="25" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="2" dI="25" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="2" dI="26" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="2" dI="26" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="2" dI="27" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="2" dI="27" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="2" dI="28" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="1" dI="28" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="1" dI="28" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="1" dI="28" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="1" dI="29" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="1" dI="29" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="1" dI="29" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="0" dI="29" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="0" dI="30" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="0" dI="30" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="0" dI="30" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="0" dI="30" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="0" dI="31" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="0" dI="31" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="0" dI="31" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="0" dI="31" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="0" dI="32" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="0" dI="32" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="0" dI="32" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="0" dI="32" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="0" dI="33" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="0" dI="33" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="0" dI="33" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="0" dI="33" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="0" dI="34" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="0" dI="34" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="0" dI="34" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="0" dI="34" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="0" dI="35" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="0" dI="35" dr="1"/>
+     <f x="1.45" y="16.95" cocos2d_x="1.45" cocos2d_y="16.95" kX="0" kY="0" cX="1.78" cY="1.78" pX="0" pY="0" z="0" dI="35" dr="1"/>
+     <f dr="9" dI="-1"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="sdbz_yanhua" width="2048" height="2048">
+  <SubTexture name="part-sbdz_yanhua_00070" width="250" height="250" cocos2d_pX="125" cocos2d_pY="125" x="1008" y="756"/>
+  <SubTexture name="part-sbdz_yanhua_00068" width="250" height="250" cocos2d_pX="125" cocos2d_pY="125" x="504" y="0"/>
+  <SubTexture name="part-sbdz_yanhua_00066" width="250" height="250" cocos2d_pX="125" cocos2d_pY="125" x="1008" y="504"/>
+  <SubTexture name="part-sbdz_yanhua_00064" width="250" height="250" cocos2d_pX="125" cocos2d_pY="125" x="1008" y="0"/>
+  <SubTexture name="part-sbdz_yanhua_00062" width="250" height="250" cocos2d_pX="125" cocos2d_pY="125" x="756" y="1008"/>
+  <SubTexture name="part-sbdz_yanhua_00060" width="250" height="250" cocos2d_pX="125" cocos2d_pY="125" x="1512" y="0"/>
+  <SubTexture name="part-sbdz_yanhua_00058" width="250" height="250" cocos2d_pX="125" cocos2d_pY="125" x="1512" y="504"/>
+  <SubTexture name="part-sbdz_yanhua_00056" width="250" height="250" cocos2d_pX="125" cocos2d_pY="125" x="0" y="252"/>
+  <SubTexture name="part-sbdz_yanhua_00054" width="250" height="250" cocos2d_pX="125" cocos2d_pY="125" x="1512" y="756"/>
+  <SubTexture name="part-sbdz_yanhua_00052" width="250" height="250" cocos2d_pX="125" cocos2d_pY="125" x="504" y="252"/>
+  <SubTexture name="part-sbdz_yanhua_00050" width="250" height="250" cocos2d_pX="125" cocos2d_pY="125" x="0" y="756"/>
+  <SubTexture name="part-sbdz_yanhua_00048" width="250" height="250" cocos2d_pX="125" cocos2d_pY="125" x="1008" y="252"/>
+  <SubTexture name="part-sbdz_yanhua_00046" width="250" height="250" cocos2d_pX="125" cocos2d_pY="125" x="504" y="1008"/>
+  <SubTexture name="part-sbdz_yanhua_00044" width="250" height="250" cocos2d_pX="125" cocos2d_pY="125" x="1512" y="252"/>
+  <SubTexture name="part-sbdz_yanhua_00042" width="250" height="250" cocos2d_pX="125" cocos2d_pY="125" x="504" y="756"/>
+  <SubTexture name="part-sbdz_yanhua_00040" width="250" height="250" cocos2d_pX="125" cocos2d_pY="125" x="0" y="504"/>
+  <SubTexture name="part-sbdz_yanhua_00038" width="250" height="250" cocos2d_pX="125" cocos2d_pY="125" x="0" y="1008"/>
+  <SubTexture name="part-sbdz_yanhua_00036" width="250" height="250" cocos2d_pX="125" cocos2d_pY="125" x="504" y="504"/>
+  <SubTexture name="part-sbdz_yanhua_00034" width="250" height="250" cocos2d_pX="125" cocos2d_pY="125" x="0" y="0"/>
+  <SubTexture name="part-sbdz_yanhua_00033" width="250" height="250" cocos2d_pX="125" cocos2d_pY="125" x="252" y="0"/>
+  <SubTexture name="part-sbdz_yanhua_00030" width="250" height="250" cocos2d_pX="125" cocos2d_pY="125" x="756" y="0"/>
+  <SubTexture name="part-sbdz_yanhua_00028" width="250" height="250" cocos2d_pX="125" cocos2d_pY="125" x="1260" y="0"/>
+  <SubTexture name="part-sbdz_yanhua_00026" width="250" height="250" cocos2d_pX="125" cocos2d_pY="125" x="1764" y="0"/>
+  <SubTexture name="part-sbdz_yanhua_00024" width="250" height="250" cocos2d_pX="125" cocos2d_pY="125" x="252" y="252"/>
+  <SubTexture name="part-sbdz_yanhua_00022" width="250" height="250" cocos2d_pX="125" cocos2d_pY="125" x="756" y="252"/>
+  <SubTexture name="part-sbdz_yanhua_00020" width="250" height="250" cocos2d_pX="125" cocos2d_pY="125" x="1260" y="252"/>
+  <SubTexture name="part-sbdz_yanhua_00018" width="250" height="250" cocos2d_pX="125" cocos2d_pY="125" x="1764" y="252"/>
+  <SubTexture name="part-sbdz_yanhua_00016" width="250" height="250" cocos2d_pX="125" cocos2d_pY="125" x="252" y="504"/>
+  <SubTexture name="part-sbdz_yanhua_00014" width="250" height="250" cocos2d_pX="125" cocos2d_pY="125" x="756" y="504"/>
+  <SubTexture name="part-sbdz_yanhua_00012" width="250" height="250" cocos2d_pX="125" cocos2d_pY="125" x="1260" y="504"/>
+  <SubTexture name="part-sbdz_yanhua_00010" width="250" height="250" cocos2d_pX="125" cocos2d_pY="125" x="1764" y="504"/>
+  <SubTexture name="part-sbdz_yanhua_00008" width="250" height="250" cocos2d_pX="125" cocos2d_pY="125" x="252" y="756"/>
+  <SubTexture name="part-sbdz_yanhua_00006" width="250" height="250" cocos2d_pX="125" cocos2d_pY="125" x="756" y="756"/>
+  <SubTexture name="part-sbdz_yanhua_00004" width="250" height="250" cocos2d_pX="125" cocos2d_pY="125" x="1260" y="756"/>
+  <SubTexture name="part-sbdz_yanhua_00002" width="250" height="250" cocos2d_pX="125" cocos2d_pY="125" x="1764" y="756"/>
+  <SubTexture name="part-sbdz_yanhua_00000" width="250" height="250" cocos2d_pX="125" cocos2d_pY="125" x="252" y="1008"/>
+  <SubTexture name="part-sbdz_yanhua2" width="100" height="300" cocos2d_pX="50" cocos2d_pY="57" x="1008" y="1008"/>
+ </TextureAtlas>
+</skeleton>

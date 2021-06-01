@@ -1,0 +1,77 @@
+<skeleton name="tiekuangchang" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="ui_wild_iron">
+   <b name="1" x="32.25" y="-4.9" kX="0" kY="0" cX="0.8" cY="0.8" pX="0" pY="0" z="0">
+    <d name="part-tkc_rongyan1"/>
+    <d name="part-tkc_rongyan2"/>
+    <d name="part-tkc_rongyan3"/>
+   </b>
+   <b name="2" x="30.55" y="2" kX="0" kY="0" cX="0.69" cY="0.69" pX="0" pY="0" z="1">
+    <d name="part-tkc_ronggguang"/>
+   </b>
+   <b name="yancong_yan3_mc" x="-9.1" y="-15.85" kX="-103.75" kY="-103.75" cX="0.6" cY="0.6" pX="0" pY="0" z="2">
+    <d name="part-yancong_yan4"/>
+    <d name="part-yancong_yan5"/>
+    <d name="part-yancong_yan6"/>
+    <d name="part-yancong_yan7"/>
+    <d name="part-yancong_yan1"/>
+    <d name="part-yancong_yan2"/>
+    <d name="part-yancong_yan3"/>
+   </b>
+   <b name="yancong_yan_mc" x="11.1" y="-25" kX="-89.95" kY="-89.95" cX="0.6" cY="0.6" pX="0" pY="0" z="3">
+    <d name="part-yancong_yan1"/>
+    <d name="part-yancong_yan2"/>
+    <d name="part-yancong_yan3"/>
+    <d name="part-yancong_yan4"/>
+    <d name="part-yancong_yan5"/>
+    <d name="part-yancong_yan6"/>
+    <d name="part-yancong_yan7"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="ui_wild_iron">
+   <mov name="start" dr="56" to="6" drTW="56" lp="1" twE="NaN">
+    <b name="1" sc="1" dl="0">
+     <f x="32.25" y="-4.9" cocos2d_x="32.25" cocos2d_y="-4.9" kX="0" kY="0" cX="0.8" cY="0.8" pX="0" pY="0" z="0" dI="0" dr="19"/>
+     <f x="32.1" y="-5" cocos2d_x="32.1" cocos2d_y="-5" kX="0" kY="0" cX="0.8" cY="0.8" pX="0" pY="0" z="0" dI="1" dr="19"/>
+     <f x="32" y="-4.8" cocos2d_x="32" cocos2d_y="-4.8" kX="0" kY="0" cX="0.8" cY="0.8" pX="0" pY="0" z="0" dI="2" dr="18"/>
+    </b>
+    <b name="2" sc="1" dl="0">
+     <f x="30.55" y="2" cocos2d_x="30.55" cocos2d_y="2" kX="0" kY="0" cX="0.69" cY="0.69" pX="0" pY="0" z="1" dI="0" dr="56"/>
+    </b>
+    <b name="yancong_yan3_mc" sc="1" dl="0">
+     <f x="-9.1" y="-15.85" cocos2d_x="-9.1" cocos2d_y="-15.85" kX="-103.75" kY="-103.75" cX="0.6" cY="0.6" pX="0" pY="0" z="2" dI="0" dr="8"/>
+     <f x="-9.1" y="-15.85" cocos2d_x="-9.1" cocos2d_y="-15.85" kX="-103.75" kY="-103.75" cX="0.6" cY="0.6" pX="0" pY="0" z="2" dI="1" dr="8"/>
+     <f x="-9.2" y="-16.2" cocos2d_x="-9.2" cocos2d_y="-16.2" kX="-103.75" kY="-103.75" cX="0.6" cY="0.6" pX="0" pY="0" z="2" dI="2" dr="8"/>
+     <f x="-9.3" y="-16.65" cocos2d_x="-9.3" cocos2d_y="-16.65" kX="-103.75" kY="-103.75" cX="0.6" cY="0.6" pX="0" pY="0" z="2" dI="3" dr="8"/>
+     <f x="-9.1" y="-15.85" cocos2d_x="-9.1" cocos2d_y="-15.85" kX="-103.75" kY="-103.75" cX="0.6" cY="0.6" pX="0" pY="0" z="2" dI="4" dr="8"/>
+     <f x="-9.1" y="-15.85" cocos2d_x="-9.1" cocos2d_y="-15.85" kX="-103.75" kY="-103.75" cX="0.6" cY="0.6" pX="0" pY="0" z="2" dI="5" dr="8"/>
+     <f x="-9.1" y="-15.85" cocos2d_x="-9.1" cocos2d_y="-15.85" kX="-103.75" kY="-103.75" cX="0.6" cY="0.6" pX="0" pY="0" z="2" dI="6" dr="8"/>
+    </b>
+    <b name="yancong_yan_mc" sc="1" dl="0">
+     <f x="11.1" y="-25" cocos2d_x="11.1" cocos2d_y="-25" kX="-89.95" kY="-89.95" cX="0.6" cY="0.6" pX="0" pY="0" z="3" dI="0" dr="8"/>
+     <f x="11.1" y="-25" cocos2d_x="11.1" cocos2d_y="-25" kX="-89.95" kY="-89.95" cX="0.6" cY="0.6" pX="0" pY="0" z="3" dI="1" dr="8"/>
+     <f x="11.1" y="-25" cocos2d_x="11.1" cocos2d_y="-25" kX="-89.95" kY="-89.95" cX="0.6" cY="0.6" pX="0" pY="0" z="3" dI="2" dr="8"/>
+     <f x="11.1" y="-25" cocos2d_x="11.1" cocos2d_y="-25" kX="-89.95" kY="-89.95" cX="0.6" cY="0.6" pX="0" pY="0" z="3" dI="3" dr="8"/>
+     <f x="11.1" y="-25" cocos2d_x="11.1" cocos2d_y="-25" kX="-89.95" kY="-89.95" cX="0.6" cY="0.6" pX="0" pY="0" z="3" dI="4" dr="8"/>
+     <f x="11.1" y="-25.4" cocos2d_x="11.1" cocos2d_y="-25.4" kX="-89.95" kY="-89.95" cX="0.6" cY="0.6" pX="0" pY="0" z="3" dI="5" dr="8"/>
+     <f x="11.1" y="-25.9" cocos2d_x="11.1" cocos2d_y="-25.9" kX="-89.95" kY="-89.95" cX="0.6" cY="0.6" pX="0" pY="0" z="3" dI="6" dr="8"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="tiekuangchang" width="256" height="256">
+  <SubTexture name="part-yancong_yan3" width="77" height="57" cocos2d_pX="38.05" cocos2d_pY="28.3" x="0" y="59"/>
+  <SubTexture name="part-yancong_yan2" width="77" height="57" cocos2d_pX="38.05" cocos2d_pY="28.3" x="158" y="0"/>
+  <SubTexture name="part-yancong_yan1" width="77" height="57" cocos2d_pX="38.05" cocos2d_pY="28.3" x="79" y="59"/>
+  <SubTexture name="part-yancong_yan7" width="74" height="57" cocos2d_pX="36.65" cocos2d_pY="28.3" x="0" y="118"/>
+  <SubTexture name="part-yancong_yan6" width="75" height="57" cocos2d_pX="37.45" cocos2d_pY="28.3" x="158" y="59"/>
+  <SubTexture name="part-yancong_yan5" width="77" height="57" cocos2d_pX="38.05" cocos2d_pY="28.3" x="0" y="0"/>
+  <SubTexture name="part-yancong_yan4" width="77" height="57" cocos2d_pX="38.05" cocos2d_pY="28.3" x="79" y="0"/>
+  <SubTexture name="part-tkc_ronggguang" width="20" height="11" cocos2d_pX="9.7" cocos2d_pY="5.1" x="76" y="118"/>
+  <SubTexture name="part-tkc_rongyan3" width="10" height="21" cocos2d_pX="5" cocos2d_pY="10.3" x="237" y="0"/>
+  <SubTexture name="part-tkc_rongyan2" width="9" height="21" cocos2d_pX="3.5" cocos2d_pY="10.1" x="237" y="23"/>
+  <SubTexture name="part-tkc_rongyan1" width="7" height="21" cocos2d_pX="3.2" cocos2d_pY="10.3" x="237" y="46"/>
+ </TextureAtlas>
+</skeleton>

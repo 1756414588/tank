@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="ActiveDao">
+    <select id="selectActiveCode" parameterType="Long"
+            resultType="com.account.domain.ActiveCode">
+		select * from `u_active_code` where
+		activeCode=#{activeCode}
+	</select>
+
+    <update id="updateActiveCode" parameterType="com.account.domain.ActiveCode">
+		update u_active_code
+		set
+		used=#{used},accountKey=#{accountKey},useDate=#{useDate}
+		where
+		keyId=#{keyId}
+	</update>
+
+</mapper>

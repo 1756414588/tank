@@ -1,0 +1,21 @@
+syntax = "proto2";
+option java_package = "com.game.grpc.proto.rpc";
+option java_outer_classname = "HeartbeatProto";
+
+service Heartbeat {
+    rpc validateChannel (HeartbeatRequest) returns (HeartbeatResponse);
+}
+
+message HeartbeatRequest {
+    required int32 serverId = 1; //游戏服serverId
+    required int64 time = 2; //游戏服时间戳
+    required int32 id = 3; //id
+
+}
+
+message HeartbeatResponse {
+    required int64 time = 1; //跨服时间戳
+    required string ip = 2; //跨服ip
+    required int32 port = 3; //跨服rpc端口
+    required int32 id = 4; //id
+}

@@ -1,0 +1,22 @@
+<skeleton name="zdsbai_zhuanguang" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="ui_balance_fail">
+   <b name="1" x="0" y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0">
+    <d name="part-zdsbai_zhuanguang"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="ui_balance_fail">
+   <mov name="start" dr="144" to="6" drTW="144" lp="1" twE="NaN">
+    <b name="1" sc="1" dl="0">
+     <f x="0" y="0" cocos2d_x="0" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" twE="0" dr="143"/>
+     <f x="0" y="0" cocos2d_x="0" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="1" twR="1"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="zdsbai_zhuanguang" width="256" height="256">
+  <SubTexture name="part-zdsbai_zhuanguang" width="230" height="216" cocos2d_pX="115" cocos2d_pY="108" x="0" y="0"/>
+ </TextureAtlas>
+</skeleton>

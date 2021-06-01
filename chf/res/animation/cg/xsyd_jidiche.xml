@@ -1,0 +1,136 @@
+<skeleton name="xsyd_jidiche" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="xsyd_jidiche">
+   <b name="2" x="-0.45" y="2.6" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0">
+    <d name="part-xsyd_jidiche_35"/>
+    <d name="part-xsyd_jidiche_34"/>
+    <d name="part-xsyd_jidiche_33"/>
+    <d name="part-xsyd_jidiche_32"/>
+    <d name="part-xsyd_jidiche_31"/>
+    <d name="part-xsyd_jidiche_30"/>
+    <d name="part-xsyd_jidiche_29"/>
+    <d name="part-xsyd_jidiche_28"/>
+    <d name="part-xsyd_jidiche_27"/>
+    <d name="part-xsyd_jidiche_26"/>
+    <d name="part-xsyd_jidiche_25"/>
+    <d name="part-xsyd_jidiche_24"/>
+    <d name="part-xsyd_jidiche_23"/>
+    <d name="part-xsyd_jidiche_22"/>
+    <d name="part-xsyd_jidiche_21"/>
+    <d name="part-xsyd_jidiche_20"/>
+    <d name="part-xsyd_jidiche_19"/>
+    <d name="part-xsyd_jidiche_18"/>
+    <d name="part-xsyd_jidiche_17"/>
+    <d name="part-xsyd_jidiche_16"/>
+    <d name="part-xsyd_jidiche_15"/>
+    <d name="part-xsyd_jidiche_14"/>
+    <d name="part-xsyd_jidiche_13"/>
+    <d name="part-xsyd_jidiche_12"/>
+    <d name="part-xsyd_jidiche_11"/>
+    <d name="part-xsyd_jidiche_10"/>
+    <d name="part-xsyd_jidiche_9"/>
+    <d name="part-xsyd_jidiche_8"/>
+    <d name="part-xsyd_jidiche_7"/>
+    <d name="part-xsyd_jidiche_6"/>
+    <d name="part-xsyd_jidiche_5"/>
+    <d name="part-xsyd_jidiche_4"/>
+    <d name="part-xsyd_jidiche_3"/>
+    <d name="part-xsyd_jidiche_2"/>
+    <d name="part-xsyd_jidiche_1"/>
+    <d name="part-xsyd_jidiche_0"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="xsyd_jidiche">
+   <mov name="start" dr="3" to="0" drTW="3" lp="0" twE="NaN">
+    <b name="2" sc="1" dl="0">
+     <f x="-0.45" y="2.6" cocos2d_x="-0.45" cocos2d_y="2.6" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="3"/>
+    </b>
+   </mov>
+   <mov name="start1" dr="108" to="0" drTW="108" lp="0" twE="NaN">
+    <b name="2" sc="1" dl="0">
+     <f x="-0.45" y="2.6" cocos2d_x="-0.45" cocos2d_y="2.6" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="3"/>
+     <f x="-0.45" y="2.6" cocos2d_x="-0.45" cocos2d_y="2.6" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="1" dr="3"/>
+     <f x="-0.45" y="2.6" cocos2d_x="-0.45" cocos2d_y="2.6" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="2" dr="3"/>
+     <f x="-0.45" y="2.6" cocos2d_x="-0.45" cocos2d_y="2.6" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="3" dr="3"/>
+     <f x="-0.45" y="2.6" cocos2d_x="-0.45" cocos2d_y="2.6" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="4" dr="3"/>
+     <f x="-0.45" y="2.6" cocos2d_x="-0.45" cocos2d_y="2.6" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="5" dr="3"/>
+     <f x="-0.45" y="2.6" cocos2d_x="-0.45" cocos2d_y="2.6" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="6" dr="3"/>
+     <f x="-0.45" y="2.6" cocos2d_x="-0.45" cocos2d_y="2.6" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="7" dr="3"/>
+     <f x="-0.45" y="2.6" cocos2d_x="-0.45" cocos2d_y="2.6" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="8" dr="3"/>
+     <f x="-0.45" y="2.6" cocos2d_x="-0.45" cocos2d_y="2.6" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="9" dr="3"/>
+     <f x="-0.45" y="2.6" cocos2d_x="-0.45" cocos2d_y="2.6" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="10" dr="3"/>
+     <f x="-0.45" y="2.6" cocos2d_x="-0.45" cocos2d_y="2.6" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="11" dr="3"/>
+     <f x="-0.45" y="2.6" cocos2d_x="-0.45" cocos2d_y="2.6" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="12" dr="3"/>
+     <f x="-0.45" y="2.6" cocos2d_x="-0.45" cocos2d_y="2.6" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="13" dr="3"/>
+     <f x="-0.45" y="2.6" cocos2d_x="-0.45" cocos2d_y="2.6" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="14" dr="3"/>
+     <f x="-0.45" y="2.6" cocos2d_x="-0.45" cocos2d_y="2.6" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="15" dr="3"/>
+     <f x="-0.45" y="2.6" cocos2d_x="-0.45" cocos2d_y="2.6" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="16" dr="3"/>
+     <f x="-0.45" y="2.6" cocos2d_x="-0.45" cocos2d_y="2.6" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="17" dr="3"/>
+     <f x="-0.45" y="2.6" cocos2d_x="-0.45" cocos2d_y="2.6" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="18" dr="3"/>
+     <f x="-0.45" y="2.6" cocos2d_x="-0.45" cocos2d_y="2.6" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="19" dr="3"/>
+     <f x="-0.45" y="2.6" cocos2d_x="-0.45" cocos2d_y="2.6" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="20" dr="3"/>
+     <f x="-0.45" y="2.6" cocos2d_x="-0.45" cocos2d_y="2.6" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="21" dr="3"/>
+     <f x="-0.45" y="2.6" cocos2d_x="-0.45" cocos2d_y="2.6" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="22" dr="3"/>
+     <f x="-0.45" y="2.6" cocos2d_x="-0.45" cocos2d_y="2.6" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="23" dr="3"/>
+     <f x="-0.45" y="2.6" cocos2d_x="-0.45" cocos2d_y="2.6" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="24" dr="3"/>
+     <f x="-0.45" y="2.6" cocos2d_x="-0.45" cocos2d_y="2.6" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="25" dr="3"/>
+     <f x="-0.45" y="2.6" cocos2d_x="-0.45" cocos2d_y="2.6" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="26" dr="3"/>
+     <f x="-0.45" y="2.6" cocos2d_x="-0.45" cocos2d_y="2.6" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="27" dr="3"/>
+     <f x="-0.45" y="2.6" cocos2d_x="-0.45" cocos2d_y="2.6" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="28" dr="3"/>
+     <f x="-0.45" y="2.6" cocos2d_x="-0.45" cocos2d_y="2.6" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="29" dr="3"/>
+     <f x="-0.45" y="2.6" cocos2d_x="-0.45" cocos2d_y="2.6" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="30" dr="3"/>
+     <f x="-0.45" y="2.6" cocos2d_x="-0.45" cocos2d_y="2.6" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="31" dr="3"/>
+     <f x="-0.45" y="2.6" cocos2d_x="-0.45" cocos2d_y="2.6" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="32" dr="3"/>
+     <f x="-0.45" y="2.6" cocos2d_x="-0.45" cocos2d_y="2.6" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="33" dr="3"/>
+     <f x="-0.45" y="2.6" cocos2d_x="-0.45" cocos2d_y="2.6" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="34" dr="3"/>
+     <f x="-0.45" y="2.6" cocos2d_x="-0.45" cocos2d_y="2.6" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="35" dr="3"/>
+    </b>
+   </mov>
+   <mov name="start2" dr="11" to="0" drTW="11" lp="0" twE="NaN">
+    <b name="2" sc="1" dl="0">
+     <f x="-0.45" y="2.6" cocos2d_x="-0.45" cocos2d_y="2.6" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="35" dr="11"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="xsyd_jidiche" width="2048" height="2048">
+  <SubTexture name="part-xsyd_jidiche_0" width="272" height="204" cocos2d_pX="135.8" cocos2d_pY="101.85" x="274" y="0"/>
+  <SubTexture name="part-xsyd_jidiche_1" width="272" height="204" cocos2d_pX="135.8" cocos2d_pY="101.85" x="1370" y="412"/>
+  <SubTexture name="part-xsyd_jidiche_2" width="272" height="204" cocos2d_pX="135.8" cocos2d_pY="101.85" x="822" y="0"/>
+  <SubTexture name="part-xsyd_jidiche_3" width="272" height="204" cocos2d_pX="135.8" cocos2d_pY="101.85" x="0" y="1030"/>
+  <SubTexture name="part-xsyd_jidiche_4" width="272" height="204" cocos2d_pX="135.8" cocos2d_pY="101.85" x="1370" y="0"/>
+  <SubTexture name="part-xsyd_jidiche_5" width="272" height="204" cocos2d_pX="135.8" cocos2d_pY="101.85" x="0" y="618"/>
+  <SubTexture name="part-xsyd_jidiche_6" width="272" height="204" cocos2d_pX="135.8" cocos2d_pY="101.85" x="0" y="206"/>
+  <SubTexture name="part-xsyd_jidiche_7" width="272" height="204" cocos2d_pX="135.8" cocos2d_pY="101.85" x="274" y="824"/>
+  <SubTexture name="part-xsyd_jidiche_8" width="272" height="204" cocos2d_pX="135.8" cocos2d_pY="101.85" x="548" y="206"/>
+  <SubTexture name="part-xsyd_jidiche_9" width="272" height="204" cocos2d_pX="135.8" cocos2d_pY="101.85" x="548" y="618"/>
+  <SubTexture name="part-xsyd_jidiche_10" width="272" height="204" cocos2d_pX="135.8" cocos2d_pY="101.85" x="1096" y="206"/>
+  <SubTexture name="part-xsyd_jidiche_11" width="272" height="204" cocos2d_pX="135.8" cocos2d_pY="101.85" x="1644" y="824"/>
+  <SubTexture name="part-xsyd_jidiche_12" width="272" height="204" cocos2d_pX="135.8" cocos2d_pY="101.85" x="1644" y="206"/>
+  <SubTexture name="part-xsyd_jidiche_13" width="272" height="204" cocos2d_pX="135.8" cocos2d_pY="101.85" x="1096" y="618"/>
+  <SubTexture name="part-xsyd_jidiche_14" width="272" height="204" cocos2d_pX="135.8" cocos2d_pY="101.85" x="274" y="412"/>
+  <SubTexture name="part-xsyd_jidiche_15" width="272" height="204" cocos2d_pX="135.8" cocos2d_pY="101.85" x="822" y="824"/>
+  <SubTexture name="part-xsyd_jidiche_16" width="272" height="204" cocos2d_pX="135.8" cocos2d_pY="101.85" x="822" y="412"/>
+  <SubTexture name="part-xsyd_jidiche_17" width="272" height="204" cocos2d_pX="135.8" cocos2d_pY="101.85" x="1644" y="618"/>
+  <SubTexture name="part-xsyd_jidiche_18" width="272" height="204" cocos2d_pX="135.8" cocos2d_pY="101.85" x="0" y="0"/>
+  <SubTexture name="part-xsyd_jidiche_19" width="272" height="204" cocos2d_pX="135.8" cocos2d_pY="101.85" x="548" y="0"/>
+  <SubTexture name="part-xsyd_jidiche_20" width="272" height="204" cocos2d_pX="135.8" cocos2d_pY="101.85" x="1096" y="0"/>
+  <SubTexture name="part-xsyd_jidiche_21" width="272" height="204" cocos2d_pX="135.8" cocos2d_pY="101.85" x="1644" y="0"/>
+  <SubTexture name="part-xsyd_jidiche_22" width="272" height="204" cocos2d_pX="135.8" cocos2d_pY="101.85" x="274" y="206"/>
+  <SubTexture name="part-xsyd_jidiche_23" width="272" height="204" cocos2d_pX="135.8" cocos2d_pY="101.85" x="822" y="206"/>
+  <SubTexture name="part-xsyd_jidiche_24" width="272" height="204" cocos2d_pX="135.8" cocos2d_pY="101.85" x="1370" y="206"/>
+  <SubTexture name="part-xsyd_jidiche_25" width="272" height="204" cocos2d_pX="135.8" cocos2d_pY="101.85" x="0" y="412"/>
+  <SubTexture name="part-xsyd_jidiche_26" width="272" height="204" cocos2d_pX="135.8" cocos2d_pY="101.85" x="548" y="412"/>
+  <SubTexture name="part-xsyd_jidiche_27" width="272" height="204" cocos2d_pX="135.8" cocos2d_pY="101.85" x="1096" y="412"/>
+  <SubTexture name="part-xsyd_jidiche_28" width="272" height="204" cocos2d_pX="135.8" cocos2d_pY="101.85" x="1644" y="412"/>
+  <SubTexture name="part-xsyd_jidiche_29" width="272" height="204" cocos2d_pX="135.8" cocos2d_pY="101.85" x="274" y="618"/>
+  <SubTexture name="part-xsyd_jidiche_30" width="272" height="204" cocos2d_pX="135.8" cocos2d_pY="101.85" x="822" y="618"/>
+  <SubTexture name="part-xsyd_jidiche_31" width="272" height="204" cocos2d_pX="135.8" cocos2d_pY="101.85" x="1370" y="618"/>
+  <SubTexture name="part-xsyd_jidiche_32" width="272" height="204" cocos2d_pX="135.8" cocos2d_pY="101.85" x="0" y="824"/>
+  <SubTexture name="part-xsyd_jidiche_33" width="272" height="204" cocos2d_pX="135.8" cocos2d_pY="101.85" x="548" y="824"/>
+  <SubTexture name="part-xsyd_jidiche_34" width="272" height="204" cocos2d_pX="135.8" cocos2d_pY="101.85" x="1096" y="824"/>
+  <SubTexture name="part-xsyd_jidiche_35" width="272" height="204" cocos2d_pX="135.8" cocos2d_pY="101.85" x="1370" y="824"/>
+ </TextureAtlas>
+</skeleton>

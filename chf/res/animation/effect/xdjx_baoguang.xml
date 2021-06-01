@@ -1,0 +1,49 @@
+<skeleton name="xdjx_baoguang" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="xdjx_baoguang">
+   <b name="gfdsh" x="0.85" y="-0.35" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0">
+    <d name="part-jx_xjineng_shengji19"/>
+    <d name="part-jx_xjineng_shengji17"/>
+    <d name="part-jx_xjineng_shengji15"/>
+    <d name="part-jx_xjineng_shengji13"/>
+    <d name="part-jx_xjineng_shengji11"/>
+    <d name="part-jx_xjineng_shengji9"/>
+    <d name="part-jx_xjineng_shengji7"/>
+    <d name="part-jx_xjineng_shengji5"/>
+    <d name="part-jx_xjineng_shengji3"/>
+    <d name="part-jx_xjineng_shengji1"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="xdjx_baoguang">
+   <mov name="start" dr="31" to="6" drTW="31" lp="0" twE="NaN">
+    <b name="gfdsh" sc="1" dl="0">
+     <f x="0.85" y="-0.35" cocos2d_x="0.85" cocos2d_y="-0.35" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="0" dr="3"/>
+     <f x="0.55" y="-0.35" cocos2d_x="0.55" cocos2d_y="-0.35" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="1" dr="3"/>
+     <f x="1.15" y="-0.15" cocos2d_x="1.15" cocos2d_y="-0.15" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="2" dr="3"/>
+     <f x="1.35" y="-0.95" cocos2d_x="1.35" cocos2d_y="-0.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="3" dr="3"/>
+     <f x="1.35" y="-0.95" cocos2d_x="1.35" cocos2d_y="-0.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="4" dr="3"/>
+     <f x="1.35" y="-0.95" cocos2d_x="1.35" cocos2d_y="-0.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="5" dr="3"/>
+     <f x="1.35" y="-0.95" cocos2d_x="1.35" cocos2d_y="-0.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="6" dr="3"/>
+     <f x="1.35" y="-0.95" cocos2d_x="1.35" cocos2d_y="-0.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="7" dr="3"/>
+     <f x="1.35" y="-0.95" cocos2d_x="1.35" cocos2d_y="-0.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="8" dr="3"/>
+     <f x="1.55" y="-0.95" cocos2d_x="1.55" cocos2d_y="-0.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="9" dr="3"/>
+     <f dr="1" dI="-1"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="xdjx_baoguang" width="512" height="512">
+  <SubTexture name="part-jx_xjineng_shengji1" width="147" height="144" cocos2d_pX="73.5" cocos2d_pY="68.5" x="0" y="310"/>
+  <SubTexture name="part-jx_xjineng_shengji3" width="153" height="153" cocos2d_pX="76.1" cocos2d_pY="75.4" x="0" y="155"/>
+  <SubTexture name="part-jx_xjineng_shengji5" width="153" height="153" cocos2d_pX="76.1" cocos2d_pY="75.4" x="155" y="155"/>
+  <SubTexture name="part-jx_xjineng_shengji7" width="153" height="153" cocos2d_pX="76.1" cocos2d_pY="75.4" x="155" y="0"/>
+  <SubTexture name="part-jx_xjineng_shengji9" width="153" height="153" cocos2d_pX="76.1" cocos2d_pY="75.4" x="310" y="0"/>
+  <SubTexture name="part-jx_xjineng_shengji11" width="153" height="153" cocos2d_pX="76.1" cocos2d_pY="75.4" x="0" y="0"/>
+  <SubTexture name="part-jx_xjineng_shengji13" width="153" height="153" cocos2d_pX="76.1" cocos2d_pY="75.4" x="310" y="155"/>
+  <SubTexture name="part-jx_xjineng_shengji15" width="124" height="124" cocos2d_pX="59.8" cocos2d_pY="56.75" x="149" y="310"/>
+  <SubTexture name="part-jx_xjineng_shengji17" width="120" height="113" cocos2d_pX="59.4" cocos2d_pY="53.3" x="275" y="310"/>
+  <SubTexture name="part-jx_xjineng_shengji19" width="103" height="107" cocos2d_pX="52.05" cocos2d_pY="47.85" x="397" y="310"/>
+ </TextureAtlas>
+</skeleton>

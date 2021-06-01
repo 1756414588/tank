@@ -1,0 +1,48 @@
+<skeleton name="zzsys_dq" frameRate="30" version="2.0">
+ <armatures>
+  <armature name="zzsys_dq">
+   <b name="1" x="-1" y="1.45" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0">
+    <d name="part-zzsys_dq_00000"/>
+    <d name="part-zzsys_dq_00001"/>
+    <d name="part-zzsys_dq_00002"/>
+    <d name="part-zzsys_dq_00003"/>
+    <d name="part-zzsys_dq_00004"/>
+    <d name="part-zzsys_dq_00005"/>
+    <d name="part-zzsys_dq_00006"/>
+    <d name="part-zzsys_dq_00007"/>
+    <d name="part-zzsys_dq_00008"/>
+    <d name="part-zzsys_dq_00009"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="zzsys_dq">
+   <mov name="start" dr="10" to="0" drTW="10" lp="1" twE="NaN">
+    <b name="1" sc="1" dl="0">
+     <f x="-1" y="1.45" cocos2d_x="-1" cocos2d_y="1.45" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="1"/>
+     <f x="-1" y="1.45" cocos2d_x="-1" cocos2d_y="1.45" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="1" dr="1"/>
+     <f x="-1" y="1.45" cocos2d_x="-1" cocos2d_y="1.45" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="2" dr="1"/>
+     <f x="-1" y="1.45" cocos2d_x="-1" cocos2d_y="1.45" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="3" dr="1"/>
+     <f x="-1" y="1.45" cocos2d_x="-1" cocos2d_y="1.45" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="4" dr="1"/>
+     <f x="-1" y="1.45" cocos2d_x="-1" cocos2d_y="1.45" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="5" dr="1"/>
+     <f x="-1" y="1.45" cocos2d_x="-1" cocos2d_y="1.45" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="6" dr="1"/>
+     <f x="-1" y="1.45" cocos2d_x="-1" cocos2d_y="1.45" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="7" dr="1"/>
+     <f x="-1" y="1.45" cocos2d_x="-1" cocos2d_y="1.45" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="8" dr="1"/>
+     <f x="-1" y="1.45" cocos2d_x="-1" cocos2d_y="1.45" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="9" dr="1"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="zzsys_dq" width="512" height="256">
+  <SubTexture name="part-zzsys_dq_00009" width="100" height="100" cocos2d_pX="50" cocos2d_pY="50" x="102" y="0"/>
+  <SubTexture name="part-zzsys_dq_00008" width="100" height="100" cocos2d_pX="50" cocos2d_pY="50" x="408" y="102"/>
+  <SubTexture name="part-zzsys_dq_00007" width="100" height="100" cocos2d_pX="50" cocos2d_pY="50" x="306" y="0"/>
+  <SubTexture name="part-zzsys_dq_00006" width="100" height="100" cocos2d_pX="50" cocos2d_pY="50" x="306" y="102"/>
+  <SubTexture name="part-zzsys_dq_00005" width="100" height="100" cocos2d_pX="50" cocos2d_pY="50" x="0" y="102"/>
+  <SubTexture name="part-zzsys_dq_00004" width="100" height="100" cocos2d_pX="50" cocos2d_pY="50" x="0" y="0"/>
+  <SubTexture name="part-zzsys_dq_00003" width="100" height="100" cocos2d_pX="50" cocos2d_pY="50" x="204" y="0"/>
+  <SubTexture name="part-zzsys_dq_00002" width="100" height="100" cocos2d_pX="50" cocos2d_pY="50" x="408" y="0"/>
+  <SubTexture name="part-zzsys_dq_00001" width="100" height="100" cocos2d_pX="50" cocos2d_pY="50" x="102" y="102"/>
+  <SubTexture name="part-zzsys_dq_00000" width="100" height="100" cocos2d_pX="50" cocos2d_pY="50" x="204" y="102"/>
+ </TextureAtlas>
+</skeleton>

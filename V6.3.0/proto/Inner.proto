@@ -1,0 +1,770 @@
+import "Base.proto";
+import "Common.proto";
+import "Serialize.proto";
+
+option java_package = "com.game.pb";
+option java_outer_classname = "InnerPb";
+
+//
+message RegisterRq {  
+    required int32 serverId = 1;
+  	required string serverName = 2;
+  	extend Base
+    {
+		  optional RegisterRq ext = 1001;
+    }
+}
+
+message RegisterRs {  
+  	optional int32 state = 1;
+
+  	extend Base
+    {
+		  optional RegisterRs ext = 1002;
+    }
+}
+
+//
+message VerifyRq {  
+    required int32 keyId = 1;
+    required int32 serverId = 2;
+    required string token = 3;
+    required string curVersion = 4;
+    required string deviceNo = 5;
+    required int64 channelId = 6;
+	optional string clientId = 7;
+    extend Base
+    {
+      optional VerifyRq ext = 1003;
+    }
+}
+
+message VerifyRs {  
+    optional int32 keyId = 1;
+    optional string platId = 2;
+    optional int32 platNo = 3;
+    optional int32 childNo = 4;
+    optional string curVersion = 5;
+    optional string deviceNo = 6;
+    optional int32 serverId = 7;
+    required int64 channelId = 8;
+	optional string clientId = 9;
+    extend Base
+    {
+      optional VerifyRs ext = 1004;
+    }
+}
+
+
+
+message UseGiftCodeRq {  
+    required string code = 1;
+    required int32 serverId = 2;
+    required int64 lordId = 3;
+    optional int32 platNo = 4;
+    extend Base
+    {
+      optional UseGiftCodeRq ext = 1005;
+    }
+}
+
+message UseGiftCodeRs {  
+    optional string award = 1;
+    optional int32 serverId = 2;
+    optional int64 lordId = 3;
+    optional int32 state = 4;
+    extend Base
+    {
+      optional UseGiftCodeRs ext = 1006;
+    }
+}
+
+message PayBackRq {  //帐号服发送到游戏服
+    required int32 platNo = 1;
+    required string platId = 2;
+    required string orderId = 3;
+    required string serialId = 4;
+    required int32 serverId = 5;
+    required int64 roleId = 6;
+    required int32 amount = 7;
+    optional int32 packId = 8;
+    extend Base
+    {
+      optional PayBackRq ext = 1007;
+    }
+}
+
+message PayBackRs {  
+    extend Base
+    {
+      optional PayBackRs ext = 1008;
+    }
+}
+
+message PayConfirmRq {  //游戏服发送到帐号服 
+    required int32 platNo = 1;
+    required string orderId = 2;
+    required int32 addGold = 3;
+    extend Base
+    {
+      optional PayConfirmRq ext = 1009;
+    }
+}
+
+message PayConfirmRs {  
+    extend Base
+    {
+      optional PayConfirmRs ext = 1010;
+    }
+}
+
+message SendToMailRq {  
+	optional int32 type = 1;				//类型 1玩家 2服
+	optional string channelNo = 2;			//0.所有渠道 ；1-N其它渠道
+	optional int32 online = 3;				//是否需要在线
+	optional string to = 4;					//给谁 all，online，昵称|昵称
+	optional string sendName = 5;			//发送者昵称	
+	optional string moldId = 6;				//模板ID
+	optional string title = 7;				//标题
+	optional string contont = 8;			//内容
+	optional string award = 9;				//奖励
+	optional string marking = 10;			//消息标识
+	optional int32 alv = 11;				//起始等级
+	optional int32 blv = 12;				//结束等级
+	optional int32 avip = 13;				//vip等级
+	optional int32 bvip = 14;				//vip等级
+	optional string partys = 15;		    //给哪些军团发，  军团名|军团名
+    extend Base
+    {
+      optional SendToMailRq ext = 1011;
+    }
+}
+
+message SendToMailRs {
+	optional string marking = 1;			//消息标识
+	repeated int32 code = 2;				//结果
+    extend Base
+    {
+      optional SendToMailRs ext = 1012;
+    }
+}
+
+message ForbiddenRq {
+	optional string marking = 1;				//消息标识
+	optional int32 forbiddenId = 2;		//禁 1
+	optional string nick = 3;			//玩家昵称
+	optional int64 lordId = 4;			//玩家ID
+	optional int64 time = 5;   // 时长
+    extend Base
+    {
+      optional ForbiddenRq ext = 1013;
+    }
+}
+
+message ForbiddenRs {
+    extend Base
+    {
+      optional ForbiddenRs ext = 1014;
+    }
+}
+
+message NoticeRq {
+	optional string marking = 1;			//消息标识
+	optional string content = 2;		//公告内容
+    extend Base
+    {
+      optional NoticeRq ext = 1015;
+    }
+}
+
+message NoticeRs {
+    extend Base
+    {
+      optional NoticeRs ext = 1016;
+    }
+}
+
+
+message GetLordBaseRq {
+	optional string marking = 1;	//消息标识
+	optional int64 lordId = 2;		//玩家ID
+	optional int32 type = 3;		//1.背包 2.武将 3.坦克 4.建筑 5.科技 6.配件
+    extend Base
+    {
+      optional GetLordBaseRq ext = 1017;
+    }
+}
+
+message GetLordBaseRs {
+    extend Base
+    {
+      optional GetLordBaseRs ext = 1018;
+    }
+}
+
+message BackLordBaseRq {
+	optional string marking = 1;		//消息标识
+	optional int32 code = 2;			//结果 200成功
+	optional int32 type = 3;			//1.背包 2.武将 3.坦克 4.建筑 5.科技 6.配件 7.装备
+	repeated TwoInt towInt = 4;			//数据
+	
+    extend Base
+    {
+      optional BackLordBaseRq ext = 1019;
+    }
+}
+
+message BackLordBaseRs {
+    extend Base
+    {
+      optional BackLordBaseRs ext = 1020;
+    }
+}
+
+message BackBuildingRq {
+	optional string marking = 1;		//消息标识
+	optional int32 code = 2;			//结果 200成功
+	optional int32 type = 3;			//1.背包 2.武将 3.坦克 4.建筑 5.科技 6.配件
+	optional int32 ware1 = 4;       	//第一仓库等级
+    optional int32 ware2 = 5;       	//第二仓库等级
+    optional int32 tech = 6;        	//科技馆等级
+    optional int32 factory1 = 7;    	//第一战车工厂等级
+    optional int32 factory2 = 8;    	//第二战车工厂等级
+    optional int32 refit = 9;     		//改装工厂等级
+    optional int32 command = 10;     	//司令部等级
+    optional int32 workShop = 11;    	//制造车间等级
+	optional int32 leqm = 12;			//材料工厂等级
+	repeated Mill mill = 13;		//资源建筑
+	
+    extend Base
+    {
+      optional BackBuildingRq ext = 1021;
+    }
+}
+
+message BackBuildingRs {
+    extend Base
+    {
+      optional BackBuildingRs ext = 1022;
+    }
+}
+
+
+message BackPartRq {
+	optional string marking = 1;		//消息标识
+	optional int32 code = 2;			//结果 200成功
+	optional int32 type = 3;			//1.背包 2.武将 3.坦克 4.建筑 5.科技 6.配件
+	repeated Part part = 4;				//
+	
+    extend Base
+    {
+      optional BackPartRq ext = 1023;
+    }
+}
+
+message BackPartRs {
+    extend Base
+    {
+      optional BackPartRs ext = 1024;
+    }
+}
+
+message ModVipRq {
+	optional string marking = 1;		//消息标识
+	optional int64 lordId = 2;			//结果 200成功
+	optional int32 type = 3;			//类型
+	optional int32 value = 4;			//值
+    extend Base
+    {
+      optional ModVipRq ext = 1025;
+    }
+}
+
+message ModVipRs {
+    extend Base
+    {
+      optional ModVipRs ext = 1026;
+    }
+}
+
+message RecalcResourceRq {
+    extend Base
+    {
+      optional RecalcResourceRq ext = 1027;
+    }
+}
+
+message RecalcResourceRs {
+    extend Base
+    {
+      optional RecalcResourceRs ext = 1028;
+    }
+}
+
+message CensusBaseRq {
+	optional string marking = 1;	//消息标识
+	optional int32 alv = 2;			//起始等级
+	optional int32 blv = 3;			//终止等级
+	optional int32 vip = 4;			//起始vip等级
+	optional int32 type = 5;		//1.背包 2.武将 16金币
+	optional int32 id = 6;			//ID
+	optional int32 count = 7;
+    extend Base
+    {
+      optional CensusBaseRq ext = 1029;
+    }
+}
+
+message CensusBaseRs {
+    extend Base
+    {
+      optional CensusBaseRs ext = 1030;
+    }
+}
+
+message BackEquipRq {
+	optional string marking = 1;		//消息标识
+	optional int32 code = 2;			//结果 200成功
+	optional int32 type = 3;			//1.背包 2.武将 3.坦克 4.建筑 5.科技 6.配件 7.装备
+	repeated Equip equip = 4;				
+	
+    extend Base
+    {
+      optional BackEquipRq ext = 1031;
+    }
+}
+
+message BackEquipRs {
+    extend Base
+    {
+      optional BackEquipRs ext = 1032;
+    }
+}
+
+
+message ModLordRq {
+	optional string marking = 1;		//消息标识
+	optional int64 lordId = 2;			//玩家ID
+	optional int32 type = 3;			//1.背包 2.武将 3.坦克 4.建筑 5.科技 6.配件 7.装备
+	optional int32 keyId = 4;			//索引
+	optional int32 value = 5;			//修改的值
+	optional int32 value2 = 6;			//修改值二
+	
+    extend Base
+    {
+      optional ModLordRq ext = 1033;
+    }
+}
+
+message ModLordRs {
+    extend Base
+    {
+      optional ModLordRs ext = 1034;
+    }
+}
+
+
+message ForbidByIdRq {
+	optional string marking = 1;		//消息标识
+	optional int32 forbiddenId = 2;		//禁 1
+	repeated int64 lordId = 3;			//玩家ID
+    extend Base
+    {
+      optional ForbidByIdRq ext = 1035;
+    }
+}
+
+message ForbidByIdRs {
+    extend Base
+    {
+      optional ForbidByIdRs ext = 1036;
+    }
+}
+
+// cross -> game
+message NotifyCrossOnLineRq{
+  required string crossIp = 1;
+  required int32 port = 2;
+  required string beginTime = 3;
+  optional int32 crossType = 4;
+  optional int32 serverId = 5;
+  extend Base
+  {
+    optional NotifyCrossOnLineRq ext = 1037;
+  }
+}
+
+message ReloadParamRq {
+	required string marking = 1;		//消息标识
+	required int32 type = 2;			// 1 只重加载s_system表中的数据，2 重加载所有配置表的数据
+	extend Base
+	{
+		optional ReloadParamRq ext = 1039;
+	}
+}
+
+message ReloadParamRs {
+	extend Base
+	{
+		optional ReloadParamRs ext = 1040;
+	}
+}
+
+message NotifyServerRegRq {
+	required int32 regType = 1;				// 服务器注册类型，1 合服操作注册
+	required string serverIp = 2;			// 合服服务器ip
+	required int32 port = 3;
+	extend Base
+	{
+		optional NotifyServerRegRq ext = 1041;
+	}
+}
+
+message NotifyServerRegRs {
+	required int32 regType = 1;				// 服务器注册类型，1 合服操作注册
+	extend Base
+	{
+		optional NotifyServerRegRs ext = 1042;
+	}
+}
+
+message MergeServerRegRq {
+	required int32 serverId = 1;
+	required string serverName = 2;
+	extend Base
+	{
+		optional MergeServerRegRq ext = 1043;
+	}
+}
+
+message MergeServerRegRs {
+	extend Base
+	{
+		optional MergeServerRegRs ext = 1044;
+	}
+}
+
+message NotifyServerTransferRq {
+	extend Base
+	{
+		optional NotifyServerTransferRq ext = 1045;
+	}
+}
+
+message NotifyServerTransferRs {
+	extend Base
+	{
+		optional NotifyServerTransferRs ext = 1046;
+	}
+}
+
+message TransferCommonDataRq {
+	repeated SerPParty party = 1;			// p_party表数据
+	required bool isLast = 2;				// 是否是最后一批数据
+	extend Base
+	{
+		optional TransferCommonDataRq ext = 1047;
+	}
+}
+
+message TransferCommonDataRs {
+	repeated int32 failPartyId = 1;			// 合服服务器操作失败的军团id
+	extend Base
+	{
+		optional TransferCommonDataRs ext = 1048;
+	}
+}
+
+message TransferPlayerDataRq {
+	repeated FullPlayerData player = 1;		// 玩家打包数据
+	required bool isLast = 2;				// 是否是最后一批数据
+	extend Base
+	{
+		optional TransferPlayerDataRq ext = 1049;
+	}
+}
+
+message TransferPlayerDataRs {
+	repeated int64 lordId = 1;				// 合服服务器操作失败的角色id
+	extend Base
+	{
+		optional TransferPlayerDataRs ext = 1050;
+	}
+}
+
+message GetRankBaseRq {
+	optional string marking = 1;	//消息标识
+	optional int32 type = 2;		//1.战力榜  2.关卡榜   3.荣誉榜  4.攻击强化  5.暴击强化  6.闪避强化 7.竞技场  8.极限副本  9.编制  20.軍團
+	optional int32 num = 3;		    //前多少名
+    extend Base
+    {
+      optional GetRankBaseRq ext = 1051;
+    }
+}
+
+message GetRankBaseRs {
+    extend Base
+    {
+      optional GetRankBaseRs ext = 1052;
+    }
+}
+
+message BackRankBaseRq {
+	optional string marking = 1;		//消息标识
+	optional int32 code = 2;			//结果 200成功
+	optional int32 type = 3;			//1.战力榜  2.关卡榜   3.荣誉榜  4.攻击强化  5.暴击强化  6.闪避强化 7.竞技场  8.极限副本  9.编制 20.軍團
+	repeated RankData rankData = 4;	    //数据
+    extend Base
+    {
+      optional BackRankBaseRq ext = 1053;
+    }
+}
+
+message BackRankBaseRs {
+    extend Base
+    {
+      optional BackRankBaseRs ext = 1054;
+    }
+}
+
+message GetPartyMembersRq {
+	optional string marking = 1;	//消息标识
+	optional string partyName = 2;		//军团名
+    extend Base
+    {
+      optional GetPartyMembersRq ext = 1055;
+    }
+}
+
+message GetPartyMembersRs {
+    extend Base
+    {
+      optional GetPartyMembersRs ext = 1056;
+    }
+}
+
+message BackPartyMembersRq {
+	optional string marking = 1;		   //消息标识
+	optional int32 code = 2;			   //结果 200成功
+	repeated PartyMember partyMember = 3;  //成員信息
+    extend Base
+    {
+      optional BackPartyMembersRq ext = 1057;
+    }
+}
+
+message BackPartyMembersRs {
+    extend Base
+    {
+      optional BackPartyMembersRs ext = 1058;
+    }
+}
+
+message ModPartyMemberJobRq {
+	optional string marking = 1;		//消息标识
+	optional int64 lordId = 2;			//玩家ID
+	optional int32 job = 3;			    //职位
+    extend Base
+    {
+      optional ModPartyMemberJobRq ext = 1059;
+    }
+}
+
+message ModPartyMemberJobRs {
+    extend Base
+    {
+      optional ModPartyMemberJobRs ext = 1060;
+    }
+}
+
+message BackFormRq {
+	optional string marking = 1;		//消息标识
+	optional int32 code = 2;			//结果 200成功
+	optional int32 type = 3;			// 8.阵型
+	repeated Form Forms = 4;   
+    extend Base
+    {
+      optional BackFormRq ext = 1061;
+    }
+}
+
+message BackFormRs {
+	repeated Form Forms = 3;   
+    extend Base
+    {
+      optional BackFormRs ext = 1062;
+    }
+}
+
+message ServerErrorLogRq {
+	required int32 serverId = 1;		// 服务器id
+	required int32 dataType = 2;		// 被保存失败的数据分类，1 玩家数据，2 军团，3 活动，4 全局，5 挑战，6 举报信息
+	required int32 errorCount = 3;		// 已出错次数
+	required string errorDesc = 4;		// 错误描述
+	required int64 errorTime = 5;		// 错误发生时间
+	extend Base
+    {
+      optional ServerErrorLogRq ext = 1063;
+    }
+}
+
+message ServerErrorLogRs {
+	extend Base
+    {
+      optional ServerErrorLogRs ext = 1064;
+    }
+}
+
+message ModPropRq {
+	optional string marking = 1;		//消息标识
+	optional int64 lordId = 2;			//玩家ID
+	optional int32 type = 3;			//1.加道具   -1.减道具
+	optional string props = 4;			//道具
+	
+    extend Base
+    {
+      optional ModPropRq ext = 1065;
+    }
+}
+
+message ModPropRs {
+    extend Base
+    {
+      optional ModPropRs ext = 1066;
+    }
+}
+
+message ModNameRq {
+	optional string marking = 1;		//消息标识
+	optional int64 lordId = 2;			//玩家ID
+	optional string name = 3;			//名字
+	
+    extend Base
+    {
+      optional ModNameRq ext = 1067;
+    }
+}
+
+message ModNameRs {
+    extend Base
+    {
+      optional ModNameRs ext = 1068;
+    }
+}
+
+message ChangePlatNoRq {
+	optional int64 srcLordId = 1;
+	optional int64 destLordId = 2;
+    extend Base
+    {
+      optional ChangePlatNoRq ext = 1071;
+    }
+}
+
+message ChangePlatNoRs {
+    extend Base
+    {
+      optional ChangePlatNoRs ext = 1072;
+    }
+}
+
+message LordRelevanceRq {
+	optional string marking = 1;			//消息标识
+	optional int64 srcLordId = 2;			//源LordId
+	optional int64 destLordId = 3;			//目标lordId
+    extend Base
+    {
+      optional LordRelevanceRq ext = 1073;
+    }
+}
+
+message LordRelevanceRs {
+    extend Base
+    {
+      optional LordRelevanceRs ext = 1074;
+    }
+}
+
+//服务器热更类定义,注意只能热能方法体
+message HotfixClassRq{
+    optional string marking = 1;            //消息标识
+	optional string hotfixId = 2;			//热更标识
+    extend Base
+    {
+        optional HotfixClassRq ext = 1075;
+    }
+}
+
+message HotfixClassRs{
+    extend Base
+    {
+        optional HotfixClassRs ext = 1076;
+    }
+}
+
+message ExecutHotfixRq{
+	extend Base
+	{
+		optional ExecutHotfixRq ext = 1077;
+	}
+}
+
+message ExecutHotfixRs{
+	extend Base
+	{
+		optional ExecutHotfixRs ext = 1078;
+	}
+}
+
+//给玩家发放免战BUFF
+message AddAttackFreeBuffRq{
+	required int32 second = 1;		//增加时间(单位:秒)
+	repeated int64 lordId = 2;		//给指定的玩家发放BUFF,否则给全服发放
+	optional bool sendMail = 3;		//是否发放通知邮件,true-发放通知邮件
+	extend Base
+	{
+		optional AddAttackFreeBuffRq ext = 1079;
+	}
+}
+
+message AddAttackFreeBuffRs{
+	extend Base
+	{
+		optional AddAttackFreeBuffRs ext = 1080;
+	}
+}
+
+message GetEnergyBaseRq {
+	optional string marking = 1;	//消息标识
+	optional int64 lordId =2;
+    extend Base
+    {
+      optional GetEnergyBaseRq ext = 1081;
+    }
+}
+
+message GetEnergyBaseRs {
+    extend Base
+    {
+      optional GetEnergyBaseRs ext = 1082;
+    }
+}
+
+message BackEnergyRq {
+	optional string marking = 1;		//消息标识
+	optional int32 code = 2;			//结果 200成功
+	repeated LordEnergyInfo info = 3;				
+    extend Base
+    {
+      optional BackEnergyRq ext = 1083;
+    }
+}
+
+message BackEnergyRs {
+    extend Base
+    {
+      optional BackEnergyRs ext = 1084;
+    }
+}
+
+

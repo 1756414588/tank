@@ -1,0 +1,67 @@
+<skeleton name="qiqiu3" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="qiqiu_3">
+   <b name="qiqiu5" x="-0.9" y="-11.75" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0">
+    <d name="part-qiqiu5"/>
+   </b>
+   <b name="qiqiu4" x="0.6" y="-4.6" kX="7.77" kY="7.77" cX="1" cY="1" pX="0" pY="0" z="1">
+    <d name="part-qiqiu4"/>
+   </b>
+   <b name="qiqiu2" x="5.55" y="7.1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2">
+    <d name="part-qiqiu2"/>
+   </b>
+   <b name="qiqiu3" x="-3.3" y="3.2" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="3">
+    <d name="part-qiqiu3"/>
+   </b>
+   <b name="qiqiu1" x="-1.9" y="10" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="4">
+    <d name="part-qiqiu1"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="qiqiu_3">
+   <mov name="start" dr="120" to="0" drTW="120" lp="1" twE="NaN">
+    <b name="qiqiu5" sc="1" dl="0">
+     <f x="-0.9" y="-11.75" cocos2d_x="-0.9" cocos2d_y="-11.75" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" twE="0" dr="44"/>
+     <f x="-1.9" y="-9.6" cocos2d_x="-1.9" cocos2d_y="-9.6" kX="-4.97" kY="-4.97" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="1"/>
+     <f x="-1.9" y="-9.6" cocos2d_x="-1.9" cocos2d_y="-9.6" kX="-4.97" kY="-4.97" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" twE="0" dr="59"/>
+     <f x="-0.9" y="-12.75" cocos2d_x="-0.9" cocos2d_y="-12.75" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" twE="0" dr="15"/>
+     <f x="-0.9" y="-11.8" cocos2d_x="-0.9" cocos2d_y="-11.8" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" twE="0" dr="1"/>
+    </b>
+    <b name="qiqiu4" sc="1" dl="0">
+     <f x="0.6" y="-4.6" cocos2d_x="0.6" cocos2d_y="-4.6" kX="7.77" kY="7.77" cX="1" cY="1" pX="0" pY="0" z="1" dI="0" twE="0" dr="13"/>
+     <f x="0.35" y="-3.65" cocos2d_x="0.35" cocos2d_y="-3.65" kX="7.96" kY="7.96" cX="1" cY="1" pX="0" pY="0" z="1" dI="0" dr="1"/>
+     <f x="0.35" y="-3.65" cocos2d_x="0.35" cocos2d_y="-3.65" kX="7.96" kY="7.96" cX="1" cY="1" pX="0" pY="0" z="1" dI="0" twE="0" dr="59"/>
+     <f x="1.45" y="-8" cocos2d_x="1.45" cocos2d_y="-8" kX="7.96" kY="7.96" cX="1" cY="1" pX="0" pY="0" z="1" dI="0" twE="0" dr="46"/>
+     <f x="0.6" y="-4.7" cocos2d_x="0.6" cocos2d_y="-4.7" kX="7.8" kY="7.8" cX="1" cY="1" pX="0" pY="0" z="1" dI="0" twE="0" dr="1"/>
+    </b>
+    <b name="qiqiu2" sc="1" dl="0">
+     <f x="5.55" y="7.1" cocos2d_x="5.55" cocos2d_y="7.1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="0" twE="0" dr="59"/>
+     <f x="6.6" y="5.4" cocos2d_x="6.6" cocos2d_y="5.4" kX="5.46" kY="5.46" cX="1" cY="1" pX="0" pY="0" z="2" dI="0" twE="0" dr="60"/>
+     <f x="5.55" y="7.1" cocos2d_x="5.55" cocos2d_y="7.1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="0" dr="1"/>
+    </b>
+    <b name="qiqiu3" sc="1" dl="0">
+     <f x="-3.3" y="3.2" cocos2d_x="-3.3" cocos2d_y="3.2" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="3" dI="0" twE="0" dr="28"/>
+     <f x="-2.6" y="6" cocos2d_x="-2.6" cocos2d_y="6" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="3" dI="0" dr="1"/>
+     <f x="-2.6" y="6" cocos2d_x="-2.6" cocos2d_y="6" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="3" dI="0" twE="0" dr="59"/>
+     <f x="-5.3" y="2.5" cocos2d_x="-5.3" cocos2d_y="2.5" kX="-8.23" kY="-8.23" cX="1" cY="1" pX="0" pY="0" z="3" dI="0" twE="0" dr="31"/>
+     <f x="-3.35" y="3.1" cocos2d_x="-3.35" cocos2d_y="3.1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="3" dI="0" twE="0" dr="1"/>
+    </b>
+    <b name="qiqiu1" sc="1" dl="0">
+     <f x="-1.9" y="10" cocos2d_x="-1.9" cocos2d_y="10" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="4" dI="0" twE="0" dr="59"/>
+     <f x="-2.7" y="10.35" cocos2d_x="-2.7" cocos2d_y="10.35" kX="-3.97" kY="-3.97" cX="1" cY="1" pX="0" pY="0" z="4" dI="0" twE="0" dr="60"/>
+     <f x="-1.9" y="10" cocos2d_x="-1.9" cocos2d_y="10" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="4" dI="0" dr="1"/>
+    </b>
+    <f st="0" dr="119"/>
+    <f st="119" dr="1"/>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="qiqiu3" width="64" height="64">
+  <SubTexture name="part-qiqiu1" width="14" height="24" cocos2d_pX="7" cocos2d_pY="12" x="41" y="29"/>
+  <SubTexture name="part-qiqiu3" width="21" height="32" cocos2d_pX="10.5" cocos2d_pY="16" x="0" y="0"/>
+  <SubTexture name="part-qiqiu2" width="14" height="27" cocos2d_pX="7" cocos2d_pY="13.5" x="47" y="0"/>
+  <SubTexture name="part-qiqiu4" width="22" height="27" cocos2d_pX="11" cocos2d_pY="13.5" x="23" y="0"/>
+  <SubTexture name="part-qiqiu5" width="16" height="26" cocos2d_pX="8" cocos2d_pY="13" x="23" y="29"/>
+ </TextureAtlas>
+</skeleton>

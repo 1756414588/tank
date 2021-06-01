@@ -1,0 +1,133 @@
+<skeleton name="xsyd_baozha" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="xsyd_baozha">
+   <b name="2" x="64.5" y="-141.5" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0">
+    <d name="part-xsyd_baozha_37"/>
+    <d name="part-xsyd_baozha_36"/>
+    <d name="part-xsyd_baozha_35"/>
+    <d name="part-xsyd_baozha_34"/>
+    <d name="part-xsyd_baozha_33"/>
+    <d name="part-xsyd_baozha_32"/>
+    <d name="part-xsyd_baozha_31"/>
+    <d name="part-xsyd_baozha_30"/>
+    <d name="part-xsyd_baozha_29"/>
+    <d name="part-xsyd_baozha_28"/>
+    <d name="part-xsyd_baozha_27"/>
+    <d name="part-xsyd_baozha_26"/>
+    <d name="part-xsyd_baozha_25"/>
+    <d name="part-xsyd_baozha_24"/>
+    <d name="part-xsyd_baozha_23"/>
+    <d name="part-xsyd_baozha_22"/>
+    <d name="part-xsyd_baozha_21"/>
+    <d name="part-xsyd_baozha_20"/>
+    <d name="part-xsyd_baozha_19"/>
+    <d name="part-xsyd_baozha_18"/>
+    <d name="part-xsyd_baozha_17"/>
+    <d name="part-xsyd_baozha_16"/>
+    <d name="part-xsyd_baozha_15"/>
+    <d name="part-xsyd_baozha_14"/>
+    <d name="part-xsyd_baozha_13"/>
+    <d name="part-xsyd_baozha_12"/>
+    <d name="part-xsyd_baozha_11"/>
+    <d name="part-xsyd_baozha_10"/>
+    <d name="part-xsyd_baozha_9"/>
+    <d name="part-xsyd_baozha_8"/>
+    <d name="part-xsyd_baozha_7"/>
+    <d name="part-xsyd_baozha_6"/>
+    <d name="part-xsyd_baozha_5"/>
+    <d name="part-xsyd_baozha_4"/>
+    <d name="part-xsyd_baozha_3"/>
+    <d name="part-xsyd_baozha_2"/>
+    <d name="part-xsyd_baozha_1"/>
+    <d name="part-xsyd_baozha_0"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="xsyd_baozha">
+   <mov name="start" dr="158" to="0" drTW="158" lp="0" twE="NaN">
+    <b name="2" sc="1" dl="0">
+     <f x="64.5" y="-141.5" cocos2d_x="64.5" cocos2d_y="-141.5" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="0" dr="4"/>
+     <f x="64.5" y="-141.5" cocos2d_x="64.5" cocos2d_y="-141.5" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="1" dr="4"/>
+     <f x="64.5" y="-141.5" cocos2d_x="64.5" cocos2d_y="-141.5" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="2" dr="4"/>
+     <f x="64.5" y="-141.5" cocos2d_x="64.5" cocos2d_y="-141.5" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="3" dr="4"/>
+     <f x="64.5" y="-141.5" cocos2d_x="64.5" cocos2d_y="-141.5" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="4" dr="4"/>
+     <f x="64.5" y="-141.5" cocos2d_x="64.5" cocos2d_y="-141.5" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="5" dr="4"/>
+     <f x="64.5" y="-141.5" cocos2d_x="64.5" cocos2d_y="-141.5" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="6" dr="4"/>
+     <f x="64.5" y="-141.5" cocos2d_x="64.5" cocos2d_y="-141.5" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="7" dr="4"/>
+     <f x="64.5" y="-141.5" cocos2d_x="64.5" cocos2d_y="-141.5" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="8" dr="4"/>
+     <f x="64.5" y="-141.5" cocos2d_x="64.5" cocos2d_y="-141.5" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="9" dr="4"/>
+     <f x="64.5" y="-141.5" cocos2d_x="64.5" cocos2d_y="-141.5" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="10" dr="4"/>
+     <f x="64.5" y="-141.5" cocos2d_x="64.5" cocos2d_y="-141.5" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="11" dr="4"/>
+     <f x="64.5" y="-141.5" cocos2d_x="64.5" cocos2d_y="-141.5" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="12" dr="4"/>
+     <f x="64.5" y="-141.5" cocos2d_x="64.5" cocos2d_y="-141.5" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="13" dr="4"/>
+     <f x="64.5" y="-141.5" cocos2d_x="64.5" cocos2d_y="-141.5" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="14" dr="4"/>
+     <f x="64.5" y="-141.5" cocos2d_x="64.5" cocos2d_y="-141.5" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="15" dr="4"/>
+     <f x="64.5" y="-141.5" cocos2d_x="64.5" cocos2d_y="-141.5" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="16" dr="4"/>
+     <f x="64.5" y="-141.5" cocos2d_x="64.5" cocos2d_y="-141.5" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="17" dr="4"/>
+     <f x="64.5" y="-141.5" cocos2d_x="64.5" cocos2d_y="-141.5" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="18" dr="4"/>
+     <f x="64.5" y="-141.5" cocos2d_x="64.5" cocos2d_y="-141.5" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="19" dr="4"/>
+     <f x="64.5" y="-141.5" cocos2d_x="64.5" cocos2d_y="-141.5" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="20" dr="4"/>
+     <f x="64.5" y="-141.5" cocos2d_x="64.5" cocos2d_y="-141.5" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="21" dr="4"/>
+     <f x="64.5" y="-141.5" cocos2d_x="64.5" cocos2d_y="-141.5" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="22" dr="4"/>
+     <f x="64.5" y="-141.5" cocos2d_x="64.5" cocos2d_y="-141.5" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="23" dr="4"/>
+     <f x="64.5" y="-141.5" cocos2d_x="64.5" cocos2d_y="-141.5" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="24" dr="4"/>
+     <f x="64.5" y="-141.5" cocos2d_x="64.5" cocos2d_y="-141.5" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="25" dr="4"/>
+     <f x="64.5" y="-141.5" cocos2d_x="64.5" cocos2d_y="-141.5" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="26" dr="4"/>
+     <f x="64.5" y="-141.5" cocos2d_x="64.5" cocos2d_y="-141.5" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="27" dr="4"/>
+     <f x="64.5" y="-141.5" cocos2d_x="64.5" cocos2d_y="-141.5" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="28" dr="4"/>
+     <f x="64.5" y="-141.5" cocos2d_x="64.5" cocos2d_y="-141.5" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="29" dr="4"/>
+     <f x="64.5" y="-141.5" cocos2d_x="64.5" cocos2d_y="-141.5" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="30" dr="4"/>
+     <f x="64.5" y="-141.5" cocos2d_x="64.5" cocos2d_y="-141.5" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="31" dr="4"/>
+     <f x="64.5" y="-141.5" cocos2d_x="64.5" cocos2d_y="-141.5" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="32" dr="4"/>
+     <f x="64.5" y="-141.5" cocos2d_x="64.5" cocos2d_y="-141.5" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="33" dr="4"/>
+     <f x="64.5" y="-141.5" cocos2d_x="64.5" cocos2d_y="-141.5" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="34" dr="4"/>
+     <f x="64.5" y="-141.5" cocos2d_x="64.5" cocos2d_y="-141.5" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="35" dr="4"/>
+     <f x="64.5" y="-141.5" cocos2d_x="64.5" cocos2d_y="-141.5" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="36" dr="4"/>
+     <f x="64.5" y="-141.5" cocos2d_x="64.5" cocos2d_y="-141.5" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="37" dr="4"/>
+     <f dr="6" dI="-1"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="xsyd_baozha" width="2048" height="2048">
+  <SubTexture name="part-xsyd_baozha_0" width="225" height="225" cocos2d_pX="112.5" cocos2d_pY="112.5" x="227" y="0"/>
+  <SubTexture name="part-xsyd_baozha_1" width="225" height="225" cocos2d_pX="112.5" cocos2d_pY="112.5" x="454" y="681"/>
+  <SubTexture name="part-xsyd_baozha_2" width="225" height="225" cocos2d_pX="112.5" cocos2d_pY="112.5" x="681" y="0"/>
+  <SubTexture name="part-xsyd_baozha_3" width="225" height="225" cocos2d_pX="112.5" cocos2d_pY="112.5" x="681" y="454"/>
+  <SubTexture name="part-xsyd_baozha_4" width="225" height="225" cocos2d_pX="112.5" cocos2d_pY="112.5" x="1135" y="0"/>
+  <SubTexture name="part-xsyd_baozha_5" width="225" height="225" cocos2d_pX="112.5" cocos2d_pY="112.5" x="227" y="908"/>
+  <SubTexture name="part-xsyd_baozha_6" width="225" height="225" cocos2d_pX="112.5" cocos2d_pY="112.5" x="1589" y="0"/>
+  <SubTexture name="part-xsyd_baozha_7" width="225" height="225" cocos2d_pX="112.5" cocos2d_pY="112.5" x="1135" y="454"/>
+  <SubTexture name="part-xsyd_baozha_8" width="225" height="225" cocos2d_pX="112.5" cocos2d_pY="112.5" x="0" y="227"/>
+  <SubTexture name="part-xsyd_baozha_9" width="225" height="225" cocos2d_pX="112.5" cocos2d_pY="112.5" x="908" y="681"/>
+  <SubTexture name="part-xsyd_baozha_10" width="225" height="225" cocos2d_pX="112.5" cocos2d_pY="112.5" x="454" y="227"/>
+  <SubTexture name="part-xsyd_baozha_11" width="225" height="225" cocos2d_pX="112.5" cocos2d_pY="112.5" x="1589" y="454"/>
+  <SubTexture name="part-xsyd_baozha_12" width="225" height="225" cocos2d_pX="112.5" cocos2d_pY="112.5" x="908" y="227"/>
+  <SubTexture name="part-xsyd_baozha_13" width="225" height="225" cocos2d_pX="112.5" cocos2d_pY="112.5" x="0" y="908"/>
+  <SubTexture name="part-xsyd_baozha_14" width="225" height="225" cocos2d_pX="112.5" cocos2d_pY="112.5" x="1362" y="227"/>
+  <SubTexture name="part-xsyd_baozha_15" width="225" height="225" cocos2d_pX="112.5" cocos2d_pY="112.5" x="0" y="681"/>
+  <SubTexture name="part-xsyd_baozha_16" width="225" height="225" cocos2d_pX="112.5" cocos2d_pY="112.5" x="1816" y="227"/>
+  <SubTexture name="part-xsyd_baozha_17" width="225" height="225" cocos2d_pX="112.5" cocos2d_pY="112.5" x="1362" y="681"/>
+  <SubTexture name="part-xsyd_baozha_18" width="225" height="225" cocos2d_pX="112.5" cocos2d_pY="112.5" x="227" y="454"/>
+  <SubTexture name="part-xsyd_baozha_19" width="225" height="225" cocos2d_pX="112.5" cocos2d_pY="112.5" x="0" y="0"/>
+  <SubTexture name="part-xsyd_baozha_20" width="225" height="225" cocos2d_pX="112.5" cocos2d_pY="112.5" x="454" y="0"/>
+  <SubTexture name="part-xsyd_baozha_21" width="225" height="225" cocos2d_pX="112.5" cocos2d_pY="112.5" x="908" y="0"/>
+  <SubTexture name="part-xsyd_baozha_22" width="225" height="225" cocos2d_pX="112.5" cocos2d_pY="112.5" x="1362" y="0"/>
+  <SubTexture name="part-xsyd_baozha_23" width="225" height="225" cocos2d_pX="112.5" cocos2d_pY="112.5" x="1816" y="0"/>
+  <SubTexture name="part-xsyd_baozha_24" width="225" height="225" cocos2d_pX="112.5" cocos2d_pY="112.5" x="227" y="227"/>
+  <SubTexture name="part-xsyd_baozha_25" width="225" height="225" cocos2d_pX="112.5" cocos2d_pY="112.5" x="681" y="227"/>
+  <SubTexture name="part-xsyd_baozha_26" width="225" height="225" cocos2d_pX="112.5" cocos2d_pY="112.5" x="1135" y="227"/>
+  <SubTexture name="part-xsyd_baozha_27" width="225" height="225" cocos2d_pX="112.5" cocos2d_pY="112.5" x="1589" y="227"/>
+  <SubTexture name="part-xsyd_baozha_28" width="225" height="225" cocos2d_pX="112.5" cocos2d_pY="112.5" x="0" y="454"/>
+  <SubTexture name="part-xsyd_baozha_29" width="225" height="225" cocos2d_pX="112.5" cocos2d_pY="112.5" x="454" y="454"/>
+  <SubTexture name="part-xsyd_baozha_30" width="225" height="225" cocos2d_pX="112.5" cocos2d_pY="112.5" x="908" y="454"/>
+  <SubTexture name="part-xsyd_baozha_31" width="225" height="225" cocos2d_pX="112.5" cocos2d_pY="112.5" x="1362" y="454"/>
+  <SubTexture name="part-xsyd_baozha_32" width="225" height="225" cocos2d_pX="112.5" cocos2d_pY="112.5" x="1816" y="454"/>
+  <SubTexture name="part-xsyd_baozha_33" width="225" height="225" cocos2d_pX="112.5" cocos2d_pY="112.5" x="227" y="681"/>
+  <SubTexture name="part-xsyd_baozha_34" width="225" height="225" cocos2d_pX="112.5" cocos2d_pY="112.5" x="681" y="681"/>
+  <SubTexture name="part-xsyd_baozha_35" width="225" height="225" cocos2d_pX="112.5" cocos2d_pY="112.5" x="1135" y="681"/>
+  <SubTexture name="part-xsyd_baozha_36" width="225" height="225" cocos2d_pX="112.5" cocos2d_pY="112.5" x="1589" y="681"/>
+  <SubTexture name="part-xsyd_baozha_37" width="225" height="225" cocos2d_pX="112.5" cocos2d_pY="112.5" x="1816" y="681"/>
+ </TextureAtlas>
+</skeleton>

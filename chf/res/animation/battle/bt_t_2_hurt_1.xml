@@ -1,0 +1,28 @@
+<skeleton name="zhanche_huohua" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="bt_t_2_hurt_1">
+   <b name="2" x="1.55" y="-13.05" kX="-90.13" kY="-90.13" cX="1" cY="1" pX="0" pY="0" z="0">
+    <d name="part-zhanche_huohua1"/>
+    <d name="part-zhanche_huohua2"/>
+    <d name="part-zhanche_huohua3"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="bt_t_2_hurt_1">
+   <mov name="start" dr="7" to="6" drTW="7" lp="0" twE="NaN">
+    <b name="2" sc="1" dl="0">
+     <f x="1.55" y="-13.05" cocos2d_x="1.55" cocos2d_y="-13.05" kX="-90.13" kY="-90.13" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="2"/>
+     <f x="1.6" y="-13.25" cocos2d_x="1.6" cocos2d_y="-13.25" kX="-90.13" kY="-90.13" cX="1" cY="1" pX="0" pY="0" z="0" dI="1" dr="2"/>
+     <f x="1.6" y="-13.05" cocos2d_x="1.6" cocos2d_y="-13.05" kX="-90" kY="-90" cX="1" cY="1" pX="0" pY="0" z="0" dI="2" dr="2"/>
+     <f dr="1" dI="-1"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="zhanche_huohua" width="256" height="512">
+  <SubTexture name="part-zhanche_huohua3" width="46" height="94" cocos2d_pX="-16" cocos2d_pY="39.2" x="139" y="0"/>
+  <SubTexture name="part-zhanche_huohua2" width="137" height="158" cocos2d_pX="85.75" cocos2d_pY="78.6" x="0" y="0"/>
+  <SubTexture name="part-zhanche_huohua1" width="126" height="165" cocos2d_pX="63" cocos2d_pY="82.5" x="0" y="160"/>
+ </TextureAtlas>
+</skeleton>

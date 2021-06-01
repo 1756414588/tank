@@ -1,0 +1,109 @@
+<skeleton name="ryxz_shuaxin_jinse" frameRate="30" version="2.0">
+ <armatures>
+  <armature name="ryxz_shuaxin_jinse">
+   <b name="2" x="-10" y="1.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0">
+    <d name="ryxz_shuaxinjin_00000"/>
+    <d name="ryxz_shuaxinjin_00002"/>
+    <d name="ryxz_shuaxinjin_00004"/>
+    <d name="ryxz_shuaxinjin_00006"/>
+    <d name="ryxz_shuaxinjin_00008"/>
+    <d name="ryxz_shuaxinjin_00010"/>
+    <d name="ryxz_shuaxinjin_00012"/>
+    <d name="ryxz_shuaxinjin_00014"/>
+    <d name="ryxz_shuaxinjin_00016"/>
+    <d name="ryxz_shuaxinjin_00018"/>
+    <d name="ryxz_shuaxinjin_00020"/>
+    <d name="ryxz_shuaxinjin_00022"/>
+    <d name="ryxz_shuaxinjin_00024"/>
+    <d name="ryxz_shuaxinjin_00026"/>
+    <d name="ryxz_shuaxinjin_00028"/>
+    <d name="ryxz_shuaxinjin_00030"/>
+    <d name="ryxz_shuaxinjin_00032"/>
+    <d name="ryxz_shuaxinjin_00034"/>
+    <d name="ryxz_shuaxinjin_00036"/>
+    <d name="ryxz_shuaxinjin_00038"/>
+    <d name="ryxz_shuaxinjin_00040"/>
+    <d name="ryxz_shuaxinjin_00042"/>
+    <d name="ryxz_shuaxinjin_00044"/>
+    <d name="ryxz_shuaxinjin_00046"/>
+    <d name="ryxz_shuaxinjin_00048"/>
+    <d name="ryxz_shuaxinjin_00050"/>
+    <d name="ryxz_shuaxinjin_00052"/>
+    <d name="ryxz_shuaxinjin_00054"/>
+    <d name="ryxz_shuaxinjin_00056"/>
+    <d name="ryxz_shuaxinjin_00058"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="ryxz_shuaxin_jinse">
+   <mov name="start" dr="61" to="0" drTW="61" lp="0" twE="NaN">
+    <b name="2" sc="1" dl="0">
+     <f x="-10" y="1.5" cocos2d_x="-10" cocos2d_y="1.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="2"/>
+     <f x="-10" y="1.5" cocos2d_x="-10" cocos2d_y="1.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="1" dr="2"/>
+     <f x="-10" y="1.5" cocos2d_x="-10" cocos2d_y="1.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="2" dr="2"/>
+     <f x="-10" y="1.5" cocos2d_x="-10" cocos2d_y="1.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="3" dr="2"/>
+     <f x="-10" y="1.5" cocos2d_x="-10" cocos2d_y="1.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="4" dr="2"/>
+     <f x="-10" y="1.5" cocos2d_x="-10" cocos2d_y="1.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="5" dr="2"/>
+     <f x="-10" y="1.5" cocos2d_x="-10" cocos2d_y="1.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="6" dr="2"/>
+     <f x="-10" y="1.5" cocos2d_x="-10" cocos2d_y="1.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="7" dr="2"/>
+     <f x="-10" y="1.5" cocos2d_x="-10" cocos2d_y="1.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="8" dr="2"/>
+     <f x="-10" y="1.5" cocos2d_x="-10" cocos2d_y="1.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="9" dr="2"/>
+     <f x="-10" y="1.5" cocos2d_x="-10" cocos2d_y="1.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="10" dr="2"/>
+     <f x="-10" y="1.5" cocos2d_x="-10" cocos2d_y="1.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="11" dr="2"/>
+     <f x="-10" y="1.5" cocos2d_x="-10" cocos2d_y="1.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="12" dr="2"/>
+     <f x="-10" y="1.5" cocos2d_x="-10" cocos2d_y="1.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="13" dr="2"/>
+     <f x="-10" y="1.5" cocos2d_x="-10" cocos2d_y="1.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="14" dr="2"/>
+     <f x="-10" y="1.5" cocos2d_x="-10" cocos2d_y="1.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="15" dr="2"/>
+     <f x="-10" y="1.5" cocos2d_x="-10" cocos2d_y="1.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="16" dr="2"/>
+     <f x="-10" y="1.5" cocos2d_x="-10" cocos2d_y="1.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="17" dr="2"/>
+     <f x="-10" y="1.5" cocos2d_x="-10" cocos2d_y="1.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="18" dr="2"/>
+     <f x="-10" y="1.5" cocos2d_x="-10" cocos2d_y="1.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="19" dr="2"/>
+     <f x="-10" y="1.5" cocos2d_x="-10" cocos2d_y="1.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="20" dr="2"/>
+     <f x="-10" y="1.5" cocos2d_x="-10" cocos2d_y="1.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="21" dr="2"/>
+     <f x="-10" y="1.5" cocos2d_x="-10" cocos2d_y="1.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="22" dr="2"/>
+     <f x="-10" y="1.5" cocos2d_x="-10" cocos2d_y="1.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="23" dr="2"/>
+     <f x="-10" y="1.5" cocos2d_x="-10" cocos2d_y="1.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="24" dr="2"/>
+     <f x="-10" y="1.5" cocos2d_x="-10" cocos2d_y="1.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="25" dr="2"/>
+     <f x="-10" y="1.5" cocos2d_x="-10" cocos2d_y="1.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="26" dr="2"/>
+     <f x="-10" y="1.5" cocos2d_x="-10" cocos2d_y="1.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="27" dr="2"/>
+     <f x="-10" y="1.5" cocos2d_x="-10" cocos2d_y="1.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="28" dr="2"/>
+     <f x="-10" y="1.5" cocos2d_x="-10" cocos2d_y="1.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="29" dr="2"/>
+     <f dr="1" dI="-1"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="ryxz_shuaxin_jinse" width="2048" height="1024">
+  <SubTexture name="ryxz_shuaxinjin_00058" width="222" height="185" cocos2d_pX="111" cocos2d_pY="92.5" x="224" y="0"/>
+  <SubTexture name="ryxz_shuaxinjin_00056" width="222" height="185" cocos2d_pX="111" cocos2d_pY="92.5" x="1120" y="374"/>
+  <SubTexture name="ryxz_shuaxinjin_00054" width="222" height="185" cocos2d_pX="111" cocos2d_pY="92.5" x="672" y="0"/>
+  <SubTexture name="ryxz_shuaxinjin_00052" width="222" height="185" cocos2d_pX="111" cocos2d_pY="92.5" x="1792" y="187"/>
+  <SubTexture name="ryxz_shuaxinjin_00050" width="222" height="185" cocos2d_pX="111" cocos2d_pY="92.5" x="1120" y="0"/>
+  <SubTexture name="ryxz_shuaxinjin_00048" width="222" height="185" cocos2d_pX="111" cocos2d_pY="92.5" x="224" y="561"/>
+  <SubTexture name="ryxz_shuaxinjin_00046" width="222" height="185" cocos2d_pX="111" cocos2d_pY="92.5" x="1568" y="0"/>
+  <SubTexture name="ryxz_shuaxinjin_00044" width="222" height="185" cocos2d_pX="111" cocos2d_pY="92.5" x="224" y="374"/>
+  <SubTexture name="ryxz_shuaxinjin_00042" width="222" height="185" cocos2d_pX="111" cocos2d_pY="92.5" x="0" y="187"/>
+  <SubTexture name="ryxz_shuaxinjin_00040" width="222" height="185" cocos2d_pX="111" cocos2d_pY="92.5" x="1568" y="374"/>
+  <SubTexture name="ryxz_shuaxinjin_00038" width="222" height="185" cocos2d_pX="111" cocos2d_pY="92.5" x="448" y="187"/>
+  <SubTexture name="ryxz_shuaxinjin_00036" width="222" height="185" cocos2d_pX="111" cocos2d_pY="92.5" x="672" y="374"/>
+  <SubTexture name="ryxz_shuaxinjin_00034" width="222" height="185" cocos2d_pX="111" cocos2d_pY="92.5" x="896" y="187"/>
+  <SubTexture name="ryxz_shuaxinjin_00032" width="222" height="185" cocos2d_pX="111" cocos2d_pY="92.5" x="448" y="561"/>
+  <SubTexture name="ryxz_shuaxinjin_00030" width="222" height="185" cocos2d_pX="111" cocos2d_pY="92.5" x="1344" y="187"/>
+  <SubTexture name="ryxz_shuaxinjin_00028" width="222" height="185" cocos2d_pX="111" cocos2d_pY="92.5" x="0" y="0"/>
+  <SubTexture name="ryxz_shuaxinjin_00026" width="222" height="185" cocos2d_pX="111" cocos2d_pY="92.5" x="448" y="0"/>
+  <SubTexture name="ryxz_shuaxinjin_00024" width="222" height="185" cocos2d_pX="111" cocos2d_pY="92.5" x="896" y="0"/>
+  <SubTexture name="ryxz_shuaxinjin_00022" width="222" height="185" cocos2d_pX="111" cocos2d_pY="92.5" x="1344" y="0"/>
+  <SubTexture name="ryxz_shuaxinjin_00020" width="222" height="185" cocos2d_pX="111" cocos2d_pY="92.5" x="1792" y="0"/>
+  <SubTexture name="ryxz_shuaxinjin_00018" width="222" height="185" cocos2d_pX="111" cocos2d_pY="92.5" x="224" y="187"/>
+  <SubTexture name="ryxz_shuaxinjin_00016" width="222" height="185" cocos2d_pX="111" cocos2d_pY="92.5" x="672" y="187"/>
+  <SubTexture name="ryxz_shuaxinjin_00014" width="222" height="185" cocos2d_pX="111" cocos2d_pY="92.5" x="1120" y="187"/>
+  <SubTexture name="ryxz_shuaxinjin_00012" width="222" height="185" cocos2d_pX="111" cocos2d_pY="92.5" x="1568" y="187"/>
+  <SubTexture name="ryxz_shuaxinjin_00010" width="222" height="185" cocos2d_pX="111" cocos2d_pY="92.5" x="0" y="374"/>
+  <SubTexture name="ryxz_shuaxinjin_00008" width="222" height="185" cocos2d_pX="111" cocos2d_pY="92.5" x="448" y="374"/>
+  <SubTexture name="ryxz_shuaxinjin_00006" width="222" height="185" cocos2d_pX="111" cocos2d_pY="92.5" x="896" y="374"/>
+  <SubTexture name="ryxz_shuaxinjin_00004" width="222" height="185" cocos2d_pX="111" cocos2d_pY="92.5" x="1344" y="374"/>
+  <SubTexture name="ryxz_shuaxinjin_00002" width="222" height="185" cocos2d_pX="111" cocos2d_pY="92.5" x="1792" y="374"/>
+  <SubTexture name="ryxz_shuaxinjin_00000" width="222" height="185" cocos2d_pX="111" cocos2d_pY="92.5" x="0" y="561"/>
+ </TextureAtlas>
+</skeleton>

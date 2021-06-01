@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.2.xsd">
+
+
+    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"
+          destroy-method="close">
+        <property name="driverClass" value="com.mysql.jdbc.Driver"/>
+        <property name="jdbcUrl" value="#{serverConfig.jdbcUrl}"/>
+        <property name="user" value="#{serverConfig.user}"/>
+        <property name="password" value="#{serverConfig.password}"/>
+        <property name="initialPoolSize" value="25"/>
+        <property name="minPoolSize" value="25"/>
+        <property name="maxPoolSize" value="100"/>
+        <property name="maxIdleTime" value="7000"/>
+        <property name="acquireIncrement" value="5"/>
+        <property name="acquireRetryAttempts" value="30"/>
+        <property name="acquireRetryDelay" value="1000"/>
+        <property name="numHelperThreads" value="5"/>
+        <property name="idleConnectionTestPeriod" value="120"/>
+        <property name="testConnectionOnCheckout" value="false"/>
+        <property name="testConnectionOnCheckin" value="false"/>
+        <property name="preferredTestQuery" value="select 'x'"/>
+    </bean>
+
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean"
+          p:configLocation="classpath:com/game/dao/config/mybatisConfig.xml"
+          p:mapperLocations="classpath*:com/game/dao/sqlMap/p/*Dao.xml"
+          p:dataSource-ref="dataSource"/>
+
+    <tx:annotation-driven transaction-manager="transactionManager"/>
+    <bean name="transactionManager"
+          class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+
+    <bean id="pBaseDao" class="com.game.dao.BaseDao" abstract="true"
+          p:sqlSessionFactory-ref="sqlSessionFactory"/>
+
+    <bean class="com.game.dao.impl.p.StaticParamDao" parent="pBaseDao"/>
+    <bean class="com.game.dao.impl.p.UClientMessageDao" parent="pBaseDao"/>
+
+    <bean class="com.game.dao.impl.p.AccountDao" parent="pBaseDao"/>
+    <bean class="com.game.dao.impl.p.LordDao" parent="pBaseDao"/>
+    <bean class="com.game.dao.impl.p.ResourceDao" parent="pBaseDao"/>
+    <bean class="com.game.dao.impl.p.BuildingDao" parent="pBaseDao"/>
+    <bean class="com.game.dao.impl.p.ArenaDao" parent="pBaseDao"/>
+    <bean class="com.game.dao.impl.p.ServerLogDao" parent="pBaseDao"/>
+    <bean class="com.game.dao.impl.p.PartyDao" parent="pBaseDao"/>
+    <bean class="com.game.dao.impl.p.ExtremeDao" parent="pBaseDao"/>
+    <bean class="com.game.dao.impl.p.GlobalDao" parent="pBaseDao"/>
+    <bean class="com.game.dao.impl.p.ActivityDao" parent="pBaseDao"/>
+    <bean class="com.game.dao.impl.p.PayDao" parent="pBaseDao"/>
+    <bean class="com.game.dao.impl.p.BossDao" parent="pBaseDao"/>
+    <bean class="com.game.dao.impl.p.DataNewDao" parent="pBaseDao"/>
+    <bean class="com.game.dao.impl.p.SmallIdDao" parent="pBaseDao"/>
+    <bean class="com.game.dao.impl.p.TipGuyDao" parent="pBaseDao"/>
+    <bean class="com.game.dao.impl.p.CrossFameDao" parent="pBaseDao"/>
+    <bean class="com.game.dao.impl.p.AdvertisementDao" parent="pBaseDao"/>
+    <bean class="com.game.dao.impl.p.DataRepairDao" parent="pBaseDao"/>
+    <bean class="com.game.dao.impl.p.MailDao" parent="pBaseDao"/>
+</beans>

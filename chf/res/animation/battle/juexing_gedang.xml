@@ -1,0 +1,43 @@
+<skeleton name="youying_juexing_gedang" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="juexing_gedang">
+   <b name="gfdsg" x="4.5" y="-74" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0">
+    <d name="part-youying_juexing_gedang_1"/>
+    <d name="part-youying_juexing_gedang_2"/>
+    <d name="part-youying_juexing_gedang_3"/>
+    <d name="part-youying_juexing_gedang_4"/>
+    <d name="part-youying_juexing_gedang_5"/>
+    <d name="part-youying_juexing_gedang_6"/>
+    <d name="part-youying_juexing_gedang_7"/>
+    <d name="part-youying_juexing_gedang_8"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="juexing_gedang">
+   <mov name="start" dr="25" to="0" drTW="25" lp="0" twE="NaN">
+    <b name="gfdsg" sc="1" dl="0">
+     <f x="4.5" y="-74" cocos2d_x="4.5" cocos2d_y="-74" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="3"/>
+     <f x="4.5" y="-81" cocos2d_x="4.5" cocos2d_y="-81" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="1" dr="3"/>
+     <f x="4.5" y="-84" cocos2d_x="4.5" cocos2d_y="-83.95" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="2" dr="3"/>
+     <f x="4.5" y="-80" cocos2d_x="4.5" cocos2d_y="-80" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="3" dr="3"/>
+     <f x="4.5" y="-75" cocos2d_x="4.5" cocos2d_y="-75" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="4" dr="3"/>
+     <f x="4.5" y="-74" cocos2d_x="4.5" cocos2d_y="-74" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="5" dr="3"/>
+     <f x="4.5" y="-74" cocos2d_x="4.5" cocos2d_y="-74" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="6" dr="3"/>
+     <f x="4.5" y="-74" cocos2d_x="4.5" cocos2d_y="-74" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="7" dr="3"/>
+     <f dr="1" dI="-1"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="youying_juexing_gedang" width="1024" height="1024">
+  <SubTexture name="part-youying_juexing_gedang_8" width="233" height="250" cocos2d_pX="116.5" cocos2d_pY="125" x="0" y="291"/>
+  <SubTexture name="part-youying_juexing_gedang_7" width="233" height="250" cocos2d_pX="116.5" cocos2d_pY="125" x="272" y="277"/>
+  <SubTexture name="part-youying_juexing_gedang_6" width="233" height="250" cocos2d_pX="116.5" cocos2d_pY="125" x="235" y="529"/>
+  <SubTexture name="part-youying_juexing_gedang_5" width="233" height="250" cocos2d_pX="116.5" cocos2d_pY="125" x="507" y="277"/>
+  <SubTexture name="part-youying_juexing_gedang_4" width="257" height="275" cocos2d_pX="128.15" cocos2d_pY="137.5" x="272" y="0"/>
+  <SubTexture name="part-youying_juexing_gedang_3" width="270" height="289" cocos2d_pX="134.55" cocos2d_pY="144.4" x="0" y="0"/>
+  <SubTexture name="part-youying_juexing_gedang_2" width="257" height="275" cocos2d_pX="128.15" cocos2d_pY="137.5" x="531" y="0"/>
+  <SubTexture name="part-youying_juexing_gedang_1" width="233" height="250" cocos2d_pX="116.5" cocos2d_pY="125" x="742" y="277"/>
+ </TextureAtlas>
+</skeleton>

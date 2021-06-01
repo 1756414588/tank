@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="accountService" class="com.account.service.AccountService"/>
+    <!-- <bean id="authorityService" class="com.account.service.AuthorityService" /> -->
+    <bean id="manageService" class="com.account.service.ManageService"/>
+    <bean id="gmMailService" class="com.account.service.GmMailService"/>
+    <bean id="queryService" class="com.account.service.QueryService"/>
+    <!-- <bean id="publicService" class="com.account.service.PublicService" /> -->
+    <bean id="giftService" class="com.account.service.GiftService"/>
+    <bean id="phpRecService" class="com.account.service.PhpRecService"/>
+    <bean id="zhtService" class="com.account.service.ZhtService"/>
+    <bean id="wxAdService" class="com.account.service.WxAdService"/>
+    <bean id="anfanService" class="com.account.service.AnfanService"/>
+    <bean id="saveBehaviorService" class="com.account.service.SaveBehaviorService" />
+</beans>

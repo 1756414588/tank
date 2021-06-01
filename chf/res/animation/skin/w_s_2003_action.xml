@@ -1,0 +1,77 @@
+<skeleton name="pifu_deng" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="w_s_2003_action">
+   <b name="图层 2" x="32.5" y="2.5" kX="0" kY="0" cX="1" cY="1" pX="138" pY="76" z="0">
+    <d name="part-pifu_jidi"/>
+   </b>
+   <b name="4" x="-76.5" y="-43.5" kX="0" kY="0" cX="1" cY="1" pX="50" pY="50" z="1">
+    <d name="part-tk_pfbhz_deng"/>
+   </b>
+   <b name="3" x="-23" y="-70" kX="0" kY="0" cX="1" cY="1" pX="50" pY="50" z="1">
+    <d name="part-tk_pfbhz_deng"/>
+   </b>
+   <b name="2" x="97.95" y="-8" kX="0" kY="0" cX="1" cY="1" pX="50" pY="50" z="1">
+    <d name="part-tk_pfbhz_deng"/>
+   </b>
+   <b name="1" x="44.95" y="16.5" kX="0" kY="0" cX="1" cY="1" pX="50" pY="50" z="1">
+    <d name="part-tk_pfbhz_deng"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="w_s_2003_action">
+   <mov name="start" dr="162" to="0" drTW="162" lp="1" twE="NaN">
+    <b name="图层 2" sc="1" dl="0">
+     <f x="32.5" y="2.5" cocos2d_x="-105" cocos2d_y="-73" kX="0" kY="0" cX="1" cY="1" pX="138" pY="76" z="0" dI="0" dr="162"/>
+    </b>
+    <b name="4" sc="1" dl="0">
+     <f x="-76.5" y="-43.5" cocos2d_x="-126.5" cocos2d_y="-93.5" kX="0" kY="0" cX="1" cY="1" pX="50" pY="50" z="1" dI="0" twE="0" dr="19">
+      <colorTransform a="0" r="0" g="0" b="0" aM="0" rM="100" gM="100" bM="100"/>
+     </f>
+     <f x="-76.5" y="-43.5" cocos2d_x="-126.5" cocos2d_y="-93.5" kX="0" kY="0" cX="1" cY="1" pX="50" pY="50" z="1" dI="0" twE="0" dr="20"/>
+     <f x="-76.5" y="-43.5" cocos2d_x="-126.5" cocos2d_y="-93.5" kX="0" kY="0" cX="1" cY="1" pX="50" pY="50" z="1" dI="0" dr="1">
+      <colorTransform a="0" r="0" g="0" b="0" aM="0" rM="100" gM="100" bM="100"/>
+     </f>
+     <f dr="122" dI="-1"/>
+    </b>
+    <b name="3" sc="1" dl="0">
+     <f dr="39" dI="-1"/>
+     <f x="-23" y="-70" cocos2d_x="-73" cocos2d_y="-120" kX="0" kY="0" cX="1" cY="1" pX="50" pY="50" z="1" dI="0" twE="0" dr="20">
+      <colorTransform a="0" r="0" g="0" b="0" aM="0" rM="100" gM="100" bM="100"/>
+     </f>
+     <f x="-23" y="-70" cocos2d_x="-73" cocos2d_y="-120" kX="0" kY="0" cX="1" cY="1" pX="50" pY="50" z="1" dI="0" twE="0" dr="20"/>
+     <f x="-23" y="-70" cocos2d_x="-73" cocos2d_y="-120" kX="0" kY="0" cX="1" cY="1" pX="50" pY="50" z="1" dI="0" dr="1">
+      <colorTransform a="0" r="0" g="0" b="0" aM="0" rM="100" gM="100" bM="100"/>
+     </f>
+     <f dr="82" dI="-1"/>
+    </b>
+    <b name="2" sc="1" dl="0">
+     <f dr="79" dI="-1"/>
+     <f x="97.95" y="-8" cocos2d_x="47.95" cocos2d_y="-58" kX="0" kY="0" cX="1" cY="1" pX="50" pY="50" z="1" dI="0" twE="0" dr="21">
+      <colorTransform a="0" r="0" g="0" b="0" aM="0" rM="100" gM="100" bM="100"/>
+     </f>
+     <f x="97.95" y="-8" cocos2d_x="47.95" cocos2d_y="-58" kX="0" kY="0" cX="1" cY="1" pX="50" pY="50" z="1" dI="0" twE="0" dr="20"/>
+     <f x="97.95" y="-8" cocos2d_x="47.95" cocos2d_y="-58" kX="0" kY="0" cX="1" cY="1" pX="50" pY="50" z="1" dI="0" dr="1">
+      <colorTransform a="0" r="0" g="0" b="0" aM="0" rM="100" gM="100" bM="100"/>
+     </f>
+     <f dr="41" dI="-1"/>
+    </b>
+    <b name="1" sc="1" dl="0">
+     <f dr="120" dI="-1"/>
+     <f x="44.95" y="16.5" cocos2d_x="-5.05" cocos2d_y="-33.5" kX="0" kY="0" cX="1" cY="1" pX="50" pY="50" z="1" dI="0" twE="0" dr="20">
+      <colorTransform a="0" r="0" g="0" b="0" aM="0" rM="100" gM="100" bM="100"/>
+     </f>
+     <f x="44.95" y="16.5" cocos2d_x="-5.05" cocos2d_y="-33.5" kX="0" kY="0" cX="1" cY="1" pX="50" pY="50" z="1" dI="0" twE="0" dr="20"/>
+     <f x="44.95" y="16.5" cocos2d_x="-5.05" cocos2d_y="-33.5" kX="0" kY="0" cX="1" cY="1" pX="50" pY="50" z="1" dI="0" dr="1">
+      <colorTransform a="0" r="0" g="0" b="0" aM="0" rM="100" gM="100" bM="100"/>
+     </f>
+     <f dr="1" dI="-1"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="pifu_deng" width="512" height="256">
+  <SubTexture name="part-tk_pfbhz_deng" width="100" height="100" cocos2d_pX="0" cocos2d_pY="0" x="277" y="0"/>
+  <SubTexture name="part-pifu_jidi" width="275" height="151" cocos2d_pX="0" cocos2d_pY="0" x="0" y="0"/>
+ </TextureAtlas>
+</skeleton>

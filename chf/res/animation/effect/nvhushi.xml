@@ -1,0 +1,97 @@
+<skeleton name="nvhushi" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="nvhushi">
+   <b name="7" x="0" y="-0.45" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0">
+    <d name="part-nvhushi_quanshen"/>
+   </b>
+   <b name="6" x="3.5" y="-121.45" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1">
+    <d name="part-nvhushi_zhayan2"/>
+   </b>
+   <b name="5" x="3.5" y="-122.45" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1">
+    <d name="part-nvhushi_zhayan1"/>
+   </b>
+   <b name="4" x="-139.65" y="-67.25" kX="-83.48" kY="-83.48" cX="1.42" cY="1.42" pX="0" pY="0" z="1">
+    <d name="part-nvhushi_xing"/>
+   </b>
+   <b name="3" x="90.65" y="-12.65" kX="0" kY="0" cX="1.44" cY="1.44" pX="0" pY="0" z="1">
+    <d name="part-nvhushi_xing"/>
+   </b>
+   <b name="2" x="36.5" y="131.75" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2">
+    <d name="part-nvhushi_liuguan_01"/>
+    <d name="part-nvhushi_liuguan_02"/>
+    <d name="part-nvhushi_liuguan_03"/>
+    <d name="part-nvhushi_liuguan_04"/>
+    <d name="part-nvhushi_liuguan_05"/>
+    <d name="part-nvhushi_liuguan_06"/>
+    <d name="part-nvhushi_liuguan_07"/>
+    <d name="part-nvhushi_liuguan_08"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="nvhushi">
+   <mov name="start" dr="152" to="0" drTW="152" lp="1" twE="NaN">
+    <b name="7" sc="1" dl="0">
+     <f x="0" y="-0.45" cocos2d_x="0" cocos2d_y="-0.45" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="152"/>
+    </b>
+    <b name="6" sc="1" dl="0">
+     <f dr="15" dI="-1"/>
+     <f x="3.5" y="-121.45" cocos2d_x="3.5" cocos2d_y="-121.45" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1" dI="0" dr="7"/>
+     <f dr="130" dI="-1"/>
+    </b>
+    <b name="5" sc="1" dl="0">
+     <f dr="8" dI="-1"/>
+     <f x="3.5" y="-122.45" cocos2d_x="3.5" cocos2d_y="-122.45" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1" dI="0" dr="7"/>
+     <f dr="7" dI="-1"/>
+     <f x="3.5" y="-122.45" cocos2d_x="3.5" cocos2d_y="-122.45" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1" dI="0" dr="7"/>
+     <f dr="123" dI="-1"/>
+    </b>
+    <b name="4" sc="1" dl="0">
+     <f dr="33" dI="-1"/>
+     <f x="-139.65" y="-67.25" cocos2d_x="-139.65" cocos2d_y="-67.25" kX="-83.48" kY="-83.48" cX="1.42" cY="1.42" pX="0" pY="0" z="1" dI="0" twE="0" dr="19"/>
+     <f x="-139.65" y="-67.25" cocos2d_x="-139.65" cocos2d_y="-67.25" kX="34.48" kY="34.48" cX="2.72" cY="2.72" pX="0" pY="0" z="1" dI="0" twE="0" dr="17"/>
+     <f x="-139.65" y="-67.25" cocos2d_x="-139.65" cocos2d_y="-67.25" kX="85.41" kY="85.41" cX="3.59" cY="3.59" pX="0" pY="0" z="1" dI="0" twE="0" dr="18"/>
+     <f x="-139.65" y="-67.25" cocos2d_x="-139.65" cocos2d_y="-67.25" kX="141.65" kY="141.65" cX="1.53" cY="1.53" pX="0" pY="0" z="1" dI="0" dr="1"/>
+     <f dr="64" dI="-1"/>
+    </b>
+    <b name="3" sc="1" dl="0">
+     <f dr="112" dI="-1"/>
+     <f x="90.65" y="-12.65" cocos2d_x="90.65" cocos2d_y="-12.65" kX="0" kY="0" cX="1.44" cY="1.44" pX="0" pY="0" z="1" dI="0" twE="0" dr="16">
+      <colorTransform a="0" r="0" g="0" b="0" aM="5" rM="100" gM="100" bM="100"/>
+     </f>
+     <f x="90.65" y="-12.65" cocos2d_x="90.65" cocos2d_y="-12.65" kX="0" kY="0" cX="4.34" cY="4.34" pX="0" pY="0" z="1" dI="0" twE="0" dr="16"/>
+     <f x="90.65" y="-12.65" cocos2d_x="90.65" cocos2d_y="-12.65" kX="0" kY="0" cX="2.53" cY="2.53" pX="0" pY="0" z="1" dI="0" dr="1">
+      <colorTransform a="0" r="0" g="0" b="0" aM="5" rM="100" gM="100" bM="100"/>
+     </f>
+     <f dr="7" dI="-1"/>
+    </b>
+    <b name="2" sc="1" dl="0">
+     <f dr="7" dI="-1"/>
+     <f x="36.5" y="131.75" cocos2d_x="36.5" cocos2d_y="131.75" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="0" dr="4"/>
+     <f x="36" y="131.5" cocos2d_x="36" cocos2d_y="131.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="1" dr="4"/>
+     <f x="36.75" y="132.5" cocos2d_x="36.75" cocos2d_y="132.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="2" dr="4"/>
+     <f x="37" y="131.75" cocos2d_x="37" cocos2d_y="131.75" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="3" dr="4"/>
+     <f x="36.25" y="131.25" cocos2d_x="36.25" cocos2d_y="131.25" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="4" dr="4"/>
+     <f x="36.75" y="131.75" cocos2d_x="36.75" cocos2d_y="131.75" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1" dI="5" dr="4"/>
+     <f x="36.4" y="131.85" cocos2d_x="36.4" cocos2d_y="131.85" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="6" dr="4"/>
+     <f x="37.15" y="131.85" cocos2d_x="37.15" cocos2d_y="131.85" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="7" dr="4"/>
+     <f dr="113" dI="-1"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="nvhushi" width="512" height="512">
+  <SubTexture name="part-nvhushi_liuguan_08" width="44" height="50" cocos2d_pX="21.65" cocos2d_pY="24.85" x="342" y="52"/>
+  <SubTexture name="part-nvhushi_liuguan_07" width="45" height="50" cocos2d_pX="22.4" cocos2d_pY="24.85" x="343" y="0"/>
+  <SubTexture name="part-nvhushi_liuguan_06" width="44" height="50" cocos2d_pX="22" cocos2d_pY="25" x="296" y="52"/>
+  <SubTexture name="part-nvhushi_liuguan_05" width="45" height="50" cocos2d_pX="22.5" cocos2d_pY="25" x="390" y="0"/>
+  <SubTexture name="part-nvhushi_liuguan_04" width="43" height="49" cocos2d_pX="21.5" cocos2d_pY="24.5" x="388" y="52"/>
+  <SubTexture name="part-nvhushi_liuguan_03" width="45" height="49" cocos2d_pX="22.5" cocos2d_pY="24.5" x="437" y="0"/>
+  <SubTexture name="part-nvhushi_liuguan_02" width="45" height="50" cocos2d_pX="22.5" cocos2d_pY="25" x="296" y="0"/>
+  <SubTexture name="part-nvhushi_liuguan_01" width="44" height="50" cocos2d_pX="22" cocos2d_pY="25" x="437" y="51"/>
+  <SubTexture name="part-nvhushi_xing" width="27" height="25" cocos2d_pX="10.85" cocos2d_pY="9.8" x="483" y="51"/>
+  <SubTexture name="part-nvhushi_zhayan1" width="51" height="21" cocos2d_pX="25.5" cocos2d_pY="10.5" x="441" y="103"/>
+  <SubTexture name="part-nvhushi_zhayan2" width="51" height="23" cocos2d_pX="25.5" cocos2d_pY="11.5" x="388" y="103"/>
+  <SubTexture name="part-nvhushi_quanshen" width="294" height="361" cocos2d_pX="147" cocos2d_pY="180.5" x="0" y="0"/>
+ </TextureAtlas>
+</skeleton>

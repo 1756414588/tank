@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="PartyDao">
+
+    <select id="selectMaxPartyIdInThisServer" parameterType="Integer" resultType="Integer">
+        select max(partyId % #{id_flag}) from p_party;
+    </select>
+
+	<select id="selectParyList" resultType="Party">
+		select 
+		partyId,partyName,legatusName,partyLv,scienceLv,wealLv,lively,build,fight,apply,applyLv,applyFight,slogan,
+		innerSlogan,jobName1,jobName2,jobName3,jobName4,mine,science,applyList,trend,partyCombat,liveTask,activity,amyProps,donates,shopProps,
+		refreshTime,warRecord,regLv,regFight,warRank,score,altarLv,nextCallBossSec,bossLv,bossState,bossWhich,bossHp,bossHurtRank,bossAward,shopTime,airshipData,
+			teamRecharge,altarBossExp
+		from p_party order by fight desc
+	</select>
+
+	<select id="selectParyLvList" resultType="Party">
+		select 
+		partyId,partyName,legatusName,partyLv,scienceLv,wealLv,lively,build,fight,apply,applyLv,applyFight,slogan,
+		innerSlogan,jobName1,jobName2,jobName3,jobName4,mine,science,applyList,trend,partyCombat,liveTask,activity,amyProps,donates,shopProps,
+		refreshTime,warRecord,regLv,regFight,warRank,score,altarLv,nextCallBossSec,bossLv,bossState,bossWhich,bossHp,bossHurtRank,bossAward,shopTime,airshipData,
+		teamRecharge,altarBossExp
+		from p_party order by partyLv DESC,scienceLv desc ,wealLv desc ,build desc
+	</select>
+
+	<select id="selectPary" parameterType="Integer" resultType="Party">
+		select 
+		partyId,partyName,legatusName,partyLv,scienceLv,wealLv,lively,build,fight,apply,applyLv,applyFight,slogan,
+		innerSlogan,jobName1,jobName2,jobName3,jobName4,mine,science,applyList,trend,partyCombat,liveTask,activity,amyProps,donates,shopProps,
+		refreshTime,warRecord,regLv,regFight,warRank,score,altarLv,nextCallBossSec,bossLv,bossState,bossWhich,bossHp,bossHurtRank,bossAward,shopTime,airshipData,
+		teamRecharge,altarBossExp
+		from p_party where partyId = #{partyId}
+	</select>
+
+	<insert id="insertPary" parameterType="Party" useGeneratedKeys="true" keyProperty="partyId">
+		insert into
+		p_party(partyId,partyName,legatusName,fight,science,mine,applyList,trend,partyCombat,liveTask,activity,amyProps,refreshTime,warRecord,donates,altarLv,shopTime,teamRecharge,altarBossExp)
+		values(#{partyId},#{partyName},#{legatusName},#{fight},#{science},#{mine},#{applyList},#{trend},#{partyCombat},#{liveTask},#{activity},#{amyProps},
+		#{refreshTime},#{warRecord},#{donates},#{altarLv},#{shopTime},#{teamRecharge},#{altarBossExp})
+	</insert>
+	
+	<insert id="insertFullParty" parameterType="Party" useGeneratedKeys="true" keyProperty="partyId">
+		insert into
+		p_party(partyId,partyName,legatusName,partyLv,scienceLv,wealLv,lively,build,fight,apply,applyLv,applyFight,slogan,
+		innerSlogan,jobName1,jobName2,jobName3,jobName4,mine,science,applyList,trend,partyCombat,liveTask,activity,amyProps,donates,shopProps,
+		refreshTime,warRecord,regLv,regFight,warRank,score,altarLv,nextCallBossSec,bossLv,bossState,bossWhich,bossHp,bossHurtRank,bossAward,shopTime,airshipData,teamRecharge,altarBossExp)
+		values(#{partyId},#{partyName},#{legatusName},#{partyLv},#{scienceLv},#{wealLv},#{lively},#{build},#{fight},#{apply},#{applyLv},#{applyFight},#{slogan},
+		#{innerSlogan},#{jobName1},#{jobName2},#{jobName3},#{jobName4},#{mine},#{science},#{applyList},#{trend},#{partyCombat},#{liveTask},#{activity},#{amyProps},#{donates},#{shopProps},
+		#{refreshTime},#{warRecord},#{regLv},#{regFight},#{warRank},#{score},#{altarLv},#{nextCallBossSec},#{bossLv},#{bossState},#{bossWhich},#{bossHp},#{bossHurtRank},
+		#{bossAward},#{shopTime},#{airshipData},#{teamRecharge},#{altarBossExp})
+	</insert>
+
+	<update id="updatePary" parameterType="Party">
+		update p_party set
+		legatusName=#{legatusName},
+		partyName=#{partyName},
+		partyLv=#{partyLv},
+		scienceLv=#{scienceLv},
+		wealLv=#{wealLv},
+		lively=#{lively},
+		build=#{build},
+		fight=#{fight},
+		apply=#{apply},
+		applyLv=#{applyLv},
+		applyFight=#{applyFight},
+		slogan=#{slogan},
+		innerSlogan=#{innerSlogan},
+		jobName1=#{jobName1},
+		jobName2=#{jobName2},
+		jobName3=#{jobName3},
+		jobName4=#{jobName4},
+		mine=#{mine},
+		science=#{science},
+		applyList=#{applyList},
+		trend=#{trend},
+		liveTask=#{liveTask},
+		activity=#{activity},
+		amyProps=#{amyProps},
+		partyCombat=#{partyCombat},
+		refreshTime=#{refreshTime},
+		warRecord=#{warRecord},
+		regLv=#{regLv},
+		regFight=#{regFight},
+		warRank=#{warRank},
+		shopProps=#{shopProps},
+		score=#{score},
+		donates=#{donates},
+		altarLv=#{altarLv},
+		nextCallBossSec=#{nextCallBossSec},
+		bossLv=#{bossLv},
+		bossState=#{bossState},
+		bossWhich=#{bossWhich},
+		bossHp=#{bossHp},
+		bossHurtRank=#{bossHurtRank},
+		bossAward=#{bossAward},
+		shopTime=#{shopTime},
+		airshipData=#{airshipData},
+		teamRecharge=#{teamRecharge},
+		altarBossExp =#{altarBossExp}
+
+		where
+		partyId=#{partyId}
+	</update>
+
+	<!--帮派成员 -->
+	<select id="selectParyMemberList" resultType="PartyMember">
+		select 
+		lordId,partyId,job,donate,prestige,weekAllDonate,weekDonate,donateTime,dayWeal,hallMine,scienceMine,wealMine,
+		partyProp,combatId,applyList,combatCount,refreshTime,enterTime,activity,regParty,regTime,regLv,regFight,winCount,warRecord
+		from p_party_member
+	</select>
+
+	<insert id="insertParyMember" parameterType="PartyMember">
+		insert into
+		p_party_member(lordId,partyId,job,hallMine,scienceMine,wealMine,partyProp,combatId,refreshTime,enterTime,warRecord)
+		values(#{lordId},#{partyId},#{job},#{hallMine},#{scienceMine},#{wealMine},#{partyProp},#{combatId},#{refreshTime},#{enterTime},#{warRecord})
+	</insert>
+	
+	<insert id="insertFullPartyMember" parameterType="PartyMember">
+		insert into
+		p_party_member(lordId,partyId,job,donate,prestige,weekAllDonate,weekDonate,donateTime,dayWeal,hallMine,scienceMine,wealMine,partyProp,combatId,
+		applyList,combatCount,refreshTime,enterTime,activity,regParty,regTime,regLv,regFight,winCount,warRecord)
+		values(#{lordId},#{partyId},#{job},#{donate},#{prestige},#{weekAllDonate},#{weekDonate},#{donateTime},#{dayWeal},#{hallMine},#{scienceMine},#{wealMine},#{partyProp},#{combatId},
+		#{applyList},#{combatCount},#{refreshTime},#{enterTime},#{activity},#{regParty},#{regTime},#{regLv},#{regFight},#{winCount},#{warRecord})
+	</insert>
+
+	<update id="updateParyMember" parameterType="PartyMember">
+		update p_party_member set
+		partyId=#{partyId},
+		job=#{job},
+		donate=#{donate},
+		weekDonate=#{weekDonate},
+		weekAllDonate=#{weekAllDonate},
+		donateTime=#{donateTime},
+		dayWeal=#{dayWeal},
+		hallMine=#{hallMine},
+		scienceMine=#{scienceMine},
+		wealMine=#{wealMine},
+		partyProp=#{partyProp},
+		applyList=#{applyList},
+		combatId=#{combatId},
+		combatCount=#{combatCount},
+		refreshTime=#{refreshTime},
+		enterTime=#{enterTime},
+		activity=#{activity},
+		regParty=#{regParty},
+		regTime=#{regTime},
+		regLv=#{regLv},
+		regFight=#{regFight},
+		winCount=#{winCount},
+		warRecord=#{warRecord}		
+		where lordId=#{lordId}
+	</update>
+
+    <!-- 合服相关的军团SQL -->
+    <select id="selectPartyMemberFilterSmallId" resultType="PartyMember">
+        select
+        lordId,partyId,job,donate,prestige,weekAllDonate,weekDonate,donateTime,dayWeal,hallMine,scienceMine,wealMine,
+        partyProp,combatId,applyList,combatCount,refreshTime,enterTime,activity,regParty,regTime,regLv,regFight,winCount,warRecord
+        from p_party_member p where p.`partyId`>0 and p.`lordId` not in (select lordId from p_smallId);
+    </select>
+
+    <!-- 合服导致玩家名字发生变化，如果该玩家为军团长，则更新p_party中军团长名字 -->
+    <update id="updatePartyLegatusName">
+        UPDATE p_party p, (SELECT t.`lordId`, t.`nick`, m.`partyId` FROM p_party_member m, p_lord t WHERE m.job = 99 AND m.lordId = t.`lordId`) t1 SET p.`legatusName` = t1.nick  WHERE p.`partyId` = t1.partyId;
+    </update>
+
+    <!-- 合服需要清除的工会记录
+        1.清除军事矿区积分
+        2.清除申请记录
+        3.百团混战
+        4.军情、民情
+        5.捐赠
+        6.飞艇
+    -->
+    <update id="clearPartyDataWithMerge">
+        UPDATE p_party SET score=0, applyList=NULL, warRecord=NULL, regLv=0, regFight=0, warRank=0, trend=NULL, donates=NULL, airshipData=NULL;
+    </update>
+
+</mapper>

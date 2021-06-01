@@ -1,0 +1,82 @@
+<skeleton name="sdzy_shouji" frameRate="24" version="2.0">
+ <armatures>
+  <armature name="sdzy_shouji">
+   <b name="1" x="0" y="-17" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0">
+    <d name="part-sdzy_shouji_00056"/>
+    <d name="part-sdzy_shouji_00058"/>
+    <d name="part-sdzy_shouji_00060"/>
+    <d name="part-sdzy_shouji_00062"/>
+    <d name="part-sdzy_shouji_00064"/>
+    <d name="part-sdzy_shouji_00066"/>
+    <d name="part-sdzy_shouji_00068"/>
+    <d name="part-sdzy_shouji_00070"/>
+    <d name="part-sdzy_shouji_00072"/>
+    <d name="part-sdzy_shouji_00074"/>
+    <d name="part-sdzy_shouji_00076"/>
+    <d name="part-sdzy_shouji_00078"/>
+    <d name="part-sdzy_shouji_00080"/>
+    <d name="part-sdzy_shouji_00082"/>
+    <d name="part-sdzy_shouji_00084"/>
+    <d name="part-sdzy_shouji_00086"/>
+    <d name="part-sdzy_shouji_00088"/>
+    <d name="part-sdzy_shouji_00090"/>
+    <d name="part-sdzy_shouji_00092"/>
+    <d name="part-sdzy_shouji_00094"/>
+    <d name="part-sdzy_shouji_00096"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="sdzy_shouji">
+   <mov name="start" dr="43" to="0" drTW="43" lp="0" twE="NaN">
+    <b name="1" sc="1" dl="0">
+     <f x="0" y="-17" cocos2d_x="0" cocos2d_y="-17" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="2"/>
+     <f x="0" y="-17" cocos2d_x="0" cocos2d_y="-17" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="1" dr="2"/>
+     <f x="0" y="-17" cocos2d_x="0" cocos2d_y="-17" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="2" dr="2"/>
+     <f x="0" y="-17" cocos2d_x="0" cocos2d_y="-17" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="3" dr="2"/>
+     <f x="0" y="-17" cocos2d_x="0" cocos2d_y="-17" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="4" dr="2"/>
+     <f x="0" y="-17" cocos2d_x="0" cocos2d_y="-17" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="5" dr="2"/>
+     <f x="0" y="-17" cocos2d_x="0" cocos2d_y="-17" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="6" dr="2"/>
+     <f x="0" y="-17" cocos2d_x="0" cocos2d_y="-17" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="7" dr="2"/>
+     <f x="0" y="-17" cocos2d_x="0" cocos2d_y="-17" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="8" dr="2"/>
+     <f x="0" y="-17" cocos2d_x="0" cocos2d_y="-17" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="9" dr="2"/>
+     <f x="0" y="-17" cocos2d_x="0" cocos2d_y="-17" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="10" dr="2"/>
+     <f x="0" y="-17" cocos2d_x="0" cocos2d_y="-17" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="11" dr="2"/>
+     <f x="0" y="-17" cocos2d_x="0" cocos2d_y="-17" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="12" dr="2"/>
+     <f x="0" y="-17" cocos2d_x="0" cocos2d_y="-17" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="13" dr="2"/>
+     <f x="0" y="-17" cocos2d_x="0" cocos2d_y="-17" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="14" dr="2"/>
+     <f x="0" y="-17" cocos2d_x="0" cocos2d_y="-17" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="15" dr="2"/>
+     <f x="0" y="-17" cocos2d_x="0" cocos2d_y="-17" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="16" dr="2"/>
+     <f x="0" y="-17" cocos2d_x="0" cocos2d_y="-17" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="17" dr="2"/>
+     <f x="0" y="-17" cocos2d_x="0" cocos2d_y="-17" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="18" dr="2"/>
+     <f x="0" y="-17" cocos2d_x="0" cocos2d_y="-17" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="19" dr="2"/>
+     <f x="0" y="-17" cocos2d_x="0" cocos2d_y="-17" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="20" dr="2"/>
+     <f dr="1" dI="-1"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="sdzy_shouji" width="2048" height="2048">
+  <SubTexture name="part-sdzy_shouji_00096" width="300" height="300" cocos2d_pX="150" cocos2d_pY="150" x="1208" y="604"/>
+  <SubTexture name="part-sdzy_shouji_00094" width="300" height="300" cocos2d_pX="150" cocos2d_pY="150" x="604" y="0"/>
+  <SubTexture name="part-sdzy_shouji_00092" width="300" height="300" cocos2d_pX="150" cocos2d_pY="150" x="0" y="604"/>
+  <SubTexture name="part-sdzy_shouji_00090" width="300" height="300" cocos2d_pX="150" cocos2d_pY="150" x="1208" y="0"/>
+  <SubTexture name="part-sdzy_shouji_00088" width="300" height="300" cocos2d_pX="150" cocos2d_pY="150" x="604" y="906"/>
+  <SubTexture name="part-sdzy_shouji_00086" width="300" height="300" cocos2d_pX="150" cocos2d_pY="150" x="0" y="302"/>
+  <SubTexture name="part-sdzy_shouji_00084" width="300" height="300" cocos2d_pX="150" cocos2d_pY="150" x="604" y="604"/>
+  <SubTexture name="part-sdzy_shouji_00082" width="300" height="300" cocos2d_pX="150" cocos2d_pY="150" x="604" y="302"/>
+  <SubTexture name="part-sdzy_shouji_00080" width="300" height="300" cocos2d_pX="150" cocos2d_pY="150" x="302" y="906"/>
+  <SubTexture name="part-sdzy_shouji_00078" width="300" height="300" cocos2d_pX="150" cocos2d_pY="150" x="1208" y="302"/>
+  <SubTexture name="part-sdzy_shouji_00076" width="300" height="300" cocos2d_pX="150" cocos2d_pY="150" x="0" y="0"/>
+  <SubTexture name="part-sdzy_shouji_00074" width="300" height="300" cocos2d_pX="150" cocos2d_pY="150" x="302" y="0"/>
+  <SubTexture name="part-sdzy_shouji_00072" width="300" height="300" cocos2d_pX="150" cocos2d_pY="150" x="906" y="0"/>
+  <SubTexture name="part-sdzy_shouji_00070" width="300" height="300" cocos2d_pX="150" cocos2d_pY="150" x="1510" y="0"/>
+  <SubTexture name="part-sdzy_shouji_00068" width="300" height="300" cocos2d_pX="150" cocos2d_pY="150" x="302" y="302"/>
+  <SubTexture name="part-sdzy_shouji_00066" width="300" height="300" cocos2d_pX="150" cocos2d_pY="150" x="906" y="302"/>
+  <SubTexture name="part-sdzy_shouji_00064" width="300" height="300" cocos2d_pX="150" cocos2d_pY="150" x="1510" y="302"/>
+  <SubTexture name="part-sdzy_shouji_00062" width="300" height="300" cocos2d_pX="150" cocos2d_pY="150" x="302" y="604"/>
+  <SubTexture name="part-sdzy_shouji_00060" width="300" height="300" cocos2d_pX="150" cocos2d_pY="150" x="906" y="604"/>
+  <SubTexture name="part-sdzy_shouji_00058" width="300" height="300" cocos2d_pX="150" cocos2d_pY="150" x="1510" y="604"/>
+  <SubTexture name="part-sdzy_shouji_00056" width="300" height="300" cocos2d_pX="150" cocos2d_pY="150" x="0" y="906"/>
+ </TextureAtlas>
+</skeleton>

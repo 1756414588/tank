@@ -1,0 +1,96 @@
+<skeleton name="yanjiusuo" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="ui_base_science">
+   <b name="11" x="2" y="-13.6" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0">
+    <d name="part-yjs_aax1"/>
+    <d name="part-yjs_aax2"/>
+    <d name="part-yjs_aax3"/>
+    <d name="part-yjs_aax4"/>
+    <d name="part-yjs_aax5"/>
+    <d name="part-yjs_aax6"/>
+    <d name="part-yjs_aax7"/>
+   </b>
+   <b name="33" x="3.3" y="3.75" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0">
+    <d name="part-yjs_bbx1"/>
+    <d name="part-yjs_bbx2"/>
+    <d name="part-yjs_bbx3"/>
+    <d name="part-yjs_bbx4"/>
+    <d name="part-yjs_bbx5"/>
+    <d name="part-yjs_bbx6"/>
+    <d name="part-yjs_bbx7"/>
+    <d name="part-yjs_bbx8"/>
+    <d name="part-yjs_bbx9"/>
+    <d name="part-yjs_bbx10"/>
+    <d name="part-yjs_bbx11"/>
+    <d name="part-yjs_bbx12"/>
+    <d name="part-yjs_bbx13"/>
+    <d name="part-yjs_bbx14"/>
+    <d name="part-yjs_bbx15"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="ui_base_science">
+   <mov name="start" dr="189" to="6" drTW="189" lp="1" twE="NaN">
+    <b name="11" sc="1" dl="0">
+     <f dr="81" dI="-1"/>
+     <f x="2" y="-13.6" cocos2d_x="2" cocos2d_y="-13.6" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="4"/>
+     <f x="2.55" y="-17.4" cocos2d_x="2.55" cocos2d_y="-17.4" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="1" dr="4"/>
+     <f dr="4" dI="-1"/>
+     <f x="3.65" y="-34.5" cocos2d_x="3.65" cocos2d_y="-34.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="2" dr="4"/>
+     <f dr="4" dI="-1"/>
+     <f x="1.5" y="-39.5" cocos2d_x="1.5" cocos2d_y="-39.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="3" dr="4"/>
+     <f x="2.7" y="-44.85" cocos2d_x="2.7" cocos2d_y="-44.85" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="4" dr="4"/>
+     <f dr="4" dI="-1"/>
+     <f x="2.05" y="-50.5" cocos2d_x="2.05" cocos2d_y="-50.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="5" dr="4"/>
+     <f dr="4" dI="-1"/>
+     <f x="0.9" y="-62.85" cocos2d_x="0.9" cocos2d_y="-62.85" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="6" dr="4"/>
+     <f dr="64" dI="-1"/>
+    </b>
+    <b name="33" sc="1" dl="0">
+     <f dr="6" dI="-1"/>
+     <f x="3.3" y="3.75" cocos2d_x="3.3" cocos2d_y="3.75" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="4"/>
+     <f x="3.3" y="3.75" cocos2d_x="3.3" cocos2d_y="3.75" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="1" dr="4"/>
+     <f x="3.3" y="3.75" cocos2d_x="3.3" cocos2d_y="3.75" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="2" dr="4"/>
+     <f x="3.3" y="3.75" cocos2d_x="3.3" cocos2d_y="3.75" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="3" dr="4"/>
+     <f x="3.3" y="3.75" cocos2d_x="3.3" cocos2d_y="3.75" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="4" dr="4"/>
+     <f x="3.3" y="3.75" cocos2d_x="3.3" cocos2d_y="3.75" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="5" dr="4"/>
+     <f x="3.3" y="3.75" cocos2d_x="3.3" cocos2d_y="3.75" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="6" dr="4"/>
+     <f x="3.3" y="3.75" cocos2d_x="3.3" cocos2d_y="3.75" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="7" dr="4"/>
+     <f x="3.3" y="3.75" cocos2d_x="3.3" cocos2d_y="3.75" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="8" dr="4"/>
+     <f x="3.3" y="3.75" cocos2d_x="3.3" cocos2d_y="3.75" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="9" dr="4"/>
+     <f x="3.3" y="3.75" cocos2d_x="3.3" cocos2d_y="3.75" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="10" dr="4"/>
+     <f x="3.3" y="3.75" cocos2d_x="3.3" cocos2d_y="3.75" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="11" dr="4"/>
+     <f x="3.3" y="3.75" cocos2d_x="3.3" cocos2d_y="3.75" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="12" dr="4"/>
+     <f x="3.3" y="3.75" cocos2d_x="3.3" cocos2d_y="3.75" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="13" dr="4"/>
+     <f x="3.3" y="3.75" cocos2d_x="3.3" cocos2d_y="3.75" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="14" dr="4"/>
+     <f dr="123" dI="-1"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="yanjiusuo" width="256" height="256">
+  <SubTexture name="part-yjs_bbx15" width="15" height="14" cocos2d_pX="-7.05" cocos2d_pY="8.3" x="232" y="52"/>
+  <SubTexture name="part-yjs_bbx14" width="18" height="15" cocos2d_pX="-4.05" cocos2d_pY="8.3" x="232" y="35"/>
+  <SubTexture name="part-yjs_bbx13" width="21" height="16" cocos2d_pX="-1.3" cocos2d_pY="8.25" x="232" y="0"/>
+  <SubTexture name="part-yjs_bbx12" width="25" height="17" cocos2d_pX="3.5" cocos2d_pY="8.25" x="193" y="99"/>
+  <SubTexture name="part-yjs_bbx11" width="28" height="17" cocos2d_pX="6.6" cocos2d_pY="8.2" x="224" y="86"/>
+  <SubTexture name="part-yjs_bbx10" width="31" height="17" cocos2d_pX="9.8" cocos2d_pY="8.05" x="94" y="117"/>
+  <SubTexture name="part-yjs_bbx9" width="35" height="17" cocos2d_pX="13.55" cocos2d_pY="8.05" x="115" y="98"/>
+  <SubTexture name="part-yjs_bbx8" width="39" height="16" cocos2d_pX="17.7" cocos2d_pY="8" x="152" y="99"/>
+  <SubTexture name="part-yjs_bbx7" width="42" height="16" cocos2d_pX="21" cocos2d_pY="7.9" x="71" y="98"/>
+  <SubTexture name="part-yjs_bbx6" width="37" height="16" cocos2d_pX="21.05" cocos2d_pY="7.9" x="55" y="116"/>
+  <SubTexture name="part-yjs_bbx5" width="32" height="16" cocos2d_pX="21.05" cocos2d_pY="7.9" x="220" y="105"/>
+  <SubTexture name="part-yjs_bbx4" width="29" height="16" cocos2d_pX="21.05" cocos2d_pY="7.9" x="224" y="68"/>
+  <SubTexture name="part-yjs_bbx3" width="25" height="16" cocos2d_pX="21.05" cocos2d_pY="7.9" x="127" y="117"/>
+  <SubTexture name="part-yjs_bbx2" width="20" height="15" cocos2d_pX="21.05" cocos2d_pY="7.9" x="232" y="18"/>
+  <SubTexture name="part-yjs_bbx1" width="14" height="14" cocos2d_pX="21.15" cocos2d_pY="7.95" x="55" y="97"/>
+  <SubTexture name="part-yjs_aax7" width="53" height="31" cocos2d_pX="26.25" cocos2d_pY="15.5" x="0" y="97"/>
+  <SubTexture name="part-yjs_aax6" width="77" height="48" cocos2d_pX="38.5" cocos2d_pY="23.75" x="81" y="0"/>
+  <SubTexture name="part-yjs_aax5" width="79" height="51" cocos2d_pX="39.5" cocos2d_pY="25.25" x="0" y="0"/>
+  <SubTexture name="part-yjs_aax4" width="79" height="42" cocos2d_pX="39.25" cocos2d_pY="21" x="0" y="53"/>
+  <SubTexture name="part-yjs_aax3" width="70" height="46" cocos2d_pX="35" cocos2d_pY="23" x="81" y="50"/>
+  <SubTexture name="part-yjs_aax2" width="70" height="52" cocos2d_pX="35" cocos2d_pY="25.75" x="160" y="0"/>
+  <SubTexture name="part-yjs_aax1" width="69" height="43" cocos2d_pX="34.25" cocos2d_pY="21.5" x="153" y="54"/>
+ </TextureAtlas>
+</skeleton>

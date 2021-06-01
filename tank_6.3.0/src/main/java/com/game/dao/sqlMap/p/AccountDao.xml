@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="AccountDao">
+
+    <!-- 根据plat server id 统计创建玩家人数-->
+    <select id="countAccountGroupByPlatAndServerId" resultType="CountAccount">
+        SELECT platNo, serverId, MAX(lordId % 10000000) AS maxLordId FROM p_account GROUP BY platNo, serverId;
+    </select>
+
+    <select id="selectAccount" parameterType="Map" resultType="Account">
+		select 
+		keyId,accountKey,serverId,platNo,platId,childNo,forbid,whiteName,lordId,created,deviceNo,createDate,loginDays,loginDate,isGm,isGuider,backState,backEndTime,ip
+		from p_account where accountKey=#{accountKey} and serverId=#{serverId}
+	</select>
+
+    <select id="selectAccountByLordId" parameterType="Long" resultType="Account">
+		select 
+		keyId,accountKey,serverId,platNo,platId,childNo,forbid,whiteName,lordId,created,deviceNo,createDate,loginDays,loginDate,isGm,isGuider,backState,backEndTime,ip
+		from p_account where lordId=#{lordId}
+	</select>
+
+    <select id="selectAccountByKeyId" parameterType="int" resultType="Account">
+		select 
+		keyId,accountKey,serverId,platNo,platId,childNo,forbid,whiteName,lordId,created,deviceNo,createDate,loginDays,loginDate,isGm,isGuider,backState,backEndTime,ip
+		from p_account where keyId=#{keyId}
+	</select>
+
+    <select id="selectAccountMapByLords" resultType="Account">
+        select
+        keyId,accountKey,serverId,platNo,platId,childNo,forbid,whiteName,lordId,created,deviceNo,createDate,loginDays,loginDate,isGm,isGuider,backState,backEndTime,ip
+        from p_account where lordId in
+        <foreach item="lordIds" index="index" collection="list" open="(" separator="," close=")">
+            #{lordIds}
+        </foreach>
+    </select>
+
+    <insert id="insertAccount" parameterType="Account" useGeneratedKeys="true" keyProperty="keyId">
+		insert into
+		p_account(accountKey,serverId,platNo,platId,childNo,lordId,deviceNo,createDate,loginDays,loginDate,backState,backEndTime,ip)
+		values(#{accountKey},#{serverId},#{platNo},#{platId},#{childNo},#{lordId},#{deviceNo},#{createDate},#{loginDays},#{loginDate},#{backState},#{backEndTime},#{ip})
+	</insert>
+
+    <insert id="insertFullAccount" parameterType="Account" useGeneratedKeys="true" keyProperty="keyId">
+		insert into
+		p_account(accountKey,serverId,platNo,platId,childNo,forbid,whiteName,lordId,created,deviceNo,createDate,loginDays,loginDate,isGm,isGuider,backState,backEndTime,ip)
+		values(#{accountKey},#{serverId},#{platNo},#{platId},#{childNo},#{forbid},#{whiteName},#{lordId},#{created},#{deviceNo},#{createDate},#{loginDays},#{loginDate},#{isGm},#{isGuider},#{backState},#{backEndTime},#{ip})
+	</insert>
+
+    <update id="updateCreateRole" parameterType="Account">
+		update p_account set created=1,createDate=#{createDate} where lordId=#{lordId}
+	</update>
+
+    <update id="updateIordId" parameterType="Account">
+		update p_account set lordId=#{lordId},created=0  where keyId =#{keyId}
+	</update>
+
+    <update id="updatePlatNo" parameterType="Account">
+		update p_account set lordId=#{lordId},loginDays=#{loginDays}  where keyId =#{keyId}
+	</update>
+
+    <!-- <update id="updateNick" parameterType="Map"> update p_account set nick=#{nick} where lordId=#{lordId} </update> -->
+
+    <update id="recordLoginTime" parameterType="Account">
+		update p_account set deviceNo=#{deviceNo},childNo=#{childNo},loginDate=#{loginDate},loginDays=#{loginDays},forbid=#{forbid},backState=#{backState},backEndTime=#{backEndTime},ip=#{ip}
+		where keyId=#{keyId}
+	</update>
+
+    <!-- <select id="sameNameCount" parameterType="String" resultType="Integer"> select count(lordId) from p_account where nick=#{nick} </select> -->
+
+    <select id="load" parameterType="Map" resultType="Account">
+		select 
+		keyId,accountKey,serverId,platNo,platId,childNo,forbid,whiteName,lordId,created,deviceNo,createDate,loginDays,loginDate,isGm,isGuider,backState,backEndTime,ip
+		from p_account where keyId > #{curIndex} order by keyId limit 0,#{count}
+	</select>
+
+    <select id="selectAll" resultType="Account">
+		select keyId,accountKey,serverId,platNo,platId,childNo,forbid,whiteName,lordId,created,deviceNo,createDate,loginDays,loginDate,isGm,isGuider,backState,backEndTime,ip
+		from p_account
+	</select>
+
+    <select id="selectAccountByAccountKeyAndServerId" parameterType="list" resultType="Account">
+        select
+        keyId,accountKey,serverId,platNo,platId,childNo,forbid,whiteName,lordId,created,deviceNo,createDate,loginDays,loginDate,isGm,isGuider,backState,backEndTime,ip
+        from p_account where (accountKey,serverId) IN
+        (
+        <foreach collection="list" item="item" separator=",">
+            (#{item.accountKey},#{item.serverId})
+        </foreach>
+        )
+    </select>
+
+</mapper>

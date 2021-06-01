@@ -1,0 +1,63 @@
+<skeleton name="mrdl_baoxiang_guang" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="mrdl_baoxiang_guang_mc">
+   <b name="gfdsh" x="-4.7" y="-5.65" kX="0" kY="0" cX="0.83" cY="0.64" pX="0" pY="0" z="0">
+    <d name="part-mrdl_baoxiang_guang1"/>
+    <d name="part-mrdl_baoxiang_guang2"/>
+    <d name="part-mrdl_baoxiang_guang3"/>
+    <d name="part-mrdl_baoxiang_guang4"/>
+    <d name="part-mrdl_baoxiang_guang5"/>
+    <d name="part-mrdl_baoxiang_guang6"/>
+    <d name="part-mrdl_baoxiang_guang7"/>
+    <d name="part-mrdl_baoxiang_guang8"/>
+    <d name="part-mrdl_baoxiang_guang9"/>
+    <d name="part-mrdl_baoxiang_guang10"/>
+    <d name="part-mrdl_baoxiang_guang11"/>
+    <d name="part-mrdl_baoxiang_guang12"/>
+    <d name="part-mrdl_baoxiang_guang13"/>
+    <d name="part-mrdl_baoxiang_guang14"/>
+    <d name="part-mrdl_baoxiang_guang15"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="mrdl_baoxiang_guang_mc">
+   <mov name="start" dr="60" to="0" drTW="60" lp="1" twE="NaN">
+    <b name="gfdsh" sc="1" dl="0">
+     <f x="-4.7" y="-5.65" cocos2d_x="-4.7" cocos2d_y="-5.65" kX="0" kY="0" cX="0.83" cY="0.64" pX="0" pY="0" z="0" dI="0" dr="4"/>
+     <f x="-4.7" y="-5.65" cocos2d_x="-4.7" cocos2d_y="-5.65" kX="0" kY="0" cX="0.83" cY="0.64" pX="0" pY="0" z="0" dI="1" dr="4"/>
+     <f x="-4.7" y="-5.65" cocos2d_x="-4.7" cocos2d_y="-5.65" kX="0" kY="0" cX="0.83" cY="0.64" pX="0" pY="0" z="0" dI="2" dr="4"/>
+     <f x="-4.7" y="-5.65" cocos2d_x="-4.7" cocos2d_y="-5.65" kX="0" kY="0" cX="0.83" cY="0.64" pX="0" pY="0" z="0" dI="3" dr="4"/>
+     <f x="-4.7" y="-5.65" cocos2d_x="-4.7" cocos2d_y="-5.65" kX="0" kY="0" cX="0.83" cY="0.64" pX="0" pY="0" z="0" dI="4" dr="4"/>
+     <f x="-4.7" y="-5.65" cocos2d_x="-4.7" cocos2d_y="-5.65" kX="0" kY="0" cX="0.83" cY="0.64" pX="0" pY="0" z="0" dI="5" dr="4"/>
+     <f x="-4.7" y="-5.65" cocos2d_x="-4.7" cocos2d_y="-5.65" kX="0" kY="0" cX="0.83" cY="0.64" pX="0" pY="0" z="0" dI="6" dr="4"/>
+     <f x="-4.7" y="-5.65" cocos2d_x="-4.7" cocos2d_y="-5.65" kX="0" kY="0" cX="0.83" cY="0.64" pX="0" pY="0" z="0" dI="7" dr="4"/>
+     <f x="-4.7" y="-5.65" cocos2d_x="-4.7" cocos2d_y="-5.65" kX="0" kY="0" cX="0.83" cY="0.64" pX="0" pY="0" z="0" dI="8" dr="4"/>
+     <f x="-4.7" y="-5.65" cocos2d_x="-4.7" cocos2d_y="-5.65" kX="0" kY="0" cX="0.83" cY="0.64" pX="0" pY="0" z="0" dI="9" dr="4"/>
+     <f x="-4.7" y="-5.65" cocos2d_x="-4.7" cocos2d_y="-5.65" kX="0" kY="0" cX="0.83" cY="0.64" pX="0" pY="0" z="0" dI="10" dr="4"/>
+     <f x="-4.7" y="-5.65" cocos2d_x="-4.7" cocos2d_y="-5.65" kX="0" kY="0" cX="0.83" cY="0.64" pX="0" pY="0" z="0" dI="11" dr="4"/>
+     <f x="-4.7" y="-5.65" cocos2d_x="-4.7" cocos2d_y="-5.65" kX="0" kY="0" cX="0.83" cY="0.64" pX="0" pY="0" z="0" dI="12" dr="4"/>
+     <f x="-4.7" y="-5.65" cocos2d_x="-4.7" cocos2d_y="-5.65" kX="0" kY="0" cX="0.83" cY="0.64" pX="0" pY="0" z="0" dI="13" dr="4"/>
+     <f x="-4.7" y="-5.65" cocos2d_x="-4.7" cocos2d_y="-5.65" kX="0" kY="0" cX="0.83" cY="0.64" pX="0" pY="0" z="0" dI="14" dr="4"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="mrdl_baoxiang_guang" width="1024" height="1024">
+  <SubTexture name="part-mrdl_baoxiang_guang15" width="213" height="160" cocos2d_pX="106.1" cocos2d_pY="79.6" x="0" y="324"/>
+  <SubTexture name="part-mrdl_baoxiang_guang14" width="213" height="160" cocos2d_pX="106.1" cocos2d_pY="79.6" x="430" y="0"/>
+  <SubTexture name="part-mrdl_baoxiang_guang13" width="213" height="160" cocos2d_pX="106.1" cocos2d_pY="79.6" x="215" y="486"/>
+  <SubTexture name="part-mrdl_baoxiang_guang12" width="213" height="160" cocos2d_pX="106.1" cocos2d_pY="79.6" x="0" y="162"/>
+  <SubTexture name="part-mrdl_baoxiang_guang11" width="213" height="160" cocos2d_pX="106.1" cocos2d_pY="79.6" x="430" y="324"/>
+  <SubTexture name="part-mrdl_baoxiang_guang10" width="213" height="160" cocos2d_pX="106.1" cocos2d_pY="79.6" x="430" y="162"/>
+  <SubTexture name="part-mrdl_baoxiang_guang9" width="213" height="160" cocos2d_pX="106.1" cocos2d_pY="79.6" x="430" y="486"/>
+  <SubTexture name="part-mrdl_baoxiang_guang8" width="213" height="160" cocos2d_pX="106.1" cocos2d_pY="79.6" x="0" y="0"/>
+  <SubTexture name="part-mrdl_baoxiang_guang7" width="213" height="160" cocos2d_pX="106.1" cocos2d_pY="79.6" x="215" y="0"/>
+  <SubTexture name="part-mrdl_baoxiang_guang6" width="213" height="160" cocos2d_pX="106.1" cocos2d_pY="79.6" x="645" y="0"/>
+  <SubTexture name="part-mrdl_baoxiang_guang5" width="213" height="160" cocos2d_pX="106.1" cocos2d_pY="79.6" x="215" y="162"/>
+  <SubTexture name="part-mrdl_baoxiang_guang4" width="213" height="160" cocos2d_pX="106.1" cocos2d_pY="79.6" x="645" y="162"/>
+  <SubTexture name="part-mrdl_baoxiang_guang3" width="213" height="160" cocos2d_pX="106.1" cocos2d_pY="79.6" x="215" y="324"/>
+  <SubTexture name="part-mrdl_baoxiang_guang2" width="213" height="160" cocos2d_pX="106.1" cocos2d_pY="79.6" x="645" y="324"/>
+  <SubTexture name="part-mrdl_baoxiang_guang1" width="213" height="160" cocos2d_pX="106.1" cocos2d_pY="79.6" x="0" y="486"/>
+ </TextureAtlas>
+</skeleton>

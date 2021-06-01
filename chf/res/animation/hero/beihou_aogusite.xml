@@ -1,0 +1,93 @@
+<skeleton name="aogusite_bg" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="beihou_aogusite">
+   <b name="1" x="-0.75" y="-0.9" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0">
+    <d name="part-aogusite_bg_0000"/>
+    <d name="part-aogusite_bg_0002"/>
+    <d name="part-aogusite_bg_0004"/>
+    <d name="part-aogusite_bg_0006"/>
+    <d name="part-aogusite_bg_0008"/>
+    <d name="part-aogusite_bg_0010"/>
+    <d name="part-aogusite_bg_0012"/>
+    <d name="part-aogusite_bg_0014"/>
+    <d name="part-aogusite_bg_0016"/>
+    <d name="part-aogusite_bg_0018"/>
+    <d name="part-aogusite_bg_0020"/>
+    <d name="part-aogusite_bg_0022"/>
+    <d name="part-aogusite_bg_0024"/>
+    <d name="part-aogusite_bg_0026"/>
+    <d name="part-aogusite_bg_0028"/>
+    <d name="part-aogusite_bg_0030"/>
+    <d name="part-aogusite_bg_0032"/>
+    <d name="part-aogusite_bg_0034"/>
+    <d name="part-aogusite_bg_0036"/>
+    <d name="part-aogusite_bg_0038"/>
+    <d name="part-aogusite_bg_0040"/>
+    <d name="part-aogusite_bg_0042"/>
+    <d name="part-aogusite_bg_0044"/>
+    <d name="part-aogusite_bg_0046"/>
+    <d name="part-aogusite_bg_0048"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="beihou_aogusite">
+   <mov name="start" dr="125" to="0" drTW="125" lp="1" twE="NaN">
+    <b name="1" sc="1" dl="0">
+     <f x="-0.75" y="-0.9" cocos2d_x="-0.75" cocos2d_y="-0.9" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="0" dr="5"/>
+     <f x="-0.75" y="-0.9" cocos2d_x="-0.75" cocos2d_y="-0.9" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="1" dr="5"/>
+     <f x="-0.75" y="-0.9" cocos2d_x="-0.75" cocos2d_y="-0.9" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="2" dr="5"/>
+     <f x="-0.75" y="-0.9" cocos2d_x="-0.75" cocos2d_y="-0.9" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="3" dr="5"/>
+     <f x="-0.75" y="-0.9" cocos2d_x="-0.75" cocos2d_y="-0.9" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="4" dr="5"/>
+     <f x="-0.75" y="-0.9" cocos2d_x="-0.75" cocos2d_y="-0.9" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="5" dr="5"/>
+     <f x="-0.75" y="-0.9" cocos2d_x="-0.75" cocos2d_y="-0.9" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="6" dr="5"/>
+     <f x="-0.75" y="-0.9" cocos2d_x="-0.75" cocos2d_y="-0.9" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="7" dr="5"/>
+     <f x="-0.75" y="-0.9" cocos2d_x="-0.75" cocos2d_y="-0.9" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="8" dr="5"/>
+     <f x="-0.75" y="-0.9" cocos2d_x="-0.75" cocos2d_y="-0.9" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="9" dr="5"/>
+     <f x="-0.75" y="-0.9" cocos2d_x="-0.75" cocos2d_y="-0.9" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="10" dr="5"/>
+     <f x="-0.75" y="-0.9" cocos2d_x="-0.75" cocos2d_y="-0.9" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="11" dr="5"/>
+     <f x="-0.75" y="-0.9" cocos2d_x="-0.75" cocos2d_y="-0.9" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="12" dr="5"/>
+     <f x="-0.75" y="-0.9" cocos2d_x="-0.75" cocos2d_y="-0.9" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="13" dr="5"/>
+     <f x="-0.75" y="-0.9" cocos2d_x="-0.75" cocos2d_y="-0.9" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="14" dr="5"/>
+     <f x="-0.75" y="-0.9" cocos2d_x="-0.75" cocos2d_y="-0.9" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="15" dr="5"/>
+     <f x="-0.75" y="-0.9" cocos2d_x="-0.75" cocos2d_y="-0.9" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="16" dr="5"/>
+     <f x="-0.75" y="-0.9" cocos2d_x="-0.75" cocos2d_y="-0.9" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="17" dr="5"/>
+     <f x="-0.75" y="-0.9" cocos2d_x="-0.75" cocos2d_y="-0.9" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="18" dr="5"/>
+     <f x="-0.75" y="-0.9" cocos2d_x="-0.75" cocos2d_y="-0.9" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="19" dr="5"/>
+     <f x="-0.75" y="-0.9" cocos2d_x="-0.75" cocos2d_y="-0.9" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="20" dr="5"/>
+     <f x="-0.75" y="-0.9" cocos2d_x="-0.75" cocos2d_y="-0.9" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="21" dr="5"/>
+     <f x="-0.75" y="-0.9" cocos2d_x="-0.75" cocos2d_y="-0.9" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="22" dr="5"/>
+     <f x="-0.75" y="-0.9" cocos2d_x="-0.75" cocos2d_y="-0.9" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="23" dr="5"/>
+     <f x="-0.75" y="-0.9" cocos2d_x="-0.75" cocos2d_y="-0.9" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="24" dr="5"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="aogusite_bg" width="1024" height="1024">
+  <SubTexture name="part-aogusite_bg_0048" width="200" height="200" cocos2d_pX="100" cocos2d_pY="100" x="603" y="804"/>
+  <SubTexture name="part-aogusite_bg_0046" width="200" height="200" cocos2d_pX="100" cocos2d_pY="100" x="402" y="0"/>
+  <SubTexture name="part-aogusite_bg_0044" width="200" height="200" cocos2d_pX="100" cocos2d_pY="100" x="804" y="402"/>
+  <SubTexture name="part-aogusite_bg_0042" width="200" height="200" cocos2d_pX="100" cocos2d_pY="100" x="804" y="0"/>
+  <SubTexture name="part-aogusite_bg_0040" width="200" height="200" cocos2d_pX="100" cocos2d_pY="100" x="0" y="804"/>
+  <SubTexture name="part-aogusite_bg_0038" width="200" height="200" cocos2d_pX="100" cocos2d_pY="100" x="201" y="201"/>
+  <SubTexture name="part-aogusite_bg_0036" width="200" height="200" cocos2d_pX="100" cocos2d_pY="100" x="201" y="603"/>
+  <SubTexture name="part-aogusite_bg_0034" width="200" height="200" cocos2d_pX="100" cocos2d_pY="100" x="603" y="201"/>
+  <SubTexture name="part-aogusite_bg_0032" width="200" height="200" cocos2d_pX="100" cocos2d_pY="100" x="804" y="804"/>
+  <SubTexture name="part-aogusite_bg_0030" width="200" height="200" cocos2d_pX="100" cocos2d_pY="100" x="0" y="402"/>
+  <SubTexture name="part-aogusite_bg_0028" width="200" height="200" cocos2d_pX="100" cocos2d_pY="100" x="603" y="603"/>
+  <SubTexture name="part-aogusite_bg_0026" width="200" height="200" cocos2d_pX="100" cocos2d_pY="100" x="402" y="402"/>
+  <SubTexture name="part-aogusite_bg_0024" width="200" height="200" cocos2d_pX="100" cocos2d_pY="100" x="0" y="0"/>
+  <SubTexture name="part-aogusite_bg_0022" width="200" height="200" cocos2d_pX="100" cocos2d_pY="100" x="201" y="0"/>
+  <SubTexture name="part-aogusite_bg_0020" width="200" height="200" cocos2d_pX="100" cocos2d_pY="100" x="603" y="0"/>
+  <SubTexture name="part-aogusite_bg_0018" width="200" height="200" cocos2d_pX="100" cocos2d_pY="100" x="0" y="201"/>
+  <SubTexture name="part-aogusite_bg_0016" width="200" height="200" cocos2d_pX="100" cocos2d_pY="100" x="402" y="201"/>
+  <SubTexture name="part-aogusite_bg_0014" width="200" height="200" cocos2d_pX="100" cocos2d_pY="100" x="804" y="201"/>
+  <SubTexture name="part-aogusite_bg_0012" width="200" height="200" cocos2d_pX="100" cocos2d_pY="100" x="201" y="402"/>
+  <SubTexture name="part-aogusite_bg_0010" width="200" height="200" cocos2d_pX="100" cocos2d_pY="100" x="603" y="402"/>
+  <SubTexture name="part-aogusite_bg_0008" width="200" height="200" cocos2d_pX="100" cocos2d_pY="100" x="0" y="603"/>
+  <SubTexture name="part-aogusite_bg_0006" width="200" height="200" cocos2d_pX="100" cocos2d_pY="100" x="402" y="603"/>
+  <SubTexture name="part-aogusite_bg_0004" width="200" height="200" cocos2d_pX="100" cocos2d_pY="100" x="804" y="603"/>
+  <SubTexture name="part-aogusite_bg_0002" width="200" height="200" cocos2d_pX="100" cocos2d_pY="100" x="201" y="804"/>
+  <SubTexture name="part-aogusite_bg_0000" width="200" height="200" cocos2d_pX="100" cocos2d_pY="100" x="402" y="804"/>
+ </TextureAtlas>
+</skeleton>

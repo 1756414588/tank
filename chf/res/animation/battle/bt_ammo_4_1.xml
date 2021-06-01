@@ -1,0 +1,22 @@
+<skeleton name="huojianche_daodan" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="bt_ammo_4_1">
+   <b name="2" x="0" y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0">
+    <d name="part-huojianche_daodan"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="bt_ammo_4_1">
+   <mov name="start" dr="5" to="6" drTW="5" lp="1" twE="NaN">
+    <b name="2" sc="1" dl="0">
+     <f x="0" y="0" cocos2d_x="0" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" twE="0" dr="4"/>
+     <f x="0" y="-0.8" cocos2d_x="0" cocos2d_y="-0.8" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="1"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="huojianche_daodan" width="32" height="64">
+  <SubTexture name="part-huojianche_daodan" width="11" height="58" cocos2d_pX="5.1" cocos2d_pY="28.65" x="0" y="0"/>
+ </TextureAtlas>
+</skeleton>

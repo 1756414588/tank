@@ -1,0 +1,22 @@
+<skeleton name="tanke_xiaopaodan" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="bt_1_ammo_1_1">
+   <b name="335" x="-0.25" y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0">
+    <d name="part-b_tanke_xiaopaodan"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="bt_1_ammo_1_1">
+   <mov name="start" dr="7" to="0" drTW="7" lp="1" twE="NaN">
+    <b name="335" sc="1" dl="0">
+     <f x="-0.25" y="0" cocos2d_x="-0.25" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" twE="0" dr="6"/>
+     <f x="-0.25" y="0" cocos2d_x="-0.25" cocos2d_y="0" kX="0" kY="0" cX="0.89" cY="0.89" pX="0" pY="0" z="0" dI="0" dr="1"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="tanke_xiaopaodan" width="32" height="64">
+  <SubTexture name="part-b_tanke_xiaopaodan" width="14" height="60" cocos2d_pX="5.5" cocos2d_pY="28" x="0" y="0"/>
+ </TextureAtlas>
+</skeleton>

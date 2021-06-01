@@ -1,0 +1,132 @@
+<skeleton name="cuilian_huode_guangxiao" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="cuilian_huode_guangxiao">
+   <b name="fdsag" x="1.6" y="-0.6" kX="0" kY="0" cX="0.64" cY="0.64" pX="0" pY="0" z="0">
+    <d name="part-xjn_shengji_tx1"/>
+   </b>
+   <b name="45356" x="2.4" y="2.5" kX="0" kY="0" cX="1.86" cY="1.86" pX="0" pY="0" z="0">
+    <d name="part-xjn_shengji_tx1"/>
+   </b>
+   <b name="dsf" x="2.35" y="2.5" kX="0" kY="0" cX="2.03" cY="2.03" pX="0" pY="0" z="1">
+    <d name="part-xjn_shengji_tx1"/>
+   </b>
+   <b name="jhkfji" x="2.3" y="2.5" kX="0" kY="0" cX="2.02" cY="2.02" pX="0" pY="0" z="2">
+    <d name="part-xjn_shengji_tx1"/>
+   </b>
+   <b name="bgfdj" x="0.25" y="-7.8" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1">
+    <d name="part-cuilian_guangxiao2"/>
+    <d name="part-cuilian_guangxiao3"/>
+    <d name="part-cuilian_guangxiao4"/>
+    <d name="part-cuilian_guangxiao5"/>
+    <d name="part-cuilian_guangxiao6"/>
+    <d name="part-cuilian_guangxiao7"/>
+    <d name="part-cuilian_guangxiao8"/>
+    <d name="part-cuilian_guangxiao9"/>
+    <d name="part-cuilian_guangxiao10"/>
+    <d name="part-cuilian_guangxiao11"/>
+    <d name="part-cuilian_guangxiao12"/>
+    <d name="part-cuilian_guangxiao13"/>
+    <d name="part-cuilian_guangxiao14"/>
+    <d name="part-cuilian_guangxiao15"/>
+    <d name="part-cuilian_guangxiao16"/>
+    <d name="part-cuilian_guangxiao17"/>
+    <d name="part-cuilian_guangxiao19"/>
+    <d name="part-cuilian_guangxiao21"/>
+    <d name="part-cuilian_guangxiao23"/>
+    <d name="part-cuilian_guangxiao24"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="cuilian_huode_guangxiao">
+   <mov name="start" dr="27" to="6" drTW="27" lp="0" twE="NaN">
+    <b name="fdsag" sc="1" dl="0">
+     <f x="1.6" y="-0.6" cocos2d_x="1.6" cocos2d_y="-0.6" kX="0" kY="0" cX="0.64" cY="0.64" pX="0" pY="0" z="0" dI="0" twE="0" dr="1"/>
+     <f x="1.6" y="-0.2" cocos2d_x="1.6" cocos2d_y="-0.2" kX="0" kY="0" cX="0.94" cY="0.94" pX="0" pY="0" z="0" dI="0" twE="0" dr="1"/>
+     <f x="1.6" y="0.1" cocos2d_x="1.6" cocos2d_y="0.1" kX="0" kY="0" cX="1.13" cY="1.13" pX="0" pY="0" z="0" dI="0" twE="0" dr="1"/>
+     <f x="1.55" y="0.25" cocos2d_x="1.55" cocos2d_y="0.25" kX="0" kY="0" cX="1.29" cY="1.29" pX="0" pY="0" z="0" dI="0" twE="0" dr="1"/>
+     <f x="1.55" y="0.6" cocos2d_x="1.55" cocos2d_y="0.6" kX="0" kY="0" cX="1.51" cY="1.51" pX="0" pY="0" z="0" dI="0" twE="0" dr="1"/>
+     <f x="1.55" y="1" cocos2d_x="1.55" cocos2d_y="1" kX="0" kY="0" cX="1.84" cY="1.84" pX="0" pY="0" z="0" dI="0" dr="1"/>
+     <f dr="21" dI="-1"/>
+    </b>
+    <b name="45356" sc="1" dl="0">
+     <f dr="10" dI="-1"/>
+     <f x="2.4" y="2.5" cocos2d_x="2.4" cocos2d_y="2.5" kX="0" kY="0" cX="1.86" cY="1.86" pX="0" pY="0" z="0" dI="0" twE="0" dr="9">
+      <colorTransform a="0" r="0" g="0" b="0" aM="54" rM="100" gM="100" bM="100"/>
+     </f>
+     <f x="2.35" y="2.55" cocos2d_x="2.35" cocos2d_y="2.55" kX="0" kY="0" cX="2.91" cY="2.91" pX="0" pY="0" z="0" dI="0" dr="1">
+      <colorTransform a="0" r="0" g="0" b="0" aM="9" rM="100" gM="100" bM="100"/>
+     </f>
+     <f dr="7" dI="-1"/>
+    </b>
+    <b name="dsf" sc="1" dl="0">
+     <f dr="8" dI="-1"/>
+     <f x="2.35" y="2.5" cocos2d_x="2.35" cocos2d_y="2.5" kX="0" kY="0" cX="2.03" cY="2.03" pX="0" pY="0" z="1" dI="0" twE="0" dr="7">
+      <colorTransform a="0" r="0" g="0" b="0" aM="44" rM="100" gM="100" bM="100"/>
+     </f>
+     <f x="2.35" y="2.55" cocos2d_x="2.35" cocos2d_y="2.55" kX="0" kY="0" cX="2.91" cY="2.91" pX="0" pY="0" z="1" dI="0" dr="1">
+      <colorTransform a="0" r="0" g="0" b="0" aM="9" rM="100" gM="100" bM="100"/>
+     </f>
+     <f dr="11" dI="-1"/>
+    </b>
+    <b name="jhkfji" sc="1" dl="0">
+     <f dr="6" dI="-1"/>
+     <f x="2.3" y="2.5" cocos2d_x="2.3" cocos2d_y="2.5" kX="0" kY="0" cX="2.02" cY="2.02" pX="0" pY="0" z="2" dI="0" twE="0" dr="6">
+      <colorTransform a="0" r="0" g="0" b="0" aM="84" rM="100" gM="100" bM="100"/>
+     </f>
+     <f x="2.35" y="2.55" cocos2d_x="2.35" cocos2d_y="2.55" kX="0" kY="0" cX="2.91" cY="2.91" pX="0" pY="0" z="2" dI="0" dr="1">
+      <colorTransform a="0" r="0" g="0" b="0" aM="9" rM="100" gM="100" bM="100"/>
+     </f>
+     <f dr="14" dI="-1"/>
+    </b>
+    <b name="bgfdj" sc="1" dl="0">
+     <f dr="6" dI="-1"/>
+     <f x="0.25" y="-7.8" cocos2d_x="0.25" cocos2d_y="-7.8" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1" dI="0" dr="1"/>
+     <f x="0.15" y="-8.05" cocos2d_x="0.15" cocos2d_y="-8.05" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1" dI="1" dr="1"/>
+     <f x="-0.75" y="-8.5" cocos2d_x="-0.75" cocos2d_y="-8.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="2" dr="1"/>
+     <f x="-0.2" y="-8.1" cocos2d_x="-0.2" cocos2d_y="-8.1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="3" dr="1"/>
+     <f x="-0.1" y="-5.85" cocos2d_x="-0.1" cocos2d_y="-5.85" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="3" dI="4" dr="1"/>
+     <f x="-0.2" y="-6.55" cocos2d_x="-0.2" cocos2d_y="-6.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="3" dI="5" dr="1"/>
+     <f x="-1.9" y="-5" cocos2d_x="-1.9" cocos2d_y="-5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="3" dI="6" dr="1"/>
+     <f x="0.3" y="-0.9" cocos2d_x="0.3" cocos2d_y="-0.9" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="7" dr="1"/>
+     <f x="-0.3" y="-0.15" cocos2d_x="-0.3" cocos2d_y="-0.15" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="8" dr="1"/>
+     <f x="-0.3" y="-0.15" cocos2d_x="-0.3" cocos2d_y="-0.15" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="9" dr="1"/>
+     <f x="-0.3" y="-0.2" cocos2d_x="-0.3" cocos2d_y="-0.2" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1" dI="10" dr="1"/>
+     <f x="-0.3" y="-0.15" cocos2d_x="-0.3" cocos2d_y="-0.15" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1" dI="11" dr="1"/>
+     <f x="-0.35" y="-0.2" cocos2d_x="-0.35" cocos2d_y="-0.2" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1" dI="12" dr="1"/>
+     <f x="0.3" y="-0.15" cocos2d_x="0.3" cocos2d_y="-0.15" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1" dI="13" dr="1"/>
+     <f x="-0.15" y="0" cocos2d_x="-0.15" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="14" dr="1"/>
+     <f x="-0.15" y="0" cocos2d_x="-0.15" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="15" dr="1"/>
+     <f x="-0.15" y="0" cocos2d_x="-0.15" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="16" dr="1"/>
+     <f x="-0.15" y="0" cocos2d_x="-0.15" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="17" dr="1"/>
+     <f x="-0.15" y="0" cocos2d_x="-0.15" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="18" dr="1"/>
+     <f x="-0.15" y="0" cocos2d_x="-0.15" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="19" dr="1"/>
+     <f dr="1" dI="-1"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="cuilian_huode_guangxiao" width="2048" height="1024">
+  <SubTexture name="part-cuilian_guangxiao24" width="300" height="300" cocos2d_pX="150" cocos2d_pY="150" x="302" y="302"/>
+  <SubTexture name="part-cuilian_guangxiao23" width="300" height="300" cocos2d_pX="150" cocos2d_pY="150" x="604" y="0"/>
+  <SubTexture name="part-cuilian_guangxiao21" width="300" height="300" cocos2d_pX="150" cocos2d_pY="150" x="906" y="302"/>
+  <SubTexture name="part-cuilian_guangxiao19" width="300" height="300" cocos2d_pX="150" cocos2d_pY="150" x="1208" y="0"/>
+  <SubTexture name="part-cuilian_guangxiao17" width="300" height="300" cocos2d_pX="150" cocos2d_pY="150" x="1208" y="302"/>
+  <SubTexture name="part-cuilian_guangxiao16" width="300" height="300" cocos2d_pX="150" cocos2d_pY="150" x="0" y="302"/>
+  <SubTexture name="part-cuilian_guangxiao15" width="300" height="300" cocos2d_pX="150" cocos2d_pY="150" x="1510" y="302"/>
+  <SubTexture name="part-cuilian_guangxiao14" width="300" height="300" cocos2d_pX="150" cocos2d_pY="150" x="604" y="302"/>
+  <SubTexture name="part-cuilian_guangxiao13" width="300" height="300" cocos2d_pX="150" cocos2d_pY="150" x="0" y="604"/>
+  <SubTexture name="part-cuilian_guangxiao12" width="300" height="300" cocos2d_pX="150" cocos2d_pY="150" x="1510" y="0"/>
+  <SubTexture name="part-cuilian_guangxiao11" width="300" height="300" cocos2d_pX="150" cocos2d_pY="150" x="0" y="0"/>
+  <SubTexture name="part-cuilian_guangxiao10" width="300" height="300" cocos2d_pX="150" cocos2d_pY="150" x="302" y="0"/>
+  <SubTexture name="part-cuilian_guangxiao9" width="300" height="300" cocos2d_pX="150" cocos2d_pY="150" x="906" y="0"/>
+  <SubTexture name="part-cuilian_guangxiao8" width="185" height="189" cocos2d_pX="92.5" cocos2d_pY="94.5" x="1812" y="0"/>
+  <SubTexture name="part-cuilian_guangxiao7" width="171" height="175" cocos2d_pX="85.5" cocos2d_pY="87.5" x="1812" y="191"/>
+  <SubTexture name="part-cuilian_guangxiao6" width="155" height="163" cocos2d_pX="77.5" cocos2d_pY="81.5" x="1812" y="368"/>
+  <SubTexture name="part-cuilian_guangxiao5" width="136" height="149" cocos2d_pX="68" cocos2d_pY="74.5" x="1812" y="533"/>
+  <SubTexture name="part-cuilian_guangxiao4" width="116" height="132" cocos2d_pX="58" cocos2d_pY="66" x="302" y="604"/>
+  <SubTexture name="part-cuilian_guangxiao3" width="99" height="114" cocos2d_pX="49.5" cocos2d_pY="57" x="420" y="604"/>
+  <SubTexture name="part-cuilian_guangxiao2" width="83" height="93" cocos2d_pX="41.5" cocos2d_pY="46.5" x="521" y="604"/>
+  <SubTexture name="part-xjn_shengji_tx1" width="95" height="94" cocos2d_pX="47.3" cocos2d_pY="46.9" x="1950" y="533"/>
+ </TextureAtlas>
+</skeleton>

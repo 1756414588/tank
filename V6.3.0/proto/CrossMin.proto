@@ -1,0 +1,263 @@
+import "Base.proto";
+import "Common.proto";
+option java_package = "com.game.pb";
+option java_outer_classname = "CrossMinPb";
+//跨服通知游戏服 跨服开启了
+message CrossMinNotifyRq {
+    required int32 type = 1; //1 跨服启动 2跨服关闭
+    required string connectType = 2; //连接类型 socket rpc
+    required string crossIp = 3;
+    required int32 port = 4;
+    required int32 rpcPort = 5;
+    required int32 serverId = 6;
+    extend Base {
+        optional CrossMinNotifyRq ext = 9000;
+    }
+}
+//游戏和跨服建立连接后通知跨服
+message CrossMinGameServerRegRq {
+    required string connectType = 1; //连接类型 socket rpc
+    required int32 serverId = 2; //游戏服serverid
+    required string serverName = 3; //游戏服名称
+    extend Base {
+        optional CrossMinGameServerRegRq ext = 9001;
+    }
+}
+message CrossMinGameServerRegRs {
+    required string crossServerName = 1; //跨服名称
+    required int32 crossServerId = 2; //跨服id
+    required string connectType = 3; //连接类型 socket rpc
+    extend Base {
+        optional CrossMinGameServerRegRs ext = 9002;
+    }
+}
+//心跳
+message CrossMinHeartRq {
+    required int32 serverId = 1; //游戏服serverid
+    required string serverName = 2; //游戏服名称
+    extend Base {
+        optional CrossMinHeartRq ext = 9003;
+    }
+}
+message CrossMinHeartRs {
+    required string crossServerName = 1; //跨服名称
+    required int32 crossServerId = 2; //跨服id
+    extend Base {
+        optional CrossMinHeartRs ext = 9004;
+    }
+}
+
+//跨服通知游戏服玩家队伍解散
+message CrossNotifyDisMissTeamRq{
+	required int64 roleId =1;
+	extend Base {
+        optional CrossNotifyDisMissTeamRq ext = 9005;
+    }
+
+}
+
+//同步队伍信息
+message CrossSynTeamInfoRq {
+    optional int32 code = 1; //错误码
+    optional int64 roleId = 2; //角色ID
+	required int32 teamId = 3;	//队伍ID
+	required int64 captainId = 4;	//队长ID
+	required int32 teamType = 5; //队伍类型
+	repeated int64 order = 6;	//队伍顺序
+	repeated TeamRoleInfo teamInfo = 7;	 //队伍角色信息
+	required int32 actionType = 8; //操作类型  2/寻找/3离开/4踢出/5加入/7设置阵型
+	extend Base {
+        optional CrossSynTeamInfoRq ext = 9006;
+    }
+}
+
+//通知队员被踢出
+message CrossSynNotifyKickOutRq {
+	required int64 roleId = 1;	//被踢玩家id
+	extend Base{
+        optional CrossSynNotifyKickOutRq ext = 9007;
+    }
+}
+
+
+//通知队员状态改变
+message CrossSynChangeStatusRq {
+	required int64 roleId = 1;	// 状态改变者ID
+	required int32 status = 2;  // 状态值
+	required int64 role=3; 		//发给谁
+	extend Base{
+        optional CrossSynChangeStatusRq ext = 9008;
+    }
+}
+
+//同步聊天信息至其他队员
+message CrossSynTeamChatRq {
+	required int64 roleId = 1;  //讲话者ID
+	required string message = 2;  //聊天内容
+	required int64 time = 3;   //聊天发起时间
+	required string name = 4;  //聊天内容
+	required int64 role =5;
+	optional string serverName=6;//发言人 服务器名称
+	extend Base{
+        optional CrossSynTeamChatRq ext = 9009;
+    }
+}
+
+//同步消息到时间频道
+message CrossSynTeamInviteRq{
+	required string nickName=1;
+	required int32 sysId=2;
+	required int32 teamId=3;
+	required string param=4;
+	extend Base{
+		optional CrossSynTeamInviteRq ext = 9010;
+	}
+}
+
+//通知关卡已关闭
+message CrossSynStageCloseToTeamRq {
+	required int64 roldId=1;
+	extend Base{
+        optional CrossSynStageCloseToTeamRq ext = 9011;
+    }
+}
+
+//跨服通知游戏服玩家任务更新
+message CrossSynTaskRq{
+	required int64 roleId=1;
+	required int32 taskType=2;
+	required int64 comNum=3;//完成数量
+	extend Base{
+        optional CrossSynTaskRq ext = 9012;
+    }
+}
+
+
+//挑战完成之后给队伍里面所有玩家推送这个消息
+message CrossSyncTeamFightBossRq {
+	required int64 roleId=1;
+	required int32 stageId=2;
+	required bool isSuccess=3;
+	repeated Record record =4;//战报
+	repeated TwoLong recordLord  = 5;   //战斗记录中双方指挥官ID
+	required int32 tankCount = 6;//挑战者总坦克数量
+	extend Base{
+        optional CrossSyncTeamFightBossRq ext = 9013;
+    }
+}
+//跨服世界聊天
+message CrossWorldChatRq{
+	required int64 roleId = 1;
+    required string content =2 ;
+    optional int32 time=3;
+    optional string nickName=4;
+    optional int32 port=5;
+    optional int32 bubble=6;
+    optional bool isGm=7;
+    optional int32 lv=8;
+    optional int32 staffing=9;
+    optional int32 military=10;
+	optional int32 vip=11;
+	optional string serverName=12;
+    optional int64 fight=13;
+    optional string partyName=14;	
+	extend Base{
+        optional CrossWorldChatRq ext = 9014;
+    }
+}
+
+//向跨服发起战斗
+message CrossFightRq{
+	required int64 roleId=1;
+	extend Base{
+        optional CrossFightRq ext = 9015;
+    }
+}
+
+//服务器返回
+message  CrossFightRs{
+	required int64 roleId=1;
+	extend Base{
+	  optional CrossFightRs ext= 9016;
+	}
+}
+
+message CrossMineAttack{
+	required int64 roleId=1;
+	optional Army army=2;
+	optional int32 now =3;
+	optional int64 load=4;
+	extend Base{
+	  optional CrossMineAttack ext= 9017;
+	}
+}
+
+message  CrossNpcMine{
+	required int64 roleId=1;
+	repeated TwoInt attackTank=2;	//攻击方坦克
+	repeated TwoInt deferTank =3;	//防守方坦克
+	optional TwoLong mplts=4;		//0攻击方战功 1.防守方战功
+	optional int32 result=5;		//输赢
+	optional bool atterReborn=6;		
+	optional int32 type =7;			//1.发给进攻者 2.发给被攻击者
+	optional int32 attAkey=8;		//进攻方部队id;
+	optional int32 pos=9;			//攻击的矿pos
+	optional RptAtkMine rpt =10; 
+	repeated int32 atterFormNum = 11;	//进攻方 剩余tank数 form里的
+	optional int32 now=12;
+	extend Base{
+	  optional CrossNpcMine ext= 9018;
+	}
+}
+
+message  CrossMine{
+	required int64 roleId=1;
+	repeated TwoInt attackTank=2;	//攻击方坦克
+	repeated TwoInt deferTank =3;	//防守方坦克
+	optional int32 honor=4;			//荣耀点
+	optional TwoLong mplts=5;		//0攻击方战功 1.防守方战功
+	optional int32 result=6;		//输赢
+	optional bool atterReborn=7;		
+	optional int64 get=8;			//被攻击者已采集资源量
+	optional int32 type =9;			//1.发给进攻者 2.发给被攻击者
+	optional int32 attAkey=10;		//进攻方部队id;
+	optional int32 defAkey=11;		//防守方部队id;
+	optional int32 pos=12 ;			//攻击的矿pos
+	optional bool defReborn=13;		 
+	optional RptAtkMine rpt =14; 
+	repeated int32 atterFormNum = 15;	//进攻方 剩余tank数 form里的
+	repeated int32 deferFormNum = 16;	//防守方 剩余tank数 form里的
+	optional int32 suExp =17;			//胜利方加经验
+	optional int32 faExp =18 ;			//防守方减去经验
+	optional int32 now=19;
+	optional Form attForm=20;			//攻击者的 部队
+	optional string attackName=21;
+	optional int32 attackLevel=22;
+	extend Base{
+	  optional CrossMine ext= 9019;
+	}
+}
+
+//跨服组队聊天(优化rpc聊天延时问题)
+message CrossTeamChatRq{
+	required int64 roleId=1;
+	required string message = 2; //聊天内容
+	required int64 time=3;
+	extend Base{
+		optional  CrossTeamChatRq ext = 9020;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="MailDao">
+	<resultMap id="newMail" type="NewMail">
+		<result column="param" property="param" typeHandler="com.game.dao.handle.ListStringTypeHandler" />
+		<result column="toName" property="toName" typeHandler="com.game.dao.handle.ListStringTypeHandler" />
+	</resultMap>
+
+	<select id="selectByLordId" parameterType="Long" resultMap="newMail">
+		select
+		id,keyId,lordId,`type`,title,sendName,toName,`state`,contont,`time`,award,report,moldId,param,lv,vipLv,collections
+		from p_mail where lordId=#{lordId}
+	</select>
+	
+	<select id="loadNewMail" parameterType="Map" resultMap="newMail">
+		select
+		id,keyId,lordId,`type`,title,sendName,toName,`state`,contont,`time`,award,report,moldId,param,lv,vipLv,collections
+		from p_mail where id>#{curIndex}
+		order by id limit 0,#{count}
+	</select>
+
+	<insert id="insertMail" parameterType="NewMail">
+		insert into p_mail(keyId,lordId,`type`,title,sendName,toName,`state`,contont,`time`,award,report,moldId,param,lv,vipLv,collections)values
+		(#{keyId},#{lordId},#{type},#{title},#{sendName},#{toName,typeHandler=com.game.dao.handle.ListStringTypeHandler},
+		#{state},#{contont},#{time},#{award},
+		#{report},#{moldId},#{param,typeHandler=com.game.dao.handle.ListStringTypeHandler},#{lv},#{vipLv},#{collections})
+	</insert>
+	
+	<update id="updateState" parameterType="NewMail">
+		update p_mail set `state`=#{state},`collections`=#{collections} where keyId=#{keyId} and lordId=#{lordId}
+	</update>
+
+	<delete id="delMail" parameterType="NewMail">
+		DELETE FROM p_mail where keyId=#{keyId} and lordId=#{lordId}
+	</delete>
+
+</mapper>

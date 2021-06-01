@@ -1,0 +1,84 @@
+<skeleton name="dengjitisheng_xiaoguo" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="ui_award_level_up">
+   <b name="13" x="-4.2" y="-121.95" kX="0" kY="0" cX="1.92" cY="1.92" pX="0" pY="0" z="0">
+    <d name="part-djts"/>
+   </b>
+   <b name="1" x="18" y="-35.55" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="1">
+    <d name="part-dengjitisheng_yanhua1"/>
+    <d name="part-dengjitisheng_yanhua2"/>
+    <d name="part-dengjitisheng_yanhua3"/>
+    <d name="part-dengjitisheng_yanhua4"/>
+    <d name="part-dengjitisheng_yanhua5"/>
+    <d name="part-dengjitisheng_yanhua6"/>
+    <d name="part-dengjitisheng_yanhua7"/>
+    <d name="part-dengjitisheng_yanhua8"/>
+    <d name="part-dengjitisheng_yanhua9"/>
+    <d name="part-dengjitisheng_yanhua10"/>
+    <d name="part-dengjitisheng_yanhua11"/>
+    <d name="part-dengjitisheng_yanhua12"/>
+    <d name="part-dengjitisheng_yanhua13"/>
+    <d name="part-dengjitisheng_yanhua14"/>
+    <d name="part-dengjitisheng_yanhua15"/>
+    <d name="part-dengjitisheng_yanhua16"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="ui_award_level_up">
+   <mov name="start" dr="72" to="6" drTW="72" lp="0" twE="NaN">
+    <b name="13" sc="1" dl="0">
+     <f x="-4.2" y="-121.95" cocos2d_x="-4.2" cocos2d_y="-121.95" kX="0" kY="0" cX="1.92" cY="1.92" pX="0" pY="0" z="0" dI="0" twE="0" dr="17"/>
+     <f x="-2" y="-4" cocos2d_x="-2" cocos2d_y="-4" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="2"/>
+     <f x="-3" y="0" cocos2d_x="-3" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="2"/>
+     <f x="-1" y="-3" cocos2d_x="-1" cocos2d_y="-3" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="2"/>
+     <f x="-3" y="-5" cocos2d_x="-3" cocos2d_y="-5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="2"/>
+     <f x="-4" y="-1" cocos2d_x="-4" cocos2d_y="-1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="2"/>
+     <f x="-2" y="1" cocos2d_x="-2" cocos2d_y="1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="2"/>
+     <f x="-3" y="-2" cocos2d_x="-3" cocos2d_y="-2" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="2"/>
+     <f x="-1" y="-2" cocos2d_x="-1" cocos2d_y="-2" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="2"/>
+     <f x="-2" y="-4" cocos2d_x="-2" cocos2d_y="-4" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="39"/>
+    </b>
+    <b name="1" sc="1" dl="0">
+     <f dr="17" dI="-1"/>
+     <f x="18" y="-35.55" cocos2d_x="18" cocos2d_y="-35.55" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="1" dI="0" dr="3"/>
+     <f x="15.45" y="-27.45" cocos2d_x="15.45" cocos2d_y="-27.45" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="1" dI="1" dr="3"/>
+     <f x="5.2" y="-27.35" cocos2d_x="5.2" cocos2d_y="-27.35" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="1" dI="2" dr="3"/>
+     <f x="2.4" y="-29.25" cocos2d_x="2.4" cocos2d_y="-29.25" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="1" dI="3" dr="3"/>
+     <f x="3.4" y="-28.75" cocos2d_x="3.4" cocos2d_y="-28.75" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="1" dI="4" dr="3"/>
+     <f x="13.35" y="-29.8" cocos2d_x="13.35" cocos2d_y="-29.8" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="1" dI="5" dr="3"/>
+     <f x="12.9" y="-30.1" cocos2d_x="12.9" cocos2d_y="-30.1" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="1" dI="6" dr="3"/>
+     <f x="10.8" y="-28.2" cocos2d_x="10.8" cocos2d_y="-28.2" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="1" dI="7" dr="3"/>
+     <f x="13" y="-30.6" cocos2d_x="13" cocos2d_y="-30.6" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="1" dI="8" dr="3"/>
+     <f x="13" y="-30.6" cocos2d_x="13" cocos2d_y="-30.6" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="1" dI="9" dr="3"/>
+     <f x="13" y="-30.6" cocos2d_x="13" cocos2d_y="-30.6" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="1" dI="10" dr="3"/>
+     <f x="13" y="-30.6" cocos2d_x="13" cocos2d_y="-30.6" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="1" dI="11" dr="3"/>
+     <f x="13" y="-30.6" cocos2d_x="13" cocos2d_y="-30.6" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="1" dI="12" dr="3"/>
+     <f x="13" y="-30.6" cocos2d_x="13" cocos2d_y="-30.6" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="1" dI="13" dr="3"/>
+     <f x="13" y="-30.6" cocos2d_x="13" cocos2d_y="-30.6" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="1" dI="14" dr="3"/>
+     <f x="13" y="-30.6" cocos2d_x="13" cocos2d_y="-30.6" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="1" dI="15" dr="3"/>
+     <f dr="7" dI="-1"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="dengjitisheng_xiaoguo" width="1024" height="1024">
+  <SubTexture name="part-dengjitisheng_yanhua16" width="227" height="227" cocos2d_pX="113.5" cocos2d_pY="113.5" x="0" y="279"/>
+  <SubTexture name="part-dengjitisheng_yanhua15" width="227" height="227" cocos2d_pX="113.5" cocos2d_pY="113.5" x="229" y="687"/>
+  <SubTexture name="part-dengjitisheng_yanhua14" width="227" height="227" cocos2d_pX="113.5" cocos2d_pY="113.5" x="229" y="458"/>
+  <SubTexture name="part-dengjitisheng_yanhua13" width="227" height="227" cocos2d_pX="113.5" cocos2d_pY="113.5" x="627" y="229"/>
+  <SubTexture name="part-dengjitisheng_yanhua12" width="227" height="227" cocos2d_pX="113.5" cocos2d_pY="113.5" x="687" y="458"/>
+  <SubTexture name="part-dengjitisheng_yanhua11" width="227" height="227" cocos2d_pX="113.5" cocos2d_pY="113.5" x="0" y="508"/>
+  <SubTexture name="part-dengjitisheng_yanhua10" width="227" height="227" cocos2d_pX="113.5" cocos2d_pY="113.5" x="458" y="458"/>
+  <SubTexture name="part-dengjitisheng_yanhua9" width="227" height="227" cocos2d_pX="113.5" cocos2d_pY="113.5" x="458" y="687"/>
+  <SubTexture name="part-dengjitisheng_yanhua8" width="227" height="227" cocos2d_pX="113.5" cocos2d_pY="113.5" x="398" y="0"/>
+  <SubTexture name="part-dengjitisheng_yanhua7" width="227" height="227" cocos2d_pX="113.5" cocos2d_pY="113.5" x="627" y="0"/>
+  <SubTexture name="part-dengjitisheng_yanhua6" width="227" height="227" cocos2d_pX="113.5" cocos2d_pY="113.5" x="398" y="229"/>
+  <SubTexture name="part-dengjitisheng_yanhua5" width="192" height="183" cocos2d_pX="95.85" cocos2d_pY="91.1" x="687" y="687"/>
+  <SubTexture name="part-dengjitisheng_yanhua4" width="178" height="173" cocos2d_pX="88.75" cocos2d_pY="86.25" x="0" y="737"/>
+  <SubTexture name="part-dengjitisheng_yanhua3" width="164" height="157" cocos2d_pX="81.85" cocos2d_pY="78.35" x="856" y="0"/>
+  <SubTexture name="part-dengjitisheng_yanhua2" width="150" height="139" cocos2d_pX="74.75" cocos2d_pY="69.25" x="856" y="159"/>
+  <SubTexture name="part-dengjitisheng_yanhua1" width="124" height="108" cocos2d_pX="62" cocos2d_pY="53.85" x="229" y="279"/>
+  <SubTexture name="part-djts" width="396" height="277" cocos2d_pX="198" cocos2d_pY="138.5" x="0" y="0"/>
+ </TextureAtlas>
+</skeleton>

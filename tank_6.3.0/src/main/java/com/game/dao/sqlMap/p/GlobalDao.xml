@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="GlobalDao">
+	<select id="selectGlobal" resultType="DbGlobal">
+		select 
+		globalId,maxKey,mails,warTime,warRecord,warState,winRank,getWinRank,bossTime,bossLv,bossWhich,bossHp,bossState,
+		hurtRank,getHurtRank,bossKiller,shop,shopTime,seniorWeek,scoreRank,scorePartyRank,seniorState,warRankRecords,
+		canFightFortressPartyMap,fortressTime,fortressState,fortressPartyId,fortressRecords,rptRtkFortresss,myFortressFightDatas,
+		partyStatisticsMap,fortressJobAppointList,allServerFortressFightDataRankLordMap,drillStatus,drillStatus,lastOpenDrillDate,
+		drillRank,drillRecords,drillFightRpts,drillResult,drillImprove,drillShop,rebelStatus,rebelLastOpenTime,rebelTotalData,
+		worldMineInfo,gameStopTime,airship,luckyInfo,teamTask,honourTotalData,WorldStaffing,notGetAward,actKingInfo
+		from p_global
+	</select>
+
+	<insert id="insertGlobal" parameterType="DbGlobal" useGeneratedKeys="true" keyProperty="globalId">
+		insert into
+		p_global(maxKey,mails,warRecord,winRank,getWinRank,hurtRank,getHurtRank,scoreRank,scorePartyRank,fortressTime,
+		drillRank,drillRecords,drillFightRpts,drillResult,drillImprove,drillShop,rebelStatus,rebelLastOpenTime,rebelTotalData,
+		worldMineInfo,gameStopTime,airship,luckyInfo,teamTask,honourTotalData,WorldStaffing,notGetAward,actKingInfo)
+		values(#{maxKey},#{mails},#{warRecord},#{winRank},#{getWinRank},#{hurtRank},#{getHurtRank},#{scoreRank},#{scorePartyRank},#{fortressTime},
+		#{drillRank},#{drillRecords},#{drillFightRpts},#{drillResult},#{drillImprove},#{drillShop},#{rebelStatus},#{rebelLastOpenTime},#{rebelTotalData},
+		#{worldMineInfo},#{gameStopTime},#{airship},#{luckyInfo},#{teamTask},#{honourTotalData},#{WorldStaffing},#{notGetAward},#{actKingInfo})
+	</insert>
+
+	<update id="updateGlobal" parameterType="DbGlobal">
+		update p_global set
+		maxKey=#{maxKey},mails=#{mails},warTime=#{warTime},warRecord=#{warRecord},warState=#{warState},winRank=#{winRank},getWinRank=#{getWinRank},		
+		bossTime=#{bossTime},bossLv=#{bossLv},bossWhich=#{bossWhich},bossHp=#{bossHp},hurtRank=#{hurtRank},getHurtRank=#{getHurtRank},bossState=#{bossState},
+		bossKiller=#{bossKiller},shop=#{shop},shopTime=#{shopTime},seniorWeek=#{seniorWeek},scoreRank=#{scoreRank},scorePartyRank=#{scorePartyRank},seniorState=#{seniorState},
+		warRankRecords=#{warRankRecords},canFightFortressPartyMap=#{canFightFortressPartyMap},fortressTime=#{fortressTime},fortressState=#{fortressState},fortressPartyId=#{fortressPartyId},
+		fortressRecords=#{fortressRecords},rptRtkFortresss=#{rptRtkFortresss},myFortressFightDatas=#{myFortressFightDatas},partyStatisticsMap=#{partyStatisticsMap},
+		fortressJobAppointList=#{fortressJobAppointList},allServerFortressFightDataRankLordMap=#{allServerFortressFightDataRankLordMap},drillStatus=#{drillStatus},
+		lastOpenDrillDate=#{lastOpenDrillDate},drillRank=#{drillRank},drillRecords=#{drillRecords},drillFightRpts=#{drillFightRpts},drillResult=#{drillResult},
+		drillImprove=#{drillImprove},drillShop=#{drillShop},rebelStatus=#{rebelStatus},rebelLastOpenTime=#{rebelLastOpenTime},rebelTotalData=#{rebelTotalData},worldMineInfo=#{worldMineInfo},
+		worldMineInfo=#{worldMineInfo},gameStopTime=#{gameStopTime},airship=#{airship},luckyInfo=#{luckyInfo},teamTask=#{teamTask},honourTotalData=#{honourTotalData},
+		WorldStaffing=#{WorldStaffing},notGetAward=#{notGetAward},actKingInfo=#{actKingInfo}
+		where
+		globalId=#{globalId}
+	</update>
+</mapper>

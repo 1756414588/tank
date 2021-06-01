@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="ExtremeDao">
+	<select id="selectExtreme" resultType="DbExtreme">
+		select extremeId,first1,last3 from p_extreme
+	</select>
+
+	<update id="updateExtreme" parameterType="DbExtreme">
+		update p_extreme set first1=#{first1},last3=#{last3} where extremeId=#{extremeId}
+	</update>
+
+	<insert id="insertExtreme" parameterType="DbExtreme">
+		insert into p_extreme(extremeId,first1,last3) values(#{extremeId},#{first1},#{last3})
+	</insert>
+
+</mapper>

@@ -1,0 +1,64 @@
+<skeleton name="cmpz_tx_mc" frameRate="24" version="2.0">
+ <armatures>
+  <armature name="cmpz_tx_mc">
+   <b name="2" x="0" y="0" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0">
+    <d name="part-cmpz_tx01"/>
+    <d name="part-cmpz_tx02"/>
+    <d name="part-cmpz_tx03"/>
+    <d name="part-cmpz_tx04"/>
+    <d name="part-cmpz_tx05"/>
+    <d name="part-cmpz_tx06"/>
+    <d name="part-cmpz_tx07"/>
+    <d name="part-cmpz_tx08"/>
+    <d name="part-cmpz_tx09"/>
+    <d name="part-cmpz_tx10"/>
+    <d name="part-cmpz_tx11"/>
+    <d name="part-cmpz_tx12"/>
+    <d name="part-cmpz_tx13"/>
+    <d name="part-cmpz_tx14"/>
+    <d name="part-cmpz_tx15"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="cmpz_tx_mc">
+   <mov name="start" dr="30" to="0" drTW="30" lp="0" twE="NaN">
+    <b name="2" sc="1" dl="0">
+     <f x="0" y="0" cocos2d_x="0" cocos2d_y="0" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="0" dr="2"/>
+     <f x="0" y="0" cocos2d_x="0" cocos2d_y="0" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="1" dr="2"/>
+     <f x="0" y="0" cocos2d_x="0" cocos2d_y="0" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="2" dr="2"/>
+     <f x="0" y="0" cocos2d_x="0" cocos2d_y="0" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="3" dr="2"/>
+     <f x="0" y="0" cocos2d_x="0" cocos2d_y="0" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="4" dr="2"/>
+     <f x="0" y="0" cocos2d_x="0" cocos2d_y="0" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="5" dr="2"/>
+     <f x="0" y="0" cocos2d_x="0" cocos2d_y="0" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="6" dr="2"/>
+     <f x="0" y="0" cocos2d_x="0" cocos2d_y="0" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="7" dr="2"/>
+     <f x="0" y="0" cocos2d_x="0" cocos2d_y="0" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="8" dr="2"/>
+     <f x="0" y="0" cocos2d_x="0" cocos2d_y="0" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="9" dr="2"/>
+     <f x="0" y="0" cocos2d_x="0" cocos2d_y="0" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="10" dr="2"/>
+     <f x="0" y="0" cocos2d_x="0" cocos2d_y="0" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="11" dr="2"/>
+     <f x="0" y="0" cocos2d_x="0" cocos2d_y="0" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="12" dr="2"/>
+     <f x="0" y="0" cocos2d_x="0" cocos2d_y="0" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="13" dr="2"/>
+     <f x="0" y="0" cocos2d_x="0" cocos2d_y="0" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="14" dr="1"/>
+     <f dr="1" dI="-1"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="cmpz_tx_mc" width="1024" height="1024">
+  <SubTexture name="part-cmpz_tx15" width="231" height="231" cocos2d_pX="115.2" cocos2d_pY="115.2" x="0" y="466"/>
+  <SubTexture name="part-cmpz_tx14" width="231" height="231" cocos2d_pX="115.2" cocos2d_pY="115.2" x="466" y="0"/>
+  <SubTexture name="part-cmpz_tx13" width="231" height="231" cocos2d_pX="115.2" cocos2d_pY="115.2" x="233" y="699"/>
+  <SubTexture name="part-cmpz_tx12" width="231" height="231" cocos2d_pX="115.2" cocos2d_pY="115.2" x="0" y="233"/>
+  <SubTexture name="part-cmpz_tx11" width="231" height="231" cocos2d_pX="115.2" cocos2d_pY="115.2" x="466" y="466"/>
+  <SubTexture name="part-cmpz_tx10" width="231" height="231" cocos2d_pX="115.2" cocos2d_pY="115.2" x="466" y="233"/>
+  <SubTexture name="part-cmpz_tx09" width="231" height="231" cocos2d_pX="115.2" cocos2d_pY="115.2" x="466" y="699"/>
+  <SubTexture name="part-cmpz_tx08" width="231" height="231" cocos2d_pX="115.2" cocos2d_pY="115.2" x="0" y="0"/>
+  <SubTexture name="part-cmpz_tx07" width="231" height="231" cocos2d_pX="115.2" cocos2d_pY="115.2" x="233" y="0"/>
+  <SubTexture name="part-cmpz_tx06" width="231" height="231" cocos2d_pX="115.2" cocos2d_pY="115.2" x="699" y="0"/>
+  <SubTexture name="part-cmpz_tx05" width="231" height="231" cocos2d_pX="115.2" cocos2d_pY="115.2" x="233" y="233"/>
+  <SubTexture name="part-cmpz_tx04" width="231" height="231" cocos2d_pX="115.2" cocos2d_pY="115.2" x="699" y="233"/>
+  <SubTexture name="part-cmpz_tx03" width="231" height="231" cocos2d_pX="115.2" cocos2d_pY="115.2" x="233" y="466"/>
+  <SubTexture name="part-cmpz_tx02" width="231" height="231" cocos2d_pX="115.2" cocos2d_pY="115.2" x="699" y="466"/>
+  <SubTexture name="part-cmpz_tx01" width="231" height="231" cocos2d_pX="115.2" cocos2d_pY="115.2" x="0" y="699"/>
+ </TextureAtlas>
+</skeleton>

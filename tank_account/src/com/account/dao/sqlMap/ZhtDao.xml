@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="ZhtDao">
+
+    <select id="selectZhtAdvertise" parameterType="Map"
+            resultType="com.account.domain.ZhtAdvertise">
+		select * from `u_zht_advertise` where platNo=#{platNo} and muid=#{muid};
+	</select>
+
+    <insert id="insertZhtAdvertise" useGeneratedKeys="true" keyProperty="keyId" parameterType="com.account.domain.ZhtAdvertise">
+		insert into
+		u_zht_advertise(platNo,muid,clickTime,clickId,appid,appType,advertiserId,createTime,checkTime)
+		values(#{platNo},#{muid},#{clickTime},#{clickId},#{appid},#{appType},#{advertiserId},#{createTime},#{checkTime})
+	</insert>
+
+    <update id="updateZhtAdvertise" parameterType="com.account.domain.ZhtAdvertise">
+		update
+		u_zht_advertise
+		set
+		checkTime=#{checkTime}
+		where
+		keyId=#{keyId}
+	</update>
+
+    <select id="selectZhtIdfa" parameterType="Map"
+            resultType="com.account.domain.ZhtIdfa">
+		select * from `u_zht_idfa` where platNo=#{platNo} and muid=#{muid};
+	</select>
+
+    <insert id="insertZhtIdfa" parameterType="com.account.domain.ZhtAdvertise">
+		insert into
+		u_zht_idfa(platNo,deviceNo,muid,createTime) values(#{platNo},#{deviceNo},#{muid},#{createTime})
+	</insert>
+
+
+</mapper>

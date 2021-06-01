@@ -1,0 +1,21 @@
+<skeleton name="sdbz_baoxiang_xia" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="sdbz_baoxiang_xia">
+   <b name="2" x="0" y="0" kX="0" kY="0" cX="1" cY="1" pX="119" pY="130" z="0">
+    <d name="sdbz_baoxiang_xia_mc"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="sdbz_baoxiang_xia">
+   <mov name="start" dr="8" to="0" drTW="8" lp="1" twE="NaN">
+    <b name="2" sc="1" dl="0">
+     <f x="0" y="0" cocos2d_x="-119" cocos2d_y="-129.5" kX="0" kY="0" cX="1" cY="1" pX="119" pY="130" z="0" dI="0" dr="8"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="sdbz_baoxiang_xia" width="256" height="512">
+  <SubTexture name="sdbz_baoxiang_xia_mc" width="238" height="259" cocos2d_pX="0" cocos2d_pY="0" x="0" y="0"/>
+ </TextureAtlas>
+</skeleton>

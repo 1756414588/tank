@@ -1,0 +1,55 @@
+<skeleton name="zhengzhan_tongguan" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="ui_section_pass">
+   <b name="1" x="52.5" y="-52.35" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0">
+    <d name="part-zhengzhan_tongguan1"/>
+    <d name="part-zhengzhan_tongguan2"/>
+    <d name="part-zhengzhan_tongguan3"/>
+    <d name="part-zhengzhan_tongguan4"/>
+    <d name="part-zhengzhan_tongguan5"/>
+    <d name="part-zhengzhan_tongguan6"/>
+    <d name="part-zhengzhan_tongguan7"/>
+   </b>
+   <b name="2" x="48.7" y="-112.3" kX="0" kY="0" cX="2.37" cY="2.37" pX="0" pY="0" z="0">
+    <d name="part-zhengzhan_tongguanziti"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="ui_section_pass">
+   <mov name="start" dr="50" to="6" drTW="50" lp="0" twE="NaN">
+    <b name="1" sc="1" dl="0">
+     <f dr="32" dI="-1"/>
+     <f x="52.5" y="-52.35" cocos2d_x="52.5" cocos2d_y="-52.35" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="2"/>
+     <f x="52.5" y="-52.35" cocos2d_x="52.5" cocos2d_y="-52.35" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="1" dr="2"/>
+     <f x="52.5" y="-52.35" cocos2d_x="52.5" cocos2d_y="-52.35" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="2" dr="2"/>
+     <f x="52.5" y="-52.35" cocos2d_x="52.5" cocos2d_y="-52.35" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="3" dr="3"/>
+     <f x="52.65" y="-52.7" cocos2d_x="52.65" cocos2d_y="-52.7" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="4" dr="3"/>
+     <f x="52.55" y="-52.3" cocos2d_x="52.55" cocos2d_y="-52.3" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="5" dr="3"/>
+     <f x="52.5" y="-52.35" cocos2d_x="52.5" cocos2d_y="-52.35" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="6" dr="3"/>
+    </b>
+    <b name="2" sc="1" dl="0">
+     <f dr="1" dI="-1"/>
+     <f x="48.7" y="-112.3" cocos2d_x="48.7" cocos2d_y="-112.3" kX="0" kY="0" cX="2.37" cY="2.37" pX="0" pY="0" z="0" dI="0" twE="0" dr="7"/>
+     <f x="39.95" y="-89" cocos2d_x="39.95" cocos2d_y="-89" kX="0" kY="0" cX="1.96" cY="1.96" pX="0" pY="0" z="0" dI="0" twE="0" dr="5"/>
+     <f x="19.5" y="-29.4" cocos2d_x="19.5" cocos2d_y="-29.4" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" twE="0" dr="2"/>
+     <f x="19.4" y="-27.6" cocos2d_x="19.4" cocos2d_y="-27.6" kX="1.73" kY="1.73" cX="0.95" cY="0.95" pX="0" pY="0" z="0" dI="0" twE="0" dr="2"/>
+     <f x="19.25" y="-25.8" cocos2d_x="19.25" cocos2d_y="-25.8" kX="-2.7" kY="-2.7" cX="0.91" cY="0.91" pX="0" pY="0" z="0" dI="0" twE="0" dr="2"/>
+     <f x="19.2" y="-25.5" cocos2d_x="19.2" cocos2d_y="-25.5" kX="1.7" kY="1.7" cX="0.91" cY="0.91" pX="0" pY="0" z="0" dI="0" twE="0" dr="2"/>
+     <f x="19.35" y="-26.7" cocos2d_x="19.35" cocos2d_y="-26.7" kX="-0.71" kY="-0.71" cX="0.95" cY="0.95" pX="0" pY="0" z="0" dI="0" twE="0" dr="2"/>
+     <f x="19.5" y="-27.9" cocos2d_x="19.5" cocos2d_y="-27.9" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1" dI="0" dr="27"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="zhengzhan_tongguan" width="512" height="512">
+  <SubTexture name="part-zhengzhan_tongguanziti" width="151" height="59" cocos2d_pX="71.5" cocos2d_pY="25" x="0" y="288"/>
+  <SubTexture name="part-zhengzhan_tongguan7" width="245" height="155" cocos2d_pX="122.5" cocos2d_pY="77.5" x="0" y="0"/>
+  <SubTexture name="part-zhengzhan_tongguan6" width="206" height="124" cocos2d_pX="122.5" cocos2d_pY="51.55" x="247" y="0"/>
+  <SubTexture name="part-zhengzhan_tongguan5" width="176" height="127" cocos2d_pX="122.6" cocos2d_pY="55.8" x="247" y="126"/>
+  <SubTexture name="part-zhengzhan_tongguan4" width="151" height="129" cocos2d_pX="122.5" cocos2d_pY="55.4" x="0" y="157"/>
+  <SubTexture name="part-zhengzhan_tongguan3" width="126" height="124" cocos2d_pX="122.75" cocos2d_pY="51.2" x="153" y="255"/>
+  <SubTexture name="part-zhengzhan_tongguan2" width="106" height="126" cocos2d_pX="122.85" cocos2d_pY="52.1" x="281" y="255"/>
+  <SubTexture name="part-zhengzhan_tongguan1" width="71" height="112" cocos2d_pX="122.65" cocos2d_pY="42.1" x="425" y="126"/>
+ </TextureAtlas>
+</skeleton>

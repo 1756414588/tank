@@ -1,0 +1,67 @@
+<skeleton name="boss_baozha_big" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="boss_gun_boken_big">
+   <b name="1" x="-9.25" y="-11.3" kX="163.77" kY="163.77" cX="3.53" cY="3.53" pX="0" pY="0" z="0">
+    <d name="part-baozha_1_1"/>
+    <d name="part-baozha_1_2"/>
+    <d name="part-baozha_1_3"/>
+    <d name="part-baozha_1_4"/>
+    <d name="part-baozha_1_5"/>
+    <d name="part-baozha_1_6"/>
+    <d name="part-baozha_1_7"/>
+    <d name="part-baozha_1_8"/>
+    <d name="part-baozha_1_9"/>
+    <d name="part-baozha_1_10"/>
+    <d name="part-baozha_1_11"/>
+    <d name="part-baozha_1_12"/>
+    <d name="part-baozha_1_13"/>
+    <d name="part-baozha_1_14"/>
+    <d name="part-baozha_1_15"/>
+    <d name="part-baozha_1_16"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="boss_gun_boken_big">
+   <mov name="start" dr="33" to="6" drTW="33" lp="0" twE="NaN">
+    <b name="1" sc="1" dl="0">
+     <f x="-9.25" y="-11.3" cocos2d_x="-9.25" cocos2d_y="-11.3" kX="163.77" kY="163.77" cX="3.53" cY="3.53" pX="0" pY="0" z="0" dI="0" dr="2"/>
+     <f x="-9.3" y="-11.3" cocos2d_x="-9.3" cocos2d_y="-11.3" kX="163.77" kY="163.77" cX="3.53" cY="3.53" pX="0" pY="0" z="0" dI="1" dr="2"/>
+     <f x="-9.35" y="-11.35" cocos2d_x="-9.5" cocos2d_y="-11.3" kX="163.77" kY="163.77" cX="3.53" cY="3.53" pX="0" pY="0" z="0" dI="2" dr="2"/>
+     <f x="-9.35" y="-11.35" cocos2d_x="-9.5" cocos2d_y="-11.3" kX="163.77" kY="163.77" cX="3.53" cY="3.53" pX="0" pY="0" z="0" dI="3" dr="2"/>
+     <f x="-9.35" y="-11.35" cocos2d_x="-9.5" cocos2d_y="-11.3" kX="163.77" kY="163.77" cX="3.53" cY="3.53" pX="0" pY="0" z="0" dI="4" dr="2"/>
+     <f x="-9.6" y="-11.2" cocos2d_x="-9.6" cocos2d_y="-11.2" kX="163.77" kY="163.77" cX="3.53" cY="3.53" pX="0" pY="0" z="0" dI="5" dr="2"/>
+     <f x="-9.35" y="-11.35" cocos2d_x="-9.5" cocos2d_y="-11.3" kX="163.77" kY="163.77" cX="3.53" cY="3.53" pX="0" pY="0" z="0" dI="6" dr="2"/>
+     <f x="-9.3" y="-11.3" cocos2d_x="-9.3" cocos2d_y="-11.3" kX="163.77" kY="163.77" cX="3.53" cY="3.53" pX="0" pY="0" z="0" dI="7" dr="2"/>
+     <f x="-9.35" y="-11.35" cocos2d_x="-9.5" cocos2d_y="-11.3" kX="163.77" kY="163.77" cX="3.53" cY="3.53" pX="0" pY="0" z="0" dI="8" dr="2"/>
+     <f x="-9.3" y="-11.3" cocos2d_x="-9.3" cocos2d_y="-11.3" kX="163.77" kY="163.77" cX="3.53" cY="3.53" pX="0" pY="0" z="0" dI="9" dr="2"/>
+     <f x="-9.35" y="-11.35" cocos2d_x="-9.5" cocos2d_y="-11.3" kX="163.77" kY="163.77" cX="3.53" cY="3.53" pX="0" pY="0" z="0" dI="10" dr="2"/>
+     <f x="-9.35" y="-11.35" cocos2d_x="-9.5" cocos2d_y="-11.3" kX="163.77" kY="163.77" cX="3.53" cY="3.53" pX="0" pY="0" z="0" dI="11" dr="2"/>
+     <f x="-9.3" y="-11.3" cocos2d_x="-9.3" cocos2d_y="-11.3" kX="163.77" kY="163.77" cX="3.53" cY="3.53" pX="0" pY="0" z="0" dI="12" dr="2"/>
+     <f x="-9.3" y="-11.3" cocos2d_x="-9.3" cocos2d_y="-11.3" kX="163.77" kY="163.77" cX="3.53" cY="3.53" pX="0" pY="0" z="0" dI="13" dr="2"/>
+     <f x="-9.35" y="-11.35" cocos2d_x="-9.5" cocos2d_y="-11.3" kX="163.77" kY="163.77" cX="3.53" cY="3.53" pX="0" pY="0" z="0" dI="14" dr="2"/>
+     <f x="-9.35" y="-11.35" cocos2d_x="-9.5" cocos2d_y="-11.3" kX="163.77" kY="163.77" cX="3.53" cY="3.53" pX="0" pY="0" z="0" dI="15" dr="2"/>
+     <f dr="1" dI="-1"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="boss_baozha_big" width="256" height="512">
+  <SubTexture name="part-baozha_1_16" width="45" height="46" cocos2d_pX="25.35" cocos2d_pY="22.55" x="207" y="129"/>
+  <SubTexture name="part-baozha_1_15" width="37" height="42" cocos2d_pX="22.85" cocos2d_pY="19.65" x="207" y="177"/>
+  <SubTexture name="part-baozha_1_14" width="48" height="52" cocos2d_pX="28.2" cocos2d_pY="21.95" x="186" y="221"/>
+  <SubTexture name="part-baozha_1_13" width="50" height="63" cocos2d_pX="30.15" cocos2d_pY="27.45" x="134" y="197"/>
+  <SubTexture name="part-baozha_1_12" width="53" height="62" cocos2d_pX="31.95" cocos2d_pY="26.75" x="0" y="193"/>
+  <SubTexture name="part-baozha_1_11" width="75" height="64" cocos2d_pX="44" cocos2d_pY="26.05" x="0" y="0"/>
+  <SubTexture name="part-baozha_1_10" width="73" height="66" cocos2d_pX="42.6" cocos2d_pY="26.2" x="77" y="0"/>
+  <SubTexture name="part-baozha_1_9" width="72" height="61" cocos2d_pX="42.3" cocos2d_pY="25.9" x="152" y="66"/>
+  <SubTexture name="part-baozha_1_8" width="71" height="64" cocos2d_pX="41.2" cocos2d_pY="25.3" x="152" y="0"/>
+  <SubTexture name="part-baozha_1_7" width="69" height="64" cocos2d_pX="40.05" cocos2d_pY="24.3" x="69" y="68"/>
+  <SubTexture name="part-baozha_1_6" width="67" height="67" cocos2d_pX="39.1" cocos2d_pY="23.35" x="0" y="66"/>
+  <SubTexture name="part-baozha_1_5" width="65" height="66" cocos2d_pX="37.9" cocos2d_pY="24.55" x="140" y="129"/>
+  <SubTexture name="part-baozha_1_4" width="63" height="63" cocos2d_pX="37.05" cocos2d_pY="20.8" x="69" y="134"/>
+  <SubTexture name="part-baozha_1_3" width="61" height="56" cocos2d_pX="35.7" cocos2d_pY="19.7" x="0" y="135"/>
+  <SubTexture name="part-baozha_1_2" width="55" height="53" cocos2d_pX="28.75" cocos2d_pY="20.6" x="55" y="199"/>
+  <SubTexture name="part-baozha_1_1" width="51" height="46" cocos2d_pX="25.2" cocos2d_pY="22.9" x="55" y="254"/>
+ </TextureAtlas>
+</skeleton>

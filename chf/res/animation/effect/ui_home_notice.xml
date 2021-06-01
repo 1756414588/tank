@@ -1,0 +1,31 @@
+<skeleton name="qbz_xitonggonggao" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="ui_home_notice">
+   <b name="nbvchfgdh" x="-1.65" y="23.55" kX="0" kY="0" cX="0.43" cY="0.43" pX="0" pY="0" z="0">
+    <d name="part-qbz_duihuakuang"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="ui_home_notice">
+   <mov name="start" dr="24" to="6" drTW="24" lp="0" twE="NaN">
+    <b name="nbvchfgdh" sc="1" dl="0">
+     <f x="-1.65" y="23.55" cocos2d_x="-1.65" cocos2d_y="23.55" kX="0" kY="0" cX="0.43" cY="0.43" pX="0" pY="0" z="0" dI="0" twE="0" dr="14"/>
+     <f x="0" y="-1.75" cocos2d_x="0" cocos2d_y="-1.75" kX="0" kY="0" cX="1.1" cY="1.1" pX="0" pY="0" z="0" dI="0" twE="0" dr="9"/>
+     <f x="0" y="0" cocos2d_x="0" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="1"/>
+    </b>
+   </mov>
+   <mov name="end" dr="22" to="6" drTW="22" lp="0" twE="NaN">
+    <b name="nbvchfgdh" sc="1" dl="0">
+     <f x="0" y="0" cocos2d_x="0" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" twE="0" dr="8"/>
+     <f x="0" y="-1.75" cocos2d_x="0" cocos2d_y="-1.75" kX="0" kY="0" cX="1.1" cY="1.1" pX="0" pY="0" z="0" dI="0" twE="0" dr="12"/>
+     <f x="-1.65" y="23.55" cocos2d_x="-1.65" cocos2d_y="23.55" kX="0" kY="0" cX="0.43" cY="0.43" pX="0" pY="0" z="0" dI="0" twE="0" dr="1"/>
+     <f dr="1" dI="-1"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="qbz_xitonggonggao" width="128" height="64">
+  <SubTexture name="part-qbz_duihuakuang" width="97" height="38" cocos2d_pX="48.55" cocos2d_pY="18.95" x="0" y="0"/>
+ </TextureAtlas>
+</skeleton>

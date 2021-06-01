@@ -1,0 +1,66 @@
+<skeleton name="jiangling_huangse" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="ui_item_light_orange">
+   <b name="1" x="-2.9" y="-3.35" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0">
+    <d name="part-jiangling_huangse1"/>
+    <d name="part-jiangling_huangse2"/>
+    <d name="part-jiangling_huangse3"/>
+    <d name="part-jiangling_huangse4"/>
+    <d name="part-jiangling_huangse5"/>
+    <d name="part-jiangling_huangse6"/>
+    <d name="part-jiangling_huangse7"/>
+    <d name="part-jiangling_huangse8"/>
+    <d name="part-jiangling_huangse9"/>
+    <d name="part-jiangling_huangse10"/>
+    <d name="part-jiangling_huangse11"/>
+    <d name="part-jiangling_huangse12"/>
+    <d name="part-jiangling_huangse13"/>
+    <d name="part-jiangling_huangse14"/>
+    <d name="part-jiangling_huangse15"/>
+    <d name="part-jiangling_huangse16"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="ui_item_light_orange">
+   <mov name="start" dr="96" to="6" drTW="96" lp="1" twE="NaN">
+    <b name="1" sc="1" dl="0">
+     <f x="-2.9" y="-3.35" cocos2d_x="-2.9" cocos2d_y="-3.35" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="0" dr="6"/>
+     <f x="-2.9" y="-3.35" cocos2d_x="-2.9" cocos2d_y="-3.35" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="1" dr="6"/>
+     <f x="-2.9" y="-3.35" cocos2d_x="-2.9" cocos2d_y="-3.35" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="2" dr="6"/>
+     <f x="-2.9" y="-3.35" cocos2d_x="-2.9" cocos2d_y="-3.35" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="3" dr="6"/>
+     <f x="-2.9" y="-3.35" cocos2d_x="-2.9" cocos2d_y="-3.35" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="4" dr="6"/>
+     <f x="-2.9" y="-3.35" cocos2d_x="-2.9" cocos2d_y="-3.35" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="5" dr="6"/>
+     <f x="-2.9" y="-3.35" cocos2d_x="-2.9" cocos2d_y="-3.35" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="6" dr="6"/>
+     <f x="-2.9" y="-3.35" cocos2d_x="-2.9" cocos2d_y="-3.35" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="7" dr="6"/>
+     <f x="-2.9" y="-3.35" cocos2d_x="-2.9" cocos2d_y="-3.35" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="8" dr="6"/>
+     <f x="-2.9" y="-3.35" cocos2d_x="-2.9" cocos2d_y="-3.35" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="9" dr="6"/>
+     <f x="-2.9" y="-3.35" cocos2d_x="-2.9" cocos2d_y="-3.35" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="10" dr="6"/>
+     <f x="-2.9" y="-3.35" cocos2d_x="-2.9" cocos2d_y="-3.35" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="11" dr="6"/>
+     <f x="-2.9" y="-3.35" cocos2d_x="-2.9" cocos2d_y="-3.35" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="12" dr="6"/>
+     <f x="-2.9" y="-3.35" cocos2d_x="-2.9" cocos2d_y="-3.35" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="13" dr="6"/>
+     <f x="-2.9" y="-3.35" cocos2d_x="-2.9" cocos2d_y="-3.35" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="14" dr="6"/>
+     <f x="-2.9" y="-3.35" cocos2d_x="-2.9" cocos2d_y="-3.35" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="15" dr="6"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="jiangling_huangse" width="512" height="512">
+  <SubTexture name="part-jiangling_huangse16" width="113" height="113" cocos2d_pX="56.5" cocos2d_pY="56.5" x="115" y="0"/>
+  <SubTexture name="part-jiangling_huangse15" width="113" height="113" cocos2d_pX="56.5" cocos2d_pY="56.5" x="115" y="230"/>
+  <SubTexture name="part-jiangling_huangse14" width="113" height="113" cocos2d_pX="56.5" cocos2d_pY="56.5" x="345" y="0"/>
+  <SubTexture name="part-jiangling_huangse13" width="113" height="113" cocos2d_pX="56.5" cocos2d_pY="56.5" x="230" y="345"/>
+  <SubTexture name="part-jiangling_huangse12" width="113" height="113" cocos2d_pX="56.5" cocos2d_pY="56.5" x="115" y="115"/>
+  <SubTexture name="part-jiangling_huangse11" width="113" height="113" cocos2d_pX="56.5" cocos2d_pY="56.5" x="345" y="230"/>
+  <SubTexture name="part-jiangling_huangse10" width="113" height="113" cocos2d_pX="56.5" cocos2d_pY="56.5" x="345" y="115"/>
+  <SubTexture name="part-jiangling_huangse9" width="113" height="113" cocos2d_pX="56.5" cocos2d_pY="56.5" x="345" y="345"/>
+  <SubTexture name="part-jiangling_huangse8" width="113" height="113" cocos2d_pX="56.5" cocos2d_pY="56.5" x="0" y="0"/>
+  <SubTexture name="part-jiangling_huangse7" width="113" height="113" cocos2d_pX="56.5" cocos2d_pY="56.5" x="230" y="0"/>
+  <SubTexture name="part-jiangling_huangse6" width="113" height="113" cocos2d_pX="56.5" cocos2d_pY="56.5" x="0" y="115"/>
+  <SubTexture name="part-jiangling_huangse5" width="113" height="113" cocos2d_pX="56.5" cocos2d_pY="56.5" x="230" y="115"/>
+  <SubTexture name="part-jiangling_huangse4" width="113" height="113" cocos2d_pX="56.5" cocos2d_pY="56.5" x="0" y="230"/>
+  <SubTexture name="part-jiangling_huangse3" width="113" height="113" cocos2d_pX="56.5" cocos2d_pY="56.5" x="230" y="230"/>
+  <SubTexture name="part-jiangling_huangse2" width="113" height="113" cocos2d_pX="56.5" cocos2d_pY="56.5" x="0" y="345"/>
+  <SubTexture name="part-jiangling_huangse1" width="113" height="113" cocos2d_pX="56.5" cocos2d_pY="56.5" x="115" y="345"/>
+ </TextureAtlas>
+</skeleton>

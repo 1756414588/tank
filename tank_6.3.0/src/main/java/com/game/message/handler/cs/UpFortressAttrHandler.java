@@ -1,0 +1,14 @@
+package com.game.message.handler.cs;
+
+import com.game.message.handler.ClientHandler;
+import com.game.pb.GamePb4.UpFortressAttrRq;
+import com.game.service.FortressWarService;
+
+public class UpFortressAttrHandler extends ClientHandler {
+
+	@Override
+	public void action() {
+		getService(FortressWarService.class).upFortressAttr(msg.getExtension(UpFortressAttrRq.ext),this);
+	}
+
+}

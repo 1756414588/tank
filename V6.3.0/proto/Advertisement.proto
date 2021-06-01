@@ -1,0 +1,264 @@
+import "Base.proto";
+import "Common.proto";
+option java_package = "com.game.pb";
+option java_outer_classname = "AdvertisementPb";
+
+//与广告 相关的操作[5601 - 5800]
+
+//获取开服30天登录广告信息
+message GetLoginADStatusRq {
+    extend Base
+    {
+      optional GetLoginADStatusRq ext = 5601;	
+    }
+}
+
+
+message GetLoginADStatusRs {
+	required sint32 playStatus = 1;	//返回观看广告的状态0未观看 1已观看 2活动已结束
+	repeated Award award = 2;		//返回奖励内容
+    extend Base
+    {
+      optional GetLoginADStatusRs ext = 5602;	
+    }
+}
+
+
+//播放开服30天登录广告
+message PlayLoginADRq {
+    extend Base
+    {
+      optional PlayLoginADRq ext = 5603;	
+    }
+}
+
+
+message PlayLoginADRs {
+	repeated Award award = 1;	//返回奖励内容
+    extend Base
+    {
+      optional PlayLoginADRs ext = 5604;	
+    }
+}
+
+
+//获取首充广告
+message GetFirstGiftADStatusRq {
+    extend Base
+    {
+      optional GetFirstGiftADStatusRq ext = 5605;	
+    }
+}
+
+
+message GetFirstGiftADStatusRs {
+	required sint32 playDays = 1;	//返回观看广告的天数
+	required sint32 playTimes = 2;	//返回当天观看广告的次数
+    extend Base
+    {
+      optional GetFirstGiftADStatusRs ext = 5606;	
+    }
+}
+
+
+//播放首充广告
+message PlayFirstGiftADRq {
+    extend Base
+    {
+      optional PlayFirstGiftADRq ext = 5607;	
+    }
+}
+
+
+message PlayFirstGiftADRs {
+	required sint32 playTimes = 1;	//返回当天观看广告的次数
+	required sint32 playDays = 2;	//返回观看广告的天数
+    extend Base
+    {
+      optional PlayFirstGiftADRs ext = 5608;	
+    }
+}
+
+//领取首充广告奖励
+message AwardFirstGiftADRq {
+    extend Base
+    {
+      optional AwardFirstGiftADRq ext = 5609;	
+    }
+}
+
+
+message AwardFirstGiftADRs {
+	optional sint32 topUp = 1;	//返回少量的充值金额
+    extend Base
+    {
+      optional AwardFirstGiftADRs ext = 5610;	
+    }
+}
+
+
+//编制经验加成
+message GetExpAddStatusRq {
+    extend Base
+    {
+      optional GetExpAddStatusRq ext = 5611;	
+    }
+}
+
+
+message GetExpAddStatusRs {
+	required sint32 playTimes = 1;	//返回当天观看广告的次数
+    extend Base
+    {
+      optional GetExpAddStatusRs ext = 5612;	
+    }
+}
+
+
+
+message PlayExpAddADRq {
+    extend Base
+    {
+      optional PlayExpAddADRq ext = 5613;	
+    }
+}
+
+message PlayExpAddADRs {
+	required sint32 playTimes = 1;	//返回当天观看广告的次数
+    extend Base
+    {
+      optional PlayExpAddADRs ext = 5614;	
+    }
+}
+
+
+//获取开服7天观看广告直升一级
+message GetDay7ActLvUpADStatusRq {
+    extend Base
+    {
+      optional GetDay7ActLvUpADStatusRq ext = 5615;	
+    }
+}
+
+
+message GetDay7ActLvUpADStatusRs {	
+	required sint32 status = 1;		//观看状态
+    extend Base
+    {
+      optional GetDay7ActLvUpADStatusRs ext = 5616;	
+    }
+}
+
+
+message PlayDay7ActLvUpADRq {
+    extend Base
+    {
+      optional PlayDay7ActLvUpADRq ext = 5617;	
+    }
+}
+
+
+message PlayDay7ActLvUpADRs {
+    extend Base
+    {
+      optional PlayDay7ActLvUpADRs ext = 5618;	
+    }
+}
+
+
+//获取指挥官经验广告
+message GetStaffingAddStatusRq {
+    extend Base
+    {
+      optional GetStaffingAddStatusRq ext = 5619;	
+    }
+}
+
+message GetStaffingAddStatusRs {
+	required sint32 playTimes = 1;	//返回当天观看广告的次数
+    extend Base
+    {
+      optional GetStaffingAddStatusRs ext = 5620;	
+    }
+}
+
+//播放指挥官经验广告
+message PlayStaffingAddADRq {
+    extend Base
+    {
+      optional PlayStaffingAddADRq ext = 5621;	
+    }
+}
+
+message PlayStaffingAddADRs {
+	required sint32 playTimes = 1;	//返回当天观看广告的次数
+    extend Base
+    {
+      optional PlayStaffingAddADRs ext = 5622;	
+    }
+}
+
+//播放体力增加的广告
+message PlayAddPowerADRq{
+	extend	Base
+	{
+		optional PlayAddPowerADRq ext = 5623;	
+	}
+}
+
+message PlayAddPowerADRs{
+	required sint32 playTimes = 1;	//返回当天观看广告的次数
+	repeated Award award = 2;		//返回奖励内容
+	extend	Base
+	{
+		optional PlayAddPowerADRs ext = 5624;	
+	}
+}
+
+//播放统率书增加的广告
+message PlayAddCommandADRq{
+	extend	Base
+	{
+		optional PlayAddCommandADRq ext = 5625;	
+	}
+}
+
+message PlayAddCommandADRs{
+	required sint32 playTimes = 1;	//返回当天观看广告的次数
+	repeated Award award = 2;		//返回奖励内容
+	extend	Base
+	{
+		optional PlayAddCommandADRs ext = 5626;	
+	}
+}
+//获取体力广告
+message GetAddPowerADRq{
+	extend	Base
+	{
+		optional GetAddPowerADRq ext = 5627;	
+	}
+}
+
+message GetAddPowerADRs{
+	required sint32 playTimes = 1;	//返回当天观看广告的次数
+	extend	Base
+	{
+		optional GetAddPowerADRs ext = 5628;	
+	}
+}
+
+//获取统率书广告
+message GetAddCommandADRq{
+	extend	Base
+	{
+		optional GetAddCommandADRq ext = 5629;	
+	}
+}
+
+message GetAddCommandADRs{
+	required sint32 playTimes = 1;	//返回当天观看广告的次数
+	extend	Base
+	{
+		optional GetAddCommandADRs ext = 5630;	
+	}
+}

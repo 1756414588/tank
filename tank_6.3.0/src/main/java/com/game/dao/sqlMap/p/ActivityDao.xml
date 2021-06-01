@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="ActivityDao">
+
+    <insert id="insertUsualActivity" parameterType="UsualActivity">
+		insert into
+		p_usual_activity(activityId,goal,sortord,playerRank,partyRank,`addtion`,activityTime,params,recordTime,actBoss,actRebel,statusMap,saveMap,usualData)
+		values(#{activityId},#{goal},#{sortord},#{playerRank},#{partyRank},#{addtion},#{activityTime},#{params},#{recordTime},#{actBoss},#{actRebel},#{statusMap},#{saveMap},#{usualData})
+	</insert>
+
+    <update id="updateUsualActivity" parameterType="UsualActivity">
+        update p_usual_activity set
+        goal=#{goal},
+        sortord=#{sortord},
+        playerRank=#{playerRank},
+        partyRank=#{partyRank},
+        `addtion`=#{addtion},
+        activityTime=#{activityTime},
+        recordTime=#{recordTime},
+        params=#{params},
+        actBoss=#{actBoss},
+        actRebel=#{actRebel},
+        statusMap=#{statusMap},
+        saveMap=#{saveMap},
+        usualData=#{usualData}
+        where activityId=#{activityId}
+    </update>
+
+    <select id="selectUsualActivity" resultType="UsualActivity">
+		select
+		activityId,goal,sortord,playerRank,partyRank,addtion,activityTime,recordTime,params,actBoss,actRebel,statusMap,saveMap,usualData
+		from p_usual_activity
+	</select>
+
+</mapper>

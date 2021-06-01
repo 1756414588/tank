@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="LordRelationDao">
+
+	<insert id="insertLordRelation" parameterType="LordRelation">
+		insert into
+		p_lord_relation(oldServerId,oldLordId,newServerId,newLordId)
+		values(#{oldServerId},#{oldLordId},#{newServerId},#{newLordId})
+	</insert>
+	
+	<select id="selectBuilding" parameterType="Map" resultType="LordRelation">
+		select * from p_lord_relation where oldServerId=#{oldServerId} and oldLordId=#{oldLordId}
+	</select>
+	
+	<select id="selectAllLordRelation"  resultType="LordRelation">
+		select * from p_lord_relation 
+	</select>
+	
+	<update id="createLordRelationTable" >
+		CREATE TABLE `p_lord_relation` (
+		  `keyId` int(11) NOT NULL AUTO_INCREMENT,
+		  `oldServerId` int(11) NOT NULL,
+		  `oldLordId` int(11) NOT NULL,
+		  `newServerId` int(11) NOT NULL,
+		  `newLordId` int(11) NOT NULL,
+		  PRIMARY KEY (`keyId`)
+		) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin ROW_FORMAT=DYNAMIC;
+	</update>
+	
+	<select id="showDatabases" resultType="String">
+		show databases
+	</select>
+	
+	<select id="showTables"  resultType="String">
+		SHOW TABLES
+	</select>
+	
+	<update id="createGameDb" statementType="STATEMENT" parameterType="java.util.Map">
+		CREATE DATABASE `${dbName}` CHARACTER SET utf8 COLLATE utf8_bin;
+	</update>
+	
+	<resultMap id="showCreateTableMap"   type="HashMap">  
+	    <result property="key" column="Table" />  
+	    <result property="value" column="Create Table" />  
+	</resultMap>  
+	
+	<select id="showCreateTable"  statementType="STATEMENT" resultMap="showCreateTableMap">
+		SHOW CREATE TABLE `${tableName}`
+	</select>
+	
+	<update id="createTable" statementType="STATEMENT" parameterType="java.util.Map">
+		${sql}
+	</update>
+	
+	<update id="tableToOtherDb" statementType="STATEMENT" parameterType="java.util.Map">
+		INSERT INTO `${dbName}`.`${tableName}` SELECT * FROM `${tableName}`
+	</update>
+	
+	<update id="truncateTable" statementType="STATEMENT" parameterType="java.util.Map">
+		TRUNCATE `${tableName}`
+	</update>
+	
+	<select id="selectMergeServerIds"  resultType="Integer">
+		SELECT s.serverId FROM (SELECT serverId as serverId,COUNT(*) as num FROM p_account GROUP BY serverId ) as s WHERE s.num > 50
+	</select>
+	
+	<select id="selectAllLordRelationByTab"  resultType="LordRelation" statementType="STATEMENT" parameterType="java.util.Map">
+		select * from `${tableName}` 
+	</select>
+	
+	<insert id="insertLordRelationByTab" statementType="STATEMENT" parameterType="java.util.Map">
+		insert into
+		`${tableName}` (oldServerId,oldLordId,newServerId,newLordId)
+		values(${oldServerId},${oldLordId},${newServerId},${newLordId})
+	</insert>
+</mapper>

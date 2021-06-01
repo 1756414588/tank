@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="BossDao">
+	<!-- <select id="selectData" parameterType="Long" resultType="Data"> select * from p_data where lordId=#{lordId} </select> -->
+
+	<insert id="insertData" parameterType="BossFight">
+		insert into
+		p_boss(lordId,bossType,hurt,bless1,bless2,bless3,autoFight)
+		values(#{lordId},#{bossType},#{hurt},#{bless1},#{bless2},#{bless3},#{autoFight})
+	</insert>
+
+	<update id="updateData" parameterType="BossFight">
+		update p_boss set
+		hurt=#{hurt},bless1=#{bless1},bless2=#{bless2},bless3=#{bless3},autoFight=#{autoFight}
+		where lordId=#{lordId} and bossType=#{bossType}
+	</update>
+
+	<select id="loadData" parameterType="Map" resultType="BossFight">
+		select 
+		lordId,bossType,hurt,bless1,bless2,bless3,autoFight 
+		from p_boss where lordId > #{curIndex} order by lordId limit 0,#{count}
+	</select>
+
+</mapper>

@@ -1,0 +1,12 @@
+// package cs;
+option java_package = "com.game.pb";
+option java_outer_classname = "BasePb";
+
+message Base {
+  	required int32 cmd = 1;       
+  	optional int32 code = 2;
+  	optional int64 param = 3;
+  	extensions 100 to max; 
+}
+
+

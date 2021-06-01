@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="ActionPointDao">
+    <select id="selectActionPoint" parameterType="String" resultType="com.account.domain.ActionPoint">
+		select * from `u_action_point` where deviceNo=#{deviceNo}
+	</select>
+
+    <insert id="insertActionPointDao" parameterType="com.account.domain.ActionPoint" useGeneratedKeys="true" keyProperty="deviceNo">
+		insert into u_action_point(deviceNo,platNo,point,changeTime) values(#{deviceNo},#{platNo},#{point},#{changeTime})
+	</insert>
+
+    <update id="updateActionPointDao" parameterType="com.account.domain.ActionPoint">
+		update u_action_point set point=#{point},changeTime=#{changeTime} where deviceNo=#{deviceNo}
+	</update>
+</mapper>

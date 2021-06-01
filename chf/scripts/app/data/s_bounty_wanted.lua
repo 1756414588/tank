@@ -1,0 +1,23 @@
+return {
+	title={"id","type","cond","target","param","awardList","openDay","openTime","desc","head","deco"},
+		records={
+						{101,1,1,1,nil,100,"[1,2,4]","[12:30-13:30]","在列车炮做出任何攻击前击败它","bounty_boss1","bounty_wanted_railgun"},
+						{102,4,12,1,nil,80,"[2,3,5]","[12:30-13:30]","击败V3火箭12次","bounty_boss2","bounty_wanted_v3"},
+						{103,3,1,1,"[6]",50,"[1,3,4,5]","[12:30-13:30]","被自爆卡车一次炸掉6个部队","bounty_boss3","bounty_wanted_truck"},
+						{104,5,6500000000,2,nil,120,"[1,2,4]","[19:00-20:30]","对列车炮共造成6500000000的伤害","bounty_boss1","bounty_wanted_railgun"},
+						{105,2,800,2,"[404]",100,"[2,3,5]","[19:00-20:30]","累计击杀800个分裂后的次级火箭","bounty_boss2","bounty_wanted_v3"},
+						{106,6,2500,2,nil,80,"[1,3,4,5]","[19:00-20:30]","被自爆卡车累计炸掉2500个部队","bounty_boss3","bounty_wanted_truck"},
+						{107,9,5,1,nil,80,"[1,2,4]","[19:00-20:30]","击败列车炮5次","bounty_boss1","bounty_wanted_railgun"},
+						{108,7,1,1,nil,60,"[2,3,5]","[19:00-20:30]","仅凭一己之力通关火箭迷途","bounty_boss2","bounty_wanted_v3"},
+						{109,8,3,1,nil,50,"[1,3,4,5]","[19:00-20:30]","只剩最后一人的情况下通关核爆危机3次","bounty_boss3","bounty_wanted_truck"},
+						{110,1,1,1,nil,200,"[6,7]","[12:30-13:30]","在列车炮做出任何攻击前击败它","bounty_boss1","bounty_wanted_railgun"},
+						{111,4,12,1,nil,150,"[6,7]","[12:30-13:30]","击败V3火箭12次","bounty_boss2","bounty_wanted_v3"},
+						{112,3,1,1,"[6]",120,"[6,7]","[12:30-13:30]","被自爆卡车一次炸掉6个部队","bounty_boss3","bounty_wanted_truck"},
+						{113,5,10000000000,2,nil,280,"[6,7]","[19:00-20:30]","对列车炮共造成10000000000的伤害","bounty_boss1","bounty_wanted_railgun"},
+						{114,2,1500,2,"[404]",240,"[6,7]","[19:00-20:30]","累计击杀1500个分裂后的次级火箭","bounty_boss2","bounty_wanted_v3"},
+						{115,6,4000,2,nil,180,"[6,7]","[19:00-20:30]","被自爆卡车累计炸掉4000个部队","bounty_boss3","bounty_wanted_truck"},
+						{116,9,5,1,nil,160,"[6,7]","[19:00-20:30]","击败列车炮5次","bounty_boss1","bounty_wanted_railgun"},
+						{117,7,1,1,nil,150,"[6,7]","[19:00-20:30]","仅凭一己之力通关火箭迷途","bounty_boss2","bounty_wanted_v3"},
+						{118,8,3,1,nil,120,"[6,7]","[19:00-20:30]","只剩最后一人的情况下通关核爆危机3次","bounty_boss3","bounty_wanted_truck"}
+		}
+}

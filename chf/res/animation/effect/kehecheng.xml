@@ -1,0 +1,70 @@
+<skeleton name="kehecheng2" frameRate="30" version="2.0">
+ <armatures>
+  <armature name="kehecheng">
+   <b name="2" x="0" y="0.05" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0">
+    <d name="part-kehecheng_guangquan_00000"/>
+    <d name="part-kehecheng_guangquan_00002"/>
+    <d name="part-kehecheng_guangquan_00004"/>
+    <d name="part-kehecheng_guangquan_00006"/>
+    <d name="part-kehecheng_guangquan_00008"/>
+    <d name="part-kehecheng_guangquan_00010"/>
+    <d name="part-kehecheng_guangquan_00012"/>
+    <d name="part-kehecheng_guangquan_00014"/>
+    <d name="part-kehecheng_guangquan_00016"/>
+    <d name="part-kehecheng_guangquan_00018"/>
+    <d name="part-kehecheng_guangquan_00020"/>
+    <d name="part-kehecheng_guangquan_00022"/>
+    <d name="part-kehecheng_guangquan_00024"/>
+    <d name="part-kehecheng_guangquan_00026"/>
+    <d name="part-kehecheng_guangquan_00028"/>
+    <d name="part-kehecheng_guangquan_00030"/>
+    <d name="part-kehecheng_guangquan_00032"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="kehecheng">
+   <mov name="start" dr="64" to="0" drTW="64" lp="1" twE="NaN">
+    <b name="2" sc="1" dl="0">
+     <f x="0" y="0.05" cocos2d_x="0" cocos2d_y="0.05" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="2"/>
+     <f x="0" y="0.05" cocos2d_x="0" cocos2d_y="0.05" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="1" dr="2"/>
+     <f x="0" y="0.05" cocos2d_x="0" cocos2d_y="0.05" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="2" dr="2"/>
+     <f x="0" y="0.05" cocos2d_x="0" cocos2d_y="0.05" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="3" dr="2"/>
+     <f x="0" y="0.05" cocos2d_x="0" cocos2d_y="0.05" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="4" dr="2"/>
+     <f x="0" y="0.05" cocos2d_x="0" cocos2d_y="0.05" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="5" dr="2"/>
+     <f x="0" y="0.05" cocos2d_x="0" cocos2d_y="0.05" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="6" dr="2"/>
+     <f x="0" y="0.05" cocos2d_x="0" cocos2d_y="0.05" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="7" dr="2"/>
+     <f x="0" y="0.05" cocos2d_x="0" cocos2d_y="0.05" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="8" dr="2"/>
+     <f x="0" y="0.05" cocos2d_x="0" cocos2d_y="0.05" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="9" dr="2"/>
+     <f x="0" y="0.05" cocos2d_x="0" cocos2d_y="0.05" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="10" dr="2"/>
+     <f x="0" y="0.05" cocos2d_x="0" cocos2d_y="0.05" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="11" dr="2"/>
+     <f x="0" y="0.05" cocos2d_x="0" cocos2d_y="0.05" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="12" dr="2"/>
+     <f x="0" y="0.05" cocos2d_x="0" cocos2d_y="0.05" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="13" dr="2"/>
+     <f x="0" y="0.05" cocos2d_x="0" cocos2d_y="0.05" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="14" dr="2"/>
+     <f x="0" y="0.05" cocos2d_x="0" cocos2d_y="0.05" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="15" dr="2"/>
+     <f x="0" y="0.05" cocos2d_x="0" cocos2d_y="0.05" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="16" dr="2"/>
+     <f dr="30" dI="-1"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="kehecheng2" width="1024" height="512">
+  <SubTexture name="part-kehecheng_guangquan_00032" width="150" height="150" cocos2d_pX="75" cocos2d_pY="75" x="608" y="304"/>
+  <SubTexture name="part-kehecheng_guangquan_00030" width="150" height="150" cocos2d_pX="75" cocos2d_pY="75" x="304" y="0"/>
+  <SubTexture name="part-kehecheng_guangquan_00028" width="150" height="150" cocos2d_pX="75" cocos2d_pY="75" x="608" y="152"/>
+  <SubTexture name="part-kehecheng_guangquan_00026" width="150" height="150" cocos2d_pX="75" cocos2d_pY="75" x="608" y="0"/>
+  <SubTexture name="part-kehecheng_guangquan_00024" width="150" height="150" cocos2d_pX="75" cocos2d_pY="75" x="456" y="304"/>
+  <SubTexture name="part-kehecheng_guangquan_00022" width="150" height="150" cocos2d_pX="75" cocos2d_pY="75" x="0" y="152"/>
+  <SubTexture name="part-kehecheng_guangquan_00020" width="150" height="150" cocos2d_pX="75" cocos2d_pY="75" x="0" y="304"/>
+  <SubTexture name="part-kehecheng_guangquan_00018" width="150" height="150" cocos2d_pX="75" cocos2d_pY="75" x="304" y="152"/>
+  <SubTexture name="part-kehecheng_guangquan_00016" width="150" height="150" cocos2d_pX="75" cocos2d_pY="75" x="0" y="0"/>
+  <SubTexture name="part-kehecheng_guangquan_00014" width="150" height="150" cocos2d_pX="75" cocos2d_pY="75" x="152" y="0"/>
+  <SubTexture name="part-kehecheng_guangquan_00012" width="150" height="150" cocos2d_pX="75" cocos2d_pY="75" x="456" y="0"/>
+  <SubTexture name="part-kehecheng_guangquan_00010" width="150" height="150" cocos2d_pX="75" cocos2d_pY="75" x="760" y="0"/>
+  <SubTexture name="part-kehecheng_guangquan_00008" width="150" height="150" cocos2d_pX="75" cocos2d_pY="75" x="152" y="152"/>
+  <SubTexture name="part-kehecheng_guangquan_00006" width="150" height="150" cocos2d_pX="75" cocos2d_pY="75" x="456" y="152"/>
+  <SubTexture name="part-kehecheng_guangquan_00004" width="150" height="150" cocos2d_pX="75" cocos2d_pY="75" x="760" y="152"/>
+  <SubTexture name="part-kehecheng_guangquan_00002" width="150" height="150" cocos2d_pX="75" cocos2d_pY="75" x="152" y="304"/>
+  <SubTexture name="part-kehecheng_guangquan_00000" width="150" height="150" cocos2d_pX="75" cocos2d_pY="75" x="304" y="304"/>
+ </TextureAtlas>
+</skeleton>

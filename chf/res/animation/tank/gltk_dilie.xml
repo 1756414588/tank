@@ -1,0 +1,113 @@
+<skeleton name="gltk_dilie" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="gltk_dilie">
+   <b name="2" x="21" y="-4.5" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0">
+    <d name="part-gltk_dilie_00045"/>
+    <d name="part-gltk_dilie_00047"/>
+    <d name="part-gltk_dilie_00049"/>
+    <d name="part-gltk_dilie_00051"/>
+    <d name="part-gltk_dilie_00053"/>
+    <d name="part-gltk_dilie_00055"/>
+    <d name="part-gltk_dilie_00057"/>
+    <d name="part-gltk_dilie_00059"/>
+    <d name="part-gltk_dilie_00061"/>
+    <d name="part-gltk_dilie_00063"/>
+    <d name="part-gltk_dilie_00065"/>
+    <d name="part-gltk_dilie_00067"/>
+    <d name="part-gltk_dilie_00069"/>
+    <d name="part-gltk_dilie_00071"/>
+    <d name="part-gltk_dilie_00073"/>
+    <d name="part-gltk_dilie_00075"/>
+    <d name="part-gltk_dilie_00077"/>
+    <d name="part-gltk_dilie_00079"/>
+    <d name="part-gltk_dilie_00081"/>
+    <d name="part-gltk_dilie_00083"/>
+    <d name="part-gltk_dilie_00085"/>
+    <d name="part-gltk_dilie_00087"/>
+    <d name="part-gltk_dilie_00089"/>
+    <d name="part-gltk_dilie_00091"/>
+    <d name="part-gltk_dilie_00093"/>
+    <d name="part-gltk_dilie_00095"/>
+    <d name="part-gltk_dilie_00097"/>
+   </b>
+   <b name="3" x="-138.5" y="-12" kX="0" kY="0" cX="1" cY="1" pX="141" pY="105" z="1">
+    <d name="part-gltk_guangdian_00055"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="gltk_dilie">
+   <mov name="start" dr="110" to="0" drTW="110" lp="0" twE="NaN">
+    <b name="2" sc="1" dl="0">
+     <f x="21" y="-4.5" cocos2d_x="21" cocos2d_y="-4.5" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="0" dr="4"/>
+     <f x="21" y="-4.5" cocos2d_x="21" cocos2d_y="-4.5" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="1" dr="4"/>
+     <f x="21" y="-4.5" cocos2d_x="21" cocos2d_y="-4.5" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="2" dr="4"/>
+     <f x="21" y="-4.5" cocos2d_x="21" cocos2d_y="-4.5" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="3" dr="4"/>
+     <f x="21" y="-4.5" cocos2d_x="21" cocos2d_y="-4.5" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="4" dr="4"/>
+     <f x="21" y="-4.5" cocos2d_x="21" cocos2d_y="-4.5" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="5" dr="4"/>
+     <f x="21" y="-4.5" cocos2d_x="21" cocos2d_y="-4.5" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="6" dr="4"/>
+     <f x="21" y="-4.5" cocos2d_x="21" cocos2d_y="-4.5" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="7" dr="4"/>
+     <f x="21" y="-4.5" cocos2d_x="21" cocos2d_y="-4.5" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="8" dr="4"/>
+     <f x="21" y="-4.5" cocos2d_x="21" cocos2d_y="-4.5" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="9" dr="4"/>
+     <f x="21" y="-4.5" cocos2d_x="21" cocos2d_y="-4.5" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="10" dr="4"/>
+     <f x="21" y="-4.5" cocos2d_x="21" cocos2d_y="-4.5" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="11" dr="4"/>
+     <f x="21" y="-4.5" cocos2d_x="21" cocos2d_y="-4.5" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="12" dr="4"/>
+     <f x="21" y="-4.5" cocos2d_x="21" cocos2d_y="-4.5" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="13" dr="4"/>
+     <f x="21" y="-4.5" cocos2d_x="21" cocos2d_y="-4.5" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="14" dr="4"/>
+     <f x="21" y="-4.5" cocos2d_x="21" cocos2d_y="-4.5" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="15" dr="4"/>
+     <f x="21" y="-4.5" cocos2d_x="21" cocos2d_y="-4.5" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="16" dr="4"/>
+     <f x="21" y="-4.5" cocos2d_x="21" cocos2d_y="-4.5" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="17" dr="4"/>
+     <f x="21" y="-4.5" cocos2d_x="21" cocos2d_y="-4.5" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="18" dr="4"/>
+     <f x="21" y="-4.5" cocos2d_x="21" cocos2d_y="-4.5" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="19" dr="4"/>
+     <f x="21" y="-4.5" cocos2d_x="21" cocos2d_y="-4.5" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="20" dr="4"/>
+     <f x="21" y="-4.5" cocos2d_x="21" cocos2d_y="-4.5" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="21" dr="4"/>
+     <f x="21" y="-4.5" cocos2d_x="21" cocos2d_y="-4.5" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="22" dr="4"/>
+     <f x="21" y="-4.5" cocos2d_x="21" cocos2d_y="-4.5" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="23" dr="4"/>
+     <f x="21" y="-4.5" cocos2d_x="21" cocos2d_y="-4.5" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="24" dr="4"/>
+     <f x="21" y="-4.5" cocos2d_x="21" cocos2d_y="-4.5" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="25" dr="4"/>
+     <f x="21" y="-4.5" cocos2d_x="21" cocos2d_y="-4.5" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="26" dr="4"/>
+     <f dr="2" dI="-1"/>
+    </b>
+    <b name="3" sc="1" dl="0">
+     <f x="-138.5" y="-12" cocos2d_x="-279" cocos2d_y="-117" kX="0" kY="0" cX="1" cY="1" pX="141" pY="105" z="1" dI="0" twE="0" dr="36"/>
+     <f x="123" y="-2.75" cocos2d_x="-17.5" cocos2d_y="-107.75" kX="0" kY="0" cX="1" cY="1" pX="141" pY="105" z="1" dI="0" twE="0" dr="12"/>
+     <f x="167.5" y="-1" cocos2d_x="27" cocos2d_y="-106" kX="0" kY="0" cX="1" cY="1" pX="141" pY="105" z="1" dI="0" twE="0" dr="24"/>
+     <f x="167.5" y="-1" cocos2d_x="139.35" cocos2d_y="-21.95" kX="0" kY="0" cX="0.2" cY="0.2" pX="141" pY="105" z="1" dI="0" dr="1">
+      <colorTransform a="0" r="0" g="0" b="0" aM="5" rM="100" gM="100" bM="100"/>
+     </f>
+     <f dr="37" dI="-1"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="gltk_dilie" width="1024" height="2048">
+  <SubTexture name="part-gltk_guangdian_00055" width="281" height="210" cocos2d_pX="0" cocos2d_pY="0" x="0" y="0"/>
+  <SubTexture name="part-gltk_dilie_00097" width="282" height="125" cocos2d_pX="141" cocos2d_pY="63" x="284" y="635"/>
+  <SubTexture name="part-gltk_dilie_00095" width="282" height="125" cocos2d_pX="141" cocos2d_pY="63" x="283" y="127"/>
+  <SubTexture name="part-gltk_dilie_00093" width="282" height="125" cocos2d_pX="141" cocos2d_pY="63" x="0" y="1143"/>
+  <SubTexture name="part-gltk_dilie_00091" width="282" height="125" cocos2d_pX="141" cocos2d_pY="63" x="0" y="254"/>
+  <SubTexture name="part-gltk_dilie_00089" width="282" height="125" cocos2d_pX="141" cocos2d_pY="63" x="0" y="762"/>
+  <SubTexture name="part-gltk_dilie_00087" width="282" height="125" cocos2d_pX="141" cocos2d_pY="63" x="568" y="254"/>
+  <SubTexture name="part-gltk_dilie_00085" width="282" height="125" cocos2d_pX="141" cocos2d_pY="63" x="0" y="1016"/>
+  <SubTexture name="part-gltk_dilie_00083" width="282" height="125" cocos2d_pX="141" cocos2d_pY="63" x="284" y="381"/>
+  <SubTexture name="part-gltk_dilie_00081" width="282" height="125" cocos2d_pX="141" cocos2d_pY="63" x="568" y="762"/>
+  <SubTexture name="part-gltk_dilie_00079" width="282" height="125" cocos2d_pX="141" cocos2d_pY="63" x="0" y="508"/>
+  <SubTexture name="part-gltk_dilie_00077" width="282" height="125" cocos2d_pX="141" cocos2d_pY="63" x="284" y="1143"/>
+  <SubTexture name="part-gltk_dilie_00075" width="282" height="125" cocos2d_pX="141" cocos2d_pY="63" x="568" y="508"/>
+  <SubTexture name="part-gltk_dilie_00073" width="282" height="125" cocos2d_pX="141" cocos2d_pY="63" x="284" y="889"/>
+  <SubTexture name="part-gltk_dilie_00071" width="282" height="125" cocos2d_pX="141" cocos2d_pY="63" x="283" y="0"/>
+  <SubTexture name="part-gltk_dilie_00069" width="282" height="125" cocos2d_pX="141" cocos2d_pY="63" x="567" y="0"/>
+  <SubTexture name="part-gltk_dilie_00067" width="282" height="125" cocos2d_pX="141" cocos2d_pY="63" x="567" y="127"/>
+  <SubTexture name="part-gltk_dilie_00065" width="282" height="125" cocos2d_pX="141" cocos2d_pY="63" x="284" y="254"/>
+  <SubTexture name="part-gltk_dilie_00063" width="282" height="125" cocos2d_pX="141" cocos2d_pY="63" x="0" y="381"/>
+  <SubTexture name="part-gltk_dilie_00061" width="282" height="125" cocos2d_pX="141" cocos2d_pY="63" x="568" y="381"/>
+  <SubTexture name="part-gltk_dilie_00059" width="282" height="125" cocos2d_pX="141" cocos2d_pY="63" x="284" y="508"/>
+  <SubTexture name="part-gltk_dilie_00057" width="282" height="125" cocos2d_pX="141" cocos2d_pY="63" x="0" y="635"/>
+  <SubTexture name="part-gltk_dilie_00055" width="282" height="125" cocos2d_pX="141" cocos2d_pY="63" x="568" y="635"/>
+  <SubTexture name="part-gltk_dilie_00053" width="282" height="125" cocos2d_pX="141" cocos2d_pY="63" x="284" y="762"/>
+  <SubTexture name="part-gltk_dilie_00051" width="282" height="125" cocos2d_pX="141" cocos2d_pY="63" x="0" y="889"/>
+  <SubTexture name="part-gltk_dilie_00049" width="282" height="125" cocos2d_pX="141" cocos2d_pY="63" x="568" y="889"/>
+  <SubTexture name="part-gltk_dilie_00047" width="282" height="125" cocos2d_pX="141" cocos2d_pY="63" x="284" y="1016"/>
+  <SubTexture name="part-gltk_dilie_00045" width="282" height="125" cocos2d_pX="141" cocos2d_pY="63" x="568" y="1016"/>
+ </TextureAtlas>
+</skeleton>

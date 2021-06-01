@@ -1,0 +1,122 @@
+<skeleton name="nyhx_suolian_liekai" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="nyhx_suolian_suolian">
+   <b name="1" x="2.15" y="-34.95" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0">
+    <d name="part-nyhx_suolian_liekai1"/>
+   </b>
+   <b name="2" x="-8.1" y="18.75" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="1">
+    <d name="part-nyhx_suolian_liekai_guang1"/>
+    <d name="part-nyhx_suolian_liekai_guang2"/>
+    <d name="part-nyhx_suolian_liekai_guang3"/>
+    <d name="part-nyhx_suolian_liekai_guang4"/>
+    <d name="part-nyhx_suolian_liekai_guang5"/>
+    <d name="part-nyhx_suolian_liekai_guang6"/>
+    <d name="part-nyhx_suolian_liekai_guang7"/>
+    <d name="part-nyhx_suolian_liekai_guang8"/>
+    <d name="part-nyhx_suolian_liekai_guang9"/>
+    <d name="part-nyhx_suolian_liekai_guang10"/>
+    <d name="part-nyhx_suolian_liekai_guang11"/>
+    <d name="part-nyhx_suolian_liekai_guang12"/>
+    <d name="part-nyhx_suolian_liekai_guang13"/>
+    <d name="part-nyhx_suolian_liekai_guang14"/>
+    <d name="part-nyhx_suolian_liekai_guang15"/>
+    <d name="part-nyhx_suolian_liekai_guang16"/>
+    <d name="part-nyhx_suolian_liekai_guang17"/>
+    <d name="part-nyhx_suolian_liekai_guang18"/>
+    <d name="part-nyhx_suolian_liekai_guang19"/>
+    <d name="part-nyhx_suolian_liekai_guang20"/>
+    <d name="part-nyhx_suolian_liekai_guang21"/>
+    <d name="part-nyhx_suolian_liekai_guang22"/>
+    <d name="part-nyhx_suolian_liekai_guang23"/>
+    <d name="part-nyhx_suolian_liekai_guang24"/>
+    <d name="part-nyhx_suolian_liekai_guang25"/>
+    <d name="part-nyhx_suolian_liekai_guang26"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="nyhx_suolian_suolian">
+   <mov name="start" dr="2" to="0" drTW="10" lp="1" twE="2">
+    <b name="1" sc="1" dl="0">
+     <f x="2.15" y="-34.95" cocos2d_x="2.15" cocos2d_y="-34.95" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="2"/>
+    </b>
+   </mov>
+   <mov name="2" dr="79" to="0" drTW="79" lp="0" twE="NaN">
+    <b name="1" sc="1" dl="0">
+     <f x="2.15" y="-34.95" cocos2d_x="2.15" cocos2d_y="-34.95" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="3"/>
+     <f x="3" y="-36.65" cocos2d_x="3" cocos2d_y="-36.65" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="3"/>
+     <f x="2.15" y="-34.95" cocos2d_x="2.15" cocos2d_y="-34.95" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="3"/>
+     <f x="0.45" y="-34.1" cocos2d_x="0.45" cocos2d_y="-34.1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="3"/>
+     <f x="2.15" y="-34.95" cocos2d_x="2.15" cocos2d_y="-34.95" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="3"/>
+     <f x="3" y="-34.1" cocos2d_x="3" cocos2d_y="-34.1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="3"/>
+     <f x="1.3" y="-35.8" cocos2d_x="1.3" cocos2d_y="-35.8" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="3"/>
+     <f x="3" y="-34.95" cocos2d_x="3" cocos2d_y="-34.95" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="3"/>
+     <f x="2.15" y="-35.8" cocos2d_x="2.15" cocos2d_y="-35.8" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="3"/>
+     <f x="2.15" y="-34.95" cocos2d_x="2.15" cocos2d_y="-34.95" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="3"/>
+     <f x="3" y="-34.95" cocos2d_x="3" cocos2d_y="-34.95" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="3"/>
+     <f x="2.15" y="-34.95" cocos2d_x="2.15" cocos2d_y="-34.95" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="3"/>
+     <f x="2.15" y="-34.95" cocos2d_x="2.15" cocos2d_y="-34.95" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="3"/>
+     <f dr="40" dI="-1"/>
+    </b>
+    <b name="2" sc="1" dl="0">
+     <f x="-8.1" y="18.75" cocos2d_x="-8.1" cocos2d_y="18.75" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="1" dI="0" dr="3"/>
+     <f x="-6.4" y="16.25" cocos2d_x="-6.4" cocos2d_y="16.25" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="1" dI="1" dr="3"/>
+     <f x="-8.1" y="19.65" cocos2d_x="-8.1" cocos2d_y="19.65" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="1" dI="2" dr="3"/>
+     <f x="-11.5" y="21.35" cocos2d_x="-11.5" cocos2d_y="21.35" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="1" dI="3" dr="3"/>
+     <f x="-8.1" y="19.65" cocos2d_x="-8.1" cocos2d_y="19.65" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="1" dI="4" dr="3"/>
+     <f x="-6.4" y="21.35" cocos2d_x="-6.4" cocos2d_y="21.35" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="1" dI="5" dr="3"/>
+     <f x="-9.8" y="17.95" cocos2d_x="-9.8" cocos2d_y="17.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="1" dI="6" dr="3"/>
+     <f x="-6.4" y="19.65" cocos2d_x="-6.4" cocos2d_y="19.65" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="1" dI="7" dr="3"/>
+     <f x="-8.1" y="17.95" cocos2d_x="-8.1" cocos2d_y="17.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="1" dI="8" dr="3"/>
+     <f x="-8.1" y="19.65" cocos2d_x="-8.1" cocos2d_y="19.65" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="1" dI="9" dr="3"/>
+     <f x="-6.4" y="19.65" cocos2d_x="-6.4" cocos2d_y="19.65" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="1" dI="10" dr="3"/>
+     <f x="-8.1" y="19.65" cocos2d_x="-8.1" cocos2d_y="19.65" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="1" dI="11" dr="3"/>
+     <f x="-8.1" y="19.65" cocos2d_x="-8.1" cocos2d_y="19.65" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="1" dI="12" dr="3"/>
+     <f x="-8.1" y="19.65" cocos2d_x="-8.1" cocos2d_y="19.65" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="13" dr="3"/>
+     <f x="-8.1" y="19.65" cocos2d_x="-8.1" cocos2d_y="19.65" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="14" dr="3"/>
+     <f x="-8.1" y="19.65" cocos2d_x="-8.1" cocos2d_y="19.65" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="15" dr="3"/>
+     <f x="-8.1" y="19.65" cocos2d_x="-8.1" cocos2d_y="19.65" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="16" dr="3"/>
+     <f x="-8.1" y="19.65" cocos2d_x="-8.1" cocos2d_y="19.65" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="17" dr="3"/>
+     <f x="-8.1" y="19.65" cocos2d_x="-8.1" cocos2d_y="19.65" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="18" dr="3"/>
+     <f x="-8.1" y="19.65" cocos2d_x="-8.1" cocos2d_y="19.65" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="19" dr="3"/>
+     <f x="-8.1" y="19.65" cocos2d_x="-8.1" cocos2d_y="19.65" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="20" dr="3"/>
+     <f x="-8.1" y="19.65" cocos2d_x="-8.1" cocos2d_y="19.65" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="21" dr="3"/>
+     <f x="-8.1" y="19.65" cocos2d_x="-8.1" cocos2d_y="19.65" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="22" dr="3"/>
+     <f x="-8.1" y="19.65" cocos2d_x="-8.1" cocos2d_y="19.65" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="23" dr="3"/>
+     <f x="-8.1" y="19.65" cocos2d_x="-8.1" cocos2d_y="19.65" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="24" dr="3"/>
+     <f x="-8.1" y="19.65" cocos2d_x="-8.1" cocos2d_y="19.65" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="25" dr="3"/>
+     <f dr="1" dI="-1"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="nyhx_suolian_liekai" width="2048" height="2048">
+  <SubTexture name="part-nyhx_suolian_liekai_guang26" width="278" height="253" cocos2d_pX="138.55" cocos2d_pY="126.15" x="840" y="510"/>
+  <SubTexture name="part-nyhx_suolian_liekai_guang25" width="278" height="253" cocos2d_pX="138.55" cocos2d_pY="126.15" x="1680" y="765"/>
+  <SubTexture name="part-nyhx_suolian_liekai_guang24" width="278" height="253" cocos2d_pX="138.55" cocos2d_pY="126.15" x="0" y="880"/>
+  <SubTexture name="part-nyhx_suolian_liekai_guang23" width="278" height="253" cocos2d_pX="138.55" cocos2d_pY="126.15" x="1388" y="0"/>
+  <SubTexture name="part-nyhx_suolian_liekai_guang22" width="278" height="253" cocos2d_pX="138.55" cocos2d_pY="126.15" x="1400" y="510"/>
+  <SubTexture name="part-nyhx_suolian_liekai_guang21" width="278" height="253" cocos2d_pX="138.55" cocos2d_pY="126.15" x="548" y="255"/>
+  <SubTexture name="part-nyhx_suolian_liekai_guang20" width="278" height="253" cocos2d_pX="138.55" cocos2d_pY="126.15" x="1120" y="765"/>
+  <SubTexture name="part-nyhx_suolian_liekai_guang19" width="278" height="253" cocos2d_pX="138.55" cocos2d_pY="126.15" x="1108" y="255"/>
+  <SubTexture name="part-nyhx_suolian_liekai_guang18" width="278" height="253" cocos2d_pX="138.55" cocos2d_pY="126.15" x="0" y="625"/>
+  <SubTexture name="part-nyhx_suolian_liekai_guang17" width="278" height="253" cocos2d_pX="138.55" cocos2d_pY="126.15" x="1668" y="255"/>
+  <SubTexture name="part-nyhx_suolian_liekai_guang16" width="278" height="253" cocos2d_pX="138.55" cocos2d_pY="126.15" x="280" y="1020"/>
+  <SubTexture name="part-nyhx_suolian_liekai_guang15" width="278" height="253" cocos2d_pX="138.55" cocos2d_pY="126.15" x="280" y="510"/>
+  <SubTexture name="part-nyhx_suolian_liekai_guang14" width="278" height="253" cocos2d_pX="138.55" cocos2d_pY="126.15" x="560" y="765"/>
+  <SubTexture name="part-nyhx_suolian_liekai_guang13" width="278" height="253" cocos2d_pX="138.55" cocos2d_pY="126.15" x="548" y="0"/>
+  <SubTexture name="part-nyhx_suolian_liekai_guang12" width="278" height="253" cocos2d_pX="138.55" cocos2d_pY="126.15" x="828" y="0"/>
+  <SubTexture name="part-nyhx_suolian_liekai_guang11" width="278" height="253" cocos2d_pX="138.55" cocos2d_pY="126.15" x="1108" y="0"/>
+  <SubTexture name="part-nyhx_suolian_liekai_guang10" width="278" height="253" cocos2d_pX="138.55" cocos2d_pY="126.15" x="1668" y="0"/>
+  <SubTexture name="part-nyhx_suolian_liekai_guang9" width="278" height="253" cocos2d_pX="138.55" cocos2d_pY="126.15" x="828" y="255"/>
+  <SubTexture name="part-nyhx_suolian_liekai_guang8" width="278" height="253" cocos2d_pX="138.55" cocos2d_pY="126.15" x="1388" y="255"/>
+  <SubTexture name="part-nyhx_suolian_liekai_guang7" width="278" height="253" cocos2d_pX="138.55" cocos2d_pY="126.15" x="0" y="370"/>
+  <SubTexture name="part-nyhx_suolian_liekai_guang6" width="278" height="253" cocos2d_pX="138.55" cocos2d_pY="126.15" x="560" y="510"/>
+  <SubTexture name="part-nyhx_suolian_liekai_guang5" width="278" height="253" cocos2d_pX="138.55" cocos2d_pY="126.15" x="1120" y="510"/>
+  <SubTexture name="part-nyhx_suolian_liekai_guang4" width="278" height="253" cocos2d_pX="138.55" cocos2d_pY="126.15" x="1680" y="510"/>
+  <SubTexture name="part-nyhx_suolian_liekai_guang3" width="278" height="253" cocos2d_pX="138.55" cocos2d_pY="126.15" x="280" y="765"/>
+  <SubTexture name="part-nyhx_suolian_liekai_guang2" width="278" height="253" cocos2d_pX="138.55" cocos2d_pY="126.15" x="840" y="765"/>
+  <SubTexture name="part-nyhx_suolian_liekai_guang1" width="278" height="253" cocos2d_pX="138.55" cocos2d_pY="126.15" x="1400" y="765"/>
+  <SubTexture name="part-nyhx_suolian_liekai1" width="546" height="368" cocos2d_pX="273" cocos2d_pY="184" x="0" y="0"/>
+ </TextureAtlas>
+</skeleton>

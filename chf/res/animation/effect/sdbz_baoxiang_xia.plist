@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>sdbz_baoxiang_xia_mc.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,2},{236,249}}</string>
+                <key>offset</key>
+                <string>{1,5}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{2,0},{236,249}}</string>
+                <key>sourceSize</key>
+                <string>{238,259}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>2</integer>
+            <key>realTextureFileName</key>
+            <string>sdbz_baoxiang_xia.pvr.ccz</string>
+            <key>size</key>
+            <string>{256,256}</string>
+            <key>smartupdate</key>
+            <string>$TexturePacker:SmartUpdate:f241c4590c1770666d02458145bc8eac:1/1$</string>
+            <key>textureFileName</key>
+            <string>sdbz_baoxiang_xia.pvr.ccz</string>
+        </dict>
+    </dict>
+</plist>

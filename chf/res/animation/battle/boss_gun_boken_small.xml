@@ -1,0 +1,129 @@
+<skeleton name="boss_paota_suipian1" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="boss_gun_boken_small">
+   <b name="1" x="3.4" y="10.7" kX="180" kY="0" cX="2" cY="2" pX="0" pY="0" z="0">
+    <d name="part-paota_suipian_1_1"/>
+    <d name="part-paota_suipian_1_2"/>
+    <d name="part-paota_suipian_1_3"/>
+    <d name="part-paota_suipian_1_4"/>
+    <d name="part-paota_suipian_1_5"/>
+    <d name="part-paota_suipian_1_6"/>
+    <d name="part-paota_suipian_1_7"/>
+    <d name="part-paota_suipian_1_8"/>
+    <d name="part-paota_suipian_1_9"/>
+    <d name="part-paota_suipian_1_10"/>
+    <d name="part-paota_suipian_1_11"/>
+    <d name="part-paota_suipian_1_12"/>
+    <d name="part-paota_suipian_1_13"/>
+    <d name="part-paota_suipian_1_14"/>
+    <d name="part-paota_suipian_1_15"/>
+    <d name="part-paota_suipian_1_16"/>
+    <d name="part-paota_suipian_1_17"/>
+    <d name="part-paota_suipian_1_18"/>
+    <d name="part-paota_suipian_1_19"/>
+   </b>
+   <b name="3" x="-3.15" y="-15" kX="-163.77" kY="16.23" cX="2" cY="2" pX="0" pY="0" z="1">
+    <d name="part-baozha_1_1"/>
+    <d name="part-baozha_1_2"/>
+    <d name="part-baozha_1_3"/>
+    <d name="part-baozha_1_4"/>
+    <d name="part-baozha_1_5"/>
+    <d name="part-baozha_1_6"/>
+    <d name="part-baozha_1_7"/>
+    <d name="part-baozha_1_8"/>
+    <d name="part-baozha_1_9"/>
+    <d name="part-baozha_1_10"/>
+    <d name="part-baozha_1_11"/>
+    <d name="part-baozha_1_12"/>
+    <d name="part-baozha_1_13"/>
+    <d name="part-baozha_1_14"/>
+    <d name="part-baozha_1_15"/>
+    <d name="part-baozha_1_16"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="boss_gun_boken_small">
+   <mov name="start" dr="58" to="6" drTW="58" lp="0" twE="NaN">
+    <b name="1" sc="1" dl="0">
+     <f x="3.4" y="10.7" cocos2d_x="3.4" cocos2d_y="10.7" kX="180" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="0" dr="3"/>
+     <f x="8.1" y="30.7" cocos2d_x="8.1" cocos2d_y="30.7" kX="180" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="1" dr="3"/>
+     <f x="7.9" y="35.7" cocos2d_x="7.9" cocos2d_y="35.7" kX="180" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="2" dr="3"/>
+     <f x="7.3" y="39.9" cocos2d_x="7.3" cocos2d_y="39.9" kX="180" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="3" dr="3"/>
+     <f x="7.9" y="42.1" cocos2d_x="7.9" cocos2d_y="42.1" kX="180" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="4" dr="3"/>
+     <f x="7.8" y="45.7" cocos2d_x="7.8" cocos2d_y="45.7" kX="180" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="5" dr="3"/>
+     <f x="7.9" y="48.4" cocos2d_x="7.9" cocos2d_y="48.4" kX="180" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="6" dr="3"/>
+     <f x="7.7" y="51" cocos2d_x="7.7" cocos2d_y="51" kX="180" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="7" dr="3"/>
+     <f x="7.5" y="54.1" cocos2d_x="7.5" cocos2d_y="54.1" kX="180" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="8" dr="3"/>
+     <f x="7.3" y="56.5" cocos2d_x="7.3" cocos2d_y="56.5" kX="180" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="9" dr="3"/>
+     <f x="7.2" y="58.5" cocos2d_x="7.2" cocos2d_y="58.5" kX="180" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="10" dr="3"/>
+     <f x="7.5" y="60.9" cocos2d_x="7.5" cocos2d_y="60.9" kX="180" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="11" dr="3"/>
+     <f x="7.3" y="61.5" cocos2d_x="7.3" cocos2d_y="61.5" kX="180" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="12" dr="3"/>
+     <f x="7.9" y="64.2" cocos2d_x="7.9" cocos2d_y="64.2" kX="180" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="13" dr="3"/>
+     <f x="8" y="66.6" cocos2d_x="8" cocos2d_y="66.6" kX="180" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="14" dr="3"/>
+     <f x="8.8" y="68.2" cocos2d_x="8.8" cocos2d_y="68.2" kX="180" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="15" dr="3"/>
+     <f x="8.4" y="71.4" cocos2d_x="8.4" cocos2d_y="71.4" kX="180" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="16" dr="3"/>
+     <f x="8.8" y="73.7" cocos2d_x="8.8" cocos2d_y="73.7" kX="180" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="17" dr="3"/>
+     <f x="9.3" y="75.8" cocos2d_x="9.3" cocos2d_y="75.8" kX="180" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="18" dr="3"/>
+     <f dr="1" dI="-1"/>
+    </b>
+    <b name="3" sc="1" dl="0">
+     <f x="-3.15" y="-15" cocos2d_x="-3.15" cocos2d_y="-15" kX="-163.77" kY="16.23" cX="2" cY="2" pX="0" pY="0" z="1" dI="0" dr="2"/>
+     <f x="-3.1" y="-15" cocos2d_x="-3.1" cocos2d_y="-15" kX="-163.77" kY="16.23" cX="2" cY="2" pX="0" pY="0" z="1" dI="1" dr="2"/>
+     <f x="-3.1" y="-15.05" cocos2d_x="-3" cocos2d_y="-15" kX="-163.77" kY="16.23" cX="2" cY="2" pX="0" pY="0" z="1" dI="2" dr="2"/>
+     <f x="-3.1" y="-15.05" cocos2d_x="-3" cocos2d_y="-15" kX="-163.77" kY="16.23" cX="2" cY="2" pX="0" pY="0" z="1" dI="3" dr="2"/>
+     <f x="-3.1" y="-15.05" cocos2d_x="-3" cocos2d_y="-15" kX="-163.77" kY="16.23" cX="2" cY="2" pX="0" pY="0" z="1" dI="4" dr="2"/>
+     <f x="-2.95" y="-14.95" cocos2d_x="-2.95" cocos2d_y="-14.95" kX="-163.77" kY="16.23" cX="2" cY="2" pX="0" pY="0" z="1" dI="5" dr="2"/>
+     <f x="-3.1" y="-15.05" cocos2d_x="-3" cocos2d_y="-15" kX="-163.77" kY="16.23" cX="2" cY="2" pX="0" pY="0" z="1" dI="6" dr="2"/>
+     <f x="-3.1" y="-15" cocos2d_x="-3.1" cocos2d_y="-15" kX="-163.77" kY="16.23" cX="2" cY="2" pX="0" pY="0" z="1" dI="7" dr="2"/>
+     <f x="-3.1" y="-15.05" cocos2d_x="-3" cocos2d_y="-15" kX="-163.77" kY="16.23" cX="2" cY="2" pX="0" pY="0" z="1" dI="8" dr="2"/>
+     <f x="-3.1" y="-15" cocos2d_x="-3.1" cocos2d_y="-15" kX="-163.77" kY="16.23" cX="2" cY="2" pX="0" pY="0" z="1" dI="9" dr="2"/>
+     <f x="-3.1" y="-15.05" cocos2d_x="-3" cocos2d_y="-15" kX="-163.77" kY="16.23" cX="2" cY="2" pX="0" pY="0" z="1" dI="10" dr="2"/>
+     <f x="-3.1" y="-15.05" cocos2d_x="-3" cocos2d_y="-15" kX="-163.77" kY="16.23" cX="2" cY="2" pX="0" pY="0" z="1" dI="11" dr="2"/>
+     <f x="-3.1" y="-15" cocos2d_x="-3.1" cocos2d_y="-15" kX="-163.77" kY="16.23" cX="2" cY="2" pX="0" pY="0" z="1" dI="12" dr="2"/>
+     <f x="-3.1" y="-15" cocos2d_x="-3.1" cocos2d_y="-15" kX="-163.77" kY="16.23" cX="2" cY="2" pX="0" pY="0" z="1" dI="13" dr="2"/>
+     <f x="-3.1" y="-15.05" cocos2d_x="-3" cocos2d_y="-15" kX="-163.77" kY="16.23" cX="2" cY="2" pX="0" pY="0" z="1" dI="14" dr="2"/>
+     <f x="-3.1" y="-15.05" cocos2d_x="-3" cocos2d_y="-15" kX="-163.77" kY="16.23" cX="2" cY="2" pX="0" pY="0" z="1" dI="15" dr="2"/>
+     <f dr="26" dI="-1"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="boss_paota_suipian1" width="512" height="512">
+  <SubTexture name="part-baozha_1_16" width="45" height="46" cocos2d_pX="25.35" cocos2d_pY="22.55" x="176" y="258"/>
+  <SubTexture name="part-baozha_1_15" width="37" height="42" cocos2d_pX="22.85" cocos2d_pY="19.65" x="399" y="196"/>
+  <SubTexture name="part-baozha_1_14" width="48" height="52" cocos2d_pX="28.2" cocos2d_pY="21.95" x="429" y="254"/>
+  <SubTexture name="part-baozha_1_13" width="50" height="63" cocos2d_pX="30.15" cocos2d_pY="27.45" x="124" y="196"/>
+  <SubTexture name="part-baozha_1_12" width="53" height="62" cocos2d_pX="31.95" cocos2d_pY="26.75" x="456" y="0"/>
+  <SubTexture name="part-baozha_1_11" width="75" height="64" cocos2d_pX="44" cocos2d_pY="26.05" x="78" y="0"/>
+  <SubTexture name="part-baozha_1_10" width="73" height="66" cocos2d_pX="42.6" cocos2d_pY="26.2" x="155" y="0"/>
+  <SubTexture name="part-baozha_1_9" width="72" height="61" cocos2d_pX="42.3" cocos2d_pY="25.9" x="372" y="65"/>
+  <SubTexture name="part-baozha_1_8" width="71" height="64" cocos2d_pX="41.2" cocos2d_pY="25.3" x="230" y="65"/>
+  <SubTexture name="part-baozha_1_7" width="69" height="64" cocos2d_pX="40.05" cocos2d_pY="24.3" x="72" y="66"/>
+  <SubTexture name="part-baozha_1_6" width="67" height="67" cocos2d_pX="39.1" cocos2d_pY="23.35" x="303" y="65"/>
+  <SubTexture name="part-baozha_1_5" width="65" height="66" cocos2d_pX="37.9" cocos2d_pY="24.55" x="372" y="128"/>
+  <SubTexture name="part-baozha_1_4" width="63" height="63" cocos2d_pX="37.05" cocos2d_pY="20.8" x="446" y="126"/>
+  <SubTexture name="part-baozha_1_3" width="61" height="56" cocos2d_pX="35.7" cocos2d_pY="19.7" x="61" y="196"/>
+  <SubTexture name="part-baozha_1_2" width="55" height="53" cocos2d_pX="28.75" cocos2d_pY="20.6" x="260" y="197"/>
+  <SubTexture name="part-baozha_1_1" width="51" height="46" cocos2d_pX="25.2" cocos2d_pY="22.9" x="0" y="258"/>
+  <SubTexture name="part-paota_suipian_1_19" width="76" height="64" cocos2d_pX="37.9" cocos2d_pY="31.65" x="0" y="0"/>
+  <SubTexture name="part-paota_suipian_1_18" width="75" height="63" cocos2d_pX="37.15" cocos2d_pY="31.5" x="230" y="0"/>
+  <SubTexture name="part-paota_suipian_1_17" width="73" height="63" cocos2d_pX="36.4" cocos2d_pY="31.2" x="307" y="0"/>
+  <SubTexture name="part-paota_suipian_1_16" width="72" height="63" cocos2d_pX="35.65" cocos2d_pY="31.4" x="382" y="0"/>
+  <SubTexture name="part-paota_suipian_1_15" width="70" height="63" cocos2d_pX="34.7" cocos2d_pY="31.2" x="0" y="66"/>
+  <SubTexture name="part-paota_suipian_1_14" width="69" height="62" cocos2d_pX="34.15" cocos2d_pY="31" x="143" y="68"/>
+  <SubTexture name="part-paota_suipian_1_13" width="67" height="62" cocos2d_pX="33.4" cocos2d_pY="30.75" x="0" y="131"/>
+  <SubTexture name="part-paota_suipian_1_12" width="67" height="62" cocos2d_pX="33.2" cocos2d_pY="30.85" x="214" y="131"/>
+  <SubTexture name="part-paota_suipian_1_11" width="65" height="62" cocos2d_pX="32.25" cocos2d_pY="30.65" x="69" y="132"/>
+  <SubTexture name="part-paota_suipian_1_10" width="63" height="62" cocos2d_pX="31.3" cocos2d_pY="30.65" x="136" y="132"/>
+  <SubTexture name="part-paota_suipian_1_9" width="61" height="61" cocos2d_pX="30.4" cocos2d_pY="30.4" x="283" y="134"/>
+  <SubTexture name="part-paota_suipian_1_8" width="61" height="61" cocos2d_pX="30.15" cocos2d_pY="30.45" x="439" y="191"/>
+  <SubTexture name="part-paota_suipian_1_7" width="59" height="61" cocos2d_pX="29.1" cocos2d_pY="30.15" x="0" y="195"/>
+  <SubTexture name="part-paota_suipian_1_6" width="57" height="61" cocos2d_pX="28.15" cocos2d_pY="30.15" x="201" y="195"/>
+  <SubTexture name="part-paota_suipian_1_5" width="54" height="60" cocos2d_pX="26.6" cocos2d_pY="29.9" x="456" y="64"/>
+  <SubTexture name="part-paota_suipian_1_4" width="51" height="60" cocos2d_pX="25.4" cocos2d_pY="29.7" x="346" y="196"/>
+  <SubTexture name="part-paota_suipian_1_3" width="49" height="59" cocos2d_pX="24.1" cocos2d_pY="29.15" x="260" y="252"/>
+  <SubTexture name="part-paota_suipian_1_2" width="45" height="57" cocos2d_pX="22.45" cocos2d_pY="28.2" x="61" y="254"/>
+  <SubTexture name="part-paota_suipian_1_1" width="28" height="41" cocos2d_pX="13.85" cocos2d_pY="20.05" x="399" y="240"/>
+ </TextureAtlas>
+</skeleton>

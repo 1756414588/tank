@@ -1,0 +1,68 @@
+<skeleton name="baohu" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="ui_world_protect">
+   <b name="2" x="0.4" y="-17.55" kX="0" kY="0" cX="0.75" cY="0.75" pX="0" pY="0" z="0">
+    <d name="part-baohuyyy1"/>
+   </b>
+   <b name="1" x="-0.2" y="-3.35" kX="0" kY="0" cX="1.5" cY="1.5" pX="0" pY="0" z="1">
+    <d name="part-baohuxxx1"/>
+    <d name="part-baohuxxx2"/>
+    <d name="part-baohuxxx3"/>
+    <d name="part-baohuxxx4"/>
+    <d name="part-baohuxxx5"/>
+    <d name="part-baohuxxx6"/>
+    <d name="part-baohuxxx7"/>
+    <d name="part-baohuxxx8"/>
+    <d name="part-baohuxxx9"/>
+    <d name="part-baohuxxx10"/>
+    <d name="part-baohuxxx11"/>
+    <d name="part-baohuxxx12"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="ui_world_protect">
+   <mov name="start" dr="353" to="6" drTW="353" lp="1" twE="NaN">
+    <b name="2" sc="1" dl="0">
+     <f x="0.4" y="-17.55" cocos2d_x="0.4" cocos2d_y="-17.55" kX="0" kY="0" cX="0.75" cY="0.75" pX="0" pY="0" z="0" dI="0" dr="45"/>
+     <f x="0.4" y="-17.55" cocos2d_x="0.4" cocos2d_y="-17.55" kX="0" kY="0" cX="0.75" cY="0.75" pX="0" pY="0" z="0" dI="0" twE="0" dr="50"/>
+     <f x="0.3" y="-17.55" cocos2d_x="0.4" cocos2d_y="-17.55" kX="0" kY="0" cX="0.75" cY="0.75" pX="0" pY="0" z="0" dI="0" twE="0" dr="51">
+      <colorTransform a="0" r="0" g="0" b="0" aM="28" rM="100" gM="100" bM="100"/>
+     </f>
+     <f x="0.4" y="-17.55" cocos2d_x="0.4" cocos2d_y="-17.55" kX="0" kY="0" cX="0.75" cY="0.75" pX="0" pY="0" z="0" dI="0" dr="207"/>
+    </b>
+    <b name="1" sc="1" dl="0">
+     <f dr="5" dI="-1"/>
+     <f x="-0.2" y="-3.35" cocos2d_x="-0.2" cocos2d_y="-3.3" kX="0" kY="0" cX="1.5" cY="1.5" pX="0" pY="0" z="1" dI="0" dr="10"/>
+     <f x="-0.2" y="-3.35" cocos2d_x="-0.2" cocos2d_y="-3.3" kX="0" kY="0" cX="1.5" cY="1.5" pX="0" pY="0" z="1" dI="1" dr="10"/>
+     <f x="-0.2" y="-3.35" cocos2d_x="-0.2" cocos2d_y="-3.3" kX="0" kY="0" cX="1.5" cY="1.5" pX="0" pY="0" z="1" dI="2" dr="10"/>
+     <f x="-0.2" y="-3.35" cocos2d_x="-0.2" cocos2d_y="-3.3" kX="0" kY="0" cX="1.5" cY="1.5" pX="0" pY="0" z="1" dI="3" dr="10"/>
+     <f x="-0.2" y="-3.35" cocos2d_x="-0.2" cocos2d_y="-3.3" kX="0" kY="0" cX="1.5" cY="1.5" pX="0" pY="0" z="1" dI="4" dr="10"/>
+     <f x="-0.2" y="-3.35" cocos2d_x="-0.2" cocos2d_y="-3.3" kX="0" kY="0" cX="1.5" cY="1.5" pX="0" pY="0" z="1" dI="5" dr="10"/>
+     <f x="-0.2" y="-3.35" cocos2d_x="-0.2" cocos2d_y="-3.3" kX="0" kY="0" cX="1.5" cY="1.5" pX="0" pY="0" z="1" dI="6" dr="10"/>
+     <f x="-0.2" y="-3.35" cocos2d_x="-0.2" cocos2d_y="-3.3" kX="0" kY="0" cX="1.5" cY="1.5" pX="0" pY="0" z="1" dI="7" dr="10"/>
+     <f x="-0.2" y="-3.35" cocos2d_x="-0.2" cocos2d_y="-3.3" kX="0" kY="0" cX="1.5" cY="1.5" pX="0" pY="0" z="1" dI="8" dr="10"/>
+     <f x="-0.2" y="-3.35" cocos2d_x="-0.2" cocos2d_y="-3.3" kX="0" kY="0" cX="1.5" cY="1.5" pX="0" pY="0" z="1" dI="9" dr="10"/>
+     <f x="-0.2" y="-3.35" cocos2d_x="-0.2" cocos2d_y="-3.3" kX="0" kY="0" cX="1.5" cY="1.5" pX="0" pY="0" z="1" dI="10" dr="10"/>
+     <f x="-0.2" y="-3.35" cocos2d_x="-0.2" cocos2d_y="-3.3" kX="0" kY="0" cX="1.5" cY="1.5" pX="0" pY="0" z="1" dI="11" dr="10"/>
+     <f dr="228" dI="-1"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="baohu" width="512" height="512">
+  <SubTexture name="part-baohuxxx12" width="58" height="65" cocos2d_pX="61.55" cocos2d_pY="49.65" x="447" y="204"/>
+  <SubTexture name="part-baohuxxx11" width="78" height="88" cocos2d_pX="61.55" cocos2d_pY="49.65" x="120" y="223"/>
+  <SubTexture name="part-baohuxxx10" width="111" height="99" cocos2d_pX="61.55" cocos2d_pY="49.65" x="120" y="122"/>
+  <SubTexture name="part-baohuxxx9" width="118" height="100" cocos2d_pX="61.55" cocos2d_pY="49.65" x="0" y="122"/>
+  <SubTexture name="part-baohuxxx8" width="124" height="100" cocos2d_pX="61.55" cocos2d_pY="49.65" x="382" y="102"/>
+  <SubTexture name="part-baohuxxx7" width="124" height="100" cocos2d_pX="61.55" cocos2d_pY="49.65" x="256" y="102"/>
+  <SubTexture name="part-baohuxxx6" width="124" height="100" cocos2d_pX="61.55" cocos2d_pY="49.65" x="256" y="0"/>
+  <SubTexture name="part-baohuxxx5" width="124" height="100" cocos2d_pX="61.55" cocos2d_pY="49.65" x="382" y="0"/>
+  <SubTexture name="part-baohuxxx4" width="112" height="95" cocos2d_pX="50.3" cocos2d_pY="45.3" x="233" y="204"/>
+  <SubTexture name="part-baohuxxx3" width="98" height="86" cocos2d_pX="36.25" cocos2d_pY="36.65" x="347" y="204"/>
+  <SubTexture name="part-baohuxxx2" width="84" height="75" cocos2d_pX="21.65" cocos2d_pY="24.75" x="0" y="224"/>
+  <SubTexture name="part-baohuxxx1" width="69" height="65" cocos2d_pX="7.25" cocos2d_pY="14.6" x="347" y="292"/>
+  <SubTexture name="part-baohuyyy1" width="254" height="120" cocos2d_pX="126" cocos2d_pY="80" x="0" y="0"/>
+ </TextureAtlas>
+</skeleton>

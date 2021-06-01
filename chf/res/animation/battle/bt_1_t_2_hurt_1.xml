@@ -1,0 +1,37 @@
+<skeleton name="b_zhanche_huohua" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="bt_1_t_2_hurt_1">
+   <b name="2" x="0.2" y="-7.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0">
+    <d name="part-b_zhanche_huohua01"/>
+    <d name="part-b_zhanche_huohua02"/>
+    <d name="part-b_zhanche_huohua03"/>
+    <d name="part-b_zhanche_huohua04"/>
+    <d name="part-b_zhanche_huohua05"/>
+    <d name="part-b_zhanche_huohua06"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="bt_1_t_2_hurt_1">
+   <mov name="start" dr="13" to="0" drTW="13" lp="0" twE="NaN">
+    <b name="2" sc="1" dl="0">
+     <f x="0.2" y="-7.5" cocos2d_x="0.2" cocos2d_y="-7.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="2"/>
+     <f x="0.2" y="-7.5" cocos2d_x="0.2" cocos2d_y="-7.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="1" dr="2"/>
+     <f x="0.2" y="-7.5" cocos2d_x="0.2" cocos2d_y="-7.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="2" dr="2"/>
+     <f x="0.2" y="-7.5" cocos2d_x="0.2" cocos2d_y="-7.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="3" dr="2"/>
+     <f x="0.2" y="-7.5" cocos2d_x="0.2" cocos2d_y="-7.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="4" dr="2"/>
+     <f x="0.2" y="-7.5" cocos2d_x="0.2" cocos2d_y="-7.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="5" dr="2"/>
+     <f dr="1" dI="-1"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="b_zhanche_huohua" width="1024" height="1024">
+  <SubTexture name="part-b_zhanche_huohua06" width="267" height="267" cocos2d_pX="133.5" cocos2d_pY="133.5" x="269" y="0"/>
+  <SubTexture name="part-b_zhanche_huohua05" width="267" height="267" cocos2d_pX="133.5" cocos2d_pY="133.5" x="538" y="269"/>
+  <SubTexture name="part-b_zhanche_huohua04" width="267" height="267" cocos2d_pX="133.5" cocos2d_pY="133.5" x="269" y="269"/>
+  <SubTexture name="part-b_zhanche_huohua03" width="267" height="267" cocos2d_pX="133.5" cocos2d_pY="133.5" x="0" y="0"/>
+  <SubTexture name="part-b_zhanche_huohua02" width="267" height="267" cocos2d_pX="133.5" cocos2d_pY="133.5" x="538" y="0"/>
+  <SubTexture name="part-b_zhanche_huohua01" width="267" height="267" cocos2d_pX="133.5" cocos2d_pY="133.5" x="0" y="269"/>
+ </TextureAtlas>
+</skeleton>

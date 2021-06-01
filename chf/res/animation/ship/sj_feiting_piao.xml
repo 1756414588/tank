@@ -1,0 +1,66 @@
+<skeleton name="sj_feiting_piao" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="sj_feiting_piao">
+   <b name="ytu" x="19.1" y="28.05" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0">
+    <d name="part-sj_feiting_diying"/>
+   </b>
+   <b name="frs" x="21.15" y="-98.95" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1">
+    <d name="part-sj_feiting"/>
+   </b>
+   <b name="rer" x="-272.95" y="8.6" kX="0" kY="0" cX="0.8" cY="0.8" pX="0" pY="0" z="2">
+    <d name="part-wuqix2"/>
+   </b>
+   <b name="rer2" x="-195.75" y="-103.1" kX="0" kY="0" cX="0.71" cY="0.71" pX="0" pY="0" z="3">
+    <d name="part-wuqix2"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="sj_feiting_piao">
+   <mov name="start" dr="361" to="0" drTW="361" lp="1" twE="NaN">
+    <b name="ytu" sc="1" dl="0">
+     <f x="19.1" y="28.05" cocos2d_x="19.1" cocos2d_y="28.05" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" twE="0" dr="40"/>
+     <f x="19.1" y="28.05" cocos2d_x="19.1" cocos2d_y="28.05" kX="0" kY="0" cX="0.96" cY="0.96" pX="0" pY="0" z="0" dI="0" twE="0" dr="140"/>
+     <f x="19.1" y="28.05" cocos2d_x="19.1" cocos2d_y="28.05" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" twE="0" dr="89"/>
+     <f x="19.1" y="28.05" cocos2d_x="19.1" cocos2d_y="28.05" kX="0" kY="0" cX="0.96" cY="0.96" pX="0" pY="0" z="0" dI="0" twE="0" dr="91"/>
+     <f x="19.1" y="28.05" cocos2d_x="19.1" cocos2d_y="28.05" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="1"/>
+    </b>
+    <b name="frs" sc="1" dl="0">
+     <f x="21.15" y="-98.95" cocos2d_x="21.15" cocos2d_y="-98.95" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1" dI="0" twE="0" dr="89"/>
+     <f x="21.15" y="-86.3" cocos2d_x="21.15" cocos2d_y="-86.3" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1" dI="0" twE="0" dr="91"/>
+     <f x="21.15" y="-98.95" cocos2d_x="21.15" cocos2d_y="-98.95" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1" dI="0" twE="0" dr="89"/>
+     <f x="21.15" y="-86.3" cocos2d_x="21.15" cocos2d_y="-86.3" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1" dI="0" twE="0" dr="91"/>
+     <f x="21.15" y="-98.95" cocos2d_x="21.15" cocos2d_y="-98.95" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1" dI="0" dr="1"/>
+    </b>
+    <b name="rer" sc="1" dl="0">
+     <f x="-272.95" y="8.6" cocos2d_x="-272.95" cocos2d_y="8.6" kX="0" kY="0" cX="0.8" cY="0.8" pX="0" pY="0" z="2" dI="0" twE="0" dr="47">
+      <colorTransform a="0" r="0" g="0" b="0" aM="14" rM="100" gM="100" bM="100"/>
+     </f>
+     <f x="-161.7" y="-24" cocos2d_x="-161.7" cocos2d_y="-24" kX="0" kY="0" cX="0.8" cY="0.8" pX="0" pY="0" z="2" dI="0" twE="0" dr="125"/>
+     <f x="186.8" y="-149.5" cocos2d_x="186.8" cocos2d_y="-149.5" kX="0" kY="0" cX="0.64" cY="0.64" pX="0" pY="0" z="2" dI="0" twE="0" dr="40"/>
+     <f x="264.1" y="-171.1" cocos2d_x="264.1" cocos2d_y="-171.1" kX="0" kY="0" cX="0.64" cY="0.64" pX="0" pY="0" z="2" dI="0" dr="1">
+      <colorTransform a="0" r="0" g="0" b="0" aM="14" rM="100" gM="100" bM="100"/>
+     </f>
+     <f dr="148" dI="-1"/>
+    </b>
+    <b name="rer2" sc="1" dl="0">
+     <f dr="81" dI="-1"/>
+     <f x="-195.75" y="-103.1" cocos2d_x="-195.75" cocos2d_y="-103.1" kX="0" kY="0" cX="0.71" cY="0.71" pX="0" pY="0" z="3" dI="0" twE="0" dr="47">
+      <colorTransform a="0" r="0" g="0" b="0" aM="14" rM="100" gM="100" bM="100"/>
+     </f>
+     <f x="-110.35" y="-136.25" cocos2d_x="-110.35" cocos2d_y="-136.25" kX="0" kY="0" cX="0.68" cY="0.68" pX="0" pY="0" z="2" dI="0" twE="0" dr="125"/>
+     <f x="195.65" y="-212.55" cocos2d_x="195.65" cocos2d_y="-212.55" kX="0" kY="0" cX="0.48" cY="0.48" pX="0" pY="0" z="2" dI="0" twE="0" dr="40"/>
+     <f x="272.95" y="-226.95" cocos2d_x="272.95" cocos2d_y="-226.95" kX="0" kY="0" cX="0.48" cY="0.48" pX="0" pY="0" z="2" dI="0" dr="1">
+      <colorTransform a="0" r="0" g="0" b="0" aM="14" rM="100" gM="100" bM="100"/>
+     </f>
+     <f dr="67" dI="-1"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="sj_feiting_piao" width="512" height="1024">
+  <SubTexture name="part-wuqix2" width="206" height="122" cocos2d_pX="102.5" cocos2d_pY="60.65" x="0" y="602"/>
+  <SubTexture name="part-sj_feiting" width="420" height="326" cocos2d_pX="235.35" cocos2d_pY="146.05" x="0" y="0"/>
+  <SubTexture name="part-sj_feiting_diying" width="325" height="272" cocos2d_pX="164.05" cocos2d_pY="149.85" x="0" y="328"/>
+ </TextureAtlas>
+</skeleton>

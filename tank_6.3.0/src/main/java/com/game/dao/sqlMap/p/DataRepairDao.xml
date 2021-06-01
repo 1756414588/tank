@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="ReissueItem">
+
+    <!--插入热更记录-->
+    <insert id="insertHotfix" parameterType="com.game.common.ServerHotfix" useGeneratedKeys="true" keyProperty="keyId">
+        insert into
+        s_server_hotfix(hotfixId,className,hotfixTime,result,resultInfo)
+        values(#{hotfixId},#{className},#{hotfixTime},#{result},#{resultInfo})
+    </insert>
+
+    <!-- 角色ID 全服唯一化处理-->
+    <resultMap id="selectLordIdsMap" type="RedefinedLordId">
+        <id column="oldId" property="oldId" />
+    </resultMap>
+
+    <select id="selectLordIds" resultMap="selectLordIdsMap">
+        SELECT uid, ptNo, serverId, oldId, newId from p_lord_id;
+    </select>
+
+    <!-- 成长基金BUG-->
+    <select id="selectInvestNew" parameterType="list" resultType="InvestNew">
+        SELECT uid, serverId, lordId, nick, needSub, flag, alreadySub, remain from p_invest_new;
+    </select>
+
+    <update id="updateInvestNew" parameterType="InvestNew">
+        update p_invest_new set flag=#{flag}, alreadySub=#{alreadySub}, remain=#{remain} where uid=#{uid};
+    </update>
+
+
+
+    <select id="selectAllRsi" parameterType="list" resultType="ReissueItem">
+        SELECT serverId, lordId, nick, tank25, tank99, prop200, gold, backGold from p_reissue_item;
+    </select>
+
+    <update id="updateRsiBackGold" parameterType="ReissueItem">
+        update p_reissue_item set backGold=#{backGold} where serverId=#{serverId} and lordId=#{lordId} and nick=#{nick};
+    </update>
+
+    <!-- 恢复玩家邮件 -->
+    <select id="selectMailData" resultType="DataNew">
+        select mail,lordId from p_data_bak ;
+    </select>
+
+    <select id="selectMailDelt" parameterType="Integer" resultType="com.game.domain.p.repair.MailDelt" >
+        SELECT serverId, lordId, getKeyId, createDate from p_mail_delt where serverId=#{serverId};
+    </select>
+
+
+    <!-- 恢复玩家邮件 -->
+    <select id="loadDataBak" parameterType="Map" resultType="DataNew">
+        select mail,lordId from p_data_bak where lordId > #{curIndex} order by lordId limit 0,#{count}
+    </select>
+</mapper>

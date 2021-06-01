@@ -1,0 +1,48 @@
+<skeleton name="zhanche_saotu" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="bt_t_2_hurt">
+   <b name="bgfdshgfd0" x="-0.1" y="0" kX="-90.19" kY="-89.75" cX="0.32" cY="0.73" pX="0" pY="0" z="0">
+    <d name="part-jiqiang_saotu1"/>
+    <d name="part-jiqiang_saotu2"/>
+    <d name="part-jiqiang_saotu3"/>
+    <d name="part-jiqiang_saotu4"/>
+    <d name="part-jiqiang_saotu5"/>
+    <d name="part-jiqiang_saotu6"/>
+    <d name="part-jiqiang_saotu7"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="bt_t_2_hurt">
+   <mov name="start" dr="51" to="6" drTW="51" lp="0" twE="NaN">
+    <b name="bgfdshgfd0" sc="1" dl="0">
+     <f x="-0.1" y="0" cocos2d_x="-0.1" cocos2d_y="0" kX="-90.19" kY="-89.75" cX="0.32" cY="0.73" pX="0" pY="0" z="0" dI="0" dr="2"/>
+     <f x="-0.1" y="0" cocos2d_x="-0.1" cocos2d_y="0" kX="-90.19" kY="-89.75" cX="0.32" cY="0.73" pX="0" pY="0" z="0" dI="1" dr="2"/>
+     <f x="0" y="0" cocos2d_x="0" cocos2d_y="0" kX="-90.19" kY="-89.75" cX="0.32" cY="0.73" pX="0" pY="0" z="0" dI="2" dr="2"/>
+     <f x="0" y="0" cocos2d_x="0" cocos2d_y="0" kX="-90.19" kY="-89.75" cX="0.32" cY="0.73" pX="0" pY="0" z="0" dI="3" dr="2"/>
+     <f x="-0.1" y="0" cocos2d_x="-0.1" cocos2d_y="0" kX="-90.19" kY="-89.75" cX="0.32" cY="0.73" pX="0" pY="0" z="0" dI="4" dr="2"/>
+     <f x="-0.1" y="0" cocos2d_x="-0.1" cocos2d_y="0" kX="-90.19" kY="-89.75" cX="0.32" cY="0.73" pX="0" pY="0" z="0" dI="5" dr="2"/>
+     <f x="0" y="0" cocos2d_x="0" cocos2d_y="0" kX="-90.19" kY="-89.75" cX="0.32" cY="0.73" pX="0" pY="0" z="0" dI="6" dr="2"/>
+     <f dr="11" dI="-1"/>
+     <f x="-0.1" y="0" cocos2d_x="-0.1" cocos2d_y="0" kX="-90.19" kY="-89.75" cX="0.32" cY="0.73" pX="0" pY="0" z="0" dI="0" dr="2"/>
+     <f x="-0.1" y="0" cocos2d_x="-0.1" cocos2d_y="0" kX="-90.19" kY="-89.75" cX="0.32" cY="0.73" pX="0" pY="0" z="0" dI="1" dr="2"/>
+     <f x="0" y="0" cocos2d_x="0" cocos2d_y="0" kX="-90.19" kY="-89.75" cX="0.32" cY="0.73" pX="0" pY="0" z="0" dI="2" dr="2"/>
+     <f x="0" y="0" cocos2d_x="0" cocos2d_y="0" kX="-90.19" kY="-89.75" cX="0.32" cY="0.73" pX="0" pY="0" z="0" dI="3" dr="2"/>
+     <f x="-0.1" y="0" cocos2d_x="-0.1" cocos2d_y="0" kX="-90.19" kY="-89.75" cX="0.32" cY="0.73" pX="0" pY="0" z="0" dI="4" dr="2"/>
+     <f x="-0.1" y="0" cocos2d_x="-0.1" cocos2d_y="0" kX="-90.19" kY="-89.75" cX="0.32" cY="0.73" pX="0" pY="0" z="0" dI="5" dr="2"/>
+     <f x="0" y="0" cocos2d_x="0" cocos2d_y="0" kX="-90.19" kY="-89.75" cX="0.32" cY="0.73" pX="0" pY="0" z="0" dI="6" dr="2"/>
+     <f dr="12" dI="-1"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="zhanche_saotu" width="256" height="256">
+  <SubTexture name="part-jiqiang_saotu7" width="58" height="64" cocos2d_pX="31" cocos2d_pY="32.7" x="196" y="0"/>
+  <SubTexture name="part-jiqiang_saotu6" width="81" height="64" cocos2d_pX="32.3" cocos2d_pY="32.85" x="84" y="68"/>
+  <SubTexture name="part-jiqiang_saotu5" width="97" height="66" cocos2d_pX="31.65" cocos2d_pY="32.7" x="0" y="0"/>
+  <SubTexture name="part-jiqiang_saotu4" width="95" height="66" cocos2d_pX="31.6" cocos2d_pY="32.75" x="99" y="0"/>
+  <SubTexture name="part-jiqiang_saotu3" width="82" height="66" cocos2d_pX="31.3" cocos2d_pY="32.9" x="0" y="68"/>
+  <SubTexture name="part-jiqiang_saotu2" width="73" height="66" cocos2d_pX="31.4" cocos2d_pY="32.9" x="167" y="68"/>
+  <SubTexture name="part-jiqiang_saotu1" width="63" height="66" cocos2d_pX="31.3" cocos2d_pY="32.8" x="84" y="134"/>
+ </TextureAtlas>
+</skeleton>

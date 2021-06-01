@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>part-qbz_duihuakuang.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,2},{97,38}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{97,38}}</string>
+                <key>sourceSize</key>
+                <string>{97,38}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>2</integer>
+            <key>realTextureFileName</key>
+            <string>ui_home_notice.pvr.ccz</string>
+            <key>size</key>
+            <string>{42,101}</string>
+            <key>smartupdate</key>
+            <string>$TexturePacker:SmartUpdate:5fe268836aa0c8a2ef2212945cb47a82:55e2bb35691dfce32fde3861e3106f4b:849d1af05541d4980564e053f3a5ab38$</string>
+            <key>textureFileName</key>
+            <string>ui_home_notice.pvr.ccz</string>
+        </dict>
+    </dict>
+</plist>

@@ -1,0 +1,168 @@
+<skeleton name="anxing_bg_guang" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="beihou_anxing">
+   <b name="1" x="-0.3" y="-0.25" kX="0" kY="0" cX="2.68" cY="2.68" pX="0" pY="0" z="0">
+    <d name="part-anxing_bg_guang_0000"/>
+    <d name="part-anxing_bg_guang_0001"/>
+    <d name="part-anxing_bg_guang_0002"/>
+    <d name="part-anxing_bg_guang_0003"/>
+    <d name="part-anxing_bg_guang_0004"/>
+    <d name="part-anxing_bg_guang_0005"/>
+    <d name="part-anxing_bg_guang_0006"/>
+    <d name="part-anxing_bg_guang_0007"/>
+    <d name="part-anxing_bg_guang_0008"/>
+    <d name="part-anxing_bg_guang_0009"/>
+    <d name="part-anxing_bg_guang_0010"/>
+    <d name="part-anxing_bg_guang_0011"/>
+    <d name="part-anxing_bg_guang_0012"/>
+    <d name="part-anxing_bg_guang_0013"/>
+    <d name="part-anxing_bg_guang_0014"/>
+    <d name="part-anxing_bg_guang_0015"/>
+    <d name="part-anxing_bg_guang_0016"/>
+    <d name="part-anxing_bg_guang_0017"/>
+    <d name="part-anxing_bg_guang_0018"/>
+    <d name="part-anxing_bg_guang_0019"/>
+    <d name="part-anxing_bg_guang_0020"/>
+    <d name="part-anxing_bg_guang_0021"/>
+    <d name="part-anxing_bg_guang_0022"/>
+    <d name="part-anxing_bg_guang_0023"/>
+    <d name="part-anxing_bg_guang_0024"/>
+    <d name="part-anxing_bg_guang_0025"/>
+    <d name="part-anxing_bg_guang_0026"/>
+    <d name="part-anxing_bg_guang_0027"/>
+    <d name="part-anxing_bg_guang_0028"/>
+    <d name="part-anxing_bg_guang_0029"/>
+    <d name="part-anxing_bg_guang_0030"/>
+    <d name="part-anxing_bg_guang_0031"/>
+    <d name="part-anxing_bg_guang_0032"/>
+    <d name="part-anxing_bg_guang_0033"/>
+    <d name="part-anxing_bg_guang_0034"/>
+    <d name="part-anxing_bg_guang_0035"/>
+    <d name="part-anxing_bg_guang_0036"/>
+    <d name="part-anxing_bg_guang_0037"/>
+    <d name="part-anxing_bg_guang_0038"/>
+    <d name="part-anxing_bg_guang_0039"/>
+    <d name="part-anxing_bg_guang_0040"/>
+    <d name="part-anxing_bg_guang_0041"/>
+    <d name="part-anxing_bg_guang_0042"/>
+    <d name="part-anxing_bg_guang_0043"/>
+    <d name="part-anxing_bg_guang_0044"/>
+    <d name="part-anxing_bg_guang_0045"/>
+    <d name="part-anxing_bg_guang_0046"/>
+    <d name="part-anxing_bg_guang_0047"/>
+    <d name="part-anxing_bg_guang_0048"/>
+    <d name="part-anxing_bg_guang_0049"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="beihou_anxing">
+   <mov name="start" dr="150" to="0" drTW="150" lp="1" twE="NaN">
+    <b name="1" sc="1" dl="0">
+     <f x="-0.3" y="-0.25" cocos2d_x="-0.3" cocos2d_y="-0.15" kX="0" kY="0" cX="2.68" cY="2.68" pX="0" pY="0" z="0" dI="0" dr="3"/>
+     <f x="-0.3" y="-0.25" cocos2d_x="-0.3" cocos2d_y="-0.15" kX="0" kY="0" cX="2.68" cY="2.68" pX="0" pY="0" z="0" dI="1" dr="3"/>
+     <f x="-0.3" y="-0.25" cocos2d_x="-0.3" cocos2d_y="-0.15" kX="0" kY="0" cX="2.68" cY="2.68" pX="0" pY="0" z="0" dI="2" dr="3"/>
+     <f x="-0.3" y="-0.25" cocos2d_x="-0.3" cocos2d_y="-0.15" kX="0" kY="0" cX="2.68" cY="2.68" pX="0" pY="0" z="0" dI="3" dr="3"/>
+     <f x="-0.3" y="-0.25" cocos2d_x="-0.3" cocos2d_y="-0.15" kX="0" kY="0" cX="2.68" cY="2.68" pX="0" pY="0" z="0" dI="4" dr="3"/>
+     <f x="-0.3" y="-0.25" cocos2d_x="-0.3" cocos2d_y="-0.15" kX="0" kY="0" cX="2.68" cY="2.68" pX="0" pY="0" z="0" dI="5" dr="3"/>
+     <f x="-0.3" y="-0.25" cocos2d_x="-0.3" cocos2d_y="-0.15" kX="0" kY="0" cX="2.68" cY="2.68" pX="0" pY="0" z="0" dI="6" dr="3"/>
+     <f x="-0.3" y="-0.25" cocos2d_x="-0.3" cocos2d_y="-0.15" kX="0" kY="0" cX="2.68" cY="2.68" pX="0" pY="0" z="0" dI="7" dr="3"/>
+     <f x="-0.3" y="-0.25" cocos2d_x="-0.3" cocos2d_y="-0.15" kX="0" kY="0" cX="2.68" cY="2.68" pX="0" pY="0" z="0" dI="8" dr="3"/>
+     <f x="-0.3" y="-0.25" cocos2d_x="-0.3" cocos2d_y="-0.15" kX="0" kY="0" cX="2.68" cY="2.68" pX="0" pY="0" z="0" dI="9" dr="3"/>
+     <f x="-0.3" y="-0.25" cocos2d_x="-0.3" cocos2d_y="-0.15" kX="0" kY="0" cX="2.68" cY="2.68" pX="0" pY="0" z="0" dI="10" dr="3"/>
+     <f x="-0.3" y="-0.25" cocos2d_x="-0.3" cocos2d_y="-0.15" kX="0" kY="0" cX="2.68" cY="2.68" pX="0" pY="0" z="0" dI="11" dr="3"/>
+     <f x="-0.3" y="-0.25" cocos2d_x="-0.3" cocos2d_y="-0.15" kX="0" kY="0" cX="2.68" cY="2.68" pX="0" pY="0" z="0" dI="12" dr="3"/>
+     <f x="-0.3" y="-0.25" cocos2d_x="-0.3" cocos2d_y="-0.15" kX="0" kY="0" cX="2.68" cY="2.68" pX="0" pY="0" z="0" dI="13" dr="3"/>
+     <f x="-0.3" y="-0.25" cocos2d_x="-0.3" cocos2d_y="-0.15" kX="0" kY="0" cX="2.68" cY="2.68" pX="0" pY="0" z="0" dI="14" dr="3"/>
+     <f x="-0.3" y="-0.25" cocos2d_x="-0.3" cocos2d_y="-0.15" kX="0" kY="0" cX="2.68" cY="2.68" pX="0" pY="0" z="0" dI="15" dr="3"/>
+     <f x="-0.3" y="-0.25" cocos2d_x="-0.3" cocos2d_y="-0.15" kX="0" kY="0" cX="2.68" cY="2.68" pX="0" pY="0" z="0" dI="16" dr="3"/>
+     <f x="-0.3" y="-0.25" cocos2d_x="-0.3" cocos2d_y="-0.15" kX="0" kY="0" cX="2.68" cY="2.68" pX="0" pY="0" z="0" dI="17" dr="3"/>
+     <f x="-0.3" y="-0.25" cocos2d_x="-0.3" cocos2d_y="-0.15" kX="0" kY="0" cX="2.68" cY="2.68" pX="0" pY="0" z="0" dI="18" dr="3"/>
+     <f x="-0.3" y="-0.25" cocos2d_x="-0.3" cocos2d_y="-0.15" kX="0" kY="0" cX="2.68" cY="2.68" pX="0" pY="0" z="0" dI="19" dr="3"/>
+     <f x="-0.3" y="-0.25" cocos2d_x="-0.3" cocos2d_y="-0.15" kX="0" kY="0" cX="2.68" cY="2.68" pX="0" pY="0" z="0" dI="20" dr="3"/>
+     <f x="-0.3" y="-0.25" cocos2d_x="-0.3" cocos2d_y="-0.15" kX="0" kY="0" cX="2.68" cY="2.68" pX="0" pY="0" z="0" dI="21" dr="3"/>
+     <f x="-0.3" y="-0.25" cocos2d_x="-0.3" cocos2d_y="-0.15" kX="0" kY="0" cX="2.68" cY="2.68" pX="0" pY="0" z="0" dI="22" dr="3"/>
+     <f x="-0.3" y="-0.25" cocos2d_x="-0.3" cocos2d_y="-0.15" kX="0" kY="0" cX="2.68" cY="2.68" pX="0" pY="0" z="0" dI="23" dr="3"/>
+     <f x="-0.3" y="-0.25" cocos2d_x="-0.3" cocos2d_y="-0.15" kX="0" kY="0" cX="2.68" cY="2.68" pX="0" pY="0" z="0" dI="24" dr="3"/>
+     <f x="-0.3" y="-0.25" cocos2d_x="-0.3" cocos2d_y="-0.15" kX="0" kY="0" cX="2.68" cY="2.68" pX="0" pY="0" z="0" dI="25" dr="3"/>
+     <f x="-0.3" y="-0.25" cocos2d_x="-0.3" cocos2d_y="-0.15" kX="0" kY="0" cX="2.68" cY="2.68" pX="0" pY="0" z="0" dI="26" dr="3"/>
+     <f x="-0.3" y="-0.25" cocos2d_x="-0.3" cocos2d_y="-0.15" kX="0" kY="0" cX="2.68" cY="2.68" pX="0" pY="0" z="0" dI="27" dr="3"/>
+     <f x="-0.3" y="-0.25" cocos2d_x="-0.3" cocos2d_y="-0.15" kX="0" kY="0" cX="2.68" cY="2.68" pX="0" pY="0" z="0" dI="28" dr="3"/>
+     <f x="-0.3" y="-0.25" cocos2d_x="-0.3" cocos2d_y="-0.15" kX="0" kY="0" cX="2.68" cY="2.68" pX="0" pY="0" z="0" dI="29" dr="3"/>
+     <f x="-0.3" y="-0.25" cocos2d_x="-0.3" cocos2d_y="-0.15" kX="0" kY="0" cX="2.68" cY="2.68" pX="0" pY="0" z="0" dI="30" dr="3"/>
+     <f x="-0.3" y="-0.25" cocos2d_x="-0.3" cocos2d_y="-0.15" kX="0" kY="0" cX="2.68" cY="2.68" pX="0" pY="0" z="0" dI="31" dr="3"/>
+     <f x="-0.3" y="-0.25" cocos2d_x="-0.3" cocos2d_y="-0.15" kX="0" kY="0" cX="2.68" cY="2.68" pX="0" pY="0" z="0" dI="32" dr="3"/>
+     <f x="-0.3" y="-0.25" cocos2d_x="-0.3" cocos2d_y="-0.15" kX="0" kY="0" cX="2.68" cY="2.68" pX="0" pY="0" z="0" dI="33" dr="3"/>
+     <f x="-0.3" y="-0.25" cocos2d_x="-0.3" cocos2d_y="-0.15" kX="0" kY="0" cX="2.68" cY="2.68" pX="0" pY="0" z="0" dI="34" dr="3"/>
+     <f x="-0.3" y="-0.25" cocos2d_x="-0.3" cocos2d_y="-0.15" kX="0" kY="0" cX="2.68" cY="2.68" pX="0" pY="0" z="0" dI="35" dr="3"/>
+     <f x="-0.3" y="-0.25" cocos2d_x="-0.3" cocos2d_y="-0.15" kX="0" kY="0" cX="2.68" cY="2.68" pX="0" pY="0" z="0" dI="36" dr="3"/>
+     <f x="-0.3" y="-0.25" cocos2d_x="-0.3" cocos2d_y="-0.15" kX="0" kY="0" cX="2.68" cY="2.68" pX="0" pY="0" z="0" dI="37" dr="3"/>
+     <f x="-0.3" y="-0.25" cocos2d_x="-0.3" cocos2d_y="-0.15" kX="0" kY="0" cX="2.68" cY="2.68" pX="0" pY="0" z="0" dI="38" dr="3"/>
+     <f x="-0.3" y="-0.25" cocos2d_x="-0.3" cocos2d_y="-0.15" kX="0" kY="0" cX="2.68" cY="2.68" pX="0" pY="0" z="0" dI="39" dr="3"/>
+     <f x="-0.3" y="-0.25" cocos2d_x="-0.3" cocos2d_y="-0.15" kX="0" kY="0" cX="2.68" cY="2.68" pX="0" pY="0" z="0" dI="40" dr="3"/>
+     <f x="-0.3" y="-0.25" cocos2d_x="-0.3" cocos2d_y="-0.15" kX="0" kY="0" cX="2.68" cY="2.68" pX="0" pY="0" z="0" dI="41" dr="3"/>
+     <f x="-0.3" y="-0.25" cocos2d_x="-0.3" cocos2d_y="-0.15" kX="0" kY="0" cX="2.68" cY="2.68" pX="0" pY="0" z="0" dI="42" dr="3"/>
+     <f x="-0.3" y="-0.25" cocos2d_x="-0.3" cocos2d_y="-0.15" kX="0" kY="0" cX="2.68" cY="2.68" pX="0" pY="0" z="0" dI="43" dr="3"/>
+     <f x="-0.3" y="-0.25" cocos2d_x="-0.3" cocos2d_y="-0.15" kX="0" kY="0" cX="2.68" cY="2.68" pX="0" pY="0" z="0" dI="44" dr="3"/>
+     <f x="-0.3" y="-0.25" cocos2d_x="-0.3" cocos2d_y="-0.15" kX="0" kY="0" cX="2.68" cY="2.68" pX="0" pY="0" z="0" dI="45" dr="3"/>
+     <f x="-0.3" y="-0.25" cocos2d_x="-0.3" cocos2d_y="-0.15" kX="0" kY="0" cX="2.68" cY="2.68" pX="0" pY="0" z="0" dI="46" dr="3"/>
+     <f x="-0.3" y="-0.25" cocos2d_x="-0.3" cocos2d_y="-0.15" kX="0" kY="0" cX="2.68" cY="2.68" pX="0" pY="0" z="0" dI="47" dr="3"/>
+     <f x="-0.3" y="-0.25" cocos2d_x="-0.3" cocos2d_y="-0.15" kX="0" kY="0" cX="2.68" cY="2.68" pX="0" pY="0" z="0" dI="48" dr="3"/>
+     <f x="-0.3" y="-0.25" cocos2d_x="-0.3" cocos2d_y="-0.15" kX="0" kY="0" cX="2.68" cY="2.68" pX="0" pY="0" z="0" dI="49" dr="3"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="anxing_bg_guang" width="2048" height="2048">
+  <SubTexture name="part-anxing_bg_guang_0049" width="254" height="203" cocos2d_pX="126.85" cocos2d_pY="101.5" x="256" y="0"/>
+  <SubTexture name="part-anxing_bg_guang_0048" width="254" height="203" cocos2d_pX="126.85" cocos2d_pY="101.5" x="0" y="1230"/>
+  <SubTexture name="part-anxing_bg_guang_0047" width="254" height="203" cocos2d_pX="126.85" cocos2d_pY="101.5" x="768" y="0"/>
+  <SubTexture name="part-anxing_bg_guang_0046" width="254" height="203" cocos2d_pX="126.85" cocos2d_pY="101.5" x="768" y="615"/>
+  <SubTexture name="part-anxing_bg_guang_0045" width="254" height="203" cocos2d_pX="126.85" cocos2d_pY="101.5" x="1280" y="0"/>
+  <SubTexture name="part-anxing_bg_guang_0044" width="254" height="203" cocos2d_pX="126.85" cocos2d_pY="101.5" x="1792" y="820"/>
+  <SubTexture name="part-anxing_bg_guang_0043" width="254" height="203" cocos2d_pX="126.85" cocos2d_pY="101.5" x="1792" y="0"/>
+  <SubTexture name="part-anxing_bg_guang_0042" width="254" height="203" cocos2d_pX="126.85" cocos2d_pY="101.5" x="1280" y="615"/>
+  <SubTexture name="part-anxing_bg_guang_0041" width="254" height="203" cocos2d_pX="126.85" cocos2d_pY="101.5" x="256" y="205"/>
+  <SubTexture name="part-anxing_bg_guang_0040" width="254" height="203" cocos2d_pX="126.85" cocos2d_pY="101.5" x="1280" y="1025"/>
+  <SubTexture name="part-anxing_bg_guang_0039" width="254" height="203" cocos2d_pX="126.85" cocos2d_pY="101.5" x="768" y="205"/>
+  <SubTexture name="part-anxing_bg_guang_0038" width="254" height="203" cocos2d_pX="126.85" cocos2d_pY="101.5" x="1792" y="615"/>
+  <SubTexture name="part-anxing_bg_guang_0037" width="254" height="203" cocos2d_pX="126.85" cocos2d_pY="101.5" x="1280" y="205"/>
+  <SubTexture name="part-anxing_bg_guang_0036" width="254" height="203" cocos2d_pX="126.85" cocos2d_pY="101.5" x="256" y="1025"/>
+  <SubTexture name="part-anxing_bg_guang_0035" width="254" height="203" cocos2d_pX="126.85" cocos2d_pY="101.5" x="1792" y="205"/>
+  <SubTexture name="part-anxing_bg_guang_0034" width="254" height="203" cocos2d_pX="126.85" cocos2d_pY="101.5" x="256" y="820"/>
+  <SubTexture name="part-anxing_bg_guang_0033" width="254" height="203" cocos2d_pX="126.85" cocos2d_pY="101.5" x="256" y="410"/>
+  <SubTexture name="part-anxing_bg_guang_0032" width="254" height="203" cocos2d_pX="126.85" cocos2d_pY="101.5" x="256" y="1230"/>
+  <SubTexture name="part-anxing_bg_guang_0031" width="254" height="203" cocos2d_pX="126.85" cocos2d_pY="101.5" x="768" y="410"/>
+  <SubTexture name="part-anxing_bg_guang_0030" width="254" height="203" cocos2d_pX="126.85" cocos2d_pY="101.5" x="768" y="820"/>
+  <SubTexture name="part-anxing_bg_guang_0029" width="254" height="203" cocos2d_pX="126.85" cocos2d_pY="101.5" x="1280" y="410"/>
+  <SubTexture name="part-anxing_bg_guang_0028" width="254" height="203" cocos2d_pX="126.85" cocos2d_pY="101.5" x="768" y="1025"/>
+  <SubTexture name="part-anxing_bg_guang_0027" width="254" height="203" cocos2d_pX="126.85" cocos2d_pY="101.5" x="1792" y="410"/>
+  <SubTexture name="part-anxing_bg_guang_0026" width="254" height="203" cocos2d_pX="126.85" cocos2d_pY="101.5" x="1280" y="820"/>
+  <SubTexture name="part-anxing_bg_guang_0025" width="254" height="203" cocos2d_pX="126.85" cocos2d_pY="101.5" x="256" y="615"/>
+  <SubTexture name="part-anxing_bg_guang_0024" width="254" height="203" cocos2d_pX="126.85" cocos2d_pY="101.5" x="0" y="0"/>
+  <SubTexture name="part-anxing_bg_guang_0023" width="254" height="203" cocos2d_pX="126.85" cocos2d_pY="101.5" x="512" y="0"/>
+  <SubTexture name="part-anxing_bg_guang_0022" width="254" height="203" cocos2d_pX="126.85" cocos2d_pY="101.5" x="1024" y="0"/>
+  <SubTexture name="part-anxing_bg_guang_0021" width="254" height="203" cocos2d_pX="126.85" cocos2d_pY="101.5" x="1536" y="0"/>
+  <SubTexture name="part-anxing_bg_guang_0020" width="254" height="203" cocos2d_pX="126.85" cocos2d_pY="101.5" x="0" y="205"/>
+  <SubTexture name="part-anxing_bg_guang_0019" width="254" height="203" cocos2d_pX="126.85" cocos2d_pY="101.5" x="512" y="205"/>
+  <SubTexture name="part-anxing_bg_guang_0018" width="254" height="203" cocos2d_pX="126.85" cocos2d_pY="101.5" x="1024" y="205"/>
+  <SubTexture name="part-anxing_bg_guang_0017" width="254" height="203" cocos2d_pX="126.85" cocos2d_pY="101.5" x="1536" y="205"/>
+  <SubTexture name="part-anxing_bg_guang_0016" width="254" height="203" cocos2d_pX="126.85" cocos2d_pY="101.5" x="0" y="410"/>
+  <SubTexture name="part-anxing_bg_guang_0015" width="254" height="203" cocos2d_pX="126.85" cocos2d_pY="101.5" x="512" y="410"/>
+  <SubTexture name="part-anxing_bg_guang_0014" width="254" height="203" cocos2d_pX="126.85" cocos2d_pY="101.5" x="1024" y="410"/>
+  <SubTexture name="part-anxing_bg_guang_0013" width="254" height="203" cocos2d_pX="126.85" cocos2d_pY="101.5" x="1536" y="410"/>
+  <SubTexture name="part-anxing_bg_guang_0012" width="254" height="203" cocos2d_pX="126.85" cocos2d_pY="101.5" x="0" y="615"/>
+  <SubTexture name="part-anxing_bg_guang_0011" width="254" height="203" cocos2d_pX="126.85" cocos2d_pY="101.5" x="512" y="615"/>
+  <SubTexture name="part-anxing_bg_guang_0010" width="254" height="203" cocos2d_pX="126.85" cocos2d_pY="101.5" x="1024" y="615"/>
+  <SubTexture name="part-anxing_bg_guang_0009" width="254" height="203" cocos2d_pX="126.85" cocos2d_pY="101.5" x="1536" y="615"/>
+  <SubTexture name="part-anxing_bg_guang_0008" width="254" height="203" cocos2d_pX="126.85" cocos2d_pY="101.5" x="0" y="820"/>
+  <SubTexture name="part-anxing_bg_guang_0007" width="254" height="203" cocos2d_pX="126.85" cocos2d_pY="101.5" x="512" y="820"/>
+  <SubTexture name="part-anxing_bg_guang_0006" width="254" height="203" cocos2d_pX="126.85" cocos2d_pY="101.5" x="1024" y="820"/>
+  <SubTexture name="part-anxing_bg_guang_0005" width="254" height="203" cocos2d_pX="126.85" cocos2d_pY="101.5" x="1536" y="820"/>
+  <SubTexture name="part-anxing_bg_guang_0004" width="254" height="203" cocos2d_pX="126.85" cocos2d_pY="101.5" x="0" y="1025"/>
+  <SubTexture name="part-anxing_bg_guang_0003" width="254" height="203" cocos2d_pX="126.85" cocos2d_pY="101.5" x="512" y="1025"/>
+  <SubTexture name="part-anxing_bg_guang_0002" width="254" height="203" cocos2d_pX="126.85" cocos2d_pY="101.5" x="1024" y="1025"/>
+  <SubTexture name="part-anxing_bg_guang_0001" width="254" height="203" cocos2d_pX="126.85" cocos2d_pY="101.5" x="1536" y="1025"/>
+  <SubTexture name="part-anxing_bg_guang_0000" width="254" height="203" cocos2d_pX="126.85" cocos2d_pY="101.5" x="1792" y="1025"/>
+ </TextureAtlas>
+</skeleton>

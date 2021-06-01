@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>part-fanhui_tx.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,2},{69,80}}</string>
+                <key>offset</key>
+                <string>{-1,1}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{1,0},{69,80}}</string>
+                <key>sourceSize</key>
+                <string>{73,82}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>2</integer>
+            <key>realTextureFileName</key>
+            <string>ui_army_return.pvr.ccz</string>
+            <key>size</key>
+            <string>{84,73}</string>
+            <key>smartupdate</key>
+            <string>$TexturePacker:SmartUpdate:a8c381d26ec1e5b94914a7a5d124b476:eddfe676493e468d094daca55fd45518:5f56f18a52c34f1a82737561c88452c0$</string>
+            <key>textureFileName</key>
+            <string>ui_army_return.pvr.ccz</string>
+        </dict>
+    </dict>
+</plist>

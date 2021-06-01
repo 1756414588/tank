@@ -1,0 +1,109 @@
+<skeleton name="sj_feiting_zdbs" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="sj_feiting_zdbs">
+   <b name="6" x="179.7" y="-110.9" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0">
+    <d name="part-sj_feiting_zdbs1"/>
+   </b>
+   <b name="5" x="179.7" y="-110.9" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1">
+    <d name="part-sj_feiting_zdbs2"/>
+   </b>
+   <b name="4" x="179.7" y="-110.9" kX="0" kY="0" cX="1" cY="1" pX="-1" pY="3" z="2">
+    <d name="part-sj_feiting_zdbs4"/>
+   </b>
+   <b name="3" x="179.7" y="-110.4" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="3">
+    <d name="part-sj_feiting_zdbs3"/>
+   </b>
+   <b name="2" x="184.15" y="-124.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="4">
+    <d name="part-sj_feiting_zdbs_huoyan1"/>
+    <d name="part-sj_feiting_zdbs_huoyan2"/>
+    <d name="part-sj_feiting_zdbs_huoyan3"/>
+    <d name="part-sj_feiting_zdbs_huoyan4"/>
+    <d name="part-sj_feiting_zdbs_huoyan5"/>
+    <d name="part-sj_feiting_zdbs_huoyan6"/>
+    <d name="part-sj_feiting_zdbs_huoyan7"/>
+    <d name="part-sj_feiting_zdbs_huoyan8"/>
+    <d name="part-sj_feiting_zdbs_huoyan9"/>
+    <d name="part-sj_feiting_zdbs_huoyan10"/>
+    <d name="part-sj_feiting_zdbs_huoyan11"/>
+    <d name="part-sj_feiting_zdbs_huoyan12"/>
+    <d name="part-sj_feiting_zdbs_huoyan13"/>
+    <d name="part-sj_feiting_zdbs_huoyan14"/>
+    <d name="part-sj_feiting_zdbs_huoyan15"/>
+    <d name="part-sj_feiting_zdbs_huoyan16"/>
+    <d name="part-sj_feiting_zdbs_huoyan17"/>
+    <d name="part-sj_feiting_zdbs_huoyan18"/>
+    <d name="part-sj_feiting_zdbs_huoyan19"/>
+    <d name="part-sj_feiting_zdbs_huoyan20"/>
+    <d name="part-sj_feiting_zdbs_huoyan21"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="sj_feiting_zdbs">
+   <mov name="start" dr="41" to="0" drTW="41" lp="1" twE="NaN">
+    <b name="6" sc="1" dl="0">
+     <f x="179.7" y="-110.9" cocos2d_x="179.7" cocos2d_y="-110.9" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="41"/>
+    </b>
+    <b name="5" sc="1" dl="0">
+     <f x="179.7" y="-110.9" cocos2d_x="179.7" cocos2d_y="-110.9" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1" dI="0" dr="41"/>
+    </b>
+    <b name="4" sc="1" dl="0">
+     <f x="179.7" y="-110.9" cocos2d_x="181.2" cocos2d_y="-113.4" kX="0" kY="0" cX="1" cY="1" pX="-1" pY="3" z="2" dI="0" dr="41"/>
+    </b>
+    <b name="3" sc="1" dl="0">
+     <f x="179.7" y="-110.4" cocos2d_x="179.7" cocos2d_y="-110.4" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="3" dI="0" dr="41"/>
+    </b>
+    <b name="2" sc="1" dl="0">
+     <f x="184.15" y="-124.55" cocos2d_x="184.15" cocos2d_y="-124.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="4" dI="0" dr="2"/>
+     <f x="184.15" y="-124.55" cocos2d_x="184.15" cocos2d_y="-124.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="4" dI="1" dr="2"/>
+     <f x="184.15" y="-124.55" cocos2d_x="184.15" cocos2d_y="-124.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="4" dI="2" dr="2"/>
+     <f x="184.15" y="-124.55" cocos2d_x="184.15" cocos2d_y="-124.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="4" dI="3" dr="2"/>
+     <f x="184.15" y="-124.55" cocos2d_x="184.15" cocos2d_y="-124.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="4" dI="4" dr="2"/>
+     <f x="184.15" y="-124.55" cocos2d_x="184.15" cocos2d_y="-124.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="4" dI="5" dr="2"/>
+     <f x="184.15" y="-124.55" cocos2d_x="184.15" cocos2d_y="-124.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="4" dI="6" dr="2"/>
+     <f x="184.15" y="-124.55" cocos2d_x="184.15" cocos2d_y="-124.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="4" dI="7" dr="2"/>
+     <f x="184.15" y="-124.55" cocos2d_x="184.15" cocos2d_y="-124.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="4" dI="8" dr="2"/>
+     <f x="184.15" y="-124.55" cocos2d_x="184.15" cocos2d_y="-124.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="4" dI="9" dr="2"/>
+     <f x="184.15" y="-124.55" cocos2d_x="184.15" cocos2d_y="-124.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="4" dI="10" dr="2"/>
+     <f x="184.15" y="-124.55" cocos2d_x="184.15" cocos2d_y="-124.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="4" dI="11" dr="2"/>
+     <f x="184.15" y="-124.55" cocos2d_x="184.15" cocos2d_y="-124.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="4" dI="12" dr="2"/>
+     <f x="184.15" y="-124.55" cocos2d_x="184.15" cocos2d_y="-124.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="4" dI="13" dr="2"/>
+     <f x="184.15" y="-124.55" cocos2d_x="184.15" cocos2d_y="-124.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="4" dI="14" dr="2"/>
+     <f x="184.15" y="-124.55" cocos2d_x="184.15" cocos2d_y="-124.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="4" dI="15" dr="2"/>
+     <f x="184.15" y="-124.55" cocos2d_x="184.15" cocos2d_y="-124.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="4" dI="16" dr="2"/>
+     <f x="184.15" y="-124.55" cocos2d_x="184.15" cocos2d_y="-124.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="4" dI="17" dr="2"/>
+     <f x="184.15" y="-124.55" cocos2d_x="184.15" cocos2d_y="-124.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="4" dI="18" dr="2"/>
+     <f x="184.15" y="-124.55" cocos2d_x="184.15" cocos2d_y="-124.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="4" dI="19" dr="2"/>
+     <f x="184.15" y="-124.55" cocos2d_x="184.15" cocos2d_y="-124.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="4" dI="20" dr="1"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="sj_feiting_zdbs" width="1024" height="1024">
+  <SubTexture name="part-sj_feiting_zdbs_huoyan21" width="150" height="132" cocos2d_pX="75" cocos2d_pY="65.75" x="152" y="402"/>
+  <SubTexture name="part-sj_feiting_zdbs_huoyan20" width="150" height="132" cocos2d_pX="75" cocos2d_pY="65.75" x="304" y="0"/>
+  <SubTexture name="part-sj_feiting_zdbs_huoyan19" width="150" height="132" cocos2d_pX="75" cocos2d_pY="65.75" x="304" y="268"/>
+  <SubTexture name="part-sj_feiting_zdbs_huoyan18" width="150" height="132" cocos2d_pX="75" cocos2d_pY="65.75" x="608" y="0"/>
+  <SubTexture name="part-sj_feiting_zdbs_huoyan17" width="150" height="132" cocos2d_pX="75" cocos2d_pY="65.75" x="304" y="402"/>
+  <SubTexture name="part-sj_feiting_zdbs_huoyan16" width="150" height="132" cocos2d_pX="75" cocos2d_pY="65.75" x="0" y="134"/>
+  <SubTexture name="part-sj_feiting_zdbs_huoyan15" width="150" height="132" cocos2d_pX="75" cocos2d_pY="65.75" x="608" y="268"/>
+  <SubTexture name="part-sj_feiting_zdbs_huoyan14" width="150" height="132" cocos2d_pX="75" cocos2d_pY="65.75" x="304" y="134"/>
+  <SubTexture name="part-sj_feiting_zdbs_huoyan13" width="150" height="132" cocos2d_pX="75" cocos2d_pY="65.75" x="760" y="268"/>
+  <SubTexture name="part-sj_feiting_zdbs_huoyan12" width="150" height="132" cocos2d_pX="75" cocos2d_pY="65.75" x="608" y="134"/>
+  <SubTexture name="part-sj_feiting_zdbs_huoyan11" width="150" height="132" cocos2d_pX="75" cocos2d_pY="65.75" x="0" y="402"/>
+  <SubTexture name="part-sj_feiting_zdbs_huoyan10" width="150" height="132" cocos2d_pX="75" cocos2d_pY="65.75" x="0" y="268"/>
+  <SubTexture name="part-sj_feiting_zdbs_huoyan9" width="150" height="132" cocos2d_pX="75" cocos2d_pY="65.75" x="0" y="0"/>
+  <SubTexture name="part-sj_feiting_zdbs_huoyan8" width="150" height="132" cocos2d_pX="75" cocos2d_pY="65.75" x="152" y="0"/>
+  <SubTexture name="part-sj_feiting_zdbs_huoyan7" width="150" height="132" cocos2d_pX="75" cocos2d_pY="65.75" x="456" y="0"/>
+  <SubTexture name="part-sj_feiting_zdbs_huoyan6" width="150" height="132" cocos2d_pX="75" cocos2d_pY="65.75" x="760" y="0"/>
+  <SubTexture name="part-sj_feiting_zdbs_huoyan5" width="150" height="132" cocos2d_pX="75" cocos2d_pY="65.75" x="152" y="134"/>
+  <SubTexture name="part-sj_feiting_zdbs_huoyan4" width="150" height="132" cocos2d_pX="75" cocos2d_pY="65.75" x="456" y="134"/>
+  <SubTexture name="part-sj_feiting_zdbs_huoyan3" width="150" height="132" cocos2d_pX="75" cocos2d_pY="65.75" x="760" y="134"/>
+  <SubTexture name="part-sj_feiting_zdbs_huoyan2" width="150" height="132" cocos2d_pX="75" cocos2d_pY="65.75" x="152" y="268"/>
+  <SubTexture name="part-sj_feiting_zdbs_huoyan1" width="150" height="132" cocos2d_pX="75" cocos2d_pY="65.75" x="456" y="268"/>
+  <SubTexture name="part-sj_feiting_zdbs3" width="36" height="33" cocos2d_pX="18" cocos2d_pY="16.5" x="983" y="0"/>
+  <SubTexture name="part-sj_feiting_zdbs4" width="45" height="45" cocos2d_pX="22.5" cocos2d_pY="22.5" x="974" y="71"/>
+  <SubTexture name="part-sj_feiting_zdbs2" width="60" height="60" cocos2d_pX="30" cocos2d_pY="30" x="912" y="71"/>
+  <SubTexture name="part-sj_feiting_zdbs1" width="69" height="69" cocos2d_pX="34.4" cocos2d_pY="34.4" x="912" y="0"/>
+ </TextureAtlas>
+</skeleton>

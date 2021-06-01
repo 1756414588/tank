@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="RoleInfoDao">
+
+    <select id="showTables" resultType="String">
+		SHOW TABLES
+	</select>
+
+    <update id="createTable" statementType="STATEMENT" parameterType="java.util.Map">
+		${sql}
+	</update>
+
+    <select id="selectByPlatId" parameterType="Map" resultType="RoleLog">
+		select * from `role_info` where platNo=#{platNo} and platId=#{platId}
+	</select>
+
+    <select id="selectByLordId" parameterType="Long" resultType="RoleLog">
+		select * from `role_info` where roleId =#{roleId};
+	</select>
+
+    <insert id="insert" parameterType="RoleLog">
+		insert into role_info ( roleId,accountKey, roleName, platNo, childNo, serverId,  platId, level, vip, topop, createTime, loginDate)
+		values(#{roleId},#{accountKey}, #{roleName}, #{platNo}, #{childNo}, #{serverId},  #{platId},#{level} , #{vip},#{topop} , #{createTime},#{loginDate} )
+		ON DUPLICATE KEY UPDATE platNo=#{platNo},roleName=#{roleName},level=#{level},vip=#{vip},topop = #{topop},loginDate=#{loginDate}
+	</insert>
+
+</mapper>

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration status="OFF" monitorInterval="1800" shutdownHook="disable">
+
+
+    <appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t][%-5level] %msg%n"/>
+        </Console>
+
+
+        <!--错误日志类型-->
+        <RollingFile name="ERROR" fileName="log/error.log" filePattern="log/error/error.%d{yyyy-MM-dd}.%i.log.zip">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t][%level] %msg%n"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="100Mb"/>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+            </Policies>
+            <DefaultRolloverStrategy max="100">
+                <Delete basePath="log/error/" maxDepth="1">
+                    <IfFileName glob="error*.zip"/>
+                    <IfLastModified age="20d"/>
+                </Delete>
+            </DefaultRolloverStrategy>
+        </RollingFile>
+
+        <!--统计-->
+        <RollingFile name="STATISTICS" fileName="log/statistics.log" filePattern="log/statistics/statistics.%d{yyyy-MM-dd}.%i.log.zip">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS}[%t] %level %msg%n"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="100Mb"/>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+            </Policies>
+            <DefaultRolloverStrategy max="100">
+                <Delete basePath="log/statistics/" maxDepth="1">
+                    <IfFileName glob="statistics*.zip"/>
+                    <IfLastModified age="20d"/>
+                </Delete>
+            </DefaultRolloverStrategy>
+        </RollingFile>
+
+        <!--玩家行为日志-->
+        <RollingFile name="GAME" fileName="log/game.log" filePattern="log/game.log.%d{yyyy-MM-dd}.zip">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss}|%msg%n"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+            </Policies>
+        </RollingFile>
+
+        <!--保存数据日志-->
+        <RollingFile name="SAVE" fileName="log/save.log" filePattern="log/save/save.%d{yyyy-MM-dd}.%i.log.zip">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS}[%t] %level %msg%n"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="100Mb"/>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+            </Policies>
+            <DefaultRolloverStrategy max="100">
+                <Delete basePath="log/save/" maxDepth="1">
+                    <IfFileName glob="save*.zip"/>
+                    <IfLastModified age="19d"/>
+                </Delete>
+            </DefaultRolloverStrategy>
+        </RollingFile>
+
+        <!--协议-->
+        <RollingFile name="MESSAGE" fileName="log/message.log" filePattern="log/message/message.%d{yyyy-MM-dd}.%i.log.zip">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS}[%t] %level %msg%n"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="100Mb"/>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+            </Policies>
+            <DefaultRolloverStrategy max="100">
+                <Delete basePath="log/message/" maxDepth="1">
+                    <IfFileName glob="message*.zip"/>
+                    <IfLastModified age="20d"/>
+                </Delete>
+            </DefaultRolloverStrategy>
+        </RollingFile>
+
+        <!--聊天日志-->
+        <RollingFile name="CHAT" fileName="log/chat.log" filePattern="log/chat.log.%d{yyyy-MM-dd}.zip">
+            <PatternLayout pattern="%date{yyyy-MM-dd HH:mm:ss}|%msg%n"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+            </Policies>
+        </RollingFile>
+
+        <!--充值日志-->
+        <RollingFile name="PAY" fileName="log/pay.log" filePattern="log/pay.log.%d{yyyy-MM-dd}.zip">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} %msg%n"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+            </Policies>
+        </RollingFile>
+        <!--警告-->
+        <RollingFile name="WARN" fileName="log/warn.log" filePattern="log/warn/warn.%d{yyyy-MM-dd}.%i.log.zip">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS}[%t] %msg%n"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="100Mb"/>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+            </Policies>
+            <DefaultRolloverStrategy max="100">
+                <Delete basePath="log/warn/" maxDepth="1">
+                    <IfFileName glob="warn*.zip"/>
+                    <IfLastModified age="20d"/>
+                </Delete>
+            </DefaultRolloverStrategy>
+        </RollingFile>
+
+        <!--公共日志-->
+        <RollingFile name="COMMON" fileName="log/common.log" filePattern="log/common/common.%d{yyyy-MM-dd}.%i.log.zip">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS}[%t] %msg%n"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="100Mb"/>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+            </Policies>
+            <DefaultRolloverStrategy max="100">
+                <Delete basePath="log/common/" maxDepth="1">
+                    <IfFileName glob="common*.zip"/>
+                    <IfLastModified age="10d"/>
+                </Delete>
+            </DefaultRolloverStrategy>
+        </RollingFile>
+
+        <!--跨服日志-->
+        <RollingFile name="CROSS" fileName="log/cross.log" filePattern="log/cross/cross.%d{yyyy-MM-dd}.%i.log.zip">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS}[%t] %msg%n"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="100Mb"/>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+            </Policies>
+            <DefaultRolloverStrategy max="100">
+                <Delete basePath="log/cross/" maxDepth="1">
+                    <IfFileName glob="cross*.zip"/>
+                    <IfLastModified age="15d"/>
+                </Delete>
+            </DefaultRolloverStrategy>
+        </RollingFile>
+
+        <RollingFile name="DATA" fileName="log/data.log" filePattern="log/data/data.%d{yyyy-MM-dd}.%i.log.zip">
+            <PatternLayout pattern="%date{yyyy-MM-dd HH:mm:ss.SSS}|%msg%n"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="100Mb"/>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+            </Policies>
+            <DefaultRolloverStrategy max="100">
+                <Delete basePath="log/data/" maxDepth="1">
+                    <IfFileName glob="data*.zip"/>
+                    <IfLastModified age="18d"/>
+                </Delete>
+            </DefaultRolloverStrategy>
+        </RollingFile>
+
+        <!--热更新日志-->
+        <RollingFile name="HOTFIX" fileName="log/hotfix.log" filePattern="log/hotfix/hotfix.%d{yyyy-MM-dd}.%i.log.zip">
+            <PatternLayout pattern="%date{yyyy-MM-dd HH:mm:ss.SSS}|%msg%n"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="100Mb"/>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+            </Policies>
+            <DefaultRolloverStrategy max="100">
+                <Delete basePath="log/hotfix/" maxDepth="1">
+                    <IfFileName glob="hotfix*.zip"/>
+                    <IfLastModified age="10d"/>
+                </Delete>
+            </DefaultRolloverStrategy>
+        </RollingFile>
+
+        <!--服务器状态日志-->
+        <RollingFile name="SERVERSTATUS" fileName="log/serverstatus.log" filePattern="log/serverstatus/serverstatus.%d{yyyy-MM-dd}.%i.log.zip">
+            <PatternLayout pattern="%msg%n"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="100Mb"/>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+            </Policies>
+            <DefaultRolloverStrategy max="100">
+                <Delete basePath="log/serverstatus/" maxDepth="1">
+                    <IfFileName glob="serverstatus*.zip"/>
+                    <IfLastModified age="15d"/>
+                </Delete>
+            </DefaultRolloverStrategy>
+        </RollingFile>
+    </appenders>
+
+    <loggers>
+        <logger name="GAME" level="trace" additivity="false">
+            <appender-ref ref="GAME"/>
+            <appender-ref ref="Console"/>
+        </logger>
+
+        <logger name="ERROR" level="trace" additivity="false">
+            <appender-ref ref="ERROR"/>
+            <appender-ref ref="Console"/>
+        </logger>
+
+        <logger name="STATISTICS" level="trace" additivity="false">
+            <appender-ref ref="STATISTICS"/>
+            <appender-ref ref="Console"/>
+        </logger>
+
+        <logger name="SAVE" level="info" additivity="false">
+            <appender-ref ref="SAVE"/>
+        </logger>
+
+        <logger name="MESSAGE" level="info" additivity="false">
+            <appender-ref ref="MESSAGE"/>
+            <appender-ref ref="Console"/>
+        </logger>
+
+        <logger name="CHAT" level="trace" additivity="false">
+            <appender-ref ref="CHAT"/>
+        </logger>
+
+
+        <logger name="PAY" level="trace" additivity="false">
+            <appender-ref ref="PAY"/>
+            <appender-ref ref="Console"/>
+        </logger>
+
+        <logger name="WARN" level="trace" additivity="false">
+            <appender-ref ref="WARN"/>
+            <appender-ref ref="Console"/>
+        </logger>
+
+        <logger name="COMMON" level="debug" additivity="false">
+            <appender-ref ref="COMMON"/>
+            <!--<appender-ref ref="Console"/>-->
+        </logger>
+
+        <logger name="CROSS" level="trace" additivity="false">
+            <appender-ref ref="CROSS"/>
+            <appender-ref ref="Console"/>
+        </logger>
+
+        <logger name="DATA" level="trace" additivity="false">
+            <appender-ref ref="DATA"/>
+            <appender-ref ref="Console"/>
+        </logger>
+
+        <logger name="HOTFIX" level="trace" additivity="false">
+            <appender-ref ref="HOTFIX"/>
+            <appender-ref ref="Console"/>
+        </logger>
+
+        <logger name="SERVERSTATUS" level="info" additivity="false">
+            <appender-ref ref="SERVERSTATUS"/>
+            <appender-ref ref="Console"/>
+        </logger>
+
+        <logger name="org.springframework" level="warn" additivity="false">
+            <appender-ref ref="ERROR"/>
+            <appender-ref ref="Console"/>
+        </logger>
+
+        <logger name="com.hundredcent.game" level="debug" additivity="false">
+            <appender-ref ref="COMMON"/>
+            <appender-ref ref="Console"/>
+        </logger>
+
+        <root level="error">
+            <appender-ref ref="COMMON"/>
+        </root>
+    </loggers>
+</configuration>

@@ -1,0 +1,44 @@
+<skeleton name="yanjiusuo" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="ui_build_science">
+   <b name="11" x="0" y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0">
+    <d name="part-yanjiusuo_shandian1"/>
+    <d name="part-yanjiusuo_shandian2"/>
+    <d name="part-yanjiusuo_shandian3"/>
+    <d name="part-yanjiusuo_shandian4"/>
+    <d name="part-yanjiusuo_shandian5"/>
+    <d name="part-yanjiusuo_shandian6"/>
+    <d name="part-yanjiusuo_shandian7"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="ui_build_science">
+   <mov name="start" dr="77" to="6" drTW="77" lp="1" twE="NaN">
+    <b name="11" sc="1" dl="0">
+     <f x="0" y="0" cocos2d_x="0" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="4"/>
+     <f x="0" y="0.1" cocos2d_x="0" cocos2d_y="0.1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="1" dr="4"/>
+     <f dr="4" dI="-1"/>
+     <f x="0.3" y="0.15" cocos2d_x="0.3" cocos2d_y="0.15" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="2" dr="4"/>
+     <f dr="4" dI="-1"/>
+     <f x="0" y="0" cocos2d_x="0" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="3" dr="4"/>
+     <f x="0" y="0" cocos2d_x="0" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="4" dr="4"/>
+     <f dr="4" dI="-1"/>
+     <f x="0" y="0" cocos2d_x="0" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="5" dr="4"/>
+     <f dr="4" dI="-1"/>
+     <f x="0" y="0" cocos2d_x="0" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="6" dr="4"/>
+     <f dr="33" dI="-1"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="yanjiusuo" width="128" height="128">
+  <SubTexture name="part-yanjiusuo_shandian7" width="39" height="19" cocos2d_pX="21.3" cocos2d_pY="34.9" x="0" y="104"/>
+  <SubTexture name="part-yanjiusuo_shandian6" width="61" height="33" cocos2d_pX="31.4" cocos2d_pY="31.2" x="65" y="0"/>
+  <SubTexture name="part-yanjiusuo_shandian5" width="63" height="36" cocos2d_pX="31.7" cocos2d_pY="27.4" x="0" y="0"/>
+  <SubTexture name="part-yanjiusuo_shandian4" width="62" height="29" cocos2d_pX="32.6" cocos2d_pY="18.7" x="0" y="38"/>
+  <SubTexture name="part-yanjiusuo_shandian3" width="55" height="33" cocos2d_pX="27.1" cocos2d_pY="16.1" x="0" y="69"/>
+  <SubTexture name="part-yanjiusuo_shandian2" width="54" height="38" cocos2d_pX="27.75" cocos2d_pY="3" x="65" y="35"/>
+  <SubTexture name="part-yanjiusuo_shandian1" width="53" height="30" cocos2d_pX="27.6" cocos2d_pY="-4.4" x="57" y="75"/>
+ </TextureAtlas>
+</skeleton>

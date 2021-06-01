@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>part-zhucheng_guangyu.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,2},{67,519}}</string>
+                <key>offset</key>
+                <string>{-1,-2}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,28},{67,519}}</string>
+                <key>sourceSize</key>
+                <string>{69,571}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>2</integer>
+            <key>realTextureFileName</key>
+            <string>guangyun.pvr.ccz</string>
+            <key>size</key>
+            <string>{128,1024}</string>
+            <key>smartupdate</key>
+            <string>$TexturePacker:SmartUpdate:55f7acba24edce604daf5c17caef8f04$</string>
+            <key>textureFileName</key>
+            <string>guangyun.pvr.ccz</string>
+        </dict>
+    </dict>
+</plist>

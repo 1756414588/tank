@@ -1,0 +1,159 @@
+<skeleton name="nengliangcao" frameRate="30" version="2.0">
+ <armatures>
+  <armature name="nengliangcao">
+   <b name="2" x="0.5" y="0.45" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0">
+    <d name="part-nengliangcao_diji0001"/>
+    <d name="part-nengliangcao_diji0003"/>
+    <d name="part-nengliangcao_diji0005"/>
+    <d name="part-nengliangcao_diji0007"/>
+    <d name="part-nengliangcao_diji0009"/>
+    <d name="part-nengliangcao_diji0011"/>
+    <d name="part-nengliangcao_diji0013"/>
+    <d name="part-nengliangcao_diji0015"/>
+    <d name="part-nengliangcao_diji0017"/>
+    <d name="part-nengliangcao_diji0019"/>
+    <d name="part-nengliangcao_diji0021"/>
+    <d name="part-nengliangcao_diji0023"/>
+    <d name="part-nengliangcao_diji0025"/>
+    <d name="part-nengliangcao_diji0027"/>
+    <d name="part-nengliangcao_diji0029"/>
+   </b>
+   <b name="3" x="3" y="2.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0">
+    <d name="part-nengliangcao_gaoji0001"/>
+    <d name="part-nengliangcao_gaoji0003"/>
+    <d name="part-nengliangcao_gaoji0005"/>
+    <d name="part-nengliangcao_gaoji0007"/>
+    <d name="part-nengliangcao_gaoji0009"/>
+    <d name="part-nengliangcao_gaoji0011"/>
+    <d name="part-nengliangcao_gaoji0013"/>
+    <d name="part-nengliangcao_gaoji0015"/>
+    <d name="part-nengliangcao_gaoji0017"/>
+    <d name="part-nengliangcao_gaoji0019"/>
+    <d name="part-nengliangcao_gaoji0021"/>
+    <d name="part-nengliangcao_gaoji0023"/>
+    <d name="part-nengliangcao_gaoji0025"/>
+    <d name="part-nengliangcao_gaoji0027"/>
+    <d name="part-nengliangcao_gaoji0029"/>
+    <d name="part-nengliangcao_gaoji0031"/>
+    <d name="part-nengliangcao_gaoji0033"/>
+    <d name="part-nengliangcao_gaoji0035"/>
+    <d name="part-nengliangcao_gaoji0037"/>
+    <d name="part-nengliangcao_gaoji0039"/>
+    <d name="part-nengliangcao_gaoji0041"/>
+    <d name="part-nengliangcao_gaoji0043"/>
+    <d name="part-nengliangcao_gaoji0045"/>
+    <d name="part-nengliangcao_gaoji0047"/>
+    <d name="part-nengliangcao_gaoji0049"/>
+    <d name="part-nengliangcao_gaoji0051"/>
+    <d name="part-nengliangcao_gaoji0053"/>
+    <d name="part-nengliangcao_gaoji0055"/>
+    <d name="part-nengliangcao_gaoji0057"/>
+    <d name="part-nengliangcao_gaoji0059"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="nengliangcao">
+   <mov name="start" dr="30" to="0" drTW="30" lp="1" twE="NaN">
+    <b name="2" sc="1" dl="0">
+     <f x="0.5" y="0.45" cocos2d_x="0.5" cocos2d_y="0.45" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="2"/>
+     <f x="0.5" y="0.45" cocos2d_x="0.5" cocos2d_y="0.45" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="1" dr="2"/>
+     <f x="0.5" y="0.45" cocos2d_x="0.5" cocos2d_y="0.45" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="2" dr="2"/>
+     <f x="0.5" y="0.45" cocos2d_x="0.5" cocos2d_y="0.45" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="3" dr="2"/>
+     <f x="0.5" y="0.45" cocos2d_x="0.5" cocos2d_y="0.45" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="4" dr="2"/>
+     <f x="0.5" y="0.45" cocos2d_x="0.5" cocos2d_y="0.45" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="5" dr="2"/>
+     <f x="0.5" y="0.45" cocos2d_x="0.5" cocos2d_y="0.45" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="6" dr="2"/>
+     <f x="0.5" y="0.45" cocos2d_x="0.5" cocos2d_y="0.45" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="7" dr="2"/>
+     <f x="0.5" y="0.45" cocos2d_x="0.5" cocos2d_y="0.45" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="8" dr="2"/>
+     <f x="0.5" y="0.45" cocos2d_x="0.5" cocos2d_y="0.45" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="9" dr="2"/>
+     <f x="0.5" y="0.45" cocos2d_x="0.5" cocos2d_y="0.45" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="10" dr="2"/>
+     <f x="0.5" y="0.45" cocos2d_x="0.5" cocos2d_y="0.45" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="11" dr="2"/>
+     <f x="0.5" y="0.45" cocos2d_x="0.5" cocos2d_y="0.45" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="12" dr="2"/>
+     <f x="0.5" y="0.45" cocos2d_x="0.5" cocos2d_y="0.45" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="13" dr="2"/>
+     <f x="0.5" y="0.45" cocos2d_x="0.5" cocos2d_y="0.45" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="14" dr="2"/>
+    </b>
+   </mov>
+   <mov name="start2" dr="60" to="0" drTW="60" lp="1" twE="NaN">
+    <b name="3" sc="1" dl="0">
+     <f x="3" y="2.55" cocos2d_x="3" cocos2d_y="2.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="2"/>
+     <f x="3" y="2.55" cocos2d_x="3" cocos2d_y="2.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="1" dr="2"/>
+     <f x="3" y="2.55" cocos2d_x="3" cocos2d_y="2.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="2" dr="2"/>
+     <f x="3" y="2.55" cocos2d_x="3" cocos2d_y="2.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="3" dr="2"/>
+     <f x="3" y="2.55" cocos2d_x="3" cocos2d_y="2.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="4" dr="2"/>
+     <f x="3" y="2.55" cocos2d_x="3" cocos2d_y="2.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="5" dr="2"/>
+     <f x="3" y="2.55" cocos2d_x="3" cocos2d_y="2.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="6" dr="2"/>
+     <f x="3" y="2.55" cocos2d_x="3" cocos2d_y="2.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="7" dr="2"/>
+     <f x="3" y="2.55" cocos2d_x="3" cocos2d_y="2.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="8" dr="2"/>
+     <f x="3" y="2.55" cocos2d_x="3" cocos2d_y="2.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="9" dr="2"/>
+     <f x="3" y="2.55" cocos2d_x="3" cocos2d_y="2.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="10" dr="2"/>
+     <f x="3" y="2.55" cocos2d_x="3" cocos2d_y="2.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="11" dr="2"/>
+     <f x="3" y="2.55" cocos2d_x="3" cocos2d_y="2.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="12" dr="2"/>
+     <f x="3" y="2.55" cocos2d_x="3" cocos2d_y="2.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="13" dr="2"/>
+     <f x="3" y="2.55" cocos2d_x="3" cocos2d_y="2.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="14" dr="2"/>
+     <f x="3" y="2.55" cocos2d_x="3" cocos2d_y="2.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="15" dr="2"/>
+     <f x="3" y="2.55" cocos2d_x="3" cocos2d_y="2.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="16" dr="2"/>
+     <f x="3" y="2.55" cocos2d_x="3" cocos2d_y="2.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="17" dr="2"/>
+     <f x="3" y="2.55" cocos2d_x="3" cocos2d_y="2.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="18" dr="2"/>
+     <f x="3" y="2.55" cocos2d_x="3" cocos2d_y="2.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="19" dr="2"/>
+     <f x="3" y="2.55" cocos2d_x="3" cocos2d_y="2.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="20" dr="2"/>
+     <f x="3" y="2.55" cocos2d_x="3" cocos2d_y="2.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="21" dr="2"/>
+     <f x="3" y="2.55" cocos2d_x="3" cocos2d_y="2.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="22" dr="2"/>
+     <f x="3" y="2.55" cocos2d_x="3" cocos2d_y="2.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="23" dr="2"/>
+     <f x="3" y="2.55" cocos2d_x="3" cocos2d_y="2.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="24" dr="2"/>
+     <f x="3" y="2.55" cocos2d_x="3" cocos2d_y="2.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="25" dr="2"/>
+     <f x="3" y="2.55" cocos2d_x="3" cocos2d_y="2.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="26" dr="2"/>
+     <f x="3" y="2.55" cocos2d_x="3" cocos2d_y="2.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="27" dr="2"/>
+     <f x="3" y="2.55" cocos2d_x="3" cocos2d_y="2.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="28" dr="2"/>
+     <f x="3" y="2.55" cocos2d_x="3" cocos2d_y="2.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="29" dr="2"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="nengliangcao" width="2048" height="2048">
+  <SubTexture name="part-nengliangcao_gaoji0059" width="400" height="200" cocos2d_pX="200" cocos2d_pY="100" x="1608" y="1212"/>
+  <SubTexture name="part-nengliangcao_gaoji0057" width="400" height="200" cocos2d_pX="200" cocos2d_pY="100" x="804" y="0"/>
+  <SubTexture name="part-nengliangcao_gaoji0055" width="400" height="200" cocos2d_pX="200" cocos2d_pY="100" x="1608" y="808"/>
+  <SubTexture name="part-nengliangcao_gaoji0053" width="400" height="200" cocos2d_pX="200" cocos2d_pY="100" x="1608" y="0"/>
+  <SubTexture name="part-nengliangcao_gaoji0051" width="400" height="200" cocos2d_pX="200" cocos2d_pY="100" x="0" y="1616"/>
+  <SubTexture name="part-nengliangcao_gaoji0049" width="400" height="200" cocos2d_pX="200" cocos2d_pY="100" x="402" y="202"/>
+  <SubTexture name="part-nengliangcao_gaoji0047" width="400" height="200" cocos2d_pX="200" cocos2d_pY="100" x="402" y="1010"/>
+  <SubTexture name="part-nengliangcao_gaoji0045" width="400" height="200" cocos2d_pX="200" cocos2d_pY="100" x="1206" y="202"/>
+  <SubTexture name="part-nengliangcao_gaoji0043" width="400" height="200" cocos2d_pX="200" cocos2d_pY="100" x="402" y="1414"/>
+  <SubTexture name="part-nengliangcao_gaoji0041" width="400" height="200" cocos2d_pX="200" cocos2d_pY="100" x="0" y="404"/>
+  <SubTexture name="part-nengliangcao_gaoji0039" width="400" height="200" cocos2d_pX="200" cocos2d_pY="100" x="1206" y="1010"/>
+  <SubTexture name="part-nengliangcao_gaoji0037" width="400" height="200" cocos2d_pX="200" cocos2d_pY="100" x="804" y="404"/>
+  <SubTexture name="part-nengliangcao_gaoji0035" width="400" height="200" cocos2d_pX="200" cocos2d_pY="100" x="1608" y="1616"/>
+  <SubTexture name="part-nengliangcao_gaoji0033" width="400" height="200" cocos2d_pX="200" cocos2d_pY="100" x="1608" y="404"/>
+  <SubTexture name="part-nengliangcao_gaoji0031" width="400" height="200" cocos2d_pX="200" cocos2d_pY="100" x="0" y="1212"/>
+  <SubTexture name="part-nengliangcao_gaoji0029" width="400" height="200" cocos2d_pX="200" cocos2d_pY="100" x="402" y="606"/>
+  <SubTexture name="part-nengliangcao_gaoji0027" width="400" height="200" cocos2d_pX="200" cocos2d_pY="100" x="1206" y="1414"/>
+  <SubTexture name="part-nengliangcao_gaoji0025" width="400" height="200" cocos2d_pX="200" cocos2d_pY="100" x="1206" y="606"/>
+  <SubTexture name="part-nengliangcao_gaoji0023" width="400" height="200" cocos2d_pX="200" cocos2d_pY="100" x="804" y="1212"/>
+  <SubTexture name="part-nengliangcao_gaoji0021" width="400" height="200" cocos2d_pX="200" cocos2d_pY="100" x="0" y="808"/>
+  <SubTexture name="part-nengliangcao_gaoji0019" width="400" height="200" cocos2d_pX="200" cocos2d_pY="100" x="1206" y="1616"/>
+  <SubTexture name="part-nengliangcao_gaoji0017" width="400" height="200" cocos2d_pX="200" cocos2d_pY="100" x="804" y="808"/>
+  <SubTexture name="part-nengliangcao_gaoji0015" width="400" height="200" cocos2d_pX="200" cocos2d_pY="100" x="0" y="0"/>
+  <SubTexture name="part-nengliangcao_gaoji0013" width="400" height="200" cocos2d_pX="200" cocos2d_pY="100" x="402" y="0"/>
+  <SubTexture name="part-nengliangcao_gaoji0011" width="400" height="200" cocos2d_pX="200" cocos2d_pY="100" x="1206" y="0"/>
+  <SubTexture name="part-nengliangcao_gaoji0009" width="400" height="200" cocos2d_pX="200" cocos2d_pY="100" x="0" y="202"/>
+  <SubTexture name="part-nengliangcao_gaoji0007" width="400" height="200" cocos2d_pX="200" cocos2d_pY="100" x="804" y="202"/>
+  <SubTexture name="part-nengliangcao_gaoji0005" width="400" height="200" cocos2d_pX="200" cocos2d_pY="100" x="1608" y="202"/>
+  <SubTexture name="part-nengliangcao_gaoji0003" width="400" height="200" cocos2d_pX="200" cocos2d_pY="100" x="402" y="404"/>
+  <SubTexture name="part-nengliangcao_gaoji0001" width="400" height="200" cocos2d_pX="200" cocos2d_pY="100" x="1206" y="404"/>
+  <SubTexture name="part-nengliangcao_diji0029" width="400" height="200" cocos2d_pX="200" cocos2d_pY="100" x="0" y="606"/>
+  <SubTexture name="part-nengliangcao_diji0027" width="400" height="200" cocos2d_pX="200" cocos2d_pY="100" x="804" y="606"/>
+  <SubTexture name="part-nengliangcao_diji0025" width="400" height="200" cocos2d_pX="200" cocos2d_pY="100" x="1608" y="606"/>
+  <SubTexture name="part-nengliangcao_diji0023" width="400" height="200" cocos2d_pX="200" cocos2d_pY="100" x="402" y="808"/>
+  <SubTexture name="part-nengliangcao_diji0021" width="400" height="200" cocos2d_pX="200" cocos2d_pY="100" x="1206" y="808"/>
+  <SubTexture name="part-nengliangcao_diji0019" width="400" height="200" cocos2d_pX="200" cocos2d_pY="100" x="0" y="1010"/>
+  <SubTexture name="part-nengliangcao_diji0017" width="400" height="200" cocos2d_pX="200" cocos2d_pY="100" x="804" y="1010"/>
+  <SubTexture name="part-nengliangcao_diji0015" width="400" height="200" cocos2d_pX="200" cocos2d_pY="100" x="1608" y="1010"/>
+  <SubTexture name="part-nengliangcao_diji0013" width="400" height="200" cocos2d_pX="200" cocos2d_pY="100" x="402" y="1212"/>
+  <SubTexture name="part-nengliangcao_diji0011" width="400" height="200" cocos2d_pX="200" cocos2d_pY="100" x="1206" y="1212"/>
+  <SubTexture name="part-nengliangcao_diji0009" width="400" height="200" cocos2d_pX="200" cocos2d_pY="100" x="0" y="1414"/>
+  <SubTexture name="part-nengliangcao_diji0007" width="400" height="200" cocos2d_pX="200" cocos2d_pY="100" x="804" y="1414"/>
+  <SubTexture name="part-nengliangcao_diji0005" width="400" height="200" cocos2d_pX="200" cocos2d_pY="100" x="1608" y="1414"/>
+  <SubTexture name="part-nengliangcao_diji0003" width="400" height="200" cocos2d_pX="200" cocos2d_pY="100" x="402" y="1616"/>
+  <SubTexture name="part-nengliangcao_diji0001" width="400" height="200" cocos2d_pX="200" cocos2d_pY="100" x="804" y="1616"/>
+ </TextureAtlas>
+</skeleton>

@@ -1,0 +1,42 @@
+<skeleton name="lvqi" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="lanqipiao">
+   <b name="3" x="15.2" y="-12.95" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0">
+    <d name="part-lvqi1"/>
+    <d name="part-lvqi2"/>
+    <d name="part-lvqi3"/>
+    <d name="part-lvqi4"/>
+    <d name="part-lvqi5"/>
+    <d name="part-lvqi6"/>
+    <d name="part-lvqi7"/>
+    <d name="part-lvqi8"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="lanqipiao">
+   <mov name="start" dr="48" to="6" drTW="48" lp="1" twE="NaN">
+    <b name="3" sc="1" dl="0">
+     <f x="15.2" y="-12.95" cocos2d_x="15.2" cocos2d_y="-12.95" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="6"/>
+     <f x="15.2" y="-12.8" cocos2d_x="15.2" cocos2d_y="-12.8" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="1" dr="6"/>
+     <f x="15" y="-12.95" cocos2d_x="15" cocos2d_y="-12.95" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="2" dr="6"/>
+     <f x="15" y="-12.9" cocos2d_x="15" cocos2d_y="-12.9" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="3" dr="6"/>
+     <f x="15.25" y="-12.5" cocos2d_x="15.25" cocos2d_y="-12.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="4" dr="6"/>
+     <f x="15" y="-12.55" cocos2d_x="15" cocos2d_y="-12.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="5" dr="6"/>
+     <f x="14.95" y="-12.45" cocos2d_x="14.95" cocos2d_y="-12.45" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="6" dr="6"/>
+     <f x="14.95" y="-12.4" cocos2d_x="14.95" cocos2d_y="-12.4" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="7" dr="6"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="lvqi" width="128" height="128">
+  <SubTexture name="part-lvqi8" width="30" height="30" cocos2d_pX="15" cocos2d_pY="14.75" x="64" y="65"/>
+  <SubTexture name="part-lvqi7" width="30" height="30" cocos2d_pX="15" cocos2d_pY="15" x="96" y="33"/>
+  <SubTexture name="part-lvqi6" width="30" height="30" cocos2d_pX="15" cocos2d_pY="15" x="64" y="33"/>
+  <SubTexture name="part-lvqi5" width="31" height="31" cocos2d_pX="15.25" cocos2d_pY="15.5" x="66" y="0"/>
+  <SubTexture name="part-lvqi4" width="30" height="31" cocos2d_pX="15" cocos2d_pY="15.25" x="0" y="33"/>
+  <SubTexture name="part-lvqi3" width="30" height="31" cocos2d_pX="15" cocos2d_pY="15.25" x="32" y="33"/>
+  <SubTexture name="part-lvqi2" width="31" height="31" cocos2d_pX="15.25" cocos2d_pY="15.5" x="0" y="0"/>
+  <SubTexture name="part-lvqi1" width="31" height="31" cocos2d_pX="15.25" cocos2d_pY="15.25" x="33" y="0"/>
+ </TextureAtlas>
+</skeleton>

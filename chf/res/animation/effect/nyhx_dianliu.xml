@@ -1,0 +1,33 @@
+<skeleton name="nyhx_dianliu1" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="nyhx_dianliu">
+   <b name="1" x="0" y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0">
+    <d name="part-shandian_dianliu_0"/>
+    <d name="part-shandian_dianliu_2"/>
+    <d name="part-shandian_dianliu_4"/>
+    <d name="part-shandian_dianliu_6"/>
+    <d name="part-shandian_dianliu_8"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="nyhx_dianliu">
+   <mov name="start" dr="15" to="0" drTW="15" lp="1" twE="NaN">
+    <b name="1" sc="1" dl="0">
+     <f x="0" y="0" cocos2d_x="0" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="3"/>
+     <f x="0" y="0" cocos2d_x="0" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="1" dr="3"/>
+     <f x="0" y="0" cocos2d_x="0" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="2" dr="3"/>
+     <f x="0" y="0" cocos2d_x="0" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="3" dr="3"/>
+     <f x="0" y="0" cocos2d_x="0" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="4" dr="3"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="nyhx_dianliu1" width="256" height="512">
+  <SubTexture name="part-shandian_dianliu_8" width="130" height="100" cocos2d_pX="65" cocos2d_pY="50" x="0" y="408"/>
+  <SubTexture name="part-shandian_dianliu_6" width="130" height="100" cocos2d_pX="65" cocos2d_pY="50" x="0" y="306"/>
+  <SubTexture name="part-shandian_dianliu_4" width="130" height="100" cocos2d_pX="65" cocos2d_pY="50" x="0" y="0"/>
+  <SubTexture name="part-shandian_dianliu_2" width="130" height="100" cocos2d_pX="65" cocos2d_pY="50" x="0" y="102"/>
+  <SubTexture name="part-shandian_dianliu_0" width="130" height="100" cocos2d_pX="65" cocos2d_pY="50" x="0" y="204"/>
+ </TextureAtlas>
+</skeleton>

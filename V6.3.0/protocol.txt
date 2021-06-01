@@ -1,0 +1,861 @@
+﻿-------------------------账号服务器----------------------------------
+DoLogin     =   101,102     //登陆
+DoRegister  =   103,104     //注册账号（使用自有账号的时候，会用到）
+DoActive    =   105,106     //使用激活码,激活账号
+---------------------------------------------------------------------
+
+
+-------------------------游戏服务器----------------------------------
+BeginGame       =       201,202     //客户端向游戏服务器请求所选服武器角色状态
+CreateRole      =       203,204     //创建服务器角色
+GetNames        =       205,206     //获取随机名字
+RoleLogin       =       207,208     //角色登陆进入游戏
+GetLord         =       209,210     //获取玩家数据
+GetTime         =       211,212     //获取服务器时间
+GetTank         =       213,214     //获取玩家坦克数据
+GetArmy         =       215,216     //获取部队信息
+GetForm         =       217,218     //获取阵型数据
+SetForm         =       219,220     //设置阵型
+Repair          =       221,222     //维修
+GetResource     =       223,224     //获得资源数据
+GetBuilding     =       225,226     //获取建筑数据
+UpBuilding      =       227,228     //升级建筑
+LoadData        =       229,230     //重新从数据库加载玩家数据
+BuildTank       =       231,232     //生产坦克
+Heart           =       233,234     //心跳消息，如果客户端超过一分钟没有发任何请求，就发送心跳消息
+CancelQue       =       235,236     //取消队列
+GetProp         =       237,238     //获取道具数据
+BuyProp         =       239,240     //购买道具
+UseProp         =       241,242     //使用道具
+SpeedQue        =       243,244     //加速队列
+BuildProp       =       245,246     //制造车间生产道具
+RefitTank       =       247,248     //改装坦克
+GetEquip        =       249,250     //获取装备数据
+SellEquip       =       251,252     //出售装备
+UpEquip         =       253,254     //升级装备
+OnEquip         =       255,256     //穿戴、卸下装备
+UpCapacity      =       257,258     //扩容装备仓库
+AllEquip        =       259,260     //一键穿戴、卸下
+GetPart         =       261,262     //获取配件数据
+GetChip         =       263,264     //获取碎片
+CombinePart     =       265,266     //合成配件
+ExplodePart     =       267,268     //分解配件
+OnPart          =       269,270     //穿戴、卸下配件
+ExplodeChip     =       271,272     //分解碎片
+UpPart          =       273,274     //强化配件
+RefitPart       =       275,276     //改造配件
+GetScience      =       277,278     //获取科技数据
+UpgradeScience  =       279,280     //科技升级
+GetCombat       =       281,282     //获取副本数据
+DoCombat        =       283,284     //挑战副本
+GetMyHeros      =       285,286     //获得我的将领
+HeroDecompose   =       287,288     //将领分解
+HeroLevelUp     =       289,290     //将领升级
+HeroImprove     =       291,292     //将领升阶
+LotteryHero     =       293,294     //抽将
+BuyExplore      =       295,296     //购买副本次数
+ResetExtrEpr    =       297,298     //重置极限探险
+GetFriend       =       299,300     //获取好友列表
+AddFriend       =       301,302     //添加好友
+DelFriend       =       303,304     //删除好友
+BlessFriend     =       305,306     //祝福好友
+GetBless        =       307,308     //获取祝福列表
+AcceptBless     =       309,310     //领取祝福
+GetStore        =       311,312     //获取坐标点
+RecordStore     =       313,314     //收藏坐标点
+MarkStore       =       315,316     //备注标记坐标点
+GetMail         =       317,318     //获取邮件          (已废弃)
+SendMail        =       319,320     //发送邮件
+RewardMail      =       321,322     //邮件奖励领取
+DelMail         =       323,324     //删除邮件
+CombatBox       =       325,326     //开副本箱子(荒宝碎片兑换)
+BuyPower        =       327,328     //买能量
+UpRank          =       329,330     //升级军衔
+UpCommand       =       331,332     //升级统帅等级
+BuyPros         =       333,334     //买繁荣度
+BuyFame         =       335,336     //买声望
+ClickFame       =       337,338     //领取军衔声望
+GetSkill        =       339,340     //获取技能数据
+UpSkill         =       341,342     //升级技能
+ResetSkill      =       343,344     //重置技能
+GetMill         =       345,346     //获取城外工厂数据  (20160122 废弃，合并到GetBuilding)
+DestroyMill     =       347,348     //拆除工厂
+SeachPlayer     =       349,350     //搜索玩家
+GetEffect       =       351,352     //获取特殊加成数据
+DoSome          =       353,354     //想干啥干啥
+DelStore        =       355,356     //删除坐标点
+DoLottery       =       357,358     //抽奖
+GetArena        =       359,360     //竞技场数据
+DoArena         =       361,362     //竞技场挑战
+BuyArena        =       363,364     //购买挑战次数
+ArenaAward      =       365,366     //领取竞技场奖励
+UseScore        =       367,368     //积分兑换
+InitArena       =       369,370     //首次进入竞技场，设置阵型
+ReadMail        =       371,372     //读邮件           (已废弃)
+GetLotteryEquip     =   373,374     //获取抽取装备信息
+GetPartyRank        =   375,376     //军团列表
+GetParty            =   377,378     //军团
+GetPartyBuilding    =   379,380     //军团建筑等级        (20150930 废弃，放入getparty中)
+GetPartyMember      =   381,382     //军团成员
+GetPartyHall        =   383,384     //军团大厅
+GetPartyScience     =   385,386     //军团科技
+GetPartyWeal        =   387,388     //军团福利院
+GetPartyTrend       =   389,390     //军团军情
+GetPartyShop        =   391,392     //军团商店
+DonateParty         =   393,394     //军团大厅贡献
+UpPartyBuilding     =   395,396     //军团建筑升级
+SetPartyJob         =   397,398     //军团赋职位
+BuyPartyShop        =   399,400     //军团商店购买
+WealDayParty        =   401,402     //军团日常福利领取
+PartyApplyList      =   403,404     //军团审批入会列表
+PartyApply          =   405,406     //军团申请
+PartyApplyJudge     =   407,408     //军团批阅申请
+CreateParty         =   409,410     //创建军团
+QuitParty           =   411,412     //退出军团
+DonateScience       =   413,414     //贡献科技技能
+WealResourceParty   =   415,416     //帮派采集资源福利领取
+CannlyApply         =   417,418     //取消申请
+ApplyList           =   419,420     //个人申请帮派列表
+SeachParty          =   421,422     //搜索军团
+DoneGuide           =   423,424     //完成新手引导，暂时通过这个协议来初始化玩家世界坐标
+GetMap              =   425,426     //获取区域玩家数据
+ScoutPos            =   427,428     //侦查坐标点数据
+AttackPos           =   429,430     //攻击坐标点
+MoveHome            =   431,432     //迁徙基地
+Retreat             =   433,434     //撤回
+GetSign             =   435,436     //本月签到信息
+Sign                =   437,438     //签到
+GetMajorTask        =   439,440     //获取主线任务
+TaskAward           =   441,442     //主线任务领奖
+SloganParty         =   443,444     //军团设置公告
+UpMemberJob         =   445,446     //成员升职位
+CleanMember         =   447,448     //清理帮派成员
+ConcedeJob          =   449,450     //退让帮主
+SetMemberJob        =   451,452     //军团长给成员设置职位
+PartyJobCount       =   453,454     //军团职位人数
+PartyApplyEdit      =   455,456     //军团申请编辑
+GetPartySection     =   457,458     //军团大关卡信息   （20150929暂时废弃）
+GetPartyCombat      =   459,460     //军团副本信息
+DoPartyCombat       =   461,462     //军团副本战斗
+PartyctAward        =   463,464     //军团副本开箱子
+GetMailList         =   465,466     //邮件列表
+GetMailById         =   467,468     //邮件详细信息
+GetInvasion         =   469,470     //进军数据(包括敌方和友方)
+GetAid              =   471,472     //友军援助数据
+SetGuard            =   473,474     //设置驻军防守
+GuardPos            =   475,476     //派遣驻军
+GetChat             =   477,478     //拉取最新15条聊天
+DoChat              =   479,480     //发送聊天数据
+SearchOl            =   481,482     //查找在线玩家
+GetDayiyTask        =   483,484     //获取日常任务
+GetLiveTask         =   485,486     //获取活跃任务
+AcceptTask          =   487,488     //接受日常任务
+AcceptNoTask        =   489,490     //放弃日常任务
+GetReport           =   491,492     //获取某玩家的某条战报
+ShareReport         =   493,494     //分享报告
+TaskLiveAward       =   495,496     //活跃任务领奖
+TaskDaylyReset      =   497,498     //日常任务重置
+RefreshDayiyTask    =   499,500     //刷新日常任务
+RetreatAid          =   501,502     //遣返军团驻军
+GetExtreme          =   503,504     //获取极限副本通关数据
+ExtremeRecord       =   505,506     //获取极限副本通关战斗记录
+SetData             =   507,508     //传送数据
+PtcForm             =   509,510     //军团副本最新关卡阵型
+BeginWipe           =   511,512     //开始扫荡极限挑战
+EndWipe             =   513,514     //中止扫荡极限挑战
+GetGuideGift        =   515,516     //领取新手礼包
+GetRank             =   517,518     //获取排行榜数据
+GetPartyLiveRank    =   519,520     //军团活跃榜
+SetPortrait         =   521,522     //设置头像  
+GetLotteryExplore   =   523,524     //探宝信息
+PartyRecruit        =   525,526     //军团招募
+BuyBuild            =   527,528     //购买建造位
+GetActivityList     =   529,530     //活动列表
+GetActivityAward    =   531,532     //活动领奖
+ActLevel            =   533,534     //等级活动信息
+ActAttack           =   535,536     //雷霆计划活动
+ActFight            =   537,538     //军团战力排行活动
+ActCombat           =   539,540     //关卡排行活动
+ActHonour           =   541,542     //荣誉排行活动
+GiftCode            =   551,552     //使用兑换码
+ActPartyLv          =   553,554     //军团等级排行活动
+ActPartyDonate      =   555,556     //军团捐献活动
+ActCollect          =   557,558     //资源采集活动
+ActCombatSkill      =   559,560     //关卡送技能书活动
+ActPartyFight       =   561,562     //军团战力排行活动
+GetActionCenter     =   563,564     //活动中心
+GetActMecha         =   565,566     //机甲洪流
+DoActMecha          =   567,568     //机甲洪流
+AssembleMecha       =   569,570     //机甲组装
+OlAward             =   571,572     //领取港口在线奖励
+ActInvest           =   573,574     //投资计划活动
+DoInvest            =   575,576     //参与投资计划
+ActPayRedGift       =   577,578     //充值红包活动
+ActEveryDayPay      =   579,580     //每日充值活动
+ActPayFirst         =   581,582     //开服首充活动(废弃)
+ActQuota            =   583,584     //开服限购活动
+DoQuota             =   585,586     //限购活动购买（折扣购买类活动都走这）
+ActPurpleEqpColl    =   587,588     //紫装收集
+ActPurpleEqpUp      =   589,590     //紫装升级
+ActCrazyArena       =   591,592     //疯狂竞技
+ActCrazyUpgrade     =   593,594     //疯狂进阶
+ActPartEvolve       =   595,596     //配件进化
+ActFlashSale        =   597,598     //限时抢购
+ActCostGold         =   599,600     //消费有奖
+ActContuPay         =   601,602     //连续充值
+ActFlashMeta        =   603,604     //限购材料
+ActDayPay           =   605,606     //天天充值
+ActDayBuy           =   607,608     //天天限购
+GetPartyLvRank      =   609,610     //军团等级排行列表
+ActMonthSale        =   611,612     //月末限购
+ActGiftOL           =   613,614     //在线送礼
+ActMonthLogin       =   615,616     //每月登录
+GetActAmyRebate     =   617,618     //建军返利
+GetActAmyfestivity  =   619,620     //建军欢庆
+DoActAmyRebate      =   621,622     //返利领取
+DoActAmyfestivity   =   623,624     //欢庆领取
+GetActFortune       =   625,626     //获取极限单兵
+GetActFortuneRank   =   627,628     //获取极限排行榜
+DoActFortune        =   629,630     //极限单兵抽奖
+GetRankAward        =   631,632     //极限排名奖励
+GetActBee           =   633,634     //勤劳致富采集信息(领奖调用GetActivityAward协议)
+GetActBeeRank       =   635,636     //勤劳致富排名(领奖用GetRankAward协议)
+GetRankAwardList    =   637,638     //排行榜奖励列表
+EveLogin            =   639,640     //每日登陆信息
+AcceptEveLogin      =   641,642     //每日登陆确认
+GetActProfoto       =   643,644     //获取宝图信息（哈洛克的宝藏）
+DoActProfoto        =   645,646     //合成宝图
+UnfoldProfoto       =   647,648     //打开宝图
+GetActPartDial      =   649,650     //配件转盘
+GetActPartDialRank  =   651,652     //配件转盘排行榜
+DoActPartDial       =   653,654     //配件转盘抽奖
+ActEnemySale        =   655,656     //敌军兜售
+ActUpEquipCrit      =   657,658     //升装暴击
+DoActTankRaffle     =   659,660     //坦克拉霸
+GetActTankRaffle    =   661,662     //坦克拉霸信息
+
+
+WarReg              =   663,664     //百团混战报名
+WarMembers          =   665,666     //百团混战军团成员报名列表
+WarParties          =   667,668     //百团混战参与军团列表
+WarReport           =   669,670     //百团混战战况
+WarCancel           =   671,672     //取消报名
+
+
+
+GetActDestroy           =   673,674     //疯狂歼灭信息(领奖调用GetActivityAward协议)
+GetActDestroyRank       =   675,676     //疯狂歼灭排名(领奖用GetRankAward协议)
+ActReFristPay           =   677,678     //首笔充值返利
+ActGiftPay              =   679,680     //充值赠礼
+GetPartyAmyProps        =   681,682     //军团战事福利
+SendPartyAmyProp        =   683,684     //发放军团福利
+WarWinAward             =   685,686     //百团混战领取个人连胜排行奖励
+WarRank                 =   687,688     //百团混战军团排名列表
+WarWinRank              =   689,690     //百团混战连胜排名列表
+UseAmyProp              =   691,692     //使用军团战事福利宝箱
+GetWarFight             =   693,694     //回放战报
+GetActTech              =   695,696     //技术更新列表
+DoActTech               =   697,698     //兑换技术更新
+GetActGeneral           =   699,700     //招募武将列表
+DoActGeneral            =   701,702     //招募武将
+GetActGeneralRank       =   703,704     //招募武将排行榜
+ActVipGift              =   705,706     //vip礼包信息
+ActPayContu4            =   707,708     //连续4天充值
+DoPartyTipAward         =   709,710     //领取军团tip奖励
+GetActEDayPay           =   711,712     //获取每日充值活动(永久性)
+DoActEDayPay            =   713,714     //领取每日充值奖励
+DoActVipGift            =   715,716     //购买vip礼包信息
+
+
+
+
+
+GetBoss                 =   717,718     //获取世界boss数据
+GetBossHurtRank         =   719,720     //获取世界boss伤害排行
+SetBossAutoFight        =   721,722     //世界boss 设置vip自动战斗
+BlessBossFight          =   723,724     //世界boss祝福
+FightBoss               =   725,726     //挑战世界boss
+BuyBossCd               =   727,728     //消除世界boss CD时间
+BossHurtAward           =   729,730     //领取世界bosss伤害排名奖励
+ComposeSant             =   731,732     //合成将神魂
+GetTipFriends           =   733,734     //获取一键添加好友
+AddTipFriends           =   735,736     //一键添加好友
+BuyArenaCd              =   737,738     //消除竞技场cd
+BuyAutoBuild            =   739,740     //购买自动升级建筑
+SetAutoBuild            =   741,742     //开启、关闭自动升级建筑
+ActFesSale              =   743,744     //春节限购
+GetActConsumeDial       =   745,746     //消费转盘
+GetActConsumeDialRank   =   747,748     //消费转盘排行榜
+DoActConsumeDial        =   749,750     //消费转盘抽奖
+GetActVacationland      =   751,752     //度假胜地
+BuyActVacationland      =   753,754     //购买度假胜地
+DoActVacationland       =   755,756     //领取度假胜地
+GetActPartCash          =   757,758     //获取限时兑换(配件)
+DoPartCash              =   759,760     //兑换配件
+GetActEquipCash         =   761,762     //获取限时兑换（装备）
+DoEquipCash             =   763,764     //兑换装备
+GetActPartResolve       =   765,766     //获取分解配件兑换改造
+DoActPartResolve        =   767,768     //兑换分解配件
+RefshPartCash           =   769,770     //兑换配件刷新
+RefshEquipCash          =   771,772     //兑换装备刷新
+GetStaffing             =   773,774     //获取编制数据
+GetActGamble            =   775,776     //下注赢金币主页面
+DoActGamble             =   777,778     //下注赢金币
+GetActPayTurntable      =   779,780     //充值转盘主页面
+DoActPayTurntable       =   781,782     //充值转盘
+GetSeniorMap            =   783,784     //获取军事矿区数据
+AtkSeniorMine           =   785,786     //攻击军事矿区
+SctSeniorMine           =   787,788     //侦查军事矿区
+ScoreRank               =   789,790     //军事矿区个人排行
+ScorePartyRank          =   791,792     //军事矿区军团排行
+BuySenior               =   793,794     //购买军事矿区掠夺次数
+ScoreAward              =   795,796     //领取军事矿区积分奖励
+PartyScoreAward         =   797,798     //领取军事矿区军团积分奖励
+GetActCarnival          =   799,800     //春节活动-狂欢信息
+GetActPray              =   801,802     //春节活动-祈福信息
+DoActPray               =   803,804     //使用祝福卡
+ActPrayAward            =   805,806     //领取祈福奖励
+GetActPartyDonateRank   =   807,808     //今天捐献排名
+GetPartyRankAward       =   809,810     //今天捐献排名
+MultiHeroImprove        =   811,812     //多个武将进阶
+TipGuy                  =   813,814     //举报
+LockPart                =   815,816     //锁配件
+GetActNewRaffle         =   817,818     //坦克拉霸
+DoActNewRaffle          =   819,820     //坦克拉霸信息
+LockNewRaffle           =   821,822     //锁定坦克
+GetMilitaryScience      =   823,824     //获取军工科技
+GetActTankExtract       =   825,826     //获取M1A2
+DoActTankExtract        =   827,828     //抽取M1A2
+FormulaTankExtract      =   829,830     //合成M1A2
+UpMilitaryScience       =   831,832     //升级军工科技
+GetMilitaryScienceGrid  =   833,834     //获取军工科技格子解锁信息
+FitMilitaryScience      =   835,836     //装配或卸下科技
+MilitaryRefitTank       =   837,838     //军工改装
+GetActTankCarnival      =   839,840     //坦克嘉年华
+DoActTankCarnival       =   841,842     //抽取坦克嘉年华
+GetMilitaryMaterial     =   843,844     //获取军工材料信息
+UnLockMilitaryGrid      =   845,846     //解锁军工科技格子
+GetPendant              =   847,848     //拉取挂件
+GetFortressBattleParty  =   849,850     //获取要塞战军团
+SetFortressBattleForm   =   851,852     //设置要塞战阵型
+GetFortressBattleDefend =   853,854     //获取要塞战防守信息
+FortressBattleRecord    =   855,856     //要塞战战况
+BuyFortressBattleCd     =   857,858     //买要塞战CD
+AttackFortress          =   859,860     //攻击要塞
+GetFortressPartyRank    =   861,862     //获取要塞军团排名
+GetFortressJiFenRank    =   863,864     //获取要塞积分排名
+GetFortressCombatStatics=   865,866     //获取要塞战绩统计
+GetFortressFightReport  =   867,868     //获取要塞战报
+GetFortressAttr         =   869,870     //获取要塞进修数据
+UpFortressAttr          =   871,872     //进修
+GetFightValueAdd        =   873,874     //获取战力增强
+ReceiveFigthValueAdd    =   875,876     //领取战力增强
+GetNobilityAncestry     =   877,878     //获取贵族血统
+DoNobilityAncestry      =   879,880     //领取贵族血统
+GetFortressJob          =   881,882     //获取要塞战任命职位
+FortressAppoint         =   883,884     //要塞战职位任命
+GetFortressWinParty     =   885,886     //获取要塞胜利军团
+GetMyFortressJob        =   887,888     //获取我的要塞职业信息
+GetThisWeekMyWarJiFenRank = 889,890     //获取本周我的军团混战积分排名
+GetScout                =   891,892     //拉取侦查次数
+
+
+// 能晶系统，能晶在这里统一使用energyStone表示
+GetRoleEnergyStone      =   893,894     //获取能晶仓库信息
+GetEnergyStoneInlay     =   895,896     //获取能晶镶嵌信息
+CombineEnergyStone      =   897,898     //合成能晶
+OnEnergyStone           =   899,900     //镶嵌、卸下能晶
+GetAltarBossData        =   901,902     //获取祭坛BOSS数据
+GetAltarBossHurtRank    =   903,904     //获取祭坛BOSS伤害排行
+SetAltarBossAutoFight   =   905,906     //祭坛BOSS设置vip自动战斗
+BlessAltarBossFight     =   907,908     //祭坛BOSS祝福
+CallAltarBoss           =   909,910     //召唤祭坛BOSS
+BuyAltarBossCd          =   911,912     //消除祭坛BOSS的CD时间
+FightAltarBoss          =   913,914     //挑战祭坛BOSS
+AltarBossHurtAward      =   915,916     //领取祭坛BOSS伤害排名奖励
+
+// 宝物商店
+GetTreasureShopBuy      =   917,918     //获取宝物商店的商品购买信息
+BuyTreasureShop         =   919,920     //购买宝物商店的商品
+
+// 军事演习（红蓝大战）
+GetDrillData            =   921,922     //获取红蓝大战的状态信息等数据
+DrillEnroll             =   923,924     //玩家报名参加红蓝大战
+ExchangeDrillTank       =   925,926     //兑换演习军力
+GetDrillRecord          =   927,928     //获取红蓝大战的战况
+GetDrillFightReport     =   929,930     //获取红蓝大战的具体战报
+GetDrillRank            =   931,932     //获取红蓝大战排行榜
+DrillReward             =   933,934     //领取红蓝大战的奖励
+GetDrillShop            =   936,935     //获取军演商店数据
+ExchangeDrillShop       =   937,938     //兑换军演商店的物品
+ExchangeDrillShop       =   937,938     //兑换军演商店的物品
+GetDrillImprove         =   939,940     //获取玩家的演习进修信息
+DrillImprove            =   941,942     //演习进修
+GetDrillTank            =   943,944     //获取演习军力
+
+
+// push推送
+GetPushState            =   945,946     //获取Push推送信息
+PushComment             =   947,948     //评论
+
+// 跨服战
+GetCrossServerList      =   951,952     //获取参加跨服战的服务器列表
+GetCrossFightState      =   953,954     //获取跨服战状态
+CrossFightReg           =   955,956     //跨服战报名
+GetCrossRegInfo         =   957,958     //获取跨服战报名信息
+CancelCrossReg          =   959,960     //取消跨服战报名
+GetCrossForm            =   961,962     //获取跨服战阵型
+SetCrossForm            =   963,964     //设置跨服战阵型
+GetCrossPersonSituation =   965,966     //获取跨服战个人战况
+GetCrossJiFenRank       =   967,968     //获取跨服战积分排名
+GetCrossReport          =   969,970     //获取跨服战战报
+GetCrossKnockCompetInfo =   971,972     //获取跨服战淘汰赛比赛信息
+GetCrossFinalCompetInfo =   973,974     //获取跨服战总决赛比赛信息
+BetBattle               =   975,976     //比赛下注
+GetMyBet                =   977,978     //获取我的下注
+ReceiveBet              =   979,980     //领取下注
+
+
+
+// 叛军入侵
+GetRebelData            =   981,982     //获取叛军入侵活动相关数据
+GetRebelRank            =   983,984     //获取叛军入侵活动的排行榜数据
+RebelRankReward         =   985,986     //领取叛军入侵活动的排行奖励
+RebelIsDead             =   987,988     //获取叛军是否死亡
+
+// 坦克嘉年华活动 Carnival
+GetTankCarnival         =   989,990     //获取坦克嘉年华活动数据
+TankCarnivalReward      =   991,992     //坦克嘉年华活动拉取奖励
+
+// 能量赠送活动
+GetPowerGiveData        =   993,994     //获取能量赠送活动数据
+GetFreePower            =   995,996     //领取能量赠送活动能晶
+
+// 配件进阶
+PartQualityUp           =   997,998     //配件进阶橙品
+
+// 配件淬炼
+SmeltPart               =   3001,3002   // 配件淬炼
+SaveSmeltPart           =   3003,3004   // 配件淬炼保存
+TenSmeltPart            =   3005,3006   // 配件10次淬炼
+
+// 集字活动                                    
+GetCollectCharacter     =   3007,3008   // 请求集字活动信息
+CollectCharacterCombine =   3009,3010   // 合成
+CollectCharacterChange  =   3011,3012   // 兑换
+
+// m1a2活动                                    
+GetActM1a2              =   3013,3014   // 请求m1a2活动信息
+DoActM1a2               =   3015,3016   // 探索m1a2活动
+M1a2RefitTank           =   3017,3018   // m1a2改造坦克
+
+// 鲜花活动
+GetFlower               =   3019,3020   // 请求鲜花活动信息
+WishFlower              =   3021,3022   // 鲜花祝福
+
+//能晶一键镶嵌
+AllEnergyStone          =   3023,3024   // 一键镶嵌
+
+//装备进阶
+EquipQualityUp          =   3025,3026   // 装备进阶
+
+//返利我做主
+GetPayRebate            =   3027,3028   // 请求返利转盘信息
+DoPayRebate             =   3029,3030   // 开始转盘
+
+//勋章
+GetMedal                =   3037,3038   //所有勋章 仓库 身上 展示
+GetMedalChip            =   3039,3040   //所有勋章碎片
+CombineMedal            =   3041,3042   //合成勋章
+ExplodeMedal            =   3043,3044   //分解勋章
+ExplodeMedalChip        =   3045,3046   //分解勋章碎片
+OnMedal                 =   3047,3048   //穿上、卸下勋章
+LockMedal               =   3049,3050   //锁定勋章
+UpMedal                 =   3051,3052   //强化勋章
+BuyMedalCdTime          =   3053,3054   //购买强化勋章cd
+RefitMedal              =   3055,3056   //改造勋章
+GetMedalBouns           =   3065,3066   //获取勋章展厅
+DoMedalBouns            =   3067,3068   //勋章展示
+
+//海贼宝藏
+GetPirateLottery        =   3031,3032   //请求抽奖界面
+DoPirateLottery         =   3033,3034   //海贼宝藏抽奖
+ResetPirateLottery      =   3035,3036   //重置抽奖
+GetPirateChange         =   3057,3058   //请求兑换界面
+DoPirateChange          =   3059,3060   //请求兑换
+GetActPirateRank        =   3063,3064   //请求排行榜
+
+//购买侦查CD
+BuyScoutCdTime          =   3061,3062   //购买侦查CD
+
+//连续充值
+GetActRecharge          =   3069,3070   //获取界面信息
+DoActRecharge           =   3071,3072   //领取奖励
+
+//挑战探险关卡奖励
+GetSectionReward        =   3073,3074   //获取界面信息
+DoSectionReward         =   3075,3076   //领取奖励
+
+//连续充值 （多档位）
+ActContuPayMore         =   3077,3078   //获取界面信息
+
+//能晶转盘
+GetActEnergyStoneDial   =   3079,3080   //能晶转盘
+GetActEnergyStoneDialRank = 3081,3082   //能晶转盘排行榜
+DoActEnergyStoneDial    =   3083,3084   //能晶转盘抽奖
+
+//机甲贺岁
+GetActBoss              =   3085,3086   //活动界面数据
+CallActBoss             =   3087,3088   //召唤
+AttackActBoss           =   3089,3090   //挑战
+BuyActBossCd            =   3091,3092   //购买CD
+GetActBossRank          =   3093,3094   //排行榜
+
+//使用道具
+UsePropChoose           =   3095,3096   //使用可控制道具
+
+//狂欢祈福
+GetActHilarityPray      =   3097,3098   //请求狂欢祈福充值领奖界面信息
+ReceiveActHilarityPray  =   3099,3100   //领取狂欢祈福充值奖励
+
+//跨服商店
+GetCrossShop            =   3101,3102   // 获取跨服战商店数据
+ExchangeCrossShop       =   3103,3104   // 兑换跨服战商店的物品
+GetCrossTrend           =   3105,3106   // 获取跨服战积分详情
+GetCrossFinalRank       =   3107,3108   // 获取总排行
+ReceiveRankRward        =   3109,3110   // 领取排行奖励
+GetCrossRank      (公用)=   3111,3112 // 获取跨服名人堂数据
+
+//跨服军团
+
+GetCrossPartyServerList =   3205,3206   // 获取跨服军团服务器列表
+CrossPartyReg           =   3207,3208   // 跨服军团战报名
+GetCPMyRegInfo          =   3209,3210   // 获取军团我的报名状态
+GetCrossPartyMember     =   3211,3212   // 获取报名跨服军团成员列表
+GetCrossParty           =   3213,3214   // 获取参加跨服军团
+GetCPSituation          =   3215,3216   // 获取跨服军团状况
+GetCPOurServerSituation =   3217,3218   // 获取跨服军团本服战况
+GetCPReport             =   3221,3222   // 获取跨服军团战报
+GetCPRank               =   3223,3224   // 获取跨服军团排名
+ReceiveCPReward         =   3225,3226   // 领取跨服军团奖励
+GetCPShop               =   3227,3228   // 获取跨服军团商店数据
+ExchangeCPShop          =   3229,3230   // 兑换跨服军团商店的物品
+//GetCPFame             =   3231,3232   // 获取跨服军团名人
+GetCPForm               =   3233,3234   // 获取跨服军团阵型
+SetCPForm               =   3235,3236   // 设置跨服军团阵型
+GetCPTrend              =   3237,3238   // 获取跨服军团积分详情
+
+
+// 跨服军演 CrossDrill 简写CD
+GetCrossDrillState      =   3301,3302   // 获取跨服军演状态
+SynCrossDrillState      =   3303,3304   // 通知跨服军演状态
+GetCDServerList         =   3305,3306   // 获取跨服军演服务器列表
+CrossDrillReg           =   3307,3308   // 跨服军演战报名
+GetCrossDrillBet        =   3309,3310   // 获取跨服军演下注信息
+GetCDMorale             =   3311,3312   // 获取跨服军演本服士气
+ImproveCDMorale         =   3313,3314   // 提高跨服军演士气
+GetCDFinalRank          =   3315,3316   // 获取跨服军演总排行榜
+ReceiveCDFinalRank      =   3317,3318   // 领取跨服军演总排行榜奖励
+GetCDDistribution       =   3319,3320   // 获取跨服军演小组赛各服务器分布情况
+GetCDTeamScore          =   3321,3322   // 获取跨服军演的小组积分信息
+GetCDHeroRank           =   3323,3324   // 获取跨服军演小组赛英雄榜信息
+ReceiveCDHeroRank       =   3325,3326   // 领取跨服军演小组赛英雄榜奖励
+GetCDTeamData           =   3327,3328   // 获取跨服军演某个小组的战场数据
+GetCDBattlefield        =   3329,3330   // 获取跨服军演某个战场的战场信息
+GetCDRecord             =   3331,3332   // 获取跨服军演某一路的战报
+GetCDReport             =   3333,3334   // 获取跨服军演的战报详情
+GetCDStrongholdRank     =   3335,3336   // 获取跨服军演某个战场某一路战斗的排行榜
+GetCDTank               =   3337,3338   // 获取跨服军演的演习军力
+ExchangeCDTank          =   3339,3340   // 兑换跨服军演的坦克
+GetCDForm               =   3341,3342   // 获取跨服军演的阵型
+SetCDForm               =   3343,3344   // 设置跨服军演阵型
+GetCDKnockout           =   3345,3346   // 获取跨服军演淘汰赛对战信息
+CrossDrillBet           =   3347,3348   // 跨服军演下注
+ReceiveCDBet            =   3349,3350   // 领取跨服军演下注奖励
+GetCDShop               =   3351,3352   // 获取跨服军演商店数据
+ExchangeCDShop          =   3353,3354   // 兑换跨服军演商店的物品
+GetCDTeamBattleResult   =   3355,3356   // 获取跨服军演某队战斗结果数据
+
+
+
+//祈福道具
+GetActHilarityPrayAction    =   4001,4002   //请求狂欢祈福祈福界面信息
+DoActHilarityPrayAction     =   4003,4004   //使用卡片道具祈福
+ReceiveActHilarityPrayAction=   4005,4006   //领取狂欢祈福充值奖励
+SpeedActHilarityPrayAction  =   4007,4008   //祈福加速
+
+//将领锁定
+LockHero                    =   4009,4010   //将领锁定
+
+//7日活动
+GetDay7ActTips              =   4011,4012   //小红点
+GetDay7Act                  =   4013,4014   //界面数据
+RecvDay7ActAward            =   4015,4016   //领奖
+Day7ActLvUp                 =   4017,4018   //立即升级
+
+
+//清盘计划
+GetOverRebateAct            =   4019,4020   //请求界面
+DoOverRebateAct             =   4021,4022   //请求抽奖
+
+//拜神许愿
+GetWorshipGodAct            =   4023,4024  //请求拜神界面
+DoWorshipGodAct             =   4025,4026  //拜神
+GetWorshipTaskAct           =   4027,4028  //请求许愿界面
+DoWorshipTaskAct            =   4029,4030  //许愿
+
+//设置
+GetSetting                  =   4031,4032   //获取关闭设置
+SetSetting                  =   4033,4034   //设置关闭1234
+
+//探宝
+RecvLotteryluckyAward       =   4035,4036   //领取探宝幸运值奖励
+
+//活动叛军
+ActRebelIsDead              =   4037,4038   //活动叛军是否死亡
+GetActRebelRank             =   4041,4042   //活动叛军排行榜
+ActRebelRankReward          =   4043,4044   //活动叛军排行榜领奖
+
+//合服领奖
+GetActMergeGift             =   4039,4040   //请求领奖界面
+
+//将领觉醒
+HeroAwaken                  =   4045,4046   //请求觉醒
+HeroAwakenSkillLv           =   4047,4048   //觉醒英雄升级技能
+
+GetShopInfo                 =   4049,4050   //商店信息
+BuyShopGoods                =   4051,4052   //购买商品
+
+//西点学院活动
+GetActCollege               =   4053,4054   //活动主界面数据
+BuyActProp                  =   4055,4056   //购买活动道具
+DoActCollege                =   4057,4058   //进修
+
+//飞艇
+CreateAirshipTeam           =   4067,4068   //创建攻打飞艇队伍(战事)
+SetAirshipForm              =   4069,4070   //设置攻打飞艇部队
+CancelTeam                  =   4071,4072   //撤销飞艇队伍(战事)
+GetMemberAirshipTeam        =   4073,4074   //获取成员组队(战事)信息-不包含自己
+GetAirshipTeam              =   4075,4076   //获取组队(战事)信息-包含自己和战友的
+SetPlayerAttackSeq          =   4077,4078   //设置攻击顺序-我的战事入口
+StartAirshipTeamMarch       =   4079,4080   //立即行军
+GuardAirship                =   4083,4084   //驻防飞艇
+GetAirshpTeamArmy           =   4085,4096   //查看组队(战事)部队信息
+GetAirshipGuard             =   4087,4088   //查看驻防部队信息
+ScoutAirship                =   4089,4090   //侦查飞艇
+RecvAirshipProduceAward     =   4091,4092   //领取飞艇自产奖励
+AppointAirshipCommander     =   4093,4094   //任命飞艇指挥官
+GetPartyAirshipCommander    =   4095,4096   //查看军团飞艇指挥官列表
+GetAirship                  =   4097,4098   //获取所有飞艇
+
+//每月签到
+GetMonthSignRq              =   4061,4062   //获取签到信息
+MonthSignRq                 =   4063,4064   //签到
+DrawMonthSignExtRq          =   4065,4066   //领取累计签到额外奖励
+
+//军备相关
+GetLordEquipListRq          =   4201,4202   //军备列表
+PutonLordEquipRq            =   4203,4204   //穿上军备
+TakeOffEquipRq              =   4205,4206   //脱下列表
+ShareLordEquipRq            =   4207,4208   //军备分享
+ProductEquipRq              =   4209,4200   //生产军备
+CollectLordEquipRq          =   4211,4212   //收取生产结束的装备
+ResloveLordEquipRq          =   4213,4214   //分解军备
+UseTechnicalRq              =   4215,4216   //使用铁匠加速
+EmployTechnicalRq           =   4217,4218   //雇佣铁匠
+LordEquipSpeedByGoldRq      =   4219,4220   //金币加速
+ProductLordEquipMatRq       =   4261,4262   //生产军备材料
+BuyMaterialProRq            =   4263,4264   //扩建军备材料生产队列
+CollectLeqMaterialRq        =   4265,4266   //收取生产结束的材料
+GetLembQueueRq              =   4267,4268   //每分钟同步队列进度
+
+//运营活动相关    协议号范围[4401, 5000]    ********************
+GetActSmeltPartCrit         =   4401,4402   //获取部件淬炼暴击活动信息
+//能量灌注活动
+GetActCumulativePayInfo     =   4507,4508   //获取能量灌注页面信息
+GetActCumulativePayAward    =   4509,4510   //获取奖励
+ActCumulativeRePay          =   4511,4512   //补充
+//荣誉勋章活动[4521-4540]
+GetActMedalofhonorInfo      =   4521,4522   //获取荣誉勋章活动信息
+OpenActMedalofhonor         =   4523,4524   //打开活动宝箱(大吉大利,晚上吃鸡)
+SearchActMedalofhonorTargets=   4525,4526   //搜索宝箱
+BuyActMedalofhonorItem      =   4527,4528   //购买荣誉勋章活动道具
+GetActMedalofhonorRankAwardR=   4529,4530   //领取荣誉勋章活动排名奖励
+GetActMedalofhonorRankInfo  =   4531,4532   //显示排名信息
+
+
+//与Lord 相关的操作         [5001 - 5600]   ********************
+GetMilitaryRank             =   5001,5002   //获取玩家军衔军功相关信息
+UpMilitaryRank              =   5003,5004   //升级指挥官军衔
+
+//参谋部功能             [5101-5150]
+GetHeroPutInfoRq            =   5101,5102   //获取文官进驻信息
+SetHeroPutRq                =   5103,5104   //设置文官入驻信息
+
+//秘密武器                  [5151, 5200]
+GetSecretWeaponInfo         =   5151,5152   //获取秘密武器信息
+UnlockWeaponBar             =   5153,5154   //解锁秘密武器技能栏
+LockedWeaponBar             =   5155,5156   //锁定秘密武器技能栏
+StudyWeaponSkill            =   5157,5158   //洗练秘密武器技能
+
+//广告相关        协议号范围[5601, 5800]    ********************
+GetLoginADStatusRq          =   5601,5602   //观看广告的状态
+PlayLoginADRq               =   5603,5604   //观看广告
+GetFirstGiftADStatusRq      =   5605,5606   //首冲广告的状态
+PlayFirstGiftADRq           =   5607,5608   //观看首冲广告
+AwardFirstGiftADRq          =   5609,5610   //领取首充奖励
+GetExpAddStatusRq           =   5611,5612   //经验加成广告
+PlayExpAddADRq              =   5613,5614   //观看首冲广告
+GetDay7ActLvUpADStatusRq    =   5615,5616   //广告秒升一级状态
+PlayDay7ActLvUpADRq         =   5617,5618   //观看秒升一级广告
+GetStaffingAddStatusRq      =   5619,5620   //获取指挥官经验广告
+PlayStaffingAddADRq         =   5621,5622   //播放指挥官经验广告
+PlayAddPowerADRq            =   5623,5624   //播放体力增加的广告
+PlayAddCommandADRq          =   5625,5626   //播放统率书增加的广告
+GetAddPowerADRq             =   5627,5628   //获取体力广告
+GetAddCommandADRq           =   5629,5630   //获取统率书广告
+
+//新活跃度        协议号范围[5801, 5850]    ********************
+NewGetLiveTaskRq            =   5801,5802   //获取新活跃度任务
+NewTaskLiveAwardRq          =   5803,5804   //获取新活跃度奖励
+
+
+
+//后台修改玩家道具数量推送
+SynInnerModProps            =   1039,1040   // 道具数量推送
+
+
+---------------------------同步推送------------------------------
+SynChat                 =   1001,1002   //服务器推送聊天数据
+SynMail                 =   1003,1004   //服务器推送邮件数据
+SynInvasion             =   1005,1006   //服务器推送进军数据
+SynPartyOut             =   1007,1008   //服务器推送踢出军团
+SynPartyAccept          =   1009,1010   //服务器推送同意/拒绝军团
+SynBless                =   1011,1012   //服务器推送祝福
+SynArmy                 =   1013,1014   //推送敌军或友军部队状态
+SynGold                 =   1015,1016   //服务器推送金币、vip
+SynApply                =   1017,1018   //推送帮派请求
+SynWarRecord            =   1019,1020   //推送百团混战战况
+SynWarState             =   1021,1022   //推送百团混战状态
+SynResource             =   1023,1024   //推送资源增加
+SynBuild                =   1025,1026   //推送建筑数据
+SynStaffing             =   1027,1028   //推送编制等级
+SynFortressBattleState  =   1029,1030   //推送要塞战状态
+SynFortressSelf         =   1031,1032   //推送要塞自身信息(耐久度)
+SynCrossState           =   1033,1034   //通知跨服状态    
+SynCrossPartyState      =   1035,1036   //通知跨服军团状态
+SynCPSituation          =   1037,1038   //同步小组赛战况
+SynInnerModProps        =   1039,1040   //道具数量推送    
+SynUnlockTechnical      =   1041,1042   //主推解锁的最高技工
+SynDay7ActTips          =   1065,1066   //推送小红点
+//飞艇同步相关          协议号范围[1067, 1090]    ********************
+SynAirshipTeamArmy      =   1067,1068   //同步队伍部队状态
+SynAirshipTeam          =   1069,1070   //同步飞艇队伍变化
+SynAirshipChange        =   1071,1072   //同步飞艇信息发生变化
+SyncMail 				=   1073,1074	//同步邮件信息
+SynBrother				=	1075,1076	//激活或升级某个技能时广播的消息
+SynAirShipFightTask		=	1077,1078	//打完飞艇或占领飞艇时广播消息
+SynLoginElseWhere		=	1079,1080	//通知玩家在别处登录
+SynPlugInScoutMine		=	1081,1082	//通知玩家已被标记为正在使用扫矿外挂需要输入验证码来取消	
+SynSendActRedBag		=	1083,1084	//同步发放红包信息
+
+
+
+ReloadParam             =   1039,1040   //重加载服务器配置数据
+
+// 合服相关协议
+NotifyServerReg         =   1041,1042   //通知被合的服务器注册
+MergeServerReg          =   1043,1044   //被合服注册协议
+NotifyServerTransfer    =   1045,1046   //通知被合的服务器开始传输玩家数据
+TransferCommonData      =   1047,1048   //传输公共数据
+TransferPlayerData      =   1049,1050   //传输玩家独立数据
+
+-------------------------跨服服务器----------------------------------
+CCGameServerRegRq    (公用)   =   2001,2002   //游戏服务器注册
+CCGetCrossServerList        =   2003,2004   //获取参加跨服战的服务器列表
+CCGetCrossFightState        =   2005,2006   //获取跨服战状态
+CCSynChat                   =   2007,2008   //推送系统消息
+CCCrossFightReg             =   2009,2010   //跨服战报名
+CCGetCrossRegInfo           =   2011,2012   //获取跨服战报名信息
+CCCancelCrossReg            =   2013,2014   //取消跨服战报名
+CCGetCrossForm              =   2015,2016   //获取跨服战阵型
+CCSetCrossForm              =   2017,2018   //设置跨服战阵型
+CCGetCrossPersonSituation   =   2019,2020   //获取跨服战个人战况
+CCGetCrossJiFenRank         =   2021,2022   //获取跨服战积分排名
+CCGetCrossReport            =   2023,2024   //获取跨服战战报
+CCGetCrossKnockCompetInfo   =   2025,2026   //获取跨服战淘汰赛比赛信息
+CCGetCrossFinalCompetInfo   =   2027,2028   //获取跨服战总决赛比赛信息
+CCBetBattle                 =   2029,2030   //比赛下注
+CCGetMyBet                  =   2031,2032   //获取我的下注
+CCReceiveBet                =   2033,2034   //领取下注
+CCGetCrossShop              =   2035,2036   //获取跨服战商店数据
+CCExchangeCrossShop         =   2037,2038   //兑换跨服战商店的物品
+CCGetCrossTrend             =   2039,2040   //获取跨服战积分详情
+CCBetRollBack               =   2041,2042   //下注回滚
+CCGetCrossFinalRank         =   2043,2044   //取总排行
+CCReceiveRankRward          =   2045,2046   //领取排行奖励
+CCSynMail                   =   2047,2048   //推送邮件
+CCSynCrossState             =   2049,2050   //通知跨服状态
+CCHeartRq                   =   2051,2052   //心跳
+CCGMSetCrossFormRq          =   2053,2054   //gm设置阵营
+CCSynCrossFame      （公用）=   2055,2056   //通知跨服名人
+CCGmSynCrossLashRank        =   2057,2058   //gm同步跨服名人排名数据
+
+// 跨服军团战
+CCGetCrossPartyState        =   2059,2060   //获取跨服军团状态
+CCSynCrossPartyState        =   2061,2062   //通知跨服军团状态
+CCGetCrossPartyServerList   =   2063,2064   //获取跨服军团服务器列表
+CCCrossPartyReg             =   2065,2066   //跨服军团报名
+CCGetCPMyRegInfo            =   2067,2068   //获取我的报名信息
+CCGetCrossPartyMember       =   2069,2070   //获取报名跨服军团成员列表
+CCGetCrossParty             =   2071,2072   //获取参加跨服军团
+CCGetCPSituation            =   2073,2074   //获取跨服军团小组战况
+CCGetCPOurServerSituation   =   2075,2076   //获取跨服军团本服战况
+CCGetCPReport               =   2079,2080   //获取跨服军团战报
+CCGetCPRank                 =   2081,2082   //获取跨服军团排名
+CCReceiveCPReward           =   2083,2084   //领取跨服军团奖励
+CCGetCPShop                 =   2085,2086   //获取跨服军团商店数据
+CCExchangeCPShop            =   2087,2088   //兑换跨服军团商店的物品
+//CCSynCPFame                   =   2089,2090//通知跨服军团名人
+CCSynCPSituation            =   2091,2092   //同步小组赛战况
+CCGetCPForm                 =   2095,2096   //获取跨服军团阵型
+CCSetCPForm                 =   2097,2098   //设置跨服军团阵型
+CCGMSetCPForm               =   2099,2100   //gm设置跨服军团阵营
+CCGetCPTrend                =   2101,2102   //获取跨服军团积分详情
+CCCanQuitParty              =   2103,2104   //判断是否能退出军团
+CCGMAddJiFen                =   2105,2106   //gm增加积分
+
+// 跨服军演
+CCGetCDState                =   2121,2122   //获取跨服军演状态
+CCSynCDState                =   2123,2124   //通知跨服军演状态
+CCGetCDServerList           =   2125,2126   //获取跨服军演服务器列表
+CCCrossDrillReg             =   2127,2128   //跨服军演报名
+CCGetCDBet                  =   2129,2130   //获取跨服军演下注信息
+CCGetCDMorale               =   2131,2132   //获取跨服军演本服士气
+CCImproveCDMorale           =   2133,2134   //提高跨服军演士气
+CCGetCDFinalRank            =   2135,2136   //获取跨服军演总排行榜
+CCReceiveCDFinalRank        =   2137,2138   //领取跨服军演总排行榜奖励
+CCGetCDDistribution         =   2139,2140   //获取跨服军演小组赛各服务器分布情况
+CCGetCDTeamScore            =   2141,2142   //获取跨服军演的小组积分信息
+CCGetCDHeroRank             =   2143,2144   //获取跨服军演小组赛英雄榜信息
+CCReceiveCDHeroRank         =   2145,2146   //领取跨服军演小组赛英雄榜奖励
+CCGetCDTeamData             =   2148,2147   //获取跨服军演某个小组的战场数据
+CCGetCDBattlefield          =   2149,2150   //获取跨服军演某个战场的战场信息
+CCGetCDRecord               =   2151,2152   //获取跨服军演某一路的战报
+CCGetCDReport               =   2153,2154   //获取跨服军演的战报详情
+CCGetCDStrongholdRank       =   2155,2156   //获取跨服军演某个战场某一路战斗的排行榜
+CCGetCDTank                 =   2157,2158   //获取跨服军演的演习军力
+CCExchangeCDTank            =   2159,2160   //兑换跨服军演的坦克
+CCGetCDForm                 =   2161,2162   //获取跨服军演的阵型
+CCSetCDForm                 =   2163,2164   //设置跨服军演阵型
+CCGetCDKnockout             =   2165,2166   //获取跨服军演淘汰赛对战信息
+CCCrossDrillBet             =   2167,2168   //跨服军演下注
+CCReceiveCDBet              =   2169,2170   //领取跨服军演下注奖励
+CCGetCDShop                 =   2171,2172   //获取跨服军演商店数据
+CCExchangeCDShop            =   2173,2174   //兑换跨服军演商店的物品
+--------------------------------------------------------------------
+
+
+
+
+

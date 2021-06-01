@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="ArenaDao">
+	<select id="selectArena" parameterType="Long" resultType="Lord">
+		select 
+		lordId,rank,score,count,lastRank,winCount,coldTime,arenaTime,awardTime,buyCount,fight
+		from p_arena where lordId=#{lordId}
+	</select>
+
+	<update id="updateArena" parameterType="Arena">
+		update p_arena set
+		rank=#{rank},score=#{score},count=#{count},lastRank=#{lastRank},winCount=#{winCount},coldTime=#{coldTime},arenaTime=#{arenaTime},awardTime=#{awardTime},
+		buyCount=#{buyCount},fight=#{fight} where lordId=#{lordId}
+	</update>
+
+	<insert id="insertArena" parameterType="Arena" useGeneratedKeys="true" keyProperty="rank">
+		insert into
+		p_arena(lordId,rank,count,arenaTime,fight)
+		values(#{lordId},#{rank},#{count},#{arenaTime},#{fight})
+	</insert>
+
+	<select id="load" parameterType="Map" resultType="Arena">
+		select 
+		lordId,rank,score,count,lastRank,winCount,coldTime,arenaTime,awardTime,buyCount,fight
+		from p_arena where rank > #{curIndex} order by rank limit 0,#{count}
+	</select>
+
+    <select id="loadNotInSmallIds" resultType="Arena">
+        select lordId,rank,score,count,lastRank,winCount,coldTime,arenaTime,awardTime,buyCount,fight
+        from p_arena p where p.lordId not in (select lordId from p_smallId);
+    </select>
+
+</mapper>

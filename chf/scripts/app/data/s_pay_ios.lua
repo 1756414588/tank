@@ -1,0 +1,1 @@
+return {title={"payId","topup","extraGold","banFlag","asset","productId"},records={{1,60,100,0,1,"com.caohua.tank60"},{2,300,100,0,6,"com.caohua.tank300"},{3,980,110,0,5,"com.caohua.tank980"},{4,1980,110,0,4,"com.caohua.tank1980"},{5,3280,113,2,3,"com.caohua.tank3280"},{6,6480,115,1,2,"com.caohua.tank6480"}}}

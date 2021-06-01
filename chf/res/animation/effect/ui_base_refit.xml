@@ -1,0 +1,66 @@
+<skeleton name="gaizhuanggongchang" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="ui_base_refit">
+   <b name="1" x="21.3" y="10.6" kX="0" kY="0" cX="0.8" cY="0.8" pX="0" pY="0" z="0">
+    <d name="part-gaizaogongchang_guang_1"/>
+    <d name="part-gaizaogongchang_guang_2"/>
+    <d name="part-gaizaogongchang_guang_3"/>
+    <d name="part-gaizaogongchang_guang_4"/>
+    <d name="part-gaizaogongchang_guang_5"/>
+    <d name="part-gaizaogongchang_guang_6"/>
+    <d name="part-gaizaogongchang_guang_7"/>
+    <d name="part-gaizaogongchang_guang_8"/>
+    <d name="part-gaizaogongchang_guang_9"/>
+    <d name="part-gaizaogongchang_guang_10"/>
+    <d name="part-gaizaogongchang_guang_11"/>
+    <d name="part-gaizaogongchang_guang_12"/>
+    <d name="part-gaizaogongchang_guang_13"/>
+    <d name="part-gaizaogongchang_guang_14"/>
+    <d name="part-gaizaogongchang_guang_15"/>
+    <d name="part-gaizaogongchang_guang_16"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="ui_base_refit">
+   <mov name="start" dr="96" to="6" drTW="96" lp="1" twE="NaN">
+    <b name="1" sc="1" dl="0">
+     <f x="21.3" y="10.6" cocos2d_x="21.3" cocos2d_y="10.6" kX="0" kY="0" cX="0.8" cY="0.8" pX="0" pY="0" z="0" dI="0" dr="6"/>
+     <f x="21.3" y="10.6" cocos2d_x="21.3" cocos2d_y="10.6" kX="0" kY="0" cX="0.8" cY="0.8" pX="0" pY="0" z="0" dI="1" dr="6"/>
+     <f x="21.3" y="10.6" cocos2d_x="21.3" cocos2d_y="10.6" kX="0" kY="0" cX="0.8" cY="0.8" pX="0" pY="0" z="0" dI="2" dr="6"/>
+     <f x="21.3" y="10.6" cocos2d_x="21.3" cocos2d_y="10.6" kX="0" kY="0" cX="0.8" cY="0.8" pX="0" pY="0" z="0" dI="3" dr="6"/>
+     <f x="21.3" y="10.6" cocos2d_x="21.3" cocos2d_y="10.6" kX="0" kY="0" cX="0.8" cY="0.8" pX="0" pY="0" z="0" dI="4" dr="6"/>
+     <f x="21.3" y="10.6" cocos2d_x="21.3" cocos2d_y="10.6" kX="0" kY="0" cX="0.8" cY="0.8" pX="0" pY="0" z="0" dI="5" dr="6"/>
+     <f x="21.3" y="10.6" cocos2d_x="21.3" cocos2d_y="10.6" kX="0" kY="0" cX="0.8" cY="0.8" pX="0" pY="0" z="0" dI="6" dr="6"/>
+     <f x="21.3" y="10.6" cocos2d_x="21.3" cocos2d_y="10.6" kX="0" kY="0" cX="0.8" cY="0.8" pX="0" pY="0" z="0" dI="7" dr="6"/>
+     <f x="21.3" y="10.6" cocos2d_x="21.3" cocos2d_y="10.6" kX="0" kY="0" cX="0.8" cY="0.8" pX="0" pY="0" z="0" dI="8" dr="6"/>
+     <f x="21.3" y="10.6" cocos2d_x="21.3" cocos2d_y="10.6" kX="0" kY="0" cX="0.8" cY="0.8" pX="0" pY="0" z="0" dI="9" dr="6"/>
+     <f x="21.3" y="10.6" cocos2d_x="21.3" cocos2d_y="10.6" kX="0" kY="0" cX="0.8" cY="0.8" pX="0" pY="0" z="0" dI="10" dr="6"/>
+     <f x="21.3" y="10.6" cocos2d_x="21.3" cocos2d_y="10.6" kX="0" kY="0" cX="0.8" cY="0.8" pX="0" pY="0" z="0" dI="11" dr="6"/>
+     <f x="21.3" y="10.6" cocos2d_x="21.3" cocos2d_y="10.6" kX="0" kY="0" cX="0.8" cY="0.8" pX="0" pY="0" z="0" dI="12" dr="6"/>
+     <f x="21.3" y="10.6" cocos2d_x="21.3" cocos2d_y="10.6" kX="0" kY="0" cX="0.8" cY="0.8" pX="0" pY="0" z="0" dI="13" dr="6"/>
+     <f x="21.3" y="10.6" cocos2d_x="21.3" cocos2d_y="10.6" kX="0" kY="0" cX="0.8" cY="0.8" pX="0" pY="0" z="0" dI="14" dr="6"/>
+     <f x="21.3" y="10.6" cocos2d_x="21.3" cocos2d_y="10.6" kX="0" kY="0" cX="0.8" cY="0.8" pX="0" pY="0" z="0" dI="15" dr="6"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="gaizhuanggongchang" width="512" height="512">
+  <SubTexture name="part-gaizaogongchang_guang_16" width="71" height="98" cocos2d_pX="35.25" cocos2d_pY="48.75" x="73" y="0"/>
+  <SubTexture name="part-gaizaogongchang_guang_15" width="71" height="98" cocos2d_pX="35.25" cocos2d_pY="48.75" x="146" y="100"/>
+  <SubTexture name="part-gaizaogongchang_guang_14" width="71" height="98" cocos2d_pX="35.25" cocos2d_pY="48.75" x="219" y="0"/>
+  <SubTexture name="part-gaizaogongchang_guang_13" width="71" height="98" cocos2d_pX="35.25" cocos2d_pY="48.75" x="0" y="200"/>
+  <SubTexture name="part-gaizaogongchang_guang_12" width="71" height="98" cocos2d_pX="35.25" cocos2d_pY="48.75" x="365" y="0"/>
+  <SubTexture name="part-gaizaogongchang_guang_11" width="71" height="98" cocos2d_pX="35.25" cocos2d_pY="48.75" x="292" y="100"/>
+  <SubTexture name="part-gaizaogongchang_guang_10" width="71" height="98" cocos2d_pX="35.25" cocos2d_pY="48.75" x="0" y="100"/>
+  <SubTexture name="part-gaizaogongchang_guang_9" width="71" height="98" cocos2d_pX="35.25" cocos2d_pY="48.75" x="73" y="200"/>
+  <SubTexture name="part-gaizaogongchang_guang_8" width="71" height="98" cocos2d_pX="35.25" cocos2d_pY="48.75" x="0" y="0"/>
+  <SubTexture name="part-gaizaogongchang_guang_7" width="71" height="98" cocos2d_pX="35.25" cocos2d_pY="48.75" x="146" y="0"/>
+  <SubTexture name="part-gaizaogongchang_guang_6" width="71" height="98" cocos2d_pX="35.25" cocos2d_pY="48.75" x="292" y="0"/>
+  <SubTexture name="part-gaizaogongchang_guang_5" width="71" height="98" cocos2d_pX="35.25" cocos2d_pY="48.75" x="438" y="0"/>
+  <SubTexture name="part-gaizaogongchang_guang_4" width="71" height="98" cocos2d_pX="35.25" cocos2d_pY="48.75" x="73" y="100"/>
+  <SubTexture name="part-gaizaogongchang_guang_3" width="71" height="98" cocos2d_pX="35.25" cocos2d_pY="48.75" x="219" y="100"/>
+  <SubTexture name="part-gaizaogongchang_guang_2" width="71" height="98" cocos2d_pX="35.25" cocos2d_pY="48.75" x="365" y="100"/>
+  <SubTexture name="part-gaizaogongchang_guang_1" width="71" height="98" cocos2d_pX="35.25" cocos2d_pY="48.75" x="438" y="100"/>
+ </TextureAtlas>
+</skeleton>

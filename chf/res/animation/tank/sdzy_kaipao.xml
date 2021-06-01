@@ -1,0 +1,37 @@
+<skeleton name="sdzy_kaipao" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="sdzy_kaipao">
+   <b name="2" x="5" y="7" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0">
+    <d name="part-sdzy_kaipao_00029"/>
+    <d name="part-sdzy_kaipao_00030"/>
+    <d name="part-sdzy_kaipao_00031"/>
+    <d name="part-sdzy_kaipao_00032"/>
+    <d name="part-sdzy_kaipao_00033"/>
+    <d name="part-sdzy_kaipao_00034"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="sdzy_kaipao">
+   <mov name="start" dr="13" to="0" drTW="13" lp="1" twE="NaN">
+    <b name="2" sc="1" dl="0">
+     <f x="5" y="7" cocos2d_x="5" cocos2d_y="7" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="2"/>
+     <f x="5" y="7" cocos2d_x="5" cocos2d_y="7" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="1" dr="2"/>
+     <f x="5" y="7" cocos2d_x="5" cocos2d_y="7" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="2" dr="2"/>
+     <f x="5" y="7" cocos2d_x="5" cocos2d_y="7" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="3" dr="2"/>
+     <f x="5" y="7" cocos2d_x="5" cocos2d_y="7" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="4" dr="2"/>
+     <f x="5" y="7" cocos2d_x="5" cocos2d_y="7" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="5" dr="2"/>
+     <f dr="1" dI="-1"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="sdzy_kaipao" width="512" height="256">
+  <SubTexture name="part-sdzy_kaipao_00034" width="150" height="100" cocos2d_pX="75" cocos2d_pY="50" x="152" y="0"/>
+  <SubTexture name="part-sdzy_kaipao_00033" width="150" height="100" cocos2d_pX="75" cocos2d_pY="50" x="304" y="102"/>
+  <SubTexture name="part-sdzy_kaipao_00032" width="150" height="100" cocos2d_pX="75" cocos2d_pY="50" x="152" y="102"/>
+  <SubTexture name="part-sdzy_kaipao_00031" width="150" height="100" cocos2d_pX="75" cocos2d_pY="50" x="0" y="0"/>
+  <SubTexture name="part-sdzy_kaipao_00030" width="150" height="100" cocos2d_pX="75" cocos2d_pY="50" x="304" y="0"/>
+  <SubTexture name="part-sdzy_kaipao_00029" width="150" height="100" cocos2d_pX="75" cocos2d_pY="50" x="0" y="102"/>
+ </TextureAtlas>
+</skeleton>

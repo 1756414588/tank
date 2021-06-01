@@ -1,0 +1,52 @@
+<skeleton name="wmhj_shouji2" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="wmhj_shouji2">
+   <b name="1" x="0" y="-1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0">
+    <d name="part-wmhj_shouji2_11"/>
+    <d name="part-wmhj_shouji2_10"/>
+    <d name="part-wmhj_shouji2_9"/>
+    <d name="part-wmhj_shouji2_8"/>
+    <d name="part-wmhj_shouji2_7"/>
+    <d name="part-wmhj_shouji2_6"/>
+    <d name="part-wmhj_shouji2_5"/>
+    <d name="part-wmhj_shouji2_4"/>
+    <d name="part-wmhj_shouji2_3"/>
+    <d name="part-wmhj_shouji2_2"/>
+    <d name="part-wmhj_shouji2_1"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="wmhj_shouji2">
+   <mov name="part" dr="56" to="0" drTW="56" lp="0" twE="NaN">
+    <b name="1" sc="1" dl="0">
+     <f x="0" y="-1" cocos2d_x="0" cocos2d_y="-1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="5"/>
+     <f x="0" y="-1" cocos2d_x="0" cocos2d_y="-1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="1" dr="5"/>
+     <f x="0" y="-1" cocos2d_x="0" cocos2d_y="-1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="2" dr="5"/>
+     <f x="0" y="-1" cocos2d_x="0" cocos2d_y="-1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="3" dr="5"/>
+     <f x="0" y="-1" cocos2d_x="0" cocos2d_y="-1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="4" dr="5"/>
+     <f x="0" y="-1" cocos2d_x="0" cocos2d_y="-1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="5" dr="5"/>
+     <f x="0" y="-1" cocos2d_x="0" cocos2d_y="-1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="6" dr="5"/>
+     <f x="0" y="-1" cocos2d_x="0" cocos2d_y="-1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="7" dr="5"/>
+     <f x="0" y="-1" cocos2d_x="0" cocos2d_y="-1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="8" dr="5"/>
+     <f x="0" y="-1" cocos2d_x="0" cocos2d_y="-1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="9" dr="5"/>
+     <f x="0" y="-1" cocos2d_x="0" cocos2d_y="-1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="10" dr="5"/>
+     <f dr="1" dI="-1"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="wmhj_shouji2" width="1024" height="1024">
+  <SubTexture name="part-wmhj_shouji2_1" width="200" height="200" cocos2d_pX="100" cocos2d_pY="100" x="202" y="202"/>
+  <SubTexture name="part-wmhj_shouji2_2" width="200" height="200" cocos2d_pX="100" cocos2d_pY="100" x="404" y="0"/>
+  <SubTexture name="part-wmhj_shouji2_3" width="200" height="200" cocos2d_pX="100" cocos2d_pY="100" x="0" y="404"/>
+  <SubTexture name="part-wmhj_shouji2_4" width="200" height="200" cocos2d_pX="100" cocos2d_pY="100" x="808" y="0"/>
+  <SubTexture name="part-wmhj_shouji2_5" width="200" height="200" cocos2d_pX="100" cocos2d_pY="100" x="808" y="202"/>
+  <SubTexture name="part-wmhj_shouji2_6" width="200" height="200" cocos2d_pX="100" cocos2d_pY="100" x="0" y="0"/>
+  <SubTexture name="part-wmhj_shouji2_7" width="200" height="200" cocos2d_pX="100" cocos2d_pY="100" x="202" y="0"/>
+  <SubTexture name="part-wmhj_shouji2_8" width="200" height="200" cocos2d_pX="100" cocos2d_pY="100" x="606" y="0"/>
+  <SubTexture name="part-wmhj_shouji2_9" width="200" height="200" cocos2d_pX="100" cocos2d_pY="100" x="0" y="202"/>
+  <SubTexture name="part-wmhj_shouji2_10" width="200" height="200" cocos2d_pX="100" cocos2d_pY="100" x="404" y="202"/>
+  <SubTexture name="part-wmhj_shouji2_11" width="200" height="200" cocos2d_pX="100" cocos2d_pY="100" x="606" y="202"/>
+ </TextureAtlas>
+</skeleton>

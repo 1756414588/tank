@@ -1,0 +1,28 @@
+<skeleton name="tk_xr_guangyun" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="guangyun">
+   <b name="fdsa" x="-298.25" y="-462.85" kX="-17.62" kY="-17.62" cX="1.43" cY="1.43" pX="-41" pY="-707" z="0">
+    <d name="part-zhucheng_guangyu"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="guangyun">
+   <mov name="start" dr="784" to="6" drTW="784" lp="1" twE="NaN">
+    <b name="fdsa" sc="1" dl="0">
+     <f x="-298.25" y="-462.85" cocos2d_x="64.4" cocos2d_y="485.65" kX="-17.62" kY="-17.62" cX="1.43" cY="1.43" pX="-41" pY="-707" z="0" dI="0" twE="0" dr="152">
+      <colorTransform a="0" r="0" g="0" b="0" aM="8" rM="100" gM="100" bM="100"/>
+     </f>
+     <f x="-293.55" y="-465.65" cocos2d_x="209.05" cocos2d_y="280.45" kX="-30.66" kY="-30.66" cX="1.27" cY="1.27" pX="-41" pY="-707" z="0" dI="0" twE="0" dr="164"/>
+     <f x="-336.95" y="-509.75" cocos2d_x="225.35" cocos2d_y="192.4" kX="-35.39" kY="-35.39" cX="1.27" cY="1.27" pX="-41" pY="-707" z="0" dI="0" twE="0" dr="1">
+      <colorTransform a="0" r="0" g="0" b="0" aM="8" rM="100" gM="100" bM="100"/>
+     </f>
+     <f dr="467" dI="-1"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="tk_xr_guangyun" width="256" height="1024">
+  <SubTexture name="part-zhucheng_guangyu" width="69" height="571" cocos2d_pX="34.3" cocos2d_pY="285" x="0" y="0"/>
+ </TextureAtlas>
+</skeleton>

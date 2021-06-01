@@ -1,0 +1,29 @@
+<skeleton name="jiangling_jinjietx" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="ui_hero_upgrade">
+   <b name="1" x="0.9" y="-2.3" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0">
+    <d name="part-jiangling_jinjietx"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="ui_hero_upgrade">
+   <mov name="start" dr="61" to="6" drTW="61" lp="0" twE="NaN">
+    <b name="1" sc="1" dl="0">
+     <f x="0.9" y="-2.3" cocos2d_x="0.9" cocos2d_y="-2.3" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="0" twE="0" dr="15">
+      <colorTransform a="0" r="0" g="0" b="0" aM="12" rM="100" gM="100" bM="100"/>
+     </f>
+     <f x="0.9" y="-2.3" cocos2d_x="0.9" cocos2d_y="-2.3" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="0" dr="28"/>
+     <f x="0.9" y="-2.3" cocos2d_x="0.9" cocos2d_y="-2.3" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="0" twE="0" dr="16"/>
+     <f x="0.9" y="-2.3" cocos2d_x="0.9" cocos2d_y="-2.3" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="0" dr="1">
+      <colorTransform a="0" r="0" g="0" b="0" aM="12" rM="100" gM="100" bM="100"/>
+     </f>
+     <f dr="1" dI="-1"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="jiangling_jinjietx" width="128" height="128">
+  <SubTexture name="part-jiangling_jinjietx" width="71" height="69" cocos2d_pX="35.4" cocos2d_pY="34.15" x="0" y="0"/>
+ </TextureAtlas>
+</skeleton>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!-- <tx:annotation-driven transaction-manager="transactionManager" /> -->
+
+
+    <bean id="iniDataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"
+          destroy-method="close">
+        <property name="driverClass" value="com.mysql.jdbc.Driver"/>
+        <property name="jdbcUrl" value="#{serverConfig.iniJdbcUrl}"/>
+        <property name="user" value="#{serverConfig.iniUser}"/>
+        <property name="password" value="#{serverConfig.iniPassword}"/>
+
+        <property name="minPoolSize" value="2"/>
+        <property name="maxPoolSize" value="5"/>
+        <!--initialPoolSize：初始化时获取2个连接，取值应在minPoolSize与maxPoolSize之间。 -->
+        <property name="initialPoolSize" value="2"/>
+        <!--maxIdleTime：最大空闲时间,300秒内未使用则连接被丢弃。若为0则永不丢弃。-->
+        <property name="maxIdleTime" value="3600"/>
+        <!--acquireIncrement：链接用完了自动增量3个 -->
+        <property name="acquireIncrement" value="5"/>
+
+        <!--acquireRetryAttempts：链接失败后重新试30次-->
+        <property name="acquireRetryAttempts" value="30"/>
+
+        <!--acquireRetryDelay；两次连接中间隔500毫秒 -->
+        <property name="acquireRetryDelay" value="1000"/>
+        <!-- <property name="maxStatements" value="1000" /> <property name="maxStatementsPerConnection"
+            value="100" /> -->
+        <!--numHelperThreads：异步操作，提升性能通过多线程实现多个操作同时被执行。Default: 3-->
+        <property name="numHelperThreads" value="2"/>
+        <!--&lt;!&ndash;idleConnectionTestPeriod：每60秒检查所有连接池中的空闲连接。&ndash;&gt;-->
+        <property name="idleConnectionTestPeriod" value="180"/>
+
+        <!--testConnectionOnCheckout ：true表示在每次从pool内checkout连接的时候测试其有效性，这是个同步操作，因此应用端的每次数据库调用，都会先通过测试sql测试其有效性，如果连接无效，会关闭此连接并剔除出pool，并尝试从pool内取其他连接，默认为false，此特性要慎用，会造成至少多一倍的数据库调用。 -->
+        <property name="testConnectionOnCheckout" value="false"/>
+
+
+        <!--testConnectionOnCheckin ：true表示每次把连接checkin到pool里的时候测试其有效性，因为是个事后操作，所以是异步的，应用端不需要等待测试结果，但同样会造成至少多一倍的数据库调用。 -->
+        <property name="testConnectionOnCheckin" value="false"/>
+        <!--preferredTestQuery：定义所有连接测试都执行的测试语句。在使用连接测试的情况下这个一显著提高测试速度。注意： 测试的表必须在初始数据源的时候就存在。Default: null-->
+        <property name="preferredTestQuery" value="select 'x'"/>
+    </bean>
+
+
+    <bean id="iniSqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean"
+          p:configLocation="classpath:com/game/dao/config/mybatisConfig.xml"
+          p:mapperLocations="classpath*:com/game/dao/sqlMap/s/*Dao.xml"
+          p:dataSource-ref="iniDataSource"/>
+
+    <bean id="sBaseDao" class="com.game.dao.BaseDao" abstract="true"
+          p:sqlSessionFactory-ref="iniSqlSessionFactory"/>
+
+    <bean class="com.game.dao.impl.s.StaticDataDao" parent="sBaseDao"/>
+
+</beans>

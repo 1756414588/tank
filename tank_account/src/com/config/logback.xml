@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<configuration>
+    <appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder charset="UTF-8">
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS}[%thread][%-5level] %logger{50} %line - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <!-- 按照每天生成日志文件 -->
+    <appender name="syncPayAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!--日志文件输出的文件名 -->
+            <FileNamePattern>/opt/log/resin/account_pay.%d{yyyy-MM-dd}.log</FileNamePattern>
+            <!--日志文件保留天数 -->
+            <MaxHistory>90</MaxHistory>
+        </rollingPolicy>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度， %logger{50}输出日志的类,50代表包名加类名的总长度限制，%msg：日志消息，%n是换行符 -->
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="FILE_ERROR" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>log/error.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>log/%d{yyyy-MM-dd}/error-%d{yyyy-MM-dd}.%i.log.zip</fileNamePattern>
+            <MaxFileSize>100MB</MaxFileSize>
+            <totalSizeCap>2GB</totalSizeCap>
+            <MaxHistory>20</MaxHistory>
+        </rollingPolicy>
+        <append>true</append>　　
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS}[%thread][%-5level] %logger{50} %line - %msg%n</pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>info</level>
+        </filter>
+    </appender>
+
+
+    <logger name="com.account" level="info"/>
+    <logger name="org.mybatis.spring" level="error"/>
+    <logger name="com.mchange.v2" level="error"/>
+    <logger name="org.springframework" level="info"/>
+    <logger name="java.sql" level="error"/>
+    <logger name="com.mysql" level="error"/>
+
+    <logger name="payAppender" level="info" additivity="false">
+        <appender-ref ref="syncPayAppender"/>
+    </logger>
+
+    <logger name="error" level="info" additivity="true">
+        <appender-ref ref="FILE_ERROR"/>
+    </logger>
+    <root level="info">
+        <appender-ref ref="FILE_ERROR"/>
+    </root>
+</configuration>

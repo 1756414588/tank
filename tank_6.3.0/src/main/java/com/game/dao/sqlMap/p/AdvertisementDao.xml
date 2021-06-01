@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="AdvertisementDao">
+<select id="selectAdvertisement" parameterType="Long" resultType="Advertisement">
+		select 
+		lordId,buffCount,firstPay,lastFirstPayADTime,firstPayCount,firstPayStatus,lvUpStatus,lvUpLastTime,loginStatus,lastLoginTime,lastBuffTime,buffCount2,lastBuff2Time,powerCount,powerTime,commondCount,commondTime
+		from p_ad where lordId=#{lordId}
+	</select>
+
+	<update id="updateAdvertisement" parameterType="Advertisement">
+	UPDATE p_ad  SET buffCount=#{buffCount}, firstPay=#{firstPay},
+	 lastFirstPayADTime=#{lastFirstPayADTime}, firstPayCount=#{firstPayCount}, 
+	 firstPayStatus=#{firstPayStatus}, lvUpStatus=#{lvUpStatus}, lvUpLastTime=#{lvUpLastTime} ,loginStatus=#{loginStatus},lastLoginTime=#{lastLoginTime},lastBuffTime=#{lastBuffTime}
+	 ,buffCount2=#{buffCount2},lastBuff2Time=#{lastBuff2Time},powerCount=#{powerCount},powerTime=#{powerTime},commondCount=#{commondCount},commondTime=#{commondTime}
+	  WHERE lordId=#{lordId}
+	</update>
+	
+	<insert id="insertAdvertisement" parameterType="Advertisement">
+		insert into p_ad(lordId,lastFirstPayADTime,lvUpLastTime,lastLoginTime,lastBuffTime,lastBuff2Time,powerTime,commondTime) values(#{lordId},#{lastFirstPayADTime},#{lvUpLastTime},#{lastLoginTime},#{lastBuffTime},#{lastBuff2Time},#{powerTime},#{commondTime})
+	</insert>
+
+	<select id="load" parameterType="Map" resultType="Advertisement">
+		select 
+		lordId,buffCount,firstPay,lastFirstPayADTime,firstPayCount,firstPayStatus,lvUpStatus,lvUpLastTime,loginStatus,lastLoginTime,lastBuffTime,buffCount2,lastBuff2Time,powerCount,powerTime,commondCount,commondTime
+		from p_ad where lordId > #{curIndex} order by lordId limit 0,#{count}
+	</select>
+
+</mapper>

@@ -1,0 +1,173 @@
+syntax = "proto2";
+option java_package = "com.game.grpc.proto.mine";
+option java_outer_classname = "CrossSeniorMineProto";
+
+
+message RpcFindMineRequest{
+    optional int64 roleId =1;
+    optional int32 serverId=2;
+    optional int32 partyId=3;
+    optional string partyName=4;
+}
+message RpcFindMineResponse{
+    repeated SeniorMapData mines=1;
+}
+message SeniorMapData {
+    optional int32 pos = 1;
+    optional string name = 2;
+    optional bool party = 3;
+    optional int32 freeTime = 4;        //若存在该字段，表示保护结束时间
+    optional bool my = 5;
+}
+
+message RpcScoutMineRequest{
+    optional int64 roleId =1;
+    optional int32 time =2;
+    optional int32 pos =3;
+}
+
+message RpcScoutMineResponse{
+    optional int32 code=1;
+    optional bool isZJ =2;
+    optional MineForm form =3;
+    optional string partyNane =4;
+    optional string nickName=5;
+    optional int64 havset=6;
+    repeated MineTwoInt senior=7;
+}
+
+message MineForm {
+    optional int32 commander = 1;   //指挥官id
+    optional MineTwoInt p1 = 2;         //1号位坦克(id,数量)
+    optional MineTwoInt p2 = 3;
+    optional MineTwoInt p3 = 4;
+    optional MineTwoInt p4 = 5;
+    optional MineTwoInt p5 = 6;
+    optional MineTwoInt p6 = 7;
+    optional int32 type = 8;            //阵型类型（获取阵型列表的时候，会存在这个字段）//1.模板阵型 2.基地防守 3.竞技场防守 7.世界boss 8 要塞战防守
+    optional MineAwakenHero awakenHero = 9; //使用觉醒将领
+    optional string formName = 10;       //阵形名字
+	repeated int32 tacticsKeyId =11;//战术的keyid
+	repeated MineTwoInt tactics =12;//战术的 tacticsId,level ,用于播放战报
+}
+
+message MineTwoInt {
+    required int32 v1 = 1;
+    required int32 v2 = 2;
+}
+
+message MineAwakenHero {
+    required int32 keyId = 1;           // 唯一id
+    optional int32 heroId = 2;          // 英雄id
+    optional int32 state = 3;           // 英雄状态 0未派出 1派出
+    repeated MineTwoInt skillLv = 4;        // 技能id-等级
+    optional int32 failTimes = 5;       // 失败次数
+}
+
+message FightMineRequest{
+    required int32 pos =1;
+    required int64 roleId=2;
+    optional int32 type =3;
+    optional int32 num=4;
+}
+
+message FightMineResponse{
+    required int32 code =1;
+    optional bool isZJ =2;
+}
+
+message RpcScoreRankRequest{
+    required int64 roleId=1;
+}
+
+message RpcScoreRankResponse{
+    repeated ScoreRank scoreRank = 1;
+    optional int32 score = 2;               //自己的积分
+    optional int32 canGet = 3;               // 0： 不可领取  1：未领取  2:已领取
+    optional int32 rank = 4;                //自己的排名
+}
+
+message ScoreRank {
+    optional string name = 1;
+    optional int64 fight = 2;
+    optional int32 score = 3;
+}
+
+
+
+message RpcCoreAwardRequest{
+    required int64 roleId=1;
+}
+
+message RpcCoreAwardResponse{
+   required int32 code=1;
+   optional int32 rank=2;
+}
+
+
+message RpcServerScoreRankRequest{
+     optional int64 roleId=1;  //实际传的serverid
+ }
+
+ message RpcServerScoreRankResponse{
+      repeated  ServerScoreAward info=1;
+      optional int32 score=2;
+      optional int32 rank =3;
+  }
+
+ message ServerScoreAward{
+      optional int64 serverId =1;
+      optional string serverName =2;
+      optional int32 score =3;
+   }
+
+   message RpcRetreatArmyRequest{
+      optional int64 roleId =1;
+      optional int32 pos= 2;
+   }
+
+   message RpcRetreatArmyResponse{
+      optional int32 code =1;
+   }
+
+
+
+message RpcGmquest{
+   optional int32 type =1;
+   optional string nick=2;
+   optional int32 score=3;
+}
+
+
+
+//侦查军矿
+service MineHandler{
+
+   //侦查军矿
+   rpc scoutMine (RpcScoutMineRequest) returns (RpcScoutMineResponse);
+
+   //查看军矿
+   rpc findMine (RpcFindMineRequest) returns (RpcFindMineResponse);
+
+   //攻打军矿
+   rpc fightMine (FightMineRequest) returns (FightMineResponse);
+
+   //查看排名
+   rpc checkScoreRank (RpcScoreRankRequest) returns (RpcScoreRankResponse);
+
+   //领取排名奖励
+   rpc getScoreRank (RpcCoreAwardRequest) returns (RpcCoreAwardResponse);
+
+   //查看服务器排名
+   rpc checkServerScoreRank (RpcServerScoreRankRequest) returns (RpcServerScoreRankResponse);
+
+   //领取服务器排名奖励
+   rpc getServerScoreRank (RpcCoreAwardRequest) returns (RpcCoreAwardResponse);
+
+   //撤军
+   rpc retreatArmy(RpcRetreatArmyRequest) returns (RpcRetreatArmyResponse);
+
+   //gm
+   rpc crossMineGm (RpcGmquest) returns (RpcRetreatArmyResponse);
+
+}

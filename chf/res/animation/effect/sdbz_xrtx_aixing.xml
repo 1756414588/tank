@@ -1,0 +1,47 @@
+<skeleton name="sdbz_xrtx_aixing" frameRate="30" version="2.0">
+ <armatures>
+  <armature name="sdbz_xrtx_aixing">
+   <b name="3" x="7.25" y="0" kX="0" kY="0" cX="0.2" cY="0.2" pX="0" pY="0" z="0">
+    <d name="part-sdbz_xrtx_aixing"/>
+   </b>
+   <b name="2" x="-7" y="0" kX="0" kY="0" cX="0.2" cY="0.2" pX="0" pY="0" z="1">
+    <d name="part-sdbz_xrtx_aixing"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="sdbz_xrtx_aixing">
+   <mov name="start" dr="38" to="0" drTW="38" lp="0" twE="NaN">
+    <b name="3" sc="1" dl="0">
+     <f x="7.25" y="0" cocos2d_x="7.25" cocos2d_y="0" kX="0" kY="0" cX="0.2" cY="0.2" pX="0" pY="0" z="0" dI="0" twE="0" dr="3"/>
+     <f x="7.25" y="0" cocos2d_x="7.25" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" twE="0" dr="4"/>
+     <f x="7.25" y="0" cocos2d_x="7.25" cocos2d_y="0" kX="0" kY="0" cX="0.8" cY="0.8" pX="0" pY="0" z="0" dI="0" twE="0" dr="4"/>
+     <f x="7.25" y="0" cocos2d_x="7.25" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" twE="0" dr="4"/>
+     <f x="7.25" y="0" cocos2d_x="7.25" cocos2d_y="0" kX="0" kY="0" cX="0.8" cY="0.8" pX="0" pY="0" z="0" dI="0" twE="0" dr="4"/>
+     <f x="7.25" y="0" cocos2d_x="7.25" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" twE="0" dr="4"/>
+     <f x="7.25" y="0" cocos2d_x="7.25" cocos2d_y="0" kX="0" kY="0" cX="0.8" cY="0.8" pX="0" pY="0" z="0" dI="0" twE="0" dr="4"/>
+     <f x="7.25" y="0" cocos2d_x="7.25" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" twE="0" dr="9"/>
+     <f x="7.25" y="0" cocos2d_x="7.25" cocos2d_y="0" kX="0" kY="0" cX="0.16" cY="0.16" pX="0" pY="0" z="0" dI="0" dr="1"/>
+     <f dr="1" dI="-1"/>
+    </b>
+    <b name="2" sc="1" dl="0">
+     <f x="-7" y="0" cocos2d_x="-7" cocos2d_y="0" kX="0" kY="0" cX="0.2" cY="0.2" pX="0" pY="0" z="1" dI="0" twE="0" dr="3"/>
+     <f x="-7" y="0" cocos2d_x="-7" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1" dI="0" twE="0" dr="4"/>
+     <f x="-7" y="0" cocos2d_x="-7" cocos2d_y="0" kX="0" kY="0" cX="0.8" cY="0.8" pX="0" pY="0" z="1" dI="0" twE="0" dr="4"/>
+     <f x="-7" y="0" cocos2d_x="-7" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1" dI="0" twE="0" dr="4"/>
+     <f x="-7" y="0" cocos2d_x="-7" cocos2d_y="0" kX="0" kY="0" cX="0.8" cY="0.8" pX="0" pY="0" z="1" dI="0" twE="0" dr="4"/>
+     <f x="-7" y="0" cocos2d_x="-7" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1" dI="0" twE="0" dr="4"/>
+     <f x="-7" y="0" cocos2d_x="-7" cocos2d_y="0" kX="0" kY="0" cX="0.8" cY="0.8" pX="0" pY="0" z="1" dI="0" twE="0" dr="4"/>
+     <f x="-7" y="0" cocos2d_x="-7" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1" dI="0" twE="0" dr="9"/>
+     <f x="-7" y="0" cocos2d_x="-7" cocos2d_y="0" kX="0" kY="0" cX="0.16" cY="0.16" pX="0" pY="0" z="1" dI="0" dr="1"/>
+     <f dr="1" dI="-1"/>
+    </b>
+    <f st="0" dr="37"/>
+    <f st="37" dr="1"/>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="sdbz_xrtx_aixing" width="16" height="16">
+  <SubTexture name="part-sdbz_xrtx_aixing" width="13" height="12" cocos2d_pX="6.4" cocos2d_pY="5.65" x="0" y="0"/>
+ </TextureAtlas>
+</skeleton>

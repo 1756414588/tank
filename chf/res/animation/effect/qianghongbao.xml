@@ -1,0 +1,128 @@
+<skeleton name="qianghongbao" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="qianghongbao">
+   <b name="4" x="1" y="0" kX="0" kY="0" cX="1" cY="1" pX="24" pY="26" z="0">
+    <d name="part-qiang_ui"/>
+   </b>
+   <b name="3" x="4" y="324" kX="0" kY="0" cX="1" cY="1" pX="320" pY="568" z="1">
+    <d name="part-qiang_g"/>
+   </b>
+   <b name="2" x="6.5" y="0.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2">
+    <d name="part-qiang_lizi0001"/>
+    <d name="part-qiang_lizi0002"/>
+    <d name="part-qiang_lizi0003"/>
+    <d name="part-qiang_lizi0004"/>
+    <d name="part-qiang_lizi0005"/>
+    <d name="part-qiang_lizi0006"/>
+    <d name="part-qiang_lizi0007"/>
+    <d name="part-qiang_lizi0008"/>
+    <d name="part-qiang_lizi0009"/>
+    <d name="part-qiang_lizi0010"/>
+    <d name="part-qiang_lizi0011"/>
+    <d name="part-qiang_lizi0012"/>
+    <d name="part-qiang_lizi0013"/>
+    <d name="part-qiang_lizi0014"/>
+    <d name="part-qiang_lizi0015"/>
+    <d name="part-qiang_lizi0016"/>
+    <d name="part-qiang_lizi0017"/>
+    <d name="part-qiang_lizi0018"/>
+    <d name="part-qiang_lizi0019"/>
+    <d name="part-qiang_lizi0020"/>
+    <d name="part-qiang_lizi0021"/>
+    <d name="part-qiang_lizi0022"/>
+    <d name="part-qiang_lizi0023"/>
+    <d name="part-qiang_lizi0024"/>
+    <d name="part-qiang_lizi0025"/>
+    <d name="part-qiang_lizi0026"/>
+    <d name="part-qiang_lizi0027"/>
+    <d name="part-qiang_lizi0028"/>
+    <d name="part-qiang_lizi0029"/>
+    <d name="part-qiang_lizi0030"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="qianghongbao">
+   <mov name="start" dr="60" to="0" drTW="60" lp="1" twE="NaN">
+    <b name="4" sc="1" dl="0">
+     <f x="1" y="0" cocos2d_x="-23" cocos2d_y="-26" kX="0" kY="0" cX="1" cY="1" pX="24" pY="26" z="0" dI="0" twE="0" dr="22"/>
+     <f x="1" y="0" cocos2d_x="-20.6" cocos2d_y="-23.4" kX="0" kY="0" cX="0.9" cY="0.9" pX="24" pY="26" z="0" dI="0" twE="0" dr="37"/>
+     <f x="1" y="0" cocos2d_x="-23" cocos2d_y="-26" kX="0" kY="0" cX="1" cY="1" pX="24" pY="26" z="0" dI="0" dr="1"/>
+    </b>
+    <b name="3" sc="1" dl="0">
+     <f x="4" y="324" cocos2d_x="-316" cocos2d_y="-244" kX="0" kY="0" cX="1" cY="1" pX="320" pY="568" z="1" dI="0" twE="0" dr="29"/>
+     <f x="4" y="324" cocos2d_x="-316" cocos2d_y="-244" kX="0" kY="0" cX="1" cY="1" pX="320" pY="568" z="1" dI="0" twE="0" dr="30">
+      <colorTransform a="0" r="0" g="0" b="0" aM="50" rM="100" gM="100" bM="100"/>
+     </f>
+     <f x="4" y="324" cocos2d_x="-316" cocos2d_y="-244" kX="0" kY="0" cX="1" cY="1" pX="320" pY="568" z="1" dI="0" dr="1"/>
+    </b>
+    <b name="2" sc="1" dl="0">
+     <f x="6.5" y="0.5" cocos2d_x="6.5" cocos2d_y="0.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="0" dr="2"/>
+     <f x="6.5" y="0.5" cocos2d_x="6.5" cocos2d_y="0.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="1" dr="2"/>
+     <f x="6.5" y="0.5" cocos2d_x="6.5" cocos2d_y="0.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="2" dr="2"/>
+     <f x="6.5" y="0.5" cocos2d_x="6.5" cocos2d_y="0.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="3" dr="2"/>
+     <f x="6.5" y="0.5" cocos2d_x="6.5" cocos2d_y="0.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="4" dr="2"/>
+     <f x="6.5" y="0.5" cocos2d_x="6.5" cocos2d_y="0.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="5" dr="2"/>
+     <f x="6.5" y="0.5" cocos2d_x="6.5" cocos2d_y="0.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="6" dr="2"/>
+     <f x="6.5" y="0.5" cocos2d_x="6.5" cocos2d_y="0.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="7" dr="2"/>
+     <f x="6.5" y="0.5" cocos2d_x="6.5" cocos2d_y="0.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="8" dr="2"/>
+     <f x="6.5" y="0.5" cocos2d_x="6.5" cocos2d_y="0.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="9" dr="2"/>
+     <f x="6.5" y="0.5" cocos2d_x="6.5" cocos2d_y="0.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="10" dr="2"/>
+     <f x="6.5" y="0.5" cocos2d_x="6.5" cocos2d_y="0.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="11" dr="2"/>
+     <f x="6.5" y="0.5" cocos2d_x="6.5" cocos2d_y="0.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="12" dr="2"/>
+     <f x="6.5" y="0.5" cocos2d_x="6.5" cocos2d_y="0.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="13" dr="2"/>
+     <f x="6.5" y="0.5" cocos2d_x="6.5" cocos2d_y="0.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="14" dr="2"/>
+     <f x="6.5" y="0.5" cocos2d_x="6.5" cocos2d_y="0.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="15" dr="2"/>
+     <f x="6.5" y="0.5" cocos2d_x="6.5" cocos2d_y="0.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="16" dr="2"/>
+     <f x="6.5" y="0.5" cocos2d_x="6.5" cocos2d_y="0.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="17" dr="2"/>
+     <f x="6.5" y="0.5" cocos2d_x="6.5" cocos2d_y="0.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="18" dr="2"/>
+     <f x="6.5" y="0.5" cocos2d_x="6.5" cocos2d_y="0.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="19" dr="2"/>
+     <f x="6.5" y="0.5" cocos2d_x="6.5" cocos2d_y="0.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="20" dr="2"/>
+     <f x="6.5" y="0.5" cocos2d_x="6.5" cocos2d_y="0.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="21" dr="2"/>
+     <f x="6.5" y="0.5" cocos2d_x="6.5" cocos2d_y="0.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="22" dr="2"/>
+     <f x="6.5" y="0.5" cocos2d_x="6.5" cocos2d_y="0.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="23" dr="2"/>
+     <f x="6.5" y="0.5" cocos2d_x="6.5" cocos2d_y="0.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="24" dr="2"/>
+     <f x="6.5" y="0.5" cocos2d_x="6.5" cocos2d_y="0.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="25" dr="2"/>
+     <f x="6.5" y="0.5" cocos2d_x="6.5" cocos2d_y="0.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="26" dr="2"/>
+     <f x="6.5" y="0.5" cocos2d_x="6.5" cocos2d_y="0.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="27" dr="2"/>
+     <f x="6.5" y="0.5" cocos2d_x="6.5" cocos2d_y="0.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="28" dr="2"/>
+     <f x="6.5" y="0.5" cocos2d_x="6.5" cocos2d_y="0.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="29" dr="2"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="qianghongbao" width="1024" height="1024">
+  <SubTexture name="part-qiang_lizi0030" width="107" height="117" cocos2d_pX="53.5" cocos2d_pY="58.5" x="0" y="457"/>
+  <SubTexture name="part-qiang_lizi0029" width="107" height="117" cocos2d_pX="53.5" cocos2d_pY="58.5" x="218" y="576"/>
+  <SubTexture name="part-qiang_lizi0028" width="107" height="117" cocos2d_pX="53.5" cocos2d_pY="58.5" x="750" y="0"/>
+  <SubTexture name="part-qiang_lizi0027" width="107" height="117" cocos2d_pX="53.5" cocos2d_pY="58.5" x="872" y="476"/>
+  <SubTexture name="part-qiang_lizi0026" width="107" height="117" cocos2d_pX="53.5" cocos2d_pY="58.5" x="532" y="119"/>
+  <SubTexture name="part-qiang_lizi0025" width="107" height="117" cocos2d_pX="53.5" cocos2d_pY="58.5" x="218" y="457"/>
+  <SubTexture name="part-qiang_lizi0024" width="107" height="117" cocos2d_pX="53.5" cocos2d_pY="58.5" x="750" y="119"/>
+  <SubTexture name="part-qiang_lizi0023" width="107" height="117" cocos2d_pX="53.5" cocos2d_pY="58.5" x="327" y="576"/>
+  <SubTexture name="part-qiang_lizi0022" width="107" height="117" cocos2d_pX="53.5" cocos2d_pY="58.5" x="532" y="238"/>
+  <SubTexture name="part-qiang_lizi0021" width="107" height="117" cocos2d_pX="53.5" cocos2d_pY="58.5" x="436" y="476"/>
+  <SubTexture name="part-qiang_lizi0020" width="107" height="117" cocos2d_pX="53.5" cocos2d_pY="58.5" x="750" y="238"/>
+  <SubTexture name="part-qiang_lizi0019" width="107" height="117" cocos2d_pX="53.5" cocos2d_pY="58.5" x="109" y="576"/>
+  <SubTexture name="part-qiang_lizi0018" width="107" height="117" cocos2d_pX="53.5" cocos2d_pY="58.5" x="532" y="357"/>
+  <SubTexture name="part-qiang_lizi0017" width="107" height="117" cocos2d_pX="53.5" cocos2d_pY="58.5" x="654" y="476"/>
+  <SubTexture name="part-qiang_lizi0016" width="107" height="117" cocos2d_pX="53.5" cocos2d_pY="58.5" x="750" y="357"/>
+  <SubTexture name="part-qiang_lizi0015" width="107" height="117" cocos2d_pX="53.5" cocos2d_pY="58.5" x="436" y="595"/>
+  <SubTexture name="part-qiang_lizi0014" width="107" height="117" cocos2d_pX="53.5" cocos2d_pY="58.5" x="532" y="0"/>
+  <SubTexture name="part-qiang_lizi0013" width="107" height="117" cocos2d_pX="53.5" cocos2d_pY="58.5" x="641" y="0"/>
+  <SubTexture name="part-qiang_lizi0012" width="107" height="117" cocos2d_pX="53.5" cocos2d_pY="58.5" x="859" y="0"/>
+  <SubTexture name="part-qiang_lizi0011" width="107" height="117" cocos2d_pX="53.5" cocos2d_pY="58.5" x="641" y="119"/>
+  <SubTexture name="part-qiang_lizi0010" width="107" height="117" cocos2d_pX="53.5" cocos2d_pY="58.5" x="859" y="119"/>
+  <SubTexture name="part-qiang_lizi0009" width="107" height="117" cocos2d_pX="53.5" cocos2d_pY="58.5" x="641" y="238"/>
+  <SubTexture name="part-qiang_lizi0008" width="107" height="117" cocos2d_pX="53.5" cocos2d_pY="58.5" x="859" y="238"/>
+  <SubTexture name="part-qiang_lizi0007" width="107" height="117" cocos2d_pX="53.5" cocos2d_pY="58.5" x="641" y="357"/>
+  <SubTexture name="part-qiang_lizi0006" width="107" height="117" cocos2d_pX="53.5" cocos2d_pY="58.5" x="859" y="357"/>
+  <SubTexture name="part-qiang_lizi0005" width="107" height="117" cocos2d_pX="53.5" cocos2d_pY="58.5" x="109" y="457"/>
+  <SubTexture name="part-qiang_lizi0004" width="107" height="117" cocos2d_pX="53.5" cocos2d_pY="58.5" x="327" y="457"/>
+  <SubTexture name="part-qiang_lizi0003" width="107" height="117" cocos2d_pX="53.5" cocos2d_pY="58.5" x="545" y="476"/>
+  <SubTexture name="part-qiang_lizi0002" width="107" height="117" cocos2d_pX="53.5" cocos2d_pY="58.5" x="763" y="476"/>
+  <SubTexture name="part-qiang_lizi0001" width="107" height="117" cocos2d_pX="53.5" cocos2d_pY="58.5" x="0" y="576"/>
+  <SubTexture name="part-qiang_g" width="530" height="455" cocos2d_pX="-75" cocos2d_pY="0" x="0" y="0"/>
+  <SubTexture name="part-qiang_ui" width="48" height="52" cocos2d_pX="0" cocos2d_pY="0" x="968" y="0"/>
+ </TextureAtlas>
+</skeleton>

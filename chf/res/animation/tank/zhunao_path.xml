@@ -1,0 +1,66 @@
+<skeleton name="zhunao_path" frameRate="30" version="2.0">
+ <armatures>
+  <armature name="zhunao_path">
+   <b name="2" x="1.95" y="41.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0">
+    <d name="part-zhunao_path01"/>
+    <d name="part-zhunao_path02"/>
+    <d name="part-zhunao_pathk03"/>
+    <d name="part-zhunao_path04"/>
+    <d name="part-zhunao_path05"/>
+    <d name="part-zhunao_path06"/>
+    <d name="part-zhunao_path07"/>
+    <d name="part-zhunao_path08"/>
+    <d name="part-zhunao_path09"/>
+    <d name="part-zhunao_path10"/>
+    <d name="part-zhunao_path11"/>
+    <d name="part-zhunao_path12"/>
+    <d name="part-zhunao_path13"/>
+    <d name="part-zhunao_path14"/>
+    <d name="part-zhunao_path15"/>
+    <d name="part-zhunao_path16"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="zhunao_path">
+   <mov name="start" dr="32" to="0" drTW="32" lp="1" twE="NaN">
+    <b name="2" sc="1" dl="0">
+     <f x="1.95" y="41.95" cocos2d_x="1.95" cocos2d_y="41.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="0" dr="2"/>
+     <f x="1.95" y="41.95" cocos2d_x="1.95" cocos2d_y="41.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="1" dr="2"/>
+     <f x="1.95" y="41.95" cocos2d_x="1.95" cocos2d_y="41.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="2" dr="2"/>
+     <f x="1.95" y="41.95" cocos2d_x="1.95" cocos2d_y="41.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="3" dr="2"/>
+     <f x="1.95" y="41.95" cocos2d_x="1.95" cocos2d_y="41.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="4" dr="2"/>
+     <f x="1.95" y="41.95" cocos2d_x="1.95" cocos2d_y="41.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="5" dr="2"/>
+     <f x="1.95" y="41.95" cocos2d_x="1.95" cocos2d_y="41.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="6" dr="2"/>
+     <f x="1.95" y="41.95" cocos2d_x="1.95" cocos2d_y="41.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="7" dr="2"/>
+     <f x="1.95" y="41.95" cocos2d_x="1.95" cocos2d_y="41.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="8" dr="2"/>
+     <f x="1.95" y="41.95" cocos2d_x="1.95" cocos2d_y="41.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="9" dr="2"/>
+     <f x="1.95" y="41.95" cocos2d_x="1.95" cocos2d_y="41.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="10" dr="2"/>
+     <f x="1.95" y="41.95" cocos2d_x="1.95" cocos2d_y="41.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="11" dr="2"/>
+     <f x="1.95" y="41.95" cocos2d_x="1.95" cocos2d_y="41.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="12" dr="2"/>
+     <f x="1.95" y="41.95" cocos2d_x="1.95" cocos2d_y="41.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="13" dr="2"/>
+     <f x="1.95" y="41.95" cocos2d_x="1.95" cocos2d_y="41.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="14" dr="2"/>
+     <f x="1.95" y="41.95" cocos2d_x="1.95" cocos2d_y="41.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="15" dr="2"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="zhunao_path" width="1024" height="1024">
+  <SubTexture name="part-zhunao_path16" width="200" height="200" cocos2d_pX="100" cocos2d_pY="100" x="202" y="0"/>
+  <SubTexture name="part-zhunao_path15" width="200" height="200" cocos2d_pX="100" cocos2d_pY="100" x="808" y="202"/>
+  <SubTexture name="part-zhunao_path14" width="200" height="200" cocos2d_pX="100" cocos2d_pY="100" x="606" y="0"/>
+  <SubTexture name="part-zhunao_path13" width="200" height="200" cocos2d_pX="100" cocos2d_pY="100" x="808" y="404"/>
+  <SubTexture name="part-zhunao_path12" width="200" height="200" cocos2d_pX="100" cocos2d_pY="100" x="0" y="202"/>
+  <SubTexture name="part-zhunao_path11" width="200" height="200" cocos2d_pX="100" cocos2d_pY="100" x="202" y="404"/>
+  <SubTexture name="part-zhunao_path10" width="200" height="200" cocos2d_pX="100" cocos2d_pY="100" x="404" y="202"/>
+  <SubTexture name="part-zhunao_path09" width="200" height="200" cocos2d_pX="100" cocos2d_pY="100" x="0" y="606"/>
+  <SubTexture name="part-zhunao_path08" width="200" height="200" cocos2d_pX="100" cocos2d_pY="100" x="0" y="0"/>
+  <SubTexture name="part-zhunao_path07" width="200" height="200" cocos2d_pX="100" cocos2d_pY="100" x="404" y="0"/>
+  <SubTexture name="part-zhunao_path06" width="200" height="200" cocos2d_pX="100" cocos2d_pY="100" x="808" y="0"/>
+  <SubTexture name="part-zhunao_path05" width="200" height="200" cocos2d_pX="100" cocos2d_pY="100" x="202" y="202"/>
+  <SubTexture name="part-zhunao_path04" width="200" height="200" cocos2d_pX="100" cocos2d_pY="100" x="606" y="202"/>
+  <SubTexture name="part-zhunao_pathk03" width="200" height="200" cocos2d_pX="100" cocos2d_pY="100" x="0" y="404"/>
+  <SubTexture name="part-zhunao_path02" width="200" height="200" cocos2d_pX="100" cocos2d_pY="100" x="404" y="404"/>
+  <SubTexture name="part-zhunao_path01" width="200" height="200" cocos2d_pX="100" cocos2d_pY="100" x="606" y="404"/>
+ </TextureAtlas>
+</skeleton>

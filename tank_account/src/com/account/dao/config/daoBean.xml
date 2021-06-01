@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"
+          destroy-method="close">
+        <property name="driverClass" value="com.mysql.jdbc.Driver"/>
+        <property name="jdbcUrl" value="#{serverConfig.jdbcUrl}"/>
+        <property name="user" value="#{serverConfig.user}"/>
+        <property name="password" value="#{serverConfig.password}"/>
+        <property name="minPoolSize" value="25"/>
+        <property name="maxPoolSize" value="300"/>
+        <property name="initialPoolSize" value="25"/>
+        <property name="maxIdleTime" value="7000"/>
+        <property name="acquireIncrement" value="5"/>
+        <property name="acquireRetryAttempts" value="30"/>
+        <property name="acquireRetryDelay" value="500"/>
+        <property name="numHelperThreads" value="3"/>
+        <property name="idleConnectionTestPeriod" value="600"/>
+        <property name="testConnectionOnCheckout" value="false"/>
+        <property name="testConnectionOnCheckin" value="false"/>
+        <property name="preferredTestQuery" value="select 'x'"/>
+    </bean>
+
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean"
+          p:configLocation="classpath:com/account/dao/config/mybatisConfig.xml"
+          p:mapperLocations="classpath*:com/account/dao/sqlMap/*Dao.xml"
+          p:dataSource-ref="dataSource"/>
+
+
+    <bean id="baseDao" class="com.account.dao.BaseDao" abstract="true"
+          p:sqlSessionFactory-ref="sqlSessionFactory"/>
+
+    <bean class="com.account.dao.impl.AccountDao" parent="baseDao"/>
+    <bean class="com.account.dao.impl.StaticParamDao" parent="baseDao"/>
+    <bean class="com.account.dao.impl.ServerDao" parent="baseDao"/>
+    <bean class="com.account.dao.impl.GmMailDao" parent="baseDao"/>
+    <bean class="com.account.dao.impl.ActiveDao" parent="baseDao"/>
+    <bean class="com.account.dao.impl.PayDao" parent="baseDao"/>
+    <bean class="com.account.dao.impl.GiftDao" parent="baseDao"/>
+    <bean class="com.account.dao.impl.RoleDao" parent="baseDao"/>
+    <bean class="com.account.dao.impl.ForbidDeviceDao" parent="baseDao"/>
+    <bean class="com.account.dao.impl.AdvertiseDao" parent="baseDao"/>
+    <bean class="com.account.dao.impl.ActionPointDao" parent="baseDao"/>
+    <bean class="com.account.dao.impl.ZhtDao" parent="baseDao"/>
+    <bean class="com.account.dao.impl.WxAdDao" parent="baseDao"/>
+    <bean class="com.account.dao.impl.RolePointDao" parent="baseDao"/>
+    <bean class="com.account.dao.impl.RoleInfoDao" parent="baseDao"/>
+    <bean class="com.account.dao.impl.SaveBehaviorDao" parent="baseDao"/>
+
+</beans>

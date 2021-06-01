@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>part-xuanguanbaoxiang_diguang2.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,2},{179,145}}</string>
+                <key>offset</key>
+                <string>{0,2}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{1,1},{179,145}}</string>
+                <key>sourceSize</key>
+                <string>{181,151}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>2</integer>
+            <key>realTextureFileName</key>
+            <string>ui_box_light.pvr.ccz</string>
+            <key>size</key>
+            <string>{184,149}</string>
+            <key>smartupdate</key>
+            <string>$TexturePacker:SmartUpdate:83909349eef931f0c48d8203b66df5f8:92233b27757b4430b03acdf40cbeb085:65bfb988f34a4b7c5b83ee973757dd31$</string>
+            <key>textureFileName</key>
+            <string>ui_box_light.pvr.ccz</string>
+        </dict>
+    </dict>
+</plist>

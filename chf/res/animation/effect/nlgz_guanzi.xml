@@ -1,0 +1,221 @@
+<skeleton name="nlgz_guanzi" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="nlgz_guanzi">
+   <b name="gfjfgj" x="9.3" y="106.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0">
+    <d name="part-nlgz_languanzi1"/>
+    <d name="part-nlgz_languanzi2"/>
+    <d name="part-nlgz_languanzi3"/>
+    <d name="part-nlgz_languanzi4"/>
+    <d name="part-nlgz_languanzi5"/>
+    <d name="part-nlgz_languanzi6"/>
+    <d name="part-nlgz_languanzi7"/>
+    <d name="part-nlgz_languanzi8"/>
+    <d name="part-nlgz_languanzi9"/>
+    <d name="part-nlgz_languanzi10"/>
+    <d name="part-nlgz_languanzi11"/>
+    <d name="part-nlgz_languanzi12"/>
+    <d name="part-nlgz_languanzi13"/>
+    <d name="part-nlgz_languanzi14"/>
+    <d name="part-nlgz_languanzi15"/>
+    <d name="part-nlgz_languanzi16"/>
+    <d name="part-nlgz_languanzi17"/>
+    <d name="part-nlgz_languanzi18"/>
+    <d name="part-nlgz_languanzi19"/>
+    <d name="part-nlgz_languanzi20"/>
+    <d name="part-nlgz_ziguanzi1"/>
+    <d name="part-nlgz_ziguanzi2"/>
+    <d name="part-nlgz_ziguanzi3"/>
+    <d name="part-nlgz_ziguanzi4"/>
+    <d name="part-nlgz_ziguanzi5"/>
+    <d name="part-nlgz_ziguanzi6"/>
+    <d name="part-nlgz_ziguanzi7"/>
+    <d name="part-nlgz_ziguanzi8"/>
+    <d name="part-nlgz_ziguanzi9"/>
+    <d name="part-nlgz_ziguanzi10"/>
+    <d name="part-nlgz_ziguanzi11"/>
+    <d name="part-nlgz_ziguanzi12"/>
+    <d name="part-nlgz_ziguanzi13"/>
+    <d name="part-nlgz_ziguanzi14"/>
+    <d name="part-nlgz_ziguanzi15"/>
+    <d name="part-nlgz_ziguanzi16"/>
+    <d name="part-nlgz_ziguanzi17"/>
+    <d name="part-nlgz_huangguanzi1"/>
+    <d name="part-nlgz_huangguanzi2"/>
+    <d name="part-nlgz_huangguanzi3"/>
+    <d name="part-nlgz_huangguanzi4"/>
+    <d name="part-nlgz_huangguanzi5"/>
+    <d name="part-nlgz_huangguanzi6"/>
+    <d name="part-nlgz_huangguanzi7"/>
+    <d name="part-nlgz_huangguanzi8"/>
+    <d name="part-nlgz_huangguanzi9"/>
+    <d name="part-nlgz_huangguanzi10"/>
+    <d name="part-nlgz_huangguanzi11"/>
+    <d name="part-nlgz_huangguanzi12"/>
+    <d name="part-nlgz_huangguanzi13"/>
+    <d name="part-nlgz_huangguanzi14"/>
+    <d name="part-nlgz_huangguanzi15"/>
+    <d name="part-nlgz_huangguanzi16"/>
+    <d name="part-nlgz_huangguanzi17"/>
+    <d name="part-nlgz_huangguanzi18"/>
+    <d name="part-nlgz_huangguanzi19"/>
+    <d name="part-nlgz_huangguanzi20"/>
+    <d name="part-nlgz_huangguanzi21"/>
+    <d name="part-nlgz_huangguanzi22"/>
+    <d name="part-nlgz_huangguanzi23"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="nlgz_guanzi">
+   <mov name="lan" dr="60" to="0" drTW="60" lp="0" twE="NaN">
+    <b name="gfjfgj" sc="1" dl="0">
+     <f x="9.3" y="106.55" cocos2d_x="9.3" cocos2d_y="106.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="3"/>
+     <f x="9.3" y="105.55" cocos2d_x="9.3" cocos2d_y="105.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="1" dr="3"/>
+     <f x="9.3" y="105.55" cocos2d_x="9.3" cocos2d_y="105.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="2" dr="3"/>
+     <f x="9.3" y="106.55" cocos2d_x="9.3" cocos2d_y="106.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="3" dr="3"/>
+     <f x="9.3" y="106.8" cocos2d_x="9.3" cocos2d_y="106.8" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="4" dr="3"/>
+     <f x="9.3" y="106.3" cocos2d_x="9.3" cocos2d_y="106.3" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="5" dr="3"/>
+     <f x="9.3" y="106.8" cocos2d_x="9.3" cocos2d_y="106.8" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="6" dr="3"/>
+     <f x="9.3" y="106.3" cocos2d_x="9.3" cocos2d_y="106.3" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="7" dr="3"/>
+     <f x="9.3" y="106.8" cocos2d_x="9.3" cocos2d_y="106.8" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="8" dr="3"/>
+     <f x="9.3" y="106.55" cocos2d_x="9.3" cocos2d_y="106.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="9" dr="3"/>
+     <f x="9.3" y="106.55" cocos2d_x="9.3" cocos2d_y="106.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="10" dr="3"/>
+     <f x="9.3" y="106.55" cocos2d_x="9.3" cocos2d_y="106.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="11" dr="3"/>
+     <f x="9.3" y="106.8" cocos2d_x="9.3" cocos2d_y="106.8" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="12" dr="3"/>
+     <f x="9.3" y="106.3" cocos2d_x="9.3" cocos2d_y="106.3" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="13" dr="3"/>
+     <f x="9.3" y="106.8" cocos2d_x="9.3" cocos2d_y="106.8" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="14" dr="3"/>
+     <f x="9.3" y="106.8" cocos2d_x="9.3" cocos2d_y="106.8" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="15" dr="3"/>
+     <f x="9.3" y="106.8" cocos2d_x="9.3" cocos2d_y="106.8" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="16" dr="3"/>
+     <f x="9.3" y="106.8" cocos2d_x="9.3" cocos2d_y="106.8" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="17" dr="3"/>
+     <f x="9.3" y="106.8" cocos2d_x="9.3" cocos2d_y="106.8" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="18" dr="3"/>
+     <f x="9.3" y="106.8" cocos2d_x="9.3" cocos2d_y="106.8" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="19" dr="3"/>
+    </b>
+   </mov>
+   <mov name="lan_jingzhi" dr="2" to="6" drTW="10" lp="1" twE="2">
+    <b name="gfjfgj" sc="1" dl="0">
+     <f x="9.3" y="106.8" cocos2d_x="9.3" cocos2d_y="106.8" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="19" dr="2"/>
+    </b>
+   </mov>
+   <mov name="zi" dr="51" to="0" drTW="51" lp="0" twE="NaN">
+    <b name="gfjfgj" sc="1" dl="0">
+     <f x="0.65" y="67.8" cocos2d_x="0.65" cocos2d_y="67.8" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="20" dr="3"/>
+     <f x="0.65" y="67.4" cocos2d_x="0.65" cocos2d_y="67.4" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="21" dr="3"/>
+     <f x="0.65" y="67.5" cocos2d_x="0.65" cocos2d_y="67.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="22" dr="3"/>
+     <f x="0.65" y="67.75" cocos2d_x="0.65" cocos2d_y="67.75" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="23" dr="3"/>
+     <f x="0.65" y="67.7" cocos2d_x="0.65" cocos2d_y="67.7" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="24" dr="3"/>
+     <f x="0.65" y="67.55" cocos2d_x="0.65" cocos2d_y="67.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="25" dr="3"/>
+     <f x="0.65" y="67.25" cocos2d_x="0.65" cocos2d_y="67.25" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="26" dr="3"/>
+     <f x="0.65" y="67.6" cocos2d_x="0.65" cocos2d_y="67.6" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="27" dr="3"/>
+     <f x="0.65" y="67.85" cocos2d_x="0.65" cocos2d_y="67.85" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="28" dr="3"/>
+     <f x="0.65" y="67.05" cocos2d_x="0.65" cocos2d_y="67.05" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="29" dr="3"/>
+     <f x="0.65" y="67.5" cocos2d_x="0.65" cocos2d_y="67.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="30" dr="3"/>
+     <f x="0.65" y="67.45" cocos2d_x="0.65" cocos2d_y="67.45" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="31" dr="3"/>
+     <f x="0.65" y="67.8" cocos2d_x="0.65" cocos2d_y="67.8" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="32" dr="3"/>
+     <f x="0.65" y="67.3" cocos2d_x="0.65" cocos2d_y="67.3" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="33" dr="3"/>
+     <f x="0.65" y="67.4" cocos2d_x="0.65" cocos2d_y="67.4" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="34" dr="3"/>
+     <f x="0.65" y="67.45" cocos2d_x="0.65" cocos2d_y="67.45" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="35" dr="3"/>
+     <f x="0.65" y="67.4" cocos2d_x="0.65" cocos2d_y="67.4" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="36" dr="3"/>
+    </b>
+   </mov>
+   <mov name="zi_jingzhi" dr="2" to="6" drTW="10" lp="1" twE="2">
+    <b name="gfjfgj" sc="1" dl="0">
+     <f x="0.65" y="67.4" cocos2d_x="0.65" cocos2d_y="67.4" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="36" dr="2"/>
+    </b>
+   </mov>
+   <mov name="huang" dr="69" to="0" drTW="69" lp="0" twE="NaN">
+    <b name="gfjfgj" sc="1" dl="0">
+     <f x="-7.35" y="106.45" cocos2d_x="-7.35" cocos2d_y="106.45" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="37" dr="3"/>
+     <f x="-7.35" y="106.65" cocos2d_x="-7.35" cocos2d_y="106.65" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="38" dr="3"/>
+     <f x="-7.35" y="106.5" cocos2d_x="-7.35" cocos2d_y="106.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="39" dr="3"/>
+     <f x="-7.35" y="106.9" cocos2d_x="-7.35" cocos2d_y="106.9" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="40" dr="3"/>
+     <f x="-7.35" y="106.5" cocos2d_x="-7.35" cocos2d_y="106.5" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="41" dr="3"/>
+     <f x="-7.35" y="106.35" cocos2d_x="-7.35" cocos2d_y="106.35" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="42" dr="3"/>
+     <f x="-7.35" y="106.45" cocos2d_x="-7.35" cocos2d_y="106.45" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="43" dr="3"/>
+     <f x="-7.35" y="106.8" cocos2d_x="-7.35" cocos2d_y="106.8" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="44" dr="3"/>
+     <f x="-7.35" y="106.45" cocos2d_x="-7.35" cocos2d_y="106.45" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="45" dr="3"/>
+     <f x="-7.35" y="106.55" cocos2d_x="-7.35" cocos2d_y="106.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="46" dr="3"/>
+     <f x="-7.35" y="106.7" cocos2d_x="-7.35" cocos2d_y="106.7" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="47" dr="3"/>
+     <f x="-7.35" y="106.65" cocos2d_x="-7.35" cocos2d_y="106.65" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="48" dr="3"/>
+     <f x="-7.35" y="106.9" cocos2d_x="-7.35" cocos2d_y="106.9" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="49" dr="3"/>
+     <f x="-7.35" y="107" cocos2d_x="-7.35" cocos2d_y="107" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="50" dr="3"/>
+     <f x="-7.35" y="106.55" cocos2d_x="-7.35" cocos2d_y="106.55" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="51" dr="3"/>
+     <f x="-7.35" y="106.95" cocos2d_x="-7.35" cocos2d_y="106.95" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="52" dr="3"/>
+     <f x="-7.35" y="106.95" cocos2d_x="-7.35" cocos2d_y="106.95" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="53" dr="3"/>
+     <f x="-7.35" y="106.85" cocos2d_x="-7.35" cocos2d_y="106.85" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="54" dr="3"/>
+     <f x="-7.35" y="106.85" cocos2d_x="-7.35" cocos2d_y="106.85" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="55" dr="3"/>
+     <f x="-7.35" y="106.85" cocos2d_x="-7.35" cocos2d_y="106.85" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="56" dr="3"/>
+     <f x="-7.35" y="106.85" cocos2d_x="-7.35" cocos2d_y="106.85" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="57" dr="3"/>
+     <f x="-7.35" y="106.85" cocos2d_x="-7.35" cocos2d_y="106.85" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="58" dr="3"/>
+     <f x="-7.35" y="106.85" cocos2d_x="-7.35" cocos2d_y="106.85" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="59" dr="3"/>
+    </b>
+   </mov>
+   <mov name="huang_jingzhi" dr="2" to="6" drTW="10" lp="1" twE="2">
+    <b name="gfjfgj" sc="1" dl="0">
+     <f x="-7.35" y="106.85" cocos2d_x="-7.35" cocos2d_y="106.85" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="59" dr="2"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="nlgz_guanzi" width="1024" height="1024">
+  <SubTexture name="part-nlgz_huangguanzi23" width="74" height="219" cocos2d_pX="37" cocos2d_pY="109.5" x="390" y="0"/>
+  <SubTexture name="part-nlgz_huangguanzi22" width="74" height="219" cocos2d_pX="37" cocos2d_pY="109.5" x="770" y="0"/>
+  <SubTexture name="part-nlgz_huangguanzi21" width="74" height="219" cocos2d_pX="37" cocos2d_pY="109.5" x="466" y="0"/>
+  <SubTexture name="part-nlgz_huangguanzi20" width="74" height="219" cocos2d_pX="37" cocos2d_pY="109.5" x="694" y="0"/>
+  <SubTexture name="part-nlgz_huangguanzi19" width="74" height="219" cocos2d_pX="37" cocos2d_pY="109.5" x="542" y="0"/>
+  <SubTexture name="part-nlgz_huangguanzi18" width="74" height="219" cocos2d_pX="37" cocos2d_pY="109.5" x="618" y="0"/>
+  <SubTexture name="part-nlgz_huangguanzi17" width="74" height="208" cocos2d_pX="37" cocos2d_pY="109.6" x="924" y="0"/>
+  <SubTexture name="part-nlgz_huangguanzi16" width="74" height="192" cocos2d_pX="37" cocos2d_pY="109.6" x="924" y="210"/>
+  <SubTexture name="part-nlgz_huangguanzi15" width="74" height="180" cocos2d_pX="37" cocos2d_pY="109.2" x="78" y="220"/>
+  <SubTexture name="part-nlgz_huangguanzi14" width="74" height="167" cocos2d_pX="37" cocos2d_pY="109.65" x="154" y="220"/>
+  <SubTexture name="part-nlgz_huangguanzi13" width="74" height="154" cocos2d_pX="37" cocos2d_pY="110.35" x="308" y="220"/>
+  <SubTexture name="part-nlgz_huangguanzi12" width="74" height="145" cocos2d_pX="37" cocos2d_pY="109.3" x="462" y="221"/>
+  <SubTexture name="part-nlgz_huangguanzi11" width="74" height="136" cocos2d_pX="37" cocos2d_pY="109.35" x="538" y="221"/>
+  <SubTexture name="part-nlgz_huangguanzi10" width="74" height="124" cocos2d_pX="37" cocos2d_pY="109.2" x="692" y="221"/>
+  <SubTexture name="part-nlgz_huangguanzi9" width="74" height="111" cocos2d_pX="37" cocos2d_pY="109.9" x="768" y="341"/>
+  <SubTexture name="part-nlgz_huangguanzi8" width="74" height="101" cocos2d_pX="37" cocos2d_pY="109.45" x="692" y="347"/>
+  <SubTexture name="part-nlgz_huangguanzi7" width="74" height="87" cocos2d_pX="37" cocos2d_pY="109.9" x="538" y="359"/>
+  <SubTexture name="part-nlgz_huangguanzi6" width="74" height="74" cocos2d_pX="37" cocos2d_pY="109" x="462" y="368"/>
+  <SubTexture name="part-nlgz_huangguanzi5" width="74" height="62" cocos2d_pX="37" cocos2d_pY="109.95" x="308" y="376"/>
+  <SubTexture name="part-nlgz_huangguanzi4" width="74" height="50" cocos2d_pX="37" cocos2d_pY="110.35" x="78" y="402"/>
+  <SubTexture name="part-nlgz_huangguanzi3" width="74" height="38" cocos2d_pX="37" cocos2d_pY="109.95" x="922" y="404"/>
+  <SubTexture name="part-nlgz_huangguanzi2" width="74" height="25" cocos2d_pX="37" cocos2d_pY="109.3" x="308" y="440"/>
+  <SubTexture name="part-nlgz_huangguanzi1" width="74" height="15" cocos2d_pX="37" cocos2d_pY="109.9" x="538" y="448"/>
+  <SubTexture name="part-nlgz_ziguanzi17" width="17" height="135" cocos2d_pX="8.5" cocos2d_pY="67.5" x="1000" y="0"/>
+  <SubTexture name="part-nlgz_ziguanzi16" width="17" height="126" cocos2d_pX="8.5" cocos2d_pY="67.55" x="1000" y="137"/>
+  <SubTexture name="part-nlgz_ziguanzi15" width="17" height="122" cocos2d_pX="8.5" cocos2d_pY="67.5" x="1000" y="265"/>
+  <SubTexture name="part-nlgz_ziguanzi14" width="17" height="114" cocos2d_pX="8.5" cocos2d_pY="67.4" x="154" y="389"/>
+  <SubTexture name="part-nlgz_ziguanzi13" width="17" height="109" cocos2d_pX="8.5" cocos2d_pY="67.9" x="173" y="389"/>
+  <SubTexture name="part-nlgz_ziguanzi12" width="17" height="100" cocos2d_pX="8.5" cocos2d_pY="67.55" x="192" y="389"/>
+  <SubTexture name="part-nlgz_ziguanzi11" width="17" height="91" cocos2d_pX="8.5" cocos2d_pY="67.6" x="211" y="389"/>
+  <SubTexture name="part-nlgz_ziguanzi10" width="17" height="81" cocos2d_pX="8.5" cocos2d_pY="67.15" x="1000" y="389"/>
+  <SubTexture name="part-nlgz_ziguanzi9" width="17" height="74" cocos2d_pX="8.5" cocos2d_pY="67.95" x="462" y="444"/>
+  <SubTexture name="part-nlgz_ziguanzi8" width="17" height="67" cocos2d_pX="8.5" cocos2d_pY="68.35" x="481" y="444"/>
+  <SubTexture name="part-nlgz_ziguanzi7" width="17" height="58" cocos2d_pX="8.5" cocos2d_pY="68" x="500" y="444"/>
+  <SubTexture name="part-nlgz_ziguanzi6" width="17" height="50" cocos2d_pX="8.5" cocos2d_pY="67.65" x="519" y="444"/>
+  <SubTexture name="part-nlgz_ziguanzi5" width="17" height="42" cocos2d_pX="8.5" cocos2d_pY="68.45" x="692" y="450"/>
+  <SubTexture name="part-nlgz_ziguanzi4" width="17" height="33" cocos2d_pX="8.5" cocos2d_pY="68.5" x="711" y="450"/>
+  <SubTexture name="part-nlgz_ziguanzi3" width="17" height="26" cocos2d_pX="8.5" cocos2d_pY="68.25" x="730" y="450"/>
+  <SubTexture name="part-nlgz_ziguanzi2" width="17" height="18" cocos2d_pX="8.5" cocos2d_pY="67.5" x="749" y="450"/>
+  <SubTexture name="part-nlgz_ziguanzi1" width="17" height="11" cocos2d_pX="8.5" cocos2d_pY="67.9" x="78" y="454"/>
+  <SubTexture name="part-nlgz_languanzi20" width="76" height="218" cocos2d_pX="38" cocos2d_pY="109" x="0" y="0"/>
+  <SubTexture name="part-nlgz_languanzi19" width="76" height="218" cocos2d_pX="38" cocos2d_pY="109" x="312" y="0"/>
+  <SubTexture name="part-nlgz_languanzi18" width="76" height="218" cocos2d_pX="38" cocos2d_pY="109" x="78" y="0"/>
+  <SubTexture name="part-nlgz_languanzi17" width="76" height="218" cocos2d_pX="38" cocos2d_pY="109" x="234" y="0"/>
+  <SubTexture name="part-nlgz_languanzi16" width="76" height="218" cocos2d_pX="38" cocos2d_pY="109" x="156" y="0"/>
+  <SubTexture name="part-nlgz_languanzi15" width="76" height="208" cocos2d_pX="38" cocos2d_pY="109" x="846" y="0"/>
+  <SubTexture name="part-nlgz_languanzi14" width="76" height="192" cocos2d_pX="38" cocos2d_pY="108.5" x="846" y="210"/>
+  <SubTexture name="part-nlgz_languanzi13" width="76" height="178" cocos2d_pX="38" cocos2d_pY="109" x="0" y="220"/>
+  <SubTexture name="part-nlgz_languanzi12" width="76" height="164" cocos2d_pX="38" cocos2d_pY="108.75" x="230" y="220"/>
+  <SubTexture name="part-nlgz_languanzi11" width="76" height="147" cocos2d_pX="38" cocos2d_pY="108.75" x="384" y="221"/>
+  <SubTexture name="part-nlgz_languanzi10" width="76" height="131" cocos2d_pX="38" cocos2d_pY="108.75" x="614" y="221"/>
+  <SubTexture name="part-nlgz_languanzi9" width="76" height="118" cocos2d_pX="38" cocos2d_pY="109" x="768" y="221"/>
+  <SubTexture name="part-nlgz_languanzi8" width="76" height="103" cocos2d_pX="38" cocos2d_pY="108.5" x="614" y="354"/>
+  <SubTexture name="part-nlgz_languanzi7" width="76" height="88" cocos2d_pX="38" cocos2d_pY="109" x="384" y="370"/>
+  <SubTexture name="part-nlgz_languanzi6" width="76" height="72" cocos2d_pX="38" cocos2d_pY="108.5" x="230" y="386"/>
+  <SubTexture name="part-nlgz_languanzi5" width="76" height="53" cocos2d_pX="38" cocos2d_pY="109" x="0" y="400"/>
+  <SubTexture name="part-nlgz_languanzi4" width="76" height="42" cocos2d_pX="38" cocos2d_pY="108.75" x="844" y="404"/>
+  <SubTexture name="part-nlgz_languanzi3" width="76" height="31" cocos2d_pX="38" cocos2d_pY="108.35" x="922" y="444"/>
+  <SubTexture name="part-nlgz_languanzi2" width="76" height="22" cocos2d_pX="38" cocos2d_pY="107.75" x="844" y="448"/>
+  <SubTexture name="part-nlgz_languanzi1" width="76" height="15" cocos2d_pX="38" cocos2d_pY="108.75" x="0" y="455"/>
+ </TextureAtlas>
+</skeleton>

@@ -1,0 +1,100 @@
+<skeleton name="boss_jg" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="boss_jg_output">
+   <b name="8" x="19" y="6" kX="0" kY="0" cX="1" cY="1" pX="320" pY="67" z="0">
+    <d name="part-boss_jg_1"/>
+   </b>
+   <b name="7" x="87.5" y="12" kX="0" kY="0" cX="1" cY="1" pX="130" pY="17" z="1">
+    <d name="part-boss_jg_2"/>
+   </b>
+   <b name="6" x="-120" y="6" kX="0" kY="0" cX="1" cY="1" pX="47" pY="43" z="2">
+    <d name="part-boss_jg_3"/>
+   </b>
+   <b name="5" x="19" y="-75.5" kX="0" kY="0" cX="1" cY="1" pX="320" pY="18" z="3">
+    <d name="part-boss_jg_4"/>
+   </b>
+   <b name="4" x="649" y="-75.5" kX="0" kY="0" cX="1" cY="1" pX="320" pY="18" z="4">
+    <d name="part-boss_jg_4"/>
+   </b>
+   <b name="3" x="18.5" y="85.5" kX="0" kY="0" cX="1" cY="1" pX="320" pY="18" z="5">
+    <d name="part-boss_jg_4"/>
+   </b>
+   <b name="2" x="-611.5" y="85.5" kX="0" kY="0" cX="1" cY="1" pX="320" pY="18" z="6">
+    <d name="part-boss_jg_4"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="boss_jg_output">
+   <mov name="start" dr="379" to="0" drTW="379" lp="0" twE="NaN">
+    <b name="8" sc="1" dl="0">
+     <f x="19" y="6" cocos2d_x="-301" cocos2d_y="-61" kX="0" kY="0" cX="1" cY="1" pX="320" pY="67" z="0" dI="0" dr="379"/>
+    </b>
+    <b name="7" sc="1" dl="0">
+     <f x="87.5" y="12" cocos2d_x="-42" cocos2d_y="-5" kX="0" kY="0" cX="1" cY="1" pX="130" pY="17" z="1" dI="0" twE="0" dr="18"/>
+     <f x="87.5" y="12" cocos2d_x="-42" cocos2d_y="-5" kX="0" kY="0" cX="1" cY="1" pX="130" pY="17" z="1" dI="0" twE="0" dr="24">
+      <colorTransform a="0" r="0" g="0" b="0" aM="50" rM="100" gM="100" bM="100"/>
+     </f>
+     <f x="87.5" y="12" cocos2d_x="-42" cocos2d_y="-5" kX="0" kY="0" cX="1" cY="1" pX="130" pY="17" z="1" dI="0" twE="0" dr="18"/>
+     <f x="87.5" y="12" cocos2d_x="-42" cocos2d_y="-5" kX="0" kY="0" cX="1" cY="1" pX="130" pY="17" z="1" dI="0" twE="0" dr="24">
+      <colorTransform a="0" r="0" g="0" b="0" aM="50" rM="100" gM="100" bM="100"/>
+     </f>
+     <f x="87.5" y="12" cocos2d_x="-42" cocos2d_y="-5" kX="0" kY="0" cX="1" cY="1" pX="130" pY="17" z="1" dI="0" twE="0" dr="18"/>
+     <f x="87.5" y="12" cocos2d_x="-42" cocos2d_y="-5" kX="0" kY="0" cX="1" cY="1" pX="130" pY="17" z="1" dI="0" twE="0" dr="24">
+      <colorTransform a="0" r="0" g="0" b="0" aM="50" rM="100" gM="100" bM="100"/>
+     </f>
+     <f x="87.5" y="12" cocos2d_x="-42" cocos2d_y="-5" kX="0" kY="0" cX="1" cY="1" pX="130" pY="17" z="1" dI="0" twE="0" dr="18"/>
+     <f x="87.5" y="12" cocos2d_x="-42" cocos2d_y="-5" kX="0" kY="0" cX="1" cY="1" pX="130" pY="17" z="1" dI="0" twE="0" dr="24">
+      <colorTransform a="0" r="0" g="0" b="0" aM="50" rM="100" gM="100" bM="100"/>
+     </f>
+     <f x="87.5" y="12" cocos2d_x="-42" cocos2d_y="-5" kX="0" kY="0" cX="1" cY="1" pX="130" pY="17" z="1" dI="0" twE="0" dr="18"/>
+     <f x="87.5" y="12" cocos2d_x="-42" cocos2d_y="-5" kX="0" kY="0" cX="1" cY="1" pX="130" pY="17" z="1" dI="0" twE="0" dr="24">
+      <colorTransform a="0" r="0" g="0" b="0" aM="50" rM="100" gM="100" bM="100"/>
+     </f>
+     <f x="87.5" y="12" cocos2d_x="-42" cocos2d_y="-5" kX="0" kY="0" cX="1" cY="1" pX="130" pY="17" z="1" dI="0" twE="0" dr="18"/>
+     <f x="87.5" y="12" cocos2d_x="-42" cocos2d_y="-5" kX="0" kY="0" cX="1" cY="1" pX="130" pY="17" z="1" dI="0" twE="0" dr="24">
+      <colorTransform a="0" r="0" g="0" b="0" aM="50" rM="100" gM="100" bM="100"/>
+     </f>
+     <f x="87.5" y="12" cocos2d_x="-42" cocos2d_y="-5" kX="0" kY="0" cX="1" cY="1" pX="130" pY="17" z="1" dI="0" twE="0" dr="18"/>
+     <f x="87.5" y="12" cocos2d_x="-42" cocos2d_y="-5" kX="0" kY="0" cX="1" cY="1" pX="130" pY="17" z="1" dI="0" twE="0" dr="24">
+      <colorTransform a="0" r="0" g="0" b="0" aM="50" rM="100" gM="100" bM="100"/>
+     </f>
+     <f x="87.5" y="12" cocos2d_x="-42" cocos2d_y="-5" kX="0" kY="0" cX="1" cY="1" pX="130" pY="17" z="1" dI="0" twE="0" dr="18"/>
+     <f x="87.5" y="12" cocos2d_x="-42" cocos2d_y="-5" kX="0" kY="0" cX="1" cY="1" pX="130" pY="17" z="1" dI="0" twE="0" dr="24">
+      <colorTransform a="0" r="0" g="0" b="0" aM="50" rM="100" gM="100" bM="100"/>
+     </f>
+     <f x="87.5" y="12" cocos2d_x="-42" cocos2d_y="-5" kX="0" kY="0" cX="1" cY="1" pX="130" pY="17" z="1" dI="0" twE="0" dr="18"/>
+     <f x="87.5" y="12" cocos2d_x="-42" cocos2d_y="-5" kX="0" kY="0" cX="1" cY="1" pX="130" pY="17" z="1" dI="0" twE="0" dr="24">
+      <colorTransform a="0" r="0" g="0" b="0" aM="50" rM="100" gM="100" bM="100"/>
+     </f>
+     <f x="87.5" y="12" cocos2d_x="-42" cocos2d_y="-5" kX="0" kY="0" cX="1" cY="1" pX="130" pY="17" z="1" dI="0" twE="0" dr="1"/>
+    </b>
+    <b name="6" sc="1" dl="0">
+     <f x="-120" y="6" cocos2d_x="-167" cocos2d_y="-37" kX="0" kY="0" cX="1" cY="1" pX="47" pY="43" z="2" dI="0" dr="379"/>
+    </b>
+    <b name="5" sc="1" dl="0">
+     <f x="19" y="-75.5" cocos2d_x="-301" cocos2d_y="-93" kX="0" kY="0" cX="1" cY="1" pX="320" pY="18" z="3" dI="0" twE="0" dr="378"/>
+     <f x="-611" y="-75.5" cocos2d_x="-931" cocos2d_y="-93" kX="0" kY="0" cX="1" cY="1" pX="320" pY="18" z="3" dI="0" dr="1"/>
+    </b>
+    <b name="4" sc="1" dl="0">
+     <f x="649" y="-75.5" cocos2d_x="329" cocos2d_y="-93" kX="0" kY="0" cX="1" cY="1" pX="320" pY="18" z="4" dI="0" twE="0" dr="378"/>
+     <f x="19" y="-75.5" cocos2d_x="-301" cocos2d_y="-93" kX="0" kY="0" cX="1" cY="1" pX="320" pY="18" z="4" dI="0" dr="1"/>
+    </b>
+    <b name="3" sc="1" dl="0">
+     <f x="18.5" y="85.5" cocos2d_x="-301.5" cocos2d_y="68" kX="0" kY="0" cX="1" cY="1" pX="320" pY="18" z="5" dI="0" twE="0" dr="378"/>
+     <f x="647.5" y="85.5" cocos2d_x="327.5" cocos2d_y="68" kX="0" kY="0" cX="1" cY="1" pX="320" pY="18" z="5" dI="0" dr="1"/>
+    </b>
+    <b name="2" sc="1" dl="0">
+     <f x="-611.5" y="85.5" cocos2d_x="-931.5" cocos2d_y="68" kX="0" kY="0" cX="1" cY="1" pX="320" pY="18" z="6" dI="0" twE="0" dr="378"/>
+     <f x="17.5" y="85.5" cocos2d_x="-302.5" cocos2d_y="68" kX="0" kY="0" cX="1" cY="1" pX="320" pY="18" z="6" dI="0" dr="1"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="boss_jg" width="1024" height="256">
+  <SubTexture name="part-boss_jg_4" width="640" height="35" cocos2d_pX="0" cocos2d_pY="0" x="0" y="136"/>
+  <SubTexture name="part-boss_jg_3" width="94" height="86" cocos2d_pX="0" cocos2d_pY="0" x="642" y="92"/>
+  <SubTexture name="part-boss_jg_2" width="315" height="90" cocos2d_pX="26" cocos2d_pY="26" x="642" y="0"/>
+  <SubTexture name="part-boss_jg_1" width="640" height="134" cocos2d_pX="0" cocos2d_pY="0" x="0" y="0"/>
+ </TextureAtlas>
+</skeleton>

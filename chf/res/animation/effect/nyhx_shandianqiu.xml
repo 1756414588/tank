@@ -1,0 +1,93 @@
+<skeleton name="nyhx_shandianqiu" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="nyhx_shandianqiu">
+   <b name="1" x="0" y="0.45" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0">
+    <d name="part-nyhx_shandianqiu_24"/>
+    <d name="part-nyhx_shandianqiu_23"/>
+    <d name="part-nyhx_shandianqiu_22"/>
+    <d name="part-nyhx_shandianqiu_21"/>
+    <d name="part-nyhx_shandianqiu_20"/>
+    <d name="part-nyhx_shandianqiu_19"/>
+    <d name="part-nyhx_shandianqiu_18"/>
+    <d name="part-nyhx_shandianqiu_17"/>
+    <d name="part-nyhx_shandianqiu_16"/>
+    <d name="part-nyhx_shandianqiu_15"/>
+    <d name="part-nyhx_shandianqiu_14"/>
+    <d name="part-nyhx_shandianqiu_13"/>
+    <d name="part-nyhx_shandianqiu_12"/>
+    <d name="part-nyhx_shandianqiu_11"/>
+    <d name="part-nyhx_shandianqiu_10"/>
+    <d name="part-nyhx_shandianqiu_9"/>
+    <d name="part-nyhx_shandianqiu_8"/>
+    <d name="part-nyhx_shandianqiu_7"/>
+    <d name="part-nyhx_shandianqiu_6"/>
+    <d name="part-nyhx_shandianqiu_5"/>
+    <d name="part-nyhx_shandianqiu_4"/>
+    <d name="part-nyhx_shandianqiu_3"/>
+    <d name="part-nyhx_shandianqiu_2"/>
+    <d name="part-nyhx_shandianqiu_1"/>
+    <d name="part-nyhx_shandianqiu_0"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="nyhx_shandianqiu">
+   <mov name="start" dr="75" to="0" drTW="75" lp="1" twE="NaN">
+    <b name="1" sc="1" dl="0">
+     <f x="0" y="0.45" cocos2d_x="0" cocos2d_y="0.45" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="3"/>
+     <f x="0" y="0.45" cocos2d_x="0" cocos2d_y="0.45" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="1" dr="3"/>
+     <f x="0" y="0.45" cocos2d_x="0" cocos2d_y="0.45" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="2" dr="3"/>
+     <f x="0" y="0.45" cocos2d_x="0" cocos2d_y="0.45" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="3" dr="3"/>
+     <f x="0" y="0.45" cocos2d_x="0" cocos2d_y="0.45" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="4" dr="3"/>
+     <f x="0" y="0.45" cocos2d_x="0" cocos2d_y="0.45" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="5" dr="3"/>
+     <f x="0" y="0.45" cocos2d_x="0" cocos2d_y="0.45" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="6" dr="3"/>
+     <f x="0" y="0.45" cocos2d_x="0" cocos2d_y="0.45" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="7" dr="3"/>
+     <f x="0" y="0.45" cocos2d_x="0" cocos2d_y="0.45" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="8" dr="3"/>
+     <f x="0" y="0.45" cocos2d_x="0" cocos2d_y="0.45" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="9" dr="3"/>
+     <f x="0" y="0.45" cocos2d_x="0" cocos2d_y="0.45" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="10" dr="3"/>
+     <f x="0" y="0.45" cocos2d_x="0" cocos2d_y="0.45" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="11" dr="3"/>
+     <f x="0" y="0.45" cocos2d_x="0" cocos2d_y="0.45" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="12" dr="3"/>
+     <f x="0" y="0.45" cocos2d_x="0" cocos2d_y="0.45" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="13" dr="3"/>
+     <f x="0" y="0.45" cocos2d_x="0" cocos2d_y="0.45" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="14" dr="3"/>
+     <f x="0" y="0.45" cocos2d_x="0" cocos2d_y="0.45" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="15" dr="3"/>
+     <f x="0" y="0.45" cocos2d_x="0" cocos2d_y="0.45" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="16" dr="3"/>
+     <f x="0" y="0.45" cocos2d_x="0" cocos2d_y="0.45" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="17" dr="3"/>
+     <f x="0" y="0.45" cocos2d_x="0" cocos2d_y="0.45" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="18" dr="3"/>
+     <f x="0" y="0.45" cocos2d_x="0" cocos2d_y="0.45" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="19" dr="3"/>
+     <f x="0" y="0.45" cocos2d_x="0" cocos2d_y="0.45" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="20" dr="3"/>
+     <f x="0" y="0.45" cocos2d_x="0" cocos2d_y="0.45" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="21" dr="3"/>
+     <f x="0" y="0.45" cocos2d_x="0" cocos2d_y="0.45" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="22" dr="3"/>
+     <f x="0" y="0.45" cocos2d_x="0" cocos2d_y="0.45" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="23" dr="3"/>
+     <f x="0" y="0.45" cocos2d_x="0" cocos2d_y="0.45" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="24" dr="3"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="nyhx_shandianqiu" width="1024" height="1024">
+  <SubTexture name="part-nyhx_shandianqiu_0" width="154" height="154" cocos2d_pX="77" cocos2d_pY="77" x="780" y="468"/>
+  <SubTexture name="part-nyhx_shandianqiu_1" width="154" height="154" cocos2d_pX="77" cocos2d_pY="77" x="312" y="0"/>
+  <SubTexture name="part-nyhx_shandianqiu_2" width="154" height="154" cocos2d_pX="77" cocos2d_pY="77" x="312" y="312"/>
+  <SubTexture name="part-nyhx_shandianqiu_3" width="154" height="154" cocos2d_pX="77" cocos2d_pY="77" x="624" y="0"/>
+  <SubTexture name="part-nyhx_shandianqiu_4" width="154" height="154" cocos2d_pX="77" cocos2d_pY="77" x="312" y="468"/>
+  <SubTexture name="part-nyhx_shandianqiu_5" width="154" height="154" cocos2d_pX="77" cocos2d_pY="77" x="0" y="156"/>
+  <SubTexture name="part-nyhx_shandianqiu_6" width="154" height="154" cocos2d_pX="77" cocos2d_pY="77" x="624" y="312"/>
+  <SubTexture name="part-nyhx_shandianqiu_7" width="154" height="154" cocos2d_pX="77" cocos2d_pY="77" x="312" y="156"/>
+  <SubTexture name="part-nyhx_shandianqiu_8" width="154" height="154" cocos2d_pX="77" cocos2d_pY="77" x="0" y="624"/>
+  <SubTexture name="part-nyhx_shandianqiu_9" width="154" height="154" cocos2d_pX="77" cocos2d_pY="77" x="624" y="156"/>
+  <SubTexture name="part-nyhx_shandianqiu_10" width="154" height="154" cocos2d_pX="77" cocos2d_pY="77" x="0" y="468"/>
+  <SubTexture name="part-nyhx_shandianqiu_11" width="154" height="154" cocos2d_pX="77" cocos2d_pY="77" x="0" y="312"/>
+  <SubTexture name="part-nyhx_shandianqiu_12" width="154" height="154" cocos2d_pX="77" cocos2d_pY="77" x="0" y="0"/>
+  <SubTexture name="part-nyhx_shandianqiu_13" width="154" height="154" cocos2d_pX="77" cocos2d_pY="77" x="156" y="0"/>
+  <SubTexture name="part-nyhx_shandianqiu_14" width="154" height="154" cocos2d_pX="77" cocos2d_pY="77" x="468" y="0"/>
+  <SubTexture name="part-nyhx_shandianqiu_15" width="154" height="154" cocos2d_pX="77" cocos2d_pY="77" x="780" y="0"/>
+  <SubTexture name="part-nyhx_shandianqiu_16" width="154" height="154" cocos2d_pX="77" cocos2d_pY="77" x="156" y="156"/>
+  <SubTexture name="part-nyhx_shandianqiu_17" width="154" height="154" cocos2d_pX="77" cocos2d_pY="77" x="468" y="156"/>
+  <SubTexture name="part-nyhx_shandianqiu_18" width="154" height="154" cocos2d_pX="77" cocos2d_pY="77" x="780" y="156"/>
+  <SubTexture name="part-nyhx_shandianqiu_19" width="154" height="154" cocos2d_pX="77" cocos2d_pY="77" x="156" y="312"/>
+  <SubTexture name="part-nyhx_shandianqiu_20" width="154" height="154" cocos2d_pX="77" cocos2d_pY="77" x="468" y="312"/>
+  <SubTexture name="part-nyhx_shandianqiu_21" width="154" height="154" cocos2d_pX="77" cocos2d_pY="77" x="780" y="312"/>
+  <SubTexture name="part-nyhx_shandianqiu_22" width="154" height="154" cocos2d_pX="77" cocos2d_pY="77" x="156" y="468"/>
+  <SubTexture name="part-nyhx_shandianqiu_23" width="154" height="154" cocos2d_pX="77" cocos2d_pY="77" x="468" y="468"/>
+  <SubTexture name="part-nyhx_shandianqiu_24" width="154" height="154" cocos2d_pX="77" cocos2d_pY="77" x="624" y="468"/>
+ </TextureAtlas>
+</skeleton>

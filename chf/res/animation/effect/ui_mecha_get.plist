@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>part-zuzhuang_tx1.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,2},{43,41}}</string>
+                <key>offset</key>
+                <string>{1,2}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{4,0},{43,41}}</string>
+                <key>sourceSize</key>
+                <string>{49,45}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>2</integer>
+            <key>realTextureFileName</key>
+            <string>ui_mecha_get.pvr.ccz</string>
+            <key>size</key>
+            <string>{48,45}</string>
+            <key>smartupdate</key>
+            <string>$TexturePacker:SmartUpdate:381689dc4b92c2d153dc3e0e6b9fcca3:e48d82fb004e494080d7e4f859fb09e7:bbd843419003938fbee61fc3dda62fd0$</string>
+            <key>textureFileName</key>
+            <string>ui_mecha_get.pvr.ccz</string>
+        </dict>
+    </dict>
+</plist>

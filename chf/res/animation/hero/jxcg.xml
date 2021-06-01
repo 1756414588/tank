@@ -1,0 +1,30 @@
+<skeleton name="jxcg" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="jxcg">
+   <b name="grfg" x="0" y="0" kX="0" kY="0" cX="1.81" cY="1.81" pX="0" pY="0" z="0">
+    <d name="part-jxcg"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="jxcg">
+   <mov name="start" dr="56" to="0" drTW="56" lp="0" twE="NaN">
+    <b name="grfg" sc="1" dl="0">
+     <f x="0" y="0" cocos2d_x="0" cocos2d_y="0" kX="0" kY="0" cX="1.81" cY="1.81" pX="0" pY="0" z="0" dI="0" dr="20"/>
+     <f x="0" y="0" cocos2d_x="0" cocos2d_y="0" kX="0" kY="0" cX="1.81" cY="1.81" pX="0" pY="0" z="0" dI="0" twE="0" dr="16"/>
+     <f x="0" y="0" cocos2d_x="0" cocos2d_y="0" kX="0" kY="0" cX="0.93" cY="0.93" pX="0" pY="0" z="0" dI="0" dr="2"/>
+     <f x="0" y="0" cocos2d_x="0" cocos2d_y="0" kX="-1.23" kY="-1.23" cX="0.94" cY="0.94" pX="0" pY="0" z="0" dI="0" dr="2"/>
+     <f x="0" y="0" cocos2d_x="0" cocos2d_y="0" kX="0.95" kY="0.95" cX="0.93" cY="0.93" pX="0" pY="0" z="0" dI="0" dr="2"/>
+     <f x="0" y="0" cocos2d_x="0" cocos2d_y="0" kX="-0.45" kY="-0.45" cX="0.94" cY="0.94" pX="0" pY="0" z="0" dI="0" dr="2"/>
+     <f x="0" y="0" cocos2d_x="0" cocos2d_y="0" kX="0" kY="0" cX="0.93" cY="0.93" pX="0" pY="0" z="0" dI="0" dr="2"/>
+     <f x="0" y="0" cocos2d_x="0" cocos2d_y="0" kX="0.71" kY="0.71" cX="0.92" cY="0.92" pX="0" pY="0" z="0" dI="0" dr="2"/>
+     <f x="0" y="0" cocos2d_x="0" cocos2d_y="0" kX="0" kY="0" cX="0.93" cY="0.93" pX="0" pY="0" z="0" dI="0" twE="0" dr="7"/>
+     <f x="0" y="0" cocos2d_x="0" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="1"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="jxcg" width="512" height="128">
+  <SubTexture name="part-jxcg" width="330" height="99" cocos2d_pX="165" cocos2d_pY="49.5" x="0" y="0"/>
+ </TextureAtlas>
+</skeleton>

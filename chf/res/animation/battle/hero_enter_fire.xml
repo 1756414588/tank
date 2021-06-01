@@ -1,0 +1,82 @@
+<skeleton name="jiangling_fangshou_lan" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="hero_enter_fire">
+   <b name="2" x="239.75" y="-53.2" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0">
+    <d name="part-huoshaomiao1"/>
+    <d name="part-huoshaomiao2"/>
+    <d name="part-huoshaomiao3"/>
+    <d name="part-huoshaomiao4"/>
+    <d name="part-huoshaomiao5"/>
+    <d name="part-huoshaomiao6"/>
+    <d name="part-huoshaomiao7"/>
+    <d name="part-huoshaomiao8"/>
+    <d name="part-huoshaomiao9"/>
+    <d name="part-huoshaomiao10"/>
+    <d name="part-huoshaomiao11"/>
+    <d name="part-huoshaomiao12"/>
+    <d name="part-huoshaomiao13"/>
+    <d name="part-huoshaomiao14"/>
+    <d name="part-huoshaomiao15"/>
+    <d name="part-huoshaomiao16"/>
+    <d name="part-huoshaomiao17"/>
+    <d name="part-huoshaomiao18"/>
+    <d name="part-huoshaomiao19"/>
+    <d name="part-huoshaomiao20"/>
+    <d name="part-huoshaomiao21"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="hero_enter_fire">
+   <mov name="start" dr="65" to="6" drTW="65" lp="0" twE="NaN">
+    <b name="2" sc="1" dl="0">
+     <f x="239.75" y="-53.2" cocos2d_x="239.75" cocos2d_y="-53.1" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="0" dr="3"/>
+     <f x="239.75" y="-53.2" cocos2d_x="239.75" cocos2d_y="-53.1" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="1" dr="3"/>
+     <f x="239.75" y="-53.2" cocos2d_x="239.75" cocos2d_y="-53.1" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="2" dr="3"/>
+     <f x="239.75" y="-53.2" cocos2d_x="239.75" cocos2d_y="-53.1" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="3" dr="3"/>
+     <f x="239.75" y="-53.2" cocos2d_x="239.75" cocos2d_y="-53.1" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="4" dr="3"/>
+     <f x="239.75" y="-53.2" cocos2d_x="239.75" cocos2d_y="-53.1" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="5" dr="3"/>
+     <f x="239.75" y="-53.2" cocos2d_x="239.75" cocos2d_y="-53.1" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="6" dr="3"/>
+     <f x="239.75" y="-53.2" cocos2d_x="239.75" cocos2d_y="-53.1" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="7" dr="3"/>
+     <f x="239.75" y="-53.2" cocos2d_x="239.75" cocos2d_y="-53.1" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="8" dr="3"/>
+     <f x="239.75" y="-53.2" cocos2d_x="239.75" cocos2d_y="-53.1" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="9" dr="3"/>
+     <f x="239.75" y="-53.2" cocos2d_x="239.75" cocos2d_y="-53.1" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="10" dr="3"/>
+     <f x="239.75" y="-53.2" cocos2d_x="239.75" cocos2d_y="-53.1" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="11" dr="3"/>
+     <f x="240.45" y="-53.15" cocos2d_x="240.45" cocos2d_y="-53.15" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="12" dr="3"/>
+     <f x="239.65" y="-53.95" cocos2d_x="239.65" cocos2d_y="-53.95" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="13" dr="3"/>
+     <f x="239.9" y="-53.15" cocos2d_x="239.9" cocos2d_y="-53.15" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="14" dr="3"/>
+     <f x="239.75" y="-53.2" cocos2d_x="239.75" cocos2d_y="-53.1" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="15" dr="3"/>
+     <f x="239.75" y="-53.2" cocos2d_x="239.75" cocos2d_y="-53.1" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="16" dr="3"/>
+     <f x="239.75" y="-53.2" cocos2d_x="239.75" cocos2d_y="-53.1" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="17" dr="3"/>
+     <f x="239.75" y="-53.2" cocos2d_x="239.75" cocos2d_y="-53.1" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="18" dr="3"/>
+     <f x="239.75" y="-53.2" cocos2d_x="239.75" cocos2d_y="-53.1" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="19" dr="3"/>
+     <f x="239.75" y="-53.2" cocos2d_x="239.75" cocos2d_y="-53.1" kX="0" kY="0" cX="2" cY="2" pX="0" pY="0" z="0" dI="20" dr="3"/>
+     <f dr="2" dI="-1"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="jiangling_fangshou_lan" width="1024" height="1024">
+  <SubTexture name="part-huoshaomiao21" width="280" height="97" cocos2d_pX="139.85" cocos2d_pY="48.15" x="282" y="402"/>
+  <SubTexture name="part-huoshaomiao20" width="280" height="97" cocos2d_pX="139.85" cocos2d_pY="48.15" x="0" y="308"/>
+  <SubTexture name="part-huoshaomiao19" width="280" height="97" cocos2d_pX="139.85" cocos2d_pY="48.15" x="0" y="209"/>
+  <SubTexture name="part-huoshaomiao18" width="280" height="97" cocos2d_pX="139.85" cocos2d_pY="48.15" x="564" y="498"/>
+  <SubTexture name="part-huoshaomiao17" width="280" height="97" cocos2d_pX="139.85" cocos2d_pY="48.15" x="564" y="399"/>
+  <SubTexture name="part-huoshaomiao16" width="280" height="97" cocos2d_pX="139.85" cocos2d_pY="48.15" x="582" y="201"/>
+  <SubTexture name="part-huoshaomiao15" width="298" height="108" cocos2d_pX="139.85" cocos2d_pY="59.25" x="0" y="0"/>
+  <SubTexture name="part-huoshaomiao14" width="294" height="103" cocos2d_pX="139.45" cocos2d_pY="55.1" x="300" y="0"/>
+  <SubTexture name="part-huoshaomiao13" width="289" height="100" cocos2d_pX="140.05" cocos2d_pY="51.8" x="596" y="0"/>
+  <SubTexture name="part-huoshaomiao12" width="280" height="97" cocos2d_pX="139.85" cocos2d_pY="48.15" x="282" y="303"/>
+  <SubTexture name="part-huoshaomiao11" width="280" height="97" cocos2d_pX="139.85" cocos2d_pY="48.15" x="596" y="102"/>
+  <SubTexture name="part-huoshaomiao10" width="280" height="97" cocos2d_pX="139.85" cocos2d_pY="48.15" x="0" y="407"/>
+  <SubTexture name="part-huoshaomiao9" width="280" height="97" cocos2d_pX="139.85" cocos2d_pY="48.15" x="300" y="105"/>
+  <SubTexture name="part-huoshaomiao8" width="280" height="97" cocos2d_pX="139.85" cocos2d_pY="48.15" x="0" y="110"/>
+  <SubTexture name="part-huoshaomiao7" width="280" height="97" cocos2d_pX="139.85" cocos2d_pY="48.15" x="282" y="204"/>
+  <SubTexture name="part-huoshaomiao6" width="280" height="97" cocos2d_pX="139.85" cocos2d_pY="48.15" x="564" y="300"/>
+  <SubTexture name="part-huoshaomiao5" width="246" height="67" cocos2d_pX="123.55" cocos2d_pY="23.9" x="0" y="506"/>
+  <SubTexture name="part-huoshaomiao4" width="246" height="69" cocos2d_pX="123.95" cocos2d_pY="22.85" x="282" y="501"/>
+  <SubTexture name="part-huoshaomiao3" width="226" height="68" cocos2d_pX="121.75" cocos2d_pY="20.4" x="0" y="575"/>
+  <SubTexture name="part-huoshaomiao2" width="231" height="72" cocos2d_pX="121" cocos2d_pY="23.2" x="248" y="572"/>
+  <SubTexture name="part-huoshaomiao1" width="144" height="33" cocos2d_pX="119.75" cocos2d_pY="-9.1" x="878" y="102"/>
+ </TextureAtlas>
+</skeleton>

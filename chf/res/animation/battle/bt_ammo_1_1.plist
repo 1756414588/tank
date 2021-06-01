@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>part-tanke_xiaopaodan.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,2},{9,48}}</string>
+                <key>offset</key>
+                <string>{0,3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{1,1},{9,48}}</string>
+                <key>sourceSize</key>
+                <string>{11,56}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>2</integer>
+            <key>realTextureFileName</key>
+            <string>bt_ammo_1_1.pvr.ccz</string>
+            <key>size</key>
+            <string>{14,52}</string>
+            <key>smartupdate</key>
+            <string>$TexturePacker:SmartUpdate:33efedd1dd4d45fd793980a413eea8cd:5ee5ff297f4548bf303ccba36592bdc0:e4a14af35a85451467319f7bd1beaad9$</string>
+            <key>textureFileName</key>
+            <string>bt_ammo_1_1.pvr.ccz</string>
+        </dict>
+    </dict>
+</plist>
